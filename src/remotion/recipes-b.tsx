@@ -29,7 +29,6 @@ const TilePress: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const step = Math.round(beat(p) * 5) / 5;
   return (
     <Canvas background={bg}>
       <Text x={52} y={90} size={39} color={fg} weight={800}>
@@ -44,11 +43,13 @@ const TilePress: React.FC<RecipeProps> = ({ style, progress: p }) => {
       {Array.from({ length: 12 }, (_, i) => {
         const x = 58 + (i % 4) * 292,
           y = 184 + Math.floor(i / 4) * 146,
-          offset = (i % 2 ? 1 : -1) * step * 16;
+          column = i % 4,
+          local = Math.max(0, Math.min(1, (p * 4 - column) / 0.82)),
+          scale = 1 + 0.16 * Math.sin(local * Math.PI);
         return (
           <g
             key={i}
-            transform={`translate(${offset},${-Math.floor(i / 4) * step * 9})`}
+            transform={`translate(${x + 137},${y + 64}) scale(${scale}) translate(${-x - 137},${-y - 64})`}
           >
             <rect
               x={x + 6}
@@ -98,7 +99,6 @@ const TransitFlaps: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const flip = 1 - 0.72 * beat(p, 0.12, 0.26, 0.6, 0.82);
   return (
     <Canvas background={bg}>
       <Text x={57} y={96} size={61} color={fg} weight={700}>
@@ -127,10 +127,14 @@ const TransitFlaps: React.FC<RecipeProps> = ({ style, progress: p }) => {
           {word
             .padEnd(7, " ")
             .split("")
-            .map((letter, col) => (
+            .map((letter, col) => {
+              const index = row * 7 + col;
+              const local = Math.max(0, Math.min(1, (p * 28 - index) / 0.86));
+              const flip = 1 - 0.72 * Math.sin(Math.PI * local);
+              return (
               <g
                 key={col}
-                transform={`translate(0,${(264 + row * 95) * (1 - flip)}) scale(1,${flip})`}
+                transform={`translate(0,${(270 + row * 95) * (1 - flip)}) scale(1,${flip})`}
               >
                 <rect
                   x={290 + col * 105}
@@ -138,7 +142,7 @@ const TransitFlaps: React.FC<RecipeProps> = ({ style, progress: p }) => {
                   width={92}
                   height={72}
                   rx={3}
-                  fill={s}
+                  fill={local > 0 && local < 1 ? a : s}
                 />
                 <Text
                   x={336 + col * 105}
@@ -159,7 +163,7 @@ const TransitFlaps: React.FC<RecipeProps> = ({ style, progress: p }) => {
                   width={2}
                 />
               </g>
-            ))}
+            );})}
           <Text
             x={1189}
             y={280 + row * 95}
@@ -630,7 +634,6 @@ const CalendarLeaves: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const b = beat(p);
   return (
     <Canvas background={bg}>
       <Text x={51} y={112} size={83} color={fg} font={serif}>
@@ -650,6 +653,9 @@ const CalendarLeaves: React.FC<RecipeProps> = ({ style, progress: p }) => {
       {Array.from({ length: 35 }, (_, i) => {
         const x = 52 + (i % 7) * 167,
           y = 249 + Math.floor(i / 7) * 77;
+        const fill = i < 31 ? Math.max(0, Math.min(1, (p - 0.025 - i * 0.019) / 0.012)) : 0;
+        const clear = i < 31 ? Math.max(0, Math.min(1, (p - (0.78 + (30 - i) * 0.006)) / 0.012)) : 0;
+        const highlight = fill * (1 - clear);
         return (
           <g key={i}>
             <rect
@@ -657,14 +663,14 @@ const CalendarLeaves: React.FC<RecipeProps> = ({ style, progress: p }) => {
               y={y}
               width={155}
               height={68}
-              fill={i === 12 || i === 23 ? a : s}
-              opacity={i === 12 || i === 23 ? 0.28 + 0.72 * b : 1}
+              fill={i < 31 ? a : s}
+              opacity={i < 31 ? 0.12 + 0.88 * highlight : 1}
             />
             <Text x={x + 14} y={y + 47} size={27} color={fg} font={mono}>
               {i < 31 ? String(i + 1).padStart(2, "0") : ""}
             </Text>
-            {i === 12 && (
-              <path d={`M${x + 106} ${y}h49v${22 + 30 * b}Z`} fill={bg} />
+            {i < 31 && (
+              <path d={`M${x + 115} ${y}h40v${14 + 32 * highlight}Z`} fill={bg} opacity={0.3 + 0.7 * highlight} />
             )}
           </g>
         );
@@ -684,6 +690,11 @@ const SonarDepth: React.FC<RecipeProps> = ({ style, progress: p }) => {
   } = style.palette;
   return (
     <Canvas background={bg}>
+      <defs>
+        <filter id="b-sonar-glow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="12" />
+        </filter>
+      </defs>
       <g opacity={0.22}>
         {Array.from({ length: 13 }, (_, i) => (
           <Line
@@ -709,15 +720,33 @@ const SonarDepth: React.FC<RecipeProps> = ({ style, progress: p }) => {
       {[85, 160, 235, 309].map((r) => (
         <Ring key={r} x={405} y={359} r={r} color={s} opacity={0.55} />
       ))}
-      <g transform={`rotate(${p * 360},405,359)`}>
+      <g transform={`rotate(${-p * 360},405,359)`}>
+        <path
+          d="M405 359 690 220A315 315 0 0 1 716 380Z"
+          fill={a}
+          opacity={0.16}
+          filter="url(#b-sonar-glow)"
+        />
         <path
           d="M405 359 690 220A315 315 0 0 1 716 380Z"
           fill={a}
           opacity={0.08}
         />
-        <Line x1={405} y1={359} x2={692} y2={221} color={a} width={3} />
+        <Line x1={405} y1={359} x2={692} y2={221} color={a} width={6} />
       </g>
-      <circle cx={528} cy={225} r={7 + 4 * turn(p)} fill={a} />
+      {(() => {
+        const targetAngle = Math.atan2(225 - 359, 528 - 405);
+        const beamAngle = Math.atan2(221 - 359, 692 - 405);
+        const crossing = ((beamAngle - targetAngle) / (Math.PI * 2) + 1) % 1;
+        const age = (p - crossing + 1) % 1;
+        const echo = Math.exp(-age * 6);
+        return (
+          <g>
+            <circle cx={528} cy={225} r={5 + 15 * echo} fill="none" stroke={a} strokeWidth={2} opacity={0.72 * echo} />
+            <circle cx={528} cy={225} r={5} fill={a} opacity={0.35 + 0.65 * echo} />
+          </g>
+        );
+      })()}
       <Cross x={271} y={452} color={a} size={11} />
       <Cross x={405} y={359} color={fg} size={14} />
       <Text x={844} y={109} size={20} color={a} spacing={4}>
@@ -976,13 +1005,13 @@ const MuseumLabels: React.FC<RecipeProps> = ({ style, progress: p }) => {
   const b = beat(p);
   return (
     <Canvas background={bg}>
-      <Media
-        asset="product"
+        <Media
+          asset="product"
         x={55}
         y={75}
         width={723}
         height={570}
-        scale={1.03 + 0.025 * turn(p)}
+          scale={1.025 + 0.085 * turn(p)}
         filter="saturate(.55)"
       />
       <rect x={805} y={162} width={399} height={366} fill={a} opacity={0.1} />
@@ -1018,8 +1047,15 @@ const MedicalContours: React.FC<RecipeProps> = ({ style, progress: p }) => {
     secondary: s,
   } = style.palette;
   const b = beat(p);
+  const scanY = 244 + 285 * b;
   return (
     <Canvas background={bg}>
+      <defs>
+        <filter id="b-contour-glow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="8" result="blur" />
+          <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+        </filter>
+      </defs>
       <Text x={58} y={96} size={34} color={fg} weight={700}>
         CONTOUR / OBSERVATION
       </Text>
@@ -1037,11 +1073,23 @@ const MedicalContours: React.FC<RecipeProps> = ({ style, progress: p }) => {
       ))}
       <Line
         x1={190}
-        y1={244 + 285 * b}
+        y1={scanY}
         x2={728}
-        y2={244 + 285 * b}
+        y2={scanY}
         color={a}
-        width={3}
+        width={15}
+        opacity={0.36}
+      />
+      <g filter="url(#b-contour-glow)">
+        <Line x1={190} y1={scanY} x2={728} y2={scanY} color={a} width={3} />
+      </g>
+      <Line
+        x1={190}
+        y1={scanY}
+        x2={728}
+        y2={scanY}
+        color={fg}
+        width={1}
       />
       <Cross x={462} y={361} color={a} size={27} />
       <Line x1={791} y1={163} x2={791} y2={630} color={s} />
@@ -1060,7 +1108,7 @@ const MedicalContours: React.FC<RecipeProps> = ({ style, progress: p }) => {
             d={Array.from(
               { length: 42 },
               (_, i) =>
-                `${i ? "L" : "M"}${836 + i * 8} ${390 + row * 91 + Math.sin(i * 0.49 + row) * 15 * (0.7 + 0.3 * b)}`,
+                `${i ? "L" : "M"}${836 + i * 8} ${390 + row * 91 + Math.sin(i * 0.49 + row + p * Math.PI * 4) * (9 + 12 * turn(p))}`,
             ).join("")}
             stroke={a}
             fill="none"
@@ -1277,14 +1325,14 @@ const ConstructivistWedges: React.FC<RecipeProps> = ({
         <Text x={95} y={319} size={89} color={bg} weight={800} spacing={-2}>
           BUILD THE FUTURE
         </Text>
-        <Text x={212} y={438} size={78} color={fg} weight={800}>
+        <Text x={212} y={475} size={78} color={fg} weight={800}>
           FROM A NEW ANGLE.
         </Text>
       </g>
       <Text x={41} y={84} size={19} color={bg} spacing={3}>
         ORIGINAL CONSTRUCTION / 078
       </Text>
-      <Text x={1174} y={690} size={26} color={fg} anchor="end">
+      <Text x={61} y={684} size={26} color={fg}>
         從另一個角度，開始。
       </Text>
     </Canvas>
@@ -1297,7 +1345,8 @@ const IsometricRoom: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const w = wave(p) * 38;
+  const cameraPush = 1 + 0.105 * turn(p);
+  const foregroundPush = 1 + 0.15 * turn(p);
   return (
     <Canvas background={bg}>
       <Text x={58} y={93} size={21} color={fg} spacing={3}>
@@ -1312,7 +1361,7 @@ const IsometricRoom: React.FC<RecipeProps> = ({ style, progress: p }) => {
       <Text x={64} y={314} size={25} color={fg}>
         讓想法，有自己的房間。
       </Text>
-      <g transform={`translate(${w},0)`}>
+      <g transform={`translate(840 280) scale(${cameraPush}) translate(-840 -280)`}>
         <polygon points="477,361 831,170 1202,373 844,594" fill={s} />
         <polygon
           points="477,361 477,133 831,-54 831,170"
@@ -1325,16 +1374,18 @@ const IsometricRoom: React.FC<RecipeProps> = ({ style, progress: p }) => {
           opacity={0.65}
         />
         <polygon points="554,374 832,223 1111,375 836,539" fill={bg} />
-        <polygon points="697,366 831,293 1000,386 866,459" fill={a} />
-        <polygon points="697,366 697,448 866,541 866,459" fill={fg} />
-        <polygon
-          points="866,459 1000,386 1000,468 866,541"
-          fill={fg}
-          opacity={0.7}
-        />
-        <Line x1={1080} y1={226} x2={1080} y2={428} color={fg} width={6} />
-        <polygon points="1008,237 1080,164 1152,237" fill={bg} />
-        <ellipse cx={1080} cy={429} rx={39} ry={14} fill={fg} />
+        <g transform={`translate(840 400) scale(${foregroundPush}) translate(-840 -400)`}>
+          <polygon points="697,366 831,293 1000,386 866,459" fill={a} />
+          <polygon points="697,366 697,448 866,541 866,459" fill={fg} />
+          <polygon
+            points="866,459 1000,386 1000,468 866,541"
+            fill={fg}
+            opacity={0.7}
+          />
+          <Line x1={1080} y1={226} x2={1080} y2={428} color={fg} width={6} />
+          <polygon points="1008,237 1080,164 1152,237" fill={bg} />
+          <ellipse cx={1080} cy={429} rx={39} ry={14} fill={fg} />
+        </g>
         <polygon points="579,236 689,176 689,259 579,319" fill={bg} />
         <Line x1={583} y1={275} x2={686} y2={217} color={s} width={3} />
       </g>
@@ -1428,10 +1479,11 @@ const ZineStamps: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const b = Math.round(beat(p) * 4) / 4;
+  const cover = beat(p, 0.02, 0.22, 0.68, 0.96);
+  const page = beat(p, 0.17, 0.38, 0.79, 0.99);
   return (
     <Canvas background={bg}>
-      <g transform={`rotate(-6,430,355) translate(${b * 11},${-b * 6})`}>
+      <g transform={`rotate(-6,430,355) translate(${cover * 28},${-cover * 15})`}>
         <rect x={53} y={97} width={711} height={539} fill={s} />
         <Media
           asset="architecture"
@@ -1445,7 +1497,7 @@ const ZineStamps: React.FC<RecipeProps> = ({ style, progress: p }) => {
           LOCAL / PRESS
         </Text>
       </g>
-      <g transform={`rotate(10,975,360) translate(${-b * 9},${b * 8})`}>
+      <g transform={`rotate(10,975,360) translate(${-page * 25},${page * 13})`}>
         <rect
           x={794}
           y={94}
@@ -2415,7 +2467,7 @@ const LightboxProof: React.FC<RecipeProps> = ({ style, progress: p }) => {
         stroke={fg}
         strokeWidth={2}
       />
-      <g transform={`rotate(-3,429,360) translate(${b * 7},0)`}>
+      <g transform={`rotate(-3,429,360) translate(${b * 26},${-b * 8}) scale(${1 + 0.025 * b})`}>
         <rect x={73} y={150} width={596} height={411} fill="#26282b" />
         <Media
           asset="architecture"
@@ -2429,7 +2481,7 @@ const LightboxProof: React.FC<RecipeProps> = ({ style, progress: p }) => {
           01 / SPACE / ORIGINAL SAMPLE
         </Text>
       </g>
-      <g transform={`rotate(5,913,379) translate(${-b * 6},0)`}>
+      <g transform={`rotate(5,913,379) translate(${-b * 24},${b * 7}) scale(${1 + 0.035 * b})`}>
         <rect x={657} y={191} width={535} height={344} fill="#272629" />
         <Media
           asset="botanical"
@@ -2457,7 +2509,11 @@ const LightboxProof: React.FC<RecipeProps> = ({ style, progress: p }) => {
 };
 const PencilDrafting: React.FC<RecipeProps> = ({ style, progress: p }) => {
   const { background: bg, foreground: fg, accent: a } = style.palette;
-  const b = beat(p);
+  const b = Math.max(0, Math.min(1, (p - 0.04) / 0.66));
+  const routeLength = b * 861;
+  const penX = routeLength < 290 ? 242 : routeLength < 571 ? 242 + routeLength - 290 : 523;
+  const penY = routeLength < 290 ? 592 - routeLength : routeLength < 571 ? 302 : 302 + routeLength - 571;
+  const penAngle = routeLength < 290 ? 0 : routeLength < 571 ? 90 : 180;
   return (
     <Canvas background={bg}>
       <Text x={54} y={94} size={35} color={fg} font={serif}>
@@ -2496,7 +2552,17 @@ const PencilDrafting: React.FC<RecipeProps> = ({ style, progress: p }) => {
       <Text x={584} y={653} size={17} color={fg} anchor="middle" font={mono}>
         ILLUSTRATIVE SCALE / 1:50
       </Text>
-      <g transform={`translate(${968 - b * 103},${475 - b * 160}) rotate(-27)`}>
+      <path
+        d="M242 592V302H523V592"
+        fill="none"
+        stroke={a}
+        strokeWidth={5}
+        pathLength={1}
+        strokeDasharray={1}
+        strokeDashoffset={1 - b}
+        opacity={0.92}
+      />
+      <g transform={`translate(${penX - 7},${penY - 76}) rotate(${penAngle},7,76)`}>
         <rect width={14} height={127} fill={a} />
         <path d="M0 127 7 154 14 127Z" fill={fg} />
       </g>

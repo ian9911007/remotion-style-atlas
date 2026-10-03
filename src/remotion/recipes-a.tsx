@@ -1684,10 +1684,13 @@ const CollagePinboard: React.FC<RecipeProps> = ({ style, progress: p }) => {
         fill="none"
         strokeWidth={3}
       />
-      {["architecture", "botanical", "product"].map((asset, i) => (
+      {["architecture", "botanical", "product"].map((asset, i) => {
+        const settle = beat(p, 0.03 + i * 0.14, 0.18 + i * 0.14, 0.76, 0.98);
+        const tilt = [-7, 5, -4][i] + (1 - settle) * (i % 2 ? 4 : -4);
+        return (
         <g
           key={asset}
-          transform={`rotate(${[-7, 5, -4][i] + Math.round(beat(p, 0.03 + i * 0.06, 0.24 + i * 0.06, 0.71, 0.97) * 3) * 1.4},${[249, 730, 1023][i]},${[350, 320, 476][i]})`}
+          transform={`translate(0,${-82 * (1 - settle)}) rotate(${tilt},${[249, 730, 1023][i]},${[350, 320, 476][i]})`}
         >
           <rect
             x={[91, 554, 876][i]}
@@ -1720,7 +1723,8 @@ const CollagePinboard: React.FC<RecipeProps> = ({ style, progress: p }) => {
             NOTE / 0{i + 1}
           </Text>
         </g>
-      ))}
+        );
+      })}
       <Text x={59} y={92} color={fg} size={49} font={serif}>
         Connections, collected.
       </Text>
@@ -1946,8 +1950,17 @@ const RetroPixel: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const b = turn(p),
-    px = 8 * Math.round(14 * b);
+  const phase = ((p + 1) % 1) * 3;
+  const platform = Math.min(2, Math.floor(phase));
+  const jump = phase - platform;
+  const easedJump = jump * jump * (3 - 2 * jump);
+  const platformX = [529, 625, 721][platform];
+  const platformY = [466, 417, 368][platform];
+  const nextPlatform = (platform + 1) % 3;
+  const nextX = [529, 625, 721][nextPlatform];
+  const nextY = [466, 417, 368][nextPlatform];
+  const characterX = platformX + 8 + (nextX - platformX) * easedJump;
+  const characterY = platformY - 64 + (nextY - platformY) * easedJump - 44 * Math.sin(jump * Math.PI);
   return (
     <Canvas background={bg}>
       <Text x={56} y={74} color={fg} size={23} font={mono} weight={700}>
@@ -2027,9 +2040,7 @@ const RetroPixel: React.FC<RecipeProps> = ({ style, progress: p }) => {
           />
         </g>
       ))}
-      <g
-        transform={`translate(${264 + px},${552 - 8 * Math.round(7 * Math.sin(p * Math.PI) ** 2)})`}
-      >
+      <g transform={`translate(${characterX},${characterY})`}>
         <rect x={8} y={0} width={32} height={16} fill={a} />
         <rect x={0} y={16} width={48} height={24} fill={a} />
         <rect x={16} y={8} width={8} height={8} fill={fg} />
@@ -2176,7 +2187,7 @@ const RetroHalftone: React.FC<RecipeProps> = ({ style, progress: p }) => {
 
 const MinimalSpecimen: React.FC<RecipeProps> = ({ style, progress: p }) => {
   const { background: bg, foreground: fg, accent: a } = style.palette;
-  const b = beat(p, 0.05, 0.33, 0.7, 0.98);
+  const b = turn(p);
   return (
     <Canvas background={bg}>
       <Media
@@ -2195,14 +2206,20 @@ const MinimalSpecimen: React.FC<RecipeProps> = ({ style, progress: p }) => {
         ESSENTIAL FORM
       </Text>
       <path
-        d={`M${295 - 42 * b} 150v390m-18-390h36m-36 390h36`}
+        d={`M${295 - 68 * b} 150v390m-25-390h50m-50 390h50`}
         fill="none"
         stroke={a}
+        pathLength={1}
+        strokeDasharray={1}
+        strokeDashoffset={1 - b}
       />
       <path
-        d={`M465 ${594 + 42 * b}h352m-352-18v36m352-36v36`}
+        d={`M465 ${594 + 68 * b}h352m-352-25v50m352-50v50`}
         fill="none"
         stroke={a}
+        pathLength={1}
+        strokeDasharray={1}
+        strokeDashoffset={1 - b}
       />
       <Text
         x={251 - 42 * b}
@@ -2467,6 +2484,7 @@ const DataTimeline: React.FC<RecipeProps> = ({ style, progress: p }) => {
     secondary: s,
   } = style.palette;
   const b = turn(p);
+  const breath = 1 + 0.035 * Math.cos(2 * Math.PI * p);
   return (
     <Canvas background={bg}>
       <Text x={55} y={86} color={fg} size={22} spacing={3}>
@@ -2479,12 +2497,13 @@ const DataTimeline: React.FC<RecipeProps> = ({ style, progress: p }) => {
         每個變化，都留下形狀。
       </Text>
       {[0, 1, 2, 3].map((i) => (
-        <path
-          key={i}
-          d={`M62 ${493 - i * 37}C245 ${391 - i * 16 + b * 10} 330 ${464 - i * 20} 494 ${408 - i * 41}S785 ${309 - i * 26 - b * 12} 957 ${411 - i * 35}S1123 ${361 - i * 24} 1218 ${371 - i * 44}V${536 - i * 26}C1052 ${566 - i * 35} 1030 ${469 - i * 23} 895 ${517 - i * 27}S629 ${542 - i * 28} 482 ${542 - i * 40}S271 ${590 - i * 32} 62 ${557 - i * 25}Z`}
-          fill={[fg, s, a, "#cee3bb"][i]}
-          opacity={0.75}
-        />
+        <g key={i} transform={`translate(0,500) scale(1,${breath}) translate(0,-500)`}>
+          <path
+            d={`M62 ${493 - i * 37}C245 ${391 - i * 16 + b * 10} 330 ${464 - i * 20} 494 ${408 - i * 41}S785 ${309 - i * 26 - b * 12} 957 ${411 - i * 35}S1123 ${361 - i * 24} 1218 ${371 - i * 44}V${536 - i * 26}C1052 ${566 - i * 35} 1030 ${469 - i * 23} 895 ${517 - i * 27}S629 ${542 - i * 28} 482 ${542 - i * 40}S271 ${590 - i * 32} 62 ${557 - i * 25}Z`}
+            fill={[fg, s, a, "#cee3bb"][i]}
+            opacity={0.75}
+          />
+        </g>
       ))}
       <Line x1={62} y1={595} x2={1218} y2={595} color={fg} opacity={0.5} />
       {[0, 1, 2, 3, 4, 5].map((i) => (
@@ -2587,17 +2606,19 @@ const GeometricMosaic: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const b = beat(p, 0.04, 0.32, 0.7, 0.98);
   return (
     <Canvas background={bg}>
       {Array.from({ length: 12 }, (_, i) => {
         const x = 72 + (i % 6) * 190,
           y = 55 + Math.floor(i / 6) * 225,
-          c = [a, fg, s][i % 3];
+          c = [a, fg, s][i % 3],
+          local = Math.max(0, Math.min(1, (p * 12 - i) / 0.8)),
+          pulse = Math.sin(Math.PI * local),
+          scale = 1 + pulse * 0.035;
         return (
           <g
             key={i}
-            transform={`translate(${x + 92},${y + 102}) rotate(${i % 2 ? 90 * b : -90 * b})`}
+            transform={`translate(${x + 92},${y + 102}) scale(${scale})`}
           >
             <rect
               x={-90}
@@ -2605,7 +2626,17 @@ const GeometricMosaic: React.FC<RecipeProps> = ({ style, progress: p }) => {
               width={180}
               height={204}
               fill={c}
-              opacity={0.18}
+              opacity={0.12 + 0.24 * pulse}
+            />
+            <rect
+              x={-89}
+              y={-101}
+              width={178}
+              height={202}
+              fill="none"
+              stroke={bg}
+              strokeWidth={2 + 2 * pulse}
+              opacity={0.8 * pulse}
             />
             {i % 3 === 0 ? (
               <path d="M-90-102H90V102Q-90 102-90-102Z" fill={c} />
@@ -2617,6 +2648,16 @@ const GeometricMosaic: React.FC<RecipeProps> = ({ style, progress: p }) => {
                 <circle cx={0} cy={0} r={38} fill={bg} />
               </g>
             )}
+            <rect
+              x={-90}
+              y={-102}
+              width={180}
+              height={204}
+              fill={a}
+              opacity={0.2 * pulse}
+              stroke={bg}
+              strokeWidth={1 + 4 * pulse}
+            />
           </g>
         );
       })}
@@ -2627,7 +2668,7 @@ const GeometricMosaic: React.FC<RecipeProps> = ({ style, progress: p }) => {
         秩序，也可以很好玩。
       </Text>
       <Text x={1210} y={670} color={fg} size={16} font={mono} anchor="end">
-        QUARTER-TURN STUDY
+        SEQUENTIAL MOSAIC PULSE
       </Text>
     </Canvas>
   );

@@ -840,8 +840,23 @@ const BroadcastRetro: React.FC<RecipeProps> = ({ style, progress: p }) => {
 const MinimalObject: React.FC<RecipeProps> = ({ style, progress: p }) => {
   const { background: bg, foreground: fg, accent: a } = style.palette;
   const b = turn(p);
+  const lift = beat(p, 0.07, 0.31, 0.69, 0.97);
   return (
     <Canvas background={bg}>
+      <defs>
+        <filter id="product-contact-shadow" x="-80%" y="-400%" width="260%" height="900%">
+          <feGaussianBlur stdDeviation={2 + 8 * lift} />
+        </filter>
+      </defs>
+      <ellipse
+        cx={880}
+        cy={636 + 10 * lift}
+        rx={74 + 44 * lift}
+        ry={8 + 8 * lift}
+        fill="#26352f"
+        opacity={0.32 - 0.2 * lift}
+        filter="url(#product-contact-shadow)"
+      />
       <Media
         asset="product"
         x={530}
@@ -849,7 +864,7 @@ const MinimalObject: React.FC<RecipeProps> = ({ style, progress: p }) => {
         width={698}
         height={650}
         scale={1 + b * 0.035}
-        panY={-18 * beat(p, 0.07, 0.31, 0.69, 0.97)}
+        panY={-18 * lift}
         filter="saturate(.62)"
       />
       <rect x={0} y={0} width={490} height={720} fill={bg} />

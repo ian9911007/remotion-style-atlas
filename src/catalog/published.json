@@ -130,9 +130,9 @@
     ],
     "recipe": "swiss-grid",
     "preview": {
-      "gallery": "media/sa-001-29845bffe4ae5184-gallery.mp4",
-      "detail": "media/sa-001-29845bffe4ae5184-detail.mp4",
-      "poster": "media/sa-001-29845bffe4ae5184-poster.jpg",
+      "gallery": "media/sa-001-f1b9ab07824afd8e-gallery.mp4",
+      "detail": "media/sa-001-f1b9ab07824afd8e-detail.mp4",
+      "poster": "media/sa-001-f1b9ab07824afd8e-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -141,7 +141,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 54,
-      "fingerprint": "9ae3885828e8e2200661531e9c7d03a8f13809d7912be2abb5e2abd7ea6e7a91"
+      "fingerprint": "f1b9ab07824afd8ee528b4a3d18807ed1467e3200b90108e8a1d68fab57fef6b"
     },
     "provenance": {
       "kind": "original",
@@ -294,9 +294,9 @@
     ],
     "recipe": "luxury-spread",
     "preview": {
-      "gallery": "media/sa-002-70876c1001ac311f-gallery.mp4",
-      "detail": "media/sa-002-70876c1001ac311f-detail.mp4",
-      "poster": "media/sa-002-70876c1001ac311f-poster.jpg",
+      "gallery": "media/sa-002-5a7b99f02db593e0-gallery.mp4",
+      "detail": "media/sa-002-5a7b99f02db593e0-detail.mp4",
+      "poster": "media/sa-002-5a7b99f02db593e0-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -305,7 +305,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 81,
-      "fingerprint": "68f5a34755958b4ff37992362dc3d19c47dd8f46be166e7cde06e7c061195b62"
+      "fingerprint": "5a7b99f02db593e0100bd0f93ce99c8af260c0d0106812f60a2ce28e3f47f95d"
     },
     "provenance": {
       "kind": "original",
@@ -455,9 +455,9 @@
     ],
     "recipe": "cinematic-horizon",
     "preview": {
-      "gallery": "media/sa-003-718fa441bb56eac6-gallery.mp4",
-      "detail": "media/sa-003-718fa441bb56eac6-detail.mp4",
-      "poster": "media/sa-003-718fa441bb56eac6-poster.jpg",
+      "gallery": "media/sa-003-c7ad74cba0c94811-gallery.mp4",
+      "detail": "media/sa-003-c7ad74cba0c94811-detail.mp4",
+      "poster": "media/sa-003-c7ad74cba0c94811-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -466,7 +466,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 81,
-      "fingerprint": "a8fa820fb7e0718c8f4b39aef929272b7101644f468b669634142bb141968232"
+      "fingerprint": "c7ad74cba0c94811ce09a1a4b236b5d03ce23a1a88c961311cb8422e62303309"
     },
     "provenance": {
       "kind": "original",
@@ -616,9 +616,9 @@
     ],
     "recipe": "kinetic-sport",
     "preview": {
-      "gallery": "media/sa-004-cc0b68f14451928d-gallery.mp4",
-      "detail": "media/sa-004-cc0b68f14451928d-detail.mp4",
-      "poster": "media/sa-004-cc0b68f14451928d-poster.jpg",
+      "gallery": "media/sa-004-2a00b3f666fd8c62-gallery.mp4",
+      "detail": "media/sa-004-2a00b3f666fd8c62-detail.mp4",
+      "poster": "media/sa-004-2a00b3f666fd8c62-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -627,7 +627,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 54,
-      "fingerprint": "65c939d18df46be7302e397a9bc6f8df66235e40b81d20c56555b6cdcef76ac5"
+      "fingerprint": "2a00b3f666fd8c62e003124b70adc3981d2b5d9975696f7fe03cd5024a1664fd"
     },
     "provenance": {
       "kind": "original",
@@ -776,9 +776,9 @@
     ],
     "recipe": "industrial-blueprint",
     "preview": {
-      "gallery": "media/sa-005-0fa97eeb951fc01b-gallery.mp4",
-      "detail": "media/sa-005-0fa97eeb951fc01b-detail.mp4",
-      "poster": "media/sa-005-0fa97eeb951fc01b-poster.jpg",
+      "gallery": "media/sa-005-98d0c7a430dc94bc-gallery.mp4",
+      "detail": "media/sa-005-98d0c7a430dc94bc-detail.mp4",
+      "poster": "media/sa-005-98d0c7a430dc94bc-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -787,7 +787,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 67,
-      "fingerprint": "991a8bb831f9ea0aa2a4abcf752159c7536da829a6d612b3f4b4e85a262358c1"
+      "fingerprint": "98d0c7a430dc94bc5338effca8dddd5bb6f60e9673b64d931c46071cea0c3026"
     },
     "provenance": {
       "kind": "original",
@@ -937,9 +937,9 @@
     ],
     "recipe": "spatial-orbit",
     "preview": {
-      "gallery": "media/sa-006-47015b333972b072-gallery.mp4",
-      "detail": "media/sa-006-47015b333972b072-detail.mp4",
-      "poster": "media/sa-006-47015b333972b072-poster.jpg",
+      "gallery": "media/sa-006-595cfcb0aed084c9-gallery.mp4",
+      "detail": "media/sa-006-595cfcb0aed084c9-detail.mp4",
+      "poster": "media/sa-006-595cfcb0aed084c9-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -948,7 +948,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 67,
-      "fingerprint": "36553855e3fd3776d9aba3fa93004d1769e946e8add0ee01566ecac7cf6c9918"
+      "fingerprint": "595cfcb0aed084c97391afcb8a6d6b5fe30148d1cf777032986067eec0a952f3"
     },
     "provenance": {
       "kind": "original",
@@ -1101,9 +1101,9 @@
     ],
     "recipe": "paper-collage",
     "preview": {
-      "gallery": "media/sa-007-85513d7fda581980-gallery.mp4",
-      "detail": "media/sa-007-85513d7fda581980-detail.mp4",
-      "poster": "media/sa-007-85513d7fda581980-poster.jpg",
+      "gallery": "media/sa-007-3ee08355306e021b-gallery.mp4",
+      "detail": "media/sa-007-3ee08355306e021b-detail.mp4",
+      "poster": "media/sa-007-3ee08355306e021b-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -1112,7 +1112,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 67,
-      "fingerprint": "b22b6f76b4700feda6778a47e64f6686c24cd56f2c1357dfe22fafdea874ac23"
+      "fingerprint": "3ee08355306e021b25586c4222d92ba183276ccfb2b1306ce2b3d5f1216ecf2e"
     },
     "provenance": {
       "kind": "original",
@@ -1261,9 +1261,9 @@
     ],
     "recipe": "broadcast-retro",
     "preview": {
-      "gallery": "media/sa-008-92486cb0bf149baf-gallery.mp4",
-      "detail": "media/sa-008-92486cb0bf149baf-detail.mp4",
-      "poster": "media/sa-008-92486cb0bf149baf-poster.jpg",
+      "gallery": "media/sa-008-cd90ab8f10517fe7-gallery.mp4",
+      "detail": "media/sa-008-cd90ab8f10517fe7-detail.mp4",
+      "poster": "media/sa-008-cd90ab8f10517fe7-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -1272,7 +1272,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 54,
-      "fingerprint": "ceb472afb2df2ea18af8615fe9c086ab886af307f52c6a52e158c19c988a3cec"
+      "fingerprint": "cd90ab8f10517fe7326bd4eb903d340fbe1ff3a071035033206981715afdc29e"
     },
     "provenance": {
       "kind": "original",
@@ -1296,7 +1296,7 @@
     "slug": "minimal-object",
     "name": "物件之間",
     "englishName": "Object & Space",
-    "description": "乾淨產品輪廓、柔和接地陰影與極少資訊；細微尺度變化讓材質成為主角。",
+    "description": "乾淨的瓶身輪廓搭配上下浮動；底部接地陰影隨高度同步改變虛實與明暗，少量文字維持留白。",
     "aliases": [
       "object & space",
       "純粹",
@@ -1346,12 +1346,12 @@
       ]
     },
     "motion": {
-      "language": "The product image lifts and gently enlarges; a supporting caption gains opacity after the lift settles.",
+      "language": "Lift and gently enlarge the bottle; its contact shadow moves lower, spreads and softens as the bottle rises, then tightens and darkens as it settles.",
       "intensity": "restrained",
       "pacing": "slow",
       "easing": "periodic cosine zoom and smoothstep lift/caption envelopes",
       "rules": [
-        "The product image lifts and gently enlarges; a supporting caption gains opacity after the lift settles.",
+        "Lift and gently enlarge the bottle; its contact shadow moves lower, spreads and softens as the bottle rises, then tightens and darkens as it settles.",
         "Drive every animation from normalized composition progress; preserve a useful first image and matching loop endpoints."
       ]
     },
@@ -1374,7 +1374,7 @@
     "distinctive": [
       "Single product illustration occupies the right side; distant left copy block and broad negative space preserve calm hierarchy.",
       "Light-weight sans-serif headline with tracked small labels and restrained Chinese copy.",
-      "The product image lifts and gently enlarges; a supporting caption gains opacity after the lift settles."
+      "Lift and gently enlarge the bottle; its contact shadow moves lower, spreads and softens as the bottle rises, then tightens and darkens as it settles."
     ],
     "avoid": [
       "Color-only reinterpretation of another recipe.",
@@ -1402,7 +1402,7 @@
         "所有非刻意裁切的資訊保留至少 7% 安全範圍。"
       ],
       "motion": [
-        "產品圖緩慢抬升與放大，支援文字在物件穩定後浮現。",
+        "瓶子抬升並輕微放大時，底部陰影同步下移、擴散、變淡變虛；瓶子落低時，陰影收窄並加深。",
         "主體全程可見，前31%完成抬升，中段停留，末段緩慢回復。"
       ],
       "media": [
@@ -1425,9 +1425,9 @@
     ],
     "recipe": "minimal-object",
     "preview": {
-      "gallery": "media/sa-009-31cebf2dfe649b66-gallery.mp4",
-      "detail": "media/sa-009-31cebf2dfe649b66-detail.mp4",
-      "poster": "media/sa-009-31cebf2dfe649b66-poster.jpg",
+      "gallery": "media/sa-009-b5eff2cf98a9cc0e-gallery.mp4",
+      "detail": "media/sa-009-b5eff2cf98a9cc0e-detail.mp4",
+      "poster": "media/sa-009-b5eff2cf98a9cc0e-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -1436,7 +1436,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 81,
-      "fingerprint": "827db489347cced728264c89e60025b315b4927a65f19b41af0bc64100299908"
+      "fingerprint": "b5eff2cf98a9cc0e3b5b83ae47da7859afaa7263bc4c9d5134fc019a98457d4d"
     },
     "provenance": {
       "kind": "original",
@@ -1449,7 +1449,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
+      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",
@@ -1586,9 +1586,9 @@
     ],
     "recipe": "data-topography",
     "preview": {
-      "gallery": "media/sa-010-51c1a0f9ace44c4c-gallery.mp4",
-      "detail": "media/sa-010-51c1a0f9ace44c4c-detail.mp4",
-      "poster": "media/sa-010-51c1a0f9ace44c4c-poster.jpg",
+      "gallery": "media/sa-010-d2898a5e2c2e7a66-gallery.mp4",
+      "detail": "media/sa-010-d2898a5e2c2e7a66-detail.mp4",
+      "poster": "media/sa-010-d2898a5e2c2e7a66-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -1597,7 +1597,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 67,
-      "fingerprint": "c6103a1afa3ac06b31d4ef593398e335a8e6592149da6d448bd0ab5ba8fd9a0f"
+      "fingerprint": "d2898a5e2c2e7a664843552bedbdd3d4e0aa14fcacc96a8fca4c47a6b8ddf22d"
     },
     "provenance": {
       "kind": "original",
@@ -1747,9 +1747,9 @@
     ],
     "recipe": "elastic-geometry",
     "preview": {
-      "gallery": "media/sa-011-effae3dd9360f59a-gallery.mp4",
-      "detail": "media/sa-011-effae3dd9360f59a-detail.mp4",
-      "poster": "media/sa-011-effae3dd9360f59a-poster.jpg",
+      "gallery": "media/sa-011-8ddfa9d7f0525b42-gallery.mp4",
+      "detail": "media/sa-011-8ddfa9d7f0525b42-detail.mp4",
+      "poster": "media/sa-011-8ddfa9d7f0525b42-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -1758,7 +1758,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 54,
-      "fingerprint": "09e0e710d401b3a3932817f338081b407c24cb3bf676c7152e6818e9e0590abe"
+      "fingerprint": "8ddfa9d7f0525b42eee09b7588a8264e6f2e291d8c2cf2604e7596869f3aaf28"
     },
     "provenance": {
       "kind": "original",
@@ -1912,9 +1912,9 @@
     ],
     "recipe": "documentary-contact",
     "preview": {
-      "gallery": "media/sa-012-287221ebb0ecbb3d-gallery.mp4",
-      "detail": "media/sa-012-287221ebb0ecbb3d-detail.mp4",
-      "poster": "media/sa-012-287221ebb0ecbb3d-poster.jpg",
+      "gallery": "media/sa-012-79810650bbc54c98-gallery.mp4",
+      "detail": "media/sa-012-79810650bbc54c98-detail.mp4",
+      "poster": "media/sa-012-79810650bbc54c98-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -1923,7 +1923,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 67,
-      "fingerprint": "1c388467e2fc2d55864f1586a75b55c78168a44feeca326f9367f9f83aaafa38"
+      "fingerprint": "79810650bbc54c98d5dcc5aa3978c7bec5ffa9012a075e84b7fc81066d9641bb"
     },
     "provenance": {
       "kind": "original",
@@ -2069,9 +2069,9 @@
     ],
     "recipe": "editorial-split",
     "preview": {
-      "gallery": "media/sa-013-1b1edbf8ac15f50d-gallery.mp4",
-      "detail": "media/sa-013-1b1edbf8ac15f50d-detail.mp4",
-      "poster": "media/sa-013-1b1edbf8ac15f50d-poster.jpg",
+      "gallery": "media/sa-013-651fd12db272e9ea-gallery.mp4",
+      "detail": "media/sa-013-651fd12db272e9ea-detail.mp4",
+      "poster": "media/sa-013-651fd12db272e9ea-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -2080,7 +2080,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "13c86c1b0de28cfd9086720ae467ebaecff22b41af7c053166a777728f85c679"
+      "fingerprint": "651fd12db272e9ea46adef8fd2e07505c930b60e14227b367e690094ece52811"
     },
     "provenance": {
       "kind": "original",
@@ -2228,9 +2228,9 @@
     ],
     "recipe": "editorial-newspaper",
     "preview": {
-      "gallery": "media/sa-014-c2976af9eeb9e2ae-gallery.mp4",
-      "detail": "media/sa-014-c2976af9eeb9e2ae-detail.mp4",
-      "poster": "media/sa-014-c2976af9eeb9e2ae-poster.jpg",
+      "gallery": "media/sa-014-a93c1e6e2a1a18ea-gallery.mp4",
+      "detail": "media/sa-014-a93c1e6e2a1a18ea-detail.mp4",
+      "poster": "media/sa-014-a93c1e6e2a1a18ea-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -2239,7 +2239,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "6d10e92f5cfb8ec6fc104a9e69270310b2a9e89bbd688b85d05ffd320a278736"
+      "fingerprint": "a93c1e6e2a1a18eac9bb25bbe96d9a6530d26bd31e6bb392240fc75687d75345"
     },
     "provenance": {
       "kind": "original",
@@ -2385,9 +2385,9 @@
     ],
     "recipe": "editorial-index",
     "preview": {
-      "gallery": "media/sa-015-5750e18d581d481c-gallery.mp4",
-      "detail": "media/sa-015-5750e18d581d481c-detail.mp4",
-      "poster": "media/sa-015-5750e18d581d481c-poster.jpg",
+      "gallery": "media/sa-015-a955ab71e1a87b9d-gallery.mp4",
+      "detail": "media/sa-015-a955ab71e1a87b9d-detail.mp4",
+      "poster": "media/sa-015-a955ab71e1a87b9d-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -2396,7 +2396,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "5720359129a38aee15d5482c8f814cee525378498c2ccc6626b8fc453f5515a9"
+      "fingerprint": "a955ab71e1a87b9d43a87469d2fde882091a0f9eacccbb10541a9b76d84058f6"
     },
     "provenance": {
       "kind": "original",
@@ -2544,9 +2544,9 @@
     ],
     "recipe": "editorial-vertical",
     "preview": {
-      "gallery": "media/sa-016-e6ce7f566f218a48-gallery.mp4",
-      "detail": "media/sa-016-e6ce7f566f218a48-detail.mp4",
-      "poster": "media/sa-016-e6ce7f566f218a48-poster.jpg",
+      "gallery": "media/sa-016-b43a1784a5dcc36b-gallery.mp4",
+      "detail": "media/sa-016-b43a1784a5dcc36b-detail.mp4",
+      "poster": "media/sa-016-b43a1784a5dcc36b-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -2555,7 +2555,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "18fe0851f3285a5c1f04de49634505f5ca87ac918ac2acbdab2fca1202c9738b"
+      "fingerprint": "b43a1784a5dcc36bb02e479bab9592c84b82daaec449eaf5556f0f7bcf2dd804"
     },
     "provenance": {
       "kind": "original",
@@ -2703,9 +2703,9 @@
     ],
     "recipe": "luxury-botanical",
     "preview": {
-      "gallery": "media/sa-017-6590c9f2f409cc57-gallery.mp4",
-      "detail": "media/sa-017-6590c9f2f409cc57-detail.mp4",
-      "poster": "media/sa-017-6590c9f2f409cc57-poster.jpg",
+      "gallery": "media/sa-017-dd2be44e5682c6ec-gallery.mp4",
+      "detail": "media/sa-017-dd2be44e5682c6ec-detail.mp4",
+      "poster": "media/sa-017-dd2be44e5682c6ec-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -2714,7 +2714,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "ac1cfaced242c64afbd76d3817e6371b343ec06276103e78352e6e3936f6d17f"
+      "fingerprint": "dd2be44e5682c6ec59a2aa4cda4c26aec75ab2707fac0f98cf0922d274d07aee"
     },
     "provenance": {
       "kind": "original",
@@ -2860,9 +2860,9 @@
     ],
     "recipe": "luxury-jewel",
     "preview": {
-      "gallery": "media/sa-018-02171f3286957e54-gallery.mp4",
-      "detail": "media/sa-018-02171f3286957e54-detail.mp4",
-      "poster": "media/sa-018-02171f3286957e54-poster.jpg",
+      "gallery": "media/sa-018-777238ed033bcb89-gallery.mp4",
+      "detail": "media/sa-018-777238ed033bcb89-detail.mp4",
+      "poster": "media/sa-018-777238ed033bcb89-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -2871,7 +2871,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "8426f99ecb02c98de19e78d180c9d2f72bbeeee00308dfee3c2d99683c44851c"
+      "fingerprint": "777238ed033bcb898ab760c00d3c20443527fb1186e13725bd30fc7153c748a9"
     },
     "provenance": {
       "kind": "original",
@@ -3020,9 +3020,9 @@
     ],
     "recipe": "luxury-diptych",
     "preview": {
-      "gallery": "media/sa-019-f2866c50049922ea-gallery.mp4",
-      "detail": "media/sa-019-f2866c50049922ea-detail.mp4",
-      "poster": "media/sa-019-f2866c50049922ea-poster.jpg",
+      "gallery": "media/sa-019-79cd4d4d0e20a32d-gallery.mp4",
+      "detail": "media/sa-019-79cd4d4d0e20a32d-detail.mp4",
+      "poster": "media/sa-019-79cd4d4d0e20a32d-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -3031,7 +3031,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "ff27b010f5cbc640a2ec7dd16de28253eff347abebd277d65ed57b655022fe44"
+      "fingerprint": "79cd4d4d0e20a32d27a8fa7a9e4f24d53ac0a21bc290dcc870a97e745e1ba340"
     },
     "provenance": {
       "kind": "original",
@@ -3177,9 +3177,9 @@
     ],
     "recipe": "luxury-salon",
     "preview": {
-      "gallery": "media/sa-020-5d2ffd64802b91ae-gallery.mp4",
-      "detail": "media/sa-020-5d2ffd64802b91ae-detail.mp4",
-      "poster": "media/sa-020-5d2ffd64802b91ae-poster.jpg",
+      "gallery": "media/sa-020-70d9696f2c453cee-gallery.mp4",
+      "detail": "media/sa-020-70d9696f2c453cee-detail.mp4",
+      "poster": "media/sa-020-70d9696f2c453cee-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -3188,7 +3188,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "d43c0a92087e78c1b9c16774d44041d4a669ee18d7a473f8465a6ea9cf4f6f87"
+      "fingerprint": "70d9696f2c453cee8b7821b31309d8605cd24844e0aadb9878335f09d6061c9a"
     },
     "provenance": {
       "kind": "original",
@@ -3334,9 +3334,9 @@
     ],
     "recipe": "cinematic-starfield",
     "preview": {
-      "gallery": "media/sa-021-8404e502015999e3-gallery.mp4",
-      "detail": "media/sa-021-8404e502015999e3-detail.mp4",
-      "poster": "media/sa-021-8404e502015999e3-poster.jpg",
+      "gallery": "media/sa-021-d4b8e606c1f6dd65-gallery.mp4",
+      "detail": "media/sa-021-d4b8e606c1f6dd65-detail.mp4",
+      "poster": "media/sa-021-d4b8e606c1f6dd65-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -3345,7 +3345,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "366b0cf5ade2b317f52ef24014f6bd8c1ef69217828ad562a18faa020a5fb068"
+      "fingerprint": "d4b8e606c1f6dd65e2305be80fea586315c7e0fdac6eb20ff14f44ff2be87c3b"
     },
     "provenance": {
       "kind": "original",
@@ -3493,9 +3493,9 @@
     ],
     "recipe": "cinematic-projector",
     "preview": {
-      "gallery": "media/sa-022-f620627680812912-gallery.mp4",
-      "detail": "media/sa-022-f620627680812912-detail.mp4",
-      "poster": "media/sa-022-f620627680812912-poster.jpg",
+      "gallery": "media/sa-022-a1acc03e2d45fc07-gallery.mp4",
+      "detail": "media/sa-022-a1acc03e2d45fc07-detail.mp4",
+      "poster": "media/sa-022-a1acc03e2d45fc07-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -3504,7 +3504,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "f62062768081291268d059b5160c4d4f0480c384eabc6341dcbd62ce95edf804"
+      "fingerprint": "a1acc03e2d45fc0756a1c2c4346708b540bf2f0cade6525db1be321cddbe82b5"
     },
     "provenance": {
       "kind": "original",
@@ -3650,9 +3650,9 @@
     ],
     "recipe": "cinematic-spotlight",
     "preview": {
-      "gallery": "media/sa-023-041d21b72aac973d-gallery.mp4",
-      "detail": "media/sa-023-041d21b72aac973d-detail.mp4",
-      "poster": "media/sa-023-041d21b72aac973d-poster.jpg",
+      "gallery": "media/sa-023-57754447a5c304cf-gallery.mp4",
+      "detail": "media/sa-023-57754447a5c304cf-detail.mp4",
+      "poster": "media/sa-023-57754447a5c304cf-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -3661,7 +3661,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "041d21b72aac973d4f183462aa375fa190d239baf8355611f95b3beec1f4ab3f"
+      "fingerprint": "57754447a5c304cf91a999715a41c68de0023e50fa4ac10570a2541751fea968"
     },
     "provenance": {
       "kind": "original",
@@ -3807,9 +3807,9 @@
     ],
     "recipe": "cinematic-strata",
     "preview": {
-      "gallery": "media/sa-024-51980b33a792a6a4-gallery.mp4",
-      "detail": "media/sa-024-51980b33a792a6a4-detail.mp4",
-      "poster": "media/sa-024-51980b33a792a6a4-poster.jpg",
+      "gallery": "media/sa-024-01fa51cd8329bab7-gallery.mp4",
+      "detail": "media/sa-024-01fa51cd8329bab7-detail.mp4",
+      "poster": "media/sa-024-01fa51cd8329bab7-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -3818,7 +3818,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "51980b33a792a6a4ec687cb19954ee52821786e1e3bf1beff64962982a22e1a0"
+      "fingerprint": "01fa51cd8329bab72632fb5b675ffac869ca8e6e5b97ea8ca67d6ac2cc35322b"
     },
     "provenance": {
       "kind": "original",
@@ -3964,9 +3964,9 @@
     ],
     "recipe": "performance-track",
     "preview": {
-      "gallery": "media/sa-025-e19357fb570362bc-gallery.mp4",
-      "detail": "media/sa-025-e19357fb570362bc-detail.mp4",
-      "poster": "media/sa-025-e19357fb570362bc-poster.jpg",
+      "gallery": "media/sa-025-19b2620350338bad-gallery.mp4",
+      "detail": "media/sa-025-19b2620350338bad-detail.mp4",
+      "poster": "media/sa-025-19b2620350338bad-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -3975,7 +3975,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "64a9af948098f1a1a4b3667cc7f0456c1b13405345e550c8e62bb33c42483f98"
+      "fingerprint": "19b2620350338bad9c65fd86274fa67a2b1a9e9291c26791acae7b39ae945fb7"
     },
     "provenance": {
       "kind": "original",
@@ -4121,9 +4121,9 @@
     ],
     "recipe": "performance-impact",
     "preview": {
-      "gallery": "media/sa-026-13b0835aab90be90-gallery.mp4",
-      "detail": "media/sa-026-13b0835aab90be90-detail.mp4",
-      "poster": "media/sa-026-13b0835aab90be90-poster.jpg",
+      "gallery": "media/sa-026-8ef22b9b2609facc-gallery.mp4",
+      "detail": "media/sa-026-8ef22b9b2609facc-detail.mp4",
+      "poster": "media/sa-026-8ef22b9b2609facc-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -4132,7 +4132,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "318c6974c450c8844c995c66196af4bd60ee63e0ab39e4e50fd5371daeedf59f"
+      "fingerprint": "8ef22b9b2609facc48a2660e0f78c597a800f16d1e5af0ac29e49e073125b184"
     },
     "provenance": {
       "kind": "original",
@@ -4278,9 +4278,9 @@
     ],
     "recipe": "performance-ascent",
     "preview": {
-      "gallery": "media/sa-027-0524d1ecee245fbf-gallery.mp4",
-      "detail": "media/sa-027-0524d1ecee245fbf-detail.mp4",
-      "poster": "media/sa-027-0524d1ecee245fbf-poster.jpg",
+      "gallery": "media/sa-027-3b42e893a1a2d742-gallery.mp4",
+      "detail": "media/sa-027-3b42e893a1a2d742-detail.mp4",
+      "poster": "media/sa-027-3b42e893a1a2d742-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -4289,7 +4289,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "cfcd8229e41408ae5638f63d28601d5ab2fa73461582bd4f7660951a12a18407"
+      "fingerprint": "3b42e893a1a2d74281074d6c37cac8205aae54314d3823be390098ade4d7c912"
     },
     "provenance": {
       "kind": "original",
@@ -4435,9 +4435,9 @@
     ],
     "recipe": "performance-court",
     "preview": {
-      "gallery": "media/sa-028-9efaf8c32aa0ceda-gallery.mp4",
-      "detail": "media/sa-028-9efaf8c32aa0ceda-detail.mp4",
-      "poster": "media/sa-028-9efaf8c32aa0ceda-poster.jpg",
+      "gallery": "media/sa-028-aa14b33e7fba6c9a-gallery.mp4",
+      "detail": "media/sa-028-aa14b33e7fba6c9a-detail.mp4",
+      "poster": "media/sa-028-aa14b33e7fba6c9a-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -4446,7 +4446,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "fec25951df5a9d6df7d8200bf3f018c97274e47edb4bec1091ad3f37e3488028"
+      "fingerprint": "aa14b33e7fba6c9a011ad969b5e39087cb1471d2b368ebce29715fe1a7c0a003"
     },
     "provenance": {
       "kind": "original",
@@ -4592,9 +4592,9 @@
     ],
     "recipe": "industrial-exploded",
     "preview": {
-      "gallery": "media/sa-029-357b80ec00c61140-gallery.mp4",
-      "detail": "media/sa-029-357b80ec00c61140-detail.mp4",
-      "poster": "media/sa-029-357b80ec00c61140-poster.jpg",
+      "gallery": "media/sa-029-cfa760ac21a92240-gallery.mp4",
+      "detail": "media/sa-029-cfa760ac21a92240-detail.mp4",
+      "poster": "media/sa-029-cfa760ac21a92240-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -4603,7 +4603,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "297a5a1642202480f5d51766f9479b63927547bae8ec32f4ee444c380bc943b7"
+      "fingerprint": "cfa760ac21a922404dd865496f6d7dd81e3c2a0e026361a4621345bb7f73302d"
     },
     "provenance": {
       "kind": "original",
@@ -4749,9 +4749,9 @@
     ],
     "recipe": "industrial-console",
     "preview": {
-      "gallery": "media/sa-030-265bcf855071581c-gallery.mp4",
-      "detail": "media/sa-030-265bcf855071581c-detail.mp4",
-      "poster": "media/sa-030-265bcf855071581c-poster.jpg",
+      "gallery": "media/sa-030-30486eed3a00ec58-gallery.mp4",
+      "detail": "media/sa-030-30486eed3a00ec58-detail.mp4",
+      "poster": "media/sa-030-30486eed3a00ec58-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -4760,7 +4760,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "59a1ce25c5d7839879ffeceb2059744b05a2160d9fc617660d62e1db1a653eaa"
+      "fingerprint": "30486eed3a00ec588a511e1b52e31060d15a37afc36af6117b0aff9216b2f141"
     },
     "provenance": {
       "kind": "original",
@@ -4906,9 +4906,9 @@
     ],
     "recipe": "industrial-axonometric",
     "preview": {
-      "gallery": "media/sa-031-21c9b80500974bf3-gallery.mp4",
-      "detail": "media/sa-031-21c9b80500974bf3-detail.mp4",
-      "poster": "media/sa-031-21c9b80500974bf3-poster.jpg",
+      "gallery": "media/sa-031-03b9fa61f315c9ff-gallery.mp4",
+      "detail": "media/sa-031-03b9fa61f315c9ff-detail.mp4",
+      "poster": "media/sa-031-03b9fa61f315c9ff-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -4917,7 +4917,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "a61f6c6942115254e724d3a25e263a373b62fe8db598b7a3b1938f8323eafacc"
+      "fingerprint": "03b9fa61f315c9ff43b00ba1d6e0e47fc27ef6037f7b81fd1f1651cbec304cfd"
     },
     "provenance": {
       "kind": "original",
@@ -5063,9 +5063,9 @@
     ],
     "recipe": "industrial-scan",
     "preview": {
-      "gallery": "media/sa-032-ff4d260fb90e842e-gallery.mp4",
-      "detail": "media/sa-032-ff4d260fb90e842e-detail.mp4",
-      "poster": "media/sa-032-ff4d260fb90e842e-poster.jpg",
+      "gallery": "media/sa-032-3e425db1c3e44145-gallery.mp4",
+      "detail": "media/sa-032-3e425db1c3e44145-detail.mp4",
+      "poster": "media/sa-032-3e425db1c3e44145-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -5074,7 +5074,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "29b3c44b8a779932f58d729ddb2bb15680398c07af5abd39e07105ad47d38b6b"
+      "fingerprint": "3e425db1c3e4414592a3b2acd26b989d04f795cc9a606ddc17e34fed07125ac3"
     },
     "provenance": {
       "kind": "original",
@@ -5220,9 +5220,9 @@
     ],
     "recipe": "spatial-planes",
     "preview": {
-      "gallery": "media/sa-033-b7c9dbd8b308df0a-gallery.mp4",
-      "detail": "media/sa-033-b7c9dbd8b308df0a-detail.mp4",
-      "poster": "media/sa-033-b7c9dbd8b308df0a-poster.jpg",
+      "gallery": "media/sa-033-23b6b19ee25d6e1a-gallery.mp4",
+      "detail": "media/sa-033-23b6b19ee25d6e1a-detail.mp4",
+      "poster": "media/sa-033-23b6b19ee25d6e1a-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -5231,7 +5231,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "d70fd1c0580c307000ef8f7ac9e0e0d6158b3b129fecacbd2cd33c17ea83f064"
+      "fingerprint": "23b6b19ee25d6e1a4aa8c81ba2a2b2793f20fa32251fec1076996136dbd16e8a"
     },
     "provenance": {
       "kind": "original",
@@ -5377,9 +5377,9 @@
     ],
     "recipe": "spatial-voxels",
     "preview": {
-      "gallery": "media/sa-034-432c0df666ab475f-gallery.mp4",
-      "detail": "media/sa-034-432c0df666ab475f-detail.mp4",
-      "poster": "media/sa-034-432c0df666ab475f-poster.jpg",
+      "gallery": "media/sa-034-ca0810bc00b719bf-gallery.mp4",
+      "detail": "media/sa-034-ca0810bc00b719bf-detail.mp4",
+      "poster": "media/sa-034-ca0810bc00b719bf-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -5388,7 +5388,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "215be4399fd19890cad93e11ec280bdc3a7ce8077ef86c58c269b9f04c663a15"
+      "fingerprint": "ca0810bc00b719bf875e6878cafbd8a19d5b6dbd2cfab1fd30c68e176166fb2f"
     },
     "provenance": {
       "kind": "original",
@@ -5534,9 +5534,9 @@
     ],
     "recipe": "spatial-city",
     "preview": {
-      "gallery": "media/sa-035-4ddbc693616c8d87-gallery.mp4",
-      "detail": "media/sa-035-4ddbc693616c8d87-detail.mp4",
-      "poster": "media/sa-035-4ddbc693616c8d87-poster.jpg",
+      "gallery": "media/sa-035-37383c6b809ea8d4-gallery.mp4",
+      "detail": "media/sa-035-37383c6b809ea8d4-detail.mp4",
+      "poster": "media/sa-035-37383c6b809ea8d4-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -5545,7 +5545,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "93d68eb373db4279b47eea77ea57d6082fdef537af91b37d810e03c7df4ef86f"
+      "fingerprint": "37383c6b809ea8d4d67a7dee0e9d861b5c06a4b28050644d9331cbf00e539238"
     },
     "provenance": {
       "kind": "original",
@@ -5691,9 +5691,9 @@
     ],
     "recipe": "spatial-tunnel",
     "preview": {
-      "gallery": "media/sa-036-7d08e737b59fd6aa-gallery.mp4",
-      "detail": "media/sa-036-7d08e737b59fd6aa-detail.mp4",
-      "poster": "media/sa-036-7d08e737b59fd6aa-poster.jpg",
+      "gallery": "media/sa-036-9f4efd419c4d1fa9-gallery.mp4",
+      "detail": "media/sa-036-9f4efd419c4d1fa9-detail.mp4",
+      "poster": "media/sa-036-9f4efd419c4d1fa9-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -5702,7 +5702,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "7d08e737b59fd6aac0ca7217ae1f9be9da41b68fdef0edb6f43221734b69c6dc"
+      "fingerprint": "9f4efd419c4d1fa9662908284fea67a717d06c4b2080ada0a9af77692027cd6a"
     },
     "provenance": {
       "kind": "original",
@@ -5850,9 +5850,9 @@
     ],
     "recipe": "collage-strips",
     "preview": {
-      "gallery": "media/sa-037-91442e2dd10237a8-gallery.mp4",
-      "detail": "media/sa-037-91442e2dd10237a8-detail.mp4",
-      "poster": "media/sa-037-91442e2dd10237a8-poster.jpg",
+      "gallery": "media/sa-037-ba81d8ef296c9134-gallery.mp4",
+      "detail": "media/sa-037-ba81d8ef296c9134-detail.mp4",
+      "poster": "media/sa-037-ba81d8ef296c9134-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -5861,7 +5861,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "d3f0f3a312378685a5c8acdd4c166a116c68d91338173d0b110247b3908c48bd"
+      "fingerprint": "ba81d8ef296c913475a27773b6c9267915a455d78c0e78b63dc1098f4e462d57"
     },
     "provenance": {
       "kind": "original",
@@ -5885,7 +5885,7 @@
     "slug": "collage-pinboard",
     "name": "靈感牆",
     "englishName": "Connections Collected",
-    "description": "三張不整齊影像紙卡連於紅線與軟木狀點紋，左下彩色筆記。 紙卡以階梯化角度錯拍落定，筆記紙條輕微傾斜。",
+    "description": "三張影像紙卡依序落上軟木板的固定位置，清楚落定後以錯落角度排列；紅線、點紋與左下筆記保持穩定。",
     "aliases": [
       "Connections Collected",
       "collage-pinboard"
@@ -5933,12 +5933,12 @@
       ]
     },
     "motion": {
-      "language": "Image cards settle through quantized corner rotations on staggered envelopes; the note tilts slightly.",
+      "language": "Drop the three image cards onto their pinboard positions in sequence; each card settles with a clear landing and a restrained final tilt.",
       "intensity": "moderate",
       "pacing": "measured",
       "easing": "quantized steps derived from normalized smoothstep or cosine progress",
       "rules": [
-        "Image cards settle through quantized corner rotations on staggered envelopes; the note tilts slightly.",
+        "Drop the three image cards onto their pinboard positions in sequence; each card settles with a clear landing and a restrained final tilt.",
         "Derive every rendered state from normalized composition progress; never use CSS keyframes or real-time randomness."
       ]
     },
@@ -5960,7 +5960,7 @@
     "distinctive": [
       "Three uneven paper-backed image cards overlap a cork-like dot field and a red connecting string; a colored note sits lower-left.",
       "A serif upper heading contrasts with image labels in monospace and a bold paper-note caption.",
-      "Image cards settle through quantized corner rotations on staggered envelopes; the note tilts slightly."
+      "Drop the three image cards onto their pinboard positions in sequence; each card settles with a clear landing and a restrained final tilt."
     ],
     "avoid": [
       "Do not replace the distinctive composition with a centered title over a generic gradient.",
@@ -5988,7 +5988,7 @@
         "三張不整齊影像紙卡連於紅線與軟木狀點紋，左下彩色筆記。"
       ],
       "motion": [
-        "紙卡以階梯化角度錯拍落定，筆記紙條輕微傾斜。"
+        "三張影像卡依序落上軟木板的固定位置，清楚落定後保留克制的傾角。"
       ],
       "media": [
         "使用原創程序化插畫素材，不宣稱為實拍攝影；裁切保持比例。"
@@ -6011,9 +6011,9 @@
     ],
     "recipe": "collage-pinboard",
     "preview": {
-      "gallery": "media/sa-038-b903805b59b5697c-gallery.mp4",
-      "detail": "media/sa-038-b903805b59b5697c-detail.mp4",
-      "poster": "media/sa-038-b903805b59b5697c-poster.jpg",
+      "gallery": "media/sa-038-e36a3c79971b1beb-gallery.mp4",
+      "detail": "media/sa-038-e36a3c79971b1beb-detail.mp4",
+      "poster": "media/sa-038-e36a3c79971b1beb-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -6022,7 +6022,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "e22b4149cb994af674c181dff7d2b886602e49cc45f1957a7add220ccd9f38cc"
+      "fingerprint": "e36a3c79971b1bebdb37b1bdd8a223d5a2e4bbbd31f9052c651dd79a00eb0df8"
     },
     "provenance": {
       "kind": "original",
@@ -6035,7 +6035,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
+      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",
@@ -6168,9 +6168,9 @@
     ],
     "recipe": "collage-ransom",
     "preview": {
-      "gallery": "media/sa-039-02a5a636ba79f826-gallery.mp4",
-      "detail": "media/sa-039-02a5a636ba79f826-detail.mp4",
-      "poster": "media/sa-039-02a5a636ba79f826-poster.jpg",
+      "gallery": "media/sa-039-a2b4426531d5100d-gallery.mp4",
+      "detail": "media/sa-039-a2b4426531d5100d-detail.mp4",
+      "poster": "media/sa-039-a2b4426531d5100d-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -6179,7 +6179,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "5792d6267c563fcfe9b1058cf9369b0cda93f1d63b4e0366855a585a680a611a"
+      "fingerprint": "a2b4426531d5100db4b5a5f07c7d9940c5c9aeee5d2f95ea7389d80e4285c402"
     },
     "provenance": {
       "kind": "original",
@@ -6327,9 +6327,9 @@
     ],
     "recipe": "collage-herbarium",
     "preview": {
-      "gallery": "media/sa-040-86052fed1b85c10d-gallery.mp4",
-      "detail": "media/sa-040-86052fed1b85c10d-detail.mp4",
-      "poster": "media/sa-040-86052fed1b85c10d-poster.jpg",
+      "gallery": "media/sa-040-885b601ec57708ca-gallery.mp4",
+      "detail": "media/sa-040-885b601ec57708ca-detail.mp4",
+      "poster": "media/sa-040-885b601ec57708ca-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -6338,7 +6338,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "ade9173c3759ca48ce909605fb4b6e6a089107c387ecc04d373490c91dc02cb9"
+      "fingerprint": "885b601ec57708cab8b63766339a85d3bc6152dfff32a7b96449ceb3dd145d7e"
     },
     "provenance": {
       "kind": "original",
@@ -6484,9 +6484,9 @@
     ],
     "recipe": "retro-sunburst",
     "preview": {
-      "gallery": "media/sa-041-24d32c207fa6df48-gallery.mp4",
-      "detail": "media/sa-041-24d32c207fa6df48-detail.mp4",
-      "poster": "media/sa-041-24d32c207fa6df48-poster.jpg",
+      "gallery": "media/sa-041-87bdf34e5232d431-gallery.mp4",
+      "detail": "media/sa-041-87bdf34e5232d431-detail.mp4",
+      "poster": "media/sa-041-87bdf34e5232d431-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -6495,7 +6495,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "24d32c207fa6df481033b96b1d3c527b582eef0da8119f3180481f3f5a4a2164"
+      "fingerprint": "87bdf34e5232d4317ef232a027b993dc112f338ec1ac023ded82f9e8e0498cde"
     },
     "provenance": {
       "kind": "original",
@@ -6519,7 +6519,7 @@
     "slug": "retro-pixel",
     "name": "像素探險",
     "englishName": "New Adventures",
-    "description": "原創像素平台場景包含階梯、旗幟、方塊角色與分數標籤。 角色以整數像素步進移動，完成封閉跳躍，背景保持固定。",
+    "description": "像素角色依序跳上三個階梯方塊，每次都清楚踏穩磚面；場景固定，完成後回到起點循環。",
     "aliases": [
       "New Adventures",
       "retro-pixel"
@@ -6567,12 +6567,12 @@
       ]
     },
     "motion": {
-      "language": "A block character moves on integer pixel steps and performs a single closed jump; scenery stays fixed.",
+      "language": "The pixel character makes three distinct jumps, landing with both feet centered on each of the three ascending platforms before looping back.",
       "intensity": "moderate",
       "pacing": "measured",
       "easing": "quantized steps derived from normalized smoothstep or cosine progress",
       "rules": [
-        "A block character moves on integer pixel steps and performs a single closed jump; scenery stays fixed.",
+        "The pixel character makes three distinct jumps, landing with both feet centered on each of the three ascending platforms before looping back.",
         "Derive every rendered state from normalized composition progress; never use CSS keyframes or real-time randomness."
       ]
     },
@@ -6594,7 +6594,7 @@
     "distinctive": [
       "A flat original pixel platform landscape contains stepping platforms, a flag, a block character, and top score labels.",
       "Bold Courier-style text establishes game-like headers without importing third-party game art.",
-      "A block character moves on integer pixel steps and performs a single closed jump; scenery stays fixed."
+      "The pixel character makes three distinct jumps, landing with both feet centered on each of the three ascending platforms before looping back."
     ],
     "avoid": [
       "Do not replace the distinctive composition with a centered title over a generic gradient.",
@@ -6618,7 +6618,7 @@
         "原創像素平台場景包含階梯、旗幟、方塊角色與分數標籤。"
       ],
       "motion": [
-        "角色以整數像素步進移動，完成封閉跳躍，背景保持固定。"
+        "像素角色依序跳上三個階梯平台，每次都讓雙腳明確落在磚面上，再回到起點。"
       ],
       "media": [
         "使用原創固定公式SVG圖形，視覺深度僅為圖形示意。"
@@ -6641,9 +6641,9 @@
     ],
     "recipe": "retro-pixel",
     "preview": {
-      "gallery": "media/sa-042-131352e6b0345670-gallery.mp4",
-      "detail": "media/sa-042-131352e6b0345670-detail.mp4",
-      "poster": "media/sa-042-131352e6b0345670-poster.jpg",
+      "gallery": "media/sa-042-9f37707a091637bf-gallery.mp4",
+      "detail": "media/sa-042-9f37707a091637bf-detail.mp4",
+      "poster": "media/sa-042-9f37707a091637bf-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -6652,7 +6652,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "1542e06e73d8fb243e0980905bcadb5fae81ff684c86bdfc857d0aaf691f9562"
+      "fingerprint": "9f37707a091637bf85a35897bf504397a5b1e7410b15a2540c8f9f01e83f2b39"
     },
     "provenance": {
       "kind": "original",
@@ -6665,7 +6665,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
+      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",
@@ -6798,9 +6798,9 @@
     ],
     "recipe": "retro-teletext",
     "preview": {
-      "gallery": "media/sa-043-5749eb63b77ed867-gallery.mp4",
-      "detail": "media/sa-043-5749eb63b77ed867-detail.mp4",
-      "poster": "media/sa-043-5749eb63b77ed867-poster.jpg",
+      "gallery": "media/sa-043-bf7be9989b43dfae-gallery.mp4",
+      "detail": "media/sa-043-bf7be9989b43dfae-detail.mp4",
+      "poster": "media/sa-043-bf7be9989b43dfae-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -6809,7 +6809,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "c4976b2d5c423e40b95b9d800388d79a30f0dbb99944d834e1fa2af4faa61476"
+      "fingerprint": "bf7be9989b43dfaee9acdcfda277adba40da193b3122ce9b8a4927364224d156"
     },
     "provenance": {
       "kind": "original",
@@ -6955,9 +6955,9 @@
     ],
     "recipe": "retro-halftone",
     "preview": {
-      "gallery": "media/sa-044-773908e8df805e37-gallery.mp4",
-      "detail": "media/sa-044-773908e8df805e37-detail.mp4",
-      "poster": "media/sa-044-773908e8df805e37-poster.jpg",
+      "gallery": "media/sa-044-25cf128c07d977dc-gallery.mp4",
+      "detail": "media/sa-044-25cf128c07d977dc-detail.mp4",
+      "poster": "media/sa-044-25cf128c07d977dc-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -6966,7 +6966,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "773908e8df805e3726be8a27c010ce6f994f3f69a13897242944a2bfcbb123a0"
+      "fingerprint": "25cf128c07d977dcbeb454e026e56272c905bdaa0fb1579b74b0ad387c577edb"
     },
     "provenance": {
       "kind": "original",
@@ -7038,12 +7038,12 @@
       ]
     },
     "motion": {
-      "language": "The product crop pushes in while both measurement brackets grow outward and settle back.",
+      "language": "The product crop pushes in as the left vertical and bottom horizontal measurement brackets visibly draw outward, hold, and retract together.",
       "intensity": "restrained",
       "pacing": "slow",
       "easing": "normalized smoothstep hold/return envelopes; sine/cosine for explicitly continuous motion",
       "rules": [
-        "The product crop pushes in while both measurement brackets grow outward and settle back.",
+        "The product crop pushes in as the left vertical and bottom horizontal measurement brackets visibly draw outward, hold, and retract together.",
         "Derive every rendered state from normalized composition progress; never use CSS keyframes or real-time randomness."
       ]
     },
@@ -7065,7 +7065,7 @@
     "distinctive": [
       "One centered product illustration carries distant width and height brackets with corner metadata and a low side title.",
       "Light-weight sans-serif title pairs with small monospaced dimensions and specimen labels.",
-      "The product crop pushes in while both measurement brackets grow outward and settle back."
+      "The product crop pushes in as the left vertical and bottom horizontal measurement brackets visibly draw outward, hold, and retract together."
     ],
     "avoid": [
       "Do not replace the distinctive composition with a centered title over a generic gradient.",
@@ -7091,7 +7091,7 @@
         "單一置中產品圖配遠距寬高括號、角落小字與側邊低位標題。"
       ],
       "motion": [
-        "產品影像推近，兩組尺標向外生長後回復。"
+        "產品畫面推近時，左側垂直與下方水平尺標依序生長、停留再收回。"
       ],
       "media": [
         "使用原創程序化插畫素材，不宣稱為實拍攝影；裁切保持比例。"
@@ -7114,9 +7114,9 @@
     ],
     "recipe": "minimal-specimen",
     "preview": {
-      "gallery": "media/sa-045-8412f40159f29078-gallery.mp4",
-      "detail": "media/sa-045-8412f40159f29078-detail.mp4",
-      "poster": "media/sa-045-8412f40159f29078-poster.jpg",
+      "gallery": "media/sa-045-cb13e2947a77b8e3-gallery.mp4",
+      "detail": "media/sa-045-cb13e2947a77b8e3-detail.mp4",
+      "poster": "media/sa-045-cb13e2947a77b8e3-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -7125,7 +7125,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "8412f40159f29078ea1e32291b91a226b16310678b810b143c0ebfb66967ab5f"
+      "fingerprint": "cb13e2947a77b8e35ecdec87cb48d60282f143731174468d8818a7173705e42e"
     },
     "provenance": {
       "kind": "original",
@@ -7138,7 +7138,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
+      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",
@@ -7271,9 +7271,9 @@
     ],
     "recipe": "minimal-zen",
     "preview": {
-      "gallery": "media/sa-046-5081bb79beca97b2-gallery.mp4",
-      "detail": "media/sa-046-5081bb79beca97b2-detail.mp4",
-      "poster": "media/sa-046-5081bb79beca97b2-poster.jpg",
+      "gallery": "media/sa-046-342c4ea6ddf50c2d-gallery.mp4",
+      "detail": "media/sa-046-342c4ea6ddf50c2d-detail.mp4",
+      "poster": "media/sa-046-342c4ea6ddf50c2d-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -7282,7 +7282,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "ef7b5fc35c4da05d37bad06842578267b5cc4cbaf95a57b2b45fb0be4819905e"
+      "fingerprint": "342c4ea6ddf50c2d8470d1e93f78addc45b03d0d36c9c336753f870c5981c303"
     },
     "provenance": {
       "kind": "original",
@@ -7428,9 +7428,9 @@
     ],
     "recipe": "minimal-monoline",
     "preview": {
-      "gallery": "media/sa-047-7d598e4c0ddba979-gallery.mp4",
-      "detail": "media/sa-047-7d598e4c0ddba979-detail.mp4",
-      "poster": "media/sa-047-7d598e4c0ddba979-poster.jpg",
+      "gallery": "media/sa-047-c0ba4d4208fe28fe-gallery.mp4",
+      "detail": "media/sa-047-c0ba4d4208fe28fe-detail.mp4",
+      "poster": "media/sa-047-c0ba4d4208fe28fe-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -7439,7 +7439,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "1c982a54e8bdb56ef98f1ae24c0b8738ac7410957c21525c5dc69f87e3722d7b"
+      "fingerprint": "c0ba4d4208fe28fecc874484e89e283644bdfa8af5162295d4e7eaa864080029"
     },
     "provenance": {
       "kind": "original",
@@ -7585,9 +7585,9 @@
     ],
     "recipe": "data-radial",
     "preview": {
-      "gallery": "media/sa-048-53187499c86266ec-gallery.mp4",
-      "detail": "media/sa-048-53187499c86266ec-detail.mp4",
-      "poster": "media/sa-048-53187499c86266ec-poster.jpg",
+      "gallery": "media/sa-048-b07a9a98f4341498-gallery.mp4",
+      "detail": "media/sa-048-b07a9a98f4341498-detail.mp4",
+      "poster": "media/sa-048-b07a9a98f4341498-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -7596,7 +7596,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "c1da0b393550a16a6430b1c8c2162c0d2fe8ff09b2f427c66f843537848be31c"
+      "fingerprint": "b07a9a98f434149841a4bfbb2474d584d7a63d4e27275412dde0f7507dbb8e3b"
     },
     "provenance": {
       "kind": "original",
@@ -7742,9 +7742,9 @@
     ],
     "recipe": "data-flow",
     "preview": {
-      "gallery": "media/sa-049-7f1e45a757b0632f-gallery.mp4",
-      "detail": "media/sa-049-7f1e45a757b0632f-detail.mp4",
-      "poster": "media/sa-049-7f1e45a757b0632f-poster.jpg",
+      "gallery": "media/sa-049-99ef642451113877-gallery.mp4",
+      "detail": "media/sa-049-99ef642451113877-detail.mp4",
+      "poster": "media/sa-049-99ef642451113877-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -7753,7 +7753,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "b4bb08e070bdf0ea47ab627ac8153da569320d45d5a8fd57d9c7362c934d9cb4"
+      "fingerprint": "99ef6424511138778d0413691b477f1d246eabcb18d9dd216bef9ff72366fa5d"
     },
     "provenance": {
       "kind": "original",
@@ -7777,7 +7777,7 @@
     "slug": "data-timeline",
     "name": "時序河流",
     "englishName": "The Shape of Change",
-    "description": "四層河流狀帶佔據下方，六格時間軸與游標註記支撐。 曲帶邊界輕微呼吸，垂直游標沿時間軸慢移再回復。",
+    "description": "四層河流狀曲帶柔和舒張與回收，六格時間軸與游標註記支撐。曲帶整體循環呼吸，垂直游標沿時間軸慢移再回復。",
     "aliases": [
       "The Shape of Change",
       "data-timeline"
@@ -7825,12 +7825,12 @@
       ]
     },
     "motion": {
-      "language": "Two stream boundaries drift slightly; a vertical cursor moves slowly along the time axis and returns through a closed cosine cycle.",
+      "language": "Four layered stream curves gently expand and settle together in a smooth breathing cycle; a vertical cursor moves slowly along the time axis and returns.",
       "intensity": "moderate",
       "pacing": "measured",
       "easing": "normalized smoothstep hold/return envelopes; sine/cosine for explicitly continuous motion",
       "rules": [
-        "Two stream boundaries drift slightly; a vertical cursor moves slowly along the time axis and returns through a closed cosine cycle.",
+        "Four layered stream curves gently expand and settle together in a smooth breathing cycle; a vertical cursor moves slowly along the time axis and returns.",
         "Derive every rendered state from normalized composition progress; never use CSS keyframes or real-time randomness."
       ]
     },
@@ -7852,7 +7852,7 @@
     "distinctive": [
       "Four layered streamgraph-like bands span the lower field beneath an open title; a six-mark baseline grounds an annotated cursor.",
       "A large calm sans-serif heading pairs with short Chinese copy and monospaced quarter labels.",
-      "Two stream boundaries drift slightly; a vertical cursor moves slowly along the time axis and returns through a closed cosine cycle."
+      "Four layered stream curves gently expand and settle together in a smooth breathing cycle; a vertical cursor moves slowly along the time axis and returns."
     ],
     "avoid": [
       "Do not replace the distinctive composition with a centered title over a generic gradient.",
@@ -7876,7 +7876,7 @@
         "四層河流狀帶佔據下方，六格時間軸與游標註記支撐。"
       ],
       "motion": [
-        "曲帶邊界輕微呼吸，垂直游標沿時間軸慢移再回復。"
+        "曲帶整體柔和舒張與回收，垂直游標沿時間軸慢移再回復。"
       ],
       "media": [
         "使用原創固定公式SVG圖形，視覺深度僅為圖形示意。"
@@ -7899,9 +7899,9 @@
     ],
     "recipe": "data-timeline",
     "preview": {
-      "gallery": "media/sa-050-b27bb7998ea1ec85-gallery.mp4",
-      "detail": "media/sa-050-b27bb7998ea1ec85-detail.mp4",
-      "poster": "media/sa-050-b27bb7998ea1ec85-poster.jpg",
+      "gallery": "media/sa-050-663de05fa1956e38-gallery.mp4",
+      "detail": "media/sa-050-663de05fa1956e38-detail.mp4",
+      "poster": "media/sa-050-663de05fa1956e38-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -7910,7 +7910,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "a92b3ed8077ae5823db9063f90afb66f9c4d970600e3b3c53e60033bfcb7d7a0"
+      "fingerprint": "663de05fa1956e3849a592351c54e75cdcbaf9d65877ed71135934e4d3bf643b"
     },
     "provenance": {
       "kind": "original",
@@ -7923,7 +7923,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
+      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",
@@ -8056,9 +8056,9 @@
     ],
     "recipe": "geometric-character",
     "preview": {
-      "gallery": "media/sa-051-b3048d67e9550ec7-gallery.mp4",
-      "detail": "media/sa-051-b3048d67e9550ec7-detail.mp4",
-      "poster": "media/sa-051-b3048d67e9550ec7-poster.jpg",
+      "gallery": "media/sa-051-668aaa403be0ad5d-gallery.mp4",
+      "detail": "media/sa-051-668aaa403be0ad5d-detail.mp4",
+      "poster": "media/sa-051-668aaa403be0ad5d-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -8067,7 +8067,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "e6cc6d0cc6f29c1ebf9b84bacf1f7bbd53658069b304cfa6424a6a023d5bffa3"
+      "fingerprint": "668aaa403be0ad5d35380c33cb095d21ca9b81255706e7c3256b8c3bdc5e8613"
     },
     "provenance": {
       "kind": "original",
@@ -8139,12 +8139,12 @@
       ]
     },
     "motion": {
-      "language": "Alternating modules rotate a quarter turn in opposing directions, hold, and rotate back without changing layout anchors.",
+      "language": "Pulse the mosaic modules one at a time in a measured sequence; use a small anchored scale and opacity lift instead of quarter-turn rotation.",
       "intensity": "energetic",
       "pacing": "quick",
       "easing": "normalized smoothstep hold/return envelopes; sine/cosine for explicitly continuous motion",
       "rules": [
-        "Alternating modules rotate a quarter turn in opposing directions, hold, and rotate back without changing layout anchors.",
+        "Pulse the mosaic modules one at a time in a measured sequence; use a small anchored scale and opacity lift instead of quarter-turn rotation.",
         "Derive every rendered state from normalized composition progress; never use CSS keyframes or real-time randomness."
       ]
     },
@@ -8166,7 +8166,7 @@
     "distinctive": [
       "A two-row, six-column tessellation of arcs, triangles, and rings fills the upper field above a left-aligned lower headline.",
       "One heavy low-position sans-serif headline and a short Chinese line remain separate from the modular field.",
-      "Alternating modules rotate a quarter turn in opposing directions, hold, and rotate back without changing layout anchors."
+      "Pulse the mosaic modules one at a time in a measured sequence; use a small anchored scale and opacity lift instead of quarter-turn rotation."
     ],
     "avoid": [
       "Do not replace the distinctive composition with a centered title over a generic gradient.",
@@ -8190,7 +8190,7 @@
         "上方兩排六欄由圓弧、三角與圓環鑲嵌，標題位於左下。"
       ],
       "motion": [
-        "交錯模組反向轉動四分之一圈，停留後回復原錨點。"
+        "十二個鑲嵌模組依序輕微放大並提亮，錨點固定，不做四分之一圈旋轉。"
       ],
       "media": [
         "使用原創固定公式SVG圖形，視覺深度僅為圖形示意。"
@@ -8213,9 +8213,9 @@
     ],
     "recipe": "geometric-mosaic",
     "preview": {
-      "gallery": "media/sa-052-1ac31afe20f23170-gallery.mp4",
-      "detail": "media/sa-052-1ac31afe20f23170-detail.mp4",
-      "poster": "media/sa-052-1ac31afe20f23170-poster.jpg",
+      "gallery": "media/sa-052-d191cbcf4a080c15-gallery.mp4",
+      "detail": "media/sa-052-d191cbcf4a080c15-detail.mp4",
+      "poster": "media/sa-052-d191cbcf4a080c15-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -8224,7 +8224,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "37cc2bc79d8985da20d8b855114451cc83624c7102e325cc954e432a1396058a"
+      "fingerprint": "d191cbcf4a080c155f7f1b8b5e627f1b1785c49b30550d9c1529f529e765adbf"
     },
     "provenance": {
       "kind": "original",
@@ -8237,7 +8237,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
+      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",
@@ -8370,9 +8370,9 @@
     ],
     "recipe": "geometric-mobile",
     "preview": {
-      "gallery": "media/sa-053-20f42d376985faa1-gallery.mp4",
-      "detail": "media/sa-053-20f42d376985faa1-detail.mp4",
-      "poster": "media/sa-053-20f42d376985faa1-poster.jpg",
+      "gallery": "media/sa-053-21074c1e7240007d-gallery.mp4",
+      "detail": "media/sa-053-21074c1e7240007d-detail.mp4",
+      "poster": "media/sa-053-21074c1e7240007d-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -8381,7 +8381,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "87aae89a5050e253a2588e7da73742fb84e8b0215a7c6e2db58ffa36db823d67"
+      "fingerprint": "21074c1e7240007d12934a8ede32cd98aaa75948fb1645851f6b77075a32bbf7"
     },
     "provenance": {
       "kind": "original",
@@ -8530,9 +8530,9 @@
     ],
     "recipe": "documentary-map",
     "preview": {
-      "gallery": "media/sa-054-0c22337366e7e904-gallery.mp4",
-      "detail": "media/sa-054-0c22337366e7e904-detail.mp4",
-      "poster": "media/sa-054-0c22337366e7e904-poster.jpg",
+      "gallery": "media/sa-054-c19f9b51e5e4cf9a-gallery.mp4",
+      "detail": "media/sa-054-c19f9b51e5e4cf9a-detail.mp4",
+      "poster": "media/sa-054-c19f9b51e5e4cf9a-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -8541,7 +8541,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "dfd4825f862eb973535dc9cb53a5a5c6707edc8432212e8aa1ccf91c873afed9"
+      "fingerprint": "c19f9b51e5e4cf9a82646345c1a02be6b7ea9f305468c9ce653f91b50c6962e6"
     },
     "provenance": {
       "kind": "original",
@@ -8689,9 +8689,9 @@
     ],
     "recipe": "documentary-subtitle",
     "preview": {
-      "gallery": "media/sa-055-2d5678fd18605cf2-gallery.mp4",
-      "detail": "media/sa-055-2d5678fd18605cf2-detail.mp4",
-      "poster": "media/sa-055-2d5678fd18605cf2-poster.jpg",
+      "gallery": "media/sa-055-dd1ecb885ed960f7-gallery.mp4",
+      "detail": "media/sa-055-dd1ecb885ed960f7-detail.mp4",
+      "poster": "media/sa-055-dd1ecb885ed960f7-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -8700,7 +8700,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "b33567776fd5e6da50097913bddc90056beac2107e1de7ad25415c3347028575"
+      "fingerprint": "dd1ecb885ed960f72c1224df69319d8a9382e9e371b42c66e011515b426608b3"
     },
     "provenance": {
       "kind": "original",
@@ -8849,9 +8849,9 @@
     ],
     "recipe": "documentary-dossier",
     "preview": {
-      "gallery": "media/sa-056-eeb3ce9b0ecfdf55-gallery.mp4",
-      "detail": "media/sa-056-eeb3ce9b0ecfdf55-detail.mp4",
-      "poster": "media/sa-056-eeb3ce9b0ecfdf55-poster.jpg",
+      "gallery": "media/sa-056-b33768aba8e569a5-gallery.mp4",
+      "detail": "media/sa-056-b33768aba8e569a5-detail.mp4",
+      "poster": "media/sa-056-b33768aba8e569a5-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -8860,7 +8860,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "7138aba146e5dc714d06ddc30487e9808f47fc6511a5760c9a3139e11844a8c3"
+      "fingerprint": "b33768aba8e569a5688b6f9b8f34bcfe630ff23891c8e5ef894aba1203c9a1ef"
     },
     "provenance": {
       "kind": "original",
@@ -8934,12 +8934,12 @@
       ]
     },
     "motion": {
-      "language": "Quantize the closed lift/slide envelope to five steps; alternating columns move in opposite directions.",
+      "language": "Scale the four tile columns one after another with a smooth pulse; keep every tile anchored in place without translation.",
       "intensity": "energetic",
       "pacing": "quick",
       "easing": "Frame-driven normalized time; smoothstep envelopes, sine/cosine cycles, or explicitly quantized steps as stated in the motion grammar.",
       "rules": [
-        "Quantize the closed lift/slide envelope to five steps; alternating columns move in opposite directions.",
+        "Scale the four tile columns one after another with a smooth pulse; keep every tile anchored in place without translation.",
         "Keep motion deterministic and frame-driven; retain coherent loop endpoints and a useful initial poster-like image."
       ]
     },
@@ -8960,7 +8960,7 @@
     "distinctive": [
       "Four columns by three rows of thick icon tiles; each tile has an offset solid shadow.",
       "Heavy uppercase sans title; small monospaced module indices.",
-      "Quantize the closed lift/slide envelope to five steps; alternating columns move in opposite directions.",
+      "Scale the four tile columns one after another with a smooth pulse; keep every tile anchored in place without translation.",
       "Five-step tile movement, flat offset shadows; simulated thickness only."
     ],
     "avoid": [
@@ -8984,7 +8984,7 @@
         "四欄三列厚磚，圓、三角與箭頭交錯；以偏移實色呈現厚度。"
       ],
       "motion": [
-        "封閉的滑移與上提包絡量化為五步，相鄰欄方向相反。",
+        "四欄拼塊依序平滑放大再回復；磚塊固定原位，不做位移。",
         "動畫以影格驅動；循環末端要能合理接回起點，初始畫面也須有用。"
       ],
       "media": [
@@ -9007,9 +9007,9 @@
     ],
     "recipe": "tile-press",
     "preview": {
-      "gallery": "media/sa-057-ebd8d6edf052eb24-gallery.mp4",
-      "detail": "media/sa-057-ebd8d6edf052eb24-detail.mp4",
-      "poster": "media/sa-057-ebd8d6edf052eb24-poster.jpg",
+      "gallery": "media/sa-057-582cc6297da7eb72-gallery.mp4",
+      "detail": "media/sa-057-582cc6297da7eb72-detail.mp4",
+      "poster": "media/sa-057-582cc6297da7eb72-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -9018,7 +9018,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "e76d36a86cb8fe7345157142dd7443b86d9d7f127593a1608034b86dd13e8030"
+      "fingerprint": "582cc6297da7eb7209a93c5a762203c312161db8da53aa64a18e5b033d80e1c6"
     },
     "provenance": {
       "kind": "original",
@@ -9031,7 +9031,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
+      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",
@@ -9042,7 +9042,7 @@
     "slug": "transit-flaps",
     "name": "出發翻牌",
     "englishName": "Transit Flap Board",
-    "description": "出發資訊排成機械翻牌列，字槽沿水平鉸鏈壓縮再回復，時間與目的地維持可讀。",
+    "description": "出發資訊排成機械翻牌列，目的地字牌依序逐張翻亮與翻轉；時間、登機門及目的地保持可讀。",
     "aliases": [
       "transit flap board",
       "懷舊",
@@ -9092,12 +9092,12 @@
       ]
     },
     "motion": {
-      "language": "Compress destination cells vertically to 28 percent through a closed envelope, then restore; the labels remain the same.",
+      "language": "Flip the destination letter cards one at a time in a continuous left-to-right sequence; each card flashes its accent as it turns.",
       "intensity": "moderate",
       "pacing": "measured",
       "easing": "Frame-driven normalized time; smoothstep envelopes, sine/cosine cycles, or explicitly quantized steps as stated in the motion grammar.",
       "rules": [
-        "Compress destination cells vertically to 28 percent through a closed envelope, then restore; the labels remain the same.",
+        "Flip the destination letter cards one at a time in a continuous left-to-right sequence; each card flashes its accent as it turns.",
         "Keep motion deterministic and frame-driven; retain coherent loop endpoints and a useful initial poster-like image."
       ]
     },
@@ -9118,7 +9118,7 @@
     "distinctive": [
       "Four departure rows under a wide header; destination letters live in individual split cells.",
       "Uppercase monospaced destinations; high-contrast time and gate columns.",
-      "Compress destination cells vertically to 28 percent through a closed envelope, then restore; the labels remain the same.",
+      "Flip the destination letter cards one at a time in a continuous left-to-right sequence; each card flashes its accent as it turns.",
       "Single-plane flip illusion; no real transit data."
     ],
     "avoid": [
@@ -9142,7 +9142,7 @@
         "四列出發資訊，字母分槽，翻牌中央保留接縫。"
       ],
       "motion": [
-        "字槽沿水平軸壓縮至原高的 28%，再回復；不快速更換字詞。",
+        "目的地字牌依序由左至右逐張翻亮，每張牌完成翻轉後再輪到下一張。",
         "動畫以影格驅動；循環末端要能合理接回起點，初始畫面也須有用。"
       ],
       "media": [
@@ -9165,9 +9165,9 @@
     ],
     "recipe": "transit-flaps",
     "preview": {
-      "gallery": "media/sa-058-d1a471e97752a6fd-gallery.mp4",
-      "detail": "media/sa-058-d1a471e97752a6fd-detail.mp4",
-      "poster": "media/sa-058-d1a471e97752a6fd-poster.jpg",
+      "gallery": "media/sa-058-aea7c2f36b867a97-gallery.mp4",
+      "detail": "media/sa-058-aea7c2f36b867a97-detail.mp4",
+      "poster": "media/sa-058-aea7c2f36b867a97-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -9176,7 +9176,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 0,
-      "fingerprint": "a17bcfd99a8941654ee11e0208a076fa1a44624aef8b3efc99aba5e8afd7bbd7"
+      "fingerprint": "aea7c2f36b867a975cd5892e74a6d39e6d9dfa7c22779a04f308e0302bcebf72"
     },
     "provenance": {
       "kind": "original",
@@ -9189,7 +9189,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
+      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",
@@ -9323,9 +9323,9 @@
     ],
     "recipe": "type-scroll",
     "preview": {
-      "gallery": "media/sa-059-1ffdfc3a319109f9-gallery.mp4",
-      "detail": "media/sa-059-1ffdfc3a319109f9-detail.mp4",
-      "poster": "media/sa-059-1ffdfc3a319109f9-poster.jpg",
+      "gallery": "media/sa-059-170e9bd9a4afc656-gallery.mp4",
+      "detail": "media/sa-059-170e9bd9a4afc656-detail.mp4",
+      "poster": "media/sa-059-170e9bd9a4afc656-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -9334,7 +9334,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "99b5265e312002eb028bc7e5ddb6d0fd98239a9c73e2ba8cc5acc88f018c3bb5"
+      "fingerprint": "170e9bd9a4afc656a340d297f650c9d4cb606cae3a10ed5b4aea6176a5c45aeb"
     },
     "provenance": {
       "kind": "original",
@@ -9487,9 +9487,9 @@
     ],
     "recipe": "iris-contact",
     "preview": {
-      "gallery": "media/sa-060-d8362f8e05b09cee-gallery.mp4",
-      "detail": "media/sa-060-d8362f8e05b09cee-detail.mp4",
-      "poster": "media/sa-060-d8362f8e05b09cee-poster.jpg",
+      "gallery": "media/sa-060-a231d755652cf1fe-gallery.mp4",
+      "detail": "media/sa-060-a231d755652cf1fe-detail.mp4",
+      "poster": "media/sa-060-a231d755652cf1fe-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -9498,7 +9498,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "d8362f8e05b09ceea7ef0bd26c24561c117a5f7f09e38bdbcc2036147c797a49"
+      "fingerprint": "a231d755652cf1fe310a84bb46e312f070c65cb5c30240421b0b0270382286b5"
     },
     "provenance": {
       "kind": "original",
@@ -9649,9 +9649,9 @@
     ],
     "recipe": "ink-bloom",
     "preview": {
-      "gallery": "media/sa-061-e38271941411f048-gallery.mp4",
-      "detail": "media/sa-061-e38271941411f048-detail.mp4",
-      "poster": "media/sa-061-e38271941411f048-poster.jpg",
+      "gallery": "media/sa-061-456cb4a1b53f7d2f-gallery.mp4",
+      "detail": "media/sa-061-456cb4a1b53f7d2f-detail.mp4",
+      "poster": "media/sa-061-456cb4a1b53f7d2f-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -9660,7 +9660,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "e38271941411f04849426fde0ef489f9f187ddc31160ae6ee1d9ba9c5e18297e"
+      "fingerprint": "456cb4a1b53f7d2fef4f4213ad64c6ea40d73eee22f46047b355bc7bc4c7e1a2"
     },
     "provenance": {
       "kind": "original",
@@ -9807,9 +9807,9 @@
     ],
     "recipe": "soft-icons",
     "preview": {
-      "gallery": "media/sa-062-6fe68e4b4436fd88-gallery.mp4",
-      "detail": "media/sa-062-6fe68e4b4436fd88-detail.mp4",
-      "poster": "media/sa-062-6fe68e4b4436fd88-poster.jpg",
+      "gallery": "media/sa-062-0b87800a079b707e-gallery.mp4",
+      "detail": "media/sa-062-0b87800a079b707e-detail.mp4",
+      "poster": "media/sa-062-0b87800a079b707e-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -9818,7 +9818,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "6d5575268615fc84ba0bc802af4cae1ff6947340b8e69b4c4e00f1bdf506881b"
+      "fingerprint": "0b87800a079b707e20f50fc5d83a48bec14886e8dcc2cf41f37e45b6e922a9e8"
     },
     "provenance": {
       "kind": "original",
@@ -9965,9 +9965,9 @@
     ],
     "recipe": "modular-signal",
     "preview": {
-      "gallery": "media/sa-063-9510e3bd75a4d8cd-gallery.mp4",
-      "detail": "media/sa-063-9510e3bd75a4d8cd-detail.mp4",
-      "poster": "media/sa-063-9510e3bd75a4d8cd-poster.jpg",
+      "gallery": "media/sa-063-e9709edce65a2081-gallery.mp4",
+      "detail": "media/sa-063-e9709edce65a2081-detail.mp4",
+      "poster": "media/sa-063-e9709edce65a2081-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -9976,7 +9976,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "09afdd0356fc3a299133859a2eb3d383cbeb44d9f30690eff48751092eeb635f"
+      "fingerprint": "e9709edce65a208130f430e04a834d3b93ebd40c405100333a85ef66bd6ffb58"
     },
     "provenance": {
       "kind": "original",
@@ -10123,9 +10123,9 @@
     ],
     "recipe": "paper-fold",
     "preview": {
-      "gallery": "media/sa-064-a9962415d6439c40-gallery.mp4",
-      "detail": "media/sa-064-a9962415d6439c40-detail.mp4",
-      "poster": "media/sa-064-a9962415d6439c40-poster.jpg",
+      "gallery": "media/sa-064-e026b12ddcfd88ae-gallery.mp4",
+      "detail": "media/sa-064-e026b12ddcfd88ae-detail.mp4",
+      "poster": "media/sa-064-e026b12ddcfd88ae-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -10134,7 +10134,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "a120bea039461cb59c1ccb2565e89f6056bbca18783b0d54fef5450c25012e39"
+      "fingerprint": "e026b12ddcfd88aeb10d3cebb14d5cfafa786beafa811a189def3c6cc3fcc1ac"
     },
     "provenance": {
       "kind": "original",
@@ -10281,9 +10281,9 @@
     ],
     "recipe": "urban-wayfinding",
     "preview": {
-      "gallery": "media/sa-065-4b2f7eccd51e9c16-gallery.mp4",
-      "detail": "media/sa-065-4b2f7eccd51e9c16-detail.mp4",
-      "poster": "media/sa-065-4b2f7eccd51e9c16-poster.jpg",
+      "gallery": "media/sa-065-7b07b45361af95e3-gallery.mp4",
+      "detail": "media/sa-065-7b07b45361af95e3-detail.mp4",
+      "poster": "media/sa-065-7b07b45361af95e3-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -10292,7 +10292,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "3660147a3a05cae9386befb4a4e990f727f3baf3cf3eb3f4fd578af2afa6c634"
+      "fingerprint": "7b07b45361af95e34b2afff786fe181c78bb27207b1955dad7e5f3d2e914b5e0"
     },
     "provenance": {
       "kind": "original",
@@ -10439,9 +10439,9 @@
     ],
     "recipe": "kinetic-punctuation",
     "preview": {
-      "gallery": "media/sa-066-faba8c45b6927cc1-gallery.mp4",
-      "detail": "media/sa-066-faba8c45b6927cc1-detail.mp4",
-      "poster": "media/sa-066-faba8c45b6927cc1-poster.jpg",
+      "gallery": "media/sa-066-7a2fe1f83156649c-gallery.mp4",
+      "detail": "media/sa-066-7a2fe1f83156649c-detail.mp4",
+      "poster": "media/sa-066-7a2fe1f83156649c-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -10450,7 +10450,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "a903cda4352f859c4960b0275535fab77cee962955ebaa11e5a20095f99cfd9c"
+      "fingerprint": "7a2fe1f83156649c098da0c4799b5ca84d7a82be5e0e29b59e72e3e9ffe0113d"
     },
     "provenance": {
       "kind": "original",
@@ -10474,7 +10474,7 @@
     "slug": "calendar-leaves",
     "name": "日曆紙頁",
     "englishName": "Calendar Leaves",
-    "description": "月曆七欄與五列構成整齊紙頁，少數日期緩慢強調，單格折角回應時間流動。",
+    "description": "月曆七欄與五列構成整齊紙頁，日期由 1 日至 31 日依序點亮並逐步累積，呈現時間推進。",
     "aliases": [
       "calendar leaves",
       "有序",
@@ -10524,12 +10524,12 @@
       ]
     },
     "motion": {
-      "language": "Selected dates brighten and their folded corners deepen through a closed envelope.",
+      "language": "Illuminate the dates chronologically from day one to day thirty-one, hold the complete month, then extinguish dates one at a time in reverse order for a seamless loop.",
       "intensity": "restrained",
       "pacing": "slow",
       "easing": "Frame-driven normalized time; smoothstep envelopes, sine/cosine cycles, or explicitly quantized steps as stated in the motion grammar.",
       "rules": [
-        "Selected dates brighten and their folded corners deepen through a closed envelope.",
+        "Illuminate the dates chronologically from day one to day thirty-one, hold the complete month, then extinguish dates one at a time in reverse order for a seamless loop.",
         "Keep motion deterministic and frame-driven; retain coherent loop endpoints and a useful initial poster-like image."
       ]
     },
@@ -10550,7 +10550,7 @@
     "distinctive": [
       "Seven weekday columns and five date rows below a wide month/year header.",
       "Serif month name, monospaced year and day labels, clear sans Chinese copy.",
-      "Selected dates brighten and their folded corners deepen through a closed envelope.",
+      "Illuminate the dates chronologically from day one to day thirty-one, hold the complete month, then extinguish dates one at a time in reverse order for a seamless loop.",
       "Flat planner cells and one illustrated page curl."
     ],
     "avoid": [
@@ -10574,7 +10574,7 @@
         "七欄星期與五列日期，月份與年份在上方建立方向。"
       ],
       "motion": [
-        "選取日期明暗變化更清楚，折角同步加深後回復。",
+        "日期由 1 日至 31 日依序累積點亮，短暫停留後由月底反向逐格熄回月初，循環連貫。",
         "動畫以影格驅動；循環末端要能合理接回起點，初始畫面也須有用。"
       ],
       "media": [
@@ -10597,9 +10597,9 @@
     ],
     "recipe": "calendar-leaves",
     "preview": {
-      "gallery": "media/sa-067-632d500187577196-gallery.mp4",
-      "detail": "media/sa-067-632d500187577196-detail.mp4",
-      "poster": "media/sa-067-632d500187577196-poster.jpg",
+      "gallery": "media/sa-067-d43b0ea311750406-gallery.mp4",
+      "detail": "media/sa-067-d43b0ea311750406-detail.mp4",
+      "poster": "media/sa-067-d43b0ea311750406-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -10608,7 +10608,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "632d5001875771968cceb3802bbf54e6615374346d5529ae55c9adf332ba198b"
+      "fingerprint": "d43b0ea311750406e64b6e1a61ebd045556524e3a90010ad252bb680dffa57e7"
     },
     "provenance": {
       "kind": "original",
@@ -10621,7 +10621,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
+      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",
@@ -10682,12 +10682,12 @@
       ]
     },
     "motion": {
-      "language": "Rotate the sonar sweep counterclockwise through a complete cycle; one target softly changes radius.",
+      "language": "Rotate the sonar sweep counterclockwise through a complete cycle; the thicker glowing beam enlarges a target echo as it passes, then lets it fade slowly.",
       "intensity": "restrained",
       "pacing": "slow",
       "easing": "Frame-driven normalized time; smoothstep envelopes, sine/cosine cycles, or explicitly quantized steps as stated in the motion grammar.",
       "rules": [
-        "Rotate the sonar sweep counterclockwise through a complete cycle; one target softly changes radius.",
+        "Rotate the sonar sweep counterclockwise through a complete cycle; the thicker glowing beam enlarges a target echo as it passes, then lets it fade slowly.",
         "Keep motion deterministic and frame-driven; retain coherent loop endpoints and a useful initial poster-like image."
       ]
     },
@@ -10708,7 +10708,7 @@
     "distinctive": [
       "A large left circular scan field separated from a narrow right explanatory column.",
       "Restrained sans title, monospaced numeric notes and wide tracking on technical labels.",
-      "Rotate the sonar sweep counterclockwise through a complete cycle; one target softly changes radius.",
+      "Rotate the sonar sweep counterclockwise through a complete cycle; the thicker glowing beam enlarges a target echo as it passes, then lets it fade slowly.",
       "Flat scan-field illustration with fictional coordinates."
     ],
     "avoid": [
@@ -10732,7 +10732,7 @@
         "左側大掃描圓，右側窄說明欄；座標網維持低對比。"
       ],
       "motion": [
-        "聲納掃描扇面逆時針完整旋轉一圈，目標點半徑同步變化。",
+        "聲納粗光束逆時針完整掃描；光束經過小點時令回波放大，再緩慢淡去。",
         "動畫以影格驅動；循環末端要能合理接回起點，初始畫面也須有用。"
       ],
       "media": [
@@ -10755,9 +10755,9 @@
     ],
     "recipe": "sonar-depth",
     "preview": {
-      "gallery": "media/sa-068-63ec59f3b74854fd-gallery.mp4",
-      "detail": "media/sa-068-63ec59f3b74854fd-detail.mp4",
-      "poster": "media/sa-068-63ec59f3b74854fd-poster.jpg",
+      "gallery": "media/sa-068-40f33794ab33d62d-gallery.mp4",
+      "detail": "media/sa-068-40f33794ab33d62d-detail.mp4",
+      "poster": "media/sa-068-40f33794ab33d62d-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -10766,7 +10766,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "63ec59f3b74854fdf49eb56c6c79b222f54a207ce6e2133d729a8be9785faffb"
+      "fingerprint": "40f33794ab33d62d4d74e38597b900882de8244d28ac00c12472de7f97ae2c06"
     },
     "provenance": {
       "kind": "original",
@@ -10779,7 +10779,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
+      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",
@@ -10914,9 +10914,9 @@
     ],
     "recipe": "thermal-contours",
     "preview": {
-      "gallery": "media/sa-069-0a942356133e2d92-gallery.mp4",
-      "detail": "media/sa-069-0a942356133e2d92-detail.mp4",
-      "poster": "media/sa-069-0a942356133e2d92-poster.jpg",
+      "gallery": "media/sa-069-9ba258c9560f18ee-gallery.mp4",
+      "detail": "media/sa-069-9ba258c9560f18ee-detail.mp4",
+      "poster": "media/sa-069-9ba258c9560f18ee-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -10925,7 +10925,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "0a942356133e2d926f4f0a440f39ea3d20b7182ccae73ae864abfd1a71202b5f"
+      "fingerprint": "9ba258c9560f18ee69d47422289b0e856728181cfec8e99e68c0cfd1e1cff629"
     },
     "provenance": {
       "kind": "original",
@@ -11072,9 +11072,9 @@
     ],
     "recipe": "route-topography",
     "preview": {
-      "gallery": "media/sa-070-7c2ec8a34af36d3f-gallery.mp4",
-      "detail": "media/sa-070-7c2ec8a34af36d3f-detail.mp4",
-      "poster": "media/sa-070-7c2ec8a34af36d3f-poster.jpg",
+      "gallery": "media/sa-070-92bcb00f45d9f865-gallery.mp4",
+      "detail": "media/sa-070-92bcb00f45d9f865-detail.mp4",
+      "poster": "media/sa-070-92bcb00f45d9f865-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -11083,7 +11083,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "7c2ec8a34af36d3ff462e7e0158d82422fa391d2374dc620f9d779a2e6ca6c3b"
+      "fingerprint": "92bcb00f45d9f86572bc6517af169a48bf16f310e04065988cb9c341e57f5b24"
     },
     "provenance": {
       "kind": "original",
@@ -11230,9 +11230,9 @@
     ],
     "recipe": "botanical-anatomy",
     "preview": {
-      "gallery": "media/sa-071-b4afe13fdc00a261-gallery.mp4",
-      "detail": "media/sa-071-b4afe13fdc00a261-detail.mp4",
-      "poster": "media/sa-071-b4afe13fdc00a261-poster.jpg",
+      "gallery": "media/sa-071-fcbcb7cc0f06bb25-gallery.mp4",
+      "detail": "media/sa-071-fcbcb7cc0f06bb25-detail.mp4",
+      "poster": "media/sa-071-fcbcb7cc0f06bb25-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -11241,7 +11241,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "b4afe13fdc00a2618608cf8283fb5100b0cb2ae3e03c0b789d0dba1dd83ad2ba"
+      "fingerprint": "fcbcb7cc0f06bb254f731c931395d88a1ec18129d0ba162fe5552d9f9e0322ef"
     },
     "provenance": {
       "kind": "original",
@@ -11388,9 +11388,9 @@
     ],
     "recipe": "acoustic-score",
     "preview": {
-      "gallery": "media/sa-072-ce9241dde21a3fc4-gallery.mp4",
-      "detail": "media/sa-072-ce9241dde21a3fc4-detail.mp4",
-      "poster": "media/sa-072-ce9241dde21a3fc4-poster.jpg",
+      "gallery": "media/sa-072-2ccee3d60aa3c67d-gallery.mp4",
+      "detail": "media/sa-072-2ccee3d60aa3c67d-detail.mp4",
+      "poster": "media/sa-072-2ccee3d60aa3c67d-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -11399,7 +11399,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "42f506a943fa9c15cd032c9f2524f3819f0a15b81968f12fdfa31fe2048bd561"
+      "fingerprint": "2ccee3d60aa3c67dbbb3e65a44fbaad58ef2aa325aa0ebcf66fe0641d1bd1217"
     },
     "provenance": {
       "kind": "original",
@@ -11473,12 +11473,12 @@
       ]
     },
     "motion": {
-      "language": "Use a tiny periodic image push and a softly varying caption opacity; the label panel stays fixed.",
+      "language": "Give the object image a clear, gentle camera push-in and pull-back while the fixed museum label reveals its supporting details in sequence.",
       "intensity": "restrained",
       "pacing": "slow",
       "easing": "Frame-driven normalized time; smoothstep envelopes, sine/cosine cycles, or explicitly quantized steps as stated in the motion grammar.",
       "rules": [
-        "Use a tiny periodic image push and a softly varying caption opacity; the label panel stays fixed.",
+        "Give the object image a clear, gentle camera push-in and pull-back while the fixed museum label reveals its supporting details in sequence.",
         "Keep motion deterministic and frame-driven; retain coherent loop endpoints and a useful initial poster-like image."
       ]
     },
@@ -11500,7 +11500,7 @@
     "distinctive": [
       "Large left object photograph with a small right museum label positioned below the upper baseline.",
       "Restrained serif object title; tiny tracked catalog labels and legible short captions.",
-      "Use a tiny periodic image push and a softly varying caption opacity; the label panel stays fixed.",
+      "Give the object image a clear, gentle camera push-in and pull-back while the fixed museum label reveals its supporting details in sequence.",
       "Single media plane with a flat exhibition label."
     ],
     "avoid": [
@@ -11527,7 +11527,7 @@
         "左側大物件照片，右側小展品標籤略低於上緣。"
       ],
       "motion": [
-        "影像週期微推，說明透明度柔和變化，標籤位置保持固定。",
+        "展品影像做清楚而柔和的推近與退回，固定的展籤說明依序顯現。",
         "動畫以影格驅動；循環末端要能合理接回起點，初始畫面也須有用。"
       ],
       "media": [
@@ -11550,9 +11550,9 @@
     ],
     "recipe": "museum-labels",
     "preview": {
-      "gallery": "media/sa-073-a2a716962e9bca74-gallery.mp4",
-      "detail": "media/sa-073-a2a716962e9bca74-detail.mp4",
-      "poster": "media/sa-073-a2a716962e9bca74-poster.jpg",
+      "gallery": "media/sa-073-1fcd25320e6aaa88-gallery.mp4",
+      "detail": "media/sa-073-1fcd25320e6aaa88-detail.mp4",
+      "poster": "media/sa-073-1fcd25320e6aaa88-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -11561,7 +11561,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "84219133c266c864a59755ea7193a00d68948f13a13c66b7f63d1ed4c455a7d6"
+      "fingerprint": "1fcd25320e6aaa889bf5683141a5779f83012719559144aa2b0c508b6e97dcf0"
     },
     "provenance": {
       "kind": "original",
@@ -11574,7 +11574,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
+      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",
@@ -11635,12 +11635,12 @@
       ]
     },
     "motion": {
-      "language": "Move one horizontal probe through a closed vertical envelope; right waveforms vary modestly in amplitude.",
+      "language": "Sweep a bright glowing probe through the contours while all three right-side signal profiles continuously undulate as waves.",
       "intensity": "restrained",
       "pacing": "slow",
       "easing": "Frame-driven normalized time; smoothstep envelopes, sine/cosine cycles, or explicitly quantized steps as stated in the motion grammar.",
       "rules": [
-        "Move one horizontal probe through a closed vertical envelope; right waveforms vary modestly in amplitude.",
+        "Sweep a bright glowing probe through the contours while all three right-side signal profiles continuously undulate as waves.",
         "Keep motion deterministic and frame-driven; retain coherent loop endpoints and a useful initial poster-like image."
       ]
     },
@@ -11661,7 +11661,7 @@
     "distinctive": [
       "Nested left head-profile contours separated from three stacked right waveform traces.",
       "Monospaced scan index, clear sans title and visible illustrative-only labels.",
-      "Move one horizontal probe through a closed vertical envelope; right waveforms vary modestly in amplitude.",
+      "Sweep a bright glowing probe through the contours while all three right-side signal profiles continuously undulate as waves.",
       "Flat observation diagram, not diagnostic imaging."
     ],
     "avoid": [
@@ -11685,7 +11685,7 @@
         "左側巢狀頭部輪廓，右側三條波形分層排列。"
       ],
       "motion": [
-        "水平探測線沿封閉包絡上下移動，波形振幅只小幅變化。",
+        "發光掃描線穿越剖面，右側三條模擬訊號持續呈現明確波浪起伏。",
         "動畫以影格驅動；循環末端要能合理接回起點，初始畫面也須有用。"
       ],
       "media": [
@@ -11708,9 +11708,9 @@
     ],
     "recipe": "medical-contours",
     "preview": {
-      "gallery": "media/sa-074-af5aee232a112476-gallery.mp4",
-      "detail": "media/sa-074-af5aee232a112476-detail.mp4",
-      "poster": "media/sa-074-af5aee232a112476-poster.jpg",
+      "gallery": "media/sa-074-63ddd060916c882d-gallery.mp4",
+      "detail": "media/sa-074-63ddd060916c882d-detail.mp4",
+      "poster": "media/sa-074-63ddd060916c882d-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -11719,7 +11719,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "7260356890fff8d7cebb5369b914b1af6a72e41d94b743cba6fbd05c917d48f1"
+      "fingerprint": "63ddd060916c882df06154e49ce8e0d3db57e89b27412065f307e4cbb890869b"
     },
     "provenance": {
       "kind": "original",
@@ -11732,7 +11732,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
+      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",
@@ -11866,9 +11866,9 @@
     ],
     "recipe": "optical-moire",
     "preview": {
-      "gallery": "media/sa-075-612e9d2caa2a29b7-gallery.mp4",
-      "detail": "media/sa-075-612e9d2caa2a29b7-detail.mp4",
-      "poster": "media/sa-075-612e9d2caa2a29b7-poster.jpg",
+      "gallery": "media/sa-075-710952bda45427fb-gallery.mp4",
+      "detail": "media/sa-075-710952bda45427fb-detail.mp4",
+      "poster": "media/sa-075-710952bda45427fb-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -11877,7 +11877,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "e930c8b40ed5f636d25525c0f132343e15cb11477c10b80c7c00643eeb37123f"
+      "fingerprint": "710952bda45427fb2c61ded100e847a12a6991c501466b8e9b2c2bc78977bc03"
     },
     "provenance": {
       "kind": "original",
@@ -12024,9 +12024,9 @@
     ],
     "recipe": "embossed-seal",
     "preview": {
-      "gallery": "media/sa-076-08f69002b83b30a4-gallery.mp4",
-      "detail": "media/sa-076-08f69002b83b30a4-detail.mp4",
-      "poster": "media/sa-076-08f69002b83b30a4-poster.jpg",
+      "gallery": "media/sa-076-c615d49ba2c9b54b-gallery.mp4",
+      "detail": "media/sa-076-c615d49ba2c9b54b-detail.mp4",
+      "poster": "media/sa-076-c615d49ba2c9b54b-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -12035,7 +12035,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "08f69002b83b30a4f07d4364e6ccc7b4cd40fb4a214ed9f6248ccd5bde092538"
+      "fingerprint": "c615d49ba2c9b54b5db985a3bb377d30e79634759248c5a8817de963c7a2e422"
     },
     "provenance": {
       "kind": "original",
@@ -12182,9 +12182,9 @@
     ],
     "recipe": "brutal-modules",
     "preview": {
-      "gallery": "media/sa-077-dd4676ceb7628835-gallery.mp4",
-      "detail": "media/sa-077-dd4676ceb7628835-detail.mp4",
-      "poster": "media/sa-077-dd4676ceb7628835-poster.jpg",
+      "gallery": "media/sa-077-b031e05856de3150-gallery.mp4",
+      "detail": "media/sa-077-b031e05856de3150-detail.mp4",
+      "poster": "media/sa-077-b031e05856de3150-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -12193,7 +12193,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "266a23b9cfbab5ce184e99abfcd965be72127bb7b7960900ed9af2b15f16050f"
+      "fingerprint": "b031e05856de3150988a3afbe567fafeff5d38665e34874fc26251af8d921921"
     },
     "provenance": {
       "kind": "original",
@@ -12267,12 +12267,12 @@
       ]
     },
     "motion": {
-      "language": "Move the wedge and diagonal headline through a closed envelope; place the subtitle in the clear band below the color block.",
+      "language": "Shift the wedge and diagonal headline through a closed envelope; keep both secondary text lines below and left of the dark circle.",
       "intensity": "energetic",
       "pacing": "quick",
       "easing": "Frame-driven normalized time; smoothstep envelopes, sine/cosine cycles, or explicitly quantized steps as stated in the motion grammar.",
       "rules": [
-        "Move the wedge and diagonal headline through a closed envelope; place the subtitle in the clear band below the color block.",
+        "Shift the wedge and diagonal headline through a closed envelope; keep both secondary text lines below and left of the dark circle.",
         "Keep motion deterministic and frame-driven; retain coherent loop endpoints and a useful initial poster-like image."
       ]
     },
@@ -12293,7 +12293,7 @@
     "distinctive": [
       "Large intersecting wedges and an upper-right circular counterweight; the title follows a diagonal axis.",
       "Heavy sans statement on a diagonal black strip, supported by small utility type.",
-      "Move the wedge and diagonal headline through a closed envelope; place the subtitle in the clear band below the color block.",
+      "Shift the wedge and diagonal headline through a closed envelope; keep both secondary text lines below and left of the dark circle.",
       "Single-plane diagonal construction."
     ],
     "avoid": [
@@ -12317,7 +12317,7 @@
         "大楔形相交，右上圓環作平衡；標題沿對角軸。"
       ],
       "motion": [
-        "色塊與斜向標題封閉移動，子標題置於色塊下方的留白區。",
+        "楔形與斜排標題做封閉位移；英文副標與中文子標題留在左下，避開右上深色圓形。",
         "動畫以影格驅動；循環末端要能合理接回起點，初始畫面也須有用。"
       ],
       "media": [
@@ -12340,9 +12340,9 @@
     ],
     "recipe": "constructivist-wedges",
     "preview": {
-      "gallery": "media/sa-078-4994755cdef374af-gallery.mp4",
-      "detail": "media/sa-078-4994755cdef374af-detail.mp4",
-      "poster": "media/sa-078-4994755cdef374af-poster.jpg",
+      "gallery": "media/sa-078-3522c7d8887d694c-gallery.mp4",
+      "detail": "media/sa-078-3522c7d8887d694c-detail.mp4",
+      "poster": "media/sa-078-3522c7d8887d694c-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -12351,7 +12351,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "4994755cdef374afc5388e5c8193e80c27df9f598e5a720c91eafab969111a87"
+      "fingerprint": "3522c7d8887d694cef90a3da9d1020ded9458fb29fead533179ea6c2eae70873"
     },
     "provenance": {
       "kind": "original",
@@ -12364,7 +12364,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
+      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",
@@ -12425,12 +12425,12 @@
       ]
     },
     "motion": {
-      "language": "The isometric room shifts in a broad lateral drift to make its depth and spatial form apparent.",
+      "language": "Replace lateral shaking with a smooth camera push-in; scale the foreground furniture faster than the room shell to reveal perspective depth.",
       "intensity": "restrained",
       "pacing": "slow",
       "easing": "Frame-driven normalized time; smoothstep envelopes, sine/cosine cycles, or explicitly quantized steps as stated in the motion grammar.",
       "rules": [
-        "The isometric room shifts in a broad lateral drift to make its depth and spatial form apparent.",
+        "Replace lateral shaking with a smooth camera push-in; scale the foreground furniture faster than the room shell to reveal perspective depth.",
         "Keep motion deterministic and frame-driven; retain coherent loop endpoints and a useful initial poster-like image."
       ]
     },
@@ -12451,7 +12451,7 @@
     "distinctive": [
       "Right-side fixed isometric room; floor, walls, table and lamp keep consistent projected edges.",
       "Quiet serif phrase on a narrow left field with monospaced 2.5D disclosure.",
-      "The isometric room shifts in a broad lateral drift to make its depth and spatial form apparent.",
+      "Replace lateral shaking with a smooth camera push-in; scale the foreground furniture faster than the room shell to reveal perspective depth.",
       "2.5D fixed isometric illustration; no real 3D camera or lighting."
     ],
     "avoid": [
@@ -12475,7 +12475,7 @@
         "右側固定等角房間，牆、地板、桌與燈保持一致投影。"
       ],
       "motion": [
-        "等角房間以明顯幅度橫向移動，凸顯空間深度與輪廓。",
+        "以平滑鏡頭推近取代左右晃動；前景家具比房間外殼放大更多，呈現透視深度。",
         "動畫以影格驅動；循環末端要能合理接回起點，初始畫面也須有用。"
       ],
       "media": [
@@ -12498,9 +12498,9 @@
     ],
     "recipe": "isometric-room",
     "preview": {
-      "gallery": "media/sa-079-02552c4f9aa427e4-gallery.mp4",
-      "detail": "media/sa-079-02552c4f9aa427e4-detail.mp4",
-      "poster": "media/sa-079-02552c4f9aa427e4-poster.jpg",
+      "gallery": "media/sa-079-80d6266d74f728a9-gallery.mp4",
+      "detail": "media/sa-079-80d6266d74f728a9-detail.mp4",
+      "poster": "media/sa-079-80d6266d74f728a9-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -12509,7 +12509,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "02552c4f9aa427e4ad5f9e6116c1e16ed13eea4eb62060db13284a85c9a8fd0b"
+      "fingerprint": "80d6266d74f728a96b7ecd465855ae2e81467ea70c82a964e9e5c70d4fdb33e7"
     },
     "provenance": {
       "kind": "original",
@@ -12522,7 +12522,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
+      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",
@@ -12656,9 +12656,9 @@
     ],
     "recipe": "scope-routing",
     "preview": {
-      "gallery": "media/sa-080-573d38e448dd02d8-gallery.mp4",
-      "detail": "media/sa-080-573d38e448dd02d8-detail.mp4",
-      "poster": "media/sa-080-573d38e448dd02d8-poster.jpg",
+      "gallery": "media/sa-080-7842df4461be71f5-gallery.mp4",
+      "detail": "media/sa-080-7842df4461be71f5-detail.mp4",
+      "poster": "media/sa-080-7842df4461be71f5-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -12667,7 +12667,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "573d38e448dd02d8e184ccee2d257a8f9fc7e5b46edce822b04c236522938995"
+      "fingerprint": "7842df4461be71f572328741d1e45e8f90948975bd7bded91f8306e270b678dc"
     },
     "provenance": {
       "kind": "original",
@@ -12741,12 +12741,12 @@
       ]
     },
     "motion": {
-      "language": "Quantize opposed cover and label offsets into four closed steps; preserve readable text at all steps.",
+      "language": "Glide the photo cover and perforated page through staggered, smooth opposing arcs; preserve their rotation, overlap, and readable text.",
       "intensity": "moderate",
       "pacing": "measured",
       "easing": "Frame-driven normalized time; smoothstep envelopes, sine/cosine cycles, or explicitly quantized steps as stated in the motion grammar.",
       "rules": [
-        "Quantize opposed cover and label offsets into four closed steps; preserve readable text at all steps.",
+        "Glide the photo cover and perforated page through staggered, smooth opposing arcs; preserve their rotation, overlap, and readable text.",
         "Keep motion deterministic and frame-driven; retain coherent loop endpoints and a useful initial poster-like image."
       ]
     },
@@ -12768,7 +12768,7 @@
     "distinctive": [
       "Angled left photographic cover overlapped by a perforated right edition label.",
       "Heavy sans issue title, serif side note and monospaced stamp number.",
-      "Quantize opposed cover and label offsets into four closed steps; preserve readable text at all steps.",
+      "Glide the photo cover and perforated page through staggered, smooth opposing arcs; preserve their rotation, overlap, and readable text.",
       "Flat publication collage with printed-paper cues."
     ],
     "avoid": [
@@ -12795,7 +12795,7 @@
         "左側斜置攝影封面，右側齒孔頁與圓形印章疊合。"
       ],
       "motion": [
-        "封面與側頁反向位移量化為四步，所有步驟保持可讀。",
+        "照片封面與齒孔側頁錯開，以平滑相反方向滑行；保留原有傾角、疊合與可讀文字。",
         "動畫以影格驅動；循環末端要能合理接回起點，初始畫面也須有用。"
       ],
       "media": [
@@ -12818,9 +12818,9 @@
     ],
     "recipe": "zine-stamps",
     "preview": {
-      "gallery": "media/sa-081-cc9a3219a09fd134-gallery.mp4",
-      "detail": "media/sa-081-cc9a3219a09fd134-detail.mp4",
-      "poster": "media/sa-081-cc9a3219a09fd134-poster.jpg",
+      "gallery": "media/sa-081-cf7b4879c43a3327-gallery.mp4",
+      "detail": "media/sa-081-cf7b4879c43a3327-detail.mp4",
+      "poster": "media/sa-081-cf7b4879c43a3327-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -12829,7 +12829,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "6c92a4720db1cf3a79c6dfe7422dec4b337fb300efa44cfb3d05193c42a8b5c5"
+      "fingerprint": "cf7b4879c43a332735b90dce86f1bea8df81040c8af1741f672818e71e10f670"
     },
     "provenance": {
       "kind": "original",
@@ -12842,7 +12842,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
+      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",
@@ -12976,9 +12976,9 @@
     ],
     "recipe": "loom-weave",
     "preview": {
-      "gallery": "media/sa-082-af01dc9c9716df36-gallery.mp4",
-      "detail": "media/sa-082-af01dc9c9716df36-detail.mp4",
-      "poster": "media/sa-082-af01dc9c9716df36-poster.jpg",
+      "gallery": "media/sa-082-6400a37edfc73647-gallery.mp4",
+      "detail": "media/sa-082-6400a37edfc73647-detail.mp4",
+      "poster": "media/sa-082-6400a37edfc73647-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -12987,7 +12987,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "af01dc9c9716df363f7b5c300490a22b459e31a14526ad4ab9d3e0f9b10f1bd5"
+      "fingerprint": "6400a37edfc736470b215eb8291b092a81dddba984995618d3781f1702fed2f9"
     },
     "provenance": {
       "kind": "original",
@@ -13134,9 +13134,9 @@
     ],
     "recipe": "ceramic-slabs",
     "preview": {
-      "gallery": "media/sa-083-711c942dc88bd05d-gallery.mp4",
-      "detail": "media/sa-083-711c942dc88bd05d-detail.mp4",
-      "poster": "media/sa-083-711c942dc88bd05d-poster.jpg",
+      "gallery": "media/sa-083-886af27e24447ca8-gallery.mp4",
+      "detail": "media/sa-083-886af27e24447ca8-detail.mp4",
+      "poster": "media/sa-083-886af27e24447ca8-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -13145,7 +13145,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "711c942dc88bd05d4bd1d3f23339e2a45ef7ffeded2d874e4b1f3a24fb88aa4f"
+      "fingerprint": "886af27e24447ca81ae2325ec298e703aa8d9c2b7560326402ac368ef6095216"
     },
     "provenance": {
       "kind": "original",
@@ -13292,9 +13292,9 @@
     ],
     "recipe": "botanical-glass",
     "preview": {
-      "gallery": "media/sa-084-0ab0875ba9d95652-gallery.mp4",
-      "detail": "media/sa-084-0ab0875ba9d95652-detail.mp4",
-      "poster": "media/sa-084-0ab0875ba9d95652-poster.jpg",
+      "gallery": "media/sa-084-4718b4d13f107b34-gallery.mp4",
+      "detail": "media/sa-084-4718b4d13f107b34-detail.mp4",
+      "poster": "media/sa-084-4718b4d13f107b34-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -13303,7 +13303,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "0ab0875ba9d95652556b932aed72977aed81341436d6f5f82c38ecadc570997f"
+      "fingerprint": "4718b4d13f107b34a85023bb8c8e53e561cee9365d28d2b829aafeba4b1df5c0"
     },
     "provenance": {
       "kind": "original",
@@ -13450,9 +13450,9 @@
     ],
     "recipe": "celestial-chart",
     "preview": {
-      "gallery": "media/sa-085-a020c41f8f9eea33-gallery.mp4",
-      "detail": "media/sa-085-a020c41f8f9eea33-detail.mp4",
-      "poster": "media/sa-085-a020c41f8f9eea33-poster.jpg",
+      "gallery": "media/sa-085-4553d4a3bf429860-gallery.mp4",
+      "detail": "media/sa-085-4553d4a3bf429860-detail.mp4",
+      "poster": "media/sa-085-4553d4a3bf429860-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -13461,7 +13461,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "b71e69283638b742428bc00315e0d43a39013cfd1b03726e4d89a47a00fa3631"
+      "fingerprint": "4553d4a3bf4298608c615d2bb91712d5ee52a7272e48562b2d9b30766faff8b9"
     },
     "provenance": {
       "kind": "original",
@@ -13608,9 +13608,9 @@
     ],
     "recipe": "fiscal-waterfall",
     "preview": {
-      "gallery": "media/sa-086-019f20de946c9228-gallery.mp4",
-      "detail": "media/sa-086-019f20de946c9228-detail.mp4",
-      "poster": "media/sa-086-019f20de946c9228-poster.jpg",
+      "gallery": "media/sa-086-a3c1bc98853c0abb-gallery.mp4",
+      "detail": "media/sa-086-a3c1bc98853c0abb-detail.mp4",
+      "poster": "media/sa-086-a3c1bc98853c0abb-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -13619,7 +13619,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "0349fda20c443a810e6d20998176ff484a611ab4a10f9918fe8d1ed79642cc6f"
+      "fingerprint": "a3c1bc98853c0abb23e4230d8fc6d26f12becdad496ff95ddb84133efec0555a"
     },
     "provenance": {
       "kind": "original",
@@ -13766,9 +13766,9 @@
     ],
     "recipe": "mechanical-clock",
     "preview": {
-      "gallery": "media/sa-087-9486ffdf1be8109c-gallery.mp4",
-      "detail": "media/sa-087-9486ffdf1be8109c-detail.mp4",
-      "poster": "media/sa-087-9486ffdf1be8109c-poster.jpg",
+      "gallery": "media/sa-087-81a14ebe392de719-gallery.mp4",
+      "detail": "media/sa-087-81a14ebe392de719-detail.mp4",
+      "poster": "media/sa-087-81a14ebe392de719-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -13777,7 +13777,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "0a32e4b5f85285d58ee1fb6a1e1da03477cf1d7bb350f51dbce65d3eb7f1b2cc"
+      "fingerprint": "81a14ebe392de719001bac2d8c1cdd2b0806903c25da845d641f9755030284bb"
     },
     "provenance": {
       "kind": "original",
@@ -13924,9 +13924,9 @@
     ],
     "recipe": "analog-meter",
     "preview": {
-      "gallery": "media/sa-088-536541c8ac949a5a-gallery.mp4",
-      "detail": "media/sa-088-536541c8ac949a5a-detail.mp4",
-      "poster": "media/sa-088-536541c8ac949a5a-poster.jpg",
+      "gallery": "media/sa-088-123522e6af05f1c3-gallery.mp4",
+      "detail": "media/sa-088-123522e6af05f1c3-detail.mp4",
+      "poster": "media/sa-088-123522e6af05f1c3-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -13935,7 +13935,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "536541c8ac949a5a83b40508a4ce34f96337bb40fed123e12ccd8fbdf368aead"
+      "fingerprint": "123522e6af05f1c34622e3a545467fe9ff24faddc3eb08c8bf6af6e4b215af9b"
     },
     "provenance": {
       "kind": "original",
@@ -14082,9 +14082,9 @@
     ],
     "recipe": "magnetic-poetry",
     "preview": {
-      "gallery": "media/sa-089-46df6282a3b999f8-gallery.mp4",
-      "detail": "media/sa-089-46df6282a3b999f8-detail.mp4",
-      "poster": "media/sa-089-46df6282a3b999f8-poster.jpg",
+      "gallery": "media/sa-089-a0a34c43619f9d8f-gallery.mp4",
+      "detail": "media/sa-089-a0a34c43619f9d8f-detail.mp4",
+      "poster": "media/sa-089-a0a34c43619f9d8f-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -14093,7 +14093,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "3f739fecf27197989ecb459fef03bbb97cda20dcb735761f61a95ecbc83c8dc7"
+      "fingerprint": "a0a34c43619f9d8f657d0621fcda698ed9791a3c0b6ec3e6f60abdaa913bbd18"
     },
     "provenance": {
       "kind": "original",
@@ -14240,9 +14240,9 @@
     ],
     "recipe": "contour-type",
     "preview": {
-      "gallery": "media/sa-090-30076d802fd60a3e-gallery.mp4",
-      "detail": "media/sa-090-30076d802fd60a3e-detail.mp4",
-      "poster": "media/sa-090-30076d802fd60a3e-poster.jpg",
+      "gallery": "media/sa-090-5b79be409c00a66e-gallery.mp4",
+      "detail": "media/sa-090-5b79be409c00a66e-detail.mp4",
+      "poster": "media/sa-090-5b79be409c00a66e-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -14251,7 +14251,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "30076d802fd60a3e39f28c13dcc1e93b5fca37aee899470ddac9d8cd83b986ac"
+      "fingerprint": "5b79be409c00a66ea96374416dc74b6ad2cf075ceb2b46ef19d5ddb0bec61073"
     },
     "provenance": {
       "kind": "original",
@@ -14398,9 +14398,9 @@
     ],
     "recipe": "cardboard-stage",
     "preview": {
-      "gallery": "media/sa-091-7d3f5404ba63bf54-gallery.mp4",
-      "detail": "media/sa-091-7d3f5404ba63bf54-detail.mp4",
-      "poster": "media/sa-091-7d3f5404ba63bf54-poster.jpg",
+      "gallery": "media/sa-091-12144c6dad72d294-gallery.mp4",
+      "detail": "media/sa-091-12144c6dad72d294-detail.mp4",
+      "poster": "media/sa-091-12144c6dad72d294-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -14409,7 +14409,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "7d3f5404ba63bf543ec72ac6c759658174bf99477b0e3f37c443e93efc119477"
+      "fingerprint": "12144c6dad72d294d4dbe538c193fa28a4ccda439d7b095aa559f0977b3f9ace"
     },
     "provenance": {
       "kind": "original",
@@ -14556,9 +14556,9 @@
     ],
     "recipe": "tile-map",
     "preview": {
-      "gallery": "media/sa-092-2987d054dfee680a-gallery.mp4",
-      "detail": "media/sa-092-2987d054dfee680a-detail.mp4",
-      "poster": "media/sa-092-2987d054dfee680a-poster.jpg",
+      "gallery": "media/sa-092-4cfea0cc2d59818a-gallery.mp4",
+      "detail": "media/sa-092-4cfea0cc2d59818a-detail.mp4",
+      "poster": "media/sa-092-4cfea0cc2d59818a-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -14567,7 +14567,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "2987d054dfee680a2237b2255d10426d6de94d1393fcc2f1f0cce0b092dc6c89"
+      "fingerprint": "4cfea0cc2d59818a45705ae45dec0e0cb293f6182e46fd7dd9fffc590d93e8f4"
     },
     "provenance": {
       "kind": "original",
@@ -14714,9 +14714,9 @@
     ],
     "recipe": "book-binding",
     "preview": {
-      "gallery": "media/sa-093-1d3d8d0ad8f9aff4-gallery.mp4",
-      "detail": "media/sa-093-1d3d8d0ad8f9aff4-detail.mp4",
-      "poster": "media/sa-093-1d3d8d0ad8f9aff4-poster.jpg",
+      "gallery": "media/sa-093-26e55cbb57101c4e-gallery.mp4",
+      "detail": "media/sa-093-26e55cbb57101c4e-detail.mp4",
+      "poster": "media/sa-093-26e55cbb57101c4e-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -14725,7 +14725,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "1d3d8d0ad8f9aff4826fc6242a9cc3273ff598a561206bdb7341c1ace66b2da9"
+      "fingerprint": "26e55cbb57101c4e265bbc99c1809f8240bf2b1d028af37b51462df3026f1079"
     },
     "provenance": {
       "kind": "original",
@@ -14872,9 +14872,9 @@
     ],
     "recipe": "negative-letterpress",
     "preview": {
-      "gallery": "media/sa-094-db9f16359a33664f-gallery.mp4",
-      "detail": "media/sa-094-db9f16359a33664f-detail.mp4",
-      "poster": "media/sa-094-db9f16359a33664f-poster.jpg",
+      "gallery": "media/sa-094-7426f4b52fb5e703-gallery.mp4",
+      "detail": "media/sa-094-7426f4b52fb5e703-detail.mp4",
+      "poster": "media/sa-094-7426f4b52fb5e703-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -14883,7 +14883,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "b3eaeade1ed3f478d0f5bc4aea5709646187cd821e52ea7d44b34203667bf43d"
+      "fingerprint": "7426f4b52fb5e70329f4c7651aeaad4aa679c3850b501ca75b3c106aa75361e7"
     },
     "provenance": {
       "kind": "original",
@@ -15030,9 +15030,9 @@
     ],
     "recipe": "stencil-transfer",
     "preview": {
-      "gallery": "media/sa-095-2d443b28572f4d46-gallery.mp4",
-      "detail": "media/sa-095-2d443b28572f4d46-detail.mp4",
-      "poster": "media/sa-095-2d443b28572f4d46-poster.jpg",
+      "gallery": "media/sa-095-8e824e0a96b99279-gallery.mp4",
+      "detail": "media/sa-095-8e824e0a96b99279-detail.mp4",
+      "poster": "media/sa-095-8e824e0a96b99279-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -15041,7 +15041,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "9103a5fd599f7fce39eede20a196c5a78d8b74cbf83682cba04b5402297da020"
+      "fingerprint": "8e824e0a96b992790ad09ef0e6014c128cc10398528e15ea039431c2c65bc360"
     },
     "provenance": {
       "kind": "original",
@@ -15115,12 +15115,12 @@
       ]
     },
     "motion": {
-      "language": "Move the two proof panels in opposing tiny horizontal cosine envelopes; preserve their rotations and overlap.",
+      "language": "Glide the overlapping proof panels along smooth opposing diagonal paths on the light table, with a restrained breathing scale.",
       "intensity": "restrained",
       "pacing": "slow",
       "easing": "Frame-driven normalized time; smoothstep envelopes, sine/cosine cycles, or explicitly quantized steps as stated in the motion grammar.",
       "rules": [
-        "Move the two proof panels in opposing tiny horizontal cosine envelopes; preserve their rotations and overlap.",
+        "Glide the overlapping proof panels along smooth opposing diagonal paths on the light table, with a restrained breathing scale.",
         "Keep motion deterministic and frame-driven; retain coherent loop endpoints and a useful initial poster-like image."
       ]
     },
@@ -15142,7 +15142,7 @@
     "distinctive": [
       "Two overlapping angled photo transparencies on one wide pale lightbox; dark borders remain visible.",
       "Small serif proof title with tiny monospaced sample labels and a clear Chinese footer.",
-      "Move the two proof panels in opposing tiny horizontal cosine envelopes; preserve their rotations and overlap.",
+      "Glide the overlapping proof panels along smooth opposing diagonal paths on the light table, with a restrained breathing scale.",
       "Flat proof-table illustration; no physical transmitted-light simulation."
     ],
     "avoid": [
@@ -15170,7 +15170,7 @@
         "兩張斜置相疊的影像樣片，外框暗邊保持可見，底下是寬光桌。"
       ],
       "motion": [
-        "樣片以相反的小餘弦包絡水平移動，角度與相疊關係固定。",
+        "兩張樣片沿相反的斜向路徑平滑滑行，並以克制的呼吸縮放呈現實體試片感。",
         "動畫以影格驅動；循環末端要能合理接回起點，初始畫面也須有用。"
       ],
       "media": [
@@ -15193,9 +15193,9 @@
     ],
     "recipe": "lightbox-proof",
     "preview": {
-      "gallery": "media/sa-096-d208052f7f2f1766-gallery.mp4",
-      "detail": "media/sa-096-d208052f7f2f1766-detail.mp4",
-      "poster": "media/sa-096-d208052f7f2f1766-poster.jpg",
+      "gallery": "media/sa-096-b232e0c681022eae-gallery.mp4",
+      "detail": "media/sa-096-b232e0c681022eae-detail.mp4",
+      "poster": "media/sa-096-b232e0c681022eae-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -15204,7 +15204,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "d23a9aca5635ed5c0428daa92cb84930e48a83a0f136d46a186428602261a8e8"
+      "fingerprint": "b232e0c681022eae02abeef2736593201873ee241081d40c98c6bd2f8ed391c6"
     },
     "provenance": {
       "kind": "original",
@@ -15217,7 +15217,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
+      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",
@@ -15278,12 +15278,12 @@
       ]
     },
     "motion": {
-      "language": "Move the pencil illustration along a short closed diagonal path; preserve the hand-drawn line offsets.",
+      "language": "Reveal the perspective outline as a continuous pencil stroke while the pencil tip follows the exact path, writing the form into view.",
       "intensity": "restrained",
       "pacing": "slow",
       "easing": "Frame-driven normalized time; smoothstep envelopes, sine/cosine cycles, or explicitly quantized steps as stated in the motion grammar.",
       "rules": [
-        "Move the pencil illustration along a short closed diagonal path; preserve the hand-drawn line offsets.",
+        "Reveal the perspective outline as a continuous pencil stroke while the pencil tip follows the exact path, writing the form into view.",
         "Keep motion deterministic and frame-driven; retain coherent loop endpoints and a useful initial poster-like image."
       ]
     },
@@ -15304,7 +15304,7 @@
     "distinctive": [
       "One broad hand-drafted perspective object with offset duplicate strokes, dimension rules and a visible pencil mark.",
       "Restrained serif introductory line and monospaced scale/draft labels.",
-      "Move the pencil illustration along a short closed diagonal path; preserve the hand-drawn line offsets.",
+      "Reveal the perspective outline as a continuous pencil stroke while the pencil tip follows the exact path, writing the form into view.",
       "Flat drafting illustration with pseudo-perspective; not engineering geometry."
     ],
     "avoid": [
@@ -15328,7 +15328,7 @@
         "寬幅透視盒體用微錯位複線描繪，旁有尺寸線與可見筆尖。"
       ],
       "motion": [
-        "筆尖沿短對角封閉路徑移動，鉛筆複線偏移保持固定。",
+        "透視外框隨筆尖沿同一路徑逐段描出，讓鉛筆像正在把形體寫畫出來。",
         "動畫以影格驅動；循環末端要能合理接回起點，初始畫面也須有用。"
       ],
       "media": [
@@ -15351,9 +15351,9 @@
     ],
     "recipe": "pencil-drafting",
     "preview": {
-      "gallery": "media/sa-097-5730f75d48a415a7-gallery.mp4",
-      "detail": "media/sa-097-5730f75d48a415a7-detail.mp4",
-      "poster": "media/sa-097-5730f75d48a415a7-poster.jpg",
+      "gallery": "media/sa-097-af9c453ca3d971f9-gallery.mp4",
+      "detail": "media/sa-097-af9c453ca3d971f9-detail.mp4",
+      "poster": "media/sa-097-af9c453ca3d971f9-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -15362,7 +15362,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "b21f042a69358d284d1e974a39e824ef8f857dc51bf05cefde56bc626c44a848"
+      "fingerprint": "af9c453ca3d971f953150f5935bf3c3e1a8b59f7978e8e9127958386006e2cf7"
     },
     "provenance": {
       "kind": "original",
@@ -15375,7 +15375,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
+      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",
@@ -15509,9 +15509,9 @@
     ],
     "recipe": "receipt-roll",
     "preview": {
-      "gallery": "media/sa-098-289378d6cd3166ac-gallery.mp4",
-      "detail": "media/sa-098-289378d6cd3166ac-detail.mp4",
-      "poster": "media/sa-098-289378d6cd3166ac-poster.jpg",
+      "gallery": "media/sa-098-83096ae1e4133312-gallery.mp4",
+      "detail": "media/sa-098-83096ae1e4133312-detail.mp4",
+      "poster": "media/sa-098-83096ae1e4133312-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -15520,7 +15520,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "289378d6cd3166aced2dc1dd11ed278da25c9f05181292a138a367a6e0f3c445"
+      "fingerprint": "83096ae1e41333128717fb84c54e686c607008d7423f47d89b31dd01316fce54"
     },
     "provenance": {
       "kind": "original",
@@ -15667,9 +15667,9 @@
     ],
     "recipe": "orbital-ribbons",
     "preview": {
-      "gallery": "media/sa-099-ae053672ea6b9c71-gallery.mp4",
-      "detail": "media/sa-099-ae053672ea6b9c71-detail.mp4",
-      "poster": "media/sa-099-ae053672ea6b9c71-poster.jpg",
+      "gallery": "media/sa-099-2f01585e563436be-gallery.mp4",
+      "detail": "media/sa-099-2f01585e563436be-detail.mp4",
+      "poster": "media/sa-099-2f01585e563436be-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -15678,7 +15678,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "ae053672ea6b9c71d57e92df06169eaa17d6fa3a8fa01ede2b204f9eefdda456"
+      "fingerprint": "2f01585e563436be095ad8a959fe2cd4ab94edc537a440b1c9ae4a97e45a0475"
     },
     "provenance": {
       "kind": "original",
@@ -15825,9 +15825,9 @@
     ],
     "recipe": "paper-tessellation",
     "preview": {
-      "gallery": "media/sa-100-c1d23125fa9baa23-gallery.mp4",
-      "detail": "media/sa-100-c1d23125fa9baa23-detail.mp4",
-      "poster": "media/sa-100-c1d23125fa9baa23-poster.jpg",
+      "gallery": "media/sa-100-6079459af5b108fb-gallery.mp4",
+      "detail": "media/sa-100-6079459af5b108fb-detail.mp4",
+      "poster": "media/sa-100-6079459af5b108fb-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -15836,7 +15836,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "c1d23125fa9baa2308c8dd03ae28bff4f8b41f50d94236ca7b2fe30378728109"
+      "fingerprint": "6079459af5b108fb5ffbad495a817aec2a709882941a81dd1f1407b513ddc4cd"
     },
     "provenance": {
       "kind": "original",
