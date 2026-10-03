@@ -13,7 +13,7 @@ die() {
   exit 1
 }
 
-[[ -d "$workspace_root/.git" ]] || die "Run this from the canonical AI Skills checkout."
+[[ -e "$workspace_root/.git" ]] || die "Run this from the canonical AI Skills checkout."
 cd "$workspace_root"
 [[ "$(git branch --show-current)" == "$workspace_branch" ]] || die "Switch the AI Skills checkout to main before syncing."
 git_subtree_path="$(git --exec-path)/git-subtree"
