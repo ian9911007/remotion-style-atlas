@@ -1,0 +1,44 @@
+{
+  "name": "remotion-style-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "node --import tsx scripts/validate.ts && tsc --noEmit && vite build",
+    "studio": "remotion studio src/remotion/index.tsx --no-open",
+    "render": "node --import tsx scripts/render.ts",
+    "render:changed": "node --import tsx scripts/render.ts --changed",
+    "render:all": "node --import tsx scripts/render.ts --all",
+    "validate": "node --import tsx scripts/validate.ts",
+    "review": "node --import tsx scripts/review.ts",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "test:browser": "node --import tsx tests/browser.ts",
+    "assets": "node --import tsx scripts/create-assets.ts",
+    "sync:push": "bash scripts/sync-github.sh push",
+    "sync:pull": "bash scripts/sync-github.sh pull",
+    "preview": "vite preview --host 127.0.0.1 --port 4175 --strictPort"
+  },
+  "dependencies": {
+    "lucide-react": "0.468.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.530",
+    "zod": "4.1.12"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "@remotion/bundler": "4.0.530",
+    "@remotion/cli": "4.0.530",
+    "@remotion/renderer": "4.0.530",
+    "@types/node": "22.19.0",
+    "@types/react": "19.2.0",
+    "@types/react-dom": "19.2.0",
+    "@vitejs/plugin-react": "5.0.4",
+    "prettier": "3.8.1",
+    "sharp": "0.34.4",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vite": "7.1.9"
+  }
+}
