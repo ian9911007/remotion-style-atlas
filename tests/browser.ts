@@ -344,13 +344,11 @@ test("reference attachment is stored in IndexedDB and loads after refresh", asyn
     "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aV1YAAAAASUVORK5CYII=",
     "base64",
   );
-  await dialog
-    .locator("input[type=file]")
-    .setInputFiles({
-      name: "test-reference.png",
-      mimeType: "image/png",
-      buffer: image,
-    });
+  await dialog.locator("input[type=file]").setInputFiles({
+    name: "test-reference.png",
+    mimeType: "image/png",
+    buffer: image,
+  });
   await dialog.getByRole("button", { name: "儲存參考草稿" }).click();
   await expect
     .poll(async () => !!(await stored(page, REFS))?.[0]?.attachment)
@@ -416,14 +414,11 @@ test("versioned local export/import round trip and malformed import rejection", 
   await page.evaluate(() => localStorage.clear());
   await page.reload();
   await page.getByRole("button", { name: "本機資料匯出與匯入" }).click();
-  await page
-    .getByRole("dialog")
-    .locator("input[type=file]")
-    .setInputFiles({
-      name: "state.json",
-      mimeType: "application/json",
-      buffer: payload,
-    });
+  await page.getByRole("dialog").locator("input[type=file]").setInputFiles({
+    name: "state.json",
+    mimeType: "application/json",
+    buffer: payload,
+  });
   await expect(page.getByRole("status")).toContainText("本機資料已匯入");
   assert.deepEqual(await stored(page, PREFS), expectedPreferences);
   assert.deepEqual(await stored(page, REFS), expectedReferences);
@@ -461,6 +456,18 @@ test("wall playback budget, explicit pause survives hover/scroll and still has z
   await allPaused(page);
   await card(page).hover();
   await allPaused(page);
+});
+
+test("wall playback rotates fairly through all visible cards", async (page) => {
+  await card(page, "SA-061").scrollIntoViewIfNeeded();
+  await expect(card(page, "SA-061")).toBeVisible();
+  await expect
+    .poll(async () => (await snapshot(page)).playing.includes("SA-061"), {
+      timeout: 15000,
+      intervals: [250, 500, 1000],
+    })
+    .toBe(true);
+  assert.ok((await snapshot(page)).playing.length <= 6);
 });
 
 test("focus mode awards one interacted card and keyboard focus works", async (page) => {

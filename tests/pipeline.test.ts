@@ -7,6 +7,7 @@ import {
   canonicalStyle,
   chooseStyles,
   fingerprintFor,
+  projectRoot,
   readCatalog,
   renderingCodeHash,
   sha256,
@@ -71,6 +72,11 @@ test("source assets and fonts invalidate code hash", () => {
   } finally {
     rmSync(root, { recursive: true, force: true });
   }
+});
+test("recipe fingerprints isolate independent style implementations", () => {
+  const sonar = renderingCodeHash(projectRoot, "sonar-depth");
+  const ink = renderingCodeHash(projectRoot, "ink-bloom");
+  assert.notEqual(sonar, ink);
 });
 test("selected rendering rejects unknown IDs and unimplemented drafts", () => {
   const style = catalog[0];

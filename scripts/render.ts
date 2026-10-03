@@ -21,6 +21,7 @@ import {
   renderStill,
 } from "@remotion/renderer";
 import { catalogSchema, type StyleSpec } from "../src/catalog/schema";
+import { recipeRegistry } from "../src/remotion/recipes";
 
 export const projectRoot = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -88,9 +89,16 @@ function walk(directory: string): string[] {
           : [],
     );
 }
-export function renderingCodeHash(root = projectRoot): string {
+export function renderingCodeHash(root = projectRoot, recipe?: string): string {
+  const recipeFiles = [
+    path.join(root, "src/remotion/recipes-a.tsx"),
+    path.join(root, "src/remotion/recipes-b.tsx"),
+  ];
+  const scopedRecipes = root === projectRoot && recipe !== undefined;
   const files = [
-    ...walk(path.join(root, "src/remotion")),
+    ...walk(path.join(root, "src/remotion")).filter(
+      (file) => !scopedRecipes || !recipeFiles.includes(file),
+    ),
     ...walk(path.join(root, "public/assets")),
     ...walk(path.join(root, "public/fonts")),
     path.join(root, "src/catalog/schema.ts"),
@@ -101,6 +109,24 @@ export function renderingCodeHash(root = projectRoot): string {
   for (const file of files) {
     hash.update(path.relative(root, file));
     hash.update(readFileSync(file));
+  }
+  if (scopedRecipes) {
+    for (const file of recipeFiles) {
+      const source = readFileSync(file, "utf8");
+      const firstRecipe = source.search(
+        /^const [A-Z]\w*: React\.FC<RecipeProps>/m,
+      );
+      const registry = source.indexOf("export const recipeRegistry");
+      if (firstRecipe < 0 || registry < 0)
+        throw new Error(
+          "Cannot isolate recipes in " + path.basename(file) + ".",
+        );
+      hash.update(source.slice(0, firstRecipe));
+      hash.update(source.slice(registry));
+    }
+    const component = recipeRegistry[recipe!];
+    if (!component) throw new Error("Unknown rendering recipe " + recipe + ".");
+    hash.update(component.toString());
   }
   return hash.digest("hex");
 }
@@ -222,12 +248,15 @@ export async function main(args = process.argv.slice(2)) {
   const started = Date.now();
   let catalog = readCatalog();
   const manifest = readManifest();
-  const codeHash = renderingCodeHash();
   let styles = chooseStyles(catalog, args);
   if (args.includes("--changed"))
     styles = styles.filter(
       (s) =>
-        !recordIsCurrent(s, manifest.styles[s.id], fingerprintFor(s, codeHash)),
+        !recordIsCurrent(
+          s,
+          manifest.styles[s.id],
+          fingerprintFor(s, renderingCodeHash(projectRoot, s.recipe)),
+        ),
     );
   if (!styles.length) {
     console.log(
@@ -264,7 +293,10 @@ export async function main(args = process.argv.slice(2)) {
       logLevel: "warn",
     });
     for (const style of styles) {
-      const fingerprint = fingerprintFor(style, codeHash);
+      const fingerprint = fingerprintFor(
+        style,
+        renderingCodeHash(projectRoot, style.recipe),
+      );
       const stem = `${style.id.toLowerCase()}-${fingerprint.slice(0, 16)}`;
       let success = false;
       for (let attempt = 1; attempt <= 3 && !success; attempt++) {

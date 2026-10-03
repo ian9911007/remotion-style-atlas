@@ -55,7 +55,6 @@ export async function main(args = process.argv.slice(2)) {
   }
   let catalog = readCatalog();
   const manifest = readManifest();
-  const hash = renderingCodeHash();
   for (const id of ids)
     if (!catalog.some((s) => s.id === id))
       throw new Error(`Unknown style ${id}`);
@@ -72,7 +71,7 @@ export async function main(args = process.argv.slice(2)) {
       !recordIsCurrent(
         style,
         manifest.styles[style.id],
-        fingerprintFor(style, hash),
+        fingerprintFor(style, renderingCodeHash(projectRoot, style.recipe)),
       )
     )
       throw new Error(

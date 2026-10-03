@@ -18,9 +18,10 @@ export class PlaybackScheduler {
   private blocked = false;
   private hidden = false;
   private active: string | null = null;
-  private timer: ReturnType<typeof setTimeout> | null = null;
+  private rotationTimer: ReturnType<typeof setInterval> | null = null;
   private serial = 0;
   private granted = new Set<string>();
+  private rotationOffset = 0;
   readonly limit =
     typeof window !== "undefined" &&
     window.matchMedia("(pointer: coarse)").matches
@@ -39,9 +40,12 @@ export class PlaybackScheduler {
           const entry = [...this.entries.values()].find(
             (e) => e.element === item.target,
           );
-          if (entry)
-            entry.visible =
+          if (entry) {
+            const visible =
               item.isIntersecting && item.intersectionRatio >= 0.25;
+            if (visible && !entry.visible) entry.priority = ++this.serial;
+            entry.visible = visible;
+          }
         }
         this.schedule();
       },
@@ -49,6 +53,26 @@ export class PlaybackScheduler {
     );
     for (const e of this.entries.values()) this.observer.observe(e.element);
     document.addEventListener("visibilitychange", this.visibility);
+    this.rotationTimer = setInterval(() => {
+      const enabled =
+        !this.paused && !this.blocked && !this.hidden && this.mode !== "still";
+      const visibleCount = [...this.entries.values()].filter(
+        (e) => e.visible && !e.failed,
+      ).length;
+      if (enabled && this.mode === "wall" && visibleCount > this.limit) {
+        const activeVisible = Boolean(
+          this.active && this.entries.get(this.active)?.visible,
+        );
+        const poolSize = visibleCount - Number(activeVisible);
+        let step = Math.max(1, this.limit - Number(activeVisible));
+        const gcd = (a: number, b: number): number =>
+          b === 0 ? a : gcd(b, a % b);
+        while (poolSize > 1 && gcd(step, poolSize) !== 1) step++;
+        this.rotationOffset = (this.rotationOffset + step) % poolSize;
+        this.schedule();
+      }
+      this.releaseStaleSources();
+    }, 5000);
   }
   register(
     id: string,
@@ -112,10 +136,6 @@ export class PlaybackScheduler {
     this.schedule();
   }
   private schedule() {
-    if (this.timer) {
-      clearTimeout(this.timer);
-      this.timer = null;
-    }
     const enabled =
       !this.paused && !this.blocked && !this.hidden && this.mode !== "still";
     const candidates = [...this.entries.entries()]
@@ -131,7 +151,14 @@ export class PlaybackScheduler {
           Number(b === this.active) - Number(a === this.active) ||
           y.priority - x.priority,
       );
-    const granted = new Set(candidates.slice(0, this.limit).map(([id]) => id));
+    const pinned = candidates.filter(([id]) => id === this.active);
+    const rotating = candidates.filter(([id]) => id !== this.active);
+    const slots = Math.max(0, this.limit - pinned.length);
+    const offset = rotating.length ? this.rotationOffset % rotating.length : 0;
+    const ordered = rotating.slice(offset).concat(rotating.slice(0, offset));
+    const granted = new Set(
+      [...pinned, ...ordered.slice(0, slots)].map(([id]) => id),
+    );
     this.granted = granted;
     for (const [id, e] of this.entries) {
       if (granted.has(id)) {
@@ -176,19 +203,18 @@ export class PlaybackScheduler {
       e.element.removeAttribute("src");
       e.element.load();
     }
-    this.timer = setTimeout(() => {
-      this.timer = null;
-      for (const [id, e] of this.entries) {
-        if (
-          !granted.has(id) &&
-          e.element.hasAttribute("src") &&
-          Date.now() - e.lastUsed >= 10000
-        ) {
-          e.element.removeAttribute("src");
-          e.element.load();
-        }
+  }
+  private releaseStaleSources() {
+    for (const [id, e] of this.entries) {
+      if (
+        !this.granted.has(id) &&
+        e.element.hasAttribute("src") &&
+        Date.now() - e.lastUsed >= 11000
+      ) {
+        e.element.removeAttribute("src");
+        e.element.load();
       }
-    }, 11000);
+    }
   }
   snapshot() {
     return {
@@ -209,8 +235,8 @@ export class PlaybackScheduler {
     this.observer?.disconnect();
     this.observer = null;
     document.removeEventListener("visibilitychange", this.visibility);
-    if (this.timer) clearTimeout(this.timer);
-    this.timer = null;
+    if (this.rotationTimer) clearInterval(this.rotationTimer);
+    this.rotationTimer = null;
     for (const e of this.entries.values()) {
       e.element.pause();
       e.element.removeAttribute("src");

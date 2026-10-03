@@ -238,7 +238,7 @@ const TypeScroll: React.FC<RecipeProps> = ({ style, progress: p }) => {
 };
 const IrisContact: React.FC<RecipeProps> = ({ style, progress: p }) => {
   const { background: bg, foreground: fg, accent: a } = style.palette;
-  const radius = 124 + beat(p) * 34;
+  const aperture = (index: number) => turn(p - index / 3);
   return (
     <Canvas background={bg}>
       <Text x={52} y={89} size={37} color={fg} font={serif}>
@@ -252,7 +252,7 @@ const IrisContact: React.FC<RecipeProps> = ({ style, progress: p }) => {
         <g key={asset}>
           <defs>
             <clipPath id={`b-iris-${i}`}>
-              <circle cx={244 + i * 396} cy={361} r={radius} />
+              <circle cx={244 + i * 396} cy={361} r={124 + aperture(i) * 42} />
             </clipPath>
           </defs>
           <g clipPath={`url(#b-iris-${i})`}>
@@ -262,7 +262,7 @@ const IrisContact: React.FC<RecipeProps> = ({ style, progress: p }) => {
               y={184}
               width={354}
               height={354}
-              scale={1.03 + 0.04 * turn(p)}
+              scale={1.02 + 0.05 * aperture(i)}
             />
           </g>
           <Ring x={244 + i * 396} y={361} r={173} color={a} width={2} />
@@ -306,7 +306,7 @@ const IrisContact: React.FC<RecipeProps> = ({ style, progress: p }) => {
 };
 const InkBloom: React.FC<RecipeProps> = ({ style, progress: p }) => {
   const { background: bg, foreground: fg, accent: a } = style.palette;
-  const d = 24 * wave(p);
+  const d = 54 * wave(p);
   const blob = `M786 113C945 ${57 + d} 1160 124 1174 283C1253 423 1090 602 962 575C818 693 609 597 636 437C522 ${252 - d} 648 105 786 113Z`;
   return (
     <Canvas background={bg}>
@@ -322,7 +322,7 @@ const InkBloom: React.FC<RecipeProps> = ({ style, progress: p }) => {
           y={76}
           width={686}
           height={580}
-          scale={1.07 + 0.025 * turn(p)}
+          scale={1.04 + 0.07 * turn(p)}
           filter="grayscale(1) contrast(1.18)"
         />
         <rect x={536} y={76} width={686} height={580} fill={a} opacity={0.34} />
@@ -658,13 +658,13 @@ const CalendarLeaves: React.FC<RecipeProps> = ({ style, progress: p }) => {
               width={155}
               height={68}
               fill={i === 12 || i === 23 ? a : s}
-              opacity={i === 12 || i === 23 ? 0.5 + 0.4 * b : 1}
+              opacity={i === 12 || i === 23 ? 0.28 + 0.72 * b : 1}
             />
             <Text x={x + 14} y={y + 47} size={27} color={fg} font={mono}>
               {i < 31 ? String(i + 1).padStart(2, "0") : ""}
             </Text>
             {i === 12 && (
-              <path d={`M${x + 116} ${y}h39v${22 + 15 * b}Z`} fill={bg} />
+              <path d={`M${x + 106} ${y}h49v${22 + 30 * b}Z`} fill={bg} />
             )}
           </g>
         );
@@ -744,7 +744,7 @@ const SonarDepth: React.FC<RecipeProps> = ({ style, progress: p }) => {
 };
 const ThermalContours: React.FC<RecipeProps> = ({ style, progress: p }) => {
   const { background: bg, foreground: fg, accent: a } = style.palette;
-  const w = wave(p) * 12;
+  const w = wave(p) * 36;
   return (
     <Canvas background={bg}>
       <Text x={59} y={98} size={19} color={fg} spacing={4}>
@@ -815,8 +815,8 @@ const RouteTopography: React.FC<RecipeProps> = ({ style, progress: p }) => {
           fill="none"
           stroke={a}
           strokeWidth={7}
-          strokeDasharray="1100"
-          strokeDashoffset={-(1 - b) * 390}
+          strokeDasharray="1200"
+          strokeDashoffset={(1 - b) * 1200}
         />
         <circle cx={98} cy={596} r={10} fill={a} />
         <circle cx={800} cy={228} r={10} fill={a} />
@@ -850,7 +850,7 @@ const BotanicalAnatomy: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const w = wave(p) * 8;
+  const w = wave(p) * 28;
   return (
     <Canvas background={bg}>
       <Text x={59} y={104} size={52} color={fg} font={serif}>
@@ -1131,7 +1131,7 @@ const EmbossedSeal: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const light = 2 + 2 * turn(p);
+  const light = 3 + 10 * turn(p);
   return (
     <Canvas background={bg}>
       <Text x={56} y={96} size={18} color={fg} spacing={4}>
@@ -1269,10 +1269,10 @@ const ConstructivistWedges: React.FC<RecipeProps> = ({
   return (
     <Canvas background={bg}>
       <polygon points={`0,${166 - b * 25} 1052,0 375,720 0,720`} fill={a} />
-      <polygon points="738,0 1280,0 1280,720 521,720" fill={s} />
+      <polygon points="738,0 1280,0 1280,625 521,625" fill={s} />
       <circle cx={1013} cy={182} r={147} fill={fg} />
       <circle cx={1013} cy={182} r={97} fill={bg} />
-      <g transform={`rotate(-16,580,375) translate(${b * 17},0)`}>
+      <g transform={`rotate(-16,580,375) translate(${b * 28},0)`}>
         <rect x={63} y={216} width={1002} height={132} fill={fg} />
         <Text x={95} y={319} size={89} color={bg} weight={800} spacing={-2}>
           BUILD THE FUTURE
@@ -1284,7 +1284,7 @@ const ConstructivistWedges: React.FC<RecipeProps> = ({
       <Text x={41} y={84} size={19} color={bg} spacing={3}>
         ORIGINAL CONSTRUCTION / 078
       </Text>
-      <Text x={1174} y={657} size={26} color={fg} anchor="end">
+      <Text x={1174} y={690} size={26} color={fg} anchor="end">
         從另一個角度，開始。
       </Text>
     </Canvas>
@@ -1297,7 +1297,7 @@ const IsometricRoom: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const w = wave(p) * 13;
+  const w = wave(p) * 38;
   return (
     <Canvas background={bg}>
       <Text x={58} y={93} size={21} color={fg} spacing={3}>
@@ -1360,44 +1360,60 @@ const ScopeRouting: React.FC<RecipeProps> = ({ style, progress: p }) => {
       <Text x={1199} y={87} size={19} color={a} anchor="end">
         每條路徑，都能被看見。
       </Text>
-      {[0, 1, 2, 3].map((i) => (
-        <g key={i}>
-          <rect x={51} y={173 + i * 110} width={159} height={64} fill={s} />
-          <Text x={76} y={213 + i * 110} size={21} color={fg} font={mono}>
-            INPUT 0{i + 1}
-          </Text>
-          <path
-            d={`M211 ${206 + i * 110}H${405 + i * 72}V${287 + i * 58}H836`}
-            fill="none"
-            stroke={a}
-            strokeWidth={2}
-          />
-          <circle
-            cx={226 + b * (170 + i * 20)}
-            cy={206 + i * 110}
-            r={7}
-            fill={fg}
-          />
-          <rect
-            x={849}
-            y={197 + i * 90}
-            width={344}
-            height={71}
-            fill="none"
-            stroke={s}
-          />
-          <path
-            d={Array.from(
-              { length: 43 },
-              (_, j) =>
-                `${j ? "L" : "M"}${867 + j * 7.3} ${231 + i * 90 + Math.sin(j * 0.52 + i + b) * 16}`,
-            ).join("")}
-            fill="none"
-            stroke={a}
-            strokeWidth={2}
-          />
-        </g>
-      ))}
+      {[0, 1, 2, 3].map((i) => {
+        const phase = turn((p + [0.08, 0.58, 0.33, 0.83][i]) % 1);
+        const first = 194 + 72 * i;
+        const vertical = Math.abs(81 - 52 * i);
+        const second = 431 - 72 * i;
+        const distance = phase * (first + vertical + second);
+        const x =
+          distance < first
+            ? 211 + distance
+            : distance < first + vertical
+              ? 405 + 72 * i
+              : 405 + 72 * i + distance - first - vertical;
+        const startY = 206 + 110 * i;
+        const turnY = 287 + 58 * i;
+        const y =
+          distance < first
+            ? startY
+            : distance < first + vertical
+              ? startY + Math.sign(turnY - startY) * (distance - first)
+              : turnY;
+        return (
+          <g key={i}>
+            <rect x={51} y={173 + i * 110} width={159} height={64} fill={s} />
+            <Text x={76} y={213 + i * 110} size={21} color={fg} font={mono}>
+              INPUT 0{i + 1}
+            </Text>
+            <path
+              d={`M211 ${206 + i * 110}H${405 + i * 72}V${287 + i * 58}H836`}
+              fill="none"
+              stroke={a}
+              strokeWidth={2}
+            />
+            <circle cx={x} cy={y} r={9} fill={fg} />
+            <rect
+              x={849}
+              y={197 + i * 90}
+              width={344}
+              height={71}
+              fill="none"
+              stroke={s}
+            />
+            <path
+              d={Array.from(
+                { length: 43 },
+                (_, j) =>
+                  `${j ? "L" : "M"}${867 + j * 7.3} ${231 + i * 90 + Math.sin(j * 0.52 + i + b) * 16}`,
+              ).join("")}
+              fill="none"
+              stroke={a}
+              strokeWidth={2}
+            />
+          </g>
+        );
+      })}
       <Line x1={734} y1={176} x2={734} y2={613} color={fg} width={5} />
       <Text x={52} y={681} size={16} color={fg} font={mono}>
         ILLUSTRATIVE SIGNALS / NO LIVE MEASUREMENT
@@ -1472,7 +1488,7 @@ const LoomWeave: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const w = wave(p) * 10;
+  const w = wave(p) * 56;
   return (
     <Canvas background={bg}>
       <Text x={57} y={105} size={76} color={fg} font={serif}>
@@ -1499,7 +1515,7 @@ const LoomWeave: React.FC<RecipeProps> = ({ style, progress: p }) => {
           {Array.from({ length: 40 }, (_, col) => (
             <path
               key={col}
-              d={`M${63 + col * 28} ${238 + row * 17}Q${76 + col * 28} ${238 + row * 17 + (col % 2 === row % 2 ? 5 : -5) + w * 0.22} ${91 + col * 28} ${238 + row * 17}`}
+              d={`M${63 + col * 28} ${238 + row * 17}Q${76 + col * 28} ${238 + row * 17 + (col % 2 === row % 2 ? 5 : -5) + w * 0.6} ${91 + col * 28} ${238 + row * 17}`}
               fill="none"
               stroke={row % 3 === 0 ? a : bg}
               strokeWidth={8}
@@ -1538,7 +1554,7 @@ const CeramicSlabs: React.FC<RecipeProps> = ({ style, progress: p }) => {
       <Text x={68} y={640} size={17} color={fg} font={mono}>
         VECTOR RELIEF / CERAMIC IMPRESSION
       </Text>
-      <g transform={`translate(0,${-b * 9}) rotate(-5,754,351)`}>
+      <g transform={`translate(0,${-b * 28}) rotate(-5,754,351)`}>
         <path
           d="M575 104Q791 61 975 124L981 537Q808 606 574 549Z"
           fill={fg}
@@ -1556,7 +1572,7 @@ const CeramicSlabs: React.FC<RecipeProps> = ({ style, progress: p }) => {
           />
         ))}
       </g>
-      <g transform={`translate(${b * 8},0) rotate(9,1061,464)`}>
+      <g transform={`translate(${b * 34},0) rotate(9,1061,464)`}>
         <path
           d="M957 319Q1080 293 1200 330L1194 639Q1090 665 961 629Z"
           fill={s}
@@ -1588,7 +1604,7 @@ const BotanicalGlass: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const w = wave(p) * 13;
+  const w = wave(p) * 34;
   return (
     <Canvas background={bg}>
       <Text x={57} y={94} size={22} color={fg} spacing={4}>
@@ -1869,21 +1885,21 @@ const AnalogMeter: React.FC<RecipeProps> = ({ style, progress: p }) => {
       <rect x={52} y={144} width={1176} height={491} rx={14} fill={s} />
       <rect x={83} y={175} width={1114} height={388} rx={7} fill={bg} />
       <path
-        d="M219 478A429 429 0 0 1 1061 478"
+        d="M340 493A300 300 0 0 1 940 493"
         fill="none"
         stroke={fg}
         strokeWidth={3}
       />
       {Array.from({ length: 31 }, (_, i) => {
-        const r = i % 5 ? 420 : 392,
+        const r = i % 5 ? 278 : 258,
           t = Math.PI + (i * Math.PI) / 30;
         return (
           <Line
             key={i}
             x1={640 + Math.cos(t) * r}
             y1={493 + Math.sin(t) * r}
-            x2={640 + Math.cos(t) * 437}
-            y2={493 + Math.sin(t) * 437}
+            x2={640 + Math.cos(t) * 300}
+            y2={493 + Math.sin(t) * 300}
             color={i > 23 ? a : fg}
             width={i % 5 ? 2 : 4}
           />
@@ -1971,7 +1987,7 @@ const ContourType: React.FC<RecipeProps> = ({ style, progress: p }) => {
         THE DEPTH OF A LETTER
       </Text>
       {Array.from({ length: 17 }, (_, i) => (
-        <g key={i} transform={`translate(${i * (3 + b * 0.6)},${i * 6})`}>
+        <g key={i} transform={`translate(${i * (3 + b * 3)},${i * 6})`}>
           <text
             x="52"
             y="282"
@@ -2016,7 +2032,7 @@ const CardboardStage: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const w = wave(p) * 9;
+  const w = wave(p) * 30;
   return (
     <Canvas background={bg}>
       <Text x={52} y={83} size={23} color={fg} spacing={3}>
@@ -2078,7 +2094,7 @@ const TileMap: React.FC<RecipeProps> = ({ style, progress: p }) => {
         return (
           <g
             key={i}
-            transform={`translate(0,${!isWater && i % 4 === 0 ? -10 * b : 0})`}
+            transform={`translate(0,${!isWater && i % 4 === 0 ? -34 * b : 0})`}
           >
             <rect
               x={x}
@@ -2155,11 +2171,11 @@ const BookBinding: React.FC<RecipeProps> = ({ style, progress: p }) => {
         fill={s}
       />
       <path
-        d={`M76 136Q346 ${92 - b * 7} 638 151V627Q346 ${576 - b * 7} 76 612Z`}
+        d={`M76 136Q346 ${92 - b * 24} 638 151V627Q346 ${576 - b * 24} 76 612Z`}
         fill={bg}
       />
       <path
-        d={`M638 151Q924 ${92 + b * 7} 1201 136V612Q924 ${576 + b * 7} 638 627Z`}
+        d={`M638 151Q924 ${92 + b * 24} 1201 136V612Q924 ${576 + b * 24} 638 627Z`}
         fill={bg}
       />
       <Line x1={638} y1={151} x2={638} y2={627} color={a} width={2} />
@@ -2454,7 +2470,7 @@ const ReceiptRoll: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const shift = beat(p) * 28;
+  const shift = beat(p) * 54;
   return (
     <Canvas background={bg}>
       <Text x={55} y={105} size={71} color={fg} weight={800}>
@@ -2541,7 +2557,7 @@ const OrbitalRibbons: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const w = wave(p) * 20;
+  const w = wave(p) * 34;
   return (
     <Canvas background={bg}>
       <Text x={53} y={95} size={23} color={fg} spacing={3}>
@@ -2557,7 +2573,7 @@ const OrbitalRibbons: React.FC<RecipeProps> = ({ style, progress: p }) => {
         一個想法，持續延伸。
       </Text>
       {[0, 1, 2, 3, 4].map((i) => (
-        <g key={i} transform={`rotate(${i * 30 + w * 0.2},861,318)`}>
+        <g key={i} transform={`rotate(${i * 30 + w * 0.34},861,318)`}>
           <path
             d={`M633 328C578 ${68 + i * 14} 1130 ${49 + i * 13} 1111 344C1092 ${597 - i * 18} 606 ${629 - i * 11} 633 328Z`}
             fill="none"
@@ -2598,7 +2614,7 @@ const PaperTessellation: React.FC<RecipeProps> = ({ style, progress: p }) => {
       {Array.from({ length: 18 }, (_, i) => {
         const x = 153 + (i % 6) * 194,
           y = 268 + Math.floor(i / 6) * 139,
-          fold = 22 + 9 * b;
+          fold = 22 + 34 * b;
         return (
           <g key={i}>
             <polygon

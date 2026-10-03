@@ -541,29 +541,78 @@ const CinematicStarfield: React.FC<RecipeProps> = ({ style, progress: p }) => {
 };
 
 const CinematicProjector: React.FC<RecipeProps> = ({ style, progress: p }) => {
-  const { background: bg, foreground: fg, accent: a } = style.palette;
+  const {
+    background: bg,
+    foreground: fg,
+    accent: a,
+    secondary: s,
+  } = style.palette;
   const b = turn(p);
   return (
     <Canvas background={bg}>
-      <path d="m108 353 402-230v436Z" fill={a} opacity={0.11 + 0.05 * b} />
-      <circle cx={108} cy={353} r={18} fill={a} />
-      <rect x={77} y={321} width={55} height={64} rx={6} fill={fg} />
-      <circle
-        cx={105}
-        cy={293}
-        r={34}
+      <path d="M278 350 510 220V484Z" fill={a} opacity={0.2 + 0.12 * b} />
+      <path d="M69 400h176l18 20H58Z" fill={s} />
+      <rect x={76} y={310} width={171} height={92} rx={13} fill={fg} />
+      <path d="M91 321h139v70H91z" fill={s} />
+      <rect x={99} y={331} width={72} height={48} rx={3} fill={bg} />
+      <rect x={177} y={331} width={41} height={48} rx={3} fill={bg} />
+      <rect x={224} y={338} width={25} height={35} rx={4} fill={fg} />
+      <rect x={244} y={344} width={29} height={23} rx={5} fill={s} />
+      <circle cx={276} cy={355} r={17} fill={bg} stroke={fg} strokeWidth={5} />
+      <circle cx={276} cy={355} r={7} fill={a} />
+      <path
+        d="M279 346h10v18h-10zM111 309V292m108 17v-17"
         fill="none"
         stroke={fg}
-        strokeWidth={13}
+        strokeWidth={5}
       />
-      <circle
-        cx={155}
-        cy={292}
-        r={25}
+      {[126, 218].map((x) => {
+        const y = 252;
+        const r = 35;
+        return (
+          <g key={x}>
+            <circle
+              cx={x}
+              cy={y}
+              r={r}
+              fill={bg}
+              stroke={fg}
+              strokeWidth={10}
+            />
+            <circle cx={x} cy={y} r={8} fill={a} />
+            {[0, 1, 2, 3, 4, 5].map((spoke) => (
+              <Line
+                key={spoke}
+                x1={x + Math.cos((spoke * Math.PI) / 3) * 10}
+                y1={y + Math.sin((spoke * Math.PI) / 3) * 10}
+                x2={x + Math.cos((spoke * Math.PI) / 3) * (r - 7)}
+                y2={y + Math.sin((spoke * Math.PI) / 3) * (r - 7)}
+                color={fg}
+                width={3}
+              />
+            ))}
+            <circle cx={x} cy={y} r={3} fill={fg} />
+          </g>
+        );
+      })}
+      <path
+        d="M126 288q18 12 0 22M218 288q-18 12 0 22"
         fill="none"
-        stroke={fg}
-        strokeWidth={9}
+        stroke={a}
+        strokeWidth={3}
       />
+      {[0, 1, 2, 3, 4].map((i) => (
+        <Line
+          key={i}
+          x1={100 + i * 18}
+          y1={345}
+          x2={100 + i * 18}
+          y2={365}
+          color={bg}
+          width={3}
+        />
+      ))}
+      <path d="M92 402v13m145-13v13" stroke={fg} strokeWidth={7} />
       <Media
         asset="architecture"
         x={468}
@@ -607,17 +656,22 @@ const CinematicSpotlight: React.FC<RecipeProps> = ({ style, progress: p }) => {
   return (
     <Canvas background={bg}>
       <path
-        d={`M318 44 202 ${575}H${516 + b * 26}L365 44Z`}
+        d="M358 44 178 566Q358 638 538 566Z"
         fill={a}
-        opacity={0.16}
+        opacity={0.24 + 0.2 * b}
+      />
+      <path
+        d="M358 48 274 560Q358 600 442 560Z"
+        fill={fg}
+        opacity={0.035 + 0.055 * b}
       />
       <ellipse
         cx={359}
-        cy={583}
-        rx={181 + b * 17}
-        ry={31}
+        cy={608}
+        rx={92 + b * 30}
+        ry={27 + b * 6}
         fill={a}
-        opacity={0.15}
+        opacity={0.28 + b * 0.16}
       />
       <circle cx={358} cy={374} r={29} fill={fg} />
       <path
@@ -678,7 +732,7 @@ const CinematicStrata: React.FC<RecipeProps> = ({ style, progress: p }) => {
           key={i}
           d={`M-80 ${393 + i * 59}Q170 ${310 + i * 65} 404 ${405 + i * 48}T777 ${404 + i * 56}T1360 ${347 + i * 60}V800H-80Z`}
           fill={[s, a, "#8c6756", "#664f44", fg][i]}
-          transform={`translate(${w * (8 + i * 6)},0)`}
+          transform={`translate(${w * (16 + i * 12)},0)`}
         />
       ))}
       <Text x={55} y={675} color={bg} size={15} spacing={4}>
@@ -1504,7 +1558,7 @@ const SpatialTunnel: React.FC<RecipeProps> = ({ style, progress: p }) => {
       </defs>
       <g clipPath="url(#tunnel-frame)">
         {Array.from({ length: 11 }, (_, i) => {
-          const s = 0.14 + i * 0.096 + 0.021 * b;
+          const s = 0.14 + i * 0.096 + 0.052 * b;
           return (
             <rect
               key={i}
@@ -1536,9 +1590,9 @@ const SpatialTunnel: React.FC<RecipeProps> = ({ style, progress: p }) => {
         ))}
       </g>
       <rect
-        x={408 - b * 32}
+        x={408 - b * 70}
         y={221 - b * 8}
-        width={464 + b * 64}
+        width={464 + b * 140}
         height={203 + b * 16}
         fill={bg}
       />
@@ -1833,7 +1887,7 @@ const RetroSunburst: React.FC<RecipeProps> = ({ style, progress: p }) => {
           <rect
             key={i}
             x={500}
-            y={171 + i * 30 + 4 * b}
+            y={171 + i * 30 + 15 * b}
             width={700}
             height={i * 0.7 + 4}
             fill={bg}
@@ -1847,7 +1901,7 @@ const RetroSunburst: React.FC<RecipeProps> = ({ style, progress: p }) => {
           fill="none"
           stroke={[s, a, fg, s][i]}
           strokeWidth={35}
-          transform={`translate(${wave(p) * (10 + i * 5)},0)`}
+          transform={`translate(${wave(p) * (25 + i * 8)},0)`}
         />
       ))}
       <Text x={51} y={97} color={fg} size={19} spacing={3}>
@@ -2057,7 +2111,7 @@ const RetroTeletext: React.FC<RecipeProps> = ({ style, progress: p }) => {
 
 const RetroHalftone: React.FC<RecipeProps> = ({ style, progress: p }) => {
   const { background: bg, foreground: fg, accent: a } = style.palette;
-  const w = wave(p) * 3;
+  const w = wave(p) * 24;
   return (
     <Canvas background={bg}>
       <defs>
@@ -2088,6 +2142,7 @@ const RetroHalftone: React.FC<RecipeProps> = ({ style, progress: p }) => {
         height={520}
         fill="url(#halftone-large)"
         clipPath="url(#half-circle)"
+        transform={`translate(${-w},${w})`}
       />
       <path
         d="M895 161 939 268l117-19-84 84 62 103-116-34-66 96-3-118-114-35 108-42Z"
@@ -2127,7 +2182,7 @@ const MinimalSpecimen: React.FC<RecipeProps> = ({ style, progress: p }) => {
         y={42}
         width={642}
         height={641}
-        scale={1 + 0.025 * turn(p)}
+        scale={1 + 0.065 * turn(p)}
         filter="saturate(.4)"
       />
       <Text x={61} y={85} color={fg} size={16} font={mono}>
@@ -2137,17 +2192,17 @@ const MinimalSpecimen: React.FC<RecipeProps> = ({ style, progress: p }) => {
         ESSENTIAL FORM
       </Text>
       <path
-        d={`M${295 - 22 * b} 150v390m-15-390h30m-30 390h30`}
+        d={`M${295 - 42 * b} 150v390m-18-390h36m-36 390h36`}
         fill="none"
         stroke={a}
       />
       <path
-        d={`M465 ${594 + 17 * b}h352m-352-13v26m352-26v26`}
+        d={`M465 ${594 + 42 * b}h352m-352-18v36m352-36v36`}
         fill="none"
         stroke={a}
       />
       <Text
-        x={257 - 22 * b}
+        x={251 - 42 * b}
         y={355}
         color={fg}
         size={18}
@@ -2158,7 +2213,7 @@ const MinimalSpecimen: React.FC<RecipeProps> = ({ style, progress: p }) => {
       </Text>
       <Text
         x={641}
-        y={631 + 17 * b}
+        y={638 + 42 * b}
         color={fg}
         size={17}
         font={mono}

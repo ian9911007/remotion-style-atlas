@@ -16,7 +16,6 @@ import {
 export function validateCatalog({ writePublished = true } = {}) {
   const catalog = readCatalog();
   const manifest = readManifest();
-  const hash = renderingCodeHash();
   const errors: string[] = [];
   if (manifest.schemaVersion !== 1)
     errors.push("Unsupported render manifest schema.");
@@ -38,7 +37,13 @@ export function validateCatalog({ writePublished = true } = {}) {
       errors.push(`${style.id}: poster outside sequence`);
     if (style.status === "implemented") continue;
     const record = manifest.styles[style.id];
-    if (!recordIsCurrent(style, record, fingerprintFor(style, hash))) {
+    if (
+      !recordIsCurrent(
+        style,
+        record,
+        fingerprintFor(style, renderingCodeHash(projectRoot, style.recipe)),
+      )
+    ) {
       errors.push(
         `${style.id}: missing, stale, or modified media; run render:changed and review again`,
       );
