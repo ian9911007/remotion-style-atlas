@@ -1,6 +1,6 @@
 import { z } from "zod";
 const id = z.string().regex(/^SA-\d{3}$/);
-export const preferencesSchema = z
+const preferencesV1Schema = z
   .object({
     version: z.literal(1),
     favorites: z.array(id).max(1000),
@@ -9,6 +9,26 @@ export const preferencesSchema = z
     paused: z.boolean(),
   })
   .strict();
+const preferencesV2Schema = z
+  .object({
+    version: z.literal(2),
+    favorites: z.array(id).max(1000),
+    selections: z.array(id).max(3),
+    mode: z.enum(["wall", "focus", "still"]),
+    paused: z.boolean(),
+  })
+  .strict();
+export const preferencesSchema = z
+  .union([preferencesV1Schema, preferencesV2Schema])
+  .transform((prefs) =>
+    prefs.version === 1
+      ? {
+          ...prefs,
+          version: 2 as const,
+          mode: prefs.mode === "wall" ? ("focus" as const) : prefs.mode,
+        }
+      : prefs,
+  );
 export type Preferences = z.infer<typeof preferencesSchema>;
 const safeURL = z
   .string()
@@ -65,7 +85,7 @@ const referenceList = z.array(referenceSchema).max(200);
 const PREFS = "remotion-atlas.preferences.v1",
   REFS = "remotion-atlas.references.v1";
 const defaults: Preferences = {
-  version: 1,
+  version: 2,
   favorites: [],
   selections: [],
   mode: "focus",

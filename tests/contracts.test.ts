@@ -6,6 +6,7 @@ import { compilePrompt, compileBlend } from "../src/lib/prompt";
 import {
   parseLocalState,
   exportLocalState,
+  preferencesSchema,
   referenceSchema,
   type Preferences,
 } from "../src/lib/storage";
@@ -49,12 +50,25 @@ test("blend resolves ownership and labels an unrendered synthesis", () => {
   assert.ok(result.warnings.length >= 2);
 });
 const prefs: Preferences = {
-  version: 1,
+  version: 2,
   favorites: [styles[0].id],
   selections: [styles[1].id],
   mode: "focus",
   paused: true,
 };
+test("legacy playback default migrates to focus and new explicit global preference persists", () => {
+  const oldDefault = preferencesSchema.parse({
+    ...prefs,
+    version: 1,
+    mode: "wall",
+  });
+  assert.equal(oldDefault.version, 2);
+  assert.equal(oldDefault.mode, "focus");
+  assert.equal(
+    preferencesSchema.parse({ ...prefs, mode: "wall" }).mode,
+    "wall",
+  );
+});
 test("preferences round trip preserves favorites, explicit pause and order", () =>
   assert.deepEqual(
     parseLocalState(

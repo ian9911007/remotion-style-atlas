@@ -501,6 +501,37 @@ test("new visitors default to focus; global mode plays all cards and pause/still
   await allPaused(page);
 });
 
+test("saved legacy carousel default migrates to focus once and explicit global choice persists", async (page) => {
+  await page.evaluate((key) => {
+    localStorage.setItem(
+      key,
+      JSON.stringify({
+        version: 1,
+        favorites: [],
+        selections: [],
+        mode: "wall",
+        paused: false,
+      }),
+    );
+  }, PREFS);
+  await page.reload();
+  await expect(
+    page.getByRole("button", { name: "聚焦", exact: true }),
+  ).toHaveAttribute("aria-pressed", "true");
+  assert.deepEqual(await stored(page, PREFS), {
+    version: 2,
+    favorites: [],
+    selections: [],
+    mode: "focus",
+    paused: false,
+  });
+  await page.getByRole("button", { name: "全域", exact: true }).click();
+  await page.reload();
+  await expect(
+    page.getByRole("button", { name: "全域", exact: true }),
+  ).toHaveAttribute("aria-pressed", "true");
+});
+
 test("focus mode plays the hovered card and its surrounding grid neighbors", async (page) => {
   await page.getByRole("button", { name: "聚焦", exact: true }).click();
   await page.mouse.move(0, 0);
