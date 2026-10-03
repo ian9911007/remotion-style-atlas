@@ -443,23 +443,23 @@
       }
     },
     "SA-022": {
-      "fingerprint": "55306d9a7acd577b5f0fe5382c52876cd7332381e237874ef71d9ac6fc36e122",
-      "renderedAt": "2026-10-03T09:05:27.197Z",
+      "fingerprint": "f62062768081291268d059b5160c4d4f0480c384eabc6341dcbd62ce95edf804",
+      "renderedAt": "2026-10-03T09:48:36.289Z",
       "outputs": {
         "gallery": {
-          "path": "media/sa-022-55306d9a7acd577b-gallery.mp4",
-          "sha256": "4826a2a67cff4e78475024555a8d85c955a8cda2262788faa57ebc2b314b8a72",
-          "bytes": 76769
+          "path": "media/sa-022-f620627680812912-gallery.mp4",
+          "sha256": "e5bc31aa2986d7009cc64f3a6f3e87a4f4850c2db90bb3f1a60425b2f4550154",
+          "bytes": 115521
         },
         "detail": {
-          "path": "media/sa-022-55306d9a7acd577b-detail.mp4",
-          "sha256": "b186d688431f4cb4221cf7a48cc03f007ca3277e9a4c95e49f16ff0babef0a68",
-          "bytes": 488059
+          "path": "media/sa-022-f620627680812912-detail.mp4",
+          "sha256": "879e9657603bb7a98ba33a1d4d865d1476a71b2aaaa5202baf995aa9d9b92c02",
+          "bytes": 580787
         },
         "poster": {
-          "path": "media/sa-022-55306d9a7acd577b-poster.jpg",
-          "sha256": "e848a70963df080ec5030ab00ed910c73bb6c9dae1b43a1110c32fa922017e23",
-          "bytes": 74118
+          "path": "media/sa-022-f620627680812912-poster.jpg",
+          "sha256": "7aae6fabc1c2b34220ed98844bb6704deb3020d86b1493011cdf1007945d0692",
+          "bytes": 74029
         }
       }
     },
@@ -1745,23 +1745,23 @@
       }
     },
     "SA-084": {
-      "fingerprint": "948842c422598f29794398c82083d01be85778b32caef4f59b0a32f263d97b0d",
-      "renderedAt": "2026-10-03T08:49:41.478Z",
+      "fingerprint": "0ab0875ba9d95652556b932aed72977aed81341436d6f5f82c38ecadc570997f",
+      "renderedAt": "2026-10-03T09:51:11.217Z",
       "outputs": {
         "gallery": {
-          "path": "media/sa-084-948842c422598f29-gallery.mp4",
-          "sha256": "2cb60f624c006582db196f1b58148d80a2670fed90f1873b6c02aaa2729c7811",
-          "bytes": 35200
+          "path": "media/sa-084-0ab0875ba9d95652-gallery.mp4",
+          "sha256": "4b4af15b8260c22856c4e38d98a9b6e0fe6189cc9a23888f5e97b56e17f6217b",
+          "bytes": 70311
         },
         "detail": {
-          "path": "media/sa-084-948842c422598f29-detail.mp4",
-          "sha256": "42e273ca8ee8a05b910164159f397c28cf2fc6c90a967834cfd621633e5ace81",
-          "bytes": 179292
+          "path": "media/sa-084-0ab0875ba9d95652-detail.mp4",
+          "sha256": "d582d13d9daf897e362918f5b261d26c19409da2952e27e51f40b4d7567783f7",
+          "bytes": 358387
         },
         "poster": {
-          "path": "media/sa-084-948842c422598f29-poster.jpg",
-          "sha256": "e0e6f72cd40efeaecd1c65406ff65382fe45d58a7aae071fb92023eea07074c0",
-          "bytes": 64012
+          "path": "media/sa-084-0ab0875ba9d95652-poster.jpg",
+          "sha256": "bfbc75da68664a9c206b9d0cb4c4476e940a6a308545810deebb1bf7dc7cc78d",
+          "bytes": 64474
         }
       }
     },
@@ -1934,23 +1934,23 @@
       }
     },
     "SA-093": {
-      "fingerprint": "9b7da206064a453581be9938346f09fd52d246ba9a70cc824015d88453488614",
-      "renderedAt": "2026-10-03T08:50:45.212Z",
+      "fingerprint": "1d3d8d0ad8f9aff4826fc6242a9cc3273ff598a561206bdb7341c1ace66b2da9",
+      "renderedAt": "2026-10-03T09:49:05.213Z",
       "outputs": {
         "gallery": {
-          "path": "media/sa-093-9b7da206064a4535-gallery.mp4",
-          "sha256": "56e1f8a3aa4214c59f59f28fc25c7d361d2ad971c4de570d042f2800ff560654",
-          "bytes": 19479
+          "path": "media/sa-093-1d3d8d0ad8f9aff4-gallery.mp4",
+          "sha256": "f8249adbc5d03ca0502b1da77acbcdd1cafd5ea066be332d5a6bb6bba10dd43f",
+          "bytes": 52960
         },
         "detail": {
-          "path": "media/sa-093-9b7da206064a4535-detail.mp4",
-          "sha256": "226c218ca9edd3fe78d595b4eedde964301405282ec1ed99234203d9d6dce4ab",
-          "bytes": 92465
+          "path": "media/sa-093-1d3d8d0ad8f9aff4-detail.mp4",
+          "sha256": "104b7d36d6518d69d4a212fce5656f0b2f9198d6cef30c1ab37986b01297bcd5",
+          "bytes": 230395
         },
         "poster": {
-          "path": "media/sa-093-9b7da206064a4535-poster.jpg",
-          "sha256": "962eb4ebe423d7edd104611fc8de36ea1bc1b24a9a8faeada45ea711a792d473",
-          "bytes": 50988
+          "path": "media/sa-093-1d3d8d0ad8f9aff4-poster.jpg",
+          "sha256": "6524074b58edecb7399c82bf0c8768aaed4e489247bd668be41e3ba55789f837",
+          "bytes": 40409
         }
       }
     },

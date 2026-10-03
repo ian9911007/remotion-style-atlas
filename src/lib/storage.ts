@@ -68,7 +68,7 @@ const defaults: Preferences = {
   version: 1,
   favorites: [],
   selections: [],
-  mode: "wall",
+  mode: "focus",
   paused: false,
 };
 export function readPreferences(): Preferences {
@@ -80,7 +80,7 @@ export function readPreferences(): Preferences {
           ...defaults,
           mode: matchMedia("(prefers-reduced-motion: reduce)").matches
             ? "still"
-            : "wall",
+            : "focus",
         };
   } catch {
     return { ...defaults, mode: "still" };

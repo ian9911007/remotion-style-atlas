@@ -51,6 +51,7 @@ async function allPaused(page: Page) {
   await expect.poll(async () => (await snapshot(page)).playing.length).toBe(0);
 }
 async function settledPlayback(page: Page) {
+  await page.getByRole("button", { name: "全域", exact: true }).click();
   await expect
     .poll(async () => (await snapshot(page)).playing.length, { timeout: 15000 })
     .toBeGreaterThan(0);
@@ -190,6 +191,14 @@ test("detail preserves scroll, search, focus, keyboard Escape and hash refresh",
   const before = await page.evaluate(() => window.scrollY);
   await opening.press("Enter");
   await expect(page.getByRole("dialog")).toBeVisible();
+  await expect
+    .poll(() =>
+      page
+        .getByRole("dialog")
+        .locator(".detail-player video")
+        .evaluate((node: HTMLVideoElement) => !node.paused),
+    )
+    .toBe(true);
   assert.ok(page.url().endsWith("#/style/SA-001"));
   await expect.poll(async () => (await snapshot(page)).blocked).toBe(true);
   await allPaused(page);
@@ -223,6 +232,34 @@ test("detail preserves scroll, search, focus, keyboard Escape and hash refresh",
   await expect(
     page.getByRole("dialog").locator(".detail-player video"),
   ).toHaveAttribute("src", /detail\.mp4$/);
+});
+
+test("SA-022, SA-084 and SA-093 detail movies autoplay and advance", async (page) => {
+  for (const id of ["SA-022", "SA-084", "SA-093"]) {
+    await page.goto(`${baseURL}#/style/${id}`);
+    const video = page.getByRole("dialog").locator(".detail-player video");
+    await expect(video).toBeVisible();
+    await expect
+      .poll(() =>
+        video.evaluate(
+          (node: HTMLVideoElement) => !node.paused && node.currentTime > 0.2,
+        ),
+      )
+      .toBe(true);
+    const start = await video.evaluate(
+      (node: HTMLVideoElement) => node.currentTime,
+    );
+    await page.waitForTimeout(700);
+    const end = await video.evaluate(
+      (node: HTMLVideoElement) => node.currentTime,
+    );
+    assert.ok(end > start, `${id} detail preview advances after opening.`);
+    assert.equal(
+      await video.evaluate((node: HTMLVideoElement) => node.muted),
+      true,
+    );
+    await page.getByRole("button", { name: "關閉風格檢視" }).click();
+  }
 });
 
 test("clipboard copies full portable prompt and context only after success", async (page) => {
@@ -435,10 +472,16 @@ test("versioned local export/import round trip and malformed import rejection", 
   assert.deepEqual(await stored(page, PREFS), expectedPreferences);
 });
 
-test("wall playback budget, explicit pause survives hover/scroll and still has zero playback", async (page) => {
+test("new visitors default to focus; global mode plays all cards and pause/still stop playback", async (page) => {
+  await expect(
+    page.getByRole("button", { name: "聚焦", exact: true }),
+  ).toHaveAttribute("aria-pressed", "true");
+  await allPaused(page);
   await settledPlayback(page);
-  assert.equal((await snapshot(page)).limit, 6);
-  assert.ok((await snapshot(page)).playing.length <= 6);
+  assert.equal(
+    (await snapshot(page)).playing.length,
+    await page.locator(".style-card").count(),
+  );
   await page.getByRole("button", { name: "暫停所有預覽" }).click();
   await allPaused(page);
   await card(page, "SA-003").hover();
@@ -458,7 +501,21 @@ test("wall playback budget, explicit pause survives hover/scroll and still has z
   await allPaused(page);
 });
 
-test("wall playback rotates fairly through all visible cards", async (page) => {
+test("focus mode plays the hovered card and its surrounding grid neighbors", async (page) => {
+  await page.getByRole("button", { name: "聚焦", exact: true }).click();
+  await page.mouse.move(0, 0);
+  await allPaused(page);
+  await card(page, "SA-010").hover();
+  await expect
+    .poll(async () => (await snapshot(page)).playing.length)
+    .toBeGreaterThan(1);
+  const group = await snapshot(page);
+  assert.ok(group.playing.includes("SA-010"));
+  assert.ok(group.playing.length <= 9);
+});
+
+test("global playback includes cards outside the viewport", async (page) => {
+  await page.getByRole("button", { name: "全域", exact: true }).click();
   await card(page, "SA-061").scrollIntoViewIfNeeded();
   await expect(card(page, "SA-061")).toBeVisible();
   await expect
@@ -467,32 +524,40 @@ test("wall playback rotates fairly through all visible cards", async (page) => {
       intervals: [250, 500, 1000],
     })
     .toBe(true);
-  assert.ok((await snapshot(page)).playing.length <= 6);
+  assert.equal(
+    (await snapshot(page)).playing.length,
+    await page.locator(".style-card").count(),
+  );
 });
 
-test("focus mode awards one interacted card and keyboard focus works", async (page) => {
+test("focus mode updates the neighboring group on hover and keyboard focus", async (page) => {
   await page.getByRole("button", { name: "聚焦", exact: true }).click();
   await page.mouse.move(0, 0);
   await allPaused(page);
   await card(page, "SA-003").hover();
   await expect
-    .poll(async () => (await snapshot(page)).playing)
-    .toEqual(["SA-003"]);
+    .poll(async () => (await snapshot(page)).playing.length)
+    .toBeGreaterThan(1);
+  assert.ok((await snapshot(page)).playing.includes("SA-003"));
   await page.mouse.move(0, 0);
   await allPaused(page);
   await card(page, "SA-002").locator(".card-open").focus();
   await expect
-    .poll(async () => (await snapshot(page)).playing)
-    .toEqual(["SA-002"]);
+    .poll(async () => (await snapshot(page)).playing.length)
+    .toBeGreaterThan(1);
+  assert.ok((await snapshot(page)).playing.includes("SA-002"));
 });
 
-test("offscreen and hidden-document videos pause; rapid scroll retains bounded sources", async (page) => {
+test("global mode keeps offscreen cards playing and hidden-document videos pause", async (page) => {
   await settledPlayback(page);
   await page.evaluate(() => {
     document.querySelector("footer")!.setAttribute("style", "height:2500px");
   });
   await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-  await allPaused(page);
+  assert.equal(
+    (await snapshot(page)).playing.length,
+    await page.locator(".style-card").count(),
+  );
   await page.evaluate(() => window.scrollTo(0, 0));
   await settledPlayback(page);
   await page.evaluate(() => {
@@ -511,13 +576,10 @@ test("offscreen and hidden-document videos pause; rapid scroll retains bounded s
     document.dispatchEvent(new Event("visibilitychange"));
   });
   await settledPlayback(page);
-  for (let i = 0; i < 12; i++) {
-    await page.evaluate((top) => window.scrollTo(0, top), i % 2 ? 0 : 700);
-    await page.waitForTimeout(30);
-    const state = await snapshot(page);
-    assert.ok(state.playing.length <= state.limit);
-    assert.ok(state.sources.length <= state.limit * 2);
-  }
+  assert.equal(
+    (await snapshot(page)).playing.length,
+    await page.locator(".style-card").count(),
+  );
   await page.evaluate(() => window.scrollTo(0, 0));
 });
 
@@ -538,12 +600,11 @@ test(
 );
 
 test(
-  "coarse pointer uses budget two, two-column phone layout and touch detail",
+  "coarse pointer preserves two-column phone layout and touch detail",
   async (page) => {
     await settledPlayback(page);
     const state = await snapshot(page);
-    assert.equal(state.limit, 2);
-    assert.ok(state.playing.length <= 2);
+    assert.ok(state.playing.length > 0);
     const columns = await page
       .locator(".gallery-grid")
       .evaluate(
@@ -579,7 +640,7 @@ test("autoplay rejection leaves a poster and explicit retry control", async (pag
     };
   });
   await page.getByRole("button", { name: "靜態", exact: true }).click();
-  await page.getByRole("button", { name: "輪播", exact: true }).click();
+  await page.getByRole("button", { name: "全域", exact: true }).click();
   await expect(page.locator(".media-retry").first()).toBeVisible();
   await expect(page.locator(".card-media img").first()).toBeVisible();
   await allPaused(page);
@@ -592,6 +653,7 @@ test("missing gallery video, detail video and poster have usable failure states"
   await page.route("**/media/*detail.mp4", (route) => route.abort("failed"));
   await page.route("**/media/*poster.jpg", (route) => route.abort("failed"));
   await page.reload();
+  await page.getByRole("button", { name: "全域", exact: true }).click();
   await expect(page.locator(".poster-fallback").first()).toBeVisible();
   await expect(page.locator(".media-retry").first()).toBeVisible();
   await openFirst(page);

@@ -313,7 +313,7 @@ export function App() {
             <span className="playback-label">預覽</span>
             {(
               [
-                ["wall", "輪播", Grid2X2],
+                ["wall", "全域", Grid2X2],
                 ["focus", "聚焦", MousePointer2],
                 ["still", "靜態", Image],
               ] as const
@@ -323,8 +323,8 @@ export function App() {
                 className={preferences.mode === mode ? "active" : ""}
                 title={
                   {
-                    wall: "可見風格輪播",
-                    focus: "滑鼠或鍵盤聚焦時播放",
+                    wall: "播放所有風格預覽",
+                    focus: "播放滑鼠所在卡片及周圍八張預覽",
                     still: "僅顯示靜態海報",
                   }[mode]
                 }

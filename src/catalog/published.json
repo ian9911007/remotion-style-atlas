@@ -3417,12 +3417,12 @@
       ]
     },
     "motion": {
-      "language": "A clearly defined projector body, twin reels, lens barrel and animated beam illuminate the opposing screen.",
+      "language": "A clearly defined projector body and lens illuminate the opposing screen as the twin film reels rotate continuously in opposite directions.",
       "intensity": "restrained",
       "pacing": "slow",
       "easing": "normalized smoothstep hold/return envelopes; sine/cosine for explicitly continuous motion",
       "rules": [
-        "A clearly defined projector body, twin reels, lens barrel and animated beam illuminate the opposing screen.",
+        "Rotate the asymmetric five-spoke twin film reels continuously in opposite directions while the beam illuminates the opposing screen.",
         "Derive every rendered state from normalized composition progress; never use CSS keyframes or real-time randomness."
       ]
     },
@@ -3444,7 +3444,7 @@
     "distinctive": [
       "A flat projector silhouette and triangular light beam point toward a large rectangular architectural image; credits sit lower-left.",
       "Large Georgia lower-third title and small uppercase credits emphasize projected imagery.",
-      "A clearly defined projector body, twin reels, lens barrel and animated beam illuminate the opposing screen."
+      "Continuously rotating asymmetric twin reels, a clearly defined projector body and lens, and an animated beam illuminate the opposing screen."
     ],
     "avoid": [
       "Do not replace the distinctive composition with a centered title over a generic gradient.",
@@ -3470,7 +3470,7 @@
         "左側放映機與三角光束投向大幅建築圖，字幕位於左下。"
       ],
       "motion": [
-        "雙捲盤、鏡頭筒與機身輪廓清楚呈現放映機；投射光束明顯擴展。"
+        "雙捲盤以不同方向持續旋轉，搭配鏡頭筒與機身輪廓呈現放映機；投射光束明顯擴展。"
       ],
       "media": [
         "使用原創程序化插畫素材，不宣稱為實拍攝影；裁切保持比例。"
@@ -3493,9 +3493,9 @@
     ],
     "recipe": "cinematic-projector",
     "preview": {
-      "gallery": "media/sa-022-55306d9a7acd577b-gallery.mp4",
-      "detail": "media/sa-022-55306d9a7acd577b-detail.mp4",
-      "poster": "media/sa-022-55306d9a7acd577b-poster.jpg",
+      "gallery": "media/sa-022-f620627680812912-gallery.mp4",
+      "detail": "media/sa-022-f620627680812912-detail.mp4",
+      "poster": "media/sa-022-f620627680812912-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -3504,7 +3504,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "55306d9a7acd577b5f0fe5382c52876cd7332381e237874ef71d9ac6fc36e122"
+      "fingerprint": "f62062768081291268d059b5160c4d4f0480c384eabc6341dcbd62ce95edf804"
     },
     "provenance": {
       "kind": "original",
@@ -3517,7 +3517,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
+      "notes": "已檢視海報、起首、前段、中段、後段及末幀：SA-022 雙片盤持續反向旋轉；SA-084 光帶受花器輪廓裁切且葉片擺動；SA-093 翻頁跨過書脊並露出背面。接續以 Chromium 驗證播放器自動播放及影片推進。",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",
@@ -13219,12 +13219,12 @@
       ]
     },
     "motion": {
-      "language": "Soft highlight bands travel laterally across the glass vessels in a clear sine cycle.",
+      "language": "Soft highlight bands sweep laterally while clipped inside each glass vessel; paired leaves sway gently in opposite directions.",
       "intensity": "restrained",
       "pacing": "slow",
       "easing": "Frame-driven normalized time; smoothstep envelopes, sine/cosine cycles, or explicitly quantized steps as stated in the motion grammar.",
       "rules": [
-        "Soft highlight bands travel laterally across the glass vessels in a clear sine cycle.",
+        "Keep every moving highlight clipped within the vessel silhouette and sway the paired leaves gently in opposite directions.",
         "Keep motion deterministic and frame-driven; retain coherent loop endpoints and a useful initial poster-like image."
       ]
     },
@@ -13245,7 +13245,7 @@
     "distinctive": [
       "Three staggered transparent vessel illustrations beside a narrow left text column.",
       "Quiet serif two-line phrase and spaced material labels.",
-      "Soft highlight bands travel laterally across the glass vessels in a clear sine cycle.",
+      "Soft highlight bands remain inside the glass vessels while paired leaves sway gently in opposite directions.",
       "2.5D transparency impression; no physically accurate refraction."
     ],
     "avoid": [
@@ -13269,7 +13269,7 @@
         "三個透明花器高低錯落，左側保留窄文字欄。"
       ],
       "motion": [
-        "柔和高光帶以清楚幅度橫越玻璃器皿。",
+        "柔和光澤限制在花器輪廓內橫向移動，成對葉片以相反方向輕晃。",
         "動畫以影格驅動；循環末端要能合理接回起點，初始畫面也須有用。"
       ],
       "media": [
@@ -13292,9 +13292,9 @@
     ],
     "recipe": "botanical-glass",
     "preview": {
-      "gallery": "media/sa-084-948842c422598f29-gallery.mp4",
-      "detail": "media/sa-084-948842c422598f29-detail.mp4",
-      "poster": "media/sa-084-948842c422598f29-poster.jpg",
+      "gallery": "media/sa-084-0ab0875ba9d95652-gallery.mp4",
+      "detail": "media/sa-084-0ab0875ba9d95652-detail.mp4",
+      "poster": "media/sa-084-0ab0875ba9d95652-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -13303,7 +13303,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "948842c422598f29794398c82083d01be85778b32caef4f59b0a32f263d97b0d"
+      "fingerprint": "0ab0875ba9d95652556b932aed72977aed81341436d6f5f82c38ecadc570997f"
     },
     "provenance": {
       "kind": "original",
@@ -13316,7 +13316,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
+      "notes": "已檢視海報、起首、前段、中段、後段及末幀：SA-022 雙片盤持續反向旋轉；SA-084 光帶受花器輪廓裁切且葉片擺動；SA-093 翻頁跨過書脊並露出背面。接續以 Chromium 驗證播放器自動播放及影片推進。",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",
@@ -14641,12 +14641,12 @@
       ]
     },
     "motion": {
-      "language": "Opposing page curves flex in a broad closed envelope while text remains anchored.",
+      "language": "A loose page turns across the visible spine with a pronounced curved edge, revealing the reverse side and next page before returning.",
       "intensity": "restrained",
       "pacing": "slow",
       "easing": "Frame-driven normalized time; smoothstep envelopes, sine/cosine cycles, or explicitly quantized steps as stated in the motion grammar.",
       "rules": [
-        "Opposing page curves flex in a broad closed envelope while text remains anchored.",
+        "Clearly turn one page from right to left over the spine, reveal its reverse side, then return smoothly to the opening spread.",
         "Keep motion deterministic and frame-driven; retain coherent loop endpoints and a useful initial poster-like image."
       ]
     },
@@ -14659,7 +14659,7 @@
       "rules": [
         "Original book-page vector planes, spine and illustrative text rules."
       ],
-      "depth": "2.5D open-book illustration; no physical page-turn simulation.",
+      "depth": "Layered 2.5D page-turn illustration with a visible curved fold and reverse page face.",
       "effects": [
         "Use SVG geometry, clipping, modest opacity and deterministic offsets only; avoid expensive full-scene blur or unneeded particles."
       ]
@@ -14667,8 +14667,8 @@
     "distinctive": [
       "One open spread with a visible spine and gently bowed top/bottom page edges.",
       "Large serif multi-line phrase on the left page; compact utility heading and line-based notes on the right.",
-      "Opposing page curves flex in a broad closed envelope while text remains anchored.",
-      "2.5D open-book illustration; no physical page-turn simulation."
+      "A full page visibly turns across the spine, revealing its reverse side and the page beneath.",
+      "Layered 2.5D page-turn illustration with a visible curved fold and reverse page face."
     ],
     "avoid": [
       "Avoid pretending decorative line rules are readable sourced text or inserting copyrighted book pages.",
@@ -14680,7 +14680,7 @@
       "Traditional Chinese-capable fonts must be available and loaded before rendering."
     ],
     "limitations": [
-      "2.5D open-book illustration; no physical page-turn simulation.",
+      "Illustrated 2.5D page turn, not a physically simulated book.",
       "Only the 16:9 variant is implemented; sample words, objects and data are replaceable demonstration content."
     ],
     "presentation": {
@@ -14691,14 +14691,14 @@
         "單個開展跨頁，書脊可見，頁頂與頁底微弧。"
       ],
       "motion": [
-        "左右頁面曲線以明顯幅度彎動，文字保持定位。",
+        "單頁沿書脊明顯翻轉，露出紙張背面與底下頁面，再平順翻回。",
         "動畫以影格驅動；循環末端要能合理接回起點，初始畫面也須有用。"
       ],
       "media": [
         "原創書頁平面、書脊與示意文字線。"
       ],
       "limitations": [
-        "是 2.5D 書頁圖，不是翻頁物理模擬。",
+        "是 2.5D 翻頁插畫，不是實體書本的物理模擬。",
         "目前只實作 16:9；示範文字、數據與物件可替換。"
       ],
       "avoid": [
@@ -14714,9 +14714,9 @@
     ],
     "recipe": "book-binding",
     "preview": {
-      "gallery": "media/sa-093-9b7da206064a4535-gallery.mp4",
-      "detail": "media/sa-093-9b7da206064a4535-detail.mp4",
-      "poster": "media/sa-093-9b7da206064a4535-poster.jpg",
+      "gallery": "media/sa-093-1d3d8d0ad8f9aff4-gallery.mp4",
+      "detail": "media/sa-093-1d3d8d0ad8f9aff4-detail.mp4",
+      "poster": "media/sa-093-1d3d8d0ad8f9aff4-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -14725,7 +14725,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "9b7da206064a453581be9938346f09fd52d246ba9a70cc824015d88453488614"
+      "fingerprint": "1d3d8d0ad8f9aff4826fc6242a9cc3273ff598a561206bdb7341c1ace66b2da9"
     },
     "provenance": {
       "kind": "original",
@@ -14738,7 +14738,7 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
+      "notes": "已檢視海報、起首、前段、中段、後段及末幀：SA-022 雙片盤持續反向旋轉；SA-084 光帶受花器輪廓裁切且葉片擺動；SA-093 翻頁跨過書脊並露出背面。接續以 Chromium 驗證播放器自動播放及影片推進。",
       "date": "2026-10-03"
     },
     "created": "2026-10-03",

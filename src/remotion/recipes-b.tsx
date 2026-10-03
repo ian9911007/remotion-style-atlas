@@ -1624,17 +1624,31 @@ const BotanicalGlass: React.FC<RecipeProps> = ({ style, progress: p }) => {
           key={i}
           transform={`translate(${492 + i * 252},${44 + (i % 2) * 67})`}
         >
+          <defs>
+            <clipPath id={`b-botanical-vessel-${i}`}>
+              <path d="M30 322Q-6 443 34 567H164Q204 443 168 322Z" />
+            </clipPath>
+          </defs>
           <path
             d="M95 511Q115 357 48 195M98 439Q126 310 178 252"
             fill="none"
             stroke={a}
             strokeWidth={4}
           />
-          <path
-            d="M50 210Q-8 120 4 75Q82 93 50 210M170 266Q164 166 225 145Q239 221 170 266"
-            fill={a}
-            opacity={0.8}
-          />
+          <g transform={`rotate(${wave(p) * 8},50,210)`}>
+            <path
+              d="M50 210Q-8 120 4 75Q82 93 50 210Z"
+              fill={a}
+              opacity={0.8}
+            />
+          </g>
+          <g transform={`rotate(${-wave(p) * 8},170,266)`}>
+            <path
+              d="M170 266Q164 166 225 145Q239 221 170 266Z"
+              fill={a}
+              opacity={0.8}
+            />
+          </g>
           <path
             d="M30 322Q-6 443 34 567H164Q204 443 168 322Z"
             fill={s}
@@ -1656,13 +1670,15 @@ const BotanicalGlass: React.FC<RecipeProps> = ({ style, progress: p }) => {
             stroke={fg}
             opacity={0.6}
           />
-          <path
-            d={`M${48 + w} 350Q${22 + w} 437 ${57 + w} 538`}
-            stroke={fg}
-            strokeWidth={9}
-            fill="none"
-            opacity={0.2}
-          />
+          <g clipPath={`url(#b-botanical-vessel-${i})`}>
+            <path
+              d={`M${48 + w} 350Q${22 + w} 437 ${57 + w} 538`}
+              stroke={fg}
+              strokeWidth={9}
+              fill="none"
+              opacity={0.3}
+            />
+          </g>
           <ellipse cx={99} cy={567} rx={65} ry={13} fill={fg} opacity={0.12} />
         </g>
       ))}
@@ -2161,6 +2177,10 @@ const BookBinding: React.FC<RecipeProps> = ({ style, progress: p }) => {
     secondary: s,
   } = style.palette;
   const b = beat(p);
+  const reach = 579 * Math.cos(Math.PI * b);
+  const edge = 638 + reach;
+  const curl = Math.sin(Math.PI * b) * 48;
+  const edgeColor = b < 0.5 ? bg : s;
   return (
     <Canvas background={bg}>
       <Text x={55} y={85} size={20} color={fg} spacing={4}>
@@ -2170,14 +2190,8 @@ const BookBinding: React.FC<RecipeProps> = ({ style, progress: p }) => {
         d="M60 149Q344 105 638 164Q930 105 1217 149V625Q930 581 638 640Q344 581 60 625Z"
         fill={s}
       />
-      <path
-        d={`M76 136Q346 ${92 - b * 24} 638 151V627Q346 ${576 - b * 24} 76 612Z`}
-        fill={bg}
-      />
-      <path
-        d={`M638 151Q924 ${92 + b * 24} 1201 136V612Q924 ${576 + b * 24} 638 627Z`}
-        fill={bg}
-      />
+      <path d="M76 136Q346 92 638 151V627Q346 576 76 612Z" fill={bg} />
+      <path d="M638 151Q924 92 1201 136V612Q924 576 638 627Z" fill={bg} />
       <Line x1={638} y1={151} x2={638} y2={627} color={a} width={2} />
       <Text x={112} y={247} size={85} color={fg} font={serif}>
         Open
@@ -2209,6 +2223,35 @@ const BookBinding: React.FC<RecipeProps> = ({ style, progress: p }) => {
       <Text x={1126} y={582} size={16} color={fg} anchor="end" font={mono}>
         093 / 094
       </Text>
+      <path
+        d={`M638 151Q${638 + reach * 0.52} ${102 - curl} ${edge} 145V613Q${638 + reach * 0.52} ${594 + curl} 638 627Z`}
+        fill={edgeColor}
+        stroke={fg}
+        strokeWidth={2}
+        opacity={0.96}
+      />
+      <path
+        d={`M638 151Q${638 + reach * 0.52} ${102 - curl} ${edge} 145V613Q${638 + reach * 0.52} ${594 + curl} 638 627Z`}
+        fill="none"
+        stroke={a}
+        strokeWidth={Math.max(1, 5 * Math.abs(Math.cos(Math.PI * b)))}
+        opacity={0.7}
+      />
+      <g opacity={Math.min(1, Math.abs(Math.cos(Math.PI * b)) * 1.3)}>
+        <Text
+          x={638 + reach * 0.55}
+          y={298}
+          size={24}
+          color={fg}
+          anchor="middle"
+          font={mono}
+        >
+          {b < 0.5 ? "PAGE 02" : "PAGE 03"}
+        </Text>
+        <Line x1={638} y1={332} x2={edge} y2={332} color={fg} opacity={0.4} />
+        <Line x1={638} y1={352} x2={edge} y2={352} color={fg} opacity={0.4} />
+        <Line x1={638} y1={372} x2={edge} y2={372} color={fg} opacity={0.4} />
+      </g>
     </Canvas>
   );
 };

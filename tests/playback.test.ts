@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import { PlaybackScheduler } from "../src/lib/playback";
 
-test("wall playback rotates fairly through visible cards without exceeding its budget", async () => {
+test("global wall mode plays every registered card without a visibility budget", async () => {
   const previousWindow = globalThis.window;
   const previousDocument = globalThis.document;
   const previousObserver = globalThis.IntersectionObserver;
@@ -94,17 +94,8 @@ test("wall playback rotates fairly through visible cards without exceeding its b
           }) as unknown as IntersectionObserverEntry,
       ),
     );
-    assert.equal(scheduler.snapshot().playing.length, 6);
-
-    rotate!();
-    await Promise.resolve();
-    assert.ok(scheduler.snapshot().playing.includes("SA-001"));
-    assert.ok(scheduler.snapshot().playing.length <= 6);
-
-    rotate!();
-    await Promise.resolve();
-    assert.ok(scheduler.snapshot().playing.includes("SA-002"));
-    assert.ok(scheduler.snapshot().playing.length <= 6);
+    assert.equal(scheduler.snapshot().playing.length, videos.length);
+    assert.equal(scheduler.snapshot().sources.length, videos.length);
     scheduler.destroy();
   } finally {
     Object.defineProperty(globalThis, "window", {

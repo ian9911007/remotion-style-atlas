@@ -143,6 +143,9 @@ export function DetailView({
     const node = video.current;
     if (!node) return;
     node.src = mediaUrl(style.preview.detail);
+    // Muted inline playback is permitted by most browsers; keep the native
+    // controls available when a browser or user preference blocks autoplay.
+    void node.play().catch(() => {});
     const visibility = () => {
       if (document.hidden) node.pause();
     };
@@ -200,6 +203,7 @@ export function DetailView({
                   controls
                   muted
                   playsInline
+                  autoPlay
                   preload="metadata"
                   onError={() => setVideoFailed(true)}
                 />

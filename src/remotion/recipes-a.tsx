@@ -566,9 +566,10 @@ const CinematicProjector: React.FC<RecipeProps> = ({ style, progress: p }) => {
         stroke={fg}
         strokeWidth={5}
       />
-      {[126, 218].map((x) => {
+      {[126, 218].map((x, reel) => {
         const y = 252;
         const r = 35;
+        const rotation = p * 360 * (reel === 0 ? 1 : -1);
         return (
           <g key={x}>
             <circle
@@ -579,19 +580,21 @@ const CinematicProjector: React.FC<RecipeProps> = ({ style, progress: p }) => {
               stroke={fg}
               strokeWidth={10}
             />
-            <circle cx={x} cy={y} r={8} fill={a} />
-            {[0, 1, 2, 3, 4, 5].map((spoke) => (
-              <Line
-                key={spoke}
-                x1={x + Math.cos((spoke * Math.PI) / 3) * 10}
-                y1={y + Math.sin((spoke * Math.PI) / 3) * 10}
-                x2={x + Math.cos((spoke * Math.PI) / 3) * (r - 7)}
-                y2={y + Math.sin((spoke * Math.PI) / 3) * (r - 7)}
-                color={fg}
-                width={3}
-              />
-            ))}
-            <circle cx={x} cy={y} r={3} fill={fg} />
+            <g transform={`rotate(${rotation}, ${x}, ${y})`}>
+              <circle cx={x} cy={y} r={8} fill={a} />
+              {[0, 1, 2, 3, 4].map((spoke) => (
+                <Line
+                  key={spoke}
+                  x1={x + Math.cos((spoke * Math.PI * 2) / 5) * 10}
+                  y1={y + Math.sin((spoke * Math.PI * 2) / 5) * 10}
+                  x2={x + Math.cos((spoke * Math.PI * 2) / 5) * (r - 7)}
+                  y2={y + Math.sin((spoke * Math.PI * 2) / 5) * (r - 7)}
+                  color={fg}
+                  width={3}
+                />
+              ))}
+              <circle cx={x} cy={y} r={3} fill={fg} />
+            </g>
           </g>
         );
       })}

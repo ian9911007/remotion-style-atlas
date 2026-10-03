@@ -18,6 +18,7 @@ export class PlaybackScheduler {
   private blocked = false;
   private hidden = false;
   private active: string | null = null;
+  private focusGroup = new Set<string>();
   private rotationTimer: ReturnType<typeof setInterval> | null = null;
   private serial = 0;
   private granted = new Set<string>();
@@ -59,18 +60,7 @@ export class PlaybackScheduler {
       const visibleCount = [...this.entries.values()].filter(
         (e) => e.visible && !e.failed,
       ).length;
-      if (enabled && this.mode === "wall" && visibleCount > this.limit) {
-        const activeVisible = Boolean(
-          this.active && this.entries.get(this.active)?.visible,
-        );
-        const poolSize = visibleCount - Number(activeVisible);
-        let step = Math.max(1, this.limit - Number(activeVisible));
-        const gcd = (a: number, b: number): number =>
-          b === 0 ? a : gcd(b, a % b);
-        while (poolSize > 1 && gcd(step, poolSize) !== 1) step++;
-        this.rotationOffset = (this.rotationOffset + step) % poolSize;
-        this.schedule();
-      }
+      void visibleCount;
       this.releaseStaleSources();
     }, 5000);
   }
@@ -107,8 +97,9 @@ export class PlaybackScheduler {
     this.blocked = blocked;
     this.schedule();
   }
-  interact(id: string | null) {
+  interact(id: string | null, neighborhood: string[] = id ? [id] : []) {
     this.active = id;
+    this.focusGroup = new Set(neighborhood);
     if (id) {
       const e = this.entries.get(id);
       if (e) e.priority = ++this.serial;
@@ -142,23 +133,16 @@ export class PlaybackScheduler {
       .filter(
         ([id, e]) =>
           enabled &&
-          e.visible &&
+          (this.mode === "wall" || e.visible) &&
           !e.failed &&
-          (this.mode === "wall" || id === this.active),
+          (this.mode === "wall" || this.focusGroup.has(id)),
       )
       .sort(
         ([a, x], [b, y]) =>
           Number(b === this.active) - Number(a === this.active) ||
           y.priority - x.priority,
       );
-    const pinned = candidates.filter(([id]) => id === this.active);
-    const rotating = candidates.filter(([id]) => id !== this.active);
-    const slots = Math.max(0, this.limit - pinned.length);
-    const offset = rotating.length ? this.rotationOffset % rotating.length : 0;
-    const ordered = rotating.slice(offset).concat(rotating.slice(0, offset));
-    const granted = new Set(
-      [...pinned, ...ordered.slice(0, slots)].map(([id]) => id),
-    );
+    const granted = new Set(candidates.map(([id]) => id));
     this.granted = granted;
     for (const [id, e] of this.entries) {
       if (granted.has(id)) {
@@ -198,7 +182,9 @@ export class PlaybackScheduler {
     const retained = [...this.entries.values()]
       .filter((e) => e.element.hasAttribute("src"))
       .sort((a, b) => b.lastUsed - a.lastUsed);
-    for (const e of retained.slice(this.limit * 2)) {
+    for (const e of retained.slice(
+      this.mode === "wall" ? retained.length : this.limit * 2,
+    )) {
       e.element.pause();
       e.element.removeAttribute("src");
       e.element.load();

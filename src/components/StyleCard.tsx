@@ -23,6 +23,35 @@ export function StyleCard({
   const video = useRef<HTMLVideoElement>(null);
   const [failed, setFailed] = useState(false);
   const [posterFailed, setPosterFailed] = useState(false);
+  function focusNeighborhood() {
+    const grid = video.current?.closest(".gallery-grid");
+    const cards = grid
+      ? [...grid.querySelectorAll<HTMLElement>(".style-card[data-style-id]")]
+      : [];
+    const index = cards.indexOf(
+      video.current?.closest(".style-card") as HTMLElement,
+    );
+    if (!grid || index < 0) return [style.id];
+    const columns = Math.max(
+      1,
+      getComputedStyle(grid).gridTemplateColumns.split(" ").length,
+    );
+    const rows = Math.ceil(cards.length / columns);
+    const row = Math.floor(index / columns);
+    const column = index % columns;
+    const ids: string[] = [];
+    for (let y = Math.max(0, row - 1); y <= Math.min(rows - 1, row + 1); y++) {
+      for (
+        let x = Math.max(0, column - 1);
+        x <= Math.min(columns - 1, column + 1);
+        x++
+      ) {
+        const neighbor = cards[y * columns + x]?.dataset.styleId;
+        if (neighbor) ids.push(neighbor);
+      }
+    }
+    return ids;
+  }
   useEffect(() => {
     if (!video.current) return;
     return scheduler.register(
@@ -36,9 +65,9 @@ export function StyleCard({
     <article
       className={`style-card ${selected ? "is-selected" : ""}`}
       data-style-id={style.id}
-      onMouseEnter={() => scheduler.interact(style.id)}
+      onMouseEnter={() => scheduler.interact(style.id, focusNeighborhood())}
       onMouseLeave={() => scheduler.interact(null)}
-      onFocus={() => scheduler.interact(style.id)}
+      onFocus={() => scheduler.interact(style.id, focusNeighborhood())}
       onBlur={(e) => {
         if (!e.currentTarget.contains(e.relatedTarget))
           scheduler.interact(null);
