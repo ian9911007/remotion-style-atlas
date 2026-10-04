@@ -1188,7 +1188,7 @@
   },
   "SA-164": {
     "status": "ready",
-    "sourceHash": "3ef80aeed249ddc6f66d3478a995fc6638403383281da1135e36aa87be4bf21b",
+    "sourceHash": "32e61f7d30e2d3b458acdb7ddcb1a18303a26f4d409b5aa7ec4f0c0223863275",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
@@ -1209,10 +1209,10 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 27662
+        "inspectionMs": 1533
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-05",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -1479,7 +1479,7 @@
   },
   "SA-173": {
     "status": "ready",
-    "sourceHash": "9a58f8ab328d76f32934afd1ce60fbaf99878440b5a98a5ebfe7e87b303624ed",
+    "sourceHash": "29b47da7aa33efe167a6dea4c9e878c15261aa1188fc9a579bb23b72fe8e9ce0",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -1499,10 +1499,10 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 29372
+        "inspectionMs": 864
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-05",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -1671,7 +1671,7 @@
   },
   "SA-131": {
     "status": "ready",
-    "sourceHash": "8115030492adc5a953db5a441698481fc774cffca8097f6b763666cd53c255eb",
+    "sourceHash": "91251328061b3532414d12ea22593f1c31ab76833dbf56a67a181baecf891245",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -1691,10 +1691,10 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 64783
+        "inspectionMs": 816
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-05",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
