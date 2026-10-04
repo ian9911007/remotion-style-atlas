@@ -2376,7 +2376,7 @@
   },
   "SA-153": {
     "status": "ready",
-    "sourceHash": "d2facd0c50fc9b57647e6e0f1291f3aa335015634c820a277eacb48e4c5c2a7b",
+    "sourceHash": "62bde5e8ccd9baa1420311a8bc68b5191aac269e9482686b26df8af8f57d629b",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
@@ -2397,10 +2397,10 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 23420
+        "inspectionMs": 1159
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-05",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."

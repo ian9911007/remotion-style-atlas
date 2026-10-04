@@ -1,4 +1,4 @@
-/** Created: 2026-10-04. Browser integration contract; no screenshot/evidence files by default.
+/** Created: 2026-10-05. Browser integration contract; no screenshot/evidence files by default.
  * Run: node --import tsx tests/technology-browser.ts
  * ATLAS_URL accepts the deployed base path. ATLAS_TEST_MATCH selects comma-separated test names.
  * ATLAS_TECH_RUNTIME_IDS bounds live lifecycle checks (default SVG, Canvas 2D, WebGL).
@@ -156,8 +156,10 @@ async function currentPrompt(page: Page) {
 }
 function heavyRequests(requests: string[]) {
   // Vite development module paths and production named chunks are both checked.
+  // physics-element-scenes is catalog presentation metadata; renderer modules
+  // remain behind the per-case runtime boundary.
   const runtime =
-    /\/technology-runtime\/src\/(?![^/?]*(?:-cases|-shared|-common|-kit|types)\.[tj]sx?(?:\?|$))[^/?]+\.[tj]sx?(?:\?|$)/;
+    /\/technology-runtime\/src\/(?![^/?]*(?:-cases|-shared|-common|-kit|physics-element-scenes|types)\.[tj]sx?(?:\?|$))[^/?]+\.[tj]sx?(?:\?|$)/;
   const chunks =
     /\/assets\/(?:data-(?:d3|echarts|vega|visx|plot)|maps-(?:maplibre|deck|cesium|leaflet)|scene-(?:three|r3f|babylon|theatre)|gpu-(?:pixi|regl)|editor-(?:konva|fabric)|physics-(?:matter|particles|elements)|generative-p5|dom-(?:gsap|motion|anime)|vector|native|video-|asset-|rive)[^/]*\.js(?:\?|$)/;
   const packages =
@@ -625,6 +627,9 @@ test(
       name: "案例時間",
       exact: true,
     });
+    // Keep the host clock stopped while testing native range dragging.
+    const pause = page.getByRole("button", { name: "暫停互動", exact: true });
+    if (await pause.isVisible()) await pause.click();
     await expect(timeline).toHaveAttribute("min", "0");
     await expect(timeline).toHaveAttribute("max", "4");
     await timeline.scrollIntoViewIfNeeded();

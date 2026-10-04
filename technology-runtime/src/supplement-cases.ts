@@ -1,4 +1,4 @@
-/** Created: 2026-10-04. Roadmap and two distinct parallax interaction models. */
+/** Created: 2026-10-05. Roadmap and two distinct parallax interaction models. */
 import type { CaseDefinition } from "./types";
 const common = {
   assets: [],
@@ -104,7 +104,7 @@ export const supplementCases: CaseDefinition[] = [
     title: "指標驅動多平面規格卡",
     englishTitle: "Pointer-driven layered specification card",
     summary:
-      "滿版精密產品構圖以背景網格、內容平面與前景標籤呈現 CSS 2.5D 透視；指標、觸控或方向鍵可即時改變視角。",
+      "滿版精密產品構圖以背景網格、內容平面與前景標籤呈現 CSS 2.5D 指標視差；觸控或方向鍵可即時改變視角。",
     primary: "css-transitions",
     capabilities: ["pointer-parallax", "layered-perspective-interface"],
     module: "supplement-parallax.ts",

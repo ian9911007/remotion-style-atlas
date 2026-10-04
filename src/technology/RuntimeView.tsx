@@ -279,15 +279,17 @@ export function RuntimeView({
               if (runtime) {
                 void (async () => {
                   try {
+                    clock.current = 0;
+                    if (scrubber.current) scrubber.current.value = "0";
                     await runtime.seek(0);
+                    setPlaying(
+                      !matchMedia("(prefers-reduced-motion: reduce)").matches,
+                    );
                   } catch (e) {
                     setError(String(e));
                   }
                 })();
               }
-              setPlaying(
-                !matchMedia("(prefers-reduced-motion: reduce)").matches,
-              );
             }}
           >
             重播／重設
