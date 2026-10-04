@@ -104,7 +104,7 @@ for (const c of technologyCases) {
     errors.push(`${c.id}: stale runtime evidence`);
   if (!e.runtime?.length || !e.visual || !e.date)
     errors.push(`${c.id}: readiness lacks runtime/visual/date evidence`);
-  for (const kind of ["poster", "gallery"] as const) {
+  for (const kind of ["poster", "gallery", "detail"] as const) {
     const file = e.preview?.[kind];
     if (
       !file ||
@@ -116,6 +116,20 @@ for (const c of technologyCases) {
     }
     if (e.preview?.sha256?.[kind] !== sha256(readFileSync(`public/${file}`)))
       errors.push(`${c.id}: altered ${kind}`);
+    if (kind === "poster") {
+      const meta = JSON.parse(
+        execFileSync(
+          process.env.FFPROBE_PATH ?? "ffprobe",
+          [
+            "-v", "error", "-select_streams", "v:0", "-show_entries",
+            "stream=width,height", "-of", "json", `public/${file}`,
+          ],
+          { encoding: "utf8" },
+        ),
+      );
+      if (meta.streams[0]?.width !== 1280 || meta.streams[0]?.height !== 720)
+        errors.push(`${c.id}: incorrect poster dimensions`);
+    }
   }
   if (e.preview?.gallery && existsSync(`public/${e.preview.gallery}`)) {
     const meta = JSON.parse(
@@ -144,6 +158,16 @@ for (const c of technologyCases) {
       Math.abs(Number(meta.format.duration) - (c.durationSeconds ?? 4)) > 0.15
     )
       errors.push(`${c.id}: incorrect preview encoding`);
+  }
+  if (e.preview?.detail && existsSync(`public/${e.preview.detail}`)) {
+    const meta = JSON.parse(execFileSync(process.env.FFPROBE_PATH ?? "ffprobe", [
+      "-v", "error", "-select_streams", "v:0", "-show_entries",
+      "stream=width,height,codec_name,r_frame_rate:format=duration", "-of", "json",
+      `public/${e.preview.detail}`,
+    ], { encoding: "utf8" }));
+    const stream = meta.streams[0];
+    if (stream.width !== 1280 || stream.height !== 720 || stream.codec_name !== "h264" || stream.r_frame_rate !== "30/1")
+      errors.push(`${c.id}: incorrect detail preview encoding`);
   }
 }
 const projection = JSON.parse(

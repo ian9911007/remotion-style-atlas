@@ -95,13 +95,60 @@ try {
         ),
       );
     }, clips);
-    for (const r of measured) {
+  for (const r of measured) {
       assert.equal(r.error, null, r.id);
       assert.ok(r.wraps > 0, r.id);
       console.log(`PASS ${r.id}: ${r.frames} decoded frames, ${r.wraps} loop`);
       results.push(r);
     }
     await context.close();
+  }
+  const detailSizes: { id: string; width: number; height: number }[] = [];
+  for (let i = 0; i < technologyCases.length; i += 6) {
+    const context = await browser.newContext();
+    const page = await context.newPage();
+    const urls = technologyCases.slice(i, i + 6).map((c) => ({
+      id: c.id,
+      src: new URL(
+        caseEvidence(c.id).preview!.detail ?? caseEvidence(c.id).preview!.gallery,
+        base,
+      ).href,
+    }));
+    detailSizes.push(
+      ...(await page.evaluate(
+        async (items) =>
+          Promise.all(
+            items.map(
+              (item) =>
+                new Promise<{ id: string; width: number; height: number }>(
+                  (resolve, reject) => {
+                    const video = document.createElement("video");
+                    video.preload = "metadata";
+                    video.src = item.src;
+                    video.onloadedmetadata = () => {
+                      const dimensions = {
+                        id: item.id,
+                        width: video.videoWidth,
+                        height: video.videoHeight,
+                      };
+                      video.removeAttribute("src");
+                      video.load();
+                      resolve(dimensions);
+                    };
+                    video.onerror = () => reject(new Error(`${item.id}: detail media failed`));
+                    document.body.append(video);
+                  },
+                ),
+            ),
+          ),
+        urls,
+      )),
+    );
+    await context.close();
+  }
+  for (const item of detailSizes) {
+    assert.equal(item.width, 1280, `${item.id} detail width`);
+    assert.equal(item.height, 720, `${item.id} detail height`);
   }
   writeFileSync(
     "docs/technology-preview-verification.json",

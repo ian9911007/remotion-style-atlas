@@ -129,7 +129,7 @@ test("filter teardown releases acquired media without loading untouched poster c
   }
 });
 
-test("global wall mode enforces visible playback and decoder budgets", async () => {
+test("global wall mode plays every visible card and releases offscreen media", async () => {
   const previousWindow = globalThis.window;
   const previousDocument = globalThis.document;
   const previousObserver = globalThis.IntersectionObserver;
@@ -221,16 +221,11 @@ test("global wall mode enforces visible playback and decoder budgets", async () 
           }) as unknown as IntersectionObserverEntry,
       ),
     );
-    assert.equal(scheduler.snapshot().playing.length, scheduler.limit);
-    assert.equal(scheduler.snapshot().sources.length, scheduler.limit);
-    const first = scheduler.snapshot().playing;
+    assert.equal(scheduler.snapshot().playing.length, videos.length);
+    assert.equal(scheduler.snapshot().sources.length, videos.length);
     await Promise.resolve();
     rotate!();
-    assert.equal(scheduler.snapshot().playing.length, scheduler.limit);
-    assert.equal(
-      new Set([...first, ...scheduler.snapshot().playing]).size,
-      videos.length,
-    );
+    assert.equal(scheduler.snapshot().playing.length, videos.length);
     observe!(
       videos.map(
         (target) =>

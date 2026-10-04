@@ -52,15 +52,15 @@ export const mapRevealCases: CaseDefinition[] = [
       font: "Arial, sans-serif",
     },
     locked: [
-      "Use actual MapLibre camera center and zoom changes, driven solely by one eight-second host timeline.",
-      "Keep the Taipei origin coordinates locked across the regional opening and closing; use a world reveal between them.",
+      "Use actual MapLibre zoom changes driven solely by one eight-second host timeline. Keep the verified Taipei target fixed at the camera center throughout the local-to-global-to-local zoom; do not add a second pan or a midpoint camera turn.",
+      "Keep the verified Taipei target fixed at the viewport center through one continuous cosine-eased zoom from local to world scale and back; do not add a center pan or a hold-and-turn midpoint.",
       "Render local Natural Earth 1:50m world country geometry with the Taiwan feature replaced by its 1:10m counterpart, preserving coastlines and dateline clipping. This is regional cartography, not a street map.",
       "Fill the complete case viewport with the map. Do not add a sidebar, header, inset map, timeline panel or case-level controls; keep only necessary city labels and compact source attribution.",
       "Disable independent camera easing and style transitions; await renderer idle after time changes before capture.",
     ],
     editable: [
       "Replace the locked hero location and connections only with verified geographic coordinates, updating geographic labels and camera framing together.",
-      "Adjust palette, typography, route content and phase durations while preserving local-to-world-to-same-origin continuity.",
+      "Adjust palette, typography, route content and timing while preserving the same-point anchored local-to-world-to-local zoom.",
     ],
     adaptation:
       "Provide explicit time input and synchronous phase state. Wait for local geometry and fonts, stop independent animation, and await map idle after each seek. Reduced motion shows a fixed world overview. Keep playback and seeking in the host controls, outside the full-bleed map. Verify forward/reverse seek, repeatable frames and selected export settings before deterministic video use.",

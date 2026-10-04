@@ -205,7 +205,8 @@ export function App() {
         .slice()
         .sort(
           (a, b) =>
-            b.created.localeCompare(a.created) || a.id.localeCompare(b.id),
+            b.created.localeCompare(a.created) ||
+            Number(b.id.slice(3)) - Number(a.id.slice(3)),
         );
     return styles;
   }, [query, filters, view, preferences.favorites]);
@@ -757,19 +758,52 @@ export function App() {
 function SearchShortcut() {
   useEffect(() => {
     const listener = (e: KeyboardEvent) => {
-      if (
-        e.key === "/" &&
-        !["INPUT", "TEXTAREA", "SELECT"].includes(
-          (e.target as HTMLElement).tagName,
-        ) &&
-        !document.querySelector("dialog[open]")
-      ) {
+      const target = e.target as HTMLElement;
+      const galleryCard = target.closest(".gallery-grid .card-open");
+      const typing =
+        ["INPUT", "TEXTAREA", "SELECT"].includes(target.tagName) ||
+        target.isContentEditable;
+      if (e.key === "/" && !typing && !document.querySelector("dialog[open]")) {
         e.preventDefault();
         (
           document.querySelector(
             'input[aria-label="搜尋風格"]',
           ) as HTMLInputElement
         )?.focus();
+      }
+      if (
+        !typing &&
+        !document.querySelector("dialog[open]") &&
+        (e.key === "ArrowLeft" || e.key === "ArrowRight") &&
+        (target === document.body || galleryCard)
+      ) {
+        const cards = [
+          ...document.querySelectorAll<HTMLButtonElement>(
+            ".gallery-grid .card-open",
+          ),
+        ];
+        if (!cards.length) return;
+        e.preventDefault();
+        const current = cards.indexOf(
+          target.closest(".card-open") as HTMLButtonElement,
+        );
+        const start = current < 0 ? (e.key === "ArrowRight" ? -1 : 0) : current;
+        const next = start + (e.key === "ArrowRight" ? 1 : -1);
+        if (next >= 0 && next < cards.length) cards[next].focus();
+      }
+      if (
+        !typing &&
+        !document.querySelector("dialog[open]") &&
+        galleryCard &&
+        (e.key === "ArrowUp" || e.key === "ArrowDown")
+      ) {
+        e.preventDefault();
+        window.scrollBy({
+          top:
+            (e.key === "ArrowDown" ? 1 : -1) *
+            Math.round(window.innerHeight * 0.2),
+          behavior: "auto",
+        });
       }
     };
     document.addEventListener("keydown", listener);

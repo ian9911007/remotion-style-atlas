@@ -29,7 +29,7 @@ for (const c of technologyCases) {
   assert.ok(!eager.has(key), `${c.id}: runtime entered the eager import graph`);
   caseEntries.set(c.id, key);
   const e=caseEvidence(c.id);
-  for(const file of [e.preview?.poster,e.preview?.gallery,...c.assets.map(a=>a.path)])
+  for(const file of [e.preview?.poster,e.preview?.gallery,e.preview?.detail,...c.assets.map(a=>a.path)])
     assert.ok(file && existsSync(`dist/${file}`), `${c.id}: missing deployed asset ${file}`);
 }
 function files(directory:string): string[] {return readdirSync(directory).flatMap(name=>{const file=`${directory}/${name}`;return statSync(file).isDirectory()?files(file):[file];});}

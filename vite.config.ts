@@ -27,10 +27,15 @@ export default defineConfig(({ command }) => ({
           await readFile("src/technology/evidence.json", "utf8"),
         );
         for (const entry of Object.values(technologyEvidence) as {
-          preview?: { poster: string; gallery: string };
+          preview?: { poster: string; gallery: string; detail?: string };
         }[]) {
           if (!entry.preview) continue;
-          for (const file of [entry.preview.poster, entry.preview.gallery]) {
+          for (const file of [
+            entry.preview.poster,
+            entry.preview.gallery,
+            entry.preview.detail,
+          ]) {
+            if (!file) continue;
             if (!/^media\/[a-z0-9.-]+$/.test(file))
               throw new Error(`Unsafe preview path: ${file}`);
             await copyFile(`public/${file}`, `dist/${file}`);

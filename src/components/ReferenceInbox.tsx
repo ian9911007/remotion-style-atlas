@@ -276,7 +276,13 @@ export function ReferenceInbox({
               ((file?.type ?? draft.attachment?.type ?? "").startsWith(
                 "video",
               ) ? (
-                <video src={preview} controls playsInline preload="metadata" />
+                <video
+                  src={preview}
+                  controls
+                  playsInline
+                  loop
+                  preload="metadata"
+                />
               ) : (
                 <img src={preview} alt="參考附件" />
               ))}

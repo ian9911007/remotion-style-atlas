@@ -22,7 +22,6 @@ export class PlaybackScheduler {
   private rotationTimer: ReturnType<typeof setInterval> | null = null;
   private serial = 0;
   private granted = new Set<string>();
-  private rotationOffset = 0;
   readonly limit =
     typeof window !== "undefined" &&
     window.matchMedia("(pointer: coarse)").matches
@@ -55,15 +54,6 @@ export class PlaybackScheduler {
     for (const e of this.entries.values()) this.observer.observe(e.element);
     document.addEventListener("visibilitychange", this.visibility);
     this.rotationTimer = setInterval(() => {
-      const enabled =
-        !this.paused && !this.blocked && !this.hidden && this.mode !== "still";
-      const visibleCount = [...this.entries.values()].filter(
-        (e) => e.visible && !e.failed,
-      ).length;
-      if (enabled && this.mode === "wall" && visibleCount > this.limit) {
-        this.rotationOffset = (this.rotationOffset + this.limit) % visibleCount;
-        this.schedule();
-      }
       this.releaseStaleSources();
     }, 5000);
   }
@@ -149,14 +139,11 @@ export class PlaybackScheduler {
           Number(b === this.active) - Number(a === this.active) ||
           y.priority - x.priority,
       );
-    let selected = candidates;
-    if (this.mode === "wall" && candidates.length > this.limit) {
-      const pinned = candidates.filter(([id]) => id === this.active);
-      const rest = candidates.filter(([id]) => id !== this.active);
-      const offset = this.rotationOffset % rest.length;
-      selected = [...pinned, ...rest.slice(offset), ...rest.slice(0, offset)];
-    }
-    const granted = new Set(selected.slice(0, this.limit).map(([id]) => id));
+    // Global mode means every currently visible card. Focus mode keeps its
+    // conservative decoder budget because only a small group is animated.
+    const selected =
+      this.mode === "wall" ? candidates : candidates.slice(0, this.limit);
+    const granted = new Set(selected.map(([id]) => id));
     this.granted = granted;
     for (const [id, e] of this.entries) {
       if (granted.has(id)) {
@@ -193,10 +180,18 @@ export class PlaybackScheduler {
         e.element.removeAttribute("data-playing");
       }
     }
-    const retained = [...this.entries.values()]
-      .filter((e) => e.element.hasAttribute("src"))
-      .sort((a, b) => b.lastUsed - a.lastUsed);
-    for (const e of retained.slice(this.limit * 2)) {
+    const retained = [...this.entries.entries()]
+      .filter(([, e]) => e.element.hasAttribute("src"))
+      .sort(([, a], [, b]) => b.lastUsed - a.lastUsed);
+    const retentionBudget =
+      this.mode === "wall"
+        ? this.granted.size + this.limit * 2
+        : this.limit * 2;
+    let retainedBudget = retentionBudget;
+    for (const [id, e] of retained) {
+      if (this.granted.has(id)) continue;
+      retainedBudget--;
+      if (retainedBudget >= 0) continue;
       e.element.pause();
       e.element.removeAttribute("src");
       e.element.load();
@@ -217,6 +212,9 @@ export class PlaybackScheduler {
   snapshot() {
     return {
       limit: this.limit,
+      visible: [...this.entries]
+        .filter(([, e]) => e.visible)
+        .map(([id]) => id),
       playing: [...this.entries]
         .filter(([, e]) => !e.element.paused)
         .map(([id]) => id),

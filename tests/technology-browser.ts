@@ -54,7 +54,12 @@ type RuntimeWindow = Window & {
   __technologyTestMetrics?: Metrics;
   __technologyCopiedText?: string;
   __atlasPlayback?: {
-    snapshot: () => { playing: string[]; sources: string[]; limit: number };
+    snapshot: () => {
+      playing: string[];
+      sources: string[];
+      visible: string[];
+      limit: number;
+    };
   };
 };
 type Check = {
@@ -423,7 +428,7 @@ test("preview asset URLs honor the deployment base path", async (page) => {
   }
 });
 
-test("bounded preview decoding and offscreen suspension", async (page) => {
+test("global visible preview playback and offscreen suspension", async (page) => {
   await page.getByRole("button", { name: "全域", exact: true }).click();
   await expect
     .poll(
@@ -439,7 +444,11 @@ test("bounded preview decoding and offscreen suspension", async (page) => {
   const snapshot = () =>
     page.evaluate(() => (window as RuntimeWindow).__atlasPlayback!.snapshot());
   const initial = await snapshot();
-  assert.ok(initial.playing.length <= initial.limit);
+  assert.deepEqual(
+    [...initial.playing].sort(),
+    [...initial.visible].sort(),
+    "Global mode plays every visible preview, independent of focus-mode budget.",
+  );
   await page.evaluate(() => scrollTo(0, document.body.scrollHeight));
   await expect
     .poll(async () => {
@@ -448,7 +457,11 @@ test("bounded preview decoding and offscreen suspension", async (page) => {
     })
     .toBe(false);
   const bottom = await snapshot();
-  assert.ok(bottom.playing.length <= bottom.limit);
+  assert.deepEqual(
+    [...bottom.playing].sort(),
+    [...bottom.visible].sort(),
+    "After scrolling, playback follows only the new visible set.",
+  );
   await page.getByRole("button", { name: "靜態", exact: true }).click();
   await expect.poll(async () => (await snapshot()).playing.length).toBe(0);
 });

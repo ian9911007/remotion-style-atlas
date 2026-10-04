@@ -1,5 +1,6 @@
 /** Real-browser acceptance checks. WebKit automation is not real-device Safari validation. */
 import assert from "node:assert/strict";
+import { catalog } from "../src/catalog/catalog";
 import { mkdir, readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import {
@@ -22,6 +23,7 @@ const PREFS = "remotion-atlas.preferences.v1";
 const REFS = "remotion-atlas.references.v1";
 type Snapshot = {
   limit: number;
+  visible: string[];
   playing: string[];
   sources: string[];
   mode: string;
@@ -116,6 +118,11 @@ test("search aliases, feeling, ID, combined dimensional filters and stable order
       "At least the completed first twelve published styles must be available.",
     );
   }
+  assert.deepEqual(
+    ids,
+    [...ids].sort((a, b) => Number(a!.slice(3)) - Number(b!.slice(3))),
+    "The all-cases gallery uses stable numeric case order, including after 99.",
+  );
   const search = page.getByRole("textbox", { name: "搜尋風格" });
   await search.fill("SA-003");
   await expect(page.locator(".style-card")).toHaveCount(1);
@@ -162,6 +169,18 @@ test("search aliases, feeling, ID, combined dimensional filters and stable order
       ),
     ids,
   );
+  await page.getByRole("button", { name: "最近加入", exact: true }).click();
+  const recent = await page
+    .locator(".style-card")
+    .evaluateAll((nodes) => nodes.map((node) => node.getAttribute("data-style-id")));
+  const expectedRecent = [...catalog]
+    .sort(
+      (a, b) =>
+        b.created.localeCompare(a.created) ||
+        Number(b.id.slice(3)) - Number(a.id.slice(3)),
+    )
+    .map((style) => style.id);
+  assert.deepEqual(recent, expectedRecent, "Recent view breaks date ties by numeric case ID.");
 });
 
 test("favorites persist after refresh and favorite collection works", async (page) => {
@@ -472,15 +491,13 @@ test("versioned local export/import round trip and malformed import rejection", 
   assert.deepEqual(await stored(page, PREFS), expectedPreferences);
 });
 
-test("new visitors default to focus; global mode respects visible decoder budget and pause/still stop playback", async (page) => {
+test("new visitors default to focus; global mode plays visible cards and pause/still stop playback", async (page) => {
   await expect(
     page.getByRole("button", { name: "聚焦", exact: true }),
   ).toHaveAttribute("aria-pressed", "true");
   await allPaused(page);
   await settledPlayback(page);
-  assert.ok(
-    (await snapshot(page)).playing.length <= (await snapshot(page)).limit,
-  );
+  assert.ok((await snapshot(page)).playing.length > 0);
   await page.getByRole("button", { name: "暫停所有預覽" }).click();
   await allPaused(page);
   await card(page, "SA-003").hover();
@@ -554,9 +571,44 @@ test("global playback follows visible cards after scrolling", async (page) => {
       intervals: [250, 500, 1000],
     })
     .toBe(true);
-  assert.ok(
-    (await snapshot(page)).playing.length <= (await snapshot(page)).limit,
+  assert.ok((await snapshot(page)).playing.includes("SA-061"));
+});
+
+test("gallery arrow keys move between cards while vertical arrows scroll", async (page) => {
+  await card(page, "SA-002").locator(".card-open").focus();
+  await page.keyboard.press("ArrowRight");
+  await expect(card(page, "SA-003").locator(".card-open")).toBeFocused();
+  await page.keyboard.press("ArrowLeft");
+  await expect(card(page, "SA-002").locator(".card-open")).toBeFocused();
+  const before = await page.evaluate(() => window.scrollY);
+  await page.keyboard.press("ArrowDown");
+  await expect
+    .poll(() => page.evaluate(() => window.scrollY))
+    .toBeGreaterThan(before);
+});
+
+test("detail preview loops continuously while an interactive case starts", async (page) => {
+  await card(page, "SA-152").locator(".card-open").click();
+  const player = page.locator(".detail-player video");
+  await expect(player).toHaveAttribute("loop", "");
+  await expect
+    .poll(() => player.evaluate((video: HTMLVideoElement) => !video.paused))
+    .toBe(true);
+  const before = await player.evaluate(
+    (video: HTMLVideoElement) => video.currentTime,
   );
+  await page
+    .locator(".runtime-start")
+    .evaluate((button: HTMLButtonElement) => button.click());
+  await expect(
+    page.locator(".technology-runtime[data-ready='true']"),
+  ).toBeVisible();
+  await expect
+    .poll(
+      () => player.evaluate((video: HTMLVideoElement) => video.currentTime),
+      { timeout: 5000 },
+    )
+    .toBeGreaterThan(before);
 });
 
 test("focus mode updates the neighboring group on hover and keyboard focus", async (page) => {
@@ -602,9 +654,16 @@ test("global mode pauses offscreen and hidden-document videos", async (page) => 
     document.dispatchEvent(new Event("visibilitychange"));
   });
   await settledPlayback(page);
-  assert.ok(
-    (await snapshot(page)).playing.length <= (await snapshot(page)).limit,
-  );
+  await expect
+    .poll(async () => {
+      const state = await snapshot(page);
+      return (
+        state.visible.length > 0 &&
+        state.playing.length === state.visible.length &&
+        state.visible.every((id) => state.playing.includes(id))
+      );
+    })
+    .toBe(true);
   await page.evaluate(() => window.scrollTo(0, 0));
 });
 

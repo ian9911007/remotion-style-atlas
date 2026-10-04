@@ -11,7 +11,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 789
+        "inspectionMs": 18092
       }
     },
     "date": "2026-10-04",
@@ -22,9 +22,11 @@
     "preview": {
       "poster": "media/sa-101-technology.jpg",
       "gallery": "media/sa-101-technology.mp4",
+      "detail": "media/sa-101-technology-detail.mp4",
       "sha256": {
-        "poster": "9a4eb18676bbbc0fd31f479d9592fd6110ae3c29a7bc92c216aa5c357f534c61",
-        "gallery": "f471651faca87f139418a04667617c7b53f6e594e9a75359468325856976955d"
+        "poster": "be975eac91b7d93542bb62631bb37266a7eb9a4df047f3226bf4f42f0867439e",
+        "gallery": "097d0393fb3decb841c00ac540baea089d94f1de5eb3a4a656b248c766e21dca",
+        "detail": "78e8cae3637637f51f4149732316d8b422770b906e928ef5974f01f0eba3a036"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -41,7 +43,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 771
+        "inspectionMs": 13666
       }
     },
     "date": "2026-10-04",
@@ -52,9 +54,11 @@
     "preview": {
       "poster": "media/sa-102-technology.jpg",
       "gallery": "media/sa-102-technology.mp4",
+      "detail": "media/sa-102-technology-detail.mp4",
       "sha256": {
-        "poster": "84e8008d35216464a781a0248f29cad6459b449304dd5eae3d7531268049adc4",
-        "gallery": "2a19acade6d1e049d17ef8b292b05ff4e7a3dd3c205ad5918e1ebb173c9839f5"
+        "poster": "f4e990b5d5bc2828e5b50e323b5ece2942fdc6033bdd0ece98d7166d8ffd89a9",
+        "gallery": "bbceebfd69ceeddce8726b75cb6bf801fc8b03c6f11d4cff868ce7cfa25b85d4",
+        "detail": "80a70e53ce4ac9b288af9a4ea8ce8d6c1b713ac8005173d247013af356ae6e91"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -71,7 +75,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 777
+        "inspectionMs": 13324
       }
     },
     "date": "2026-10-04",
@@ -82,9 +86,11 @@
     "preview": {
       "poster": "media/sa-103-technology.jpg",
       "gallery": "media/sa-103-technology.mp4",
+      "detail": "media/sa-103-technology-detail.mp4",
       "sha256": {
-        "poster": "731bb19961e8696525a6c48229dca39ebfa4e0e6186f61595146b794f5374f4b",
-        "gallery": "ca6b286571ea8b33a19e7af12a37e33de5b0438b879a79031a19e7c3749cfa90"
+        "poster": "708b26f5772df84f4502355bd19982cbe6e4ded07b2aa288795918c0b3348cce",
+        "gallery": "fe702d329119af7aab61c287dec5439f9a88e61085a197f8455795167cda76d6",
+        "detail": "7f3e6970c7d0e46c9111dc0d907ccef44f7a80843dcb849e9c1aa08b722cc77d"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -101,7 +107,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 768
+        "inspectionMs": 14177
       }
     },
     "date": "2026-10-04",
@@ -112,9 +118,11 @@
     "preview": {
       "poster": "media/sa-104-technology.jpg",
       "gallery": "media/sa-104-technology.mp4",
+      "detail": "media/sa-104-technology-detail.mp4",
       "sha256": {
-        "poster": "b654cefe8216fa5666cff5a15ab9f7418a5094df8d2b42249dddf989e89cd125",
-        "gallery": "ad877e95d48b6dda54e8d55ec132802839792b9f3f1cabfd6e4a38a59fb3c17e"
+        "poster": "7cd2966d735195d62bfe129a4a37feeac4383379a720cbea7101730d17182a61",
+        "gallery": "7aec7646e146ef445f3e4916f315f93fea09557877a3c00b617550f33c36794b",
+        "detail": "75af2024f0b979829679435a6c7cfeecd8cd086e1f5a51e3b9192eaa450b2535"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -131,7 +139,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 766
+        "inspectionMs": 13274
       }
     },
     "date": "2026-10-04",
@@ -142,9 +150,11 @@
     "preview": {
       "poster": "media/sa-105-technology.jpg",
       "gallery": "media/sa-105-technology.mp4",
+      "detail": "media/sa-105-technology-detail.mp4",
       "sha256": {
-        "poster": "a888e879ced7b6bb9174988171b439dbae57638548c74fc1286b24aa4755997f",
-        "gallery": "f8fc110ea3d5d41cb7ab9d5e84f17d674149936e48d3d676edf0861364c466fd"
+        "poster": "c6fb804ac28bda3d9fd1e8f48c7637e7fc42d68a7a154690201f92108f35416c",
+        "gallery": "8788dbf1930e8f0ff50848a735e2759b66208b3f8a01adc7b6bbce40c674ff37",
+        "detail": "90ba1993c2a97172f6a5d967e48934a597d705b6a75debe5bb44b3d1436169ab"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -161,7 +171,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 767
+        "inspectionMs": 17571
       }
     },
     "date": "2026-10-04",
@@ -172,9 +182,11 @@
     "preview": {
       "poster": "media/sa-106-technology.jpg",
       "gallery": "media/sa-106-technology.mp4",
+      "detail": "media/sa-106-technology-detail.mp4",
       "sha256": {
-        "poster": "0979b69b3361f34d30f83026c9857dec4e7b1a79b2b83851a5a82968b98ba315",
-        "gallery": "7550e05c165e587667b9fccd532962e3bdc596eabbb7859e1840534245397c2e"
+        "poster": "a36e8650ff8396b56d73cd20299c7de48eca067d2ca4ee9bdf844bad961e966a",
+        "gallery": "bb463270e23003c8ff23938a48d1a33262d2276790a59895b0d5bbf9e441c867",
+        "detail": "99a6b7fda0869010782226fd6274abfb1c12b3fae0d684f203f4b89b039cbc78"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -191,7 +203,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 770
+        "inspectionMs": 14026
       }
     },
     "date": "2026-10-04",
@@ -202,9 +214,11 @@
     "preview": {
       "poster": "media/sa-107-technology.jpg",
       "gallery": "media/sa-107-technology.mp4",
+      "detail": "media/sa-107-technology-detail.mp4",
       "sha256": {
-        "poster": "716614c660dc7600619096ed986a23df9b7e8254b9eb68ea609a01fe761be0dd",
-        "gallery": "13345d18a57891fbd72de0595e3c13cab0932a428ac5cb39662cf46c324b4d8e"
+        "poster": "dc07ea71820b8d4eb01f784aec0f92823bc7e4550598f24f17af7592fb9e5bdb",
+        "gallery": "288d54ee10a7ed95f1b56386b038007e53efd32240155fe7de11533f66b199fd",
+        "detail": "ada2f183c4fb1e4fdfe592425c7e8a67c2de0e9b0dacc17e6e21d686ca414336"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -221,7 +235,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 828
+        "inspectionMs": 15775
       }
     },
     "date": "2026-10-04",
@@ -232,9 +246,11 @@
     "preview": {
       "poster": "media/sa-108-technology.jpg",
       "gallery": "media/sa-108-technology.mp4",
+      "detail": "media/sa-108-technology-detail.mp4",
       "sha256": {
-        "poster": "c6198c74ca08a245b85b3f4fcc87e07bc8e9457f75d26e6149fed863b59fe65e",
-        "gallery": "493c78f7eadac6edbe4cb55736bf0e187b5df263b3c07670f61f244d9a2b8c28"
+        "poster": "11d8de11159d4dedbb86afee1dd5e6e8d292c83c370548c8250426511bb48561",
+        "gallery": "db8879d59ce89553a4a710f8807400f133bc13314cde0957fc1cb245fba24c5e",
+        "detail": "30ade7c0e143500886d685a52386c9bed516bfb1ddcb1131fdc169522d7e8111"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -251,7 +267,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 6946
+        "inspectionMs": 13403
       }
     },
     "date": "2026-10-04",
@@ -262,9 +278,11 @@
     "preview": {
       "poster": "media/sa-109-technology.jpg",
       "gallery": "media/sa-109-technology.mp4",
+      "detail": "media/sa-109-technology-detail.mp4",
       "sha256": {
-        "poster": "908f5fcf8e60c36e6ebe71593e17ef12ce6ed9c7509c680141197de1b5a3b3a3",
-        "gallery": "1c7963432b59b5a8f8aebd977f125448e9fb3a00c43dc44223ab895f12d0363b"
+        "poster": "35aef5adfcde6fbaae864ce80e9548fb5f7cabd192eed2f3c6e95d181b2f7d29",
+        "gallery": "ae22f366343869bf53519e98c106da4c819c699e67ecafef5303ed91d374e37c",
+        "detail": "603774d404caf733e4bc6313e0a4d61fdb6311fcc4c9163e48a774670779eb60"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -281,7 +299,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 7438
+        "inspectionMs": 15185
       }
     },
     "date": "2026-10-04",
@@ -292,9 +310,11 @@
     "preview": {
       "poster": "media/sa-110-technology.jpg",
       "gallery": "media/sa-110-technology.mp4",
+      "detail": "media/sa-110-technology-detail.mp4",
       "sha256": {
-        "poster": "8e621b6fd9c311ee415626aeab4257dc01a972c0d62d6b67db73d572122963e0",
-        "gallery": "77c137f7f35daa9402f03ad664681417141270b6356253de51f67e20ae7cdda1"
+        "poster": "fe1154ffb4e4120fbb69031dd061ba946ba60d98e77358158000bf7446c6eecd",
+        "gallery": "441a380647a72c30815a0b8aa0242667ab97a5c4eab05bb4d42e6570e093bbf5",
+        "detail": "16d44039745706082b415256b7875f9718ba0a33c648475d79b56f6c9b8bc780"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -311,7 +331,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 6894
+        "inspectionMs": 13162
       }
     },
     "date": "2026-10-04",
@@ -322,9 +342,11 @@
     "preview": {
       "poster": "media/sa-111-technology.jpg",
       "gallery": "media/sa-111-technology.mp4",
+      "detail": "media/sa-111-technology-detail.mp4",
       "sha256": {
-        "poster": "266e8a75582c3969da81d2ef2a15ed61872f80f69bbfaef6f88122c670109765",
-        "gallery": "cd859386cff641ae283e176f74379c39d00fe25172a5ba1bbdb4cc7e0015f7ef"
+        "poster": "f3680397b3d2b71675725d0c795d9e285ef2379039d4ebcb9ae4b8c6ad25077f",
+        "gallery": "b3445fda72fc9f6b60ed9ae0afa811685a86fec4cf910ef60c69484e82837d45",
+        "detail": "b5e7e4662c702725455084d56971d3d7fba878db6f4f1e74cb59fc77aeb04fbc"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -341,7 +363,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 770
+        "inspectionMs": 17441
       }
     },
     "date": "2026-10-04",
@@ -352,9 +374,11 @@
     "preview": {
       "poster": "media/sa-112-technology.jpg",
       "gallery": "media/sa-112-technology.mp4",
+      "detail": "media/sa-112-technology-detail.mp4",
       "sha256": {
-        "poster": "108c23b0102e80f02306ea8c7c9c93626998e7cdb33d06752b4570c9df5a5264",
-        "gallery": "dcb86bc965a3a44350758dde03b9ee7d258ae87b277037de808ebe2642c351d6"
+        "poster": "84016a5dd7a29edfe47db4db166d4265a4cf610caf6cddf15d0b06011b5b6159",
+        "gallery": "fd3daa721b98f85f5c454a10dfe4cd7213a984634217d6c13422c5819720fb15",
+        "detail": "eb32758c2f21c4e23241ef8bb037c57159a5d7d4d2cda22d1508dbcc0ebf28eb"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -371,7 +395,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 789
+        "inspectionMs": 18210
       }
     },
     "date": "2026-10-04",
@@ -382,9 +406,11 @@
     "preview": {
       "poster": "media/sa-113-technology.jpg",
       "gallery": "media/sa-113-technology.mp4",
+      "detail": "media/sa-113-technology-detail.mp4",
       "sha256": {
-        "poster": "66860dd884e7de13c989ec7b1aea2c33fc13d63b71d15c856a64811a14be9462",
-        "gallery": "7f9e283dca6fc1a74c7bf086abc1c742d5509db8015b8a93bf1053c2fc15d265"
+        "poster": "8c06268f85f58f0756adb55f42c7c2dfce238778b7693f9d83c260c15bf0c9b5",
+        "gallery": "025ebbf8441984c06ea1c4662a7e89a403700e084cc0732ecae658c5405b5908",
+        "detail": "e5a75c02bbf60ada6ec748b2f6603cbf7b0f6dc3f22cf5dc4da6b6aec02516b3"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -401,7 +427,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 772
+        "inspectionMs": 13368
       }
     },
     "date": "2026-10-04",
@@ -412,9 +438,11 @@
     "preview": {
       "poster": "media/sa-114-technology.jpg",
       "gallery": "media/sa-114-technology.mp4",
+      "detail": "media/sa-114-technology-detail.mp4",
       "sha256": {
-        "poster": "ab96e4673eb20d05f7db6d8f4f7a26843f4dc61ad939ba95edda25281f502448",
-        "gallery": "901e61b250353fbebdf2c7975484a36023a301924ed09f1c1b26c0fa7a19243c"
+        "poster": "b937faa6d31ad4a2f663464a0b589c080593aacb8a889537384d1ea9098c9db9",
+        "gallery": "2859af36331c68b6cb58620694c9954c889e61bad149b1e6a960451f24b1fe22",
+        "detail": "d307f132d832888f48582a9069a4cdcda2b986c29cbb481199f48e6b56f6b97c"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -431,7 +459,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 768
+        "inspectionMs": 13524
       }
     },
     "date": "2026-10-04",
@@ -442,9 +470,11 @@
     "preview": {
       "poster": "media/sa-115-technology.jpg",
       "gallery": "media/sa-115-technology.mp4",
+      "detail": "media/sa-115-technology-detail.mp4",
       "sha256": {
-        "poster": "8bead464e91ec969b3177425511f4c9e14a59fbb13fc2d8b45929c5bc088254a",
-        "gallery": "470a956e5ab7a29a3dd677da6d0256fe19048e02d9479bd86c89cc5b64902deb"
+        "poster": "e4d167fa66832c98223c52546bf9a5079c029258af649e7ad5e176713e47947c",
+        "gallery": "10a39623ca9bb9a3838b6ebce44bcf70e3d7c6c7416318221eba63acfacfaa49",
+        "detail": "951e400626233945d0e2040c5e20ca8513457ac5aae0c49770401c448d016dd9"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -461,7 +491,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 765
+        "inspectionMs": 13703
       }
     },
     "date": "2026-10-04",
@@ -472,9 +502,11 @@
     "preview": {
       "poster": "media/sa-116-technology.jpg",
       "gallery": "media/sa-116-technology.mp4",
+      "detail": "media/sa-116-technology-detail.mp4",
       "sha256": {
-        "poster": "efa5ada67973a9a5d6736f887dbbf6f5fbe936d20606b341657e43806db59886",
-        "gallery": "bac4be7c37885a808c83d627b482ab518c62dee742598fa8c5ece8c5136b62f2"
+        "poster": "21677fb98b520912501adb7c3ba9dd1dc57e3eb54840cb9ea0b343e70376f545",
+        "gallery": "6d07038792c29099e1f1e8ff580f1d6e9dd31c8b3e546ec5e32c2751d1f3836e",
+        "detail": "6eea393e7749670a6bc089864528fd3911708f42e7bfdb7d6a1211a4e69ca254"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -491,7 +523,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 784
+        "inspectionMs": 13373
       }
     },
     "date": "2026-10-04",
@@ -502,9 +534,11 @@
     "preview": {
       "poster": "media/sa-117-technology.jpg",
       "gallery": "media/sa-117-technology.mp4",
+      "detail": "media/sa-117-technology-detail.mp4",
       "sha256": {
-        "poster": "d5bdcb3cf387f70ed75da68eac797648fbb43cdbfc588bee08d8819620de56d6",
-        "gallery": "2f734779647ef74cc5dfbc456406d439021e70887ba0885597fa56eba1172914"
+        "poster": "066d8c15e2f81bc844fc9918db28496846fa83f54b7a6c23e91183fb7763f1e9",
+        "gallery": "c9cb09fefd3a3da0870fed4afd15f8b526ca00ea19d556877c1d5eb68f814423",
+        "detail": "ad8c011fe1c60ffe96635c57dff7ce7bd58969a92cca47041be06afc157e4298"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -521,7 +555,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 783
+        "inspectionMs": 13294
       }
     },
     "date": "2026-10-04",
@@ -532,9 +566,11 @@
     "preview": {
       "poster": "media/sa-118-technology.jpg",
       "gallery": "media/sa-118-technology.mp4",
+      "detail": "media/sa-118-technology-detail.mp4",
       "sha256": {
-        "poster": "ea0c3770b1a10c182e2977a24fe63131b225df6649c76b68b85dc3f97dd5359a",
-        "gallery": "c21406281afe50891884431f2d5bf0d97412f15bd0a4f6cfd89a5d874933eba0"
+        "poster": "908424955f19a26235c3a38a491c9a6e3102f90057a7d718194097ac2fbd15a4",
+        "gallery": "7a179dba64973b39650e3947dcb583a13c93ec6c478eb096353dd672f437643c",
+        "detail": "85d05f2defac378945ac1f6d1a33290c1b702f90e17de611130cc199178029cc"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -551,7 +587,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 805
+        "inspectionMs": 13664
       }
     },
     "date": "2026-10-04",
@@ -562,9 +598,11 @@
     "preview": {
       "poster": "media/sa-119-technology.jpg",
       "gallery": "media/sa-119-technology.mp4",
+      "detail": "media/sa-119-technology-detail.mp4",
       "sha256": {
-        "poster": "242bf9d5c3da6c197f1914ce8f0626a0c630bb9786188230e8712f1f3bcabcc9",
-        "gallery": "f5c6033d7674abe8d992b4659998413d07e272fbe6e0764b8055a08a880a0e09"
+        "poster": "147f94b7294a142f53616c7abe1225ee8c9fa3e709ce5339ed74a2fa8e166702",
+        "gallery": "95741bd25fcc7295795d5179bdd28aa04cd6669d90ceaf259743ff89401b6335",
+        "detail": "7507c9d14653b5032f336e3e16a97f042493eb6e3dad1b78258bb2e542f41c04"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -581,7 +619,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 848
+        "inspectionMs": 15283
       }
     },
     "date": "2026-10-04",
@@ -592,9 +630,11 @@
     "preview": {
       "poster": "media/sa-120-technology.jpg",
       "gallery": "media/sa-120-technology.mp4",
+      "detail": "media/sa-120-technology-detail.mp4",
       "sha256": {
-        "poster": "93466c6ef011a3f10556a193f2593cb2d2e3022b89b999eabb80a96e15fc573c",
-        "gallery": "e68003ad01b1a81c141aa58b597f5bb10a90c3b45b0e2acacf4185e5bd82c5ac"
+        "poster": "c3ec1bdf08c53bbdeaffd3cd412c57c32160add9174d11912431123128faea2e",
+        "gallery": "e7d9703e6f8a917e2e849ed6bf81786317f75dcbb12156cf68e992baf4d73b54",
+        "detail": "8c9ab51ebc2ee8310fcf675a9b8961c8f54f8e78ae6a94d179c7db96f32ccde2"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -611,7 +651,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 782
+        "inspectionMs": 17830
       }
     },
     "date": "2026-10-04",
@@ -622,9 +662,11 @@
     "preview": {
       "poster": "media/sa-121-technology.jpg",
       "gallery": "media/sa-121-technology.mp4",
+      "detail": "media/sa-121-technology-detail.mp4",
       "sha256": {
-        "poster": "824d56f581b984263f760fab74c45afd4c14543deb21b39b6b807b89483c9b2b",
-        "gallery": "af47c69037858a80faafc1dbb5d29794322a00c41564384f05d14c2449d070e0"
+        "poster": "99c61ee93d2b842120a8d5c6ff2cee7384e1d7fc09026895ea20215194e79066",
+        "gallery": "62d14a9c138de4f0bb417fe39dfa5247c18d48c29f50e245147506f14e90654c",
+        "detail": "34f883a2266b9696474285e058fbfc0b4b3081ec10c70195edeed485293137c7"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -641,7 +683,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 787
+        "inspectionMs": 17898
       }
     },
     "date": "2026-10-04",
@@ -652,9 +694,11 @@
     "preview": {
       "poster": "media/sa-122-technology.jpg",
       "gallery": "media/sa-122-technology.mp4",
+      "detail": "media/sa-122-technology-detail.mp4",
       "sha256": {
-        "poster": "f1d4716fe2d0b26a5b445110576da73d530f43b38eef06c441ceb551c5d85fc9",
-        "gallery": "4fa186fee1a28db19d777693d660fee55da2c0ce273aa7e11ff93efe8233663e"
+        "poster": "3bfe679afad5ec40ca14fa3aeb7fffb4b82243122d4f5d280cc7e3df19729c54",
+        "gallery": "a06265c60c61e9adab4e6e832601f03371215c79425a90186c7bfd1f41e11b7d",
+        "detail": "4c145bd437a9d3c1f9f97a55174a59b80b73047ec5bee2c37329dbf062c8f972"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -671,7 +715,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 786
+        "inspectionMs": 17806
       }
     },
     "date": "2026-10-04",
@@ -682,9 +726,11 @@
     "preview": {
       "poster": "media/sa-123-technology.jpg",
       "gallery": "media/sa-123-technology.mp4",
+      "detail": "media/sa-123-technology-detail.mp4",
       "sha256": {
-        "poster": "6fb8f5d542f1f74e544f8de52784244791f34246b90b5fc23211c8d309b038bd",
-        "gallery": "93410d82057d649a00347942f61951cb68820affec69b1d54da812363eedb5d6"
+        "poster": "830be0649547859f8b3b557f282bcb62c77493501c68ee3227a046b0d5ddfe09",
+        "gallery": "f9cdfce030fa7f26e98cf39c785e538a44c432ce411216fab5fed6569ac409d3",
+        "detail": "840594e7d7e09a5fc6f54963d29c49637645de6b6c1fc5f73cb4f2a9558383be"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -701,7 +747,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 791
+        "inspectionMs": 17984
       }
     },
     "date": "2026-10-04",
@@ -712,9 +758,11 @@
     "preview": {
       "poster": "media/sa-124-technology.jpg",
       "gallery": "media/sa-124-technology.mp4",
+      "detail": "media/sa-124-technology-detail.mp4",
       "sha256": {
-        "poster": "aa62efaf330c2d6362d7b58db18e819521f1070442b7fdbffa5e3c8743245735",
-        "gallery": "dc7213cd8a69f9d0e54bd72cb9bf022b40ae04558ece767c64e887e15c6ef533"
+        "poster": "17bea2642308334868c4a047fd3aae9f68db1c33cad6df6798db1c413fc37e17",
+        "gallery": "11a6a058b9e9957c636d2406e515638a4951be0f023093ac1605dca03318a06b",
+        "detail": "7c36a2dcc1188a42743c9b12c03250e2317166b2612856efc1c2c5d4de6d4809"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -731,7 +779,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 791
+        "inspectionMs": 15436
       }
     },
     "date": "2026-10-04",
@@ -742,9 +790,11 @@
     "preview": {
       "poster": "media/sa-129-technology.jpg",
       "gallery": "media/sa-129-technology.mp4",
+      "detail": "media/sa-129-technology-detail.mp4",
       "sha256": {
-        "poster": "ffdb99590e0afa344831e9034ec15bb6a9ba4d83a1eedf7df56bba27285e37a4",
-        "gallery": "f7328a0fc40cedc43c0f7767f2df7529dd1d29879284fd61261392e2fcb1c3e3"
+        "poster": "346cc32e28abf8325e8c9c5788031f63b0791e6a991a4bde5298324f8a4b2169",
+        "gallery": "6a7b372828faee9f66e0131de88553032d1a8dd7f1bea20ddffa169853ef2e92",
+        "detail": "51e5efcf13908be0530894e30ce9a3cd5676caf18f9f59124912bf23802d229b"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -761,7 +811,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 764
+        "inspectionMs": 14259
       }
     },
     "date": "2026-10-04",
@@ -772,9 +822,11 @@
     "preview": {
       "poster": "media/sa-125-technology.jpg",
       "gallery": "media/sa-125-technology.mp4",
+      "detail": "media/sa-125-technology-detail.mp4",
       "sha256": {
-        "poster": "61e8c335028b6f6d878a563690d3560007ee23a78d2adea29ba8ff9f9f3a8242",
-        "gallery": "479166ac588012d7782de9e3958f6be7429ae37d8a17d3429aae7c733996ecf0"
+        "poster": "c7702cd8b426527f327d8c34952c2aba6f83ecb139234179778d093719e096e7",
+        "gallery": "14c4e685e49e48958d7a63ea1787321780f1a730917cf725a9ba37a8a37b5450",
+        "detail": "45da37e22e1b71aae743052d1349ed100388afc088fe5a31d9831e5c3e5ad8c5"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -791,7 +843,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 770
+        "inspectionMs": 14000
       }
     },
     "date": "2026-10-04",
@@ -802,9 +854,11 @@
     "preview": {
       "poster": "media/sa-126-technology.jpg",
       "gallery": "media/sa-126-technology.mp4",
+      "detail": "media/sa-126-technology-detail.mp4",
       "sha256": {
-        "poster": "cf8c6b4648906fcedca9216edfa558da04d699d931e05f2ed92482364f5a2b05",
-        "gallery": "bee3612592cb562ef70f990387293bd9a7b370391dcc29a5f683e22128ea1693"
+        "poster": "2e8ce0bd7af31862b94c4b23ddb9d2afaf64a76014400bbbe20546161965f5c2",
+        "gallery": "1aa8c564e222ec9f840f2f66625156fa097f19bc6481ed7d9ad115d3b95af76e",
+        "detail": "f692ff3c98e579ff3a22ef3827ea005588bd9e332e402b6251ca69ee53fa8322"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -821,7 +875,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 787
+        "inspectionMs": 13996
       }
     },
     "date": "2026-10-04",
@@ -832,9 +886,11 @@
     "preview": {
       "poster": "media/sa-127-technology.jpg",
       "gallery": "media/sa-127-technology.mp4",
+      "detail": "media/sa-127-technology-detail.mp4",
       "sha256": {
-        "poster": "bb07127480ee0b24c0f1b2ab7ab3025bdf6bb0bd93a84087affb1b0153522e64",
-        "gallery": "fda7f4eac573c86035943ed9477229d1f698a2bd222ac84f77013f0b46c4ceda"
+        "poster": "0b2ac32970b62f4cd5d4add59c57aab7df932b0d6a529e0ced8d62ccdfbff4b5",
+        "gallery": "2f1736fbc3922f3f02d94ee2ddae963734f29d54ee7a784a45a995a2e404f7b4",
+        "detail": "e3e76442037c7b6ce3c64f3273f0b7edeba61cd20b1513fedf9f059eb99557b9"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -851,7 +907,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 788
+        "inspectionMs": 14512
       }
     },
     "date": "2026-10-04",
@@ -862,9 +918,11 @@
     "preview": {
       "poster": "media/sa-128-technology.jpg",
       "gallery": "media/sa-128-technology.mp4",
+      "detail": "media/sa-128-technology-detail.mp4",
       "sha256": {
-        "poster": "e721ee8b88a0ed30fb6786c63a98961e14cd8c876539ef6e41833b432fed5d94",
-        "gallery": "88b53682455710d513fe1ecb3bec57f21218751dafcdd05c3acc5ee4c98cba39"
+        "poster": "9e99b4142f0f90cf1905f127b269adb86db8eea770cefac9b58be4e9de0360d9",
+        "gallery": "0ea13e02d61877a2b3a5405f6740299e20c55f3dec4c86c7ab243127ccfb2914",
+        "detail": "a73f5cba4d5d5fba5a12f464d93f2a2f0bb5fb81cce743874e6977ff6b42eb89"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -881,7 +939,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 929
+        "inspectionMs": 14104
       }
     },
     "date": "2026-10-04",
@@ -892,9 +950,11 @@
     "preview": {
       "poster": "media/sa-191-technology.jpg",
       "gallery": "media/sa-191-technology.mp4",
+      "detail": "media/sa-191-technology-detail.mp4",
       "sha256": {
-        "poster": "1d87803334dc229416f77ba82f9e0891901d004e8fb946c24f463bbccc56bede",
-        "gallery": "ce08813eb8f57a532aafdd32501b767c7d4095926d18ffcf1bd1a294033e2c8f"
+        "poster": "2f20ca9e0e3a845db710780e9ec6a322cd84c441584cb2ed4f11c0f85e58f2c7",
+        "gallery": "f3b9b27ee0a47b9beebcff869db06bddf33da506c8f78193d70ed9b9e6fd8367",
+        "detail": "fcac13b8ba7075de4133ae54f2f9470895700c8e44bfcefe9c119946280dcb18"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -911,7 +971,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 780
+        "inspectionMs": 13663
       }
     },
     "date": "2026-10-04",
@@ -922,9 +982,11 @@
     "preview": {
       "poster": "media/sa-192-technology.jpg",
       "gallery": "media/sa-192-technology.mp4",
+      "detail": "media/sa-192-technology-detail.mp4",
       "sha256": {
-        "poster": "fc014fc5f4d101c2595aa51d8e6fdf398b0eb9b69f0d659ecf431ed27f821426",
-        "gallery": "0a77a20dd541ac30970375f0414c98389568200417d3f8eb7f19536236954295"
+        "poster": "fca59fbb3e6295170f351a29884d489b853774b7b6dd4a277a4828160344df3f",
+        "gallery": "509024a5347624092f506571c64cedf31ee45a17f7e2c4c4386ecad3f39ecdbe",
+        "detail": "4803276f643b9712ca20b8591f17f83e71ea964e22c18770aa82e8be2806c9b0"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -945,16 +1007,18 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 883
+        "inspectionMs": 14085
       }
     },
     "date": "2026-10-04",
     "preview": {
       "poster": "media/sa-193-technology.jpg",
       "gallery": "media/sa-193-technology.mp4",
+      "detail": "media/sa-193-technology-detail.mp4",
       "sha256": {
-        "poster": "cbab27064e1223765adde9b348f75bc472226c695bbdee2369b2eeb563ed2750",
-        "gallery": "08affb93b77c260b60d9ee30ea93e9a3e4ecc17d84de0a3aa4813e0b769ba1d8"
+        "poster": "55bb716c1f2cf207e12fe79237f3b0e9adba1c45b243114e3f1debc69ca625d6",
+        "gallery": "184f9e904b017197e4aa8b03c66a1818250f3ed49a658dd07c7d4a1c51600385",
+        "detail": "66aac9514d1125b6d5dc7bf4a9d7677e9ec7df881345de5eb8ae78d7c7e49224"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -971,7 +1035,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 837
+        "inspectionMs": 14188
       }
     },
     "date": "2026-10-04",
@@ -982,9 +1046,11 @@
     "preview": {
       "poster": "media/sa-194-technology.jpg",
       "gallery": "media/sa-194-technology.mp4",
+      "detail": "media/sa-194-technology-detail.mp4",
       "sha256": {
-        "poster": "e792ed517cba0f96ebda585b6d7d6453903131fa6f495a494021199a1475c04e",
-        "gallery": "33d326c172f1ee1e0edc467504e886b90d85f0f32bfc013c556377477c47fed0"
+        "poster": "9d60f8530893730aaddceb02dadb9b94c3591114abcc1deee6152b7342ac9a1e",
+        "gallery": "ac5b8ae6922c2c363ea44daae94998edc64605583eb7461a2f732d8ac3261459",
+        "detail": "ac43f2a27cbda453c9dac59497a3e595dde5196ccb93378c8dd2fa22dc197fcf"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -1001,7 +1067,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 817
+        "inspectionMs": 28674
       }
     },
     "date": "2026-10-04",
@@ -1012,9 +1078,11 @@
     "preview": {
       "poster": "media/sa-195-technology.jpg",
       "gallery": "media/sa-195-technology.mp4",
+      "detail": "media/sa-195-technology-detail.mp4",
       "sha256": {
-        "poster": "dc3b58dfdf9e2b40f667f96fe0cf7ec7b24aaa5f3ab80a7379604286a03e999f",
-        "gallery": "aa8f4d55a58c5016d61fd7392b1da6a012ef2a716a392b82e6ca8bcf24a0184d"
+        "poster": "4dfcf528999579371536a56e45a56cf862861da6e4d232975155ebb1d2c79dba",
+        "gallery": "ebfbbe8911a8f88468fe0f0da1a0de7a86139afb12bc42a9ab67e32aa8ed9d8b",
+        "detail": "6f7e4e4e6f16b122c910998ab53c69269b3cf9605d692dabf44dd0a4326242f1"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -1030,24 +1098,25 @@
     "preview": {
       "poster": "media/sa-161-technology.jpg",
       "gallery": "media/sa-161-technology.mp4",
+      "detail": "media/sa-161-technology-detail.mp4",
       "sha256": {
-        "poster": "924275d6fbeed28b983b3200182479aaec021092458df5a8dfa5311bb21aefce",
-        "gallery": "9fcd152a991f37bd559a243951aa2081a19133771da4d269535424a6cdb79fd3"
+        "poster": "974cc1154487df305048ded9408b3342bf5442ca64a580571eef8df4e1c9c967",
+        "gallery": "d6df73c17386baf5aff8734dc1371d4ef0024f5b79923c23713c9b2c0faa4246",
+        "detail": "963cecf35114163fe1c98014c072825ca88335259e472a386db674960fa95eeb"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in WebKit 26.0; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 1172
+        "inspectionMs": 29763
       }
     },
     "date": "2026-10-04",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
-      "Physical Safari/iPhone not tested.",
-      "Lifecycle-only Three.js r186 cleanup: Chrome frames at 2s and 5.5s match the previous visually reviewed production build pixel-identically; existing preview assets remain representative."
+      "Physical Safari/iPhone not tested."
     ],
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
   },
@@ -1062,24 +1131,25 @@
     "preview": {
       "poster": "media/sa-162-technology.jpg",
       "gallery": "media/sa-162-technology.mp4",
+      "detail": "media/sa-162-technology-detail.mp4",
       "sha256": {
-        "poster": "a38a456141b8a03ee095ff446bbb395734114190001ea2bf74ebcc300ad98d1c",
-        "gallery": "1abb84fde81e39c11ed4ac8ec418ea71e67a4ea1d2ea5392181ba265ee1a3022"
+        "poster": "5aee718d19468074ceb2074ae86c7b2ba6e9d50872b8cb49acddd227aedd1bd8",
+        "gallery": "c22d9482c82207b7aeca8c805678eca5d8435eda4fc9c7010afedc6bb78300ed",
+        "detail": "d5659c1feb91386b4d22d84da3d98d719c26ac83b7ee71dcb893c0dfc714636f"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in WebKit 26.0; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 735
+        "inspectionMs": 29759
       }
     },
     "date": "2026-10-04",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
-      "Physical Safari/iPhone not tested.",
-      "Lifecycle-only Three.js r186 cleanup: Chrome frames at 2s and 5.5s match the previous visually reviewed production build pixel-identically; existing preview assets remain representative."
+      "Physical Safari/iPhone not tested."
     ],
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
   },
@@ -1094,24 +1164,25 @@
     "preview": {
       "poster": "media/sa-163-technology.jpg",
       "gallery": "media/sa-163-technology.mp4",
+      "detail": "media/sa-163-technology-detail.mp4",
       "sha256": {
-        "poster": "bdac85c09e601f5d7ab400d268e46ae98eebce767c146465b9c125fc25760a56",
-        "gallery": "34856a7a047628b14ca6a788b82781fcb603903c3688648b7f9425423f1be648"
+        "poster": "7ca88841047f0c51d3aec1d1648fe7165c02ba0238689782f80f09090777663e",
+        "gallery": "ead99897227c06c3b0a5eebc991516d7795d0617e4a8bcba5ff8c6080d21e6e8",
+        "detail": "50244fd12c63001849926064e0b4d5c21e28bc695f8c3f04cb87bb4d2062be15"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in WebKit 26.0; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 880
+        "inspectionMs": 29890
       }
     },
     "date": "2026-10-04",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
-      "Physical Safari/iPhone not tested.",
-      "Lifecycle-only Three.js r186 cleanup: Chrome frames at 2s and 5.5s match the previous visually reviewed production build pixel-identically; existing preview assets remain representative."
+      "Physical Safari/iPhone not tested."
     ],
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
   },
@@ -1126,24 +1197,25 @@
     "preview": {
       "poster": "media/sa-164-technology.jpg",
       "gallery": "media/sa-164-technology.mp4",
+      "detail": "media/sa-164-technology-detail.mp4",
       "sha256": {
-        "poster": "6f697aaa7dc2c5472afd8c03eb59c716a6fb6d365387b0e8b5a75b01bfd57f37",
-        "gallery": "ffde5ec87f4e0bd06efde66c05bcbd6db82e8bcbe1451ad0e8879bd6a4720a86"
+        "poster": "df7e9616222e1b00921e1e5efb6c38090913e45c8c277025557e650f510fdd49",
+        "gallery": "973c1929a4a93f5843c9b17c57b320f8cb4c10ad243e9f04373492fe1f822212",
+        "detail": "55cbd988823e34d7f42f63ca1f2a3be05ecc5a472a8ada93b3df6afc156de398"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in WebKit 26.0; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 1086
+        "inspectionMs": 27662
       }
     },
     "date": "2026-10-04",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
-      "Physical Safari/iPhone not tested.",
-      "Lifecycle-only Three.js r186 cleanup: Chrome frames at 2s and 5.5s match the previous visually reviewed production build pixel-identically; existing preview assets remain representative."
+      "Physical Safari/iPhone not tested."
     ],
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
   },
@@ -1158,24 +1230,25 @@
     "preview": {
       "poster": "media/sa-165-technology.jpg",
       "gallery": "media/sa-165-technology.mp4",
+      "detail": "media/sa-165-technology-detail.mp4",
       "sha256": {
-        "poster": "467fd38913b048cc97b46a12e7adc08d230967e233a5ca37282c8a54515b7162",
-        "gallery": "3993e29c364e9fafb7c139c62121c1eb55eb758017572d9c72f5ed355e577f0b"
+        "poster": "552eb76d788ad764d437216ac7cec64db992f4ece550fe04418970138022a4ef",
+        "gallery": "7d41c0e4c9daa82ba34945ed61e144dfea94bb65caf9d8cdc2e63a47d6369528",
+        "detail": "da09edc99c239ea85b21d5a970a3adace984a1d9f86588b54735a3a00d8a20ed"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in WebKit 26.0; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 710
+        "inspectionMs": 31115
       }
     },
     "date": "2026-10-04",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
-      "Physical Safari/iPhone not tested.",
-      "Lifecycle-only Three.js r186 cleanup: Chrome frames at 2s and 5.5s match the previous visually reviewed production build pixel-identically; existing preview assets remain representative."
+      "Physical Safari/iPhone not tested."
     ],
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
   },
@@ -1190,24 +1263,25 @@
     "preview": {
       "poster": "media/sa-166-technology.jpg",
       "gallery": "media/sa-166-technology.mp4",
+      "detail": "media/sa-166-technology-detail.mp4",
       "sha256": {
-        "poster": "d050971a6c98dad79f2f0c98c6c45dd69f8df3d28035caf5196255fce38024c0",
-        "gallery": "34d2c811456d3788550b1a3d608eceac8f66e2dc82e6d8f938ea7f8fa13d1144"
+        "poster": "f128f63e06237fff2b6efe9f7735333beec90d1a92bfb7df50fc964b769f8e7f",
+        "gallery": "3b1576869eeb23f3038753be59797f3a65a70482e0af105560f8343316ab440d",
+        "detail": "35cd6ec9965d3f8d3a0722aaf6e558be94d7bfdf4eaedd56f59ed12b5e36617a"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in WebKit 26.0; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 977
+        "inspectionMs": 29727
       }
     },
     "date": "2026-10-04",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
-      "Physical Safari/iPhone not tested.",
-      "Lifecycle-only Three.js r186 cleanup: Chrome frames at 2s and 5.5s match the previous visually reviewed production build pixel-identically; existing preview assets remain representative."
+      "Physical Safari/iPhone not tested."
     ],
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
   },
@@ -1221,9 +1295,11 @@
     "preview": {
       "poster": "media/sa-167-technology.jpg",
       "gallery": "media/sa-167-technology.mp4",
+      "detail": "media/sa-167-technology-detail.mp4",
       "sha256": {
-        "poster": "b13bc33928f7687135606802b8e96bcfd258bbc04eccf24765c8bf07e0ae3c39",
-        "gallery": "0fa8c64e9d80a4472f4de61e7fcdbbb3d882eacee0f328ae119990cff09a4c45"
+        "poster": "3c6e78b70628242a13885f04595a8712c82d57d8ea0af667285ab530b4f7eac5",
+        "gallery": "f707770d83ac43af8c570a771d073acd6db1b97a4927eeb7ed7067ee343cddee",
+        "detail": "f1531633bbd63e34b083d60b7db04c00078ecb67b53263533e9de2ca24d0726a"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
@@ -1231,7 +1307,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 1140
+        "inspectionMs": 29383
       }
     },
     "date": "2026-10-04",
@@ -1251,9 +1327,11 @@
     "preview": {
       "poster": "media/sa-168-technology.jpg",
       "gallery": "media/sa-168-technology.mp4",
+      "detail": "media/sa-168-technology-detail.mp4",
       "sha256": {
-        "poster": "da35b090d32bde488885f10848c3a294ddf26d7bbc6c8577b606c2bcbe31cd15",
-        "gallery": "7dfb7709da38b2c15f58a61f56ca65392121425f749ae8173de02005207f7f1c"
+        "poster": "89f1f53cc026b760f00c79f882f79100d1f58b8ba481fa1e565f317ed75deedb",
+        "gallery": "8786275927e3eec194dd77800e3dd0d597b7b7ee8860a06de5d93d1421940324",
+        "detail": "d8f9c96fce4966e79b80b95eeeb573ab5e288a7107e7016ed65480a6b696266c"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
@@ -1261,7 +1339,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 1143
+        "inspectionMs": 30070
       }
     },
     "date": "2026-10-04",
@@ -1281,9 +1359,11 @@
     "preview": {
       "poster": "media/sa-169-technology.jpg",
       "gallery": "media/sa-169-technology.mp4",
+      "detail": "media/sa-169-technology-detail.mp4",
       "sha256": {
-        "poster": "5c6d050c0ee983cbdd2a231019a4118a61b031e02efe00428d3dfeb22bff544c",
-        "gallery": "cf14196b02f272f78953c9985dc90279adc8c721300ecb30f885d0279aa16ecc"
+        "poster": "7b7f135cb69784d8af2c94a7278009228ab37e099e95daec7a9313ce800a8931",
+        "gallery": "430f9cdb1ce12ffef60045a259fa3f2f03ba2ce1431e14c3e2fc36efecf20cad",
+        "detail": "c52c384164c05a45ef46eaa9ae517d5e04dbb0271c7c081c4a417095394ecda1"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
@@ -1291,7 +1371,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 883
+        "inspectionMs": 31831
       }
     },
     "date": "2026-10-04",
@@ -1311,9 +1391,11 @@
     "preview": {
       "poster": "media/sa-170-technology.jpg",
       "gallery": "media/sa-170-technology.mp4",
+      "detail": "media/sa-170-technology-detail.mp4",
       "sha256": {
-        "poster": "e4e99cf1793e564c4af4370a39de695e476d00fce3af2e8aa35085ef4a16f6c8",
-        "gallery": "0aae634f9d83f654eb5f5ea0aff585078883705fb64c4019b2b3a73a24def0ff"
+        "poster": "283ae457fe178ad8141d962b8317175a012c8c305ae52376be71855f5ba2117f",
+        "gallery": "3bf03b4dcffb1e932c0aa37e99089acb60773496b087fb4413d1a623fda6d63d",
+        "detail": "1713764463c41cc306642fc5b6c87223201371918f97f494dfae3f7dd21d7b1c"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
@@ -1321,7 +1403,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 946
+        "inspectionMs": 38248
       }
     },
     "date": "2026-10-04",
@@ -1341,9 +1423,11 @@
     "preview": {
       "poster": "media/sa-171-technology.jpg",
       "gallery": "media/sa-171-technology.mp4",
+      "detail": "media/sa-171-technology-detail.mp4",
       "sha256": {
-        "poster": "9bf3d930d6dacd5ceeabc9b6d3a07f1cddbfa025262957959bf29b6f9f1f1d4e",
-        "gallery": "8b4ffa71bc8695549780e97188c907e96f0a2a6b65035726449c656fc7982d56"
+        "poster": "354ecf158a792599c70c23ca52c39862afd31cc0b68240160f9891b7d9a7fd12",
+        "gallery": "add1929c8a02900e9ae98b7bd5278ffab020e76bd4dfa99534c561ee703e2f77",
+        "detail": "df74b1f5491ffb7b29dbc1df18920ca18b8b699697711cc6f751bbf01bb38deb"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
@@ -1351,7 +1435,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 855
+        "inspectionMs": 34197
       }
     },
     "date": "2026-10-04",
@@ -1371,9 +1455,11 @@
     "preview": {
       "poster": "media/sa-172-technology.jpg",
       "gallery": "media/sa-172-technology.mp4",
+      "detail": "media/sa-172-technology-detail.mp4",
       "sha256": {
-        "poster": "0eb8d3a6bf8f1e44f068b1ef98a347c6f77f70cd6b28e806c61a0310f5778689",
-        "gallery": "b07b31445a2c142b7daf2bb8e1836f2da4a5df4076c3f2a02936ce045ebf64c6"
+        "poster": "7495dcd1f2aa5428c8bdf801ae080b27e8606f5d739557a54247cfb9040faccc",
+        "gallery": "0712379cc165006182994d556e2d3f25ca6c7d230ffab7e93d4904188d285b35",
+        "detail": "f4445d16eba329b0cbf641064241868515456360b82a62a99067fb345677dcb7"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
@@ -1381,7 +1467,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 978
+        "inspectionMs": 42684
       }
     },
     "date": "2026-10-04",
@@ -1401,9 +1487,11 @@
     "preview": {
       "poster": "media/sa-173-technology.jpg",
       "gallery": "media/sa-173-technology.mp4",
+      "detail": "media/sa-173-technology-detail.mp4",
       "sha256": {
-        "poster": "9fedc3463862dde286aa72f58ab94e93915adeacce4c075b04bc64f58faa1e7d",
-        "gallery": "76bab16075f7530809d76b413f7da9f62213946b50c9d6520a494830c1d07117"
+        "poster": "45ea605aa95dd6a11873f3630101e1909f1e5a919415f5d6c4720da4826f50aa",
+        "gallery": "0167f0871b59d437d75515bf0e7f536322df6429260c9887311434c391042df0",
+        "detail": "0b9af0a5e300a40c30e8ed99d23541924e72d7ea944a28f94c8c6f061a26307f"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
@@ -1411,7 +1499,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 767
+        "inspectionMs": 28826
       }
     },
     "date": "2026-10-04",
@@ -1431,9 +1519,11 @@
     "preview": {
       "poster": "media/sa-174-technology.jpg",
       "gallery": "media/sa-174-technology.mp4",
+      "detail": "media/sa-174-technology-detail.mp4",
       "sha256": {
-        "poster": "a2446003f6ffcac5b382c032116c3efd5d383cd70911602c294b2fcd190ecb55",
-        "gallery": "a769464e87845b6f24ae97957175578af458ab002dd59868982c852336327d5a"
+        "poster": "c29c3c2ed90a9584b562b595289d8a0fc661058216dbc89b0e52013ac9f3ca7d",
+        "gallery": "0a12753e189552ccfadecfd5acf8e60269b8f228d69ed445ba1d212066290ca1",
+        "detail": "5a24a5501dca7b153ccc7cdf0ad7c28fb83585b5cee149f42312828a449a39b5"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
@@ -1441,7 +1531,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 783
+        "inspectionMs": 28218
       }
     },
     "date": "2026-10-04",
@@ -1461,9 +1551,11 @@
     "preview": {
       "poster": "media/sa-175-technology.jpg",
       "gallery": "media/sa-175-technology.mp4",
+      "detail": "media/sa-175-technology-detail.mp4",
       "sha256": {
-        "poster": "2c627266dc35cb2e7ac9c58ae4003044165a8b680312809cf43a44c24ba77bbd",
-        "gallery": "f804e76eb355b19b8a591259dee87cfb1f01ff90e350b0ab3a0058db4c8737b0"
+        "poster": "760afb1622dccd237dc4a028e4d737a3357e0b6acb35ea089474308c71f5eaa2",
+        "gallery": "a738b5080ae440c2645ac82babb5cc0b729235109a95fbde45b7ecd465ecec7e",
+        "detail": "12b27de71e103b97700631f76631af7594bd497b04dfafd03064624981cb4bfc"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
@@ -1471,7 +1563,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 884
+        "inspectionMs": 29928
       }
     },
     "date": "2026-10-04",
@@ -1491,9 +1583,11 @@
     "preview": {
       "poster": "media/sa-176-technology.jpg",
       "gallery": "media/sa-176-technology.mp4",
+      "detail": "media/sa-176-technology-detail.mp4",
       "sha256": {
-        "poster": "906676fff525d7d37712b0d3bcefc89fb3cc8452a6d5d71defecb71d9924b67a",
-        "gallery": "76b99f305a362443f56dce45d52e13ddf79fa0259895838c4db601eea954b349"
+        "poster": "7c8a34f4e6ae79ceae5f2416b7907427697f21b570778a8f96dcb0b57aae1c46",
+        "gallery": "e1248f1142d9f174cfd5560844c9df737e40b741b462a8dcca24c56af644beea",
+        "detail": "2d24d791ef3f79ebe973cc794a4aac99c5a99ddc6d29fb7743cc57a9665e79b4"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
@@ -1501,7 +1595,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 844
+        "inspectionMs": 27820
       }
     },
     "date": "2026-10-04",
@@ -1521,9 +1615,11 @@
     "preview": {
       "poster": "media/sa-177-technology.jpg",
       "gallery": "media/sa-177-technology.mp4",
+      "detail": "media/sa-177-technology-detail.mp4",
       "sha256": {
-        "poster": "c8fb772d1c97b87a5cbf37e68fe2c0932037c462271c40cc3a80eff8ee1e99ea",
-        "gallery": "0b3ba291f3241fc2db56adc98980fd7d70da4f08de93bc3991e13bdb123d1eee"
+        "poster": "e99c4d6ea0e4f0f8d35510cd196190a5a286ec9ee845dd0410264fbe257b9193",
+        "gallery": "b5fc509d31572a0be4a2f70ba63acc45fa1ef3f58868ccee85550f292cbc9727",
+        "detail": "6198c7bc1d8b91208f757a7a189bd99cbf6285016b17b06eb2bc7208bb1d4cbc"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
@@ -1531,7 +1627,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 883
+        "inspectionMs": 29841
       }
     },
     "date": "2026-10-04",
@@ -1551,9 +1647,11 @@
     "preview": {
       "poster": "media/sa-178-technology.jpg",
       "gallery": "media/sa-178-technology.mp4",
+      "detail": "media/sa-178-technology-detail.mp4",
       "sha256": {
-        "poster": "7555a74d2b05a1992dd351b009370a2b819b3de2c6bf611ddfa3b800a0ec1acd",
-        "gallery": "1281aa4715219686fe072654b00a289e61100c5dba54ff9f301bfe74a6f93fcf"
+        "poster": "c4b2a8bed810c914d6a36e16857930d42ba295eb230904f663f0d056095206e0",
+        "gallery": "fbbeedaacfb7bb420c6c7ed5c1179d16bf52c58cc35564d881d129a6da05aa07",
+        "detail": "c0127d750bc5c73e170798b818d9fcae7c6a962447b4fd975de0ee0d1f3923bc"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
@@ -1561,7 +1659,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 888
+        "inspectionMs": 29496
       }
     },
     "date": "2026-10-04",
@@ -1581,9 +1679,11 @@
     "preview": {
       "poster": "media/sa-131-technology.jpg",
       "gallery": "media/sa-131-technology.mp4",
+      "detail": "media/sa-131-technology-detail.mp4",
       "sha256": {
-        "poster": "6f2fcb159734734349d0c98a1dbd8989633c41802523ad3d7e53027585ec647a",
-        "gallery": "a7aebb7bd919a184bf63a76a4e268ab5498281b4f295d51c895a5a5c273336e0"
+        "poster": "d4fc2ecbfab1c2c8aa8c7e46430825e079434a5b23d78e6211d85acc28b6dca3",
+        "gallery": "313d812bbc27c25cf7a3d29abd0281634f796439d08929f90d1d055df4537fa1",
+        "detail": "7400727b7f246db1ece2c8aefe30c92d47ba60cd7cdc3ac58102d3c35a9892c8"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -1591,7 +1691,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 802
+        "inspectionMs": 14448
       }
     },
     "date": "2026-10-04",
@@ -1611,9 +1711,11 @@
     "preview": {
       "poster": "media/sa-132-technology.jpg",
       "gallery": "media/sa-132-technology.mp4",
+      "detail": "media/sa-132-technology-detail.mp4",
       "sha256": {
-        "poster": "bc369547d6ddc7ca2809c1cd62258687258d3817ef317962c1855ab9de1b4766",
-        "gallery": "a098dcfed02e0c101e72dd8527a8640aa3173180f8e3d18f3ae6ac56c0e81d62"
+        "poster": "3bc922691a141201c7b6b2df37c97d0178940ae9ff6d06b6142aa72dbd9a23a5",
+        "gallery": "8b9f5eaca09e3b694ab5edaeeacc2120bba4bb78be158009e9f255be55fbaa39",
+        "detail": "0a5bb720dc8852d1c578d57f6d7fe170a0139ba1ae9c21a0130d9dbdb7da2937"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -1621,7 +1723,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 810
+        "inspectionMs": 13895
       }
     },
     "date": "2026-10-04",
@@ -1641,9 +1743,11 @@
     "preview": {
       "poster": "media/sa-133-technology.jpg",
       "gallery": "media/sa-133-technology.mp4",
+      "detail": "media/sa-133-technology-detail.mp4",
       "sha256": {
-        "poster": "e18784837274a02d07ddb5047a867007a03b13315b9f15d42ab5737dd94e999e",
-        "gallery": "500b1606145c9c1d24ac14a086491509882b19feb2adda1da8f11de356a6e7fc"
+        "poster": "25835fbf5819c51c01dfc146c30364c6c17c8f9847b53ca38db4d4b147d8db91",
+        "gallery": "51bd01b741f0f2f2432c0a4f1fca2111d8ab3f7f31eff29d27881bdf1016053f",
+        "detail": "c9e064876dc21ab8c2b0b6dd5ec5dafac77496f03172015206cb8de2fa27f263"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -1651,7 +1755,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 821
+        "inspectionMs": 14741
       }
     },
     "date": "2026-10-04",
@@ -1671,9 +1775,11 @@
     "preview": {
       "poster": "media/sa-134-technology.jpg",
       "gallery": "media/sa-134-technology.mp4",
+      "detail": "media/sa-134-technology-detail.mp4",
       "sha256": {
-        "poster": "01e438a12b6421539a3dfbc02ec12133946a7243d5abfbbfba6fb4738087c06f",
-        "gallery": "49360e016cfca08c98d78a550479ddeb51a209e516d652c357d4ac8e96fae9bd"
+        "poster": "cb53619c975a69bb74c11f3c6e961b26c299d4ad5d0a4904f1d4f1b330c9876c",
+        "gallery": "0936179ab3399123c94f23b7c8612c263e33cc672bf02fc13f53443714ed9f2d",
+        "detail": "31025056fefab4e19035bcf891490bcfd0debae2196268f21aa4cf5409be57d4"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -1681,7 +1787,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 829
+        "inspectionMs": 14757
       }
     },
     "date": "2026-10-04",
@@ -1701,9 +1807,11 @@
     "preview": {
       "poster": "media/sa-135-technology.jpg",
       "gallery": "media/sa-135-technology.mp4",
+      "detail": "media/sa-135-technology-detail.mp4",
       "sha256": {
-        "poster": "59714a7c42c78ac43a61a4ad19c22d092af531cd1e5eeb43f0de25cac925b66f",
-        "gallery": "566565e583224e6ce42d8f94602669a6a8050673e8da15fe207f1230f4794873"
+        "poster": "7dbc0d7dc784996a8872bc050ac1ce56f93234a1527a8b7f71a3945ccd5938c0",
+        "gallery": "94be212fafaa2490699c84e8eab06675f2eae324306f18dec0e03f42dd29b9b9",
+        "detail": "5611022f506acb0983c9b8207a4948f837e240be40b369a62887b6c151645786"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -1711,7 +1819,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 812
+        "inspectionMs": 13728
       }
     },
     "date": "2026-10-04",
@@ -1731,9 +1839,11 @@
     "preview": {
       "poster": "media/sa-136-technology.jpg",
       "gallery": "media/sa-136-technology.mp4",
+      "detail": "media/sa-136-technology-detail.mp4",
       "sha256": {
-        "poster": "1e2a3e6747cc3e1cae26fc7f338f0064ef05fef44b35be791fef12690670293d",
-        "gallery": "33fddf6e4e42a0d0bc2748f5d38418198a16e5f2e842524d3de32ca402e7d1f2"
+        "poster": "8430c053acca67b13f6e4c3ccb51d3563586389ce70fa6a4bc05aeb5266af37f",
+        "gallery": "ac687aa1dc3a1176ba1293610eb23954e60aa722b7dc15838f08fe56b7a3c99b",
+        "detail": "6bfef8f42231392786d5af9f045fb92e2f2daa9b0eaaac9d3da3b0ecb1746eea"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -1741,7 +1851,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 805
+        "inspectionMs": 14367
       }
     },
     "date": "2026-10-04",
@@ -1761,9 +1871,11 @@
     "preview": {
       "poster": "media/sa-137-technology.jpg",
       "gallery": "media/sa-137-technology.mp4",
+      "detail": "media/sa-137-technology-detail.mp4",
       "sha256": {
-        "poster": "282c701e5471a6e621bcfb28194ed8ed5451460326b70234d8f1bc94eb1de69c",
-        "gallery": "4fb4d3e623ddd6c21392fa96dc234d89b2aa8f92f9879e61f6103e378998ccdd"
+        "poster": "a1f507e6a0945ea2759d90bbfbb5154da394dea3a2c313fec9baf8c488a2047f",
+        "gallery": "af520062bb7bf972a505238e02d0244e8ddfe5e4bf4593b19c7db96d324e38d7",
+        "detail": "15913d286db6d6fa58b4cb84ed4783175cee68c478ce323dea6c95890e307a29"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -1771,7 +1883,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 802
+        "inspectionMs": 13957
       }
     },
     "date": "2026-10-04",
@@ -1791,9 +1903,11 @@
     "preview": {
       "poster": "media/sa-138-technology.jpg",
       "gallery": "media/sa-138-technology.mp4",
+      "detail": "media/sa-138-technology-detail.mp4",
       "sha256": {
-        "poster": "77f412e532baa7ae845bcf27275e267684adb83449978ccf7d48c64018be2b66",
-        "gallery": "a66c52e6cacc0a95e48791f0d0fa9360b0c1ea1b7fe1023aef2fc0f01e159f89"
+        "poster": "6b6f0bf3f8efcb528ca702f4b613ef3a736f62b3b52f757de445b0d177e71b28",
+        "gallery": "1cab9ada723d89df2efbea62b91d955f94991413ef879201a0780d07866c325e",
+        "detail": "d3524c8dc8911c4e78e5b49151b9ec63d41b242cf8398f0018fb6054bb5a240a"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -1801,7 +1915,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 824
+        "inspectionMs": 14774
       }
     },
     "date": "2026-10-04",
@@ -1821,9 +1935,11 @@
     "preview": {
       "poster": "media/sa-139-technology.jpg",
       "gallery": "media/sa-139-technology.mp4",
+      "detail": "media/sa-139-technology-detail.mp4",
       "sha256": {
-        "poster": "a068b66b85c2458d7c8e4407114d2b9403899498b12eebab1410de79d048c9ff",
-        "gallery": "900e687858148d9ddf973e27cfaa4431e1fd0433ebb5482d863c92fe6d235898"
+        "poster": "5f0bfc90e01329cb68f3cbd1beffb3839ad961ad7ceb73ebea83a4f588147433",
+        "gallery": "e6e4d4c93e4575819eaf8e8d1dd6f4b124bf39ab3c5491addd584120dcf44bf9",
+        "detail": "045b436c6cc2ff07a894698fc131348cdcabf1dc04eacf9e05996075ffc236aa"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -1831,7 +1947,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 789
+        "inspectionMs": 14551
       }
     },
     "date": "2026-10-04",
@@ -1851,9 +1967,11 @@
     "preview": {
       "poster": "media/sa-140-technology.jpg",
       "gallery": "media/sa-140-technology.mp4",
+      "detail": "media/sa-140-technology-detail.mp4",
       "sha256": {
-        "poster": "422ba992f5fd7ba23b575a61959374dd1fe065caee980499da493e2cf2da0d4b",
-        "gallery": "b2f2722473b70be97035514e1fdf3f503cd668a7c03a54c9a6683b3ed2e02407"
+        "poster": "bac1594902ad6a3604047ebad4e9dbcbf8d039cc142236d24fa0978a29566742",
+        "gallery": "873f5b8979bbbc9f858855840026170c95980a9b57fd98add2acf1d2d59871ec",
+        "detail": "675e4b21a175412f5d2e67632cb99095461da8b9dd0413ace17a0dd597dc9adb"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -1861,7 +1979,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 773
+        "inspectionMs": 14686
       }
     },
     "date": "2026-10-04",
@@ -1881,9 +1999,11 @@
     "preview": {
       "poster": "media/sa-141-technology.jpg",
       "gallery": "media/sa-141-technology.mp4",
+      "detail": "media/sa-141-technology-detail.mp4",
       "sha256": {
-        "poster": "8cc604c43cb27c3150b75e035bbb7cbe0c7919aa95d9b749a2a570d889ad547a",
-        "gallery": "1ac2383f8bdf50685d9342ef0d12d070bb2624116cde971ee5fb11af7c0b503e"
+        "poster": "603a18112400648f855351880baa6c6b6625e2da001b2a22e9fd5eb63bf59525",
+        "gallery": "2ef6154033d64103ecb34ad12dd970f91ba64486cdee3bac8fe2c1ceed1697fc",
+        "detail": "d604afae9bc0227809511726ea291e6999a1e773427cd3d37b143df66f98df55"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -1891,7 +2011,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 777
+        "inspectionMs": 14737
       }
     },
     "date": "2026-10-04",
@@ -1911,9 +2031,11 @@
     "preview": {
       "poster": "media/sa-142-technology.jpg",
       "gallery": "media/sa-142-technology.mp4",
+      "detail": "media/sa-142-technology-detail.mp4",
       "sha256": {
-        "poster": "00ea96125aaefbdf1147498055fd36328d927d883c0547f5fe7728b5111e8c4d",
-        "gallery": "c3fb1bdd412380a1183072fcd6cb4bc67f880805fe43e9f3b528769bfab17ec3"
+        "poster": "b7afdc9d44f6637fdac1510449f60baf9773eef01339b377318563d1b379a75a",
+        "gallery": "1ee2526bde1506f04f08c3c82f56aece2f2cb434a05fe6ac5765d4fa9c392739",
+        "detail": "1b274df6cbd51905f1b6b7bfc2478bf8c218bc63cbfab46abb787450303417cc"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -1921,7 +2043,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 780
+        "inspectionMs": 14328
       }
     },
     "date": "2026-10-04",
@@ -1941,9 +2063,11 @@
     "preview": {
       "poster": "media/sa-143-technology.jpg",
       "gallery": "media/sa-143-technology.mp4",
+      "detail": "media/sa-143-technology-detail.mp4",
       "sha256": {
-        "poster": "49734b1d0e1ed5ffe4e4afb9a77e95e7b6e4038fa06bbaecb987d66c7d3cf30a",
-        "gallery": "1dd67d0d5aa8d68ca81ca2f46a1678489c38ba22707d191df1de5f5ea0ca167b"
+        "poster": "5a9a4f5d3ab05f5f23ef297b5fd5561103b4780116421636ca74dd424900f012",
+        "gallery": "7929e7cdb3b4ca991cdd033bf5cf666b447c5a3776010871548602414b6dc137",
+        "detail": "8da843137b87e90441241a583ff448b619715d2860bb8c1de54b104f927c94fb"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -1951,7 +2075,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 914
+        "inspectionMs": 15249
       }
     },
     "date": "2026-10-04",
@@ -1971,9 +2095,11 @@
     "preview": {
       "poster": "media/sa-144-technology.jpg",
       "gallery": "media/sa-144-technology.mp4",
+      "detail": "media/sa-144-technology-detail.mp4",
       "sha256": {
-        "poster": "41d5d911c997642a77002bc2cf691f920c89e85725c0445819b37cb6e9dd2118",
-        "gallery": "9c636507c1cf0a0ea921a13afba19340bd0e1df422fa2dc2d9c8623ca4af8829"
+        "poster": "673f4073e2c43dcb0f6c4d7c868f1b59a69493b17d3582f4bbdd88e27124fc90",
+        "gallery": "e104087afc1f3cb049d17e97f5fb32386c2ab2f3707efa17eeebb7f5e0bad784",
+        "detail": "1164670b8408190fc27fccd0c9f69e8f4e2ae658622e221277d9bd7c53d0b1f3"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -1981,7 +2107,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 913
+        "inspectionMs": 15256
       }
     },
     "date": "2026-10-04",
@@ -2001,9 +2127,11 @@
     "preview": {
       "poster": "media/sa-145-technology.jpg",
       "gallery": "media/sa-145-technology.mp4",
+      "detail": "media/sa-145-technology-detail.mp4",
       "sha256": {
-        "poster": "0c9ed6e21241f12cdf28fb140f067543491be8a9bf2e27d985bde61b15170021",
-        "gallery": "ff662a071df687ac524b4595d7f5de4cef2be8e1ad6ef228f04ce74f2b716df6"
+        "poster": "2a2fc286799549b6df5196a456bfd8f302f773d4c3f9b5fcbbb6ef4f7adc0696",
+        "gallery": "25e2fc4f28531c4452f74edb2a1ab9a48fdbd5f37186d42587ad08fa9fb35b6f",
+        "detail": "5da7cd854d9e0397dd57a25811aa016534271c301fa75d2fe89507a6ed6fc57c"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -2011,7 +2139,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 954
+        "inspectionMs": 17402
       }
     },
     "date": "2026-10-04",
@@ -2031,9 +2159,11 @@
     "preview": {
       "poster": "media/sa-146-technology.jpg",
       "gallery": "media/sa-146-technology.mp4",
+      "detail": "media/sa-146-technology-detail.mp4",
       "sha256": {
-        "poster": "74a5610ffef73b322290b42cdc10bc2800551fb2d420a050d7ae3443be3f6e92",
-        "gallery": "415e22030ad54f063c5d19a5fac9c1d1a430d81f43a3ba9d7eb82f608f27502f"
+        "poster": "2e970e8f918b1c6a0ac359506bb373447dbbb6f8dc13c6d5d5e316dfcb4cd25f",
+        "gallery": "2a3387d81dc7efdefcad9ee4497a4517410ba2876e9b0f4f28d4697101c5bb58",
+        "detail": "d300ee71b85e09fbc7ea553d4a05fbdea7132d702afdf73520458e5d76eabc28"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -2041,7 +2171,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 883
+        "inspectionMs": 15048
       }
     },
     "date": "2026-10-04",
@@ -2061,9 +2191,11 @@
     "preview": {
       "poster": "media/sa-147-technology.jpg",
       "gallery": "media/sa-147-technology.mp4",
+      "detail": "media/sa-147-technology-detail.mp4",
       "sha256": {
-        "poster": "26d7b7356d16a4904b11c7cbc47c79d7761e62c99c796b91595d0e5281043fa0",
-        "gallery": "5a9732a72eb1356ae9260e6280cba05788aa1c86c91824227ee8e4fd71c0c785"
+        "poster": "3f3ec2dada7819b7eaebea6e32212dd9f59e3e0c16b13f05653c7884e055d55a",
+        "gallery": "ae9a52b1216de65174fbb5b4aa6daed39403a1f3fe88cd5f68cd72b8ecaec04a",
+        "detail": "3ce985146723ab7ba2cb7fec899c94ee07fad009ac5cf8bf181f26a25c22be4a"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -2071,7 +2203,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 1220
+        "inspectionMs": 16473
       }
     },
     "date": "2026-10-04",
@@ -2091,9 +2223,11 @@
     "preview": {
       "poster": "media/sa-148-technology.jpg",
       "gallery": "media/sa-148-technology.mp4",
+      "detail": "media/sa-148-technology-detail.mp4",
       "sha256": {
-        "poster": "611575ff7f74fa825c10beafbdcf1f5cd1386733a9dd74fa616ae676a516a1d5",
-        "gallery": "3f7a38abb46d565e6a95a2a4e30fc842278eeec3932bef2aeb21a9189af67f9a"
+        "poster": "7d8f811ce9a4c06213913c306060ed462a426d9fc50d83ae696c72a18b0382e8",
+        "gallery": "9552c6c09cf71d6e99ee220943184bb8f3746f6656963d79e352b012a10ee05f",
+        "detail": "f20312ec758f6e6c6c08988398c2e2d09c179d3a30e60bb48cb1b58402f8356e"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -2101,7 +2235,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 1519
+        "inspectionMs": 16138
       }
     },
     "date": "2026-10-04",
@@ -2121,9 +2255,11 @@
     "preview": {
       "poster": "media/sa-149-technology.jpg",
       "gallery": "media/sa-149-technology.mp4",
+      "detail": "media/sa-149-technology-detail.mp4",
       "sha256": {
-        "poster": "50c569124c253c775926a17bec73b0d244de7223bc88f112f7444384daf73dd4",
-        "gallery": "969a6663ddf85fc9ed16674cfb651ea1cf7f1a4327269f1db3c24adee159b3e9"
+        "poster": "aafb46d09c01328754adbd1d1d8e9c17369ef95ecf71f6a50948927401d0680b",
+        "gallery": "98f06a97defe45cfe965d0e4ecf5c66bc2c32c2f0b86b582cb43251b47a0ef03",
+        "detail": "53e3550c0f6bc57f3dd352343b0fe240060524216acd950d3ce1d43249a83e06"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -2131,7 +2267,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 780
+        "inspectionMs": 14188
       }
     },
     "date": "2026-10-04",
@@ -2151,9 +2287,11 @@
     "preview": {
       "poster": "media/sa-150-technology.jpg",
       "gallery": "media/sa-150-technology.mp4",
+      "detail": "media/sa-150-technology-detail.mp4",
       "sha256": {
-        "poster": "7b9b9650ab074349fcc0e0d631fe16b4d8ecdf2bceac1b5025525933f6d0e730",
-        "gallery": "253202100ccc4f221e06e19b1c15f0a5793428cf708f23406f48a78224906a54"
+        "poster": "6ec9cedcef480ce1efac78c233ffa425b76c16f9e4a7ccad93451d71d4ef803b",
+        "gallery": "3dae680493fc3e10ae0839669c70f8af63ab6bdef19e1b72e2dda9b1fe24d3bb",
+        "detail": "ca9eaa2911fdb602e1b65559586d19e26d252a67cf022c3ed571b85e3f7686bd"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -2161,7 +2299,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 795
+        "inspectionMs": 14190
       }
     },
     "date": "2026-10-04",
@@ -2181,9 +2319,11 @@
     "preview": {
       "poster": "media/sa-151-technology.jpg",
       "gallery": "media/sa-151-technology.mp4",
+      "detail": "media/sa-151-technology-detail.mp4",
       "sha256": {
-        "poster": "5858da492c16591eb5f45b58f8186b9962db8b61d4bfb2b5657988e02a865f9b",
-        "gallery": "df9d38178d3420c316ea46b0fa2f123db2516616c7fec8b81e775b73ffa1db87"
+        "poster": "e3f57743fcd4635878f2fa8594c07d4055423536ee7c0bab4ffa4fd378bd1e6b",
+        "gallery": "623c7804b446864a32dccae49ccb3a3e1f69e065cc9c348d58d4d3cd01b47905",
+        "detail": "0d5ebd664b974675f253c978ac2005d32261d4be78bf983dc3608c4acb2cfdfa"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -2191,7 +2331,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 796
+        "inspectionMs": 15055
       }
     },
     "date": "2026-10-04",
@@ -2203,7 +2343,7 @@
   },
   "SA-152": {
     "status": "ready",
-    "sourceHash": "e34f740b5415a3dd8bc4e9ae2fc5e9aa8704477467b996065efda6684b830e29",
+    "sourceHash": "385abd01d53ff7f1c2b5b700e8c595a7465b7fed15762955fba7f95f28cac04f",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
@@ -2212,30 +2352,31 @@
     "preview": {
       "poster": "media/sa-152-technology.jpg",
       "gallery": "media/sa-152-technology.mp4",
+      "detail": "media/sa-152-technology-detail.mp4",
       "sha256": {
-        "poster": "137276e9b76501ab6ea31c633bc803458d416b2491563f5a1829935dc0e4972b",
-        "gallery": "f54d27f7d3adc8b846769ff31847cad94075a8990a77111513d1d94120f2208f"
+        "poster": "6dd49114d9074a6b01454cc7adc8be7470c7cbd8c2bb35b26f1f7dbdb21defd4",
+        "gallery": "8706c07a93ccc9e748d15425767b4d45614dba77ffbf711343667c8db9897e99",
+        "detail": "931f50796b235ccb36579e9272b13470c7a753d213a09158bc5039d9645dd06f"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in WebKit 26.0; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 783
+        "inspectionMs": 19470
       }
     },
     "date": "2026-10-04",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
-      "Physical Safari/iPhone not tested.",
-      "Occlusion repair: rear frame is behind the slab; front columns and roof beams render above it with synchronized frame transforms. Seven sampled states passed an actual front-beam pixel check, common footprint, loop, keyboard/manual control, 390px detail and reduced-motion checks."
+      "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視滿版建築的起始、展開與回復構圖；共同投影、樓板與柱網對齊，無側欄文字，保留材質與結構細節。"
+    "visual": "更新後已檢視滿版建築起始、中段、最大分離與循環返回畫面；像素驗收確認僅中央樓板位移 32 個設計像素，基地、兩組外框架與地面導線保持固定，前樑在七個時間點均未遭樓板遮住。390px 響應式構圖通過。"
   },
   "SA-153": {
     "status": "ready",
-    "sourceHash": "872859883f06ae77ab8a21398a6fe0fdfe7eb94aa0088b7417a43a76ff1e0bb4",
+    "sourceHash": "067611d0f33c9fdd281fdd06963fcf6240d59f422191630c161fc07b2ec39b33",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
@@ -2244,17 +2385,19 @@
     "preview": {
       "poster": "media/sa-153-technology.jpg",
       "gallery": "media/sa-153-technology.mp4",
+      "detail": "media/sa-153-technology-detail.mp4",
       "sha256": {
-        "poster": "9078a7454edecc5745d6e15d1959e69624592b9dfe3258e938af3bc4f92b95b2",
-        "gallery": "d5ac0844c0d87b9e1b89aadad75728ab70e67f4010c4fc00558a20c3d1c28504"
+        "poster": "84def37716772b02343789f6dbc1b8fc1c0ef5f595e62782c9aaec835ef95c12",
+        "gallery": "84cdb7f28bcba61a5ca4ab27b540f98395ee963cb7cd33aac7d9580572214af2",
+        "detail": "568ff00dd849afb28c9b3a1ad249dc5c14182cba5c28b1b25685fae461fc512f"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in WebKit 26.0; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 740
+        "inspectionMs": 19375
       }
     },
     "date": "2026-10-04",
@@ -2262,7 +2405,7 @@
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視不同時間狀態與實際預覽；共用模組更新後重新檢查執行及回跳。"
+    "visual": "共用視差模組更新後，以實際執行畫面檢視起始、不同時間狀態與回跳；有效狀態改變、非循序 seek 重現一致，保留原有產品卡片視覺與比例。"
   },
   "SA-154": {
     "status": "ready",
@@ -2274,9 +2417,11 @@
     "preview": {
       "poster": "media/sa-154-technology.jpg",
       "gallery": "media/sa-154-technology.mp4",
+      "detail": "media/sa-154-technology-detail.mp4",
       "sha256": {
-        "poster": "350984e61c692a5f04ac2663d56c571af01260c3edf5da30d6676e975e5c60a1",
-        "gallery": "54bc7150ce5746d013f491387952eafd9a74cec1c04fd2edb84446c76536b143"
+        "poster": "d2fe361e2630050119dd228cc96e533fe71aa19bbc5a165cf63fcbdbb5311911",
+        "gallery": "9316e4f579f0cc3805402d366f3c791723e3453c022cf5868b71d87cfbaeef66",
+        "detail": "02f16a694335c8246a7ab791a63333a08191b55639309fdebfdeee5f909986a4"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -2284,7 +2429,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 1162
+        "inspectionMs": 29528
       }
     },
     "date": "2026-10-04",
@@ -2304,9 +2449,11 @@
     "preview": {
       "poster": "media/sa-155-technology.jpg",
       "gallery": "media/sa-155-technology.mp4",
+      "detail": "media/sa-155-technology-detail.mp4",
       "sha256": {
-        "poster": "63fdbdeeb1c047da158fd12b345cbd60596532969eac0cdf544e8f4c81a4b906",
-        "gallery": "2016a75ae48bfa2f1dd27c973e27bdbd87325bbed04ee6c0fb4b4724c38b9ae6"
+        "poster": "d1d24cfd7c7bafd6de9738b8c081274ce446841f8ab6fe0c866e1fe77137c0cf",
+        "gallery": "a16bf1ec9bfc36e8fac86351d7b3853ad24def44fbbe4e8d15b142521f6c8141",
+        "detail": "1253c1d1aff21501ded7c4d21bfbf9871cb87e0e21ee78fbd09f9784e23fa440"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -2314,7 +2461,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 861
+        "inspectionMs": 23102
       }
     },
     "date": "2026-10-04",
@@ -2326,7 +2473,7 @@
   },
   "SA-156": {
     "status": "ready",
-    "sourceHash": "bece43cd70e1117569c98ffdedee3c5f9b09b93b72f7e3052496be493f15c15d",
+    "sourceHash": "7854e43ac50033e2f65a2650a55b250a3edbc33ea9fd75e6d7f411713d1752ba",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -2334,9 +2481,11 @@
     "preview": {
       "poster": "media/sa-156-technology.jpg",
       "gallery": "media/sa-156-technology.mp4",
+      "detail": "media/sa-156-technology-detail.mp4",
       "sha256": {
-        "poster": "5e146bcc74fb1b60c31a841b4583350d6d9cd9ee0c5c321a7161fd3b7a519236",
-        "gallery": "8093db4f799a4fd0a835eee2158e4b1399be102cd55d621ea1f9ac1822ddd834"
+        "poster": "39762f786bdfdd6e83b189cdae55e94589c430a073170a9af86a1fa9f263477b",
+        "gallery": "c6333a6a8bb6805461e9bc5a63108194a35973769e503ff9abc9e0b6f69cb064",
+        "detail": "02325885b1818202156344cc74deb2d249bd1cb4b85ae470a4d5eca1f5123cec"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
@@ -2344,14 +2493,14 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 18602
+        "inspectionMs": 39365
       }
     },
     "date": "2026-10-04",
     "notes": [
-      "Noninitial frame changed: true; repeated sampled frame identical: false.",
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視滿版真實地圖的臺北近景、世界連線與回到臺北；世界 1:50m 與臺灣 1:10m 輪廓，無側欄／標題面板。"
+    "visual": "更新後已檢視滿版地圖近景、完整世界範圍與返回終點：臺北在開場／全球端皆維持於相同畫面焦點，世界輪廓與連線完整可辨，末端回到原近景；無側欄或標題面板。影片輸出 adapter 與跨裝置仍依各自狀態標示，未據此宣稱驗證。"
   }
 }

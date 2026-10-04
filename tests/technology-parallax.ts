@@ -215,11 +215,11 @@ try {
     peak = frames.get(2)!;
   const spans = start.layers.map((box, i) => box.top - peak.layers[i].top);
   assert.ok(
-    spans[0] > 0 &&
-      spans[1] > spans[0] &&
-      spans[2] > spans[1] &&
-      Math.abs(spans[3] - spans[1]) < 0.05,
-    "Site/frame/slab keep distinct motion; both frame paint passes stay synchronized",
+    Math.abs(spans[0]) < 0.05 &&
+      Math.abs(spans[1]) < 0.05 &&
+      spans[2] > 0 &&
+      Math.abs(spans[3]) < 0.05,
+    "Only the central slab moves; foundation and both outer-frame paint passes stay stationary",
   );
   for (const frame of frames.values())
     assert.ok(
@@ -359,7 +359,7 @@ try {
           "visible bounds including shadows",
           "shared projection",
           "front roof beam visible above the slab at all seven sampled states",
-          "front and rear frame motion synchronized",
+          "stationary front and rear frame passes stay aligned",
           "fixed ground guide",
           "closed preview loop",
           "native keyboard scroll",

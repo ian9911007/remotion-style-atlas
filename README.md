@@ -12,17 +12,19 @@ npm ci --prefix technology-runtime
 npm run dev
 ```
 
-也可在 Finder 雙擊 `start.command`；它會補裝缺少的主專案／技術執行環境相依套件，準備本機供應商資產後啟動。開發伺服器固定使用 `http://127.0.0.1:4173`，需等終端機確認啟動成功。`npm run studio` 開啟原有 Remotion 作者工作區。畫廊提供「輪播／聚焦／靜態」模式、全域暫停、搜尋與獨立分類篩選；也可依能力、視覺方向、技術、互動、renderer 與驗證狀態尋找新案例。輪播從可見卡片選擇有限播放數量；低動態偏好預設為靜態。詳細頁可複製完整提示詞、關鍵字或匯出結構化規格；剪貼簿失敗時提供可選取文字。
+也可在 Finder 雙擊 `start.command`；它會補裝缺少的主專案／技術執行環境相依套件，準備本機供應商資產後啟動。開發伺服器固定使用 `http://127.0.0.1:4173`，需等終端機確認啟動成功。`npm run studio` 開啟原有 Remotion 作者工作區。畫廊提供「全域／聚焦／靜態」模式、全域暫停、搜尋與獨立分類篩選；也可依能力、視覺方向、技術、互動、renderer 與驗證狀態尋找新案例。全域模式播放目前進入畫面的縮圖，離屏、背景分頁與靜態模式仍會暫停；聚焦模式維持受限播放數量。低動態偏好預設為靜態。鍵盤左右鍵可在卡片間移動焦點，上下鍵維持捲頁。詳細頁影片循環播放，啟動互動案例不會停止上方預覽；頁面不可見、低動態偏好或關閉時遵守各自暫停及資源釋放規則。詳細頁也可複製完整提示詞、關鍵字或匯出結構化規格；剪貼簿失敗時提供可選取文字。
 
 收藏、設定與參考草稿保存在目前瀏覽器；不會自動跨裝置同步，清除網站儲存空間可能移除它們。請使用版本化匯出保存中繼資料。參考附件保留在瀏覽器本機，中繼資料匯出不含附件原始內容；參考草稿不會自動成為正式風格，也不宣稱已分析不可存取的來源。
 
 ## 技術案例的來源與維護
 
+在 AI Skills workspace 新增或編輯案例前，先讀取 `.agents/skills/Skill-Web-SVG-Animation-Architect/references/technologies/gallery-case-authoring.md`。此指引維護既有 ID、註冊、路由、搜尋／篩選、預覽／詳情、播放、複製套用及驗證契約；網站外殼負責瀏覽與操作，每個案例自行決定隔離的美術、字型、色彩、背景、材質與版面。案例需延續網站功能，不代表套用舊案例的設計風格。此 Skill 留在 AI Skills workspace，不打包進網站，也不是瀏覽器執行時依賴。
+
 2026-10-04：基準 100 個、新增 78 個、全站 178 個；新增案例 ready 78／partial 0／blocked 0／unverified 0。ready 代表已完成此處記錄的來源、預覽、執行與視覺檢查，不代表所有裝置、效能或影片輸出均已驗證。完整清單由 `docs/technology-coverage.json` 與 `.md` 自動產生。
 
 47 個盤點名稱正規化為 45 個技術識別，44 個有實際示範；38 個擔任主要技術、11 個擔任支援角色，兩者可以重疊。Framer Motion／Motion One 保留為 Motion 歷史名稱的可搜尋入口，不重複計數；Popmotion 僅保留歷史選型參考。涵蓋 DOM／SVG、GPU／3D、Canvas 編輯、物理／粒子、動畫素材、資料視覺化、地圖與程式化影片。
 
-補充案例包含 SA-151 資訊路線圖、SA-152 建築分層視差、SA-153 指標視差、SA-154 世界連線、SA-155 可旋轉地球及 SA-156 局部揭示全球再回焦。SA-152 使用共用投影修正樓板位置，滿版呈現木構接點、玻璃分格、樓板紋理與室內配置，沒有側欄文字。SA-156 採本機 Natural Earth 世界 1:50m／臺灣 1:10m 輪廓，滿版呈現臺北→全球連線→臺北，只保留地圖地名與必要來源標示。
+補充案例包含 SA-151 資訊路線圖、SA-152 建築分層視差、SA-153 指標視差、SA-154 世界連線、SA-155 可旋轉地球及 SA-156 局部揭示全球再回焦。SA-152 使用共用投影修正樓板位置，滿版呈現木構接點、玻璃分格、樓板紋理與室內配置，沒有側欄文字；捲動時僅中央樓板位移，基地與內外木構框架固定。SA-156 採本機 Natural Earth 世界 1:50m／臺灣 1:10m 輪廓，滿版呈現臺北近景→世界連線範圍→臺北近景；相機固定同一焦點，以單一平滑進度完成縮放，不在途中另行平移。
 
 - 技術定義與選型的唯一來源：workspace 的 `.agents/skills/Skill-Web-SVG-Animation-Architect/references/technologies/catalog.json` 及其按需載入的家族參考；Skill routing 由既有 Skill 與 `docs/SKILL_ROUTING.md` 負責。
 - `scripts/sync-technology-references.ts` 將 catalog 產生為 `src/technology/technologies.generated.json` 的薄型投影，保留穩定技術 ID、別名、角色與來源。投影不可手動維護；獨立網站 repo 使用已提交的投影，不需要存取本機 Skill 路徑，也不把完整 Skill 文件送進瀏覽器。
@@ -38,9 +40,9 @@ node --import tsx scripts/sync-technology-references.ts
 node --import tsx scripts/validate-technology.ts
 ```
 
-新預覽由 `scripts/capture-technology.ts` 擷取實際 runtime 的影格並產生海報與短片；它不是原有 Remotion recipe 渲染器。擷取與視覺審查必須針對變更案例執行，不能以建置成功或初始畫面代替。
+新預覽由 `scripts/capture-technology.ts` 對真實案例 runtime 逐格 seek、以瀏覽器高像素密度擷取，再產生 480×270／30 fps 卡片影片、1280×720／30 fps 詳情影片及 1280×720 JPEG 海報；不是把低解析影片放大。卡片影片沿用舊案例的 480×270／30 fps／CRF 21 規格，詳情影片與海報使用 1280×720 像素來源。這個擷取器不是 Remotion recipe renderer。Remotion 可以作為另一種逐格合成主控，驅動 GSAP、SVG、Canvas、圖表、地圖或 3D renderer；只有明確接上影格時鐘、暫停該引擎自己的時鐘、等待資料與素材就緒並通過 seek/replay 驗證，才能宣稱是可重複的 Remotion 影片輸出。新案例目前展示的是各自登錄的網頁 runtime；不要把影片預覽載體當成動畫引擎。擷取與視覺審查必須針對變更案例執行，不能以建置成功或初始畫面代替。
 
-列表仍以海報／短片發現效果，不同時啟動所有技術。只有使用者開啟案例並啟動即時互動時才載入其 runtime；畫廊維持一個作用中的即時案例。桌機最多 6 支、粗略指標裝置最多 2 支預覽影片播放，保留已載入來源不超過各自播放預算的兩倍。可見卡片輪替播放、聚焦卡片優先，未載入來源的海報卡片不呼叫無必要的媒體 pause／load。這是本專案的保守操作預算，不是通用安全值。離開可視範圍、背景分頁或暫停時停止推進，關閉時釋放排程、事件、observer、worker 與實際 renderer 資源。
+列表仍以海報／短片發現效果，不會在載入網站時啟動所有即時技術 runtime。只有使用者開啟案例並啟動互動時才載入其 runtime；畫廊維持一個作用中的即時案例。全域模式依使用者要求，同時播放所有目前可視卡片的影片縮圖，不輪替或套用固定同播數上限；僅可視卡片載入影片來源，離屏卡片、背景分頁與靜態模式會暫停並釋放不需要的來源。聚焦模式仍採保守同播數量。這些是本專案的明確播放模式，不是通用安全值；長頁面的全域模式可能同時解碼較多可視影片。關閉詳情時釋放排程、事件、observer、worker 與即時 renderer 資源。
 
 每個案例的 Shadow DOM 與 case-root tokens 明確設定字型、前景、背景和色彩，不繼承舊插畫集合的美術設定。只有 p5 2.3.4 與 tsParticles 4.4.0 因實測套件全域參照保留，使用可銷毀的同源 iframe realm；由主頁驅動時間並在關閉後移除，仍執行套件正常 teardown。這項隔離不代表已證明所有瀏覽器或 GPU 記憶體都可立即回收。影片相容性須依個案證據判定，能在瀏覽器播放不等於可重複渲染。
 
@@ -123,21 +125,21 @@ npm run sync:pull
 
 原有 `styles.json` SHA-256 維持 `1e8207db3454445592f7dbc0826446ba32df8a5a31c2067da05db442ced93d30`，原有 100 個 ID、300 個媒體輸出的雜湊與格式驗證通過。主專案 lockfile、原有 schema 與 Remotion recipe 來源未變更。
 
-- 18 項單元測試、原有操作的 Chrome／WebKit 46 項瀏覽器檢查、擴充介面的 11 項檢查通過；涵蓋搜尋、別名與能力篩選、收藏、路由、提示詞、複製備援、匯入匯出、鍵盤、低動態、390／768 px 模擬觸控視窗與播放預算。
+- 18 項單元測試、Chrome／Playwright WebKit 共 50 項瀏覽器檢查及 11 項技術 runtime 生命週期檢查通過；涵蓋搜尋與數字排序、能力篩選、路由、提示詞與複製、全域可視縮圖循環、背景／離屏暫停、詳情播放、方向鍵、低動態、觸控視窗與資源釋放。
 - 新增 78 個 runtime 均通過 Google Chrome 154.0.8037.98 與 Playwright WebKit 26.0（build 2215）的掛載、多次 seek 與錯誤檢查。正式子路徑版本另通過全部 78 個 Chrome runtime；最後 Three.js 生命週期修正的 6 個案例重新執行受影響檢查。
-- 78 組海報與 MP4 由實際 runtime 產生，全部多階段影格經視覺檢查；正式版的 78 支 HTML video 均完成解碼及循環檢查，零媒體錯誤。新短片以 15 fps 擷取、編碼為 30 fps，480×270；這不構成即時 FPS 測量。SA-152 另驗證對齊、7 個動畫狀態、循環、鍵盤滾動、手機詳情縮放與低動態行為。
-- TypeScript、原有與新增 registry／素材／來源 fingerprint、GitHub Pages `/remotion-style-atlas/` 正式建置、動態 chunk 與資產路徑檢查通過。`docs/technology-build-verification.json` 保存實際檔案大小；主入口不會預先載入所有引擎，完整 Skill 文件未送進瀏覽器。
+- 78 組海報、卡片影片及詳情影片由實際 runtime 產生；海報／詳情影片為 1280×720，卡片影片為 480×270、30 fps。實際檢查全部 78 支卡片影片的 HTML video 解碼與循環，並逐案檢查詳情影片的 1280×720 中繼資料及正式產物存在；循環播放檢查不是即時 FPS 測量。SA-152 另驗證對齊、7 個動畫狀態、循環、鍵盤滾動、手機詳情縮放與低動態行為。
+- TypeScript、原有與新增 registry／素材／來源 fingerprint、GitHub Pages `/remotion-style-atlas/` 正式子路徑建置、78 個懶載入 runtime 邊界與全部資產路徑檢查通過。Vite 仍回報大型延遲載入引擎 chunk、Lottie eval 與上游 Rollup 註解警告；技術案例不進初始 runtime graph。`docs/technology-build-verification.json` 保存正式輸出檔案大小；完整 Skill 文件未送進瀏覽器。
 - 技術 catalog 驗證涵蓋 45 個正式識別／47 個盤點名稱；workspace 的 18 個驗證套件結果為 `PASS_WITH_WARNINGS`，保留原有警告。路由按需求載入家族參考，沒有把個別展示案例、美術方向、資料或套用提示詞複製進通用 Skills。
 
 `docs/technology-preview-verification.json` 保存媒體檢查摘要，`docs/technology-resource-verification.json` 保存反覆開關及資源釋放的量測範圍。實作完成、正式建置、瀏覽器執行、視覺檢查與效能量測各自記錄，不互相替代。
 
-SA-152 的木構繪製已分成前後兩次處理：後側結構在樓板後，前方柱子與屋頂樑在樓板前，兩次處理共用相同位移。7 個動畫位置以實際像素檢查屋頂樑可見性，避免只驗證座標正確卻漏掉遮擋問題。新版海報與短片已重新產生。
+SA-152 的木構繪製維持後側結構在樓板後、前方柱子與屋頂樑在樓板前；實際動畫只移動中央樓板，基地、外框架與屋頂構件維持固定。7 個動畫位置以實際像素檢查屋頂樑可見性，避免只驗證座標正確卻漏掉遮擋問題。SA-152、SA-153、SA-156 修正後均重新擷取執行證據與短片，Chrome 檢查非初始狀態有變化且指定回跳畫面重複一致；WebKit 與 Chrome 的方向鍵換卡及上下捲頁檢查通過。
 
 Three.js 0.186.1 的共用 DFG lookup texture 曾保留已關閉 renderer 的 listener／canvas；現以公開 material compile hook 追蹤並在單一作用中 renderer 的清理邊界釋放。正式版 Three、R3F、Theatre 各 12 次開關後 DOM／listener 數量穩定，R3F 延長至 36 次亦固定。JavaScript heap 仍有小幅增加，原生 CSS 控制組也有增加；長時間 heap 是否收斂仍未驗證，不宣稱全面無洩漏或 GPU 記憶體已測量。
 
 尚未驗證實機 Safari／iPhone、實體觸控、GPU 記憶體峰值或完整決定性影片輸出。影片適用性依個別 frame-driven／adapter-required／recorded-live 等狀態與證據判定；WebKit 測試不是實機 Safari 驗收。地圖輪廓是具來源日期的 Natural Earth 資料，沒有宣稱即時行政邊界、街道或衛星資料；Cesium 案例使用橢球，未宣稱已載入地形。Rive 以實際有效的 Boolean state-machine 素材示範，未以假的作者檔案擴充案例數。
 
-相依套件稽核已修復可相容修正的項目；仍有 1 個 `image-size` ICNS 解析 DoS advisory（GHSA-w3rx-r6r6-pgpr）沿 texture-compressor／deck.gl 相依鏈列出 8 個受影響套件。現有展示只使用受控本機素材；沒有為消除報表而強制降版 deck.gl。版本、影響範圍與限制見 `docs/technology-dependency-verification.json`，此紀錄不是普遍安全保證。沒有未完成展示卡片；以上是本機驗收結果、明確未驗證項目與已知依賴限制，遠端部署須另行確認工作流程與公開網站。
+相依套件稽核已修復可相容修正的項目；仍有 1 個 `image-size` ICNS 解析 DoS advisory（GHSA-w3rx-r6r6-pgpr）沿 texture-compressor／deck.gl 相依鏈列出 8 個受影響套件。現有展示只使用受控本機素材；沒有為消除報表而強制降版 deck.gl。版本、影響範圍與限制見 `docs/technology-dependency-verification.json`，此紀錄不是普遍安全保證。沒有未完成展示卡片；以上本機檢查不替代推送後的 GitHub Actions 與公開頁面確認，部署結果以該工作流程及實際公開頁面為準。
 
 ## 歷史驗證基準：2026-10-03，原有 100 筆
 

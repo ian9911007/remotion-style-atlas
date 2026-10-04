@@ -18,6 +18,7 @@ export type Evidence = {
   preview?: {
     poster: string;
     gallery: string;
+    detail?: string;
     sha256?: Record<string, string>;
   };
   performance?: {
@@ -116,10 +117,10 @@ export function projectCase(c: CaseDefinition): StyleSpec {
       gallery:
         e.preview?.gallery ?? `media/${c.id.toLowerCase()}-technology.mp4`,
       detail:
-        e.preview?.gallery ?? `media/${c.id.toLowerCase()}-technology.mp4`,
+        e.preview?.detail ?? e.preview?.gallery ?? `media/${c.id.toLowerCase()}-technology.mp4`,
       poster: e.preview?.poster ?? `media/${c.id.toLowerCase()}-technology.jpg`,
-      // Legacy StyleSpec uses a fixed 1280x720 display coordinate contract.
-      // Actual new preview pixels are 480x270; the live root is 960x540.
+      // Gallery media stays lightweight; detail media and posters match the
+      // legacy 1280x720 source quality contract.
       width: 1280,
       height: 720,
       galleryWidth: 480,

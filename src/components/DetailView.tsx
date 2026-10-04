@@ -1,6 +1,7 @@
 import { caseById, caseEvidence } from "../technology/registry";
 import { RuntimeView } from "../technology/RuntimeView";
 import { CaseDetails } from "../technology/CaseDetails";
+import { LegacyCaseDetails } from "../technology/LegacyCaseDetails";
 import { useEffect, useRef, useState } from "react";
 import {
   X,
@@ -122,7 +123,6 @@ export function DetailView({
   const dialog = useRef<HTMLDialogElement>(null);
   const video = useRef<HTMLVideoElement>(null);
   const [videoFailed, setVideoFailed] = useState(false);
-  const [liveActive, setLiveActive] = useState(false);
   const [context, setContext] = useState({
     subject: "",
     duration: "",
@@ -147,26 +147,24 @@ export function DetailView({
     setVideoFailed(false);
     const node = video.current;
     if (!node) return;
-    if (liveActive) {
-      node.pause();
-      return;
-    }
     node.src = mediaUrl(style.preview.detail);
     // Muted inline playback is permitted by most browsers; keep the native
     // controls available when a browser or user preference blocks autoplay.
     const reduced = matchMedia("(prefers-reduced-motion: reduce)");
-    if (!reduced.matches) void node.play().catch(() => {});
-    const motionPreference = () => {
-      if (reduced.matches) node.pause();
+    let inView = true;
+    const syncPlayback = () => {
+      if (document.hidden || !inView || reduced.matches) node.pause();
+      else void node.play().catch(() => {});
     };
+    syncPlayback();
+    const motionPreference = () => syncPlayback();
     reduced.addEventListener("change", motionPreference);
     const observer = new IntersectionObserver((entries) => {
-      if (!entries[0]?.isIntersecting) node.pause();
+      inView = !!entries[0]?.isIntersecting;
+      syncPlayback();
     });
     observer.observe(node);
-    const visibility = () => {
-      if (document.hidden) node.pause();
-    };
+    const visibility = () => syncPlayback();
     document.addEventListener("visibilitychange", visibility);
     return () => {
       document.removeEventListener("visibilitychange", visibility);
@@ -176,7 +174,7 @@ export function DetailView({
       node.removeAttribute("src");
       node.load();
     };
-  }, [style, liveActive]);
+  }, [style]);
   return (
     <dialog
       ref={dialog}
@@ -223,6 +221,7 @@ export function DetailView({
                   controls
                   muted
                   playsInline
+                  loop
                   preload="metadata"
                   onError={() => setVideoFailed(true)}
                 />
@@ -241,17 +240,15 @@ export function DetailView({
             </div>
             {technologyCase && (
               <>
-                <RuntimeView
-                  definition={technologyCase}
-                  onActivity={setLiveActive}
-                />
+                <RuntimeView definition={technologyCase} />
                 <CaseDetails definition={technologyCase} />
               </>
             )}
+            {!technologyCase && <LegacyCaseDetails style={style} />}
             <div className="visual-caption">
               <span>{style.englishName}</span>
               <span>
-                {technologyCase ? 480 : style.preview.width} ×{" "}
+                {technologyCase ? 1280 : style.preview.width} ×{" "}
                 {technologyCase ? 270 : style.preview.height} ·{" "}
                 {style.preview.fps} fps ·{" "}
                 {technologyCase

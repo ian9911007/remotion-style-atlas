@@ -14,10 +14,6 @@ type City = {
 };
 const clamp = (n: number, lo: number, hi: number) =>
   Math.max(lo, Math.min(hi, n));
-const ease = (t: number) => {
-  const x = clamp(t, 0, 1);
-  return x * x * (3 - 2 * x);
-};
 const assetUrl = (name: string) =>
   new URL(
     `${import.meta.env.BASE_URL}technology-assets/maps/${name}`,
@@ -84,6 +80,7 @@ const mount: Mount = async (root, { reducedMotion, signal }) => {
     cities = assets[1].cities as City[];
   const origin = cities.find((city) => city.id === "taipei");
   if (!origin) throw new Error("Verified Taipei origin is missing");
+  const originCoordinates: [number, number] = [...origin.coordinates];
   const local = new AbortController();
   let disposed = false;
   const abort = () => local.abort();
@@ -324,7 +321,6 @@ const mount: Mount = async (root, { reducedMotion, signal }) => {
       .setLngLat(city.coordinates)
       .addTo(map);
   });
-  const worldPosition = d3.geoInterpolate(origin.coordinates, [0, 12]);
   const idle = () =>
     new Promise<void>((resolve) => {
       if (disposed || local.signal.aborted) {
@@ -343,15 +339,13 @@ const mount: Mount = async (root, { reducedMotion, signal }) => {
   async function render(seconds: number) {
     if (disposed) return;
     const time = reducedMotion ? 4 : clamp(seconds, 0, 8);
-    const progress =
-      time < 3.3
-        ? ease((time - 0.75) / 2.55)
-        : time < 4.45
-          ? 1
-          : 1 - ease((time - 4.45) / 2.75);
-    // Keep the close-up origin visible; shift to the global center only after widening the view.
+    const progress = reducedMotion
+      ? 1
+      : (1 - Math.cos((Math.PI * time) / 4)) / 2;
+    // Keep the verified target anchored at screen center for one continuous
+    // zoom. Do not introduce a separate pan or a midpoint camera turn.
     map.jumpTo({
-      center: worldPosition(ease((progress - 0.5) / 0.5)) as [number, number],
+      center: originCoordinates,
       zoom: 5.85 + (0.9 - 5.85) * progress,
       bearing: 0,
       pitch: 0,
@@ -367,7 +361,7 @@ const mount: Mount = async (root, { reducedMotion, signal }) => {
     markers.forEach((marker, index) =>
       marker.setOpacity(index === 0 ? 1 : clamp(progress * 1.4, 0, 1)),
     );
-    surface.dataset.phase = String(time < 3.3 ? 0 : time < 4.45 ? 1 : 2);
+    surface.dataset.phase = String(time < 4 ? 0 : time === 4 ? 1 : 2);
     surface.dataset.zoom = map.getZoom().toFixed(4);
     surface.dataset.longitude = map.getCenter().lng.toFixed(6);
     surface.dataset.latitude = map.getCenter().lat.toFixed(6);

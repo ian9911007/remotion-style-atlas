@@ -386,7 +386,8 @@ const mount: Mount = async (root, { variant, reducedMotion, signal }) => {
     resume.hidden = true;
     root.append(scene, driver, resume);
     const layers = [...scene.querySelectorAll<HTMLElement>(".sp-layer")];
-    const distances = [12, 32, 96, 32];
+    // Only the middle floor/slab separates; foundation and outer frame stay registered.
+    const distances = [0, 0, 32, 0];
     const animations = layers.map((layer, i) => {
       const span = distances[i];
       const animation = layer.animate(

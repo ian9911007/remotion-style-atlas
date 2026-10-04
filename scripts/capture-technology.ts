@@ -59,7 +59,8 @@ try {
   )) {
     const context = await browser.newContext({
       viewport: { width: 960, height: 620 },
-      deviceScaleFactor: 1,
+      // Render on a 1280x720 backing surface for native detail-media pixels.
+      deviceScaleFactor: 4 / 3,
       reducedMotion: "no-preference",
     });
     await context.addInitScript("globalThis.__name = (fn) => fn;");
@@ -92,7 +93,7 @@ try {
       for (const t of [0, duration * 0.3, duration * 0.7, duration * 0.3]) {
         await seek(page, t);
         await page.waitForTimeout(70);
-        shots.push(await stage.screenshot());
+        shots.push(await stage.screenshot({ scale: "device" }));
       }
       const repeat = hash(shots[1]) === hash(shots[3]);
       const different = hash(shots[0]) !== hash(shots[2]);
@@ -117,7 +118,7 @@ try {
         const frames = path.join(out, c.id);
         await mkdir(frames, { recursive: true });
         await seek(page, 0);
-        const frameRate = 15;
+        const frameRate = 30;
         const drawing =
             c.variant === "draw" && ["konva", "fabricjs"].includes(c.primary),
           drag = c.primary === "motion" && c.variant === "gesture",
@@ -153,12 +154,18 @@ try {
           if (c.video === "recorded-live") await page.waitForTimeout(35);
           await stage.screenshot({
             path: path.join(frames, `${String(f).padStart(4, "0")}.png`),
+            scale: "device",
           });
         }
         const poster = `media/${c.id.toLowerCase()}-technology.jpg`,
-          gallery = `media/${c.id.toLowerCase()}-technology.mp4`;
+          gallery = `media/${c.id.toLowerCase()}-technology.mp4`,
+          detail = `media/${c.id.toLowerCase()}-technology-detail.mp4`;
+        const captured = await sharp(shots[1]).metadata();
+        if (captured.width !== 1280 || captured.height !== 720)
+          throw new Error(
+            `Expected native 1280x720 capture, got ${captured.width}x${captured.height}`,
+          );
         await sharp(shots[1])
-          .resize(480, 270)
           .jpeg({ quality: 90 })
           .toFile(path.join(root, "public", poster));
         execFileSync(process.env.FFMPEG_PATH ?? "ffmpeg", [
@@ -176,7 +183,7 @@ try {
           "-preset",
           "fast",
           "-crf",
-          "23",
+          "21",
           "-pix_fmt",
           "yuv420p",
           "-r",
@@ -185,12 +192,21 @@ try {
           "+faststart",
           path.join(root, "public", gallery),
         ]);
+        execFileSync(process.env.FFMPEG_PATH ?? "ffmpeg", [
+          "-y", "-v", "error", "-framerate", String(frameRate), "-i",
+          path.join(frames, "%04d.png"), "-vf", "scale=1280:720:flags=lanczos",
+          "-c:v", "libx264", "-preset", "fast", "-crf", "21", "-pix_fmt",
+          "yuv420p", "-r", "30", "-movflags", "+faststart",
+          path.join(root, "public", detail),
+        ]);
         media = {
           poster,
           gallery,
+          detail,
           sha256: {
             poster: hash(readFileSync(path.join(root, "public", poster))),
             gallery: hash(readFileSync(path.join(root, "public", gallery))),
+            detail: hash(readFileSync(path.join(root, "public", detail))),
           },
         };
         await rm(frames, { recursive: true });
@@ -198,7 +214,7 @@ try {
       if (caseSourceHash(c) !== sourceHash) throw new Error("Case source changed during capture; discard this verification and retry after source freeze.");
       evidence[c.id] = {
         ...evidence[c.id],
-        status: "partial",
+        status: evidence[c.id]?.status === "ready" ? "ready" : "partial",
         sourceHash,
         runtime: [
           ...new Set([

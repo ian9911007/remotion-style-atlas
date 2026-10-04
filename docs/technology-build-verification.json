@@ -2,10 +2,10 @@
   "created": "2026-10-04",
   "scope": "Actual Vite output; bytes are file sizes, not memory usage or runtime performance.",
   "caseCount": 78,
-  "totalFileCount": 992,
-  "totalBytes": 115400273,
-  "initialJavaScriptBytes": 1054176,
-  "initialJavaScriptGzipBytes": 222049,
+  "totalFileCount": 1070,
+  "totalBytes": 146803201,
+  "initialJavaScriptBytes": 1066848,
+  "initialJavaScriptGzipBytes": 226928,
   "initialImportKeys": [
     "index.html"
   ],
@@ -56,11 +56,11 @@
     },
     {
       "id": "SA-112",
-      "entry": "assets/dom-motion-DJLJHjY9.js"
+      "entry": "assets/dom-motion-Dk8c8Ro_.js"
     },
     {
       "id": "SA-113",
-      "entry": "assets/dom-motion-DJLJHjY9.js"
+      "entry": "assets/dom-motion-Dk8c8Ro_.js"
     },
     {
       "id": "SA-114",
@@ -72,23 +72,23 @@
     },
     {
       "id": "SA-116",
-      "entry": "assets/vector-DmmR3yDJ.js"
+      "entry": "assets/vector-B3rFcq6N.js"
     },
     {
       "id": "SA-117",
-      "entry": "assets/vector-DmmR3yDJ.js"
+      "entry": "assets/vector-B3rFcq6N.js"
     },
     {
       "id": "SA-118",
-      "entry": "assets/vector-DmmR3yDJ.js"
+      "entry": "assets/vector-B3rFcq6N.js"
     },
     {
       "id": "SA-119",
-      "entry": "assets/vector-DmmR3yDJ.js"
+      "entry": "assets/vector-B3rFcq6N.js"
     },
     {
       "id": "SA-120",
-      "entry": "assets/vector-DmmR3yDJ.js"
+      "entry": "assets/vector-B3rFcq6N.js"
     },
     {
       "id": "SA-121",
@@ -120,67 +120,67 @@
     },
     {
       "id": "SA-163",
-      "entry": "assets/scene-r3f-wIK1UEsr.js"
+      "entry": "assets/scene-r3f-W51e2KEl.js"
     },
     {
       "id": "SA-164",
-      "entry": "assets/scene-r3f-wIK1UEsr.js"
+      "entry": "assets/scene-r3f-W51e2KEl.js"
     },
     {
       "id": "SA-165",
-      "entry": "assets/scene-theatre-DFavAmUf.js"
+      "entry": "assets/scene-theatre-Di7Sqvdd.js"
     },
     {
       "id": "SA-166",
-      "entry": "assets/scene-theatre-DFavAmUf.js"
+      "entry": "assets/scene-theatre-Di7Sqvdd.js"
     },
     {
       "id": "SA-167",
-      "entry": "assets/scene-babylon-D4OvAKQP.js"
+      "entry": "assets/scene-babylon-BXlXDu0R.js"
     },
     {
       "id": "SA-168",
-      "entry": "assets/scene-babylon-D4OvAKQP.js"
+      "entry": "assets/scene-babylon-BXlXDu0R.js"
     },
     {
       "id": "SA-169",
-      "entry": "assets/gpu-pixi-BLrpGJD-.js"
+      "entry": "assets/gpu-pixi-C7WlTFnl.js"
     },
     {
       "id": "SA-170",
-      "entry": "assets/gpu-pixi-BLrpGJD-.js"
+      "entry": "assets/gpu-pixi-C7WlTFnl.js"
     },
     {
       "id": "SA-171",
-      "entry": "assets/gpu-regl-CaAanjbN.js"
+      "entry": "assets/gpu-regl-9ky5OozW.js"
     },
     {
       "id": "SA-172",
-      "entry": "assets/gpu-regl-CaAanjbN.js"
+      "entry": "assets/gpu-regl-9ky5OozW.js"
     },
     {
       "id": "SA-173",
-      "entry": "assets/physics-matter-gkzAN0XF.js"
+      "entry": "assets/physics-matter-BIfNYm10.js"
     },
     {
       "id": "SA-174",
-      "entry": "assets/physics-matter-gkzAN0XF.js"
+      "entry": "assets/physics-matter-BIfNYm10.js"
     },
     {
       "id": "SA-175",
-      "entry": "assets/physics-particles-vtHA956D.js"
+      "entry": "assets/physics-particles-C34Rg_XW.js"
     },
     {
       "id": "SA-176",
-      "entry": "assets/physics-particles-vtHA956D.js"
+      "entry": "assets/physics-particles-C34Rg_XW.js"
     },
     {
       "id": "SA-177",
-      "entry": "assets/generative-p5-DdO6R6oC.js"
+      "entry": "assets/generative-p5-oHNhx7mT.js"
     },
     {
       "id": "SA-178",
-      "entry": "assets/generative-p5-DdO6R6oC.js"
+      "entry": "assets/generative-p5-oHNhx7mT.js"
     },
     {
       "id": "SA-131",
@@ -216,11 +216,11 @@
     },
     {
       "id": "SA-139",
-      "entry": "assets/data-visx-CH1365cG.js"
+      "entry": "assets/data-visx-DZ56q02R.js"
     },
     {
       "id": "SA-140",
-      "entry": "assets/data-visx-CH1365cG.js"
+      "entry": "assets/data-visx-DZ56q02R.js"
     },
     {
       "id": "SA-141",
@@ -240,35 +240,35 @@
     },
     {
       "id": "SA-145",
-      "entry": "assets/maps-deck-Cd6mvSwL.js"
+      "entry": "assets/maps-deck-CDmykmYu.js"
     },
     {
       "id": "SA-146",
-      "entry": "assets/maps-deck-Cd6mvSwL.js"
+      "entry": "assets/maps-deck-CDmykmYu.js"
     },
     {
       "id": "SA-147",
-      "entry": "assets/maps-cesium-BOErh0AN.js"
+      "entry": "assets/maps-cesium-Cm520KJ1.js"
     },
     {
       "id": "SA-148",
-      "entry": "assets/maps-cesium-BOErh0AN.js"
+      "entry": "assets/maps-cesium-Cm520KJ1.js"
     },
     {
       "id": "SA-149",
-      "entry": "assets/maps-leaflet-CXnd9g39.js"
+      "entry": "assets/maps-leaflet-Bx16lAGt.js"
     },
     {
       "id": "SA-150",
-      "entry": "assets/maps-leaflet-CXnd9g39.js"
+      "entry": "assets/maps-leaflet-Bx16lAGt.js"
     },
     {
       "id": "SA-125",
-      "entry": "assets/asset-lottie-BtzJo5g9.js"
+      "entry": "assets/asset-lottie-CjUNGU_L.js"
     },
     {
       "id": "SA-126",
-      "entry": "assets/asset-lottie-BtzJo5g9.js"
+      "entry": "assets/asset-lottie-CjUNGU_L.js"
     },
     {
       "id": "SA-127",
@@ -280,11 +280,11 @@
     },
     {
       "id": "SA-191",
-      "entry": "assets/video-remotion-De3yWGUB.js"
+      "entry": "assets/video-remotion-B0FYH2v1.js"
     },
     {
       "id": "SA-192",
-      "entry": "assets/video-remotion-De3yWGUB.js"
+      "entry": "assets/video-remotion-B0FYH2v1.js"
     },
     {
       "id": "SA-193",
@@ -304,26 +304,26 @@
     },
     {
       "id": "SA-152",
-      "entry": "assets/supplement-parallax-CeKLXfXJ.js"
+      "entry": "assets/supplement-parallax-BIV11a4m.js"
     },
     {
       "id": "SA-153",
-      "entry": "assets/supplement-parallax-CeKLXfXJ.js"
+      "entry": "assets/supplement-parallax-BIV11a4m.js"
     },
     {
       "id": "SA-154",
-      "entry": "assets/maps-world-D5efxU0D.js"
+      "entry": "assets/maps-world-BuwrVnuB.js"
     },
     {
       "id": "SA-155",
-      "entry": "assets/maps-world-D5efxU0D.js"
+      "entry": "assets/maps-world-BuwrVnuB.js"
     },
     {
       "id": "SA-156",
-      "entry": "assets/maps-reveal-BAuxN3pV.js"
+      "entry": "assets/maps-reveal-ujR7joNn.js"
     }
   ],
-  "mediaBytes": 79965182,
+  "mediaBytes": 111355524,
   "unverified": [
     "No universal dependency-size ranking, GPU memory peak, FPS claim or mobile performance conclusion."
   ]

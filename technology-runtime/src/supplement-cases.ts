@@ -58,7 +58,7 @@ export const supplementCases: CaseDefinition[] = [
     title: "建築剖面捲動視差",
     englishTitle: "Architectural section scroll parallax",
     summary:
-      "滿版木構建築剖面呈現玻璃窗框、梁柱接點、地坪與室內配置；捲動讓三個深度層沿共同垂直軸分離。",
+      "滿版木構建築剖面呈現玻璃窗框、梁柱接點、地坪與室內配置；捲動時僅中央樓板沿垂直軸分離，外框架保持定位。",
     primary: "waapi",
     capabilities: ["scroll-parallax", "multi-layer-depth"],
     module: "supplement-parallax.ts",
@@ -67,7 +67,7 @@ export const supplementCases: CaseDefinition[] = [
     interaction: ["scroll", "time", "keyboard", "touch"],
     direction: "滿版木構建築剖面",
     rationale:
-      "取消標題框與旁側說明，讓建築佔滿畫面；木紋、混凝土剖面、接點與玻璃層次呈現材料關係，三層仍共用同一投影。",
+      "取消標題框與旁側說明，讓建築佔滿畫面；木紋、混凝土剖面、接點與玻璃層次呈現材料關係，只有中央樓板分離，基地和外框架維持固定。",
     why: "Web Animations API 可建立可暫停、可定位的多層 transform 動畫，再由單一捲動或主時鐘進度控制 currentTime。",
     uses: ["空間分層敘事", "建築或技術結構的網頁章節"],
     nonUses: [
@@ -75,7 +75,7 @@ export const supplementCases: CaseDefinition[] = [
       "低動態需求下仍強制大幅視差",
     ],
     instructions:
-      "直接在建築畫面捲動或觸控滑動；聚焦後用方向鍵、Page Down、Home 或 End。手動接管後，右下「自動」可交回主時鐘，或使用外部重設控制。",
+      "直接在建築畫面捲動或觸控滑動；中央樓板分離時，基地與木構外框固定。聚焦後用方向鍵、Page Down、Home 或 End。手動接管後，右下「自動」可交回主時鐘，或使用外部重設控制。",
     limitations: [
       "這是原創合成 SVG 建築示意，無真實建築資料、物理尺度或工程驗證；不作為可量測的設計模型。",
       "低動態模式保持各層固定；正式觸控裝置與影片回放仍需各自驗證。",
@@ -89,11 +89,11 @@ export const supplementCases: CaseDefinition[] = [
     dependencies: [],
     editable: [
       "Adapt the shared building footprint, window bays, joinery, interior plan and timber/concrete palette without introducing unrelated display text.",
-      "Tune the common projection and the 12/32/96-pixel depth spans together; recheck bounds at every progress endpoint and preserve the four-second cosine return cycle.",
+      "Tune the common projection and the central-slab displacement together; keep the foundation and all outer timber-frame passes stationary, recheck bounds at every progress endpoint, and preserve the four-second cosine return cycle.",
     ],
     locked: [
-      "Create paused Web Animations API transforms for the three logical depths. Paint rear frame behind the slab and front columns/roof beams above it; both frame passes must share exactly the same transform timing.",
-      "Set every Animation.currentTime from one normalized progress source; use visibly distinct displacement spans.",
+      "Create paused Web Animations API transforms on the four logical paint layers. Paint rear frame behind the slab and front columns/roof beams above it; keep foundation, rear-frame and front-frame transforms at zero, and move only the central slab along the shared vertical axis.",
+      "Set every Animation.currentTime from one normalized progress source; use one bounded displacement for the central slab and no displacement for the outer frame.",
       "Provide a transparent full-stage native scroll region with keyboard scrolling; manual input takes ownership and a compact resume control returns ownership to the host.",
       "Generate site, frame, and slab from one shared isometric footprint; change depth only on the common vertical axis. Use the complete 960 by 540 stage without a header, explanatory sidebar or chapter text. Keep the small ground guide fixed and bound every material detail and shadow at every progress value.",
     ],
