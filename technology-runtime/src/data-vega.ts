@@ -10,7 +10,21 @@ const points = Array.from({ length: 120 }, (_, i) => ({
   group: ["A", "B", "C"][i % 3],
   size: 25 + (i % 7) * 15,
 }));
-const mount: Mount = async (root, { variant, signal }) => {
+export function vegaLoopState(seconds: number) {
+  const phase = (Math.max(0, seconds) % 4) / 4;
+  const slot = phase * 3;
+  const mix = (1 - Math.cos(2 * Math.PI * phase)) / 2;
+  return {
+    focus: Math.min(3, Math.floor(slot) + 1),
+    strength: Math.sin(Math.PI * (slot % 1)) ** 2,
+    mix,
+  };
+}
+const stagger = (mix: number, index: number) => {
+  const t = Math.max(0, Math.min(1, (mix - index * 0.045) / 0.685));
+  return t * t * (3 - 2 * t);
+};
+const mount: Mount = async (root, { variant, signal, reducedMotion }) => {
   const lite = variant.startsWith("lite-");
   const density = variant === "lite-density";
   const stack = variant === "stack";
@@ -31,34 +45,74 @@ const mount: Mount = async (root, { variant, signal }) => {
   );
   let threshold = 52;
   let spec: any;
+  let manual = false;
+  // Both density layers execute the real Vega-Lite bin/count pipeline. Their
+  // common bins and color scale stay fixed while host time reveals columns.
+  const densityTransforms = [
+    {
+      bin: { maxbins: 12, extent: [0, 100] },
+      field: "x",
+      as: ["binX0", "binX1"],
+    },
+    {
+      bin: { maxbins: 8, extent: [0, 100] },
+      field: "y",
+      as: ["binY0", "binY1"],
+    },
+    {
+      aggregate: [{ op: "count", as: "count" }],
+      groupby: ["binX0", "binX1", "binY0", "binY1"],
+    },
+  ];
+  const cellProgress = "clamp((sampleMix - datum.binX0 / 500) / 0.8, 0, 1)";
+  const cellMix = `pow(${cellProgress}, 2) * (3 - 2 * ${cellProgress})`;
   if (lite) {
     spec = density
       ? {
           width: 750,
           height: 270,
           data: { values: points },
-          mark: { type: "rect", stroke: "#faf8f4", strokeWidth: 2 },
-          encoding: {
-            x: {
-              field: "x",
-              type: "quantitative",
-              bin: { maxbins: 12 },
-              title: "觀測 X",
+          params: [{ name: "sampleMix", value: 0 }],
+          layer: [false, true].map((filtered) => ({
+            transform: [
+              ...(filtered ? [{ filter: "datum.group !== 'C'" }] : []),
+              ...densityTransforms,
+            ],
+            mark: {
+              type: "rect",
+              stroke: "#faf8f4",
+              strokeWidth: 2,
+              opacity: { expr: filtered ? cellMix : `1 - (${cellMix})` },
             },
-            y: {
-              field: "y",
-              type: "quantitative",
-              bin: { maxbins: 8 },
-              title: "觀測 Y",
+            encoding: {
+              x: {
+                field: "binX0",
+                type: "quantitative",
+                bin: "binned",
+                scale: { domain: [0, 100] },
+                title: "觀測 X",
+              },
+              x2: { field: "binX1" },
+              y: {
+                field: "binY0",
+                type: "quantitative",
+                bin: "binned",
+                scale: { domain: [0, 100] },
+                title: "觀測 Y",
+              },
+              y2: { field: "binY1" },
+              color: {
+                field: "count",
+                type: "quantitative",
+                scale: { scheme: "oranges" },
+                legend: { gradientOpacity: 1 },
+                title: "樣本數",
+              },
+              tooltip: [
+                { field: "count", type: "quantitative", title: "樣本數" },
+              ],
             },
-            color: {
-              aggregate: "count",
-              type: "quantitative",
-              scale: { scheme: "oranges" },
-              title: "樣本數",
-            },
-            tooltip: [{ aggregate: "count", type: "quantitative" }],
-          },
+          })),
         }
       : {
           width: 750,
@@ -135,7 +189,10 @@ const mount: Mount = async (root, { variant, signal }) => {
       width: 760,
       height: 280,
       padding: { left: 48, right: 12, top: 10, bottom: 40 },
-      signals: [{ name: "focus", value: 0 }],
+      signals: [
+        { name: "focus", value: 0 },
+        { name: "focusStrength", value: 0 },
+      ],
       data: [
         {
           name: "table",
@@ -198,7 +255,7 @@ const mount: Mount = async (root, { variant, signal }) => {
                 update: {
                   opacity: {
                     signal:
-                      'focus === 0 ? 1 : (datum.name === (focus === 1 ? "地熱" : focus === 2 ? "水力" : "太陽能") ? 1 : 0.22)',
+                      'focus === 0 || datum.name === (focus === 1 ? "地熱" : focus === 2 ? "水力" : "太陽能") ? 1 : 1 - 0.78 * focusStrength',
                   },
                 },
               },
@@ -263,17 +320,21 @@ const mount: Mount = async (root, { variant, signal }) => {
       ],
     };
   }
+  // Copy plain fixture fields before Vega ingests tuples. Copying ingested tuple
+  // symbols into replacement rows would reuse identity and suppress the update.
+  const source = lite
+    ? spec.data.find((data: any) => Array.isArray(data.values))
+    : undefined;
+  const originalValues = source
+    ? source.values.map((value: any) =>
+        Object.fromEntries(Object.entries(value)),
+      )
+    : [];
   const view = new vega.View(vega.parse(spec), {
     renderer: "svg",
     container: stage,
     hover: true,
   });
-  const source = lite
-    ? spec.data.find((data: any) => Array.isArray(data.values))
-    : undefined;
-  const originalValues = source
-    ? source.values.map((value: any) => ({ ...value }))
-    : [];
   let disposed = false,
     sequence = Promise.resolve();
   let focus = 0;
@@ -293,39 +354,70 @@ const mount: Mount = async (root, { variant, signal }) => {
     });
   if (stack)
     button(controls, "切換能源焦點", signal, () => {
+      manual = true;
       focus = (focus + 1) % 4;
-      view.signal("focus", focus);
+      view.signal("focus", focus).signal("focusStrength", 1);
       void run();
     });
   let scenario = 0;
+  const updateInterval = (mix: number) => {
+    const values = originalValues.map((value: any, i: number) => {
+      const offset = (i % 2 === 0 ? 7 : -5) * stagger(mix, i);
+      return {
+        ...value,
+        estimate: value.estimate + offset,
+        lower: value.lower + offset,
+        upper: value.upper + offset,
+      };
+    });
+    view.change(
+      source.name,
+      vega
+        .changeset()
+        .remove(() => true)
+        .insert(values),
+    );
+  };
   if (lite)
     button(controls, density ? "切換樣本範圍" : "切換估計情境", signal, () => {
+      manual = true;
       scenario = 1 - scenario;
-      const values = density
-        ? originalValues.filter(
-            (value: any) => !scenario || value.group !== "C",
-          )
-        : originalValues.map((value: any, i: number) => ({
-            ...value,
-            estimate: value.estimate + (scenario ? (i % 2 === 0 ? 7 : -5) : 0),
-            lower: value.lower + (scenario ? (i % 2 === 0 ? 7 : -5) : 0),
-            upper: value.upper + (scenario ? (i % 2 === 0 ? 7 : -5) : 0),
-          }));
-      view.change(
-        source.name,
-        vega
-          .changeset()
-          .remove(() => true)
-          .insert(values),
-      );
+      if (density) view.signal("sampleMix", scenario);
+      else updateInterval(scenario);
       void run();
       caption.textContent = density
-        ? `${values.length} 筆原創合成樣本 · Vega-Lite bin → count → rect · 數值不代表真實觀測`
-        : `8 組原創示意估計 · 情境 ${scenario + 1} · rule 編碼上下限；point 編碼中心值 · 非統計推論`;
+        ? `${scenario ? 80 : 120} 筆原創合成樣本 · Vega-Lite bin → count → rect · 非真實觀測`
+        : `8 組原創示意估計 · 情境 ${scenario + 1} · rule 上下限與 point 中心值同步更新`;
+    });
+  if (lite || stack)
+    button(controls, "自動展示", signal, () => {
+      manual = false;
     });
   return {
     seek: (seconds) => {
-      if (lite || stack) return;
+      if (lite || stack) {
+        if (manual) return;
+        const state = vegaLoopState(reducedMotion ? 0 : seconds);
+        if (stack) {
+          focus = state.strength > 0.5 ? state.focus : 0;
+          view
+            .signal("focus", state.focus)
+            .signal("focusStrength", state.strength);
+          caption.textContent =
+            "原創示意資料 · 地熱 → 水力 → 太陽能逐項聚焦還原 · 相同堆疊資料流";
+        } else if (density) {
+          scenario = Number(state.mix > 0.5);
+          view.signal("sampleMix", state.mix);
+          caption.textContent =
+            "原創示意資料 · 120 / 80 筆樣本依欄錯開比較 · 兩組 bin → count 共用尺度";
+        } else {
+          scenario = Number(state.mix > 0.5);
+          updateInterval(state.mix);
+          caption.textContent =
+            "8 組原創示意估計 · 各列錯開往返 · 上下限與中心值同源補間";
+        }
+        return run();
+      }
       const n = Math.floor(seconds * 8);
       if (n === last) return;
       last = n;

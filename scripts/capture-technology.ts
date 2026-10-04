@@ -68,6 +68,15 @@ try {
     await page.routeWebSocket("**/*", socket => socket.close());
     const errors: string[] = [];
     page.on("pageerror", (e) => errors.push(e.message));
+    page.on("console", (message) => {
+      if (
+        message.type() === "error" &&
+        /WebGL|Shader Error|THREE\.WebGLProgram|GLSL|ERROR:\s*0:/i.test(
+          message.text(),
+        )
+      )
+        errors.push(message.text());
+    });
     const start = performance.now();
     const sourceHash = caseSourceHash(c);
     try {
@@ -97,6 +106,12 @@ try {
       }
       const repeat = hash(shots[1]) === hash(shots[3]);
       const different = hash(shots[0]) !== hash(shots[2]);
+      const numericId = Number(c.id.slice(3));
+      const physicalStudy = numericId >= 196 && numericId <= 225;
+      if (physicalStudy && (!different || !repeat))
+        throw new Error(
+          `Physical-study frame check failed: changed=${different}, repeated=${repeat}`,
+        );
       if (errors.length) throw new Error(errors.join("; "));
       const sheet = await sharp({
         create: { width: 960, height: 180, channels: 3, background: "#fff" },
@@ -112,6 +127,15 @@ try {
         )
         .jpeg({ quality: 85 })
         .toBuffer();
+      const posterStats = await sharp(shots[1]).stats();
+      const rgb = posterStats.channels.slice(0, 3);
+      const meanLuma = rgb.reduce((sum, channel) => sum + channel.mean, 0) / 3;
+      const meanDeviation =
+        rgb.reduce((sum, channel) => sum + channel.stdev, 0) / 3;
+      if (meanLuma < 2 || meanDeviation < 2)
+        throw new Error(
+          `Captured poster is blank/black (mean=${meanLuma.toFixed(2)}, deviation=${meanDeviation.toFixed(2)}); refusing to publish empty media.`,
+        );
       await writeFile(path.join(out, `${c.id}.jpg`), sheet);
       let media: Evidence["preview"] = evidence[c.id]?.preview;
       if (preview) {

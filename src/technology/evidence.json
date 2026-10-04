@@ -1,7 +1,7 @@
 {
   "SA-101": {
     "status": "ready",
-    "sourceHash": "e8dafdfd0468317ff9a065e55a792b6a0a2d34001795e7dc3f51e479970f9884",
+    "sourceHash": "b1652d58552075203639453fdd71411910e94efadd6ab2a48495fdcb36530db4",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -11,7 +11,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 18092
+        "inspectionMs": 56199
       }
     },
     "date": "2026-10-04",
@@ -24,16 +24,16 @@
       "gallery": "media/sa-101-technology.mp4",
       "detail": "media/sa-101-technology-detail.mp4",
       "sha256": {
-        "poster": "be975eac91b7d93542bb62631bb37266a7eb9a4df047f3226bf4f42f0867439e",
-        "gallery": "097d0393fb3decb841c00ac540baea089d94f1de5eb3a4a656b248c766e21dca",
-        "detail": "78e8cae3637637f51f4149732316d8b422770b906e928ef5974f01f0eba3a036"
+        "poster": "8afdbbd6971e46caa2a69f32b440dc48748c4bc1d66769cf64b9005ffcf4d28f",
+        "gallery": "5d26c91900b0d5bb3495324f50d404a9cfeda7502308df4d5e0aa8dbb72d5e17",
+        "detail": "e1706ee15e2da89eab5859fc1536c012a1a2ade6e223677247cc1b97ce1c66fc"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
   },
   "SA-102": {
     "status": "ready",
-    "sourceHash": "35a24cba948a13160257a770d4d186f8f7753b7420b129fb29d997100bde62e8",
+    "sourceHash": "120136f5f500c387ca01f84570376fe8ccb7e75017e85cf8a1ac2e68177f0149",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -43,7 +43,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13666
+        "inspectionMs": 13393
       }
     },
     "date": "2026-10-04",
@@ -65,7 +65,7 @@
   },
   "SA-103": {
     "status": "ready",
-    "sourceHash": "0aa1e43e889623ca3ed79daf30b2d2c5716868931d87546331d36f029aa816cb",
+    "sourceHash": "a037b73617443478a4803aae8f95a34232889a940ac03cc6cdb39a909e8a2537",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -75,7 +75,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13324
+        "inspectionMs": 13482
       }
     },
     "date": "2026-10-04",
@@ -97,7 +97,7 @@
   },
   "SA-104": {
     "status": "ready",
-    "sourceHash": "d81a876068f8d4b6228b6c2ea9ad9aeb3020b2d103cdcc58fede59d4c2f88108",
+    "sourceHash": "1a995ca9a8d4c7eb7ecbdfd1e67c31b7bb469da4c3eef78e01bb6c33b315f72d",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -107,7 +107,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14177
+        "inspectionMs": 13298
       }
     },
     "date": "2026-10-04",
@@ -129,7 +129,7 @@
   },
   "SA-105": {
     "status": "ready",
-    "sourceHash": "77e2ffc36d3d1119b9aacba9305dcc08b911263e16cc183023ada21aeed3a142",
+    "sourceHash": "9d9bbd565e7d6ba608180ea7ae7d36031199bbcab5f66aba3706209cef11689b",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -139,7 +139,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13274
+        "inspectionMs": 14193
       }
     },
     "date": "2026-10-04",
@@ -161,7 +161,7 @@
   },
   "SA-106": {
     "status": "ready",
-    "sourceHash": "1f896fa9c9f19c28ec9d3c30cac70e8637902f783633551821fa01554529d577",
+    "sourceHash": "e24a53a45be17f64b61a4214c3f3d99a99b08bd0ce1cd6372a655ccc620522cd",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -171,7 +171,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 17571
+        "inspectionMs": 17457
       }
     },
     "date": "2026-10-04",
@@ -193,7 +193,7 @@
   },
   "SA-107": {
     "status": "ready",
-    "sourceHash": "9a8c447f325a2d1b220c0bfe4b94568aa7d866ccf2dccb82ce9628e62ba81952",
+    "sourceHash": "b87cd4b7e2afef7d35f3c3da6bfa3cc89beebe097cf32492964eff6e9b605f58",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -203,7 +203,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14026
+        "inspectionMs": 100753
       }
     },
     "date": "2026-10-04",
@@ -216,16 +216,16 @@
       "gallery": "media/sa-107-technology.mp4",
       "detail": "media/sa-107-technology-detail.mp4",
       "sha256": {
-        "poster": "dc07ea71820b8d4eb01f784aec0f92823bc7e4550598f24f17af7592fb9e5bdb",
-        "gallery": "288d54ee10a7ed95f1b56386b038007e53efd32240155fe7de11533f66b199fd",
-        "detail": "ada2f183c4fb1e4fdfe592425c7e8a67c2de0e9b0dacc17e6e21d686ca414336"
+        "poster": "eff3e96ca9ff5384960171b0c1032079f474c2e07239e897757454ebe570d734",
+        "gallery": "d603f5a10afb2913a937b7d5965f9aba9910a8a51060d8158b36448829b86be8",
+        "detail": "20fe9574f7ed3be3cd6ab31e0c60f0991b643aff68e292c856142e4f33a2e183"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
   },
   "SA-108": {
     "status": "ready",
-    "sourceHash": "322d2ea2d53f9a9c834053bd99089580fe0c7a505ab578357b40d1beb31460cf",
+    "sourceHash": "7cc65e0dbcd27d6f1ca79adb8a9f1a4005f5e3339757d0606b5c32ed992471e8",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -235,7 +235,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 15775
+        "inspectionMs": 15609
       }
     },
     "date": "2026-10-04",
@@ -257,7 +257,7 @@
   },
   "SA-109": {
     "status": "ready",
-    "sourceHash": "53b9ec9aad89a375dcde872ee1f8a7520f0f04ac63438fc228dda72c5746cc61",
+    "sourceHash": "6b38fce80816262f14fe62fc3cb604d463bc05c90d9483f5ffe988c1f20a575c",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -267,7 +267,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13403
+        "inspectionMs": 13140
       }
     },
     "date": "2026-10-04",
@@ -282,14 +282,14 @@
       "sha256": {
         "poster": "35aef5adfcde6fbaae864ce80e9548fb5f7cabd192eed2f3c6e95d181b2f7d29",
         "gallery": "ae22f366343869bf53519e98c106da4c819c699e67ecafef5303ed91d374e37c",
-        "detail": "603774d404caf733e4bc6313e0a4d61fdb6311fcc4c9163e48a774670779eb60"
+        "detail": "71b339af210682f28397b6dc7a491222c801ddd2d890ef880efc47e1051c934a"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
   },
   "SA-110": {
     "status": "ready",
-    "sourceHash": "d70aa4a0a08a4e2904bb4f91929b2c2b94fe7cc906503dd52b90fb9d35853edb",
+    "sourceHash": "8c3ff929ddf488ef198ff9c2a08129d17f4d87bb6edf1abb130d1e11fdb833ff",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -299,7 +299,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 15185
+        "inspectionMs": 100427
       }
     },
     "date": "2026-10-04",
@@ -312,16 +312,16 @@
       "gallery": "media/sa-110-technology.mp4",
       "detail": "media/sa-110-technology-detail.mp4",
       "sha256": {
-        "poster": "fe1154ffb4e4120fbb69031dd061ba946ba60d98e77358158000bf7446c6eecd",
-        "gallery": "441a380647a72c30815a0b8aa0242667ab97a5c4eab05bb4d42e6570e093bbf5",
-        "detail": "16d44039745706082b415256b7875f9718ba0a33c648475d79b56f6c9b8bc780"
+        "poster": "9f9d451055bf155d88b102baf8ef5b78eda13b45afebd49d66fe22ca5c1251df",
+        "gallery": "3a5ecd1ca23d7baa720b125c49b1761bcebbf1f7bac5aa397b8448f711d50779",
+        "detail": "7b43834be3600157b9aa40e22e0b0a37a579978a77657e2b088d98f27ea37612"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
   },
   "SA-111": {
     "status": "ready",
-    "sourceHash": "12370fbc234aff71cc5471d6b30d4e3eb512782c9a23261ca689ae6bd5cbc86c",
+    "sourceHash": "7f535826b4b7909240152335051cc46df05309016d43e6e9317eef6baea0e874",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -331,7 +331,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13162
+        "inspectionMs": 13385
       }
     },
     "date": "2026-10-04",
@@ -344,9 +344,9 @@
       "gallery": "media/sa-111-technology.mp4",
       "detail": "media/sa-111-technology-detail.mp4",
       "sha256": {
-        "poster": "f3680397b3d2b71675725d0c795d9e285ef2379039d4ebcb9ae4b8c6ad25077f",
+        "poster": "cc944755cf2482ed57f21f5e3e6974b813a88e6717e5421ab968cbb19489bb59",
         "gallery": "b3445fda72fc9f6b60ed9ae0afa811685a86fec4cf910ef60c69484e82837d45",
-        "detail": "b5e7e4662c702725455084d56971d3d7fba878db6f4f1e74cb59fc77aeb04fbc"
+        "detail": "d24475abc39a31ebcf562955e78f68132be9792a28a8a8a8a71abdc123f04a62"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -481,7 +481,7 @@
   },
   "SA-116": {
     "status": "ready",
-    "sourceHash": "699106753f5cdac92b45bf6e2b0d7eba74c346bfd99247e37bd71c73d748d30e",
+    "sourceHash": "ed77af89fb67ac83d5a8acd989d020c5fdf3bde060d40b877f09409997d676cc",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -491,7 +491,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13703
+        "inspectionMs": 13160
       }
     },
     "date": "2026-10-04",
@@ -513,7 +513,7 @@
   },
   "SA-117": {
     "status": "ready",
-    "sourceHash": "4f093df5c900f4de4388c26cb5d512ab4f31a07763b7f9748bb3343add6a84aa",
+    "sourceHash": "bb00ddf73595c7ff14f62f76e324f87681da58e18e62577015f88b3109cc8ca6",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -523,7 +523,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13373
+        "inspectionMs": 13412
       }
     },
     "date": "2026-10-04",
@@ -545,7 +545,7 @@
   },
   "SA-118": {
     "status": "ready",
-    "sourceHash": "7aa2147141a305b756583d190655bd448c5905f129b20e5fad09dac692ecdf0f",
+    "sourceHash": "d889e9fee0bbdf2c5261649cbc0d39b3856f858a4f40d6c4e935e39fc8ff3497",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -555,7 +555,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13294
+        "inspectionMs": 13165
       }
     },
     "date": "2026-10-04",
@@ -577,7 +577,7 @@
   },
   "SA-119": {
     "status": "ready",
-    "sourceHash": "531d74fcdba3afa598cdcf605c5947191d3ea0e05c141dd4cd1d39366d1ce8eb",
+    "sourceHash": "3ebdd1736dd0eb28f717ba9ed1199e5dac03f2f22ef283fbb2a9f6f65eea2be7",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -587,12 +587,12 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13664
+        "inspectionMs": 13366
       }
     },
     "date": "2026-10-04",
     "notes": [
-      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Noninitial frame changed: false; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
     "preview": {
@@ -601,15 +601,15 @@
       "detail": "media/sa-119-technology-detail.mp4",
       "sha256": {
         "poster": "147f94b7294a142f53616c7abe1225ee8c9fa3e709ce5339ed74a2fa8e166702",
-        "gallery": "95741bd25fcc7295795d5179bdd28aa04cd6669d90ceaf259743ff89401b6335",
-        "detail": "7507c9d14653b5032f336e3e16a97f042493eb6e3dad1b78258bb2e542f41c04"
+        "gallery": "eb8ff3c7134a1c20b963a2820fb161c7afd6d2cd580e4a817ba04b92c2aa1b7b",
+        "detail": "ec6a70378d8c59f2fd938b70f0290c16797142b47b2bd8bc8615971a1f8f753b"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
   },
   "SA-120": {
     "status": "ready",
-    "sourceHash": "2d7a05d681d5757339b1dfc3c36115dc51d62cca4903b771f766e3af70425f7d",
+    "sourceHash": "120741c597b34ba83acf34daf9a2441f17673030206d751762c5e8700ebbe96b",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -619,7 +619,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 15283
+        "inspectionMs": 103467
       }
     },
     "date": "2026-10-04",
@@ -632,9 +632,9 @@
       "gallery": "media/sa-120-technology.mp4",
       "detail": "media/sa-120-technology-detail.mp4",
       "sha256": {
-        "poster": "c3ec1bdf08c53bbdeaffd3cd412c57c32160add9174d11912431123128faea2e",
-        "gallery": "e7d9703e6f8a917e2e849ed6bf81786317f75dcbb12156cf68e992baf4d73b54",
-        "detail": "8c9ab51ebc2ee8310fcf675a9b8961c8f54f8e78ae6a94d179c7db96f32ccde2"
+        "poster": "1e1e6e179ec590cf90c136ce25cc756e6b585703a8880a52fc2e95ee22cd218d",
+        "gallery": "77b1c4dbb63bb58b9118a723c7fd3aeba87039a6bd48df7ad727589ebb3332d5",
+        "detail": "a17ffca7e9d3dbecb3f159c956d0cdf460e04eea49e70dd55b2f7a87c822d3cf"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -769,7 +769,7 @@
   },
   "SA-129": {
     "status": "ready",
-    "sourceHash": "f10a6321917f8a1847925badea8ce6d9ee4856c5e6c9a80a73f50a6af4ee161a",
+    "sourceHash": "7f709b78ca29e7fa999c9fb923f70230926973428994dfc68a20307a5c1abb75",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -779,7 +779,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 15436
+        "inspectionMs": 15442
       }
     },
     "date": "2026-10-04",
@@ -929,7 +929,7 @@
   },
   "SA-191": {
     "status": "ready",
-    "sourceHash": "f3efb26b4bb60665d8ad5c6caee9361268f792d1668da769b3bbf02616b795bc",
+    "sourceHash": "cf073dfa38834587393cd83611064e04abaf35fd300d453857531dc55f04c22d",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -939,7 +939,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14104
+        "inspectionMs": 13820
       }
     },
     "date": "2026-10-04",
@@ -952,16 +952,16 @@
       "gallery": "media/sa-191-technology.mp4",
       "detail": "media/sa-191-technology-detail.mp4",
       "sha256": {
-        "poster": "2f20ca9e0e3a845db710780e9ec6a322cd84c441584cb2ed4f11c0f85e58f2c7",
-        "gallery": "f3b9b27ee0a47b9beebcff869db06bddf33da506c8f78193d70ed9b9e6fd8367",
-        "detail": "fcac13b8ba7075de4133ae54f2f9470895700c8e44bfcefe9c119946280dcb18"
+        "poster": "9a1f5cdcd1b67769ce81a2052a45136c0587b75e90120f28d79c6e65855cec80",
+        "gallery": "a90301ed9e28b7d0873021259b86bffe2a121707068b5f5fa7140b31db52ab31",
+        "detail": "c29e2cc4822302f9b6cc1db3a0b3d50645058a8269a8faa75c54e72d0df02bd9"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
   },
   "SA-192": {
     "status": "ready",
-    "sourceHash": "a61d82df44766d17bf2e544ca1a9d0f48450dd95c29141f436bd07ba871974fd",
+    "sourceHash": "5c3cbb823c6d76ff412a4652b47942f5b71a1e053f6d143371b729d906e4a0d1",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -971,10 +971,10 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13663
+        "inspectionMs": 13395
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-05",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -1057,7 +1057,7 @@
   },
   "SA-195": {
     "status": "ready",
-    "sourceHash": "7168ca1d08fe415eefe9790a671b1579e0ccf63e29b5fb42c84500afb4dead78",
+    "sourceHash": "1ba65ca30b6410e86281256b6e5a9dfb71cc8474096c75a9e8f4402973c183a0",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -1067,12 +1067,12 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 28674
+        "inspectionMs": 26513
       }
     },
     "date": "2026-10-04",
     "notes": [
-      "Noninitial frame changed: false; repeated sampled frame identical: true.",
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
     "preview": {
@@ -1081,8 +1081,8 @@
       "detail": "media/sa-195-technology-detail.mp4",
       "sha256": {
         "poster": "4dfcf528999579371536a56e45a56cf862861da6e4d232975155ebb1d2c79dba",
-        "gallery": "ebfbbe8911a8f88468fe0f0da1a0de7a86139afb12bc42a9ab67e32aa8ed9d8b",
-        "detail": "6f7e4e4e6f16b122c910998ab53c69269b3cf9605d692dabf44dd0a4326242f1"
+        "gallery": "91bb7edd5b97c26373450bf4c1b323cb2b0a2398e02e53cfa1e147d963f1bea4",
+        "detail": "39d36070a2cb278f47d94b26e0e600a3c13e8b1493a363baf6609558e8e8685d"
       }
     },
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -1155,7 +1155,7 @@
   },
   "SA-163": {
     "status": "ready",
-    "sourceHash": "709f87aaafaee2b5fda3b698f1abb122324b3304f575fce5997427d3bf6a19cb",
+    "sourceHash": "0caedcacda55b70d2f69d6d371e591b6f4bc2776a02712ce87b57c125ec1933b",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
@@ -1166,9 +1166,9 @@
       "gallery": "media/sa-163-technology.mp4",
       "detail": "media/sa-163-technology-detail.mp4",
       "sha256": {
-        "poster": "7ca88841047f0c51d3aec1d1648fe7165c02ba0238689782f80f09090777663e",
-        "gallery": "ead99897227c06c3b0a5eebc991516d7795d0617e4a8bcba5ff8c6080d21e6e8",
-        "detail": "50244fd12c63001849926064e0b4d5c21e28bc695f8c3f04cb87bb4d2062be15"
+        "poster": "47491e583097715aedb52e30908e69e2f019336aa0bbf56fb504885fea785a3e",
+        "gallery": "33398fb9b17b26346b7a81fb9c364f5c8e502ae8fab349875743e22f83edfc4c",
+        "detail": "df43369fa50ba7c1526a6b81e94a8a27ff68768b6cedd6b87e5fa4eeaba6dfcc"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
@@ -1176,10 +1176,10 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 29890
+        "inspectionMs": 29843
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-05",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -1479,7 +1479,7 @@
   },
   "SA-173": {
     "status": "ready",
-    "sourceHash": "396c1ec177c9f6e72d367ea965b5c3684cc32fad2cf1fd4052f1581a5927df91",
+    "sourceHash": "9a58f8ab328d76f32934afd1ce60fbaf99878440b5a98a5ebfe7e87b303624ed",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -1489,9 +1489,9 @@
       "gallery": "media/sa-173-technology.mp4",
       "detail": "media/sa-173-technology-detail.mp4",
       "sha256": {
-        "poster": "45ea605aa95dd6a11873f3630101e1909f1e5a919415f5d6c4720da4826f50aa",
-        "gallery": "0167f0871b59d437d75515bf0e7f536322df6429260c9887311434c391042df0",
-        "detail": "0b9af0a5e300a40c30e8ed99d23541924e72d7ea944a28f94c8c6f061a26307f"
+        "poster": "50ded582f88ce3afc12e135060c1ab4e723f849288bef250f3a2dbc8b8d0e3a5",
+        "gallery": "897f539ee57d755660e2ffcad1acb1222b163e6df0b92075d3b3d395b2a6d551",
+        "detail": "4ea5eda8b9206b132464ed09dfbcf30acf3c6d0757d3dca1760c76283cf1ada5"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
@@ -1499,7 +1499,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 28826
+        "inspectionMs": 29372
       }
     },
     "date": "2026-10-04",
@@ -1511,7 +1511,7 @@
   },
   "SA-174": {
     "status": "ready",
-    "sourceHash": "341e05cd6558de2c4fab91958fecc847cb8006509e0f4f8900eb9fb57fce3300",
+    "sourceHash": "3604a5031a595ee101c63bbfd2962b355e9435d4a62530518f0a26c624a14659",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -1521,9 +1521,9 @@
       "gallery": "media/sa-174-technology.mp4",
       "detail": "media/sa-174-technology-detail.mp4",
       "sha256": {
-        "poster": "c29c3c2ed90a9584b562b595289d8a0fc661058216dbc89b0e52013ac9f3ca7d",
-        "gallery": "0a12753e189552ccfadecfd5acf8e60269b8f228d69ed445ba1d212066290ca1",
-        "detail": "5a24a5501dca7b153ccc7cdf0ad7c28fb83585b5cee149f42312828a449a39b5"
+        "poster": "c4dc016667ba11680f490c66d76bcc0e41079bcf58fa2718e2d07dc16435b545",
+        "gallery": "974130c78b72f638638cecce42033ea15cbd542b1bba0de32a26d3e1d2edd79f",
+        "detail": "f59c2a73efba8378a54eb3bec17788c781bebb245a2beeda5736d3fcb36661aa"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
@@ -1531,10 +1531,10 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 28218
+        "inspectionMs": 29312
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-05",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -1543,7 +1543,7 @@
   },
   "SA-175": {
     "status": "ready",
-    "sourceHash": "79a0787898594619537624e88c2324503fc51c13812399db422fe51605ffa1f3",
+    "sourceHash": "b9b888790685019e357aac9b07c84cbefca54f7e37ad6674742171bbbcef52cf",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -1553,9 +1553,9 @@
       "gallery": "media/sa-175-technology.mp4",
       "detail": "media/sa-175-technology-detail.mp4",
       "sha256": {
-        "poster": "760afb1622dccd237dc4a028e4d737a3357e0b6acb35ea089474308c71f5eaa2",
-        "gallery": "a738b5080ae440c2645ac82babb5cc0b729235109a95fbde45b7ecd465ecec7e",
-        "detail": "12b27de71e103b97700631f76631af7594bd497b04dfafd03064624981cb4bfc"
+        "poster": "1db78d78befbf56d92262adc6f63e37980b431e8a0e0d3689a328c9a8e3b01a4",
+        "gallery": "b74e74911722b50d16927e128a328eb0b93726063a672c50cb9b20464a75d1f1",
+        "detail": "455cde11967934938c546e5a4fe8c14a6101854e5fc6225cb40905e8404d1b40"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
@@ -1563,19 +1563,19 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 29928
+        "inspectionMs": 213439
       }
     },
     "date": "2026-10-04",
     "notes": [
-      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Noninitial frame changed: false; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
   },
   "SA-176": {
     "status": "ready",
-    "sourceHash": "884baef57bfa6550f508f7134f7400ca5ffc85205763274b69248996f800ee80",
+    "sourceHash": "27511b6688add0d0b3046537fa0ec0c5369a0ba3cdced944051a399f940140b3",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -1595,7 +1595,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 27820
+        "inspectionMs": 25961
       }
     },
     "date": "2026-10-04",
@@ -1607,7 +1607,7 @@
   },
   "SA-177": {
     "status": "ready",
-    "sourceHash": "6ecf831deddbe1d47100225c8a2cfa67b9fc5794db3e107360b52d27123fedd7",
+    "sourceHash": "03cca195506ad2e5829fdad2ed59fda7c2e3fdcfc0e239e39005f215583e0999",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -1627,7 +1627,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 29841
+        "inspectionMs": 30308
       }
     },
     "date": "2026-10-04",
@@ -1639,7 +1639,7 @@
   },
   "SA-178": {
     "status": "ready",
-    "sourceHash": "e1b0e272685f36e16bfb3e3c8b2cb1bcea7cfb7155ee48d8c7147091d6e843a0",
+    "sourceHash": "48bbc2de95275d538e879c3f1cde3f6db23a5804ac2182d148348118d24d53ee",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -1649,9 +1649,9 @@
       "gallery": "media/sa-178-technology.mp4",
       "detail": "media/sa-178-technology-detail.mp4",
       "sha256": {
-        "poster": "c4b2a8bed810c914d6a36e16857930d42ba295eb230904f663f0d056095206e0",
-        "gallery": "fbbeedaacfb7bb420c6c7ed5c1179d16bf52c58cc35564d881d129a6da05aa07",
-        "detail": "c0127d750bc5c73e170798b818d9fcae7c6a962447b4fd975de0ee0d1f3923bc"
+        "poster": "f505c2cd8afc864bf8954fa1dc7804388388dc00cb2a870c27fa0cbb5ecd9129",
+        "gallery": "986a6a84ec57364a3494cae7489fb8086e789d8e6ea721875014888ce123f72c",
+        "detail": "cfcedfe26d7086c1fff281dccecba697e0354e7151b3227b56b274f7aadaee5b"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
@@ -1659,7 +1659,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 29496
+        "inspectionMs": 107858
       }
     },
     "date": "2026-10-04",
@@ -1671,7 +1671,7 @@
   },
   "SA-131": {
     "status": "ready",
-    "sourceHash": "d001970a9084d67a8540fa72b1e38090422fb3ab130f6a9fb937a57c3defa8e4",
+    "sourceHash": "8115030492adc5a953db5a441698481fc774cffca8097f6b763666cd53c255eb",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -1681,9 +1681,9 @@
       "gallery": "media/sa-131-technology.mp4",
       "detail": "media/sa-131-technology-detail.mp4",
       "sha256": {
-        "poster": "d4fc2ecbfab1c2c8aa8c7e46430825e079434a5b23d78e6211d85acc28b6dca3",
-        "gallery": "313d812bbc27c25cf7a3d29abd0281634f796439d08929f90d1d055df4537fa1",
-        "detail": "7400727b7f246db1ece2c8aefe30c92d47ba60cd7cdc3ac58102d3c35a9892c8"
+        "poster": "ef6b1a34b2dbac8541fa4df86702e0d8cb7a23b1eb5ce9d83ff52e294c090a6f",
+        "gallery": "88a98c49fac414d6fd8a455a49a054144d47238283cc8b850e0b2fb0dd1149d2",
+        "detail": "bad625a9110d71f3990c142e688d2336a21e2f3ef00af74b9a704871cdc7d9b7"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -1691,39 +1691,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14448
-      }
-    },
-    "date": "2026-10-04",
-    "notes": [
-      "Noninitial frame changed: false; repeated sampled frame identical: true.",
-      "Physical Safari/iPhone not tested."
-    ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
-  },
-  "SA-132": {
-    "status": "ready",
-    "sourceHash": "622bc4cc2f02214478d9536e6da3c31f51eca6217986af64882e630306dc94ef",
-    "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
-    ],
-    "preview": {
-      "poster": "media/sa-132-technology.jpg",
-      "gallery": "media/sa-132-technology.mp4",
-      "detail": "media/sa-132-technology-detail.mp4",
-      "sha256": {
-        "poster": "3bc922691a141201c7b6b2df37c97d0178940ae9ff6d06b6142aa72dbd9a23a5",
-        "gallery": "8b9f5eaca09e3b694ab5edaeeacc2120bba4bb78be158009e9f255be55fbaa39",
-        "detail": "0a5bb720dc8852d1c578d57f6d7fe170a0139ba1ae9c21a0130d9dbdb7da2937"
-      }
-    },
-    "video": "unverified; deterministic export unverified.",
-    "performance": {
-      "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
-      "metrics": {
-        "inspectionMs": 13895
+        "inspectionMs": 64783
       }
     },
     "date": "2026-10-04",
@@ -1733,9 +1701,41 @@
     ],
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
   },
+  "SA-132": {
+    "status": "ready",
+    "sourceHash": "816303c44bcd39688976e359c8747089b29088b0d7113b3a95b57ec9afa284c3",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+    ],
+    "preview": {
+      "poster": "media/sa-132-technology.jpg",
+      "gallery": "media/sa-132-technology.mp4",
+      "detail": "media/sa-132-technology-detail.mp4",
+      "sha256": {
+        "poster": "f52d3eba832296058b9e12a4fc32a9f82c28b78407c2c24ac9df7f224d7ca915",
+        "gallery": "5c365936ff32b1fb6953ed3b4f29b70b9ef0a56579c5c3bbeb5ab4bb6d38ed3d",
+        "detail": "51758671b21707f13bc4a86073092a6cf1c3255b4acf38153aaaf021bdb3647a"
+      }
+    },
+    "video": "unverified; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 13567
+      }
+    },
+    "date": "2026-10-05",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ],
+    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+  },
   "SA-133": {
     "status": "ready",
-    "sourceHash": "9c3b0f149e96ef11bafc225c510c76ffa1fb63ceee39b0c785967e1ada364637",
+    "sourceHash": "827d2b16f5912be1cd49f44a03591ea83dacd8c2fdf39a7395a21c989cde00aa",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -1755,10 +1755,10 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14741
+        "inspectionMs": 13314
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-05",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -1767,7 +1767,7 @@
   },
   "SA-134": {
     "status": "ready",
-    "sourceHash": "9f0ebee10b25f7311b38d3f165550bc6a786c58ccea2f18fb1b073a8efc9730f",
+    "sourceHash": "a24cb4f0bc91eb28244c389d8e0b3a9709f79377f7a154c1a6e8399335458146",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -1777,9 +1777,9 @@
       "gallery": "media/sa-134-technology.mp4",
       "detail": "media/sa-134-technology-detail.mp4",
       "sha256": {
-        "poster": "cb53619c975a69bb74c11f3c6e961b26c299d4ad5d0a4904f1d4f1b330c9876c",
-        "gallery": "0936179ab3399123c94f23b7c8612c263e33cc672bf02fc13f53443714ed9f2d",
-        "detail": "31025056fefab4e19035bcf891490bcfd0debae2196268f21aa4cf5409be57d4"
+        "poster": "2456887a5b12ea9062d0424adc4cf6c4ab3876762a9b6a9abd316f3f2b75fd6b",
+        "gallery": "28a5e79da49eaf1cdf935129138d61b88fe190f5926eb13acb5ebde53040dad2",
+        "detail": "aab300f91c202253c9d59497c6d0e079800a6405722522770db86dd3004431e1"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -1787,19 +1787,19 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14757
+        "inspectionMs": 95477
       }
     },
     "date": "2026-10-04",
     "notes": [
-      "Noninitial frame changed: false; repeated sampled frame identical: true.",
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
   },
   "SA-135": {
     "status": "ready",
-    "sourceHash": "530bd866e084b0f9af936a36c1bd85d24527c44b7570f477c30b69c2effcbe19",
+    "sourceHash": "6fef2b1511635be0cee52dc6102c1ad79333f9a362d19710c9aa97c1844b7d77",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -1819,10 +1819,10 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13728
+        "inspectionMs": 13441
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-05",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -1831,7 +1831,7 @@
   },
   "SA-136": {
     "status": "ready",
-    "sourceHash": "e07d5131bfb1be7f0f32bf9785130320d8b34b353e0e9c7bf3038f4430b12ae2",
+    "sourceHash": "7722660256404a8475ed1d666bce441f7fbda1669a7794b7acad904fb63d3aff",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -1841,9 +1841,9 @@
       "gallery": "media/sa-136-technology.mp4",
       "detail": "media/sa-136-technology-detail.mp4",
       "sha256": {
-        "poster": "8430c053acca67b13f6e4c3ccb51d3563586389ce70fa6a4bc05aeb5266af37f",
-        "gallery": "ac687aa1dc3a1176ba1293610eb23954e60aa722b7dc15838f08fe56b7a3c99b",
-        "detail": "6bfef8f42231392786d5af9f045fb92e2f2daa9b0eaaac9d3da3b0ecb1746eea"
+        "poster": "df67abcadf080fd44917840dfce8b4f4657c125d480023ec3c210e200677dd97",
+        "gallery": "cd70e47cde84a6deefa7f07081e906560b4f7b9d5c5be4901954d3288052543f",
+        "detail": "f7cbf107dbf6de010e431425e370a33c3408944098f33dd502676b88a02119da"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -1851,19 +1851,19 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14367
+        "inspectionMs": 29639
       }
     },
     "date": "2026-10-04",
     "notes": [
-      "Noninitial frame changed: false; repeated sampled frame identical: true.",
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
   },
   "SA-137": {
     "status": "ready",
-    "sourceHash": "2f04e0b4610be72b9772290ef49ec30ce9ca31648a494956de72a74fd0d3d0fa",
+    "sourceHash": "ab9da64e70add9bc1bb39e732d7a515837abbb93192886bc656ffe8a3001fc83",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -1873,9 +1873,9 @@
       "gallery": "media/sa-137-technology.mp4",
       "detail": "media/sa-137-technology-detail.mp4",
       "sha256": {
-        "poster": "a1f507e6a0945ea2759d90bbfbb5154da394dea3a2c313fec9baf8c488a2047f",
-        "gallery": "af520062bb7bf972a505238e02d0244e8ddfe5e4bf4593b19c7db96d324e38d7",
-        "detail": "15913d286db6d6fa58b4cb84ed4783175cee68c478ce323dea6c95890e307a29"
+        "poster": "99a3a090a907a6f2ad06b90455374a26f71d0981335606edeb30d28d1ba220c4",
+        "gallery": "f5ef79bd2da177854c15dd6a95311058e9192acf16514a751965880c63725840",
+        "detail": "6edfda85070757be6e9a6ffe3e9c2ef22ff7d1e2092cce1e836dc0c4def3638d"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -1883,19 +1883,19 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13957
+        "inspectionMs": 13757
       }
     },
     "date": "2026-10-04",
     "notes": [
-      "Noninitial frame changed: false; repeated sampled frame identical: true.",
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
   },
   "SA-138": {
     "status": "ready",
-    "sourceHash": "373600b75f45633e0e13cf484249ab9b8acfef0cedf497d0b8d2c009f02ac877",
+    "sourceHash": "8c13e99c557fe460d2ccfc9faab8ff15c08ab1a28b8fc99943ef504bfd9837d2",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -1905,9 +1905,9 @@
       "gallery": "media/sa-138-technology.mp4",
       "detail": "media/sa-138-technology-detail.mp4",
       "sha256": {
-        "poster": "6b6f0bf3f8efcb528ca702f4b613ef3a736f62b3b52f757de445b0d177e71b28",
-        "gallery": "1cab9ada723d89df2efbea62b91d955f94991413ef879201a0780d07866c325e",
-        "detail": "d3524c8dc8911c4e78e5b49151b9ec63d41b242cf8398f0018fb6054bb5a240a"
+        "poster": "2b604140d2a0628427c66032d94349669eb5ca683fa8815843fec238ae9e8833",
+        "gallery": "f27bf48528d2d22959fd7f0d070a8b3e43bcdfb1ad24a3a77094fed0d247b0c0",
+        "detail": "c6acb2dca5618ed31b11c1dfa83a467969239786dee4ccde5e4119e32569dbc0"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -1915,12 +1915,12 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14774
+        "inspectionMs": 13918
       }
     },
     "date": "2026-10-04",
     "notes": [
-      "Noninitial frame changed: false; repeated sampled frame identical: true.",
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -1991,7 +1991,7 @@
   },
   "SA-141": {
     "status": "ready",
-    "sourceHash": "daee853fc267f120676499f4c1a6199cb7288f912781528ca91322fb3f0df850",
+    "sourceHash": "1f1ee103792f8d209d840e963b16bfb6268c2ded990cdf2d712d1520add8ddec",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -2001,9 +2001,9 @@
       "gallery": "media/sa-141-technology.mp4",
       "detail": "media/sa-141-technology-detail.mp4",
       "sha256": {
-        "poster": "603a18112400648f855351880baa6c6b6625e2da001b2a22e9fd5eb63bf59525",
-        "gallery": "2ef6154033d64103ecb34ad12dd970f91ba64486cdee3bac8fe2c1ceed1697fc",
-        "detail": "d604afae9bc0227809511726ea291e6999a1e773427cd3d37b143df66f98df55"
+        "poster": "2dbe6b3253fbe910a9058bb026082cf86537867ce5c1e15964c7c78006c2f9d0",
+        "gallery": "c41436af77a640563133f4158b5d8238147ebdbe484d1d63f52652fa003468ef",
+        "detail": "c507faf5a400fa86cc453cfc96b7d83dac9e21d52fb5d2c612237d96d21e6c85"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -2011,19 +2011,19 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14737
+        "inspectionMs": 13776
       }
     },
     "date": "2026-10-04",
     "notes": [
-      "Noninitial frame changed: false; repeated sampled frame identical: true.",
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
   },
   "SA-142": {
     "status": "ready",
-    "sourceHash": "dffdb19e84ace7d734b844723af02b982931a1cde9968ce97b9131771001a7f1",
+    "sourceHash": "eb6ed62575fffd52045a50fa3f9503e74a46d61a77d7df1373f316182dbf6bb8",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -2033,9 +2033,9 @@
       "gallery": "media/sa-142-technology.mp4",
       "detail": "media/sa-142-technology-detail.mp4",
       "sha256": {
-        "poster": "b7afdc9d44f6637fdac1510449f60baf9773eef01339b377318563d1b379a75a",
-        "gallery": "1ee2526bde1506f04f08c3c82f56aece2f2cb434a05fe6ac5765d4fa9c392739",
-        "detail": "1b274df6cbd51905f1b6b7bfc2478bf8c218bc63cbfab46abb787450303417cc"
+        "poster": "c357fa7560ad4c3cf565dd7e08c4f9c16501928c95ffe892013aeb6d5c4d305a",
+        "gallery": "89c152c36dae19e5dcc388280b5ef653f04e63429acf05b8a750cb99d1143243",
+        "detail": "bd35db953b3e2e4fa8ca27793c8d1d21378a79c59e3ad1086540fe435b226b5e"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -2043,12 +2043,12 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14328
+        "inspectionMs": 13700
       }
     },
     "date": "2026-10-04",
     "notes": [
-      "Noninitial frame changed: false; repeated sampled frame identical: true.",
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
@@ -2247,7 +2247,7 @@
   },
   "SA-149": {
     "status": "ready",
-    "sourceHash": "f6e258579b6594eac750c993b29376afe64aebeb8ee8c85cd259bf8b1aa27e05",
+    "sourceHash": "c011193c617407224daf3acb8c6b6bf484433cafe2cee7662053fa26dcb7a4fe",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -2257,9 +2257,9 @@
       "gallery": "media/sa-149-technology.mp4",
       "detail": "media/sa-149-technology-detail.mp4",
       "sha256": {
-        "poster": "aafb46d09c01328754adbd1d1d8e9c17369ef95ecf71f6a50948927401d0680b",
-        "gallery": "98f06a97defe45cfe965d0e4ecf5c66bc2c32c2f0b86b582cb43251b47a0ef03",
-        "detail": "53e3550c0f6bc57f3dd352343b0fe240060524216acd950d3ce1d43249a83e06"
+        "poster": "2d34288d8d1bcd1281e6226cc7fdbb82381ccce99d8a4a62707c0bb37917b8cd",
+        "gallery": "5e3e63bf500770eadb70cfd61a9952f460901031bed737898abefda73c0f7e96",
+        "detail": "77a18d37195712914fc6a9148265fea2e67ef098e0f86741f91bb9446104718f"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -2267,19 +2267,19 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14188
+        "inspectionMs": 13910
       }
     },
     "date": "2026-10-04",
     "notes": [
-      "Noninitial frame changed: false; repeated sampled frame identical: true.",
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
     "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
   },
   "SA-150": {
     "status": "ready",
-    "sourceHash": "bb3ebc74e983ce8c12007c9d49d95a68b019d05b2da1b89d5d56c6e483553b73",
+    "sourceHash": "a2c95dd73aaaca9e1354edb30c5bc2e3487d7631c9ff8e3fdf4853178092fdcb",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -2299,10 +2299,10 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14190
+        "inspectionMs": 13515
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-05",
     "notes": [
       "Noninitial frame changed: false; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -2343,7 +2343,7 @@
   },
   "SA-152": {
     "status": "ready",
-    "sourceHash": "385abd01d53ff7f1c2b5b700e8c595a7465b7fed15762955fba7f95f28cac04f",
+    "sourceHash": "76c9fde5ba063914f39ca8f72ccb4a183bcbba80d9c067f6158ab814a5363188",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
@@ -2364,7 +2364,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 19470
+        "inspectionMs": 19631
       }
     },
     "date": "2026-10-04",
@@ -2376,7 +2376,7 @@
   },
   "SA-153": {
     "status": "ready",
-    "sourceHash": "067611d0f33c9fdd281fdd06963fcf6240d59f422191630c161fc07b2ec39b33",
+    "sourceHash": "d2facd0c50fc9b57647e6e0f1291f3aa335015634c820a277eacb48e4c5c2a7b",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
@@ -2387,9 +2387,9 @@
       "gallery": "media/sa-153-technology.mp4",
       "detail": "media/sa-153-technology-detail.mp4",
       "sha256": {
-        "poster": "84def37716772b02343789f6dbc1b8fc1c0ef5f595e62782c9aaec835ef95c12",
-        "gallery": "84cdb7f28bcba61a5ca4ab27b540f98395ee963cb7cd33aac7d9580572214af2",
-        "detail": "568ff00dd849afb28c9b3a1ad249dc5c14182cba5c28b1b25685fae461fc512f"
+        "poster": "f81c6359251625b8d127ed764ef9c4c295c5156fc6a947f283daf96beebf9606",
+        "gallery": "59c7b2d23c054dd85eba3debc93ecc7b5070991d5e13969b333485a80f8ac096",
+        "detail": "9d0845472b1bc503a515440e7c54990bd35fbe6b9fe20586bc3b06e6cdab5f25"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -2397,7 +2397,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 19375
+        "inspectionMs": 23420
       }
     },
     "date": "2026-10-04",
@@ -2409,7 +2409,7 @@
   },
   "SA-154": {
     "status": "ready",
-    "sourceHash": "580c90527f7ba0c4c548071c11981e63e6d0fe177b0b412d534355677a881a6d",
+    "sourceHash": "b263c183f55f77b6e1b59cd308f880224b6f0353be0a82f992f6f797ec4433d3",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -2419,9 +2419,9 @@
       "gallery": "media/sa-154-technology.mp4",
       "detail": "media/sa-154-technology-detail.mp4",
       "sha256": {
-        "poster": "d2fe361e2630050119dd228cc96e533fe71aa19bbc5a165cf63fcbdbb5311911",
-        "gallery": "9316e4f579f0cc3805402d366f3c791723e3453c022cf5868b71d87cfbaeef66",
-        "detail": "02f16a694335c8246a7ab791a63333a08191b55639309fdebfdeee5f909986a4"
+        "poster": "8c404ed7159f2ade842d5e939318f525b02f62e7556cac247c0b26d0efcc6346",
+        "gallery": "aae357d66eeda565e0e7714b291f71bcf2753f994a46e3e365518b370e13785b",
+        "detail": "67835f1ebdac951d6fccec35f26b0140267085f0042e9ea4782d06b08ced7de2"
       }
     },
     "video": "unverified; deterministic export unverified.",
@@ -2429,7 +2429,7 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 29528
+        "inspectionMs": 32796
       }
     },
     "date": "2026-10-04",
@@ -2441,7 +2441,7 @@
   },
   "SA-155": {
     "status": "ready",
-    "sourceHash": "0df0cc522998a4bcf4390a7093a5c5015c6bef6196bac388f756271bb5114bd6",
+    "sourceHash": "236225a6c136c715ae2f5304f7c1ab1f7ec1737668f3068ac0a4a4db75ad8969",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -2461,10 +2461,10 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 23102
+        "inspectionMs": 22740
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-05",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -2473,7 +2473,7 @@
   },
   "SA-156": {
     "status": "ready",
-    "sourceHash": "7854e43ac50033e2f65a2650a55b250a3edbc33ea9fd75e6d7f411713d1752ba",
+    "sourceHash": "17f62bb9f1d58bf529b2012bf592a339224d7165604ae6c9f7a80856c00752ba",
     "runtime": [
       "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
       "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
@@ -2484,8 +2484,8 @@
       "detail": "media/sa-156-technology-detail.mp4",
       "sha256": {
         "poster": "39762f786bdfdd6e83b189cdae55e94589c430a073170a9af86a1fa9f263477b",
-        "gallery": "c6333a6a8bb6805461e9bc5a63108194a35973769e503ff9abc9e0b6f69cb064",
-        "detail": "02325885b1818202156344cc74deb2d249bd1cb4b85ae470a4d5eca1f5123cec"
+        "gallery": "bad6a7027f7978442849f6a2a12e68d967c382a7d0191c2eac34eb5eb4f41881",
+        "detail": "704985cc1182d296a012ad23dce455fe3d526836169b3a118162415054b5431f"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
@@ -2493,14 +2493,914 @@
       "status": "measured",
       "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 39365
+        "inspectionMs": 37918
+      }
+    },
+    "date": "2026-10-05",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ],
+    "visual": "更新後已檢視滿版地圖近景、完整世界範圍與返回終點：臺北在開場／全球端皆維持於相同畫面焦點，世界輪廓與連線完整可辨，末端回到原近景；無側欄或標題面板。影片輸出 adapter 與跨裝置仍依各自狀態標示，未據此宣稱驗證。"
+  },
+  "SA-196": {
+    "status": "partial",
+    "sourceHash": "488b1ba4240a53a54979dab0fa8381a27d9ad0f5b5ece68eb7541f56d286bea0",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-196-technology.jpg",
+      "gallery": "media/sa-196-technology.mp4",
+      "detail": "media/sa-196-technology-detail.mp4",
+      "sha256": {
+        "poster": "41f83bb32aa549cdba9621a0520dc4b7b5cf5c2eb86b58ab2390d6b34d557d15",
+        "gallery": "765d5978e5635959e3ef06a59620fe7cafa6c8bc94dd5d687497f41c3d93cfbb",
+        "detail": "c4d48adba853a7df56a72edc2b869c7f488f8846c13ef4d4ac8f8a685235ae9d"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 33815
+      }
+    },
+    "date": "2026-10-05",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-197": {
+    "status": "partial",
+    "sourceHash": "4e568d917983a004bc40f00208a9c36a1a9a2ddc78a2d2b2be76fc4b34b3221e",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-197-technology.jpg",
+      "gallery": "media/sa-197-technology.mp4",
+      "detail": "media/sa-197-technology-detail.mp4",
+      "sha256": {
+        "poster": "137e0017e0ca59f7de1a53bb29f6b339a869027231e3980f3115a13759c2aa8b",
+        "gallery": "b9a7e9ec5bec5c99020b9bae6df94e148ad96c0e5577cdb383f9fcf47ebc1638",
+        "detail": "19f32bc56f562c46f74abca1ac5b22d288c5efd5005e9e50a21751abc59aa6bd"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 33867
+      }
+    },
+    "date": "2026-10-05",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-198": {
+    "status": "partial",
+    "sourceHash": "1fa1f85dbdadbe073d6f29da0841b07cbb67fd9289edaac582e2c1fdcb7dd3f8",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-198-technology.jpg",
+      "gallery": "media/sa-198-technology.mp4",
+      "detail": "media/sa-198-technology-detail.mp4",
+      "sha256": {
+        "poster": "4ea2f5113e8f0a32e8e6da7aa74bcb9bb99c1af3438200da3e701ddcb3a9cf18",
+        "gallery": "52f296460ca588f54ac97e3fe80400f1748bd580a412223d535cc6d5d20dfb6e",
+        "detail": "5bffa228a9242de8d0eacc04f675785c0014fa978cf66de605fcc9033b14cad4"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 30154
       }
     },
     "date": "2026-10-04",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-199": {
+    "status": "partial",
+    "sourceHash": "e7fec4e76134a14241b3f0f7e54162a873decde0204c7b5149b5dce4b07b86d1",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
     ],
-    "visual": "更新後已檢視滿版地圖近景、完整世界範圍與返回終點：臺北在開場／全球端皆維持於相同畫面焦點，世界輪廓與連線完整可辨，末端回到原近景；無側欄或標題面板。影片輸出 adapter 與跨裝置仍依各自狀態標示，未據此宣稱驗證。"
+    "preview": {
+      "poster": "media/sa-199-technology.jpg",
+      "gallery": "media/sa-199-technology.mp4",
+      "detail": "media/sa-199-technology-detail.mp4",
+      "sha256": {
+        "poster": "3b9b0a461bd628d01ac42c218897490185a9eeccd23e6a121a83468dca811bb9",
+        "gallery": "6831d39f274e8c41d67f5afcfc747db717731be469d70f606d6d2c8d94892b28",
+        "detail": "baf6bc525a67e4bc2a2787350f74ea606bd83250536c43c0f14a9c02beb6f4ec"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 46656
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-200": {
+    "status": "partial",
+    "sourceHash": "c0a0cbbdede617be3ea0e15493480c9fad8eed649de86df5c2097c27ce66c571",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-200-technology.jpg",
+      "gallery": "media/sa-200-technology.mp4",
+      "detail": "media/sa-200-technology-detail.mp4",
+      "sha256": {
+        "poster": "9aab0619fe0a53e5ff4993faee73583f5bca7574ff82143511120f3096f26016",
+        "gallery": "f9147e7a1aa1b0a9435d28b7332c33c9d86f0d8b2e8c38c8d5a4187e2d491316",
+        "detail": "2910af895efae84dba23acca7b07151a44d85a8c089879fe5b9aff6e829e770b"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 50751
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-201": {
+    "status": "partial",
+    "sourceHash": "28dd4ba3af375ffd1abf1dbb04513b79eb5e48bdece493c991843baa70533dcf",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-201-technology.jpg",
+      "gallery": "media/sa-201-technology.mp4",
+      "detail": "media/sa-201-technology-detail.mp4",
+      "sha256": {
+        "poster": "14a7ca22be08e0aa3e50f8e487a488ccee37e3df8f1b79cc888ad90de6cc97ed",
+        "gallery": "7f320293b8b6049dd6726713273227f2b4e41cb9b1891e5a478b6a7a7c7c00d2",
+        "detail": "779c0de68f11bf9b337fcd06b238f721b5c1a31270957f06526e28085e27efec"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 52966
+      }
+    },
+    "date": "2026-10-05",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-202": {
+    "status": "partial",
+    "sourceHash": "e8c948c99ab7e212621063d092458bb1a9f77b755eb8b35fdd84ac28cdb04492",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-202-technology.jpg",
+      "gallery": "media/sa-202-technology.mp4",
+      "detail": "media/sa-202-technology-detail.mp4",
+      "sha256": {
+        "poster": "48a33fa3bc5edd7a91fa670f7a1c872908be7d090bed6246219be2092b733d92",
+        "gallery": "a6c2c8f74f200eee852c83cf4d6f4593b8355b721192b673b57d2887dc317ee4",
+        "detail": "d690938b9b14a8eb889d0669ffafed03e1729b2ec8bdaeb43d75d89de206e7df"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 58480
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-203": {
+    "status": "partial",
+    "sourceHash": "aa517dffe4d250cc36ea435ed5aef4e4d48a6e245e20eebd09021ba50fd51588",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-203-technology.jpg",
+      "gallery": "media/sa-203-technology.mp4",
+      "detail": "media/sa-203-technology-detail.mp4",
+      "sha256": {
+        "poster": "b0ce5ddfde1f085095739fa15b60ae9916fba57f9244c1954cc7709ab01ea1ae",
+        "gallery": "ecc6e72ca2c6b3c300a04d3d9fb92742ca8e9b91b413abe0e9ab593c8a300544",
+        "detail": "13fd890a82aec64dfeb5f5c9bf6a1df0598ab3c12fe1b659267ac8f74e93dfd5"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 42801
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-204": {
+    "status": "partial",
+    "sourceHash": "27454230483748ebbeb9d806e2553ab978e74f79e4efa8935a5b6ce94352cfea",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-204-technology.jpg",
+      "gallery": "media/sa-204-technology.mp4",
+      "detail": "media/sa-204-technology-detail.mp4",
+      "sha256": {
+        "poster": "841d1047329d4d439165fa32f67bef3d211d3d134f59fc944c2410ed5bebc6a9",
+        "gallery": "14c467141d767658d76edea282392f3af6d21e35d9b9502c1d7eb95d9034c3a4",
+        "detail": "39f1a305df55087e69a284ca30c8534fb788f31f845c268b0f251cc4bff33a43"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 50037
+      }
+    },
+    "date": "2026-10-05",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-205": {
+    "status": "partial",
+    "sourceHash": "179a8dd011d8e055d590ee236940edfd07466fdd9282679c5c156cca31e69ab4",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-205-technology.jpg",
+      "gallery": "media/sa-205-technology.mp4",
+      "detail": "media/sa-205-technology-detail.mp4",
+      "sha256": {
+        "poster": "64aea8a7bb92f8ff3e0f94a7f3ab721f4c45d9d2490759856fa64c84ad7ed77a",
+        "gallery": "40ddc0c318924c1b3e5a05e9df778fc8e876c83d0041679eda1e86be1bc312a6",
+        "detail": "de9b24b979ae18349066e2abcab39cc7eee3d5a31c2f915746617d738e71bb73"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 50056
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-206": {
+    "status": "partial",
+    "sourceHash": "605566d64ca91c11cd7ff60e94782a9b5274ebefb78286eb95e1eb381bfb9987",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-206-technology.jpg",
+      "gallery": "media/sa-206-technology.mp4",
+      "detail": "media/sa-206-technology-detail.mp4",
+      "sha256": {
+        "poster": "7452b88993e65d963aaf71c783a7b70ed1d061e0458970742157dcdf8a55d5ea",
+        "gallery": "20a5137de96e51022b2cd7696447a906396d6da5831c1ccca322be1b7bbc12ac",
+        "detail": "9daa08681edbbd0094f48323ae5c3f7077529c4c8b7eccbf202872612a7de71a"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 54849
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-207": {
+    "status": "partial",
+    "sourceHash": "6a72f034e680292130d1af52714173f1bd8f2b3bccfa1876fdff3ee661516646",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-207-technology.jpg",
+      "gallery": "media/sa-207-technology.mp4",
+      "detail": "media/sa-207-technology-detail.mp4",
+      "sha256": {
+        "poster": "fbae98d21ad579edec48765f7ca70aaeda96de0260652877ae93a4711ac8f6d6",
+        "gallery": "29b5fa27d35654c6a5fc217896a69fe134164d011c4b4b6b7264b488b2f2c096",
+        "detail": "27e7788d1dae093b3e5eeccc1e12dbd298c3270a53e01d396ab55079e99ec8a4"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 42692
+      }
+    },
+    "date": "2026-10-05",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-208": {
+    "status": "partial",
+    "sourceHash": "234b997a6c2af7804803422e7a872e7a3d0fb6d9d4a704b4969f13e9f7d78825",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-208-technology.jpg",
+      "gallery": "media/sa-208-technology.mp4",
+      "detail": "media/sa-208-technology-detail.mp4",
+      "sha256": {
+        "poster": "b97890f6bab38f21928537882dfc533acf561d8d5b80e7382ec93abfc6343149",
+        "gallery": "319e986217fde68543d8a9fd5d6de5e0e2a1aa94bafd84eb0bfc515ac00f8465",
+        "detail": "caea7037af1b8f18416dca6df9fd29f4f8452c6bd18f0afdb15b2eb4b8290c11"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 43738
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-209": {
+    "status": "partial",
+    "sourceHash": "143c2811dd3c66c25fad55eb578885f1282e0d8a39657f8a74d273e576bf2f26",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-209-technology.jpg",
+      "gallery": "media/sa-209-technology.mp4",
+      "detail": "media/sa-209-technology-detail.mp4",
+      "sha256": {
+        "poster": "9c6d74b902701eb22b86354da296bc6cd3fa4b6127ce9e8e49e003c5fe60faa3",
+        "gallery": "a7ec97265540d5b87993842e136f59673bb3d5c11d838f9eac76cdb058c28968",
+        "detail": "905f60f48560585a72f7b384b4b1b025486f17fa4fa590bf97d9d671cc3729f5"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 51467
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-210": {
+    "status": "partial",
+    "sourceHash": "5e024e4464b204eb119b5306689aed5979d0b709552f968f2bfc030fb75c1129",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-210-technology.jpg",
+      "gallery": "media/sa-210-technology.mp4",
+      "detail": "media/sa-210-technology-detail.mp4",
+      "sha256": {
+        "poster": "9b90954bc8f2f0834730f813225eab7eaa9bcaf5a611c2f9d3c52d6e50addfd3",
+        "gallery": "1d8fbd2c3cf043f59f0177ab9b561b5dac31fc0e68e5ecad66572e566a1e3fdf",
+        "detail": "3f3f3c2a18686e37bf53330c2a1c5c4bffede3f25be62ccf2866894aa6923e07"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 50431
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-211": {
+    "status": "partial",
+    "sourceHash": "b86f53cc4fb0b726bf955e226f6091e3ac551673cdaa032d129cffb9e6fb1304",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-211-technology.jpg",
+      "gallery": "media/sa-211-technology.mp4",
+      "detail": "media/sa-211-technology-detail.mp4",
+      "sha256": {
+        "poster": "db1adb1dad8c44bb896c2afe2cc2cc0b4fbae7992b40f4177d0abef0cb3e9bac",
+        "gallery": "ccae2bd3d128a2ea579e4f1206d74a9fdcbc44abab4b33fe91238979ce784025",
+        "detail": "b3a2921602c3033fbc03872f8c4f01db8ba76855f32aa1024a558b633519120a"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 50837
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-212": {
+    "status": "partial",
+    "sourceHash": "2c7575ec726d280dc5267c52abb05341422e6554f9b4156b9216e27c277e5940",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-212-technology.jpg",
+      "gallery": "media/sa-212-technology.mp4",
+      "detail": "media/sa-212-technology-detail.mp4",
+      "sha256": {
+        "poster": "e792f6f545fbed95c5fdceb16186e757dcfea6667465bd9fe1b3758794407407",
+        "gallery": "12718434bbac0e1fafb6b0b6734762907968ed10bc0cd7a8137e2f16e0446f71",
+        "detail": "5567b2908f6780d40510f8e74696dfd0c6664c85230576807f9d4cde0b346c03"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 53260
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-213": {
+    "status": "partial",
+    "sourceHash": "85af95eb054e2dcf7f55db189aad05a027403b553893c3b6fe88fafe6a2135c0",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-213-technology.jpg",
+      "gallery": "media/sa-213-technology.mp4",
+      "detail": "media/sa-213-technology-detail.mp4",
+      "sha256": {
+        "poster": "7e439b0e8bd9727240de7e5c7e92523d0cd9d2e900de12803be07cb0d3a8ac31",
+        "gallery": "28971213d9a35a627a087a3a2075d4e8dd6dedff81557c14e6a68dbc5f6c7792",
+        "detail": "f64d825e89b6ac7152c38e843af3479a11666ba92625efede8201135562fce8f"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 55089
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-214": {
+    "status": "partial",
+    "sourceHash": "4ac0bea6f3c1713139f6bfcaa24defb4810930d77f0d92ed8820af769eb9c3fe",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-214-technology.jpg",
+      "gallery": "media/sa-214-technology.mp4",
+      "detail": "media/sa-214-technology-detail.mp4",
+      "sha256": {
+        "poster": "1ea10022d67d19e24a88e3aa33946398ecb78bf645ff6ac88a97a578b580f450",
+        "gallery": "500400da4f2a051008ac15558f6d9d7db1e46604c288525621f677e132f09ca0",
+        "detail": "7eff94de5942be6a82513abfe3c83b62d88fd739c28fd705a9bd1a4aae2ddeae"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 48332
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-215": {
+    "status": "partial",
+    "sourceHash": "f7ee4be60e72425dc78095f9641e39693d1341b6f5b83411631e6e5ed4a405f1",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-215-technology.jpg",
+      "gallery": "media/sa-215-technology.mp4",
+      "detail": "media/sa-215-technology-detail.mp4",
+      "sha256": {
+        "poster": "bbe0ee3e86a98ba2efc4e2152685cd73ee335c2a6b160508c59dc2ec2441da82",
+        "gallery": "20005081794f3bde24e5c32cfb5c782c2f9a2bb005665e7e1c4ff6fc31dd2a5c",
+        "detail": "a725870c508d1c090a291e11226b60c4f68d121faf124ac0bec61484929b8376"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 49984
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-216": {
+    "status": "partial",
+    "sourceHash": "8f1f2bbf0c163c70a2c89fcca37f7c7916eb24e31ba8a723f951cdd09f6edced",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-216-technology.jpg",
+      "gallery": "media/sa-216-technology.mp4",
+      "detail": "media/sa-216-technology-detail.mp4",
+      "sha256": {
+        "poster": "ce2a992381a1fad67dd0731b12b891f954f640b953a485501826df74c782751f",
+        "gallery": "61d4bf7500b740f1138218ad7d81268cbf8e33984168770ab1e68c821ac446a5",
+        "detail": "2c6b97e48aebe12d78385ae3baeaefd48f79abeed21df0ef948ed7280b8c49e1"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 51799
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-217": {
+    "status": "partial",
+    "sourceHash": "76530d175b2e7fe61968d3420197abdcc97e2007e716e8e6827d31c59f67e2c0",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-217-technology.jpg",
+      "gallery": "media/sa-217-technology.mp4",
+      "detail": "media/sa-217-technology-detail.mp4",
+      "sha256": {
+        "poster": "f61a0ed7d68e6a0f1dab94902b167af8352909d5dfc1f0660308c0fca3ab2398",
+        "gallery": "966bf98353524b201d5f5d1fe5e2e35b7ab7ff82631997e9a3bd3f4e155720f7",
+        "detail": "4f3458864c78420ce1209172b1274571a894b958c23904c6bf6b69799f3a8019"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 49982
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-218": {
+    "status": "partial",
+    "sourceHash": "69ef0c18012f4abbc33e40a73ba7ab42c57a4e8a795af4e2ea108734026e4a54",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-218-technology.jpg",
+      "gallery": "media/sa-218-technology.mp4",
+      "detail": "media/sa-218-technology-detail.mp4",
+      "sha256": {
+        "poster": "bb14744eaa888aafc847dfd758eb3904d96d52aa37eb1a526beb3c545e2b824b",
+        "gallery": "97724d0d8b82f09e665e77dc2cf1a2fb8cd92e77f30f19f04dbcced4cb3d401a",
+        "detail": "28e4b1aea0b44209c94a22d590c79c313c654b0e5729f07742d05a358034bc27"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 52605
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-219": {
+    "status": "partial",
+    "sourceHash": "574e4fabd64f2803286024bde79a7474f10186a3724574bea7f72a515cf6ac92",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-219-technology.jpg",
+      "gallery": "media/sa-219-technology.mp4",
+      "detail": "media/sa-219-technology-detail.mp4",
+      "sha256": {
+        "poster": "2eac8f06a556a23b61764fa62adbe0fefb443625faa88ef7203bedcc3063bd42",
+        "gallery": "686f3a4385c03f5dfc27dbc898bffae5440b3c8e819ed8007fc9161f1a8a0b7c",
+        "detail": "243101a1d30303d50765381f4c656640d52c976d659ad2ba0efd9da0802e8403"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 42721
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-220": {
+    "status": "partial",
+    "sourceHash": "a0a9a813bc95e61b6d70e071993997f1fcf7827006c22df85127982596cd5c38",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-220-technology.jpg",
+      "gallery": "media/sa-220-technology.mp4",
+      "detail": "media/sa-220-technology-detail.mp4",
+      "sha256": {
+        "poster": "68b4df43145e7026730f9ebbcc2e3e958ec24cbea099a2f83fdee67efc02a11c",
+        "gallery": "cf67e713ce4d830f6a77c4933dc44d2d0593bc4596274f23b5059a1ceaf99edc",
+        "detail": "29f4ced6eefefb4f429dfc6dc93c26ba40bb04aedf88feecc4e98fd16b2a9365"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 55811
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-221": {
+    "status": "partial",
+    "sourceHash": "81c42d5bbc95008a08f614221e6310e53235436b936b002a53749c201fde4603",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-221-technology.jpg",
+      "gallery": "media/sa-221-technology.mp4",
+      "detail": "media/sa-221-technology-detail.mp4",
+      "sha256": {
+        "poster": "0908aa14da000d15cc0e56a3706ab5fc31c8852f72a8cafe287175a5633efa87",
+        "gallery": "77acbca67280cd266a8a5e7b15a6640cda653d18269858c7824329493afd0a42",
+        "detail": "e688202dff74410afd2e71213457b57f2f409561ef6c51981fe810e63a886575"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 50241
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-222": {
+    "status": "partial",
+    "sourceHash": "0b9c25fe18a224fa48829843df6fae6a732e0b3d17bcdc0b9b5e28fe94f9f4f9",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-222-technology.jpg",
+      "gallery": "media/sa-222-technology.mp4",
+      "detail": "media/sa-222-technology-detail.mp4",
+      "sha256": {
+        "poster": "e2538748671e944efb54e33a3c51ea167477e3cccaacc8c16b11166bbaa01b27",
+        "gallery": "55e87b2ce91a2658157dd411ec970be21195c4639e4e23a37a5b3958b685c5fc",
+        "detail": "76a51113aa12e6fdcb1a9364424fada99123a338727d610d72a1548bab0e5807"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 47703
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-223": {
+    "status": "partial",
+    "sourceHash": "357676363b60306cc9c4ea4a0b87a30264fda748793d353a0b642a1694d5a42d",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-223-technology.jpg",
+      "gallery": "media/sa-223-technology.mp4",
+      "detail": "media/sa-223-technology-detail.mp4",
+      "sha256": {
+        "poster": "b75424577d69574d8b5573f94b4eb7d447613b0a0f7b29085cf478001253e0d7",
+        "gallery": "62da8b36dddc81e0d9c998ef2f20344a3d0a82cc80967f0ec8f6e5bb1627dc72",
+        "detail": "88f31c7b9d639f3bb3bc89afffa875116d4c3f12e4e75ae4fed8b54bcb0211aa"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 50928
+      }
+    },
+    "date": "2026-10-05",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-224": {
+    "status": "partial",
+    "sourceHash": "05c23f78ee705bd434b69fa4b48895bbd80af872c5e5bb2217a6d5094ee7bad0",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-224-technology.jpg",
+      "gallery": "media/sa-224-technology.mp4",
+      "detail": "media/sa-224-technology-detail.mp4",
+      "sha256": {
+        "poster": "5e795fa232d8863bf49fc6e9faebdac70b32063325805cf833f6622733e159d4",
+        "gallery": "f3e8e2c0160cf4a93b5cb4d4af5744ac4da2541d91ea8f1e8297439dee34cdf0",
+        "detail": "a607d542fe04a66507e9309e1a3c08f2c414a06277a4fabafbaf79b98e7d9cfd"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 34913
+      }
+    },
+    "date": "2026-10-04",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-225": {
+    "status": "partial",
+    "sourceHash": "ab27416ccaceac171673a22ffbeeb692f32014371d2e5d065eff0ccd1c98d0ee",
+    "runtime": [
+      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-225-technology.jpg",
+      "gallery": "media/sa-225-technology.mp4",
+      "detail": "media/sa-225-technology-detail.mp4",
+      "sha256": {
+        "poster": "7ce16dfc9f44101597dab4c1233c92633b3c59f2b5bd54d42a04d1336f816228",
+        "gallery": "d8879110fa19c56f6ee07927b9ef12c21fb7a125a7ce87868b8c984d414962a4",
+        "detail": "7a26e939c26226d3ac99c00b5c179b362fe0fb5d65e649f9c957749bcc3df7aa"
+      }
+    },
+    "video": "adapter-required; deterministic export unverified.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 46275
+      }
+    },
+    "date": "2026-10-05",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
   }
 }

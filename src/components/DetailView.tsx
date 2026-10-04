@@ -1,25 +1,11 @@
-import { caseById, caseEvidence } from "../technology/registry";
+import { caseById, caseEvidence, technologyName } from "../technology/registry";
 import { RuntimeView } from "../technology/RuntimeView";
 import { CaseDetails } from "../technology/CaseDetails";
+import { patternMetadata } from "../technology/pattern-library";
 import { LegacyCaseDetails } from "../technology/LegacyCaseDetails";
 import { useEffect, useRef, useState } from "react";
-import {
-  X,
-  Heart,
-  Copy,
-  Check,
-  Download,
-  ArrowUpRight,
-  Play,
-} from "lucide-react";
+import { X, Heart, Copy, Check, Download, Play } from "lucide-react";
 import type { StyleSpec } from "../catalog/schema";
-import {
-  familyLabels,
-  useLabels,
-  intensityLabels,
-  pacingLabels,
-  mediaLabels,
-} from "../catalog/schema";
 import { mediaUrl } from "../lib/playback";
 import { compilePrompt } from "../lib/prompt";
 export function downloadText(name: string, text: string) {
@@ -91,24 +77,6 @@ export function CopyButton({
   );
 }
 
-const paletteRuleLabels: Record<string, string> = {
-  "Foreground text must contrast with its immediate background.":
-    "文字須與其所在的底色保持清晰對比。",
-  "Use accent only for hierarchy, markers or directional focus; preserve muted secondary hierarchy.":
-    "重點色只用於層級、標記與視線引導；輔助色保持低調的次要層次。",
-};
-function RuleGroup({ title, items }: { title: string; items: string[] }) {
-  return (
-    <section className="rule-group">
-      <h3>{title}</h3>
-      <ul>
-        {items.map((item, i) => (
-          <li key={i}>{item}</li>
-        ))}
-      </ul>
-    </section>
-  );
-}
 export function DetailView({
   style,
   onClose,
@@ -195,6 +163,9 @@ export function DetailView({
             <span className="detail-id">
               {style.id} <span> / v{style.version}</span>
             </span>
+            {["rendered", "reviewed"].includes(style.status) && (
+              <span className="review-preview-label">本機審查預覽 · 尚未發布</span>
+            )}
           </div>
           <div>
             <button
@@ -238,6 +209,34 @@ export function DetailView({
                 </div>
               )}
             </div>
+            <div className="visual-caption">
+              <span>{style.englishName}</span>
+              <span>
+                1280 × 720 · {style.preview.fps} fps ·{" "}
+                {technologyCase?.durationSeconds ??
+                  style.preview.detailDuration}
+                s
+              </span>
+            </div>
+            <section className="style-intro">
+              <div className="style-family">
+                {technologyCase?.direction ?? style.family}
+              </div>
+              <h1>{style.name}</h1>
+              <p>{style.description}</p>
+              <div className="tag-list">
+                <span
+                  className="primary-tech-tag"
+                  title="主要製作技術"
+                  aria-label={`主要製作技術：${technologyName(technologyCase?.primary ?? "remotion")}`}
+                >
+                  {technologyName(technologyCase?.primary ?? "remotion")}
+                </span>
+                {[...style.moods, ...style.tags].map((tag, i) => (
+                  <span key={`${tag}-${i}`}>{tag}</span>
+                ))}
+              </div>
+            </section>
             {technologyCase && (
               <>
                 <RuntimeView definition={technologyCase} />
@@ -245,144 +244,11 @@ export function DetailView({
               </>
             )}
             {!technologyCase && <LegacyCaseDetails style={style} />}
-            <div className="visual-caption">
-              <span>{style.englishName}</span>
-              <span>
-                {technologyCase ? 1280 : style.preview.width} ×{" "}
-                {technologyCase ? 270 : style.preview.height} ·{" "}
-                {style.preview.fps} fps ·{" "}
-                {technologyCase
-                  ? (technologyCase.durationSeconds ?? 4)
-                  : style.preview.detailDuration}
-                s
-              </span>
-            </div>
-            <div className="mobile-preview-copy">
-              <CopyButton text={prompt} label="複製風格規格" />
-            </div>
-            <section className="style-intro">
-              <div className="style-family">
-                {technologyCase
-                  ? technologyCase.direction
-                  : familyLabels[style.family]}
-              </div>
-              <h1>{style.name}</h1>
-              <p>{style.description}</p>
-              <div className="tag-list">
-                {[...style.moods, ...style.tags].map((tag, i) => (
-                  <span key={`${tag}-${i}`}>{tag}</span>
-                ))}
-              </div>
-            </section>
-            {!technologyCase && (
+            {technologyCase && (
               <>
-                <div className="style-facts">
-                  <div>
-                    <span>動態強度</span>
-                    <strong>{intensityLabels[style.motion.intensity]}</strong>
-                  </div>
-                  <div>
-                    <span>節奏</span>
-                    <strong>{pacingLabels[style.motion.pacing]}</strong>
-                  </div>
-                  <div>
-                    <span>媒材</span>
-                    <strong>{mediaLabels[style.media.treatment]}</strong>
-                  </div>
-                  <div>
-                    <span>適合用途</span>
-                    <strong>
-                      {style.useCases.map((u) => useLabels[u]).join("、")}
-                    </strong>
-                  </div>
+                <div className="mobile-preview-copy">
+                  <CopyButton text={prompt} label="複製風格規格" />
                 </div>
-                <section className="palette-section" aria-label="風格色彩">
-                  <h3>色彩與對比</h3>
-                  <div className="palette-swatches">
-                    {(
-                      [
-                        ["background", "底色"],
-                        ["foreground", "文字"],
-                        ["accent", "重點"],
-                        ["secondary", "輔助"],
-                      ] as const
-                    ).map(([key, label]) => (
-                      <div key={key}>
-                        <i
-                          style={{ backgroundColor: style.palette[key] }}
-                          aria-hidden="true"
-                        />
-                        <span>
-                          {label}
-                          <small>{style.palette[key]}</small>
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                  {style.palette.rules.map((rule, i) => (
-                    <p key={i}>
-                      {paletteRuleLabels[rule] ??
-                        "其他色彩關係請見完整提示詞與 JSON。"}
-                    </p>
-                  ))}
-                </section>
-                <div className="detail-rules">
-                  <RuleGroup
-                    title="不可缺少的視覺特徵"
-                    items={[style.description]}
-                  />
-                  <RuleGroup
-                    title="字體與版面"
-                    items={[
-                      `${style.typography.family}；缺字或無法載入時，使用支援繁體中文的系統字型。`,
-                      ...style.presentation.typography,
-                      ...style.presentation.layout,
-                    ]}
-                  />
-                  <RuleGroup
-                    title="動態、轉場與節奏"
-                    items={style.presentation.motion}
-                  />
-                  <RuleGroup
-                    title="媒材、深度與效果"
-                    items={style.presentation.media}
-                  />
-                  <RuleGroup
-                    title="避免事項"
-                    items={style.presentation.avoid}
-                  />
-                  <RuleGroup
-                    title="製作需求與限制"
-                    items={[
-                      ...style.presentation.limitations,
-                      "製作需求：React 與同版 Remotion、SVG 元件；需支援繁體中文的字型。",
-                    ]}
-                  />
-                </div>
-                <section className="provenance">
-                  <h3>來源與審查</h3>
-                  <p>原創設計 · {style.provenance.creator}</p>
-                  <p>
-                    原創構圖與範例插畫，無第三方素材；針對 16:9
-                    進行影格與循環檢查。
-                  </p>
-                  {style.provenance.references.map((r) => (
-                    <a
-                      key={r.url}
-                      href={r.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {r.title}
-                      <ArrowUpRight size={12} />
-                    </a>
-                  ))}
-                  <p>
-                    視覺與動態審查：{style.review.reviewer} ·{" "}
-                    {style.review.date}
-                  </p>
-                  <p className="muted">{style.review.notes}</p>
-                </section>
               </>
             )}
           </div>
@@ -413,6 +279,7 @@ export function DetailView({
                         ? {
                             collection: "technology",
                             definition: technologyCase,
+                            patternLibrary: patternMetadata(technologyCase),
                             verification: caseEvidence(style.id),
                             technicalReferenceIds: [
                               technologyCase.primary,

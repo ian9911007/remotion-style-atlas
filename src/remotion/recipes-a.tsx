@@ -2606,19 +2606,26 @@ const GeometricMosaic: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
+  const sequentialPose = (index: number, count: number) => {
+    const slot = 0.62 / count;
+    const start = 0.04 + index * slot;
+    const settle = 0.76 + ((count - 1 - index) * 0.17) / count;
+    return beat(p, start, start + slot * 0.68, settle, settle + 0.045);
+  };
   return (
     <Canvas background={bg}>
       {Array.from({ length: 12 }, (_, i) => {
         const x = 72 + (i % 6) * 190,
           y = 55 + Math.floor(i / 6) * 225,
           c = [a, fg, s][i % 3],
-          local = Math.max(0, Math.min(1, (p * 12 - i) / 0.8)),
-          pulse = Math.sin(Math.PI * local),
-          scale = 1 + pulse * 0.035;
+          pulse = sequentialPose(i, 12),
+          scale = 1 + pulse * 0.15;
         return (
           <g
             key={i}
-            transform={`translate(${x + 92},${y + 102}) scale(${scale})`}
+            data-sequence-node={`mosaic-${i}`}
+            data-sequence-progress={pulse}
+            transform={`translate(${x + 92},${y + 102 - 22 * pulse}) scale(${scale})`}
           >
             <rect
               x={-90}
@@ -2626,7 +2633,7 @@ const GeometricMosaic: React.FC<RecipeProps> = ({ style, progress: p }) => {
               width={180}
               height={204}
               fill={c}
-              opacity={0.12 + 0.24 * pulse}
+              opacity={0.12 + 0.40 * pulse}
             />
             <rect
               x={-89}

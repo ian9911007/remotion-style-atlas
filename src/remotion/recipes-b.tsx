@@ -99,6 +99,14 @@ const TransitFlaps: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
+  const sequentialBuild = (index: number, count: number) =>
+    beat(
+      p,
+      0.06 + (index * 0.58) / count,
+      0.06 + ((index + 1) * 0.58) / count,
+      0.76 + ((count - 1 - index) * 0.22) / count,
+      0.76 + ((count - index) * 0.22) / count,
+    );
   return (
     <Canvas background={bg}>
       <Text x={57} y={96} size={61} color={fg} weight={700}>
@@ -110,72 +118,74 @@ const TransitFlaps: React.FC<RecipeProps> = ({ style, progress: p }) => {
       <Text x={60} y={142} size={23} color={fg}>
         下一站，新的可能。
       </Text>
-      <Text x={60} y={207} size={15} color={s} spacing={3}>
+      <Text x={80} y={207} size={15} color={s} spacing={3}>
         TIME
       </Text>
-      <Text x={288} y={207} size={15} color={s} spacing={3}>
+      <Text x={405} y={207} size={15} color={s} spacing={3}>
         DESTINATION
       </Text>
-      <Text x={1100} y={207} size={15} color={s} spacing={3}>
+      <Text x={1080} y={207} size={15} color={s} spacing={3}>
         GATE
       </Text>
-      {["NORTH", "STUDIO", "GARDEN", "FUTURE"].map((word, row) => (
-        <g key={word}>
-          <Text x={60} y={280 + row * 95} size={39} color={a} font={mono}>
-            {["09:12", "10:08", "10:36", "11:24"][row]}
-          </Text>
-          {word
-            .padEnd(7, " ")
-            .split("")
-            .map((letter, col) => {
-              const index = row * 7 + col;
-              const local = Math.max(0, Math.min(1, (p * 28 - index) / 0.86));
-              const flip = 1 - 0.72 * Math.sin(Math.PI * local);
-              return (
-              <g
-                key={col}
-                transform={`translate(0,${(270 + row * 95) * (1 - flip)}) scale(1,${flip})`}
-              >
-                <rect
-                  x={290 + col * 105}
-                  y={234 + row * 95}
-                  width={92}
-                  height={72}
-                  rx={3}
-                  fill={local > 0 && local < 1 ? a : s}
-                />
-                <Text
-                  x={336 + col * 105}
-                  y={288 + row * 95}
-                  size={53}
-                  color={fg}
-                  anchor="middle"
-                  font={mono}
-                >
-                  {letter}
-                </Text>
-                <Line
-                  x1={292 + col * 105}
-                  x2={380 + col * 105}
-                  y1={270 + row * 95}
-                  y2={270 + row * 95}
-                  color={bg}
-                  width={2}
-                />
-              </g>
-            );})}
-          <Text
-            x={1189}
-            y={280 + row * 95}
-            size={37}
-            color={a}
-            anchor="end"
-            font={mono}
+      {["NORTH", "STUDIO", "GARDEN", "FUTURE"].map((word, row) => {
+        const reveal = sequentialBuild(row, 4);
+        const rowY = 232 + row * 96;
+        const fold = Math.max(
+          0.025,
+          reveal < 0.5 ? 1 - reveal * 2 : reveal * 2 - 1,
+        );
+        const frontVisible = reveal <= 0.5;
+        const backVisible = reveal > 0.5;
+        const transform = `translate(0,${rowY + 38}) scale(1,${fold}) translate(0,${-(rowY + 38)})`;
+        return (
+          <g
+            key={word}
+            data-sequence-node={`row-${row}`}
+            data-sequence-progress={reveal}
           >
-            {row + 1}
-          </Text>
-        </g>
-      ))}
+            <rect
+              x={60}
+              y={rowY}
+              width={1140}
+              height={76}
+              rx={3}
+              fill={s}
+              opacity={0.48}
+            />
+            <g transform={transform} opacity={frontVisible ? 1 : 0}>
+              <rect x={60} y={rowY} width={1140} height={76} rx={3} fill={s} />
+              <Text x={80} y={rowY + 49} size={32} color={fg} font={mono}>
+                --:--
+              </Text>
+              <Text x={405} y={rowY + 49} size={38} color={fg} font={mono}>
+                {"— — — —"}
+              </Text>
+              <Text x={1080} y={rowY + 49} size={32} color={fg} font={mono}>
+                --
+              </Text>
+            </g>
+            <g transform={transform} opacity={backVisible ? 1 : 0}>
+              <rect x={60} y={rowY} width={1140} height={76} rx={3} fill={a} />
+              <Text x={80} y={rowY + 49} size={32} color={bg} font={mono}>
+                {["09:12", "10:08", "10:36", "11:24"][row]}
+              </Text>
+              <Text
+                x={405}
+                y={rowY + 49}
+                size={38}
+                color={bg}
+                font={mono}
+                weight={700}
+              >
+                {word}
+              </Text>
+              <Text x={1080} y={rowY + 49} size={32} color={bg} font={mono}>
+                {String(row + 1).padStart(2, "0")}
+              </Text>
+            </g>
+          </g>
+        );
+      })}
       <Line x1={60} y1={648} x2={1200} y2={648} color={s} />
       <Text x={60} y={683} size={16} color={s} spacing={3}>
         FICTIONAL DESTINATIONS / MECHANICAL LETTERFORM STUDY
@@ -183,6 +193,7 @@ const TransitFlaps: React.FC<RecipeProps> = ({ style, progress: p }) => {
     </Canvas>
   );
 };
+
 const TypeScroll: React.FC<RecipeProps> = ({ style, progress: p }) => {
   const { background: bg, foreground: fg, accent: a } = style.palette;
   const shift = beat(p, 0.04, 0.32, 0.64, 0.98) * 192;
@@ -653,8 +664,14 @@ const CalendarLeaves: React.FC<RecipeProps> = ({ style, progress: p }) => {
       {Array.from({ length: 35 }, (_, i) => {
         const x = 52 + (i % 7) * 167,
           y = 249 + Math.floor(i / 7) * 77;
-        const fill = i < 31 ? Math.max(0, Math.min(1, (p - 0.025 - i * 0.019) / 0.012)) : 0;
-        const clear = i < 31 ? Math.max(0, Math.min(1, (p - (0.78 + (30 - i) * 0.006)) / 0.012)) : 0;
+        const fill =
+          i < 31
+            ? Math.max(0, Math.min(1, (p - 0.025 - i * 0.019) / 0.012))
+            : 0;
+        const clear =
+          i < 31
+            ? Math.max(0, Math.min(1, (p - (0.78 + (30 - i) * 0.006)) / 0.012))
+            : 0;
         const highlight = fill * (1 - clear);
         return (
           <g key={i}>
@@ -670,7 +687,11 @@ const CalendarLeaves: React.FC<RecipeProps> = ({ style, progress: p }) => {
               {i < 31 ? String(i + 1).padStart(2, "0") : ""}
             </Text>
             {i < 31 && (
-              <path d={`M${x + 115} ${y}h40v${14 + 32 * highlight}Z`} fill={bg} opacity={0.3 + 0.7 * highlight} />
+              <path
+                d={`M${x + 115} ${y}h40v${14 + 32 * highlight}Z`}
+                fill={bg}
+                opacity={0.3 + 0.7 * highlight}
+              />
             )}
           </g>
         );
@@ -742,8 +763,22 @@ const SonarDepth: React.FC<RecipeProps> = ({ style, progress: p }) => {
         const echo = Math.exp(-age * 6);
         return (
           <g>
-            <circle cx={528} cy={225} r={5 + 15 * echo} fill="none" stroke={a} strokeWidth={2} opacity={0.72 * echo} />
-            <circle cx={528} cy={225} r={5} fill={a} opacity={0.35 + 0.65 * echo} />
+            <circle
+              cx={528}
+              cy={225}
+              r={5 + 15 * echo}
+              fill="none"
+              stroke={a}
+              strokeWidth={2}
+              opacity={0.72 * echo}
+            />
+            <circle
+              cx={528}
+              cy={225}
+              r={5}
+              fill={a}
+              opacity={0.35 + 0.65 * echo}
+            />
           </g>
         );
       })()}
@@ -947,7 +982,12 @@ const BotanicalAnatomy: React.FC<RecipeProps> = ({ style, progress: p }) => {
 };
 const AcousticScore: React.FC<RecipeProps> = ({ style, progress: p }) => {
   const { background: bg, foreground: fg, accent: a } = style.palette;
-  const b = beat(p);
+  const sequence = (index: number, count: number) => {
+    const slot = 0.62 / count;
+    const start = 0.04 + index * slot;
+    const settle = 0.76 + ((count - 1 - index) * 0.18) / count;
+    return beat(p, start, start + slot * 0.72, settle, settle + 0.045);
+  };
   return (
     <Canvas background={bg}>
       <Text x={57} y={97} size={71} color={fg} font={serif}>
@@ -969,26 +1009,36 @@ const AcousticScore: React.FC<RecipeProps> = ({ style, progress: p }) => {
               opacity={0.6}
             />
           ))}
-          {[0, 1, 2, 3, 4, 5, 6].map((i) => (
-            <g key={i} transform={`translate(${b * (i % 2 ? 12 : -12)},0)`}>
-              <ellipse
-                cx={141 + i * 150}
-                cy={263 + row * 118 + (((i + row) % 4) - 2) * 9}
-                rx={13}
-                ry={9}
-                fill={i % 3 === 0 ? a : fg}
-                transform={`rotate(-24,${141 + i * 150},${263 + row * 118})`}
-              />
-              <Line
-                x1={153 + i * 150}
-                x2={153 + i * 150}
-                y1={263 + row * 118 + (((i + row) % 4) - 2) * 9}
-                y2={207 + row * 118}
-                color={fg}
-                width={3}
-              />
-            </g>
-          ))}
+          {[0, 1, 2, 3, 4, 5, 6].map((i) => {
+            const cluster = Math.floor(i / 2);
+            const pulse = sequence(row * 4 + cluster, 12);
+            const direction = (row + cluster) % 2 ? -1 : 1;
+            return (
+              <g
+                key={i}
+                data-sequence-node={`note-cluster-${row * 4 + cluster}`}
+                data-sequence-progress={pulse}
+                transform={`translate(${direction * 46 * pulse},${-9 * pulse})`}
+              >
+                <ellipse
+                  cx={141 + i * 150}
+                  cy={263 + row * 118 + (((i + row) % 4) - 2) * 9}
+                  rx={13}
+                  ry={9}
+                  fill={i % 3 === 0 ? a : fg}
+                  transform={`rotate(-24,${141 + i * 150},${263 + row * 118})`}
+                />
+                <Line
+                  x1={153 + i * 150}
+                  x2={153 + i * 150}
+                  y1={263 + row * 118 + (((i + row) % 4) - 2) * 9}
+                  y2={207 + row * 118}
+                  color={fg}
+                  width={3}
+                />
+              </g>
+            );
+          })}
         </g>
       ))}
       <Text x={63} y={666} size={19} color={fg} font={mono}>
@@ -1000,18 +1050,19 @@ const AcousticScore: React.FC<RecipeProps> = ({ style, progress: p }) => {
     </Canvas>
   );
 };
+
 const MuseumLabels: React.FC<RecipeProps> = ({ style, progress: p }) => {
   const { background: bg, foreground: fg, accent: a } = style.palette;
   const b = beat(p);
   return (
     <Canvas background={bg}>
-        <Media
-          asset="product"
+      <Media
+        asset="product"
         x={55}
         y={75}
         width={723}
         height={570}
-          scale={1.025 + 0.085 * turn(p)}
+        scale={1.025 + 0.085 * turn(p)}
         filter="saturate(.55)"
       />
       <rect x={805} y={162} width={399} height={366} fill={a} opacity={0.1} />
@@ -1051,9 +1102,18 @@ const MedicalContours: React.FC<RecipeProps> = ({ style, progress: p }) => {
   return (
     <Canvas background={bg}>
       <defs>
-        <filter id="b-contour-glow" x="-50%" y="-50%" width="200%" height="200%">
+        <filter
+          id="b-contour-glow"
+          x="-50%"
+          y="-50%"
+          width="200%"
+          height="200%"
+        >
           <feGaussianBlur stdDeviation="8" result="blur" />
-          <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+          <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
         </filter>
       </defs>
       <Text x={58} y={96} size={34} color={fg} weight={700}>
@@ -1083,14 +1143,7 @@ const MedicalContours: React.FC<RecipeProps> = ({ style, progress: p }) => {
       <g filter="url(#b-contour-glow)">
         <Line x1={190} y1={scanY} x2={728} y2={scanY} color={a} width={3} />
       </g>
-      <Line
-        x1={190}
-        y1={scanY}
-        x2={728}
-        y2={scanY}
-        color={fg}
-        width={1}
-      />
+      <Line x1={190} y1={scanY} x2={728} y2={scanY} color={fg} width={1} />
       <Cross x={462} y={361} color={a} size={27} />
       <Line x1={791} y1={163} x2={791} y2={630} color={s} />
       <Text x={834} y={229} size={50} color={fg} font={mono}>
@@ -1361,7 +1414,9 @@ const IsometricRoom: React.FC<RecipeProps> = ({ style, progress: p }) => {
       <Text x={64} y={314} size={25} color={fg}>
         讓想法，有自己的房間。
       </Text>
-      <g transform={`translate(840 280) scale(${cameraPush}) translate(-840 -280)`}>
+      <g
+        transform={`translate(840 280) scale(${cameraPush}) translate(-840 -280)`}
+      >
         <polygon points="477,361 831,170 1202,373 844,594" fill={s} />
         <polygon
           points="477,361 477,133 831,-54 831,170"
@@ -1374,7 +1429,9 @@ const IsometricRoom: React.FC<RecipeProps> = ({ style, progress: p }) => {
           opacity={0.65}
         />
         <polygon points="554,374 832,223 1111,375 836,539" fill={bg} />
-        <g transform={`translate(840 400) scale(${foregroundPush}) translate(-840 -400)`}>
+        <g
+          transform={`translate(840 400) scale(${foregroundPush}) translate(-840 -400)`}
+        >
           <polygon points="697,366 831,293 1000,386 866,459" fill={a} />
           <polygon points="697,366 697,448 866,541 866,459" fill={fg} />
           <polygon
@@ -1483,7 +1540,9 @@ const ZineStamps: React.FC<RecipeProps> = ({ style, progress: p }) => {
   const page = beat(p, 0.17, 0.38, 0.79, 0.99);
   return (
     <Canvas background={bg}>
-      <g transform={`rotate(-6,430,355) translate(${cover * 28},${-cover * 15})`}>
+      <g
+        transform={`rotate(-6,430,355) translate(${cover * 28},${-cover * 15})`}
+      >
         <rect x={53} y={97} width={711} height={539} fill={s} />
         <Media
           asset="architecture"
@@ -1798,8 +1857,15 @@ const FiscalWaterfall: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const b = 0.55 + 0.45 * beat(p);
   const tops = [470, 396, 318, 357, 275, 314, 238, 204];
+  const sequentialBuild = (index: number, count: number) =>
+    beat(
+      p,
+      0.06 + (index * 0.58) / count,
+      0.06 + ((index + 1) * 0.58) / count,
+      0.76 + ((count - 1 - index) * 0.22) / count,
+      0.76 + ((count - index) * 0.22) / count,
+    );
   return (
     <Canvas background={bg}>
       <Text x={54} y={95} size={56} color={fg} weight={700}>
@@ -1808,7 +1874,15 @@ const FiscalWaterfall: React.FC<RecipeProps> = ({ style, progress: p }) => {
       <Text x={59} y={146} size={25} color={fg}>
         每一步，都改變全貌。
       </Text>
-      <Text x={1195} y={113} size={69} color={a} anchor="end" font={mono}>
+      <Text
+        x={1195}
+        y={113}
+        size={69}
+        color={a}
+        anchor="end"
+        font={mono}
+        opacity={0.2 + 0.8 * sequentialBuild(7, 8)}
+      >
         +28%
       </Text>
       {[0, 1, 2, 3].map((i) => (
@@ -1827,37 +1901,45 @@ const FiscalWaterfall: React.FC<RecipeProps> = ({ style, progress: p }) => {
       ))}
       {tops.map((top, i) => {
         const prev = i ? tops[i - 1] : 563;
-        const current = 563 - (563 - top) * b,
-          start = 563 - (563 - prev) * b;
+        const sequence = sequentialBuild(i, tops.length);
+        const reveal = 0.55 + 0.45 * sequence;
+        const current = prev + (top - prev) * reveal;
+        const start = prev;
         return (
-          <g key={i}>
-            <rect
-              x={119 + i * 135}
-              y={Math.min(current, start)}
-              width={87}
-              height={Math.max(8, Math.abs(start - current))}
-              fill={i === 0 || i === 7 ? fg : top < prev ? a : s}
-            />
-            {i < 7 && (
-              <Line
-                x1={206 + i * 135}
-                x2={254 + i * 135}
-                y1={current}
-                y2={current}
-                color={fg}
-                dash="4 4"
+          <g
+            key={i}
+            data-sequence-node={`bar-${i}`}
+            data-sequence-progress={sequence}
+          >
+            <g opacity={0.42 + 0.58 * sequence}>
+              <rect
+                x={119 + i * 135}
+                y={Math.min(current, start)}
+                width={87}
+                height={Math.max(8, Math.abs(start - current))}
+                fill={i === 0 || i === 7 ? fg : top < prev ? a : s}
               />
-            )}
-            <Text
-              x={162 + i * 135}
-              y={current - 16}
-              size={21}
-              color={fg}
-              anchor="middle"
-              font={mono}
-            >
-              {[84, 42, 39, -18, 46, -23, 52, 31][i]}
-            </Text>
+              {i < 7 && (
+                <Line
+                  x1={206 + i * 135}
+                  x2={206 + i * 135 + 48 * sequence}
+                  y1={current}
+                  y2={current}
+                  color={fg}
+                  dash="4 4"
+                />
+              )}
+              <Text
+                x={162 + i * 135}
+                y={current - 16}
+                size={21}
+                color={fg}
+                anchor="middle"
+                font={mono}
+              >
+                {[84, 42, 39, -18, 46, -23, 52, 31][i]}
+              </Text>
+            </g>
             <Text
               x={162 + i * 135}
               y={613}
@@ -1877,6 +1959,7 @@ const FiscalWaterfall: React.FC<RecipeProps> = ({ style, progress: p }) => {
     </Canvas>
   );
 };
+
 const MechanicalClock: React.FC<RecipeProps> = ({ style, progress: p }) => {
   const {
     background: bg,
@@ -1993,7 +2076,14 @@ const MagneticPoetry: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const b = Math.round(beat(p) * 6) / 6;
+  const sequentialBuild = (index: number, count: number) =>
+    beat(
+      p,
+      0.06 + (index * 0.58) / count,
+      0.06 + ((index + 1) * 0.58) / count,
+      0.76 + ((count - 1 - index) * 0.22) / count,
+      0.76 + ((count - index) * 0.22) / count,
+    );
   return (
     <Canvas background={bg}>
       <Text x={55} y={94} size={21} color={fg} spacing={3}>
@@ -2010,42 +2100,58 @@ const MagneticPoetry: React.FC<RecipeProps> = ({ style, progress: p }) => {
         [608, 330, 500, "THOUGHT"],
         [68, 495, 518, "AND KEEP"],
         [630, 495, 482, "IT OPEN"],
-      ].map(([x, y, width, t], i) => (
-        <g
-          key={i}
-          transform={`translate(${(i % 2 ? -1 : 1) * b * 18},${((i % 3) - 1) * b * 8}) rotate(${(i % 2 ? 1 : -1) * (1 - b) * 2},${Number(x) + Number(width) / 2},${Number(y) + 57})`}
-        >
-          <rect
-            x={Number(x) + 5}
-            y={Number(y) + 7}
-            width={Number(width)}
-            height={115}
-            fill={fg}
-            opacity={0.15}
-          />
-          <rect
-            x={Number(x)}
-            y={Number(y)}
-            width={Number(width)}
-            height={115}
-            rx={4}
-            fill={i === 4 ? a : s}
-          />
-          <Text
-            x={Number(x) + Number(width) / 2}
-            y={Number(y) + 80}
-            size={65}
-            color={fg}
-            weight={700}
-            anchor="middle"
+      ].map(([x, y, width, t], i) => {
+        const progress = sequentialBuild(i, 7);
+        const scatter = [
+          [-42, -36, -5],
+          [45, -32, 4],
+          [-40, -40, 5],
+          [-46, 0, 4],
+          [42, 0, -5],
+          [-40, 20, 4],
+          [42, 20, -4],
+        ][i];
+        const settle = 1 - progress;
+        return (
+          <g
+            key={i}
+            data-sequence-node={`word-${i}`}
+            data-sequence-progress={progress}
+            transform={`translate(${scatter[0] * settle},${scatter[1] * settle}) rotate(${scatter[2] * settle},${Number(x) + Number(width) / 2},${Number(y) + 57})`}
           >
-            {t}
-          </Text>
-        </g>
-      ))}
+            <rect
+              x={Number(x) + 5}
+              y={Number(y) + 7}
+              width={Number(width)}
+              height={115}
+              fill={fg}
+              opacity={0.15}
+            />
+            <rect
+              x={Number(x)}
+              y={Number(y)}
+              width={Number(width)}
+              height={115}
+              rx={4}
+              fill={i === 4 ? a : s}
+            />
+            <Text
+              x={Number(x) + Number(width) / 2}
+              y={Number(y) + 80}
+              size={65}
+              color={fg}
+              weight={700}
+              anchor="middle"
+            >
+              {t}
+            </Text>
+          </g>
+        );
+      })}
     </Canvas>
   );
 };
+
 const ContourType: React.FC<RecipeProps> = ({ style, progress: p }) => {
   const { background: bg, foreground: fg, accent: a } = style.palette;
   const b = turn(p);
@@ -2100,26 +2206,59 @@ const CardboardStage: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const w = wave(p) * 30;
+  const sequence = (index: number, count: number) => {
+    const slot = 0.62 / count;
+    const start = 0.04 + index * slot;
+    const settle = 0.76 + ((count - 1 - index) * 0.18) / count;
+    return beat(p, start, start + slot * 0.72, settle, settle + 0.045);
+  };
+  const birdX = 96 * Math.sin(2 * Math.PI * p);
+  const birdY = -6 * Math.sin(4 * Math.PI * p);
   return (
     <Canvas background={bg}>
       <Text x={52} y={83} size={23} color={fg} spacing={3}>
         A LITTLE WORLD, ON PAPER
       </Text>
       <rect x={49} y={125} width={1182} height={526} fill={fg} />
+      <defs>
+        <clipPath id="cardboard-stage-window">
+          <rect x={49} y={125} width={1182} height={526} />
+        </clipPath>
+      </defs>
+      <g clipPath="url(#cardboard-stage-window)">
       {[0, 1, 2].map((i) => (
-        <path
-          key={i}
-          d={`M${80 + i * 91} 624V${331 + i * 13}Q640 ${27 + i * 112} ${1200 - i * 91} ${331 + i * 13}V624H${1120 - i * 88}V${355 + i * 13}Q640 ${110 + i * 106} ${160 + i * 88} ${355 + i * 13}V624Z`}
-          fill={i === 1 ? a : s}
-          opacity={1 - i * 0.14}
-        />
+        (() => {
+          const build = sequence(i, 4);
+          return (
+            <path
+              key={i}
+              data-sequence-node={`arch-${i}`}
+              data-sequence-progress={build}
+              transform={`translate(0,${30 * (1 - build)})`}
+              d={`M${80 + i * 91} 624V${331 + i * 13}Q640 ${27 + i * 112} ${1200 - i * 91} ${331 + i * 13}V624H${1120 - i * 88}V${355 + i * 13}Q640 ${110 + i * 106} ${160 + i * 88} ${355 + i * 13}V624Z`}
+              fill={i === 1 ? a : s}
+              opacity={1 - i * 0.14}
+            />
+          );
+        })()
       ))}
-      <path
-        d="M309 584 427 376 558 584 661 416 836 584 941 378 1067 584Z"
-        fill={bg}
-      />
-      <g transform={`translate(${w},0)`}>
+      {(() => {
+        const build = sequence(3, 4);
+        return (
+          <path
+            data-sequence-node="landscape"
+            data-sequence-progress={build}
+            transform={`translate(0,${38 * (1 - build)})`}
+            d="M309 584 427 376 558 584 661 416 836 584 941 378 1067 584Z"
+            fill={bg}
+          />
+        );
+      })()}
+      <g
+        data-sequence-node="bird"
+        data-sequence-progress={p}
+        transform={`translate(${birdX},${birdY})`}
+      >
         <path
           d="M437 417Q484 365 522 426Q552 375 600 417"
           fill="none"
@@ -2127,16 +2266,18 @@ const CardboardStage: React.FC<RecipeProps> = ({ style, progress: p }) => {
           strokeWidth={9}
         />
       </g>
-      <Text x={640} y={524} size={53} color={fg} anchor="middle" font={serif}>
+      <Text x={91} y={211} size={38} color={bg} font={serif}>
         Inside a small story.
       </Text>
       <rect x={276} y={597} width={728} height={24} fill={a} />
+      </g>
       <Text x={57} y={691} size={25} color={fg}>
         紙上舞台，容得下整個世界。
       </Text>
     </Canvas>
   );
 };
+
 const TileMap: React.FC<RecipeProps> = ({ style, progress: p }) => {
   const {
     background: bg,
@@ -2144,7 +2285,17 @@ const TileMap: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const b = beat(p);
+  const featured = Array.from({ length: 40 }, (_, i) => i).filter(
+    (i) =>
+      i % 4 === 0 && !((i % 8 === 3 || i % 8 === 4) && Math.floor(i / 8) > 0),
+  );
+  const sequentialPulse = (index: number, count: number) => {
+    if (index < 0) return 0;
+    const slot = 0.62 / count;
+    const start = 0.04 + index * slot;
+    const settle = 0.76 + ((count - 1 - index) * 0.18) / count;
+    return beat(p, start, start + slot * 0.72, settle, settle + 0.045);
+  };
   return (
     <Canvas background={bg}>
       <Text x={56} y={91} size={47} color={fg} weight={700}>
@@ -2159,11 +2310,10 @@ const TileMap: React.FC<RecipeProps> = ({ style, progress: p }) => {
           x = 70 + col * 143,
           y = 165 + row * 97,
           isWater = (col === 3 || col === 4) && row > 0;
+        const order = featured.indexOf(i);
+        const pulse = sequentialPulse(order, featured.length);
         return (
-          <g
-            key={i}
-            transform={`translate(0,${!isWater && i % 4 === 0 ? -34 * b : 0})`}
-          >
+          <g key={i}>
             <rect
               x={x}
               y={y + 6}
@@ -2171,8 +2321,14 @@ const TileMap: React.FC<RecipeProps> = ({ style, progress: p }) => {
               height={87}
               rx={3}
               fill={fg}
-              opacity={0.13}
+              opacity={order >= 0 ? 0.1 + 0.12 * pulse : 0.13}
+              transform={order >= 0 ? `translate(0,${12 * pulse})` : undefined}
             />
+            <g
+              data-sequence-node={order >= 0 ? `land-${i}` : undefined}
+              data-sequence-progress={order >= 0 ? pulse : undefined}
+              transform={order >= 0 ? `translate(0,${-48 * pulse})` : undefined}
+            >
             <rect
               x={x}
               y={y}
@@ -2212,6 +2368,7 @@ const TileMap: React.FC<RecipeProps> = ({ style, progress: p }) => {
                 strokeWidth={16}
               />
             )}
+            </g>
           </g>
         );
       })}
@@ -2221,6 +2378,7 @@ const TileMap: React.FC<RecipeProps> = ({ style, progress: p }) => {
     </Canvas>
   );
 };
+
 const BookBinding: React.FC<RecipeProps> = ({ style, progress: p }) => {
   const {
     background: bg,
@@ -2467,7 +2625,9 @@ const LightboxProof: React.FC<RecipeProps> = ({ style, progress: p }) => {
         stroke={fg}
         strokeWidth={2}
       />
-      <g transform={`rotate(-3,429,360) translate(${b * 26},${-b * 8}) scale(${1 + 0.025 * b})`}>
+      <g
+        transform={`rotate(-3,429,360) translate(${b * 26},${-b * 8}) scale(${1 + 0.025 * b})`}
+      >
         <rect x={73} y={150} width={596} height={411} fill="#26282b" />
         <Media
           asset="architecture"
@@ -2481,7 +2641,9 @@ const LightboxProof: React.FC<RecipeProps> = ({ style, progress: p }) => {
           01 / SPACE / ORIGINAL SAMPLE
         </Text>
       </g>
-      <g transform={`rotate(5,913,379) translate(${-b * 24},${b * 7}) scale(${1 + 0.035 * b})`}>
+      <g
+        transform={`rotate(5,913,379) translate(${-b * 24},${b * 7}) scale(${1 + 0.035 * b})`}
+      >
         <rect x={657} y={191} width={535} height={344} fill="#272629" />
         <Media
           asset="botanical"
@@ -2509,69 +2671,206 @@ const LightboxProof: React.FC<RecipeProps> = ({ style, progress: p }) => {
 };
 const PencilDrafting: React.FC<RecipeProps> = ({ style, progress: p }) => {
   const { background: bg, foreground: fg, accent: a } = style.palette;
-  const b = Math.max(0, Math.min(1, (p - 0.04) / 0.66));
-  const routeLength = b * 861;
-  const penX = routeLength < 290 ? 242 : routeLength < 571 ? 242 + routeLength - 290 : 523;
-  const penY = routeLength < 290 ? 592 - routeLength : routeLength < 571 ? 302 : 302 + routeLength - 571;
-  const penAngle = routeLength < 290 ? 0 : routeLength < 571 ? 90 : 180;
+  const draw = beat(p, 0.04, 0.58, 0.73, 0.97);
+  // One continuous pencil route makes its stroke reveal and moving tip share a clock.
+  const route = [
+    [310, 525],
+    [310, 306],
+    [530, 420],
+    [530, 600],
+    [900, 452],
+    [900, 242],
+    [685, 145],
+    [310, 306],
+    [530, 420],
+    [685, 310],
+    [900, 452],
+    [685, 565],
+    [530, 420],
+    [685, 310],
+    [685, 145],
+  ];
+  const lengths = route
+    .slice(1)
+    .map(([x, y], i) => Math.hypot(x - route[i][0], y - route[i][1]));
+  const totalLength = lengths.reduce((sum, length) => sum + length, 0);
+  let remaining = totalLength * draw;
+  let penX = route[0][0],
+    penY = route[0][1],
+    pencilAngle = 0;
+  const segmentProgress: number[] = [];
+  for (let i = 0; i < lengths.length; i++) {
+    const fraction = Math.min(1, remaining / lengths[i]);
+    penX = route[i][0] + (route[i + 1][0] - route[i][0]) * fraction;
+    penY = route[i][1] + (route[i + 1][1] - route[i][1]) * fraction;
+    pencilAngle =
+      (Math.atan2(
+        route[i + 1][1] - route[i][1],
+        route[i + 1][0] - route[i][0],
+      ) *
+        180) /
+      Math.PI;
+    segmentProgress.push(fraction);
+    if (remaining <= lengths[i]) break;
+    remaining -= lengths[i];
+  }
   return (
     <Canvas background={bg}>
-      <Text x={54} y={94} size={35} color={fg} font={serif}>
-        Before the final form.
-      </Text>
-      <Text x={58} y={137} size={23} color={fg}>
-        從一條線，開始想像。
-      </Text>
-      {[0, 1, 2].map((i) => (
-        <g
-          key={i}
-          transform={`translate(${i * 1.4},${i * 0.7})`}
-          opacity={i ? 0.24 : 0.85}
-        >
-          <path
-            d="M242 592V302H523V592M523 302 922 169V470L523 592M242 302 635 168H922"
-            fill="none"
-            stroke={fg}
-            strokeWidth={2}
-          />
-          <path
-            d="M282 560V340H483V560M574 359 867 256V420L574 509"
-            fill="none"
-            stroke={fg}
-            strokeWidth={1.4}
-          />
-          <path
-            d="M574 435 867 339M638 335V486M720 306V460M798 277V438"
-            stroke={fg}
-            strokeWidth={1.3}
-          />
-        </g>
-      ))}
-      <Line x1={239} y1={626} x2={923} y2={626} color={a} />
-      <Line x1={975} y1={168} x2={975} y2={592} color={a} />
-      <Text x={584} y={653} size={17} color={fg} anchor="middle" font={mono}>
-        ILLUSTRATIVE SCALE / 1:50
-      </Text>
       <path
-        d="M242 592V302H523V592"
-        fill="none"
-        stroke={a}
-        strokeWidth={5}
-        pathLength={1}
-        strokeDasharray={1}
-        strokeDashoffset={1 - b}
-        opacity={0.92}
+        d="M0 82H1280M0 638H1280"
+        stroke={fg}
+        strokeWidth={1}
+        opacity={0.14}
       />
-      <g transform={`translate(${penX - 7},${penY - 76}) rotate(${penAngle},7,76)`}>
-        <rect width={14} height={127} fill={a} />
-        <path d="M0 127 7 154 14 127Z" fill={fg} />
+      {Array.from({ length: 15 }, (_, i) => (
+        <Line
+          key={`v${i}`}
+          x1={i * 90}
+          x2={i * 90}
+          y1={82}
+          y2={638}
+          color={fg}
+          width={1}
+          opacity={0.055}
+        />
+      ))}
+      {Array.from({ length: 7 }, (_, i) => (
+        <Line
+          key={`h${i}`}
+          x1={0}
+          x2={1280}
+          y1={140 + i * 72}
+          y2={140 + i * 72}
+          color={fg}
+          width={1}
+          opacity={0.045}
+        />
+      ))}
+      <Text x={58} y={66} size={15} color={a} spacing={2} font={mono}>
+        FIELD NOTE 097 / FORM STUDY
+      </Text>
+      <Text x={58} y={117} size={39} color={fg} font={serif} weight={700}>
+        讓鉛筆，沿著結構行走。
+      </Text>
+      <Text x={1200} y={67} size={14} color={fg} anchor="end" font={mono}>
+        PERSPECTIVE / 01
+      </Text>
+      <Text x={1200} y={94} size={13} color={a} anchor="end" font={mono}>
+        MEASURE · TRACE · REFINE
+      </Text>
+      {/* Faint construction geometry stays registered beneath the live graphite pass. */}
+      <g fill="none" stroke={fg} strokeWidth={1.6} opacity={0.25}>
+        <path d="M310 525 530 600 900 452 685 365 310 525M310 306 530 420 900 272 685 185 310 306M310 306V525M530 420V600M900 272V452M685 185V365M310 306 530 420 685 310 900 452" />
+        <path
+          d="M355 509 530 568 850 440M355 326 530 418M685 202 856 274M530 420 685 492 856 423"
+          strokeDasharray="5 7"
+        />
+        <path d="M365 468V344M400 482V362M435 494V380M730 201V344M770 221V328M810 240V311" />
       </g>
-      <Text x={1189} y={104} size={17} color={fg} anchor="end" font={mono}>
-        097 / DRAFT
+      <path
+        d="M262 550 930 483M292 593 898 350"
+        stroke={a}
+        strokeWidth={1}
+        strokeDasharray="3 8"
+        opacity={0.55}
+      />
+      <path
+        d="M300 545v18m0-9h18m578-123v18m0-9h18M670 167v18m0-9h18"
+        stroke={a}
+        strokeWidth={1.4}
+        opacity={0.7}
+      />
+      <Line x1={310} y1={617} x2={530} y2={617} color={a} />
+      {[0, 1, 2, 3, 4, 5].map((i) => (
+        <Line
+          key={i}
+          x1={310 + i * 44}
+          x2={310 + i * 44}
+          y1={612}
+          y2={622}
+          color={a}
+          width={1}
+        />
+      ))}
+      <Text x={420} y={643} size={13} color={fg} anchor="middle" font={mono}>
+        6.4 m
+      </Text>
+      <Line x1={952} y1={272} x2={952} y2={452} color={a} />
+      {[0, 1, 2, 3, 4].map((i) => (
+        <Line
+          key={i}
+          x1={947}
+          x2={957}
+          y1={272 + i * 45}
+          y2={272 + i * 45}
+          color={a}
+          width={1}
+        />
+      ))}
+      <Text x={977} y={365} size={13} color={fg} font={mono}>
+        4.8 m
+      </Text>
+      {lengths.map((_, i) => (
+        <path
+          key={i}
+          data-sequence-node={`edge-${i}`}
+          data-sequence-progress={segmentProgress[i] ?? (draw >= 1 ? 1 : 0)}
+          d={`M${route[i][0]} ${route[i][1]}L${route[i + 1][0]} ${route[i + 1][1]}`}
+          fill="none"
+          stroke={a}
+          strokeWidth={3.4}
+          strokeLinecap="round"
+          pathLength={1}
+          strokeDasharray={1}
+          strokeDashoffset={1 - (segmentProgress[i] ?? (draw >= 1 ? 1 : 0))}
+          opacity={0.98}
+        />
+      ))}
+      <g
+        data-pencil-tip={`${penX},${penY}`}
+        transform={`translate(${penX},${penY}) rotate(${pencilAngle})`}
+      >
+        <path
+          d="M-164-8  -19-8 -5-3 0 0 -5 3 -19 8 -164 8 -174 0Z"
+          fill="#51473a"
+          opacity={0.28}
+          transform="translate(0,5)"
+        />
+        <path
+          d="M-164-8 -18-8 -5-3 0 0 -5 3 -18 8 -164 8 -174 0Z"
+          fill="#c88a43"
+          stroke="#72502f"
+          strokeWidth={1.3}
+        />
+        <path
+          d="M-18-8 -5-3 0 0 -5 3 -18 8Z"
+          fill="#e5c18a"
+          stroke="#72502f"
+          strokeWidth={1}
+        />
+        <path d="M-5-3 0 0 -5 3Z" fill="#353632" />
+        <path
+          d="M-156-7H-27"
+          stroke="#f0d09a"
+          strokeWidth={1.5}
+          opacity={0.8}
+        />
+        <path
+          d="M-164-8V8M-159-8V8M-154-8V8"
+          stroke="#8b9290"
+          strokeWidth={1.3}
+        />
+      </g>
+      <Text x={58} y={676} size={13} color={fg} font={mono}>
+        GRAPHITE ROUTE / 1:50
+      </Text>
+      <Text x={1200} y={676} size={13} color={a} anchor="end" font={mono}>
+        CONSTRUCTION LINES → FINISHED EDGE
       </Text>
     </Canvas>
   );
 };
+
 const ReceiptRoll: React.FC<RecipeProps> = ({ style, progress: p }) => {
   const {
     background: bg,
@@ -2711,7 +3010,18 @@ const PaperTessellation: React.FC<RecipeProps> = ({ style, progress: p }) => {
     accent: a,
     secondary: s,
   } = style.palette;
-  const b = turn(p);
+  const sequentialPulse = (index: number, count: number) => {
+    if (index < 0) return 0;
+    const slot = 0.92 / count;
+    const start = 0.04 + index * slot;
+    return beat(
+      p,
+      start,
+      start + slot * 0.35,
+      start + slot * 0.6,
+      start + slot,
+    );
+  };
   return (
     <Canvas background={bg}>
       <Text x={57} y={91} size={50} color={fg} font={serif}>
@@ -2723,9 +3033,16 @@ const PaperTessellation: React.FC<RecipeProps> = ({ style, progress: p }) => {
       {Array.from({ length: 18 }, (_, i) => {
         const x = 153 + (i % 6) * 194,
           y = 268 + Math.floor(i / 6) * 139,
-          fold = 22 + 34 * b;
+          row = Math.floor(i / 6),
+          order = row * 6 + (row % 2 ? 5 - (i % 6) : i % 6),
+          pulse = sequentialPulse(order, 18),
+          fold = -58 + 116 * pulse;
         return (
-          <g key={i}>
+          <g
+            key={i}
+            data-sequence-node={`fold-${order}`}
+            data-sequence-progress={pulse}
+          >
             <polygon
               points={`${x - 90},${y} ${x},${y - 68} ${x + 90},${y} ${x},${y + 68}`}
               fill={s}

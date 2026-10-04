@@ -131,8 +131,13 @@ const mount: Mount = async (root, options) => {
       const particle = container.particles.get(i);
       if (!particle) continue;
       if (network) {
-        let x = 65 + seeded(i) * 830 + Math.sin(time * 0.45 + i) * 22,
-          y = 120 + seeded(i + 900) * 365 + Math.cos(time * 0.5 + i) * 18;
+        const progress = ((((time % 4) + 4) % 4) / 4) * 5;
+        const group = Math.min(4, Math.floor(progress));
+        const local = Math.max(0, Math.min(1, progress - group));
+        const amount =
+          Math.floor(i / 18) === group ? Math.sin(local * Math.PI) ** 2 : 0;
+        let x = 65 + seeded(i) * 830 + Math.sin(i * 0.72) * 22 * amount,
+          y = 120 + seeded(i + 900) * 365 + Math.cos(i * 0.64) * 18 * amount;
         const dx = x - pointer.x,
           dy = y - pointer.y,
           distance = Math.hypot(dx, dy);

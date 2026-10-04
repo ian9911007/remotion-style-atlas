@@ -5,7 +5,9 @@ import { mapRevealCases } from "../../technology-runtime/src/map-reveal-cases";
 import { videoAssetCases } from "../../technology-runtime/src/video-asset-cases";
 import { dataMapCases } from "../../technology-runtime/src/data-map-cases";
 import { gpuSceneCases } from "../../technology-runtime/src/gpu-scene-cases";
+import { physicsElementCases } from "../../technology-runtime/src/physics-element-cases";
 import type { StyleSpec } from "../catalog/schema";
+import { patternSearchTerms } from "./pattern-library";
 import type { CaseDefinition } from "../../technology-runtime/src/types";
 import { domCases } from "../../technology-runtime/src/dom-cases";
 import technologies from "./technologies.generated.json";
@@ -41,6 +43,7 @@ export const technologyCases: CaseDefinition[] = [
   ...supplementCases,
   ...worldMapCases,
   ...mapRevealCases,
+  ...physicsElementCases,
 ];
 export const caseById = new Map(technologyCases.map((c) => [c.id, c]));
 export function caseEvidence(id: string): Evidence {
@@ -59,6 +62,7 @@ export function projectCase(c: CaseDefinition): StyleSpec {
     englishName: c.englishTitle,
     description: c.summary,
     aliases: [
+      ...patternSearchTerms(c),
       c.direction,
       c.renderer,
       ...c.capabilities,
@@ -117,7 +121,9 @@ export function projectCase(c: CaseDefinition): StyleSpec {
       gallery:
         e.preview?.gallery ?? `media/${c.id.toLowerCase()}-technology.mp4`,
       detail:
-        e.preview?.detail ?? e.preview?.gallery ?? `media/${c.id.toLowerCase()}-technology.mp4`,
+        e.preview?.detail ??
+        e.preview?.gallery ??
+        `media/${c.id.toLowerCase()}-technology.mp4`,
       poster: e.preview?.poster ?? `media/${c.id.toLowerCase()}-technology.jpg`,
       // Gallery media stays lightweight; detail media and posters match the
       // legacy 1280x720 source quality contract.

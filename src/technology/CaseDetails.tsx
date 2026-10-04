@@ -1,4 +1,5 @@
 import type { CaseDefinition } from "../../technology-runtime/src/types";
+import { patternMetadata, patternLabel, sourceLabel } from "./pattern-library";
 import {
   caseEvidence,
   technologyCatalog,
@@ -7,7 +8,12 @@ import {
 } from "./registry";
 export function CaseDetails({ definition: c }: { definition: CaseDefinition }) {
   const e = caseEvidence(c.id);
+  const pattern = patternMetadata(c);
   const rows: [string, string][] = [
+    ["視覺模式", pattern?.patterns.map(patternLabel).join(" · ") ?? "尚未分類"],
+    ["參考／靈感來源", pattern?.sources.map(sourceLabel).join(" · ") ?? "尚未標註；不由實作技術推論"],
+    ["模式關鍵字", pattern?.keywords.join(" · ") || "尚未標註"],
+    ["模式成本提示", pattern?.performanceNote ?? "尚未評估；量測證據另列"],
     ["展示能力", c.capabilities.join(" · ")],
     ["主要技術", technologyName(c.primary)],
     [
@@ -30,7 +36,7 @@ export function CaseDetails({ definition: c }: { definition: CaseDefinition }) {
     ["備援", c.fallback],
     [
       "無障礙與低動態",
-      "尊重系統低動態偏好；播放需主動啟動，可暫停與停止；Canvas 內容以本頁文字補充。",
+      "開啟詳情時載入案例；尊重系統低動態偏好並可暫停或定位時間，關閉詳情會釋放執行期資源；Canvas 內容以本頁文字補充。",
     ],
     ["影片適用性", `${c.video} · ${e.video ?? "尚未驗證逐幀輸出"}`],
     [

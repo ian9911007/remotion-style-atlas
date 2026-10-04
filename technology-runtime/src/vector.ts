@@ -44,6 +44,7 @@ const mount: Mount = async (root, { variant }) => {
   if (variant.startsWith("rough")) {
     const r = rough.svg(draw.node);
     const group = draw.group();
+    const rangeColumns: SVGGElement[] = [];
     if (variant === "rough-diagram") {
       [
         [80, 160, "INPUT"],
@@ -90,8 +91,13 @@ const mount: Mount = async (root, { variant }) => {
         .font({ size: 25, family: "serif", fill: "#344137" });
     } else {
       for (let i = 0; i < 5; i++) {
-        group.node.append(
-          r.rectangle(100 + i * 155, 140 + i * 20, 90, 250 - i * 30, {
+        const column = draw.group();
+        group.add(column);
+        const x = 100 + i * 155,
+          y = 140 + i * 20,
+          height = 250 - i * 30;
+        column.node.append(
+          r.rectangle(x, y, 90, height, {
             seed: 20 + i,
             fill: "#a9bfaa",
             fillStyle: "cross-hatch",
@@ -99,13 +105,14 @@ const mount: Mount = async (root, { variant }) => {
             roughness: 1.8,
           }),
         );
-        group.node.append(
-          r.line(145 + i * 155, 100 + i * 20, 145 + i * 155, 180 + i * 20, {
+        column.node.append(
+          r.line(x + 45, y - 40, x + 45, y + 40, {
             seed: 40 + i,
             stroke: "#c74f39",
             strokeWidth: 3,
           }),
         );
+        rangeColumns.push(column.node);
       }
       draw
         .text("ESTIMATES / RANGES, NOT CERTAINTY")
@@ -115,7 +122,15 @@ const mount: Mount = async (root, { variant }) => {
     return handle(
       root,
       (t) => {
-        group.opacity(0.5 + 0.5 * Math.min(1, t));
+        const p = ((((t % 4) + 4) % 4) / 4) * rangeColumns.length;
+        rangeColumns.forEach((node, i) => {
+          const local = Math.max(0, Math.min(1, p - i));
+          const amount = Math.sin(local * Math.PI) ** 2;
+          node.style.opacity = String(0.58 + amount * 0.42);
+          node.style.transformBox = "fill-box";
+          node.style.transformOrigin = "50% 100%";
+          node.style.transform = `translateY(${-8 * amount}px) scaleY(${1 + 0.06 * amount})`;
+        });
       },
       () => draw.remove(),
     );

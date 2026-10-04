@@ -53,7 +53,7 @@ export const worldMapCases: CaseDefinition[] = [
     title: "真實世界地圖與城市連線",
     englishTitle: "World city connection atlas",
     summary:
-      "真實國界與海岸底圖上，從臺北逐步描繪四條大圓地圖連線；選取城市可切換地理鏡頭與距離資訊，航線為示意。",
+      "滿版真實世界底圖上，從臺北逐步描繪四條大圓地圖連線；選取城市可切換地理鏡頭，航線均為示意。",
     primary: "maplibre",
     supporting: [
       {
@@ -69,12 +69,12 @@ export const worldMapCases: CaseDefinition[] = [
       "geographic-camera",
       "city-selection",
     ],
-    direction: "層次完整的國際交通編輯地圖",
+    direction: "滿版世界地圖與地理連線",
     rationale:
-      "霧藍海域、紙感陸地、細緯線與銅色航線分開資料層級；城市標籤、距離卡與圖例使地理關係可讀。",
+      "世界底圖填滿整個案例畫布，霧藍海域、紙感陸地、國界線與銅色航線清楚分層；城市選取與縮放控制以輕量疊加方式留在地圖上，不保留側欄文字。",
     why: "MapLibre 的實際地理相機、GeoJSON 圖層與地點選取適合可平移縮放的世界據點展示；D3 只負責球面幾何。",
     instructions:
-      "點選五個城市按鈕或地圖節點；可拖曳地圖、使用＋／−縮放，再以「世界總覽」恢復自動鏡頭。",
+      "在滿版地圖上點選城市節點或底部城市按鈕；可拖曳平移、使用＋／−縮放，再以「世界總覽」恢復自動鏡頭。",
     dependencies: ["maplibre-gl", "d3"],
     visual: {
       background: "#edf1ee",
@@ -86,6 +86,7 @@ export const worldMapCases: CaseDefinition[] = [
       "Render actual bundled Natural Earth country geometry with MapLibre GeoJSON layers, local worker and no remote tiles.",
       "Use geographic great-circle interpolation for illustrative routes; split dateline crossings and retain real city coordinates.",
       "Keep source attribution, dated-boundary caveat, route legend and keyboard-equivalent city selection visible.",
+      "Fill the complete 960 by 540 case canvas with the geographic map; use only compact in-map labels and controls, with no adjacent text panel or route-list sidebar.",
     ],
   },
   {

@@ -2,7 +2,16 @@
 import * as echarts from "echarts";
 import type { Mount } from "./types";
 import { shell, button, wave } from "./data-shared";
-const mount: Mount = async (root, { variant, signal }) => {
+export function echartsLoopState(seconds: number) {
+  const progress =
+    (1 - Math.cos(2 * Math.PI * ((Math.max(0, seconds) % 4) / 4))) / 2;
+  const day = progress * 6;
+  const from = Math.floor(day),
+    to = Math.min(6, from + 1),
+    fraction = day - from;
+  return { from, to, mix: fraction * fraction * (3 - 2 * fraction) };
+}
+const mount: Mount = async (root, { variant, signal, reducedMotion }) => {
   const heat = variant === "heatmap";
   let selected = 0,
     last = -1;
@@ -21,6 +30,8 @@ const mount: Mount = async (root, { variant, signal }) => {
     height: 374,
     devicePixelRatio: Math.min(devicePixelRatio, 1.5),
   });
+  let manual = false,
+    heatInitialized = false;
   const days = ["週一", "週二", "週三", "週四", "週五", "週六", "週日"];
   const values = Array.from({ length: 7 }, (_, d) =>
     Array.from({ length: 12 }, (_, h) => [
@@ -31,10 +42,23 @@ const mount: Mount = async (root, { variant, signal }) => {
   ).flat();
   const draw = (seconds: number) => {
     const step = Math.floor(seconds * 4);
-    if (step === last) return;
+    if (!heat && step === last) return;
     last = step;
     if (heat) {
-      chart.setOption({
+      const state = manual
+        ? { from: selected, to: selected, mix: 0 }
+        : echartsLoopState(reducedMotion ? 0 : seconds);
+      if (!manual) selected = state.mix < 0.5 ? state.from : state.to;
+      const profile = (day: number) =>
+        values.filter((value) => value[1] === day).map((value) => value[2]);
+      const from = profile(state.from),
+        to = profile(state.to);
+      const focusWeight = (day: number) =>
+        state.from === state.to
+          ? Number(day === state.from)
+          : Number(day === state.from) * (1 - state.mix) +
+            Number(day === state.to) * state.mix;
+      const option: echarts.EChartsOption = {
         animation: false,
         backgroundColor: "transparent",
         textStyle: { color: "#dce6e8" },
@@ -76,7 +100,10 @@ const mount: Mount = async (root, { variant, signal }) => {
           {
             id: "matrix",
             type: "heatmap",
-            data: values,
+            data: values.map((value) => ({
+              value,
+              itemStyle: { opacity: 0.4 + 0.6 * focusWeight(value[1]) },
+            })),
             itemStyle: { borderWidth: 3, borderColor: "#14202a" },
             emphasis: { itemStyle: { borderColor: "#fff", borderWidth: 2 } },
           },
@@ -85,7 +112,9 @@ const mount: Mount = async (root, { variant, signal }) => {
             type: "line",
             xAxisIndex: 1,
             yAxisIndex: 1,
-            data: values.filter((v) => v[1] === selected).map((v) => v[2]),
+            data: from.map(
+              (value, hour) => value + (to[hour] - value) * state.mix,
+            ),
             symbol: "circle",
             symbolSize: 7,
             lineStyle: { color: "#f0cd83", width: 3 },
@@ -93,8 +122,12 @@ const mount: Mount = async (root, { variant, signal }) => {
             areaStyle: { color: "#cfb976", opacity: 0.14 },
           },
         ],
-      });
-      caption.textContent = `原創示意資料 · ${days[selected]}剖面 · 點選任一熱區可連動下方折線`;
+      };
+      chart.setOption(heatInitialized ? { series: option.series } : option);
+      heatInitialized = true;
+      caption.textContent = manual
+        ? `原創示意資料 · ${days[selected]}剖面 · 點選熱區連動下方折線`
+        : "原創示意資料 · 週一至週日依序往返 · 連續補間呈現相鄰日期剖面";
     } else {
       const n = 34;
       const data = Array.from({ length: n }, (_, i) =>
@@ -163,16 +196,23 @@ const mount: Mount = async (root, { variant, signal }) => {
   };
   chart.on("click", (event: any) => {
     if (heat && event.seriesId === "matrix") {
-      selected = event.data[1];
+      manual = true;
+      selected = (Array.isArray(event.data) ? event.data : event.data.value)[1];
       last = -1;
       draw(0);
     }
   });
   button(controls, heat ? "下一日" : "重設觀測窗", signal, () => {
+    if (heat) manual = true;
     selected = (selected + 1) % 7;
     last = -1;
     draw(0);
   });
+  if (heat)
+    button(controls, "自動展示", signal, () => {
+      manual = false;
+      draw(0);
+    });
   draw(0);
   return {
     seek: draw,

@@ -9,9 +9,19 @@ import {
   localSites,
   localRoute,
 } from "./data-shared";
-const mount: Mount = async (root, { variant, signal }) => {
+export function leafletLoopState(seconds: number) {
+  const progress =
+    (1 - Math.cos(2 * Math.PI * ((Math.max(0, seconds) % 4) / 4))) / 2;
+  const position = 1 + 6 * progress;
+  const from = Math.min(6, Math.floor(position)),
+    to = Math.min(7, from + 1),
+    part = position - from;
+  return { from, to, mix: part * part * (3 - 2 * part), position };
+}
+const mount: Mount = async (root, { variant, signal, reducedMotion }) => {
   const route = variant === "waypoints";
-  let index = 0;
+  let index = 0,
+    manual = false;
   const { stage, controls, caption } = shell(
     root,
     route
@@ -70,7 +80,11 @@ const mount: Mount = async (root, { variant, signal }) => {
       localRoute.map((p) => [p[1], p[0]] as L.LatLngTuple),
       { color: "#a65737", weight: 4, dashArray: "8 8" },
     ).addTo(map);
+  const trail = route
+    ? L.polyline([], { color: "#8f452d", weight: 5, opacity: 0.9 }).addTo(map)
+    : null;
   function show(i: number) {
+    if (route) manual = true;
     index = i;
     const site = localSites[i];
     markers.forEach((marker, n) => marker.setRadius(n === i ? 13 : 7));
@@ -91,11 +105,64 @@ const mount: Mount = async (root, { variant, signal }) => {
     }
   });
   button(controls, "縮放視野", signal, () => {
+    if (route) manual = true;
     map.setZoom(map.getZoom() === 12.75 ? 13.25 : 12.75, { animate: false });
   });
+  const draw = (seconds: number) => {
+    if (!route || manual) return;
+    const state = leafletLoopState(reducedMotion ? 0 : seconds);
+    index = Math.round((state.position - 1) / 2);
+    const a = localRoute[state.from],
+      b = localRoute[state.to];
+    const center: L.LatLngTuple = [
+      a[1] + (b[1] - a[1]) * state.mix,
+      a[0] + (b[0] - a[0]) * state.mix,
+    ];
+    map.setView(center, map.getZoom(), { animate: false });
+    trail!.setLatLngs([
+      ...localRoute
+        .slice(1, state.from + 1)
+        .map((point) => [point[1], point[0]] as L.LatLngTuple),
+      center,
+    ]);
+    markers.forEach((marker, i) => {
+      const distance = Math.abs(state.position - (1 + i * 2));
+      const strength = Math.max(0, 1 - distance / 2);
+      marker.setRadius(7 + 6 * strength * strength * (3 - 2 * strength));
+    });
+    caption.textContent =
+      "原創地理示意 · 四站依序往返 · 主時鐘同步控制路線、標記與地圖中心";
+  };
+  if (route) {
+    map.on("dragstart", () => {
+      manual = true;
+    });
+    stage.addEventListener(
+      "keydown",
+      (event) => {
+        if (
+          [
+            "ArrowLeft",
+            "ArrowRight",
+            "ArrowUp",
+            "ArrowDown",
+            "+",
+            "-",
+          ].includes(event.key)
+        )
+          manual = true;
+      },
+      { signal },
+    );
+    button(controls, "自動展示", signal, () => {
+      manual = false;
+      draw(0);
+    });
+  }
   map.invalidateSize();
+  draw(0);
   return {
-    seek: () => {},
+    seek: draw,
     dispose: () => {
       map.remove();
       root.replaceChildren();

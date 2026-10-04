@@ -112,6 +112,9 @@ export function StyleCard({
             <h2>{style.name}</h2>
             <span>{style.id}</span>
           </div>
+          {["rendered", "reviewed"].includes(style.status) && (
+            <span className="review-preview-label">本機審查預覽 · 尚未發布</span>
+          )}
           <p>
             {caseById.has(style.id)
               ? `技術案例 · ${{ ready: "已就緒", partial: "部分完成", blocked: "受阻", unverified: "待驗證" }[caseEvidence(style.id).status]}`

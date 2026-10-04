@@ -47,7 +47,10 @@ import { StyleCard } from "./components/StyleCard";
 import { DetailView, CopyButton, downloadText } from "./components/DetailView";
 import { ReferenceInbox } from "./components/ReferenceInbox";
 import "./app.css";
+import { patternMetadata, patternTaxonomy } from "./technology/pattern-library";
 type Filters = {
+  pattern: string;
+  source: string;
   family: string;
   intensity: string;
   pacing: string;
@@ -64,6 +67,8 @@ type Filters = {
   medium: string;
 };
 const emptyFilters: Filters = {
+  pattern: "",
+  source: "",
   family: "",
   intensity: "",
   pacing: "",
@@ -158,6 +163,10 @@ export function App() {
         (!filters.collection ||
           (caseById.has(s.id) ? "technology" : "legacy") ===
             filters.collection) &&
+        (!filters.pattern ||
+          !!patternMetadata(caseById.get(s.id) ?? { id: s.id })?.patterns.includes(filters.pattern)) &&
+        (!filters.source ||
+          !!patternMetadata(caseById.get(s.id) ?? { id: s.id })?.sources.includes(filters.source)) &&
         (!filters.technology ||
           [
             caseById.get(s.id)?.primary,
@@ -239,6 +248,12 @@ export function App() {
   function openStyle(style: StyleSpec) {
     returnFocus.current = document.activeElement as HTMLElement;
     history.pushState(null, "", `#/style/${style.id}`);
+    setDetail(style);
+  }
+  function navigateDetail(id: string) {
+    const style = catalog.find((candidate) => candidate.id === id);
+    if (!style) return;
+    history.replaceState(null, "", `#/style/${style.id}`);
     setDetail(style);
   }
   function closeStyle() {
@@ -422,6 +437,16 @@ export function App() {
                       c.capabilities.map((x) => [x, `${c.title} / ${x}`]),
                     ),
                   ),
+                },
+                {
+                  key: "pattern",
+                  label: "視覺模式",
+                  values: Object.fromEntries(patternTaxonomy.patterns.map((p) => [p.id, p.label])),
+                },
+                {
+                  key: "source",
+                  label: "參考／靈感來源",
+                  values: Object.fromEntries(patternTaxonomy.sources.map((s) => [s.id, s.label])),
                 },
                 {
                   key: "direction",
@@ -751,11 +776,25 @@ export function App() {
           </button>
         </div>
       )}
-      <SearchShortcut />
+      <SearchShortcut
+        caseIds={results.map((style) => style.id)}
+        detailId={detail?.id ?? null}
+        onNavigate={navigateDetail}
+      />
     </>
   );
 }
-function SearchShortcut() {
+function SearchShortcut({
+  caseIds,
+  detailId,
+  onNavigate,
+}: {
+  caseIds: string[];
+  detailId: string | null;
+  onNavigate: (id: string) => void;
+}) {
+  const latest = useRef({ caseIds, detailId, onNavigate });
+  latest.current = { caseIds, detailId, onNavigate };
   useEffect(() => {
     const listener = (e: KeyboardEvent) => {
       const target = e.target as HTMLElement;
@@ -763,7 +802,13 @@ function SearchShortcut() {
       const typing =
         ["INPUT", "TEXTAREA", "SELECT"].includes(target.tagName) ||
         target.isContentEditable;
-      if (e.key === "/" && !typing && !document.querySelector("dialog[open]")) {
+      const dialog = document.querySelector<HTMLDialogElement>(
+        ".detail-dialog[open]",
+      );
+      const dialogOwnsArrows = !!target.closest(
+        "input[type='range'], [contenteditable='true']",
+      );
+      if (e.key === "/" && !typing && !dialog) {
         e.preventDefault();
         (
           document.querySelector(
@@ -773,10 +818,19 @@ function SearchShortcut() {
       }
       if (
         !typing &&
-        !document.querySelector("dialog[open]") &&
-        (e.key === "ArrowLeft" || e.key === "ArrowRight") &&
-        (target === document.body || galleryCard)
+        !dialogOwnsArrows &&
+        (e.key === "ArrowLeft" || e.key === "ArrowRight")
       ) {
+        if (dialog) {
+          const { caseIds, detailId, onNavigate } = latest.current;
+          const current = detailId ? caseIds.indexOf(detailId) : -1;
+          const next = current + (e.key === "ArrowRight" ? 1 : -1);
+          e.preventDefault();
+          if (current >= 0 && next >= 0 && next < caseIds.length)
+            onNavigate(caseIds[next]);
+          return;
+        }
+        if (target !== document.body && !galleryCard) return;
         const cards = [
           ...document.querySelectorAll<HTMLButtonElement>(
             ".gallery-grid .card-open",
@@ -793,10 +847,21 @@ function SearchShortcut() {
       }
       if (
         !typing &&
-        !document.querySelector("dialog[open]") &&
-        galleryCard &&
         (e.key === "ArrowUp" || e.key === "ArrowDown")
       ) {
+        if (dialog && !dialogOwnsArrows) {
+          const scroller = dialog.querySelector<HTMLElement>(".detail-shell");
+          if (!scroller) return;
+          e.preventDefault();
+          scroller.scrollBy({
+            top:
+              (e.key === "ArrowDown" ? 1 : -1) *
+              Math.round(scroller.clientHeight * 0.2),
+            behavior: "auto",
+          });
+          return;
+        }
+        if (dialog || !galleryCard) return;
         e.preventDefault();
         window.scrollBy({
           top:

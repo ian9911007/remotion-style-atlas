@@ -647,6 +647,20 @@ dialog::backdrop {
   font-size: 11px;
   color: #c6d0bd;
 }
+
+.review-preview-label {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 0.35rem;
+  padding: 0.18rem 0.42rem;
+  border: 1px solid #c8894b;
+  border-radius: 3px;
+  color: #f0c38f;
+  font-size: 0.68rem;
+  line-height: 1.35;
+  letter-spacing: 0.035em;
+}
 .detail-id > span {
   color: #73816a;
 }
@@ -712,6 +726,14 @@ dialog::backdrop {
   border-radius: 3px;
   font-size: 9px;
   padding: 4px 7px;
+}
+.tag-list > .primary-tech-tag {
+  color: #c8dda9;
+  border-color: #657c4f;
+  background: #242d1f;
+  font-weight: 600;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
 }
 .style-facts {
   display: grid;
@@ -2031,6 +2053,6 @@ dialog::backdrop {
 }
 
 /* Technology case controls belong to the shell; artwork lives in a ShadowRoot. */
-.technology-runtime{position:relative;margin:18px 0}.runtime-stage{width:100%;aspect-ratio:16/9;background:#ecebe5;overflow:hidden}.runtime-start{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}.runtime-controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:12px 0}.runtime-controls button{border:1px solid #ccc;border-radius:6px;padding:8px 12px}.runtime-controls label{display:flex;align-items:center;gap:8px}.case-details{margin:22px 0}.case-details dl>div{padding:10px 0;border-bottom:1px solid #ddd}.case-details dt{font-weight:600;font-size:13px}.case-details dd{margin:5px 0;font-size:14px;line-height:1.7;overflow-wrap:anywhere}.case-details small{overflow-wrap:anywhere}
+.technology-runtime{position:relative;margin:18px 0}.runtime-stage{width:100%;aspect-ratio:16/9;background:#ecebe5;overflow:hidden}.runtime-controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:12px 0}.runtime-controls button{border:1px solid #ccc;border-radius:6px;padding:8px 12px}.runtime-controls button:disabled{cursor:wait;opacity:.55}.runtime-controls label{display:flex;flex:1 1 220px;min-width:200px;align-items:center;gap:8px}.runtime-controls input[type=range]{width:clamp(140px,22vw,360px);min-width:110px;flex:1 1 170px;accent-color:#8cae70;cursor:ew-resize;touch-action:pan-y}.case-details{margin:22px 0}.case-details dl>div{padding:10px 0;border-bottom:1px solid #ddd}.case-details dt{font-weight:600;font-size:13px}.case-details dd{margin:5px 0;font-size:14px;line-height:1.7;overflow-wrap:anywhere}.case-details small{overflow-wrap:anywhere}
 
 .capture-root .technology-runtime{margin:0}

@@ -1,9 +1,15 @@
-/** Created: 2026-10-04. Decode every new preview through an actual looping HTML video. */
+/** Created: 2026-10-05. Decode every new preview through an actual looping HTML video. */
 import assert from "node:assert/strict";
 import { writeFileSync } from "node:fs";
 import { chromium } from "@playwright/test";
 import { technologyCases, caseEvidence } from "../src/technology/registry";
 const base = process.env.ATLAS_URL ?? "http://127.0.0.1:4173/";
+const requestedIds = new Set(
+  process.argv.slice(2).filter((value) => /^SA-\d+$/.test(value)),
+);
+const selectedCases = technologyCases.filter(
+  (c) => !requestedIds.size || requestedIds.has(c.id),
+);
 const browser = await chromium.launch({
   headless: true,
   executablePath:
@@ -12,8 +18,8 @@ const browser = await chromium.launch({
 });
 const results: unknown[] = [];
 try {
-  for (let i = 0; i < technologyCases.length; i += 6) {
-    const batch = technologyCases.slice(i, i + 6);
+  for (let i = 0; i < selectedCases.length; i += 6) {
+    const batch = selectedCases.slice(i, i + 6);
     const context = await browser.newContext({
       viewport: { width: 1440, height: 600 },
     });
@@ -95,7 +101,7 @@ try {
         ),
       );
     }, clips);
-  for (const r of measured) {
+    for (const r of measured) {
       assert.equal(r.error, null, r.id);
       assert.ok(r.wraps > 0, r.id);
       console.log(`PASS ${r.id}: ${r.frames} decoded frames, ${r.wraps} loop`);
@@ -104,13 +110,14 @@ try {
     await context.close();
   }
   const detailSizes: { id: string; width: number; height: number }[] = [];
-  for (let i = 0; i < technologyCases.length; i += 6) {
+  for (let i = 0; i < selectedCases.length; i += 6) {
     const context = await browser.newContext();
     const page = await context.newPage();
-    const urls = technologyCases.slice(i, i + 6).map((c) => ({
+    const urls = selectedCases.slice(i, i + 6).map((c) => ({
       id: c.id,
       src: new URL(
-        caseEvidence(c.id).preview!.detail ?? caseEvidence(c.id).preview!.gallery,
+        caseEvidence(c.id).preview!.detail ??
+          caseEvidence(c.id).preview!.gallery,
         base,
       ).href,
     }));
@@ -135,7 +142,8 @@ try {
                       video.load();
                       resolve(dimensions);
                     };
-                    video.onerror = () => reject(new Error(`${item.id}: detail media failed`));
+                    video.onerror = () =>
+                      reject(new Error(`${item.id}: detail media failed`));
                     document.body.append(video);
                   },
                 ),
@@ -151,7 +159,8 @@ try {
     assert.equal(item.height, 720, `${item.id} detail height`);
   }
   writeFileSync(
-    "docs/technology-preview-verification.json",
+    process.env.PREVIEW_VERIFICATION_OUTPUT ??
+      "docs/technology-preview-verification.json",
     JSON.stringify(
       {
         date: new Date().toLocaleDateString("en-CA", {
@@ -160,6 +169,7 @@ try {
         browser: browser.version(),
         url: base,
         concurrency: 6,
+        scope: requestedIds.size ? [...requestedIds] : "all technology cases",
         method:
           "Actual HTMLVideoElement decoding and observed loop boundary. This is playback integrity, not a frame-rate benchmark or a substitute for visual review.",
         results,

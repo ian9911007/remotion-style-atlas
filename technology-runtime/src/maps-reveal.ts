@@ -1,4 +1,4 @@
-/** Created: 2026-10-04. One eight-second camera clock; no live tiles or independent easing. */
+/** Created: 2026-10-05. One eight-second camera clock; no live tiles or independent easing. */
 import * as d3 from "d3";
 import * as maplibre from "maplibre-gl";
 import mapCSS from "maplibre-gl/dist/maplibre-gl.css?inline";
@@ -20,52 +20,6 @@ const assetUrl = (name: string) =>
     location.href,
   ).href;
 
-// Kept local to this new module so already-verified world cases retain their source hashes.
-function planarGeometry(
-  source: FeatureCollection<Geometry>,
-): FeatureCollection {
-  const projection = d3
-    .geoEquirectangular()
-    .scale(180 / Math.PI)
-    .translate([0, 0])
-    .precision(0);
-  return {
-    type: "FeatureCollection",
-    features: source.features.map((feature) => {
-      const polygons: number[][][][] = [];
-      let rings: number[][][] = [],
-        ring: number[][] = [];
-      d3.geoStream(
-        feature.geometry,
-        projection.stream({
-          point(x, y) {
-            ring.push([clamp(x, -180, 180), clamp(-y, -85, 85)]);
-          },
-          lineStart() {
-            ring = [];
-          },
-          lineEnd() {
-            if (ring.length > 2) {
-              ring.push([...ring[0]]);
-              rings.push(ring);
-            }
-          },
-          polygonStart() {
-            rings = [];
-          },
-          polygonEnd() {
-            if (rings.length) polygons.push(rings);
-          },
-          sphere() {},
-        }),
-      );
-      return {
-        ...feature,
-        geometry: { type: "MultiPolygon", coordinates: polygons },
-      };
-    }),
-  };
-}
 const mount: Mount = async (root, { reducedMotion, signal }) => {
   const assets = await Promise.all(
     ["reveal-countries.geojson", "provenance.json"].map(async (file) => {
@@ -132,7 +86,9 @@ const mount: Mount = async (root, { reducedMotion, signal }) => {
     maxZoom: 7,
     interactive: false,
     attributionControl: false,
-    renderWorldCopies: false,
+    // Keep Taipei's wrapped world copy available when the camera reaches
+    // world scale; a single-copy map constrains center longitude toward 0°.
+    renderWorldCopies: true,
     fadeDuration: 0,
     pixelRatio: Math.min(devicePixelRatio, 1.5),
     style: {
@@ -141,7 +97,10 @@ const mount: Mount = async (root, { reducedMotion, signal }) => {
       sources: {
         countries: {
           type: "geojson",
-          data: planarGeometry(countries),
+          // GeoJSON is already WGS84 longitude/latitude. Do not pass it through
+          // a screen projection and then relabel projected coordinates as
+          // longitude/latitude; that mirrored/clipped wide polygons at world zoom.
+          data: countries,
           tolerance: 0.1,
         },
         grid: {

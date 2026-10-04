@@ -55,6 +55,10 @@ const mount: Mount = async (root, options) => {
           p.endShape();
         }
       } else {
+        const cycle = ((((time % 8) + 8) % 8) / 8) * 12;
+        const active = Math.min(11, Math.floor(cycle));
+        const local = Math.max(0, Math.min(1, cycle - active));
+        const amount = Math.sin(local * Math.PI) ** 2;
         for (let item = 0; item < 12; item++) {
           const cx = 147 + (item % 4) * 223,
             cy = 182 + Math.floor(item / 4) * 132;
@@ -62,12 +66,12 @@ const mount: Mount = async (root, options) => {
           p.strokeWeight(1.1);
           p.beginShape();
           const petals = 2 + (item % 5),
-            modulation = Math.sin(time * 0.4 + item) * 0.18;
+            modulation = item === active ? amount * 0.18 : 0;
           for (let j = 0; j <= 500; j++) {
             const theta = (j / 500) * Math.PI * 4;
             const r =
               44 * Math.cos(petals * theta + modulation) +
-              10 * Math.sin(7 * theta + time * 0.35);
+              10 * Math.sin(7 * theta + modulation * 0.6);
             p.vertex(cx + r * Math.cos(theta), cy + r * Math.sin(theta));
           }
           p.endShape();

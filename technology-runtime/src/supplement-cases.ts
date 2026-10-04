@@ -104,21 +104,21 @@ export const supplementCases: CaseDefinition[] = [
     title: "指標驅動多平面規格卡",
     englishTitle: "Pointer-driven layered specification card",
     summary:
-      "背景網格、內容平面與前景標籤透過指標視差及 CSS 透視，形成可操作的 2.5D 產品資訊卡。",
+      "滿版精密產品構圖以背景網格、內容平面與前景標籤呈現 CSS 2.5D 透視；指標、觸控或方向鍵可即時改變視角。",
     primary: "css-transitions",
     capabilities: ["pointer-parallax", "layered-perspective-interface"],
     module: "supplement-parallax.ts",
     variant: "planes",
     renderer: "DOM / CSS 2.5D",
     interaction: ["pointer", "touch", "keyboard", "state", "time"],
-    direction: "精密產品的紙材編輯版面",
+    direction: "滿版精密產品展示",
     rationale:
-      "暖白規格面板、暗紅前景標籤與背景網格分開資訊層級；傾斜時相對位移讓深度可被閱讀。",
+      "產品卡置於滿版紙材與定位網格上，透過不同深度的鏡片、內容與標籤讀出層次；移除共用標題欄與旁側註解，讓產品成為唯一主視覺。",
     why: "少量 DOM 平面的指標傾斜可用 CSS perspective、translateZ 與 transitions 完成，無須載入真正 3D 引擎。",
     uses: ["產品規格與功能導覽", "少量多層介面資訊"],
     nonUses: ["真實鏡頭或光學模擬", "需要大量材質、動態光照與三維碰撞的場景"],
     instructions:
-      "移動指標或觸控拖曳卡片；聚焦卡片後使用方向鍵傾斜、Home 歸位，也可使用上方按鈕。",
+      "在滿版案例上移動指標或觸控拖曳；聚焦案例後使用方向鍵傾斜、Home 歸位，也可使用右上角按鈕。",
     limitations: [
       "CSS 2.5D 透視不是 WebGL 或真正 3D 模型；光學內容為原創概念示意。",
       "互動使用 CSS Transitions 的瀏覽器時間；自動示範由主時鐘定位，尚未驗證正式影片輸出。",
@@ -136,6 +136,7 @@ export const supplementCases: CaseDefinition[] = [
       "Use CSS Transitions for pointer, touch, and keyboard state changes; host-driven preview seeking must not start an independent timer.",
       "Normalize pointer coordinates against the scaled element bounding box and provide directional buttons plus Home reset.",
       "Explicitly label this as a 2.5D interface and preserve content readability across the tilt range.",
+      "Use the complete 960 by 540 case canvas for the product scene; remove the shared header, sidebar callouts and caption rail.",
     ],
   },
 ];

@@ -134,13 +134,13 @@ const mount: Mount = async (root, { reducedMotion, signal }) => {
       );
       if (frame < previousFrame) reset();
       for (let i = previousFrame; i < frame; i++) {
-        currentInput = override ?? Math.floor(i / 120) % 2 === 0;
+        currentInput = override ?? Math.floor(i / 240) % 2 === 1;
         input!.value = currentInput;
         machine!.advance(1 / 60);
         board!.advance(1 / 60);
       }
       previousFrame = frame;
-      currentInput = override ?? Math.floor(frame / 120) % 2 === 0;
+      currentInput = override ?? Math.floor(frame / 240) % 2 === 1;
       input!.value = currentInput;
       machine!.advance(0);
       board!.advance(0);

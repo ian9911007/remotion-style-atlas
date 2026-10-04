@@ -172,7 +172,9 @@ test("search aliases, feeling, ID, combined dimensional filters and stable order
   await page.getByRole("button", { name: "最近加入", exact: true }).click();
   const recent = await page
     .locator(".style-card")
-    .evaluateAll((nodes) => nodes.map((node) => node.getAttribute("data-style-id")));
+    .evaluateAll((nodes) =>
+      nodes.map((node) => node.getAttribute("data-style-id")),
+    );
   const expectedRecent = [...catalog]
     .sort(
       (a, b) =>
@@ -180,7 +182,11 @@ test("search aliases, feeling, ID, combined dimensional filters and stable order
         Number(b.id.slice(3)) - Number(a.id.slice(3)),
     )
     .map((style) => style.id);
-  assert.deepEqual(recent, expectedRecent, "Recent view breaks date ties by numeric case ID.");
+  assert.deepEqual(
+    recent,
+    expectedRecent,
+    "Recent view breaks date ties by numeric case ID.",
+  );
 });
 
 test("favorites persist after refresh and favorite collection works", async (page) => {
@@ -587,7 +593,72 @@ test("gallery arrow keys move between cards while vertical arrows scroll", async
     .toBeGreaterThan(before);
 });
 
-test("detail preview loops continuously while an interactive case starts", async (page) => {
+test("detail arrow keys switch cases while vertical arrows scroll the detail", async (page) => {
+  await card(page, "SA-002").locator(".card-open").click();
+  await expect(page.locator(".detail-id")).toContainText("SA-002");
+  await expect(page.locator(".detail-visual > .case-details")).toHaveCount(1);
+  await expect(page.locator(".detail-visual > .style-intro")).toHaveCount(1);
+  const detailOrder = await page.locator(".detail-visual").evaluate((node) => {
+    const children = Array.from(node.children);
+    return {
+      intro: children.findIndex((child) =>
+        child.classList.contains("style-intro"),
+      ),
+      specification: children.findIndex((child) =>
+        child.classList.contains("case-details"),
+      ),
+    };
+  });
+  assert.ok(
+    detailOrder.intro >= 0 && detailOrder.intro < detailOrder.specification,
+  );
+  await expect(page.locator(".detail-visual > .style-facts")).toHaveCount(0);
+  await expect(page.locator(".detail-visual > .palette-section")).toHaveCount(
+    0,
+  );
+  await expect(page.locator(".detail-visual > .detail-rules")).toHaveCount(0);
+  await page.keyboard.press("ArrowRight");
+  await expect(page.locator(".detail-id")).toContainText("SA-003");
+  await page.keyboard.press("ArrowLeft");
+  await expect(page.locator(".detail-id")).toContainText("SA-002");
+
+  await page
+    .locator(".detail-player video")
+    .evaluate((video: HTMLVideoElement) => video.focus());
+  await page.keyboard.press("ArrowRight");
+  await expect(page.locator(".detail-id")).toContainText("SA-003");
+  await page.keyboard.press("ArrowLeft");
+  await expect(page.locator(".detail-id")).toContainText("SA-002");
+
+  const shell = page.locator(".detail-shell");
+  await page.keyboard.press("ArrowDown");
+  await expect
+    .poll(() => shell.evaluate((node) => node.scrollTop))
+    .toBeGreaterThan(0);
+  const lower = await shell.evaluate((node) => node.scrollTop);
+  await page.keyboard.press("ArrowUp");
+  await expect
+    .poll(() => shell.evaluate((node) => node.scrollTop))
+    .toBeLessThan(lower);
+});
+
+test("detail arrows still navigate after a live canvas receives focus", async (page) => {
+  await page.goto(`${baseURL}#/style/SA-174`);
+  await expect(page.locator(".detail-id")).toContainText("SA-174");
+  const runtime = page.locator(".technology-runtime");
+  await expect(runtime).toHaveAttribute("data-ready", "true", {
+    timeout: 45000,
+  });
+  const canvas = page.locator(".runtime-stage canvas");
+  await expect(canvas).toBeVisible();
+  await canvas.click();
+  await page.keyboard.press("ArrowRight");
+  await expect(page.locator(".detail-id")).toContainText("SA-175");
+  await page.keyboard.press("ArrowLeft");
+  await expect(page.locator(".detail-id")).toContainText("SA-174");
+});
+
+test("detail preview loops while its interactive case loads automatically", async (page) => {
   await card(page, "SA-152").locator(".card-open").click();
   const player = page.locator(".detail-player video");
   await expect(player).toHaveAttribute("loop", "");
@@ -597,18 +668,73 @@ test("detail preview loops continuously while an interactive case starts", async
   const before = await player.evaluate(
     (video: HTMLVideoElement) => video.currentTime,
   );
-  await page
-    .locator(".runtime-start")
-    .evaluate((button: HTMLButtonElement) => button.click());
   await expect(
     page.locator(".technology-runtime[data-ready='true']"),
   ).toBeVisible();
+  await expect(page.locator(".runtime-start")).toHaveCount(0);
   await expect
     .poll(
       () => player.evaluate((video: HTMLVideoElement) => video.currentTime),
       { timeout: 5000 },
     )
     .toBeGreaterThan(before);
+});
+
+test("local review previews show an explicit unpublished label and fresh media", async (page) => {
+  await page.goto(`${baseURL}#/style/SA-058`);
+  await expect(page.locator(".detail-id")).toContainText("SA-058");
+  await expect(page.locator(".review-preview-label")).toHaveText(
+    "本機審查預覽 · 尚未發布",
+  );
+  const video = page.locator(".detail-player video");
+  await expect(video).toHaveAttribute(
+    "src",
+    /sa-058-df8c5518670e271d-detail\.mp4$/,
+  );
+  await expect
+    .poll(() => video.evaluate((node: HTMLVideoElement) => node.readyState), {
+      timeout: 10000,
+    })
+    .toBeGreaterThan(1);
+  await expect
+    .poll(() => video.evaluate((node: HTMLVideoElement) => !node.paused))
+    .toBe(true);
+});
+
+test("redesigned legacy detail previews decode and cross their loop boundary", async (page) => {
+  for (const id of [
+    "SA-052",
+    "SA-058",
+    "SA-072",
+    "SA-086",
+    "SA-089",
+    "SA-091",
+    "SA-092",
+    "SA-097",
+    "SA-100",
+  ]) {
+    await page.goto(`${baseURL}#/style/${id}`);
+    const video = page.locator(".detail-player video");
+    await expect(video).toHaveAttribute("loop", "");
+    await expect
+      .poll(() => video.evaluate((node: HTMLVideoElement) => node.readyState), {
+        timeout: 10000,
+      })
+      .toBeGreaterThan(1);
+    await video.evaluate(async (node: HTMLVideoElement) => {
+      node.pause();
+      node.currentTime = Math.max(0, node.duration - 0.08);
+      await node.play();
+    });
+    await expect
+      .poll(
+        () => video.evaluate((node: HTMLVideoElement) => node.currentTime),
+        {
+          timeout: 5000,
+        },
+      )
+      .toBeLessThan(0.3);
+  }
 });
 
 test("focus mode updates the neighboring group on hover and keyboard focus", async (page) => {

@@ -107,6 +107,7 @@ export const dataMapCases: CaseDefinition[] = [
     locked: [
       "Use stable team IDs as D3 data join keys.",
       "Keep labels and categorical color attached to identity as rank changes; do not simulate the chart with CSS-only bars.",
+      "Keep each team anchored to a fixed row; animate bar length and rank annotation without translating the bar group.",
     ],
   }),
   define({

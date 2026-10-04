@@ -1,4 +1,4 @@
-/** Created: 2026-10-04. Concrete showcase metadata; reusable guidance lives in technology references. */
+/** Created: 2026-10-05. Concrete showcase metadata; reusable guidance lives in technology references. */
 import type { CaseDefinition } from "./types";
 
 type Seed = Omit<
@@ -99,7 +99,7 @@ export const gpuSceneCases: CaseDefinition[] = [
     id: "SA-163",
     title: "模組家具・材質配置",
     englishTitle: "React Furniture Configurator",
-    summary: "用可鍵盤操作的色票切換 3D 座椅材質，同時維持穩定的場景生命週期。",
+    summary: "座椅材質依時間在苔綠、陶土與深藍之間平滑轉換，也能用可鍵盤操作的色票直接指定。",
     primary: "r3f",
     supporting: [
       { id: "threejs", role: "3D renderer" },
@@ -115,13 +115,14 @@ export const gpuSceneCases: CaseDefinition[] = [
     why: "React Three Fiber 管理宣告式場景，Drei 提供圓角幾何；材質狀態與播放時鐘有明確邊界。",
     uses: ["React 商品配置介面", "既有 React 專案中的 3D 狀態展示"],
     nonUses: ["無 React 的小型網頁", "只有平面色票的商品圖"],
-    instructions: "點選苔綠、陶土或深藍；可用 Tab 與 Enter 操作色票。",
+    instructions: "播放時觀察苔綠、陶土、深藍三色依序轉換；也可用 Tab 與 Enter 選擇色票，立即指定材質。",
     limitations: ["原創程序式材質，非量測掃描材質", "配置狀態未寫入永久儲存"],
     fallback: "顯示靜態產品圖與文字色票。",
     locked: [
       "Use R3F with frameloop never and explicit advance.",
       "Use Drei RoundedBox for actual geometry.",
       "Keep color buttons keyboard accessible and destroy the React scene root.",
+      "Drive a smooth, repeatable three-color upholstery cycle from the host time; swatch selection may override until replay or rewind.",
     ],
     dependencies: ["react", "three", "@react-three/fiber", "@react-three/drei"],
     video: "adapter-required",
@@ -460,7 +461,7 @@ export const gpuSceneCases: CaseDefinition[] = [
     id: "SA-174",
     title: "張力研究・懸吊約束",
     englishTitle: "Matter Constraint Pendulums",
-    summary: "七組不同長度的擺錘由 Constraint 連接錨點，展現相位逐漸分離。",
+    summary: "七組不同長度的擺錘由 Constraint 連接錨點，依序受力後呈現相位差，循環結尾回到靜止基準。",
     primary: "matterjs",
     capabilities: ["constraints", "pendulum-simulation"],
     module: "physics-matter",
@@ -472,7 +473,7 @@ export const gpuSceneCases: CaseDefinition[] = [
     why: "Matter Constraint 處理繫點與剛體之間的限制，適合展示真實相互作用而非預設路徑。",
     uses: ["連桿與懸吊概念展示", "物理互動實驗"],
     nonUses: ["只有視覺搖擺的裝飾", "高精度機械分析"],
-    instructions: "播放觀察不同長度的相位差；點選或空白鍵可施加額外力量。",
+    instructions: "播放觀察七組擺錘依序受力與相位差；點選或空白鍵可施加額外力量。",
     limitations: [
       "未記錄互動事件，錄影適配需要固定或重播輸入",
       "沒有工程數值驗證",

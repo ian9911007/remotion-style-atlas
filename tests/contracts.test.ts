@@ -2,6 +2,12 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { catalogSchema } from "../src/catalog/schema";
+import {
+  allStyles as publishedStyles,
+  catalog as runtimeCatalog,
+  reviewPreviewIds,
+  selectReviewPreviews,
+} from "../src/catalog/catalog";
 import { compilePrompt, compileBlend } from "../src/lib/prompt";
 import {
   parseLocalState,
@@ -18,6 +24,16 @@ const styles = catalogSchema.parse(
     ),
   ),
 );
+test("review-only legacy candidates stay local while published catalog remains intact", () => {
+  const candidate = { ...styles[0], id: "SA-999", status: "reviewed" as const };
+  const reviewOnly = selectReviewPreviews([styles[0], candidate]);
+  assert.deepEqual(reviewOnly.map((style) => style.id), ["SA-999"]);
+  assert.ok(publishedStyles.every((style) => style.status === "published"));
+  assert.equal(publishedStyles.length, 100);
+  assert.deepEqual(reviewPreviewIds, []);
+  assert.ok(reviewOnly.every((style) => !runtimeCatalog.some((item) => item.id === style.id)));
+  assert.ok(publishedStyles.every((style) => runtimeCatalog.some((item) => item.id === style.id)));
+});
 test("portable prompt includes all owned rules, identity and actual limitations", () => {
   for (const s of styles) {
     const prompt = compilePrompt(s, { subject: "An original brand" });

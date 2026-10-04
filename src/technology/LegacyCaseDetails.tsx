@@ -39,7 +39,7 @@ export function LegacyCaseDetails({ style }: { style: StyleSpec }) {
     ],
     [
       "執行需求",
-      `${style.media.depth}；React 19.2.0（本工作區版本）；${style.dependencies.join("；")}`,
+      `Remotion Player／React 19.2.0（本工作區版本）；${style.media.depth}；${style.dependencies.join("；") || "無額外執行期套件"}`,
     ],
     [
       "響應式",
@@ -63,7 +63,7 @@ export function LegacyCaseDetails({ style }: { style: StyleSpec }) {
     ],
     [
       "無障礙與低動態",
-      "影片提供原生播放控制與海報圖；製作新版本時提供文字摘要、可暫停預覽，並依專案需求製作低動態替代。",
+      "預覽提供原生播放、暫停與時間定位控制；頁面依低動態偏好暫停自動播放。案例以影片呈現，改作互動介面時須另提供文字替代與低動態方案。",
     ],
     [
       "影片適用性",
@@ -71,23 +71,29 @@ export function LegacyCaseDetails({ style }: { style: StyleSpec }) {
     ],
     [
       "素材與授權",
-      `${style.assets.length ? `需要素材：${style.assets.join("；")}。` : "不需要外部素材。"} ${style.provenance.notes} 替換素材前仍須確認授權與來源。`,
+      `${style.assets.length ? `素材：${style.assets.join("；")}。` : "不需要外部素材。"} ${style.provenance.notes} 替換素材前仍須確認授權與來源。`,
+    ],
+    ["已知限制", style.limitations.join("；")],
+    [
+      "備援",
+      style.avoid.join("；") ||
+        "依原始構圖與素材規格重建；缺少授權素材時不要以來源不明檔案替代。",
     ],
     [
-      "已知限制與備援",
-      `${style.limitations.join("；")} 備援：${style.avoid.join("；") || "缺少素材時保留構圖規則並使用已授權素材。"}`,
+      "效能證據",
+      "未逐案量測即時 FPS、記憶體或解碼成本；不以影片可播放推論其他裝置效能。",
     ],
     [
       "驗證狀態",
-      `${style.review.visual && style.review.motion ? "已記錄視覺與動態檢視" : "視覺或動態未完整檢視"}；${style.review.notes} 效能、行動裝置相容性及跨瀏覽器狀態未逐案量測。`,
+      `${style.status}；${style.review.visual && style.review.motion ? "已記錄視覺與動態審查" : "視覺或動態審查未完整"}；跨瀏覽器、實體行動裝置與逐案輸出未驗證。`,
     ],
     [
-      "技術參考",
-      "Remotion 官方文件與 Skill-Remotion-Video-Builder；依任務載入影格、標記、字型或渲染相關參考。",
+      "視覺審查",
+      `${style.review.reviewer || "未記錄審查者"} · ${style.review.date || "日期未記錄"} · ${style.review.notes}`,
     ],
     [
       "來源",
-      `src/remotion/recipes.tsx → ${style.recipe}；案例規格及合成影格請分開檢視。`,
+      `src/remotion/Root.tsx → src/remotion/recipes.tsx → recipeRegistry["${style.recipe}"]；該 registry 由子登錄表及直接 recipe 組成。`,
     ],
   ];
 
@@ -102,6 +108,22 @@ export function LegacyCaseDetails({ style }: { style: StyleSpec }) {
           </div>
         ))}
       </dl>
+      <h3>可重用技術參考</h3>
+      <p>
+        Skill-Remotion-Video-Builder → Remotion frame-driven
+        合成、預覽與輸出路由
+      </p>
+      <p>
+        <a
+          href="https://www.remotion.dev/docs/the-fundamentals"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Remotion 官方文件 ↗
+        </a>
+        <br />
+        <small>React composition · frame-based rendering</small>
+      </p>
     </section>
   );
 }

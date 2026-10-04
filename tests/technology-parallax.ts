@@ -281,7 +281,6 @@ try {
   detail.search = "";
   detail.hash = "/style/SA-152";
   await page.goto(detail.href);
-  await page.getByRole("button", { name: "啟動互動案例", exact: true }).click();
   await page.locator('.technology-runtime[data-ready="true"]').waitFor();
   await page.getByRole("button", { name: "暫停互動", exact: true }).click();
   await page.locator(".runtime-stage").scrollIntoViewIfNeeded();

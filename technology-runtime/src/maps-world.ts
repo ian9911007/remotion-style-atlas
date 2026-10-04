@@ -129,9 +129,28 @@ const mount: Mount = async (root, { variant, reducedMotion, signal }) => {
     .world footer{position:absolute;bottom:14px;left:31px;right:30px;font-size:10px;opacity:.72;display:flex;justify-content:space-between;gap:12px}.world-legend{position:absolute;left:36px;top:483px;font-size:11px;display:flex;gap:18px;align-items:center}.world-legend i{display:inline-block;width:22px;height:2px;background:#ae593a;vertical-align:middle;margin-right:6px}.world-legend span:last-child i{height:8px;width:8px;border:2px solid #ae593a;border-radius:50%;background:#fff}.world-city-label{font-family:Arial,sans-serif;font-size:11px;color:#233e48;background:#fffef2e8;padding:4px 7px;border-radius:5px;box-shadow:0 2px 6px #29475022;white-space:nowrap;pointer-events:none}.world-globe{position:absolute;inset:0;width:960px;height:540px;touch-action:none;cursor:grab}.world-globe:active{cursor:grabbing}
     .world-network{position:absolute;right:29px;top:357px;width:246px;font-size:11px}.world-network h3{font-size:10px;letter-spacing:.16em;font-weight:500;margin:0 0 10px;opacity:.65}.world-network div{display:flex;justify-content:space-between;padding:7px 1px;border-bottom:1px solid #becbc650;font-variant-numeric:tabular-nums}.world-network span:first-child:before{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;background:#ab6140;margin-right:8px}.world-network small{display:block;margin-top:10px;font-size:10px;opacity:.65}
   `;
+  if (!globe) {
+    style.textContent += `
+      .world.world-full-bleed .world-map{left:0;top:0;width:960px;height:540px;border:0;border-radius:0;box-shadow:none}
+      .world.world-full-bleed .world-map:before{border-radius:0;box-shadow:inset 0 0 70px #243e4818}
+      .world.world-full-bleed header{left:28px;top:20px;padding:14px 18px 16px;border-left:2px solid #a44c30;background:linear-gradient(90deg,#edf1eee8,#edf1eeb8 72%,transparent);text-shadow:0 1px #fff8}
+      .world.world-full-bleed h2{font-size:26px}
+      .world.world-full-bleed .world-panel{position:absolute;left:1px;top:1px;width:1px;height:1px;padding:0;border:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+      .world.world-full-bleed .world-cities{left:26px;right:auto;top:auto;bottom:54px;width:auto;max-width:720px;gap:7px}
+      .world.world-full-bleed .world-cities button,.world.world-full-bleed .world-tools button{border-radius:18px;background:#f8f9f4ed;box-shadow:0 3px 14px #233d4828;backdrop-filter:blur(8px)}
+      .world.world-full-bleed .world-cities button[aria-pressed=true]{background:#355867;color:#fff}
+      .world.world-full-bleed .world-tools{left:auto;right:26px;top:auto;bottom:54px}
+      .world.world-full-bleed .world-legend{left:auto;right:28px;top:94px;gap:10px;padding:9px 12px;border:1px solid #ffffffa0;border-radius:20px;background:#f7f8f2db;box-shadow:0 3px 14px #233d481a}
+      .world.world-full-bleed .world-legend span:last-child{display:none}
+      .world.world-full-bleed footer{left:24px;right:24px;bottom:10px;padding:6px 10px;border-radius:5px;background:#f7f8f2d9;font-size:9px;color:#29434b;opacity:.9}
+      .world.world-full-bleed .world-network{display:none}
+      .world.world-full-bleed .world-city-label{box-shadow:0 2px 8px #29475035}
+    `;
+  }
   const surface = document.createElement("div");
   surface.className = "world";
-  surface.innerHTML = `<header><div class="eyebrow">${globe ? "SPHERICAL ATLAS / D3 GEOGRAPHY" : "WORLD CONNECTIONS / MAPLIBRE"}</div><h2>${globe ? "轉個角度，看見世界" : "從臺北，連向世界"}</h2><div class="sub">真實地理底圖 · 五座城市 · 示意大圓航線</div></header><aside class="world-panel"><div class="label">TAIPEI → SELECTED CITY</div><strong></strong><div class="world-coordinates"></div><div class="world-distance"></div><div class="world-status"></div></aside><nav class="world-cities" aria-label="選取世界城市"></nav><div class="world-tools"></div><footer><span>Made with Natural Earth · 4.1.0 / 1:110m · world-atlas 2.0.2</span><span>歷史概化國界 · 示意連線非實際航班／導航</span></footer>`;
+  surface.innerHTML = `<header><div class="eyebrow">${globe ? "SPHERICAL ATLAS / D3 GEOGRAPHY" : "WORLD CONNECTIONS / MAPLIBRE"}</div><h2>${globe ? "轉個角度，看見世界" : "臺北・世界連線"}</h2><div class="sub">真實地理底圖 · 五座城市 · 示意大圓航線</div></header><aside class="world-panel" role="status"><div class="label">TAIPEI → SELECTED CITY</div><strong></strong><div class="world-coordinates"></div><div class="world-distance"></div><div class="world-status" aria-live="polite"></div></aside><nav class="world-cities" aria-label="選取世界城市"></nav><div class="world-tools"></div><footer><span>Made with Natural Earth · 4.1.0 / 1:110m · world-atlas 2.0.2</span><span>歷史概化國界 · 示意連線非實際航班／導航</span></footer>`;
+  if (!globe) surface.classList.add("world-full-bleed");
   root.append(style, surface);
   const panel = surface.querySelector(".world-panel")!;
   const cityButtons: HTMLButtonElement[] = [];
@@ -175,6 +194,7 @@ const mount: Mount = async (root, { variant, reducedMotion, signal }) => {
     signal.throwIfAborted();
     const stage = document.createElement("div");
     stage.className = "world-map";
+    stage.dataset.layout = "full-bleed";
     stage.setAttribute("aria-label", "真實世界國界與示意城市連線");
     surface.prepend(stage);
     const legend = document.createElement("div");
@@ -182,18 +202,6 @@ const mount: Mount = async (root, { variant, reducedMotion, signal }) => {
     legend.innerHTML =
       "<span><i></i>示意大圓航線</span><span><i></i>真實城市位置</span><span>拖曳平移 · 按鈕選取地點</span>";
     surface.append(legend);
-    const network = document.createElement("aside");
-    network.className = "world-network";
-    network.innerHTML =
-      "<h3>TAIPEI / ILLUSTRATIVE ROUTES</h3>" +
-      cities
-        .slice(1)
-        .map(
-          (city) =>
-            `<div><span>${city.label}</span><span>${Math.round(d3.geoDistance(cities[0].coordinates, city.coordinates) * 6371).toLocaleString("en-US")} km</span></div>`,
-        )
-        .join("");
-    surface.append(network);
     maplibre.setWorkerUrl(mapWorkerUrl);
     maplibre.setWorkerCount(1);
     const routeData = (progress: number): FeatureCollection => ({
@@ -415,18 +423,19 @@ const mount: Mount = async (root, { variant, reducedMotion, signal }) => {
         if (disposed) return;
         time = seconds;
         if (!manual) {
-          const t = reducedMotion ? 4 : seconds;
+          const t = reducedMotion ? 0 : (((seconds % 6) + 6) % 6);
+          const pulse = (1 - Math.cos((2 * Math.PI * t) / 6)) / 2;
           (
             map.getSource("routes") as import("maplibre-gl").GeoJSONSource
-          ).setData(routeData(0.2 + t * 0.26));
+          ).setData(routeData(0.2 + pulse * 0.8));
           map.setPaintProperty(
             "city-halo",
             "circle-radius",
-            10 + Math.sin(t * 2) * 2,
+            10 + pulse * 2,
           );
           map.jumpTo({
-            center: [25 + Math.sin(t * 0.25) * 17, 16],
-            zoom: 0.2 + Math.sin(t * 0.25) * 0.07,
+            center: [25 + Math.sin((2 * Math.PI * t) / 6) * 17, 16],
+            zoom: 0.2 + pulse * 0.12,
           });
         }
         info();

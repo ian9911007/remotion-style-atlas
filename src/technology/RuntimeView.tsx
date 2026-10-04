@@ -88,14 +88,15 @@ export function RuntimeView({
 }) {
   const host = useRef<HTMLDivElement>(null),
     handle = useRef<RuntimeHandle | null>(null),
+    scrubber = useRef<HTMLInputElement>(null),
     clock = useRef(0);
-  const [active, setActive] = useState(capture),
-    [error, setError] = useState(""),
+  const active = true;
+  const duration = c.durationSeconds ?? 4;
+  const [error, setError] = useState(""),
     [ready, setReady] = useState(false),
     [playing, setPlaying] = useState(
       !matchMedia("(prefers-reduced-motion: reduce)").matches,
-    ),
-    [generation, setGeneration] = useState(0);
+    );
   const play = useRef(playing);
   play.current = playing;
   useEffect(() => {
@@ -112,6 +113,8 @@ export function RuntimeView({
   }, []);
   useEffect(() => {
     if (!active || !host.current) return;
+    setReady(false);
+    setError("");
     const node = host.current,
       shadow = node.shadowRoot ?? node.attachShadow({ mode: "open" }),
       abort = new AbortController();
@@ -146,11 +149,19 @@ export function RuntimeView({
     };
     document.addEventListener("visibilitychange", visibility);
     const seek = async (t: number) => {
-      clock.current = t;
-      await instance?.seek(t);
+      const bounded = Math.max(0, Math.min(duration, t));
+      clock.current = bounded;
+      if (scrubber.current && document.activeElement !== scrubber.current)
+        scrubber.current.value = String(bounded);
+      await instance?.seek(bounded);
       runtimeMetrics.frames++;
     };
-    const api = { seek, root: () => root, metrics: runtimeMetrics };
+    const api = {
+      seek,
+      root: () => root,
+      time: () => clock.current,
+      metrics: runtimeMetrics,
+    };
     Object.assign(window, { __atlasRuntime: api });
     async function start() {
       try {
@@ -178,7 +189,7 @@ export function RuntimeView({
         handle.current = instance;
         runtimeMetrics.active++;
         runtimeMetrics.mounts++;
-        await seek(capture ? 0 : 1);
+        await seek(0);
         if (disposed) return;
         setReady(true);
         const tick = async (now: number) => {
@@ -189,7 +200,7 @@ export function RuntimeView({
               if (last)
                 await seek(
                   (clock.current + Math.min((now - last) / 1000, 0.1)) %
-                    (c.durationSeconds ?? 4),
+                    duration,
                 );
               last = now;
             } else {
@@ -223,44 +234,36 @@ export function RuntimeView({
       shadow.replaceChildren();
       delete (window as unknown as Record<string, unknown>).__atlasRuntime;
     };
-  }, [active, c, generation, capture]);
+  }, [active, c, capture]);
   return (
     <section
       className="technology-runtime"
       data-ready={ready}
       data-error={error}
+      aria-busy={!ready}
     >
       <div className="runtime-stage" ref={host} />
-      {!active && (
-        <button
-          className="runtime-start primary-button"
-          onClick={() => {
-            setError("");
-            setActive(true);
-          }}
-        >
-          啟動互動案例
-        </button>
-      )}
       {error && (
         <p role="alert" className="warning">
           執行器無法啟動：{error}。{c.fallback}
         </p>
       )}
-      {!capture && active && (
+      {!capture && (
         <div className="runtime-controls">
-          <button onClick={() => setPlaying((v) => !v)}>
+          <button disabled={!ready} onClick={() => setPlaying((v) => !v)}>
             {playing ? "暫停互動" : "播放互動"}
           </button>
           <label>
             時間
             <input
+              ref={scrubber}
               type="range"
               min="0"
-              max={(c.durationSeconds ?? 4) - 0.01}
+              max={duration}
               step="0.01"
-              defaultValue="1"
+              defaultValue="0"
               aria-label="案例時間"
+              disabled={!ready}
               onChange={(e) => {
                 setPlaying(false);
                 clock.current = Number(e.target.value);
@@ -269,22 +272,25 @@ export function RuntimeView({
             />
           </label>
           <button
+            disabled={!ready}
             onClick={() => {
-              setReady(false);
               setError("");
-              clock.current = 0;
-              setGeneration((v) => v + 1);
+              const runtime = handle.current;
+              if (runtime) {
+                void (async () => {
+                  try {
+                    await runtime.seek(0);
+                  } catch (e) {
+                    setError(String(e));
+                  }
+                })();
+              }
+              setPlaying(
+                !matchMedia("(prefers-reduced-motion: reduce)").matches,
+              );
             }}
           >
             重播／重設
-          </button>
-          <button
-            onClick={() => {
-              setActive(false);
-              setReady(false);
-            }}
-          >
-            停止並釋放
           </button>
         </div>
       )}

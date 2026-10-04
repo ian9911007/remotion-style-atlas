@@ -22,6 +22,42 @@ test("technology cases extend stable legacy identities without alias inflation",
     ),
   );
 });
+test("thirty physical studies select Canvas, PixiJS and Three.js by capability", () => {
+  const cases = technologyCases.filter((c) => {
+    const n = Number(c.id.slice(3));
+    return n >= 196 && n <= 225;
+  });
+  assert.equal(cases.length, 30);
+  assert.equal(new Set(cases.map((c) => c.variant)).size, 30);
+  assert.equal(cases.filter((c) => c.primary === "threejs").length, 6);
+  assert.equal(cases.filter((c) => c.primary === "pixijs").length, 2);
+  assert.equal(cases.filter((c) => c.primary === "canvas2d").length, 22);
+  assert.ok(
+    cases
+      .filter((c) => c.primary === "threejs")
+      .every(
+        (c) =>
+          c.module === "physics-element-gpu.ts" &&
+          c.dependencies.includes("three"),
+      ),
+  );
+  assert.ok(
+    cases
+      .filter((c) => c.primary === "pixijs")
+      .every(
+        (c) =>
+          c.module === "physics-element-pixi.ts" &&
+          c.dependencies.includes("pixi.js"),
+      ),
+  );
+  assert.ok(cases.every((c) => c.video === "adapter-required"));
+  assert.ok(
+    cases.every((c) => c.limitations.some((item) => /not|不是|非/.test(item))),
+  );
+  assert.ok(
+    cases.every((c) => c.locked.some((item) => /seekable|單一/.test(item))),
+  );
+});
 test("every application prompt is case-aware and preserves the adaptation boundary", () => {
   for (const c of technologyCases) {
     const text = compilePrompt(projectCase(c), {

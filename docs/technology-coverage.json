@@ -2,11 +2,11 @@
   "generated": true,
   "authority": "Derived from case registry, canonical technology projection and evidence.json; do not edit.",
   "baseline": 100,
-  "added": 78,
-  "total": 178,
+  "added": 108,
+  "total": 208,
   "counts": {
     "ready": 78,
-    "partial": 0,
+    "partial": 30,
     "blocked": 0,
     "unverified": 0
   },
@@ -225,7 +225,29 @@
       "reference": "native.md",
       "primary": [
         "SA-107",
-        "SA-129"
+        "SA-129",
+        "SA-199",
+        "SA-200",
+        "SA-202",
+        "SA-205",
+        "SA-206",
+        "SA-208",
+        "SA-209",
+        "SA-210",
+        "SA-211",
+        "SA-212",
+        "SA-213",
+        "SA-214",
+        "SA-215",
+        "SA-216",
+        "SA-217",
+        "SA-218",
+        "SA-219",
+        "SA-220",
+        "SA-221",
+        "SA-222",
+        "SA-223",
+        "SA-224"
       ],
       "supporting": [
         "SA-108"
@@ -233,7 +255,73 @@
       "capabilities": [
         "blend-compositing",
         "worker-rendering",
-        "analytic-trails"
+        "analytic-trails",
+        "wave-superposition",
+        "phase-propagation",
+        "layered-foam",
+        "advection",
+        "boundary-layer-flow",
+        "wake-deflection",
+        "gravity-driven-runoff",
+        "surface-tension-trails",
+        "layered-reflection",
+        "field-responsive-surface",
+        "spike-formation",
+        "radial-symmetry",
+        "buoyancy-rise",
+        "size-dependent-drag",
+        "thin-film-highlight",
+        "traveling-membrane-wave",
+        "edge-constraint",
+        "gust-envelope",
+        "pendulum-oscillation",
+        "phase-transfer",
+        "periodic-motion",
+        "sequential-contact",
+        "topple-propagation",
+        "timed-cascade",
+        "projectile-motion",
+        "angular-rotation",
+        "impact-burst",
+        "elastic-collision",
+        "momentum-transfer",
+        "boundary-reflection",
+        "standing-wave-modes",
+        "fixed-boundary",
+        "wave-interference",
+        "traveling-wave",
+        "wave-reflection",
+        "superposition",
+        "elliptic-orbit",
+        "orbital-period",
+        "multi-body-visualization",
+        "vortex-advection",
+        "angular-momentum",
+        "radial-inflow",
+        "ballistic-trajectory",
+        "phased-emission",
+        "gravity-fall",
+        "wavefront-propagation",
+        "pressure-pulse",
+        "refraction-rings",
+        "dipole-field",
+        "orientation-alignment",
+        "vector-field",
+        "thermal-convection",
+        "rotating-advection",
+        "particle-dispersion",
+        "flutter-instability",
+        "lift-drag-cycle",
+        "thin-sheet-fold",
+        "buoyant-restoring-force",
+        "heave-and-roll",
+        "waterline-contact",
+        "dendritic-growth",
+        "branching-deposition",
+        "crystal-facets",
+        "slope-failure-front",
+        "granular-cascade",
+        "debris-cloud"
       ],
       "cases": [
         {
@@ -273,6 +361,292 @@
           "limitations": [
             "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
             "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        },
+        {
+          "id": "SA-199",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "解析波形合成的海面圖像；沒有潮汐、風場或流體守恆求解。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-200",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "流線與示蹤點是解析近似，不代表 Navier–Stokes 解或實際測量結果。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-202",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "程序式下落與水痕層，不計算液膜厚度、接觸角或窗外天氣資料。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-205",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "程序式界面形變，不是磁流體力學或實驗影像。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-206",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "2D 氣泡群程序動畫；不計算氣體膨脹、壓力或氣液耦合。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-208",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "解析薄膜波形近似，沒有自碰撞、布料材料參數或 CFD 風場。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-209",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "小角度振盪解析式視覺化；不是互相耦合擺錘的數值解算。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-210",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "按接觸順序設計的角度動畫，未使用剛體碰撞引擎。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-211",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "可逆的碎片軌跡合成，未解算材料破壞或碎片間碰撞。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-212",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "理想化等質量彈性碰撞視覺示意，非實驗數據或通用碰撞求解器。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-213",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "理想邊界條件下的解析模態，無材料參數或有限元素分析。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-214",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "一維繩波近似；不求解真實繩索材料、張力變化或結點摩擦。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-215",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "封閉參數軌道示意，不是多體重力積分或真實天文位置。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-216",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "程序式 2D 旋渦流線，不代表三維自由液面求解。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-217",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "拋體水珠與水柱線稿，不含噴射壓力或液體破碎求解。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-218",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "風格化 2D 壓力環，沒有可壓縮流求解或物理尺度。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-219",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "理想平面偶極場方向示意；未模擬顆粒間作用或磁場實測。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-220",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "可視化旋轉對流柱，不等同實際塵旋或大氣 CFD。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-221",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "薄片升阻力外觀的解析近似，非流固耦合求解。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-222",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "小幅週期浮動的視覺化，不計算浮力、質量分布或波浪載荷。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-223",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "固定晶向的程序式枝晶視覺，不是相場或分子動力學模擬。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-224",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "合成坡面失穩序列，並非雪崩地形模型或危險評估。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
           ]
         }
       ],
@@ -748,7 +1122,13 @@
       "reference": "gpu-scenes.md",
       "primary": [
         "SA-161",
-        "SA-162"
+        "SA-162",
+        "SA-196",
+        "SA-197",
+        "SA-198",
+        "SA-201",
+        "SA-207",
+        "SA-225"
       ],
       "supporting": [
         "SA-163",
@@ -767,7 +1147,26 @@
         "world-space-lines",
         "authored-keyframes",
         "camera-choreography",
-        "multi-parameter-sequencing"
+        "multi-parameter-sequencing",
+        "thermal-convection",
+        "turbulent-plume",
+        "closed-loop-vfx",
+        "procedural-fragment-shader",
+        "vortex-entrainment",
+        "volumetric-layering",
+        "particle-fade",
+        "impact-splash",
+        "ballistic-droplets",
+        "concentric-ripples",
+        "branching-fractal-growth",
+        "flash-envelope",
+        "volumetric-light",
+        "viscous-flow-appearance",
+        "crust-shear",
+        "thermal-emission",
+        "magnetic-loop-arc",
+        "plasma-ejection",
+        "coronal-glow"
       ],
       "cases": [
         {
@@ -852,6 +1251,84 @@
           "limitations": [
             "程序式環形模型",
             "編排狀態為程式手工建立，非虛構的 Studio 檔案"
+          ]
+        },
+        {
+          "id": "SA-196",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "分層向上對流及程序式粒子近似，不是 CFD 或真實燃燒化學。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-197",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "以分層曲線和粒子近似渦旋捲吸；沒有體積網格、流體求解或真實散射。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-198",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "以程序式水冠、拋物線粒子和漣漪近似；非 SPH、FLIP 或液體求解器。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-201",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "固定種子的風格化電弧，不是大氣電場或放電方程模擬。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-207",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "2D 黏滯材料外觀近似；不含熱傳、地形或材料方程。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-225",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "風格化磁環與輻射視覺，不是太陽觀測資料或 MHD 解算。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
           ]
         }
       ],
@@ -1063,14 +1540,23 @@
       "reference": "gpu-scenes.md",
       "primary": [
         "SA-169",
-        "SA-170"
+        "SA-170",
+        "SA-203",
+        "SA-204"
       ],
       "supporting": [],
       "capabilities": [
         "sprite-field",
         "texture-reuse",
         "gpu-filter",
-        "container-mask"
+        "container-mask",
+        "drag-dominated-motion",
+        "crosswind-advection",
+        "depth-layering",
+        "gpu-particle-container",
+        "granular-cascade",
+        "repose-pile",
+        "particle-emission"
       ],
       "cases": [
         {
@@ -1097,6 +1583,32 @@
           "limitations": [
             "高模糊品質需要額外 GPU 工作",
             "互動視窗狀態需固定後才可確定性輸出"
+          ]
+        },
+        {
+          "id": "SA-203",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "預先決定軌跡的雪粒視覺近似；不計算真實雪晶形狀或大氣湍流。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
+          ]
+        },
+        {
+          "id": "SA-204",
+          "status": "partial",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "粒流與堆面是可視化近似；沒有接觸網路、粒徑統計或 DEM 解算。",
+            "Original synthetic artwork and fixed procedural constants; no external service, live data, or third-party asset.",
+            "Touch hardware and physical Safari have not been tested."
           ]
         }
       ],

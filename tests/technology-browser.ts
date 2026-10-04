@@ -48,6 +48,7 @@ type Metrics = {
 type RuntimeWindow = Window & {
   __atlasRuntime?: {
     seek: (seconds: number) => Promise<void>;
+    time: () => number;
     root: () => HTMLElement;
     metrics: Metrics;
   };
@@ -95,7 +96,6 @@ async function closeCase(page: Page) {
   await expect(page.getByRole("dialog")).toHaveCount(0);
 }
 async function startRuntime(page: Page) {
-  await page.getByRole("button", { name: "啟動互動案例", exact: true }).click();
   await expect
     .poll(
       async () => {
@@ -124,8 +124,13 @@ async function retainedMetrics(page: Page) {
   });
 }
 async function stopRuntime(page: Page) {
-  await page.getByRole("button", { name: "停止並釋放", exact: true }).click();
+  await closeCase(page);
   await expect.poll(async () => (await retainedMetrics(page)).active).toBe(0);
+  assert.equal(
+    await page.evaluate(() => !!(window as RuntimeWindow).__atlasRuntime),
+    false,
+    "Closing the detail releases the runtime API.",
+  );
   await expect(page.locator(".runtime-stage canvas")).toHaveCount(0);
   await expect(page.locator(".runtime-stage iframe")).toHaveCount(0);
 }
@@ -154,7 +159,7 @@ function heavyRequests(requests: string[]) {
   const runtime =
     /\/technology-runtime\/src\/(?![^/?]*(?:-cases|-shared|-common|-kit|types)\.[tj]sx?(?:\?|$))[^/?]+\.[tj]sx?(?:\?|$)/;
   const chunks =
-    /\/assets\/(?:data-(?:d3|echarts|vega|visx|plot)|maps-(?:maplibre|deck|cesium|leaflet)|scene-(?:three|r3f|babylon|theatre)|gpu-(?:pixi|regl)|editor-(?:konva|fabric)|physics-(?:matter|particles)|generative-p5|dom-(?:gsap|motion|anime)|vector|native|video-|asset-|rive)[^/]*\.js(?:\?|$)/;
+    /\/assets\/(?:data-(?:d3|echarts|vega|visx|plot)|maps-(?:maplibre|deck|cesium|leaflet)|scene-(?:three|r3f|babylon|theatre)|gpu-(?:pixi|regl)|editor-(?:konva|fabric)|physics-(?:matter|particles|elements)|generative-p5|dom-(?:gsap|motion|anime)|vector|native|video-|asset-|rive)[^/]*\.js(?:\?|$)/;
   const packages =
     /\/(?:node_modules|\.vite\/deps)\/[^?]*(?:three|pixi|echarts|maplibre|cesium|deck_gl|babylon|vega|konva|fabric|p5|rive)[^?]*\.m?js(?:\?|$)/;
   return requests.filter(
@@ -188,31 +193,80 @@ test("baseline IDs and legacy route remain intact", async (page) => {
   await closeCase(page);
 });
 
-test("lazy runtime loading before explicit activation", async (page, requests) => {
+test("runtime remains lazy until a technology detail opens", async (page, requests) => {
   assert.deepEqual(
     heavyRequests(requests),
     [],
     "Initial gallery must not fetch heavy runtime modules.",
   );
   await openCase(page, "SA-131");
-  await expect(
-    page.getByRole("button", { name: "啟動互動案例", exact: true }),
-  ).toBeVisible();
-  assert.deepEqual(
-    heavyRequests(requests),
-    [],
-    "Opening the detail must keep the live runtime lazy.",
-  );
-  assert.equal(
-    await page.evaluate(() => !!(window as RuntimeWindow).__atlasRuntime),
-    false,
-  );
   await startRuntime(page);
   assert.ok(
     heavyRequests(requests).some((url) => /data-d3/.test(url)),
-    "Explicit activation loads the actual D3 runtime chunk.",
+    "Opening the detail loads the actual D3 runtime chunk.",
   );
   await stopRuntime(page);
+});
+
+test("SA-156 keeps its map focal point stable through the full zoom", async (page) => {
+  await openCase(page, "SA-156");
+  await startRuntime(page);
+  const samples: {
+    time: number;
+    longitude: number;
+    latitude: number;
+    zoom: number;
+    markerX: number;
+    markerY: number;
+  }[] = [];
+  for (let frame = 0; frame <= 32; frame++) {
+    const time = frame / 4;
+    samples.push(
+      await page.evaluate(async (time) => {
+        const runtime = (window as RuntimeWindow).__atlasRuntime!;
+        await runtime.seek(time);
+        const root = runtime.root();
+        const map = root.querySelector<HTMLElement>(".reveal")!;
+        const marker = root.querySelector<HTMLElement>(".hero-label")!;
+        const stage = document.querySelector(".runtime-stage")!;
+        const markerRect = marker.getBoundingClientRect();
+        const stageRect = stage.getBoundingClientRect();
+        return {
+          time,
+          longitude: Number(map.dataset.longitude),
+          latitude: Number(map.dataset.latitude),
+          zoom: Number(map.dataset.zoom),
+          markerX: markerRect.x + markerRect.width / 2 - stageRect.x,
+          markerY: markerRect.y + markerRect.height / 2 - stageRect.y,
+        };
+      }, time),
+    );
+  }
+  const anchor = samples[0];
+  for (const sample of samples) {
+    assert.ok(
+      Math.abs(sample.longitude - anchor.longitude) < 0.0001,
+      `Focal longitude drifted at ${sample.time}s: ${sample.longitude}`,
+    );
+    assert.ok(
+      Math.abs(sample.latitude - anchor.latitude) < 0.0001,
+      `Focal latitude drifted at ${sample.time}s: ${sample.latitude}`,
+    );
+    assert.ok(
+      Math.abs(sample.markerX - anchor.markerX) < 1,
+      `Taipei marker shifted horizontally at ${sample.time}s: ${sample.markerX}`,
+    );
+    assert.ok(
+      Math.abs(sample.markerY - anchor.markerY) < 1,
+      `Taipei marker shifted vertically at ${sample.time}s: ${sample.markerY}`,
+    );
+  }
+  for (let i = 1; i < samples.length; i++)
+    assert.ok(
+      Math.abs(samples[i].zoom - samples[i - 1].zoom) < 0.6,
+      `Zoom jumped between ${samples[i - 1].time}s and ${samples[i].time}s.`,
+    );
+  await closeCase(page);
 });
 
 test("effect-first filters and canonical aliases", async (page) => {
@@ -473,6 +527,10 @@ test(
       await openCase(page, id);
       let final: Metrics | undefined;
       for (let cycle = 0; cycle < 3; cycle++) {
+        if (cycle > 0) {
+          await card(page, id).locator(".card-open").click();
+          await expect(page.locator(".detail-id")).toContainText(id);
+        }
         await startRuntime(page);
         assert.equal(
           (await retainedMetrics(page)).active,
@@ -490,6 +548,7 @@ test(
           "Every completed mount was disposed.",
         );
       }
+      await card(page, id).locator(".card-open").click();
       await startRuntime(page);
       await closeCase(page);
       await expect
@@ -550,6 +609,72 @@ test(
   { reducedMotion: "reduce" },
 );
 
+test(
+  "detail runtime opens directly and its timeline reaches both exact ends",
+  async (page) => {
+    await openCase(page, "SA-131");
+    await startRuntime(page);
+    await expect(
+      page.getByRole("button", { name: "啟動互動案例", exact: true }),
+    ).toHaveCount(0);
+    await expect(
+      page.getByRole("button", { name: "停止並釋放", exact: true }),
+    ).toHaveCount(0);
+
+    const timeline = page.getByRole("slider", {
+      name: "案例時間",
+      exact: true,
+    });
+    await expect(timeline).toHaveAttribute("min", "0");
+    await expect(timeline).toHaveAttribute("max", "4");
+    await timeline.scrollIntoViewIfNeeded();
+    const box = await timeline.boundingBox();
+    assert.ok(
+      box && box.width >= 200,
+      "Timeline must have a usable drag target.",
+    );
+    const centerY = box.y + box.height / 2;
+
+    await page.mouse.move(box.x + box.width / 2, centerY);
+    await page.mouse.down();
+    await page.mouse.move(box.x + 1, centerY, { steps: 8 });
+    await page.mouse.up();
+    await expect(timeline).toHaveValue("0");
+    assert.equal(
+      await page.evaluate(() =>
+        (window as RuntimeWindow).__atlasRuntime!.time(),
+      ),
+      0,
+      "Dragging to the left endpoint seeks to the exact start.",
+    );
+
+    await page.mouse.move(box.x + 1, centerY);
+    await page.mouse.down();
+    await page.mouse.move(box.x + box.width - 1, centerY, { steps: 8 });
+    await page.mouse.up();
+    await expect(timeline).toHaveValue("4");
+    assert.equal(
+      await page.evaluate(() =>
+        (window as RuntimeWindow).__atlasRuntime!.time(),
+      ),
+      4,
+      "Dragging to the right endpoint seeks to the exact loop boundary.",
+    );
+
+    await page.getByRole("button", { name: "重播／重設", exact: true }).click();
+    await expect(timeline).toHaveValue("0");
+    assert.equal(
+      await page.evaluate(() =>
+        (window as RuntimeWindow).__atlasRuntime!.time(),
+      ),
+      0,
+      "Replay/reset returns to the opening state without remounting.",
+    );
+    await closeCase(page);
+  },
+  { reducedMotion: "reduce" },
+);
+
 for (const viewport of [
   { width: 390, height: 844 },
   { width: 768, height: 1024 },
@@ -558,9 +683,7 @@ for (const viewport of [
     `touch viewport ${viewport.width} keeps the live case contained`,
     async (page) => {
       await openCase(page, "SA-131");
-      await page
-        .getByRole("button", { name: "啟動互動案例", exact: true })
-        .tap();
+      await startRuntime(page);
       await expect(page.locator(".technology-runtime")).toHaveAttribute(
         "data-ready",
         "true",

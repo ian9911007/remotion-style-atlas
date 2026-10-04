@@ -1,4 +1,4 @@
-/** Created: 2026-10-04. React scene ownership and Drei geometry; never-mode render clock. */
+/** Created: 2026-10-05. React scene ownership and Drei geometry; never-mode render clock. */
 import React, { useLayoutEffect, useRef } from "react";
 import {
   createRoot,
@@ -71,7 +71,20 @@ const mount: Mount = async (root, options) => {
     root.append(panel);
   }
   let seconds = 0;
-  const color = { value: "#627b61" };
+  const color = { value: "#627b61", manuallySelected: false };
+  const upholsteryPalette = ["#627b61", "#c66b4f", "#354d66"];
+  const upholsteryAt = (time: number) => {
+    const phase = (((time % 8) + 8) % 8) / 8 * upholsteryPalette.length;
+    const index = Math.floor(phase);
+    const local = phase - index;
+    const blend = THREE.MathUtils.smoothstep(local, 0.76, 1);
+    return new THREE.Color(upholsteryPalette[index])
+      .lerp(
+        new THREE.Color(upholsteryPalette[(index + 1) % upholsteryPalette.length]),
+        blend,
+      )
+      .getStyle();
+  };
   let state: RootState | undefined;
   let prepared!: () => void;
   const ready = new Promise<void>((resolve) => {
@@ -388,6 +401,7 @@ const mount: Mount = async (root, options) => {
     ["#627b61", "#c66b4f", "#354d66"].forEach((hex, index) => {
       const button = document.createElement("button");
       button.textContent = ["苔綠", "陶土", "深藍"][index];
+      button.setAttribute("aria-pressed", "false");
       Object.assign(button.style, {
         background: hex,
         color: "white",
@@ -398,7 +412,14 @@ const mount: Mount = async (root, options) => {
         cursor: "pointer",
       });
       const callback = () => {
+        color.manuallySelected = true;
         color.value = hex;
+        controls.querySelectorAll("button").forEach((candidate, candidateIndex) => {
+          candidate.setAttribute(
+            "aria-pressed",
+            candidateIndex === index ? "true" : "false",
+          );
+        });
         state?.advance(seconds, false);
       };
       button.addEventListener("click", callback);
@@ -408,7 +429,9 @@ const mount: Mount = async (root, options) => {
     root.append(controls);
   }
   const seek = (time: number) => {
+    if (time < seconds) color.manuallySelected = false;
     seconds = time;
+    if (!color.manuallySelected) color.value = upholsteryAt(time);
     state?.advance(time, false);
   };
   const releaseLookupTexture = state

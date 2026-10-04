@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "created": "2026-10-05",
+  "title": "Visual Motion Pattern Library",
+  "patterns": [
+    {
+      "id": "hero-background",
+      "label": "主視覺背景"
+    },
+    {
+      "id": "title-reveal",
+      "label": "標題揭示"
+    },
+    {
+      "id": "text-emphasis",
+      "label": "文字強調"
+    },
+    {
+      "id": "product-spotlight",
+      "label": "產品聚焦"
+    },
+    {
+      "id": "glass-depth-ui",
+      "label": "玻璃與深度介面"
+    },
+    {
+      "id": "card-motion",
+      "label": "卡片動態"
+    },
+    {
+      "id": "grid-motion",
+      "label": "格網動態"
+    },
+    {
+      "id": "cursor-reactive",
+      "label": "游標回應"
+    },
+    {
+      "id": "particle-field",
+      "label": "粒子與場"
+    },
+    {
+      "id": "distortion",
+      "label": "變形扭曲"
+    },
+    {
+      "id": "noise-texture",
+      "label": "雜訊與紋理"
+    },
+    {
+      "id": "shader-background",
+      "label": "著色器背景"
+    },
+    {
+      "id": "kinetic-typography",
+      "label": "動態字體"
+    },
+    {
+      "id": "scroll-reveal",
+      "label": "捲動揭示"
+    },
+    {
+      "id": "ui-transition",
+      "label": "介面轉場"
+    },
+    {
+      "id": "cta-interaction",
+      "label": "行動按鈕互動"
+    },
+    {
+      "id": "loading-state",
+      "label": "載入與狀態轉換"
+    },
+    {
+      "id": "decorative-ambient",
+      "label": "環境裝飾動態"
+    }
+  ],
+  "sources": [
+    {
+      "id": "react-bits",
+      "label": "React Bits",
+      "url": "https://reactbits.dev/"
+    },
+    {
+      "id": "remotion",
+      "label": "Remotion",
+      "url": "https://www.remotion.dev/"
+    },
+    {
+      "id": "hyperframes",
+      "label": "HyperFrames",
+      "url": "https://hyperframes.heygen.com/"
+    },
+    {
+      "id": "gsap",
+      "label": "GSAP",
+      "url": "https://gsap.com/"
+    },
+    {
+      "id": "motion",
+      "label": "Framer Motion / Motion",
+      "url": "https://motion.dev/"
+    },
+    {
+      "id": "threejs",
+      "label": "Three.js",
+      "url": "https://threejs.org/"
+    },
+    {
+      "id": "webgl-shaders",
+      "label": "WebGL / shaders",
+      "url": "https://registry.khronos.org/webgl/"
+    },
+    {
+      "id": "css",
+      "label": "CSS",
+      "url": "https://www.w3.org/Style/CSS/"
+    },
+    {
+      "id": "svg",
+      "label": "SVG",
+      "url": "https://www.w3.org/Graphics/SVG/"
+    },
+    {
+      "id": "custom-implementation",
+      "label": "自訂實作"
+    },
+    {
+      "id": "other",
+      "label": "其他來源"
+    }
+  ]
+}

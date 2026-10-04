@@ -76,12 +76,16 @@ const mount: Mount = async (root, { variant, signal }) => {
       );
       if (variant === "composite") {
         x.globalCompositeOperation = "multiply";
+        const loop = ((t % 4) + 4) % 4;
+        const progress = (loop / 4) * 3;
         ["#ef6390", "#73cadd", "#f1ca4d"].forEach((color, i) => {
+          const local = Math.max(0, Math.min(1, progress - i));
+          const amount = Math.sin(local * Math.PI) ** 2;
           x.fillStyle = color;
           x.beginPath();
           x.arc(
-            480 + Math.cos(t + i * 2.094) * 110,
-            290 + Math.sin(t + i * 2.094) * 65,
+            385 + i * 95 + (i % 2 ? -1 : 1) * 34 * amount,
+            290 + (i - 1) * 30 + 24 * amount,
             140,
             0,
             Math.PI * 2,
@@ -200,11 +204,13 @@ const mount: Mount = async (root, { variant, signal }) => {
   if (variant === "transition") {
     const s = surface(
       root,
-      `.panel{margin:32px 0;width:100%;border-top:2px solid #252e29;border-bottom:2px solid #252e29;padding:28px 0}.details{display:grid;grid-template-rows:0fr;transition:grid-template-rows .65s cubic-bezier(.2,.8,.2,1)}.details>div{overflow:hidden}.panel.open .details{grid-template-rows:1fr}.big{font-size:64px;letter-spacing:-3px}.line{font-size:24px;padding-top:28px;max-width:700px;line-height:1.5}.arrow{float:right;transition:transform .65s}.open .arrow{transform:rotate(45deg)}`,
-      `<div class="label">STUDIO / MATERIAL LIBRARY</div><div class="panel"><button aria-expanded="false" style="width:100%;text-align:left;border:0;padding:0" class="big">Composition <span class="arrow">+</span></button><div class="details"><div><p class="line">A quiet surface.<br>A deliberate transition.<br>Information revealed on demand.</p></div></div></div><p class="hint">點選標題展開／收合；鍵盤 Enter 可操作</p>`,
+      `.panel{margin:32px 0;width:100%;border-top:2px solid #252e29;border-bottom:2px solid #252e29;padding:28px 0}.details{display:grid;grid-template-rows:0fr;transition:grid-template-rows .65s cubic-bezier(.2,.8,.2,1)}.details>div{overflow:hidden}.panel.open .details{grid-template-rows:1fr}.big{font-size:64px;letter-spacing:-3px}.line{display:block;max-width:700px;font-size:22px;padding-top:17px;line-height:1.35;opacity:0;transform:translateY(10px);transition:opacity .24s ease,transform .24s ease}.panel.open .line{opacity:1;transform:translateY(0)}.panel.open .line:nth-child(1){transition-delay:0s}.panel.open .line:nth-child(2){transition-delay:.18s}.panel.open .line:nth-child(3){transition-delay:.36s}.panel:not(.open) .line:nth-child(1){transition-delay:.36s}.panel:not(.open) .line:nth-child(2){transition-delay:.18s}.panel:not(.open) .line:nth-child(3){transition-delay:0s}.arrow{float:right;transition:transform .65s}.open .arrow{transform:rotate(45deg)}`,
+      `<div class="label">STUDIO / MATERIAL LIBRARY</div><div class="panel"><button aria-expanded="false" style="width:100%;text-align:left;border:0;padding:0" class="big">Composition <span class="arrow">+</span></button><div class="details"><div><p class="line">A quiet surface.</p><p class="line">A deliberate transition.</p><p class="line">Information revealed on demand.</p></div></div></div><p class="hint">點選標題展開／收合；鍵盤 Enter 可操作</p>`,
     );
     let user = false,
-      last = -1;
+      last: boolean | null = null,
+      loop = -1,
+      previousTime = -1;
     const p = s.querySelector(".panel")!,
       b = s.querySelector("button")!;
     const set = (v: boolean) => {
@@ -220,10 +226,21 @@ const mount: Mount = async (root, { variant, signal }) => {
       { signal },
     );
     return handle(root, (t) => {
-      const n = Math.floor(t / 2);
-      if (!user && n !== last) {
-        last = n;
-        set(n % 2 === 1);
+      const cycle = Math.floor(Math.max(0, t) / 4);
+      const local = ((t % 4) + 4) % 4;
+      if (cycle !== loop || (previousTime >= 0 && local + 0.05 < previousTime)) {
+        loop = cycle;
+        user = false;
+        last = null;
+        set(false);
+      }
+      previousTime = local;
+      // Open once, let the three rows enter in order, then close with a
+      // reverse stagger. The completed four-second cycle returns to baseline.
+      const next = local >= 0.45 && local < 2.65;
+      if (!user && next !== last) {
+        last = next;
+        set(next);
       }
     });
   }

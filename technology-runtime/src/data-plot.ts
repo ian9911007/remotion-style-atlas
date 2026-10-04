@@ -2,9 +2,17 @@
 import * as Plot from "@observablehq/plot";
 import type { Mount } from "./types";
 import { shell, button } from "./data-shared";
-const mount: Mount = async (root, { variant, signal }) => {
+export function plotLoopState(seconds: number) {
+  return (1 - Math.cos(2 * Math.PI * ((Math.max(0, seconds) % 4) / 4))) / 2;
+}
+const stagger = (mix: number, delay: number) => {
+  const value = Math.max(0, Math.min(1, (mix - delay) / (1 - delay)));
+  return value * value * (3 - 2 * value);
+};
+const mount: Mount = async (root, { variant, signal, reducedMotion }) => {
   const facet = variant === "facets";
-  let mode = 0;
+  let mode = 0,
+    manual = false;
   const { stage, controls, caption } = shell(
     root,
     facet
@@ -30,7 +38,7 @@ const mount: Mount = async (root, { variant, signal }) => {
         34 + g * 7 + Math.sin(d * 0.23 + g) * 14 + Math.cos(d * 0.63 + g) * 4,
     })),
   ).flat();
-  const draw = () => {
+  const build = (displayMode: number) => {
     const node = Plot.plot(
       facet
         ? {
@@ -54,7 +62,7 @@ const mount: Mount = async (root, { variant, signal }) => {
             marks: [
               Plot.ruleY([40], { stroke: "#d3cbbd" }),
               Plot.lineY(
-                seasons.filter((d) => !mode || d.day <= 20),
+                seasons.filter((d) => !displayMode || d.day <= 20),
                 {
                   x: "day",
                   y: "value",
@@ -62,13 +70,21 @@ const mount: Mount = async (root, { variant, signal }) => {
                   stroke: "group",
                   sort: "day",
                   strokeWidth: 2.5,
+                  ariaDescription: "season traces",
                 },
               ),
               Plot.dot(
                 seasons.filter(
-                  (d) => d.day % 5 === 0 && (!mode || d.day <= 20),
+                  (d) => d.day % 5 === 0 && (!displayMode || d.day <= 20),
                 ),
-                { x: "day", y: "value", fy: "group", fill: "group", r: 3 },
+                {
+                  x: "day",
+                  y: "value",
+                  fy: "group",
+                  fill: "group",
+                  r: 3,
+                  ariaDescription: "season observations",
+                },
               ),
             ],
           }
@@ -84,14 +100,15 @@ const mount: Mount = async (root, { variant, signal }) => {
               fontFamily: "Arial",
             },
             x: { label: "觀測分數", domain: [-10, 80] },
-            y: { label: mode ? "累積筆數" : "樣本筆數", grid: true },
+            y: { label: displayMode ? "累積筆數" : "樣本筆數", grid: true },
             marks: [
               Plot.rectY(values, {
                 ...Plot.binX(
                   { y: "count" },
-                  { x: "score", thresholds: 18, cumulative: mode > 0 },
+                  { x: "score", thresholds: 18, cumulative: displayMode > 0 },
                 ),
                 fill: "#7772ad",
+                ariaDescription: "histogram bars",
                 inset: 1.8,
               }),
               Plot.ruleY([0], { stroke: "#83809c" }),
@@ -109,16 +126,107 @@ const mount: Mount = async (root, { variant, signal }) => {
         ? "依季節分面的四張折線圖，使用一致尺度"
         : "原創觀測樣本的分布直方圖，可切換累積模式",
     );
-    stage.replaceChildren(node);
-    caption.textContent = facet
-      ? `原創示意資料 · 分面使用相同 Y 尺度 · ${mode ? "前 20 日" : "完整月份"}`
-      : `原創示意資料 · ${mode ? "累積分布" : "頻率分布"} · binX 以資料轉換產生區間`;
+    return node;
+  };
+  let plots: (SVGSVGElement | HTMLElement)[] = [];
+  let paths: SVGPathElement[] = [];
+  let pathLengths: number[] = [];
+  let dots: SVGCircleElement[] = [];
+  const rebuild = () => {
+    plots = facet ? [build(mode)] : [build(0), build(1)];
+    plots.forEach((node) => {
+      node.style.position = "absolute";
+      node.style.inset = "0";
+    });
+    stage.replaceChildren(...plots);
+    if (facet) {
+      paths = [
+        ...stage.querySelectorAll<SVGPathElement>(
+          '[aria-description="season traces"] path',
+        ),
+      ];
+      pathLengths = paths.map((path) => path.getTotalLength());
+      dots = [
+        ...stage.querySelectorAll<SVGCircleElement>(
+          '[aria-description="season observations"] circle',
+        ),
+      ];
+    }
+  };
+  const draw = (seconds: number) => {
+    const mix = plotLoopState(seconds);
+    if (facet) {
+      const progress = paths.map((_, index) =>
+        manual || reducedMotion ? 1 : 0.2 + 0.8 * stagger(mix, index * 0.09),
+      );
+      paths.forEach((path, index) => {
+        path.setAttribute("stroke-dasharray", String(pathLengths[index]));
+        path.setAttribute(
+          "stroke-dashoffset",
+          String(pathLengths[index] * (1 - progress[index])),
+        );
+      });
+      const days = mode ? 20 : 30,
+        perSeason = days / 5;
+      dots.forEach((dot, index) => {
+        const phase = progress[Math.floor(index / perSeason)] ?? 1;
+        const day = ((index % perSeason) + 1) * 5;
+        dot.setAttribute(
+          "opacity",
+          String(stagger(phase, Math.max(0, (day - 3) / days))),
+        );
+      });
+      caption.textContent = manual
+        ? `原創示意資料 · 分面共用 Y 尺度 · ${mode ? "前 20 日" : "完整月份"}`
+        : "原創示意資料 · 四季折線依序展開與回收 · 分面共用同一把尺";
+    } else {
+      const progress = manual ? mode : reducedMotion ? 0 : mix;
+      if (!manual) mode = Number(progress > 0.5);
+      plots.forEach((node, layer) => {
+        node.setAttribute(
+          "aria-hidden",
+          String(layer === 0 ? progress > 0.5 : progress <= 0.5),
+        );
+        for (const group of node.querySelectorAll<SVGGElement>(
+          "g[aria-label]",
+        )) {
+          if (group.getAttribute("aria-description") !== "histogram bars")
+            group.setAttribute(
+              "opacity",
+              String(layer ? progress : 1 - progress),
+            );
+        }
+        const bars = [
+          ...node.querySelectorAll<SVGRectElement>(
+            '[aria-description="histogram bars"] rect',
+          ),
+        ];
+        bars.forEach((bar, index) => {
+          const delay = (0.24 * index) / Math.max(1, bars.length - 1);
+          const column = stagger(progress, delay);
+          bar.setAttribute("opacity", String(layer ? column : 1 - column));
+        });
+      });
+      caption.textContent =
+        "原創示意資料 · 頻率 / 累積分布逐欄比較 · 兩組實際 binX 轉換往返展示";
+    }
   };
   button(controls, facet ? "切換觀測窗" : "切換累積分布", signal, () => {
+    manual = true;
     mode = 1 - mode;
-    draw();
+    if (facet) rebuild();
+    draw(0);
   });
-  draw();
-  return { seek: () => {}, dispose: () => root.replaceChildren() };
+  button(controls, "自動展示", signal, () => {
+    manual = false;
+    if (facet && mode) {
+      mode = 0;
+      rebuild();
+    }
+    draw(0);
+  });
+  rebuild();
+  draw(0);
+  return { seek: draw, dispose: () => root.replaceChildren() };
 };
 export default mount;

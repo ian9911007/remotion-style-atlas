@@ -24,7 +24,7 @@ export const riveCases: CaseDefinition[] = [
       "未驗證任意素材即宣稱完整匯出相容",
     ],
     instructions:
-      "按「切換素材輸入」切換 Boolean 1；「回到自動展示」恢復每兩秒切換。鍵盤 Tab 後用 Enter 或空白鍵啟動。",
+      "按「切換素材輸入」切換 Boolean 1；「回到自動展示」恢復四秒切換、八秒回到原狀的循環。鍵盤 Tab 後用 Enter 或空白鍵啟動。",
     limitations: [
       "只示範已驗證的 Artboard、State Machine 1、Boolean 1；其他素材需另查名稱與輸入型別。",
       "低階 runtime 由 host 固定步進；互動後的輸入歷史未輸出為影片重播契約。",

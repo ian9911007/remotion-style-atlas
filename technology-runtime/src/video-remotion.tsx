@@ -2,18 +2,11 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { flushSync } from "react-dom";
 import { Player, type PlayerRef } from "@remotion/player";
-import {
-  AbsoluteFill,
-  useCurrentFrame,
-  interpolate,
-  spring,
-  useVideoConfig,
-} from "remotion";
+import { AbsoluteFill, useCurrentFrame, spring, useVideoConfig } from "remotion";
 import type { Mount } from "./types";
 function Composition({ variant }: { variant: string }) {
   const frame = useCurrentFrame(),
     { fps } = useVideoConfig();
-  const enter = spring({ frame, fps, config: { damping: 200 } });
   return (
     <AbsoluteFill
       style={{
@@ -29,35 +22,41 @@ function Composition({ variant }: { variant: string }) {
       </div>
       {variant === "editorial" ? (
         <>
-          <div
-            style={{
-              fontSize: 105,
-              fontWeight: 900,
-              lineHeight: 0.95,
-              marginTop: 65,
-              letterSpacing: -7,
-              transform: `translateY(${(1 - enter) * 80}px)`,
-              opacity: enter,
-            }}
-          >
-            FORM
-            <br />
-            FOLLOWS
-            <br />
-            FRAME.
-          </div>
-          <div
-            style={{
-              position: "absolute",
-              width: 180,
-              height: 180,
-              borderRadius: "50%",
-              background: "#f0d889",
-              right: 80,
-              top: 160,
-              transform: `scale(${interpolate(frame, [0, 40, 90, 120], [0, 1, 1, 0.7])})`,
-            }}
-          />
+          {(["FORM", "FOLLOWS", "FRAME."] as const).map((word, i) => {
+            const progress = (frame / 120) * 3;
+            const local = Math.max(0, Math.min(1, progress - i));
+            const amount = Math.sin(local * Math.PI) ** 2;
+            return (
+              <div
+                key={word}
+                style={{
+                  position: "absolute",
+                  left: 46,
+                  top: 112 + i * 112,
+                  display: "flex",
+                  alignItems: "baseline",
+                  gap: 24,
+                  fontSize: 105,
+                  fontWeight: 900,
+                  lineHeight: 0.95,
+                  letterSpacing: -7,
+                  transform: `translateX(${amount * 18}px)`,
+                  opacity: 0.82 + amount * 0.18,
+                }}
+              >
+                <span>{word}</span>
+                <span
+                  style={{
+                    display: "inline-block",
+                    width: 150 * amount,
+                    height: 7,
+                    marginLeft: -12,
+                    background: "#f0d889",
+                  }}
+                />
+              </div>
+            );
+          })}
         </>
       ) : (
         <>

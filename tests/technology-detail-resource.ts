@@ -36,7 +36,6 @@ try {
     await page.evaluate(id => { location.hash = `/style/${id}`; }, caseId);
     await page.getByRole('button', { name: '關閉風格檢視', exact: true }).waitFor();
     if (activate) {
-      await page.getByRole('button', { name: '啟動互動案例', exact: true }).click();
       // Locator waiting does not retain an ElementHandle in the DevTools context.
       // An undisposed waitForSelector result would retain the detached dialog.
       await page.locator('.technology-runtime[data-ready=true]').waitFor({ timeout: 45000 });

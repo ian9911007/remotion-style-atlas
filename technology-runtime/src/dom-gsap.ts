@@ -118,34 +118,23 @@ const mount: Mount = async (root, { variant, signal }) => {
     `.product{position:absolute;left:415px;top:120px;width:145px;height:310px;background:linear-gradient(90deg,#899697,#e1e8e6 40%,#899697);border-radius:65px 65px 40px 40px;box-shadow:30px 20px 20px #0002}.cap{position:absolute;top:-15px;left:34px;width:77px;height:40px;background:#324c46;border-radius:8px}.labelmark{position:absolute;top:120px;left:35px;font-size:28px;line-height:1.05;color:#21342f}.annotation{position:absolute;font-size:22px;left:70px;top:180px;width:250px;border-top:1px solid;padding-top:15px}.annotation.right{left:650px;top:300px}.ring{position:absolute;left:295px;top:120px;width:380px;height:310px;border:1px solid #8b9d92;border-radius:50%}`,
     `<div class="label">OBJECT / ASSEMBLY STUDY</div><div class="ring"></div><div class="product"><div class="cap"></div><div class="labelmark">FORM<br>01</div></div><div class="annotation">01 / Shell<br>Single surface</div><div class="annotation right">02 / Closure<br>Controlled separation</div>`,
   );
-  // Initialize future tween transforms before the first render so a backward
-  // seek has the same compositing state as the initial visit to that frame.
+  // Establish the exact loop baseline before the first seek. Each product
+  // part owns a separate interval; the second half reverses the sequence.
+  const annotations = [...s.querySelectorAll<HTMLElement>(".annotation")];
+  gsap.set(s.querySelector(".product"), { y: 0, opacity: 1 });
+  gsap.set(annotations, { x: -30, opacity: 0 });
   gsap.set(s.querySelector(".cap"), { y: 0 });
   gsap.set(s.querySelector(".ring"), { scaleY: 1, rotate: 0 });
   const tl = gsap
     .timeline({ paused: true })
-    .fromTo(
-      s.querySelector(".product"),
-      { y: 80, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.9, ease: "power2.out" },
-    )
-    .fromTo(
-      s.querySelectorAll(".annotation"),
-      { x: -30, opacity: 0 },
-      { x: 0, opacity: 1, stagger: 0.25, duration: 0.6 },
-      0.6,
-    )
-    .to(
-      s.querySelector(".cap"),
-      { y: -55, duration: 0.7, ease: "power2.inOut" },
-      1.7,
-    )
-    .to(
-      s.querySelector(".ring"),
-      { scaleY: 0.45, rotate: -12, duration: 0.8 },
-      1.7,
-    )
-    .to(s.querySelector(".cap"), { y: 0, duration: 0.7 }, 2.9);
+    .to(annotations[0], { x: 0, opacity: 1, duration: 0.34, ease: "power2.out" }, 0.18)
+    .to(s.querySelector(".cap"), { y: -55, duration: 0.42, ease: "power2.inOut" }, 0.68)
+    .to(s.querySelector(".ring"), { scaleY: 0.45, rotate: -12, duration: 0.42, ease: "power2.inOut" }, 1.18)
+    .to(annotations[1], { x: 0, opacity: 1, duration: 0.34, ease: "power2.out" }, 1.72)
+    .to(annotations[1], { x: -30, opacity: 0, duration: 0.3, ease: "power2.in" }, 2.18)
+    .to(s.querySelector(".ring"), { scaleY: 1, rotate: 0, duration: 0.4, ease: "power2.inOut" }, 2.58)
+    .to(s.querySelector(".cap"), { y: 0, duration: 0.4, ease: "power2.inOut" }, 3.04)
+    .to(annotations[0], { x: -30, opacity: 0, duration: 0.34, ease: "power2.in" }, 3.5);
   return handle(
     root,
     (t) => {

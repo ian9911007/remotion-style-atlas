@@ -1,6 +1,7 @@
 import type { CaseDefinition } from "../../technology-runtime/src/types";
 import type { ProjectContext } from "../lib/prompt";
 import { caseEvidence, technologyCatalog } from "./registry";
+import { patternMetadata } from "./pattern-library";
 export function compileCasePrompt(
   c: CaseDefinition,
   context: ProjectContext = {},
@@ -13,6 +14,7 @@ export function compileCasePrompt(
 CASE IDENTITY
 ${c.id} / ${c.englishTitle}
 Capabilities: ${c.capabilities.join(", ")}
+Pattern/source metadata: ${JSON.stringify(patternMetadata(c) ?? null)}. An unclassified source must remain unknown. Implementation source does not determine visual style or authorize installation.
 Source implementation: tools/remotion-style-atlas/technology-runtime/src/${c.module} (variant ${c.variant}). This source location is a reference, not a required dependency of the target application.
 
 LOCKED EFFECT REQUIREMENTS
@@ -30,7 +32,7 @@ Required packages: ${c.dependencies.join(", ") || "Browser-native APIs; feature-
 Asset provenance: ${JSON.stringify(c.assets)}. An empty list means original procedural geometry or synthetic data, not a license to fetch arbitrary assets.
 
 LIFECYCLE AND RESOURCE CONTROLS
-Mount only after explicit activation and assets/font readiness. Use one authoritative time source. Suspend offscreen and hidden-tab work; honor reduced motion with a static state. Dispose timelines, observers, listeners, media, workers, renderers and GPU resources on replacement and close. Bound canvas size, pixel ratio, instances and concurrent decoders. No production benchmark is implied by this showcase.
+Load the heavy runtime only when its detail view opens, after assets and fonts are ready. Use one authoritative time source. Suspend offscreen and hidden-tab work; honor reduced motion with a static state. Dispose timelines, observers, listeners, media, workers, renderers and GPU resources on replacement and close. Bound canvas size, pixel ratio, instances and concurrent decoders. No production benchmark is implied by this showcase.
 
 WEB AND VIDEO BOUNDARY
 Implementation classification: ${c.video}. Evidence: ${caseEvidence(c.id).video ?? "Deterministic export has not been verified."}. Browser playback is not deterministic video verification. For export, seed randomness, explicitly seek each engine, wait for media/layout readiness and verify nonsequential seeks and repeated frames. Recorded interactions require an explicit replay script.
