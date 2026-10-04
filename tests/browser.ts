@@ -472,15 +472,14 @@ test("versioned local export/import round trip and malformed import rejection", 
   assert.deepEqual(await stored(page, PREFS), expectedPreferences);
 });
 
-test("new visitors default to focus; global mode plays all cards and pause/still stop playback", async (page) => {
+test("new visitors default to focus; global mode respects visible decoder budget and pause/still stop playback", async (page) => {
   await expect(
     page.getByRole("button", { name: "聚焦", exact: true }),
   ).toHaveAttribute("aria-pressed", "true");
   await allPaused(page);
   await settledPlayback(page);
-  assert.equal(
-    (await snapshot(page)).playing.length,
-    await page.locator(".style-card").count(),
+  assert.ok(
+    (await snapshot(page)).playing.length <= (await snapshot(page)).limit,
   );
   await page.getByRole("button", { name: "暫停所有預覽" }).click();
   await allPaused(page);
@@ -542,10 +541,10 @@ test("focus mode plays the hovered card and its surrounding grid neighbors", asy
     .toBeGreaterThan(1);
   const group = await snapshot(page);
   assert.ok(group.playing.includes("SA-010"));
-  assert.ok(group.playing.length <= 9);
+  assert.ok(group.playing.length <= group.limit);
 });
 
-test("global playback includes cards outside the viewport", async (page) => {
+test("global playback follows visible cards after scrolling", async (page) => {
   await page.getByRole("button", { name: "全域", exact: true }).click();
   await card(page, "SA-061").scrollIntoViewIfNeeded();
   await expect(card(page, "SA-061")).toBeVisible();
@@ -555,9 +554,8 @@ test("global playback includes cards outside the viewport", async (page) => {
       intervals: [250, 500, 1000],
     })
     .toBe(true);
-  assert.equal(
-    (await snapshot(page)).playing.length,
-    await page.locator(".style-card").count(),
+  assert.ok(
+    (await snapshot(page)).playing.length <= (await snapshot(page)).limit,
   );
 });
 
@@ -579,16 +577,13 @@ test("focus mode updates the neighboring group on hover and keyboard focus", asy
   assert.ok((await snapshot(page)).playing.includes("SA-002"));
 });
 
-test("global mode keeps offscreen cards playing and hidden-document videos pause", async (page) => {
+test("global mode pauses offscreen and hidden-document videos", async (page) => {
   await settledPlayback(page);
   await page.evaluate(() => {
     document.querySelector("footer")!.setAttribute("style", "height:2500px");
   });
   await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-  assert.equal(
-    (await snapshot(page)).playing.length,
-    await page.locator(".style-card").count(),
-  );
+  await allPaused(page);
   await page.evaluate(() => window.scrollTo(0, 0));
   await settledPlayback(page);
   await page.evaluate(() => {
@@ -607,9 +602,8 @@ test("global mode keeps offscreen cards playing and hidden-document videos pause
     document.dispatchEvent(new Event("visibilitychange"));
   });
   await settledPlayback(page);
-  assert.equal(
-    (await snapshot(page)).playing.length,
-    await page.locator(".style-card").count(),
+  assert.ok(
+    (await snapshot(page)).playing.length <= (await snapshot(page)).limit,
   );
   await page.evaluate(() => window.scrollTo(0, 0));
 });

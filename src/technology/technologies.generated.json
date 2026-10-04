@@ -1,0 +1,983 @@
+{
+  "generatedFrom": ".agents/skills/Skill-Web-SVG-Animation-Architect/references/technologies/catalog.json",
+  "sourceHash": "69588ccb5db0748542230f080c182f8d4f4506d38e7d06a80355ada96f01ddb7",
+  "verifiedDate": "2026-10-04",
+  "technologies": [
+    {
+      "id": "css-transitions",
+      "name": "CSS Transitions",
+      "aliases": [],
+      "role": "native-api",
+      "packages": [],
+      "disposition": "new",
+      "family": "native",
+      "reference": "native.md",
+      "sources": [
+        "https://drafts.csswg.org/css-transitions/"
+      ]
+    },
+    {
+      "id": "css-keyframes",
+      "name": "CSS Animations / Keyframes",
+      "aliases": [
+        "CSS Animations",
+        "CSS Keyframes"
+      ],
+      "role": "native-api",
+      "packages": [],
+      "disposition": "new",
+      "family": "native",
+      "reference": "native.md",
+      "sources": [
+        "https://drafts.csswg.org/css-animations/"
+      ]
+    },
+    {
+      "id": "waapi",
+      "name": "Web Animations API",
+      "aliases": [
+        "WAAPI"
+      ],
+      "role": "native-api",
+      "packages": [],
+      "disposition": "new",
+      "family": "native",
+      "reference": "native.md",
+      "sources": [
+        "https://www.w3.org/TR/web-animations-1/"
+      ]
+    },
+    {
+      "id": "scroll-timeline",
+      "name": "ScrollTimeline / ViewTimeline",
+      "aliases": [
+        "ScrollTimeline",
+        "ViewTimeline",
+        "scroll-driven animations"
+      ],
+      "role": "native-api",
+      "packages": [],
+      "disposition": "conditional",
+      "family": "native",
+      "reference": "native.md",
+      "sources": [
+        "https://drafts.csswg.org/scroll-animations-1/"
+      ]
+    },
+    {
+      "id": "view-transitions",
+      "name": "View Transitions API",
+      "aliases": [],
+      "role": "native-api",
+      "packages": [],
+      "disposition": "conditional",
+      "family": "native",
+      "reference": "native.md",
+      "sources": [
+        "https://drafts.csswg.org/css-view-transitions-1/"
+      ]
+    },
+    {
+      "id": "canvas2d",
+      "name": "Canvas 2D",
+      "aliases": [
+        "CanvasRenderingContext2D"
+      ],
+      "role": "native-api",
+      "packages": [],
+      "disposition": "new",
+      "family": "native",
+      "reference": "native.md",
+      "sources": [
+        "https://html.spec.whatwg.org/multipage/canvas.html"
+      ]
+    },
+    {
+      "id": "offscreen-canvas",
+      "name": "OffscreenCanvas",
+      "aliases": [],
+      "role": "native-api",
+      "packages": [],
+      "disposition": "conditional",
+      "family": "native",
+      "reference": "native.md",
+      "sources": [
+        "https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface"
+      ]
+    },
+    {
+      "id": "gsap",
+      "name": "GSAP",
+      "aliases": [
+        "GreenSock"
+      ],
+      "role": "animation-engine",
+      "packages": [
+        "gsap"
+      ],
+      "disposition": "new",
+      "family": "dom-motion",
+      "reference": "dom-motion.md",
+      "sources": [
+        "https://gsap.com/docs/v3/",
+        "https://gsap.com/community/standard-license/"
+      ]
+    },
+    {
+      "id": "scrolltrigger",
+      "name": "GSAP ScrollTrigger",
+      "aliases": [
+        "ScrollTrigger"
+      ],
+      "role": "plugin",
+      "packages": [
+        "gsap"
+      ],
+      "disposition": "conditional",
+      "family": "dom-motion",
+      "reference": "dom-motion.md",
+      "sources": [
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/"
+      ]
+    },
+    {
+      "id": "motion",
+      "name": "Motion",
+      "aliases": [
+        "Framer Motion",
+        "Motion for React",
+        "Motion One",
+        "@motionone/dom"
+      ],
+      "role": "animation-engine",
+      "packages": [
+        "motion",
+        "framer-motion"
+      ],
+      "disposition": "new",
+      "family": "dom-motion",
+      "reference": "dom-motion.md",
+      "sources": [
+        "https://motion.dev/docs/upgrade-guide",
+        "https://motion.dev/docs/react-upgrade-guide"
+      ]
+    },
+    {
+      "id": "animejs",
+      "name": "Anime.js",
+      "aliases": [],
+      "role": "animation-engine",
+      "packages": [
+        "animejs"
+      ],
+      "disposition": "new",
+      "family": "dom-motion",
+      "reference": "dom-motion.md",
+      "sources": [
+        "https://animejs.com/documentation/"
+      ]
+    },
+    {
+      "id": "popmotion",
+      "name": "Popmotion",
+      "aliases": [],
+      "role": "animation-primitives",
+      "packages": [
+        "popmotion"
+      ],
+      "disposition": "legacy",
+      "family": "dom-motion",
+      "reference": "dom-motion.md",
+      "sources": [
+        "https://github.com/Popmotion/popmotion"
+      ]
+    },
+    {
+      "id": "lenis",
+      "name": "Lenis",
+      "aliases": [
+        "@studio-freight/lenis"
+      ],
+      "role": "helper",
+      "packages": [
+        "lenis"
+      ],
+      "disposition": "conditional",
+      "family": "scroll-type",
+      "reference": "scroll-type.md",
+      "sources": [
+        "https://github.com/darkroomengineering/lenis"
+      ]
+    },
+    {
+      "id": "splittype",
+      "name": "SplitType",
+      "aliases": [
+        "split-type"
+      ],
+      "role": "helper",
+      "packages": [
+        "split-type"
+      ],
+      "disposition": "conditional",
+      "family": "scroll-type",
+      "reference": "scroll-type.md",
+      "sources": [
+        "https://github.com/lukePeavey/SplitType"
+      ]
+    },
+    {
+      "id": "svgjs",
+      "name": "SVG.js",
+      "aliases": [],
+      "role": "vector-library",
+      "packages": [
+        "@svgdotjs/svg.js"
+      ],
+      "disposition": "new",
+      "family": "svg",
+      "reference": "svg.md",
+      "sources": [
+        "https://svgjs.dev/docs/3.2/"
+      ]
+    },
+    {
+      "id": "flubber",
+      "name": "Flubber",
+      "aliases": [],
+      "role": "helper",
+      "packages": [
+        "flubber"
+      ],
+      "disposition": "conditional",
+      "family": "svg",
+      "reference": "svg.md",
+      "sources": [
+        "https://github.com/veltman/flubber"
+      ]
+    },
+    {
+      "id": "roughjs",
+      "name": "Rough.js",
+      "aliases": [
+        "roughjs"
+      ],
+      "role": "drawing-library",
+      "packages": [
+        "roughjs"
+      ],
+      "disposition": "conditional",
+      "family": "svg",
+      "reference": "svg.md",
+      "sources": [
+        "https://github.com/rough-stuff/rough"
+      ]
+    },
+    {
+      "id": "threejs",
+      "name": "Three.js",
+      "aliases": [
+        "three"
+      ],
+      "role": "3d-engine",
+      "packages": [
+        "three"
+      ],
+      "disposition": "new",
+      "family": "gpu-scenes",
+      "reference": "gpu-scenes.md",
+      "sources": [
+        "https://github.com/mrdoob/three.js"
+      ]
+    },
+    {
+      "id": "r3f",
+      "name": "React Three Fiber",
+      "aliases": [
+        "R3F",
+        "react-three-fiber"
+      ],
+      "role": "framework-renderer",
+      "packages": [
+        "@react-three/fiber"
+      ],
+      "disposition": "conditional",
+      "family": "gpu-scenes",
+      "reference": "gpu-scenes.md",
+      "sources": [
+        "https://r3f.docs.pmnd.rs/getting-started/introduction"
+      ]
+    },
+    {
+      "id": "drei",
+      "name": "Drei",
+      "aliases": [],
+      "role": "helper",
+      "packages": [
+        "@react-three/drei"
+      ],
+      "disposition": "conditional",
+      "family": "gpu-scenes",
+      "reference": "gpu-scenes.md",
+      "sources": [
+        "https://drei.docs.pmnd.rs/getting-started/introduction"
+      ]
+    },
+    {
+      "id": "theatrejs",
+      "name": "Theatre.js",
+      "aliases": [
+        "Theatre"
+      ],
+      "role": "authoring-tool",
+      "packages": [
+        "@theatre/core",
+        "@theatre/studio"
+      ],
+      "disposition": "conditional",
+      "family": "gpu-scenes",
+      "reference": "gpu-scenes.md",
+      "sources": [
+        "https://www.theatrejs.com/docs/latest",
+        "https://github.com/theatre-js/theatre"
+      ]
+    },
+    {
+      "id": "babylonjs",
+      "name": "Babylon.js",
+      "aliases": [
+        "Babylon"
+      ],
+      "role": "3d-engine",
+      "packages": [
+        "@babylonjs/core"
+      ],
+      "disposition": "new",
+      "family": "gpu-scenes",
+      "reference": "gpu-scenes.md",
+      "sources": [
+        "https://github.com/BabylonJS/Babylon.js"
+      ]
+    },
+    {
+      "id": "pixijs",
+      "name": "PixiJS",
+      "aliases": [
+        "Pixi.js"
+      ],
+      "role": "2d-renderer",
+      "packages": [
+        "pixi.js"
+      ],
+      "disposition": "new",
+      "family": "gpu-scenes",
+      "reference": "gpu-scenes.md",
+      "sources": [
+        "https://pixijs.com/8.x/guides/components/application"
+      ]
+    },
+    {
+      "id": "regl",
+      "name": "regl",
+      "aliases": [],
+      "role": "gpu-wrapper",
+      "packages": [
+        "regl"
+      ],
+      "disposition": "conditional",
+      "family": "gpu-scenes",
+      "reference": "gpu-scenes.md",
+      "sources": [
+        "https://github.com/regl-project/regl"
+      ]
+    },
+    {
+      "id": "glsl",
+      "name": "Raw shader authoring / GLSL",
+      "aliases": [
+        "GLSL",
+        "GLSL ES",
+        "raw shaders"
+      ],
+      "role": "technique",
+      "packages": [],
+      "disposition": "conditional",
+      "family": "gpu-scenes",
+      "reference": "gpu-scenes.md",
+      "sources": [
+        "https://registry.khronos.org/OpenGL/specs/es/3.0/GLSL_ES_Specification_3.00.pdf"
+      ]
+    },
+    {
+      "id": "konva",
+      "name": "Konva",
+      "aliases": [],
+      "role": "canvas-scenegraph",
+      "packages": [
+        "konva"
+      ],
+      "disposition": "new",
+      "family": "canvas-physics",
+      "reference": "canvas-physics.md",
+      "sources": [
+        "https://konvajs.org/docs/overview.html"
+      ]
+    },
+    {
+      "id": "fabricjs",
+      "name": "Fabric.js",
+      "aliases": [
+        "Fabric"
+      ],
+      "role": "canvas-editor",
+      "packages": [
+        "fabric"
+      ],
+      "disposition": "new",
+      "family": "canvas-physics",
+      "reference": "canvas-physics.md",
+      "sources": [
+        "https://www.fabricjs.com/docs/"
+      ]
+    },
+    {
+      "id": "matterjs",
+      "name": "Matter.js",
+      "aliases": [
+        "Matter"
+      ],
+      "role": "physics-engine",
+      "packages": [
+        "matter-js"
+      ],
+      "disposition": "conditional",
+      "family": "canvas-physics",
+      "reference": "canvas-physics.md",
+      "sources": [
+        "https://brm.io/matter-js/docs/"
+      ]
+    },
+    {
+      "id": "tsparticles",
+      "name": "tsParticles",
+      "aliases": [],
+      "role": "particle-engine",
+      "packages": [
+        "@tsparticles/engine",
+        "tsparticles"
+      ],
+      "disposition": "conditional",
+      "family": "canvas-physics",
+      "reference": "canvas-physics.md",
+      "sources": [
+        "https://particles.js.org/docs/"
+      ]
+    },
+    {
+      "id": "rive",
+      "name": "Rive",
+      "aliases": [],
+      "role": "asset-runtime",
+      "packages": [
+        "@rive-app/canvas",
+        "@rive-app/webgl2"
+      ],
+      "disposition": "conditional",
+      "family": "authored-assets",
+      "reference": "authored-assets.md",
+      "sources": [
+        "https://rive.app/docs/runtimes/web/web-js",
+        "https://rive.app/docs/cli/getting-started",
+        "https://rive.app/docs/runtimes/advanced-topic/rml",
+        "https://rive.app/docs/runtimes/web/low-level-api-usage"
+      ]
+    },
+    {
+      "id": "lottie",
+      "name": "Lottie",
+      "aliases": [
+        "Bodymovin",
+        "lottie-web"
+      ],
+      "role": "animation-format-runtime",
+      "packages": [
+        "lottie-web"
+      ],
+      "disposition": "conditional",
+      "family": "authored-assets",
+      "reference": "authored-assets.md",
+      "sources": [
+        "https://github.com/airbnb/lottie-web"
+      ]
+    },
+    {
+      "id": "dotlottie",
+      "name": "dotLottie",
+      "aliases": [
+        ".lottie"
+      ],
+      "role": "animation-format-runtime",
+      "packages": [
+        "@lottiefiles/dotlottie-web"
+      ],
+      "disposition": "conditional",
+      "family": "authored-assets",
+      "reference": "authored-assets.md",
+      "sources": [
+        "https://github.com/LottieFiles/dotlottie-web"
+      ]
+    },
+    {
+      "id": "d3",
+      "name": "D3.js",
+      "aliases": [
+        "D3"
+      ],
+      "role": "visualization-library",
+      "packages": [
+        "d3"
+      ],
+      "disposition": "new",
+      "family": "data",
+      "reference": "data.md",
+      "sources": [
+        "https://d3js.org/getting-started"
+      ]
+    },
+    {
+      "id": "echarts",
+      "name": "Apache ECharts",
+      "aliases": [
+        "ECharts"
+      ],
+      "role": "chart-engine",
+      "packages": [
+        "echarts"
+      ],
+      "disposition": "new",
+      "family": "data",
+      "reference": "data.md",
+      "sources": [
+        "https://echarts.apache.org/handbook/en/get-started/"
+      ]
+    },
+    {
+      "id": "vega",
+      "name": "Vega",
+      "aliases": [],
+      "role": "visualization-runtime",
+      "packages": [
+        "vega"
+      ],
+      "disposition": "new",
+      "family": "data",
+      "reference": "data.md",
+      "sources": [
+        "https://vega.github.io/vega/docs/"
+      ]
+    },
+    {
+      "id": "vega-lite",
+      "name": "Vega-Lite",
+      "aliases": [],
+      "role": "visualization-compiler",
+      "packages": [
+        "vega-lite"
+      ],
+      "disposition": "new",
+      "family": "data",
+      "reference": "data.md",
+      "sources": [
+        "https://vega.github.io/vega-lite/docs/"
+      ]
+    },
+    {
+      "id": "visx",
+      "name": "visx",
+      "aliases": [
+        "vx"
+      ],
+      "role": "react-visualization-primitives",
+      "packages": [
+        "@visx/visx"
+      ],
+      "disposition": "conditional",
+      "family": "data",
+      "reference": "data.md",
+      "sources": [
+        "https://github.com/airbnb/visx"
+      ]
+    },
+    {
+      "id": "observable-plot",
+      "name": "Observable Plot",
+      "aliases": [
+        "Plot"
+      ],
+      "role": "visualization-library",
+      "packages": [
+        "@observablehq/plot"
+      ],
+      "disposition": "new",
+      "family": "data",
+      "reference": "data.md",
+      "sources": [
+        "https://observablehq.github.io/plot/"
+      ]
+    },
+    {
+      "id": "maplibre",
+      "name": "MapLibre GL JS",
+      "aliases": [
+        "MapLibre"
+      ],
+      "role": "map-renderer",
+      "packages": [
+        "maplibre-gl"
+      ],
+      "disposition": "new",
+      "family": "maps",
+      "reference": "maps.md",
+      "sources": [
+        "https://maplibre.org/maplibre-gl-js/docs/"
+      ]
+    },
+    {
+      "id": "deckgl",
+      "name": "deck.gl",
+      "aliases": [
+        "deckgl"
+      ],
+      "role": "geospatial-layer-engine",
+      "packages": [
+        "deck.gl"
+      ],
+      "disposition": "conditional",
+      "family": "maps",
+      "reference": "maps.md",
+      "sources": [
+        "https://deck.gl/docs"
+      ]
+    },
+    {
+      "id": "cesiumjs",
+      "name": "CesiumJS",
+      "aliases": [
+        "Cesium"
+      ],
+      "role": "globe-engine",
+      "packages": [
+        "cesium"
+      ],
+      "disposition": "conditional",
+      "family": "maps",
+      "reference": "maps.md",
+      "sources": [
+        "https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/"
+      ]
+    },
+    {
+      "id": "leaflet",
+      "name": "Leaflet",
+      "aliases": [],
+      "role": "map-library",
+      "packages": [
+        "leaflet"
+      ],
+      "disposition": "new",
+      "family": "maps",
+      "reference": "maps.md",
+      "sources": [
+        "https://leafletjs.com/reference.html"
+      ]
+    },
+    {
+      "id": "p5js",
+      "name": "p5.js",
+      "aliases": [
+        "p5"
+      ],
+      "role": "creative-coding-library",
+      "packages": [
+        "p5"
+      ],
+      "disposition": "new",
+      "family": "video-generative",
+      "reference": "video-generative.md",
+      "sources": [
+        "https://p5js.org/reference/"
+      ]
+    },
+    {
+      "id": "remotion",
+      "name": "Remotion",
+      "aliases": [],
+      "role": "programmatic-video",
+      "packages": [
+        "remotion"
+      ],
+      "disposition": "new",
+      "family": "video-generative",
+      "reference": "video-generative.md",
+      "sources": [
+        "https://www.remotion.dev/docs/",
+        "https://www.remotion.dev/license"
+      ]
+    },
+    {
+      "id": "motion-canvas",
+      "name": "Motion Canvas",
+      "aliases": [],
+      "role": "programmatic-video",
+      "packages": [
+        "@motion-canvas/core",
+        "@motion-canvas/2d"
+      ],
+      "disposition": "conditional",
+      "family": "video-generative",
+      "reference": "video-generative.md",
+      "sources": [
+        "https://motioncanvas.io/docs/"
+      ]
+    }
+  ],
+  "inventoryResolution": [
+    {
+      "name": "CSS Transitions",
+      "technologyId": "css-transitions",
+      "disposition": "new"
+    },
+    {
+      "name": "CSS Animations / Keyframes",
+      "technologyId": "css-keyframes",
+      "disposition": "new"
+    },
+    {
+      "name": "Web Animations API",
+      "technologyId": "waapi",
+      "disposition": "new"
+    },
+    {
+      "name": "ScrollTimeline / ViewTimeline",
+      "technologyId": "scroll-timeline",
+      "disposition": "conditional"
+    },
+    {
+      "name": "View Transitions API",
+      "technologyId": "view-transitions",
+      "disposition": "conditional"
+    },
+    {
+      "name": "Canvas 2D",
+      "technologyId": "canvas2d",
+      "disposition": "new"
+    },
+    {
+      "name": "OffscreenCanvas",
+      "technologyId": "offscreen-canvas",
+      "disposition": "conditional"
+    },
+    {
+      "name": "GSAP",
+      "technologyId": "gsap",
+      "disposition": "new"
+    },
+    {
+      "name": "GSAP ScrollTrigger",
+      "technologyId": "scrolltrigger",
+      "disposition": "conditional"
+    },
+    {
+      "name": "Motion",
+      "technologyId": "motion",
+      "disposition": "new"
+    },
+    {
+      "name": "Anime.js",
+      "technologyId": "animejs",
+      "disposition": "new"
+    },
+    {
+      "name": "Popmotion",
+      "technologyId": "popmotion",
+      "disposition": "legacy"
+    },
+    {
+      "name": "Lenis",
+      "technologyId": "lenis",
+      "disposition": "conditional"
+    },
+    {
+      "name": "SplitType",
+      "technologyId": "splittype",
+      "disposition": "conditional"
+    },
+    {
+      "name": "SVG.js",
+      "technologyId": "svgjs",
+      "disposition": "new"
+    },
+    {
+      "name": "Flubber",
+      "technologyId": "flubber",
+      "disposition": "conditional"
+    },
+    {
+      "name": "Rough.js",
+      "technologyId": "roughjs",
+      "disposition": "conditional"
+    },
+    {
+      "name": "Three.js",
+      "technologyId": "threejs",
+      "disposition": "new"
+    },
+    {
+      "name": "React Three Fiber",
+      "technologyId": "r3f",
+      "disposition": "conditional"
+    },
+    {
+      "name": "Drei",
+      "technologyId": "drei",
+      "disposition": "conditional"
+    },
+    {
+      "name": "Theatre.js",
+      "technologyId": "theatrejs",
+      "disposition": "conditional"
+    },
+    {
+      "name": "Babylon.js",
+      "technologyId": "babylonjs",
+      "disposition": "new"
+    },
+    {
+      "name": "PixiJS",
+      "technologyId": "pixijs",
+      "disposition": "new"
+    },
+    {
+      "name": "regl",
+      "technologyId": "regl",
+      "disposition": "conditional"
+    },
+    {
+      "name": "Raw shader authoring / GLSL",
+      "technologyId": "glsl",
+      "disposition": "conditional"
+    },
+    {
+      "name": "Konva",
+      "technologyId": "konva",
+      "disposition": "new"
+    },
+    {
+      "name": "Fabric.js",
+      "technologyId": "fabricjs",
+      "disposition": "new"
+    },
+    {
+      "name": "Matter.js",
+      "technologyId": "matterjs",
+      "disposition": "conditional"
+    },
+    {
+      "name": "tsParticles",
+      "technologyId": "tsparticles",
+      "disposition": "conditional"
+    },
+    {
+      "name": "Rive",
+      "technologyId": "rive",
+      "disposition": "conditional"
+    },
+    {
+      "name": "Lottie",
+      "technologyId": "lottie",
+      "disposition": "conditional"
+    },
+    {
+      "name": "dotLottie",
+      "technologyId": "dotlottie",
+      "disposition": "conditional"
+    },
+    {
+      "name": "D3.js",
+      "technologyId": "d3",
+      "disposition": "new"
+    },
+    {
+      "name": "Apache ECharts",
+      "technologyId": "echarts",
+      "disposition": "new"
+    },
+    {
+      "name": "Vega",
+      "technologyId": "vega",
+      "disposition": "new"
+    },
+    {
+      "name": "Vega-Lite",
+      "technologyId": "vega-lite",
+      "disposition": "new"
+    },
+    {
+      "name": "visx",
+      "technologyId": "visx",
+      "disposition": "conditional"
+    },
+    {
+      "name": "Observable Plot",
+      "technologyId": "observable-plot",
+      "disposition": "new"
+    },
+    {
+      "name": "MapLibre GL JS",
+      "technologyId": "maplibre",
+      "disposition": "new"
+    },
+    {
+      "name": "deck.gl",
+      "technologyId": "deckgl",
+      "disposition": "conditional"
+    },
+    {
+      "name": "CesiumJS",
+      "technologyId": "cesiumjs",
+      "disposition": "conditional"
+    },
+    {
+      "name": "Leaflet",
+      "technologyId": "leaflet",
+      "disposition": "new"
+    },
+    {
+      "name": "p5.js",
+      "technologyId": "p5js",
+      "disposition": "new"
+    },
+    {
+      "name": "Remotion",
+      "technologyId": "remotion",
+      "disposition": "new"
+    },
+    {
+      "name": "Motion Canvas",
+      "technologyId": "motion-canvas",
+      "disposition": "conditional"
+    },
+    {
+      "name": "Framer Motion",
+      "technologyId": "motion",
+      "disposition": "conditional",
+      "reason": "Searchable current package/integration name within the Motion family; do not count a separate engine."
+    },
+    {
+      "name": "Motion One",
+      "technologyId": "motion",
+      "disposition": "legacy",
+      "reason": "Historical APIs merged at Motion 11.11.12; preserve lookup and migration guidance, not a separate new implementation choice."
+    }
+  ]
+}

@@ -1,0 +1,943 @@
+[
+  {
+    "name": "@babylonjs/core",
+    "version": "9.29.0",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/BabylonJS/Babylon.js.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "license.md",
+        "path": "licenses/-babylonjs-core-ab82aa6039-9.29.0/license.md",
+        "sha256": "9362ea9ea17cb221a20cbbd63f404710834cc273d2a9a7b60314fd68ab702cd6"
+      },
+      {
+        "source": "NOTICE.md",
+        "path": "licenses/-babylonjs-core-ab82aa6039-9.29.0/NOTICE.md",
+        "sha256": "7f85d099ce3c6e1900a45ee8d5b8fa405e760c746af687b3ee2081416e48f183"
+      }
+    ]
+  },
+  {
+    "name": "@deck.gl/core",
+    "version": "9.4.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/visgl/deck.gl.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/-deck.gl-core-7fbe3d57cc-9.4.0/LICENSE",
+        "sha256": "e499a2c2ba3b9faabe91fdfddf43e329439263264b7148e5548d0ec605cce9f2"
+      }
+    ]
+  },
+  {
+    "name": "@deck.gl/geo-layers",
+    "version": "9.4.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/visgl/deck.gl.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/-deck.gl-geo-layers-9cc7a2ccfb-9.4.0/LICENSE",
+        "sha256": "e499a2c2ba3b9faabe91fdfddf43e329439263264b7148e5548d0ec605cce9f2"
+      }
+    ]
+  },
+  {
+    "name": "@deck.gl/layers",
+    "version": "9.4.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/visgl/deck.gl.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/-deck.gl-layers-4bd9a14467-9.4.0/LICENSE",
+        "sha256": "e499a2c2ba3b9faabe91fdfddf43e329439263264b7148e5548d0ec605cce9f2"
+      }
+    ]
+  },
+  {
+    "name": "@lottiefiles/dotlottie-web",
+    "version": "0.80.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/LottieFiles/dotlottie-web.git",
+      "directory": "packages/web"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/-lottiefiles-dotlottie-web-c515d79f86-0.80.0/LICENSE",
+        "sha256": "779cec663b3c6590082566f2a000170d7a4d1a4bfc6f954e61efa4adddc652a8"
+      }
+    ]
+  },
+  {
+    "name": "@motion-canvas/2d",
+    "version": "3.17.2",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/motion-canvas/motion-canvas.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/-motion-canvas-2d-68358c0855-3.17.2/LICENSE",
+        "sha256": "b3f12201916c5d478263cd210cf17f3d0c007d03bd574e0b77cac6307953068e"
+      }
+    ]
+  },
+  {
+    "name": "@motion-canvas/core",
+    "version": "3.17.2",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/motion-canvas/motion-canvas.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/-motion-canvas-core-e1652a656d-3.17.2/LICENSE",
+        "sha256": "b3f12201916c5d478263cd210cf17f3d0c007d03bd574e0b77cac6307953068e"
+      }
+    ]
+  },
+  {
+    "name": "@observablehq/plot",
+    "version": "0.6.17",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/observablehq/plot.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/-observablehq-plot-e358a8dbde-0.6.17/LICENSE",
+        "sha256": "4b295e011e0e046170041b5b46f1349393aeceb95797793a55bd21dbb543363a"
+      }
+    ]
+  },
+  {
+    "name": "@react-three/drei",
+    "version": "10.7.9",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/pmndrs/drei.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/-react-three-drei-be8ecba267-10.7.9/LICENSE",
+        "sha256": "2e36b208b403882158daf95cae207087bbb830db4d434a79ebafffca177244c8"
+      }
+    ]
+  },
+  {
+    "name": "@react-three/fiber",
+    "version": "9.8.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/pmndrs/react-three-fiber.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "upstream-original-supplement-copied",
+    "upstreamVerificationStatus": "upstream-original-text-supplement-integrated",
+    "upstreamLicenseReference": "https://raw.githubusercontent.com/pmndrs/react-three-fiber/53ec672ac4a7189711766b87ece18889abbb32d4/LICENSE",
+    "licenseFiles": [
+      {
+        "source": "public/technology-assets/license-supplements/react-three-fiber/LICENSE",
+        "path": "licenses/-react-three-fiber-ed33697593-9.8.1/LICENSE",
+        "sha256": "9c35b5de7b7493a707fffe4eb23bd2f7f449153c1911f7c6eefb4e591fd5349a",
+        "provenance": "upstream-original-supplement",
+        "upstreamUrl": "https://raw.githubusercontent.com/pmndrs/react-three-fiber/53ec672ac4a7189711766b87ece18889abbb32d4/LICENSE",
+        "upstreamCommit": "53ec672ac4a7189711766b87ece18889abbb32d4"
+      }
+    ]
+  },
+  {
+    "name": "@remotion/player",
+    "version": "4.0.530",
+    "license": "SEE LICENSE IN LICENSE.md",
+    "repository": {
+      "url": "https://github.com/remotion-dev/remotion/tree/main/packages/player"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE.md",
+        "path": "licenses/-remotion-player-a72cf38fc7-4.0.530/LICENSE.md",
+        "sha256": "bd65083b940f61904f6ef298aade918a7cad72a3e35bc406e36fab365844b673"
+      }
+    ]
+  },
+  {
+    "name": "@rive-app/canvas",
+    "version": "2.44.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/rive-app/rive-wasm/tree/master/js"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "upstream-original-supplement-copied",
+    "upstreamVerificationStatus": "upstream-original-text-supplement-integrated",
+    "upstreamLicenseReference": "https://raw.githubusercontent.com/rive-app/rive-wasm/b62850efe54fc0f1efe897141be96009d9e99027/LICENSE",
+    "licenseFiles": [
+      {
+        "source": "public/technology-assets/license-supplements/rive-app-canvas/LICENSE",
+        "path": "licenses/-rive-app-canvas-88c13c6dd4-2.44.0/LICENSE",
+        "sha256": "8a1efa755d19446b51a18e1c15f6308728da0b36283c4d38050698ad6954b69a",
+        "provenance": "upstream-original-supplement",
+        "upstreamUrl": "https://raw.githubusercontent.com/rive-app/rive-wasm/b62850efe54fc0f1efe897141be96009d9e99027/LICENSE",
+        "upstreamCommit": "b62850efe54fc0f1efe897141be96009d9e99027"
+      }
+    ]
+  },
+  {
+    "name": "@svgdotjs/svg.js",
+    "version": "3.2.8",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/svgdotjs/svg.js.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE.txt",
+        "path": "licenses/-svgdotjs-svg.js-0431382e15-3.2.8/LICENSE.txt",
+        "sha256": "455113977c98c54dad8598e092b99aad6be0ed8c5c4a0722154acf4b21df4730"
+      }
+    ]
+  },
+  {
+    "name": "@theatre/core",
+    "version": "0.7.2",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/AriaMinaei/theatre",
+      "directory": "theatre/core"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/-theatre-core-479c29ee9e-0.7.2/LICENSE",
+        "sha256": "8c6db340475136df3c1201d458fa5755698eace76e510471ecc9d857d6083dac"
+      }
+    ]
+  },
+  {
+    "name": "@tsparticles/engine",
+    "version": "4.4.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/tsparticles/tsparticles.git",
+      "directory": "engine"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/-tsparticles-engine-dfe1cde72d-4.4.0/LICENSE",
+        "sha256": "c5c18dbc27f490f2ef90e0b574b8c40f534e495d2cb8a6f1c4bb1183a9c381a4"
+      }
+    ]
+  },
+  {
+    "name": "@tsparticles/slim",
+    "version": "4.4.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/tsparticles/tsparticles.git",
+      "directory": "bundles/slim"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/-tsparticles-slim-08f8e6fecc-4.4.0/LICENSE",
+        "sha256": "c5c18dbc27f490f2ef90e0b574b8c40f534e495d2cb8a6f1c4bb1183a9c381a4"
+      }
+    ]
+  },
+  {
+    "name": "@visx/group",
+    "version": "4.0.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/airbnb/visx.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/-visx-group-9993b29748-4.0.0/LICENSE",
+        "sha256": "8c766533b7d4200b4dfb1a1afff396e3665460d21d7b4c34d059efcb5a332c84"
+      }
+    ]
+  },
+  {
+    "name": "@visx/scale",
+    "version": "4.0.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/airbnb/visx.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/-visx-scale-15338b71a3-4.0.0/LICENSE",
+        "sha256": "8c766533b7d4200b4dfb1a1afff396e3665460d21d7b4c34d059efcb5a332c84"
+      }
+    ]
+  },
+  {
+    "name": "@visx/shape",
+    "version": "4.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/airbnb/visx",
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/-visx-shape-9352f1a53e-4.0.0/LICENSE",
+        "sha256": "8c766533b7d4200b4dfb1a1afff396e3665460d21d7b4c34d059efcb5a332c84"
+      }
+    ]
+  },
+  {
+    "name": "animejs",
+    "version": "4.5.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/juliangarnier/anime.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE.md",
+        "path": "licenses/animejs-3c7dc1c4d3-4.5.0/LICENSE.md",
+        "sha256": "3f3e835a9952cfc2a6ca836fb95b3257c981f24fa3ef51249055acb09931897b"
+      }
+    ]
+  },
+  {
+    "name": "cesium",
+    "version": "1.146.0",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/CesiumGS/cesium.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE.md",
+        "path": "licenses/cesium-4336f26517-1.146.0/LICENSE.md",
+        "sha256": "721844bc0cdaa9b1a9a145dbca1f981e2de15a7e200a5d1fd9f5f1eed8e5d030"
+      }
+    ]
+  },
+  {
+    "name": "d3",
+    "version": "7.9.0",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/d3/d3.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/d3-f451a61749-7.9.0/LICENSE",
+        "sha256": "3e6849627f74ff73c257a3ae1efb574015d94fc1035c05ec3c15805165efcbc4"
+      }
+    ]
+  },
+  {
+    "name": "echarts",
+    "version": "6.1.0",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/apache/echarts.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/echarts-f84035fd95-6.1.0/LICENSE",
+        "sha256": "634293835b43a6dd2094fa39182a3d9a6b9ca43b7fdb9ac354e8037af2a3093a"
+      },
+      {
+        "source": "licenses/LICENSE-d3",
+        "path": "licenses/echarts-f84035fd95-6.1.0/licenses/LICENSE-d3",
+        "sha256": "e1211892da0b0e0585b7aebe8f98c1274fba15bafe47fa1f4ee8a7a502c06304"
+      },
+      {
+        "source": "NOTICE",
+        "path": "licenses/echarts-f84035fd95-6.1.0/NOTICE",
+        "sha256": "d491d358344f842685c1b1585970999db65fe30ecf7ef3867af8814f4016c016"
+      }
+    ]
+  },
+  {
+    "name": "fabric",
+    "version": "7.4.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/fabricjs/fabric.js.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/fabric-ad2a542c84-7.4.0/LICENSE",
+        "sha256": "eda412692b7398293a049ecf913319da26eb8f7fe27f10709821dd187b517e0b"
+      }
+    ]
+  },
+  {
+    "name": "flubber",
+    "version": "0.4.2",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/veltman/flubber.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/flubber-29f006c8fe-0.4.2/LICENSE",
+        "sha256": "3eb888ef31044c40757fe52030e381d2b7ec6ef5e90379920ea18b98ac32d187"
+      }
+    ]
+  },
+  {
+    "name": "gsap",
+    "version": "3.15.0",
+    "license": "Standard 'no charge' license: https://gsap.com/standard-license.",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/greensock/GSAP.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "upstream-link-only",
+    "upstreamVerificationStatus": "official-linked-terms-verified-no-repository-license-file",
+    "upstreamLicenseReference": "https://gsap.com/standard-license/",
+    "licenseFiles": []
+  },
+  {
+    "name": "konva",
+    "version": "10.7.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/konvajs/konva.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/konva-0806683e36-10.7.0/LICENSE",
+        "sha256": "7190132c82df30243dc2ba512c9509ea3b629329b4266e9f2c3b5dbd04029613"
+      }
+    ]
+  },
+  {
+    "name": "leaflet",
+    "version": "1.9.4",
+    "license": "BSD-2-Clause",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/Leaflet/Leaflet.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/leaflet-73e47f3ae7-1.9.4/LICENSE",
+        "sha256": "53e8dc25862014e4324741ca18fbe3611e11d42ef69f59f86ea8c5389647d4cb"
+      }
+    ]
+  },
+  {
+    "name": "lenis",
+    "version": "1.3.26",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/darkroomengineering/lenis.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/lenis-b9a4c6153a-1.3.26/LICENSE",
+        "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+      }
+    ]
+  },
+  {
+    "name": "lottie-web",
+    "version": "5.13.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/airbnb/lottie-web.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE.md",
+        "path": "licenses/lottie-web-96cff579dc-5.13.0/LICENSE.md",
+        "sha256": "9d8d4d8b4bb99572ee8b51025a30b8493d949798cac465c6c15b1b29420bcb06"
+      }
+    ]
+  },
+  {
+    "name": "lucide-react",
+    "version": "0.468.0",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/lucide-icons/lucide.git",
+      "directory": "packages/lucide-react"
+    },
+    "installedFrom": [
+      "app"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/lucide-react-cedfe168c3-0.468.0/LICENSE",
+        "sha256": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc"
+      }
+    ]
+  },
+  {
+    "name": "maplibre-gl",
+    "version": "6.12.0",
+    "license": "BSD-3-Clause",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/maplibre/maplibre-gl-js"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE.txt",
+        "path": "licenses/maplibre-gl-326f0c257e-6.12.0/LICENSE.txt",
+        "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2"
+      }
+    ]
+  },
+  {
+    "name": "matter-js",
+    "version": "0.20.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/liabru/matter-js.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/matter-js-6f5b68f320-0.20.0/LICENSE",
+        "sha256": "ed182087be5b26734aa6d4789743de3a97417950e8c1e3ff2e3d19c6462720d3"
+      }
+    ]
+  },
+  {
+    "name": "motion",
+    "version": "14.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/motiondivision/motion",
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE.md",
+        "path": "licenses/motion-305238273b-14.0.0/LICENSE.md",
+        "sha256": "1bf0dc3f7727723e5a032ed12164a47cf92c05204cb1a3485f123c24e2833ed1"
+      }
+    ]
+  },
+  {
+    "name": "p5",
+    "version": "2.3.4",
+    "license": "LGPL-2.1",
+    "repository": "processing/p5.js",
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "license.txt",
+        "path": "licenses/p5-536c351ae1-2.3.4/license.txt",
+        "sha256": "eb2f25f8f165d5f20682c1ce7e99ce69144ecfd80fbed8c17dfd327ecd8b6cb6"
+      }
+    ]
+  },
+  {
+    "name": "pixi.js",
+    "version": "8.22.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/pixijs/pixijs.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/pixi.js-1b1d6accb1-8.22.0/LICENSE",
+        "sha256": "5ce7447bc57f7349ffc48338782fbcabe613696e00712b20d66bc58e780f9473"
+      }
+    ]
+  },
+  {
+    "name": "react",
+    "version": "19.2.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/facebook/react.git",
+      "directory": "packages/react"
+    },
+    "installedFrom": [
+      "app",
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/react-275976081c-19.2.0/LICENSE",
+        "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+      }
+    ]
+  },
+  {
+    "name": "react-dom",
+    "version": "19.2.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/facebook/react.git",
+      "directory": "packages/react-dom"
+    },
+    "installedFrom": [
+      "app",
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/react-dom-de7f2df91c-19.2.0/LICENSE",
+        "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+      }
+    ]
+  },
+  {
+    "name": "regl",
+    "version": "2.1.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/regl-project/regl.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/regl-f92e9edab1-2.1.1/LICENSE",
+        "sha256": "42d997d1f47c9222dec2844468fc2a4fd144c6950d698eade460e94537ddcdd3"
+      }
+    ]
+  },
+  {
+    "name": "remotion",
+    "version": "4.0.530",
+    "license": "SEE LICENSE IN LICENSE.md",
+    "repository": {
+      "url": "https://github.com/remotion-dev/remotion/tree/main/packages/core"
+    },
+    "installedFrom": [
+      "app",
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE.md",
+        "path": "licenses/remotion-d1bd7a5bd6-4.0.530/LICENSE.md",
+        "sha256": "bd65083b940f61904f6ef298aade918a7cad72a3e35bc406e36fab365844b673"
+      },
+      {
+        "source": "THIRD_PARTY_LICENSES.md",
+        "path": "licenses/remotion-d1bd7a5bd6-4.0.530/THIRD_PARTY_LICENSES.md",
+        "sha256": "b643dd255291602f7c60cca4dbd203a1aaa2c2961227d23ab7a6a5e1de2c8a2b"
+      }
+    ]
+  },
+  {
+    "name": "roughjs",
+    "version": "4.6.6",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/pshihn/rough.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/roughjs-4c71f746e6-4.6.6/LICENSE",
+        "sha256": "dca9a392272606ac748ac0976a2a1133f14eef841c27beaa51a844d53c56a09d"
+      }
+    ]
+  },
+  {
+    "name": "split-type",
+    "version": "0.3.4",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/lukePeavey/SplitType.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "upstream-link-only",
+    "upstreamVerificationStatus": "publisher-license-metadata-verified-original-text-unavailable",
+    "upstreamLicenseReference": "https://github.com/lukePeavey/SplitType/blob/36af092f7061ef9b6ea33261b688a3fe04b890fb/package.json",
+    "licenseFiles": []
+  },
+  {
+    "name": "three",
+    "version": "0.186.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/mrdoob/three.js"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/three-8b5b9db0c1-0.186.1/LICENSE",
+        "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+      }
+    ]
+  },
+  {
+    "name": "vega",
+    "version": "6.4.0",
+    "license": "BSD-3-Clause",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/vega/vega.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/vega-313ce7d717-6.4.0/LICENSE",
+        "sha256": "63727832aaf62004a2b249c933e327f3c90caf49e41a72f4bf436edf632cbda8"
+      }
+    ]
+  },
+  {
+    "name": "vega-lite",
+    "version": "6.4.3",
+    "license": "BSD-3-Clause",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/vega/vega-lite.git"
+    },
+    "installedFrom": [
+      "technology-runtime"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/vega-lite-c4908e4ac8-6.4.3/LICENSE",
+        "sha256": "f618900fd0d64046963b29f40590cdd1e341a2f41449f99110d82fd81fea808c"
+      }
+    ]
+  },
+  {
+    "name": "zod",
+    "version": "4.1.12",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/colinhacks/zod.git"
+    },
+    "installedFrom": [
+      "app"
+    ],
+    "licenseTextStatus": "packaged-text-copied",
+    "licenseFiles": [
+      {
+        "source": "LICENSE",
+        "path": "licenses/zod-4f63cf5cd8-4.1.12/LICENSE",
+        "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8"
+      }
+    ]
+  }
+]

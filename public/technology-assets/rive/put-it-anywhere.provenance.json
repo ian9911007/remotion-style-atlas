@@ -1,0 +1,57 @@
+{
+  "asset": "put-it-anywhere.riv",
+  "title": "put it anywhere",
+  "author": "kikkojinji1",
+  "sourcePage": "https://www.rive.app/marketplace/27860-52644-put-it-anywhere/",
+  "sourceFile": "https://public.rive.app/community/runtime-files/27860-52644-put-it-anywhere.riv",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "licenseEvidence": "The asset page explicitly displays CC BY and links to Attribution 4.0. This is asset-specific evidence, separate from the Rive runtime license.",
+  "attribution": "put it anywhere by kikkojinji1, licensed CC BY 4.0. Original file used without modification.",
+  "modified": false,
+  "verifiedDate": "2026-10-04",
+  "sha256": "a6ce8a5fd86eb2df4398f73e2ce42b548e947eb4b8d048ffe3e88ae1a718ea7d",
+  "bytes": 777,
+  "declaredArtboard": "Artboard",
+  "declaredStateMachine": "State Machine 1",
+  "declarationEvidence": "Official marketplace page __NEXT_DATA__.props.pageProps.shotItem: artboard, animation, isAnimationStateMachine=true.",
+  "runtimeVerification": {
+    "status": "runtime-verified",
+    "browser": "Local Google Chrome via Playwright, headless",
+    "runtime": "@rive-app/canvas@2.44.0",
+    "artboard": "Artboard",
+    "stateMachine": "State Machine 1",
+    "inputs": [
+      {
+        "name": "Boolean 1",
+        "type": 59,
+        "kind": "boolean"
+      }
+    ],
+    "animations": [
+      "drag",
+      "idel"
+    ],
+    "evidence": "Loaded actual local WASM and asset. Advanced runtime fixed-step rendering of false/true input produced different canvas data URLs; Canvas surface visually inspected. No independent animation loop used for this check.",
+    "limitations": "Not Safari/device acceptance. This evidence covers the asset, not the integrated gallery case."
+  },
+  "notes": "Download verified RIVE binary header. State-machine inputs and visual behavior require actual runtime inspection.",
+  "galleryVerification": {
+    "status": "runtime-verified-and-visually-reviewed",
+    "date": "2026-10-04",
+    "browser": "Google Chrome 154.0.8037.98 via Playwright, headless",
+    "url": "http://127.0.0.1:4173/?capture=SA-195",
+    "viewport": {
+      "width": 960,
+      "height": 540
+    },
+    "checks": {
+      "seek1versus3DifferentPixels": true,
+      "seek1AfterReversePixelIdentical": true,
+      "buttonChangesRealInput": true,
+      "buttonChangesCanvasPixels": true,
+      "uncaughtErrors": 0
+    },
+    "limitations": "No full production export, Safari, physical mobile, or memory-growth acceptance in this asset-focused check."
+  }
+}

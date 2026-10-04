@@ -60,7 +60,10 @@ export class PlaybackScheduler {
       const visibleCount = [...this.entries.values()].filter(
         (e) => e.visible && !e.failed,
       ).length;
-      void visibleCount;
+      if (enabled && this.mode === "wall" && visibleCount > this.limit) {
+        this.rotationOffset = (this.rotationOffset + this.limit) % visibleCount;
+        this.schedule();
+      }
       this.releaseStaleSources();
     }, 5000);
   }
@@ -84,9 +87,13 @@ export class PlaybackScheduler {
     this.observer?.observe(element);
     return () => {
       this.observer?.unobserve(element);
-      element.pause();
-      element.removeAttribute("src");
-      element.load();
+      if (!element.paused) element.pause();
+      // Poster-only cards never acquired a media source. Calling load() on
+      // every removed card needlessly churns WebKit's media-session registry.
+      if (element.hasAttribute("src")) {
+        element.removeAttribute("src");
+        element.load();
+      }
       this.entries.delete(id);
       this.schedule();
     };
@@ -121,7 +128,7 @@ export class PlaybackScheduler {
   private fail(e: Entry) {
     if (e.failed) return;
     e.failed = true;
-    e.element.pause();
+    if (!e.element.paused) e.element.pause();
     e.element.removeAttribute("data-playing");
     e.onFailure();
     this.schedule();
@@ -133,7 +140,7 @@ export class PlaybackScheduler {
       .filter(
         ([id, e]) =>
           enabled &&
-          (this.mode === "wall" || e.visible) &&
+          e.visible &&
           !e.failed &&
           (this.mode === "wall" || this.focusGroup.has(id)),
       )
@@ -142,7 +149,14 @@ export class PlaybackScheduler {
           Number(b === this.active) - Number(a === this.active) ||
           y.priority - x.priority,
       );
-    const granted = new Set(candidates.map(([id]) => id));
+    let selected = candidates;
+    if (this.mode === "wall" && candidates.length > this.limit) {
+      const pinned = candidates.filter(([id]) => id === this.active);
+      const rest = candidates.filter(([id]) => id !== this.active);
+      const offset = this.rotationOffset % rest.length;
+      selected = [...pinned, ...rest.slice(offset), ...rest.slice(0, offset)];
+    }
+    const granted = new Set(selected.slice(0, this.limit).map(([id]) => id));
     this.granted = granted;
     for (const [id, e] of this.entries) {
       if (granted.has(id)) {
@@ -175,16 +189,14 @@ export class PlaybackScheduler {
             });
         }
       } else {
-        e.element.pause();
+        if (!e.element.paused) e.element.pause();
         e.element.removeAttribute("data-playing");
       }
     }
     const retained = [...this.entries.values()]
       .filter((e) => e.element.hasAttribute("src"))
       .sort((a, b) => b.lastUsed - a.lastUsed);
-    for (const e of retained.slice(
-      this.mode === "wall" ? retained.length : this.limit * 2,
-    )) {
+    for (const e of retained.slice(this.limit * 2)) {
       e.element.pause();
       e.element.removeAttribute("src");
       e.element.load();
@@ -224,9 +236,11 @@ export class PlaybackScheduler {
     if (this.rotationTimer) clearInterval(this.rotationTimer);
     this.rotationTimer = null;
     for (const e of this.entries.values()) {
-      e.element.pause();
-      e.element.removeAttribute("src");
-      e.element.load();
+      if (!e.element.paused) e.element.pause();
+      if (e.element.hasAttribute("src")) {
+        e.element.removeAttribute("src");
+        e.element.load();
+      }
     }
   }
 }

@@ -1,3 +1,5 @@
+import { caseById } from "../technology/registry";
+import { compileCasePrompt } from "../technology/prompt";
 import type { StyleSpec } from "../catalog/schema";
 export type ProjectContext = {
   subject?: string;
@@ -18,6 +20,8 @@ export function compilePrompt(
   s: StyleSpec,
   context: ProjectContext = {},
 ): string {
+  const technologyCase = caseById.get(s.id);
+  if (technologyCase) return compileCasePrompt(technologyCase, context);
   return `Implement an original Remotion composition using the following complete creative specification. Inspect the target workspace and follow its instructions before editing. This specification is portable; do not assume this Atlas or its sample assets exist in the target workspace.
 
 STYLE IDENTITY
@@ -88,6 +92,23 @@ export function compileBlend(
 ): { prompt: string; warnings: string[] } {
   const { primary, motion, typography } = styles;
   const warnings: string[] = [];
+  if ([primary, motion, typography].some((s) => s && caseById.has(s.id))) {
+    warnings.push(
+      "此組合尚未實作或驗證；先決定主要引擎與時間軸，再轉用相容的動態或字體原則。",
+    );
+    return {
+      warnings,
+      prompt: `SYNTHESIZED BRIEF — NOT A RENDERED OR VERIFIED COMBINATION
+The primary reference owns composition and technology. Preserve primary layout. Select one authoritative clock and one writer per property, scroll container and camera. Supporting references express desired behavior; they do not automatically authorize installing additional runtimes. Justify any mixed stack and define initialization, updates and teardown boundaries. Never inherit an unrelated illustration style.
+
+PRIMARY REFERENCE
+${compilePrompt(primary, context)}
+${motion ? `\nMOTION INFLUENCE: ${motion.id} / ${motion.englishName}\n${caseById.get(motion.id)?.locked.join("\n") ?? motion.motion.rules.join("\n")}\nTranslate these motion principles into the primary runtime where sufficient; do not transfer a competing implementation clock.` : ""}
+${typography ? `\nTYPOGRAPHY INFLUENCE: ${typography.id} / ${typography.englishName}\nFont: ${typography.typography.family}. Transfer only hierarchy and readable spacing; verify actual content, fonts, reflow and reduced motion.` : ""}
+COMBINATION ACCEPTANCE
+Implement and verify the resulting combination independently. Existing previews and readiness labels do not verify a blend. State unresolved compatibility and export limitations.`,
+    };
+  }
   if (motion && motion.motion.intensity !== primary.motion.intensity)
     warnings.push("動態強度不同，混合後需重新渲染與檢查節奏。");
   if (typography && typography.family !== primary.family)

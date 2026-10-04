@@ -1,0 +1,1257 @@
+{
+  "schemaVersion": 1,
+  "created": "2026-10-04",
+  "verifiedAt": "2026-10-04",
+  "scope": "Bounded renderer-resource diagnostics for GPU/scene cases and shared detail lifecycle. This is not a universal memory-safety claim.",
+  "environment": {
+    "os": "macOS 27.0.1 (26A434)",
+    "architecture": "arm64",
+    "browser": "Google Chrome 154.0.8037.98, headless",
+    "automation": "Playwright 1.56.1 and Chrome DevTools Protocol",
+    "viewport": [
+      1200,
+      900
+    ],
+    "url": "http://127.0.0.1:4173/",
+    "server": "Vite development server, working-tree source",
+    "galleryMode": "still, paused",
+    "hotReloadWebSocket": "blocked during each run; React Refresh itself remains installed in development",
+    "measurement": "Performance.getMetrics after HeapProfiler.collectGarbage",
+    "sourceBoundary": "Host presentation changed between early and corrected runs. Compare within-run growth; do not interpret absolute count differences across runs as regressions."
+  },
+  "procedure": {
+    "script": "tests/technology-detail-resource.ts",
+    "command": "RESOURCE_CASE=SA-177 RESOURCE_ACTIVATE=1 node --import tsx tests/technology-detail-resource.ts",
+    "cycles": 12,
+    "sequence": [
+      "Open case by existing hash route",
+      "Activate runtime if requested",
+      "Pause",
+      "Seek to 2 seconds",
+      "Use existing close button",
+      "Wait for dialog removal",
+      "Wait for settle interval",
+      "Force GC at checkpoints"
+    ],
+    "checkpointColumns": [
+      "cycle",
+      "frameCount",
+      "Documents",
+      "JSEventListeners",
+      "Nodes",
+      "JSHeapUsedSizeBytes"
+    ],
+    "measurementFix": "Use Locator.waitFor, not an undisposed ElementHandle returned by page.waitForSelector."
+  },
+  "correctedHostRuns": [
+    {
+      "caseId": "SA-101",
+      "technology": "native-css",
+      "activate": true,
+      "settleMs": 150,
+      "checkpoints": [
+        [
+          0,
+          1,
+          1,
+          5163,
+          30590,
+          16099992
+        ],
+        [
+          3,
+          1,
+          8,
+          5222,
+          31170,
+          22396536
+        ],
+        [
+          6,
+          1,
+          8,
+          5222,
+          31170,
+          22494644
+        ],
+        [
+          9,
+          1,
+          8,
+          5222,
+          31170,
+          22564660
+        ],
+        [
+          12,
+          1,
+          8,
+          5222,
+          31170,
+          22591492
+        ]
+      ],
+      "pageErrors": [],
+      "outcome": "No per-cycle DOM, document, listener or frame growth after cycle 3."
+    },
+    {
+      "caseId": "SA-177",
+      "technology": "p5js",
+      "runtimeVersion": "2.3.4",
+      "isolation": "Disposable same-origin iframe",
+      "activate": true,
+      "settleMs": 150,
+      "checkpoints": [
+        [
+          0,
+          1,
+          1,
+          5163,
+          30590,
+          16099364
+        ],
+        [
+          3,
+          1,
+          8,
+          5222,
+          31174,
+          19876588
+        ],
+        [
+          6,
+          1,
+          8,
+          5222,
+          31174,
+          19803160
+        ],
+        [
+          9,
+          1,
+          8,
+          5222,
+          31174,
+          22534336
+        ],
+        [
+          12,
+          1,
+          8,
+          5222,
+          31174,
+          20064444
+        ]
+      ],
+      "pageErrors": [],
+      "outcome": "No per-cycle DOM, document, listener or frame growth after cycle 3. Heap fluctuates; package-global retention is bounded by realm disposal in this measured run."
+    },
+    {
+      "caseId": "SA-175",
+      "technology": "tsparticles",
+      "runtimeVersion": "4.4.0",
+      "isolation": "Disposable same-origin iframe",
+      "activate": true,
+      "settleMs": 150,
+      "checkpoints": [
+        [
+          0,
+          1,
+          1,
+          5163,
+          30590,
+          16102028
+        ],
+        [
+          3,
+          1,
+          8,
+          5222,
+          31174,
+          19739468
+        ],
+        [
+          6,
+          1,
+          8,
+          5222,
+          31174,
+          19832512
+        ],
+        [
+          9,
+          1,
+          8,
+          5222,
+          31174,
+          22564584
+        ],
+        [
+          12,
+          1,
+          8,
+          5222,
+          31174,
+          20099968
+        ]
+      ],
+      "pageErrors": [],
+      "outcome": "No per-cycle DOM, document, listener or frame growth after cycle 3. Heap fluctuates; package-global retention is bounded by realm disposal in this measured run."
+    },
+    {
+      "caseId": "SA-163",
+      "technology": "r3f",
+      "runtimeVersion": "@react-three/fiber 9.8.1, @react-three/drei 10.7.9, three 0.186.1",
+      "activate": true,
+      "settleMs": 1000,
+      "checkpoints": [
+        [
+          0,
+          1,
+          1,
+          5163,
+          30590,
+          16098960
+        ],
+        [
+          3,
+          1,
+          8,
+          5224,
+          31205,
+          33434416
+        ],
+        [
+          6,
+          1,
+          8,
+          5224,
+          31211,
+          33973428
+        ],
+        [
+          9,
+          1,
+          8,
+          5224,
+          31217,
+          34755524
+        ],
+        [
+          12,
+          1,
+          8,
+          5224,
+          31223,
+          35113112
+        ]
+      ],
+      "pageErrors": [],
+      "outcome": "Development React Refresh retention identified. Later production runs also exposed a distinct Three shared DFG_LUT root; this development run cannot establish production resource acceptance.",
+      "retainingPath": "window.__registerBeforePerformReactRefresh -> closure.helpersByRoot Map -> React fiber.containerInfo -> R3F store.state.gl -> WebGLRenderer.domElement",
+      "snapshotFinding": "Twelve detached case canvases retained through this path. One detached detail dialog was retained by Playwright InjectedScript._markedElements, not twelve growing application dialogs."
+    }
+  ],
+  "controlsBeforeMeasurementFix": [
+    {
+      "caseId": "SA-001",
+      "activate": false,
+      "checkpoints": [
+        [
+          0,
+          1,
+          1,
+          5176,
+          30590,
+          16476400
+        ],
+        [
+          3,
+          1,
+          8,
+          5218,
+          31235,
+          19525160
+        ],
+        [
+          6,
+          1,
+          8,
+          5218,
+          31235,
+          22251144
+        ],
+        [
+          9,
+          1,
+          8,
+          5218,
+          31235,
+          19621388
+        ],
+        [
+          12,
+          1,
+          8,
+          5218,
+          31235,
+          19643260
+        ]
+      ],
+      "outcome": "Legacy detail controls stabilized after cycle 3."
+    },
+    {
+      "caseId": "SA-177",
+      "activate": false,
+      "checkpoints": [
+        [
+          0,
+          1,
+          1,
+          5176,
+          30590,
+          16479804
+        ],
+        [
+          3,
+          1,
+          8,
+          5198,
+          31024,
+          19480232
+        ],
+        [
+          6,
+          1,
+          8,
+          5198,
+          31024,
+          19614296
+        ],
+        [
+          9,
+          1,
+          8,
+          5198,
+          31024,
+          19666836
+        ],
+        [
+          12,
+          1,
+          8,
+          5198,
+          31024,
+          22378400
+        ]
+      ],
+      "outcome": "New detail without activation stabilized after cycle 3."
+    }
+  ],
+  "supersededHostDiagnostics": {
+    "disposition": "Not evidence of an application dialog leak. Automation retained ElementHandles. Superseded by correctedHostRuns.",
+    "retainingPath": "GC roots -> Global handles -> DevTools console -> technology-runtime section -> DOM parent chain -> detached detail-dialog",
+    "snapshotFinding": "Twelve detached dialogs after twelve activated runs; one in the legacy control. Changing only waitForSelector to Locator.waitFor removed the linear dialog growth.",
+    "checkpointColumns": [
+      "cycle",
+      "JSEventListeners",
+      "Nodes",
+      "JSHeapUsedSizeBytes"
+    ],
+    "runs": [
+      {
+        "caseId": "SA-177",
+        "series": "initial realm run",
+        "checkpoints": [
+          [
+            3,
+            5251,
+            31836,
+            19943052
+          ],
+          [
+            6,
+            5326,
+            33030,
+            22638176
+          ],
+          [
+            9,
+            5401,
+            34224,
+            22787896
+          ],
+          [
+            12,
+            5476,
+            35418,
+            20422732
+          ]
+        ]
+      },
+      {
+        "caseId": "SA-175",
+        "series": "initial realm run, same page after SA-177",
+        "checkpoints": [
+          [
+            3,
+            5551,
+            36612,
+            20471328
+          ],
+          [
+            6,
+            5626,
+            37806,
+            23271536
+          ],
+          [
+            9,
+            5701,
+            39000,
+            20886104
+          ],
+          [
+            12,
+            5776,
+            40194,
+            20855712
+          ]
+        ]
+      },
+      {
+        "caseId": "SA-177",
+        "series": "fresh context retaining-path diagnosis",
+        "checkpoints": [
+          [
+            3,
+            5314,
+            32238,
+            19786856
+          ],
+          [
+            6,
+            5452,
+            33834,
+            22591008
+          ],
+          [
+            9,
+            5590,
+            35430,
+            22738292
+          ],
+          [
+            12,
+            5728,
+            37026,
+            20227644
+          ]
+        ]
+      },
+      {
+        "caseId": "SA-101",
+        "series": "native CSS activation control",
+        "checkpoints": [
+          [
+            3,
+            5314,
+            32226,
+            22314440
+          ],
+          [
+            6,
+            5452,
+            33810,
+            22621368
+          ],
+          [
+            9,
+            5590,
+            35394,
+            22776540
+          ],
+          [
+            12,
+            5728,
+            36978,
+            22906860
+          ]
+        ]
+      }
+    ]
+  },
+  "earlierDirectMountDiagnostics": {
+    "scope": "Direct runtime mounting without iframe disposal, before corrected host tests; historical diagnostic data, not final gallery acceptance.",
+    "checkpointColumns": [
+      "cycle",
+      "JSEventListeners",
+      "Nodes",
+      "JSHeapUsedSizeBytes"
+    ],
+    "runs": [
+      {
+        "technology": "r3f",
+        "checkpoints": [
+          [
+            3,
+            5152,
+            30599,
+            23587948
+          ],
+          [
+            6,
+            5152,
+            30605,
+            24088132
+          ],
+          [
+            9,
+            5152,
+            30611,
+            24776336
+          ],
+          [
+            12,
+            5152,
+            30617,
+            25109564
+          ]
+        ],
+        "disposition": "React Refresh root retention was later identified in development. Subsequent production diagnostics also found the independent Three DFG_LUT retention path; this early run is not final acceptance."
+      },
+      {
+        "technology": "p5js",
+        "checkpoints": [
+          [
+            3,
+            5154,
+            30649,
+            28887572
+          ],
+          [
+            6,
+            5154,
+            30679,
+            29024912
+          ],
+          [
+            9,
+            5154,
+            30709,
+            29125188
+          ],
+          [
+            12,
+            5154,
+            30739,
+            29192496
+          ]
+        ],
+        "disposition": "Source-backed package-global retention; resolved at host boundary by disposable realm."
+      },
+      {
+        "technology": "tsparticles",
+        "checkpoints": [
+          [
+            3,
+            5154,
+            30742,
+            32076924
+          ],
+          [
+            6,
+            5154,
+            30745,
+            33777316
+          ],
+          [
+            9,
+            5154,
+            30748,
+            35113144
+          ],
+          [
+            12,
+            5154,
+            30751,
+            36337636
+          ]
+        ],
+        "disposition": "Source-backed package-global retention; resolved at host boundary by disposable realm."
+      }
+    ]
+  },
+  "versionSpecificRetentionEvidence": [
+    {
+      "technology": "p5js",
+      "version": "2.3.4",
+      "observed": "Four mounts retained four p5 instances after standard remove. Removing the instance-specific global hooks did not remove the Color closure chain; that workaround was reverted.",
+      "retainingPath": "p5.Color.prototype._getRed -> getter closure.getCopy -> previous getter wrapper -> closure.pInst",
+      "installedSource": "technology-runtime/node_modules/p5/lib/p5.esm.js, presetup Color wrappers around lines 11143-11175",
+      "hostMitigation": "Call normal instance.remove(), then remove the disposable iframe realm. Do not mutate shared p5 prototypes."
+    },
+    {
+      "technology": "tsparticles",
+      "version": "4.4.0",
+      "observed": "Four create/destroy cycles retained four Container objects in the module engine registry.",
+      "retainingPath": "module Engine singleton -> pluginManager -> pathGenerators Map -> Container key",
+      "hostMitigation": "Call normal container.destroy(), then remove the disposable iframe realm. Do not patch private registries."
+    },
+    {
+      "technology": "threejs",
+      "version": "0.186.1",
+      "observed": "Production SA-163 retained twelve detached canvases after twelve closes through the shared DFG_LUT texture dispose listeners.",
+      "retainingPath": "Three module getDFGLUT singleton DataTexture DFG_LUT -> _listeners.dispose array of 12 renderer callbacks -> WebGLTextures closure -> texture-source WeakMap ephemeron -> WebGLTexture -> WebGL2RenderingContext -> detached canvas",
+      "installedSources": [
+        "technology-runtime/node_modules/three/src/renderers/shaders/DFGLUTData.js: module getDFGLUT singleton",
+        "technology-runtime/node_modules/three/src/renderers/WebGLRenderer.js: refreshMaterialUniforms sets dfgLUT.value; renderer.dispose does not dispose shared texture",
+        "technology-runtime/node_modules/three/src/renderers/webgl/WebGLTextures.js: texture dispose listener attaches per renderer and removes on Texture.dispose"
+      ],
+      "hostMitigation": "three-common.ts captures material uniforms through the chained public compile hook and releases the shared texture through Texture.dispose before renderer teardown. Evaluated r186 uniform semantics and the single-live-renderer budget are required; recheck on upgrade. Production twelve-cycle Three/R3F/Theatre tests eliminate the previous per-close DOM-node growth; this does not establish a long-term JavaScript or GPU memory bound."
+    }
+  ],
+  "remainingWork": [
+    {
+      "id": "r3f-production-lifecycle",
+      "status": "specific-retained-canvas-regression-verified-resolved",
+      "evidence": "Production SA-161,163,165: twelve cycles with constant DOM/listener/document/frame counts after cycle 3. R3F extends to thirty-six cycles without node growth."
+    },
+    {
+      "id": "long-duration-javascript-heap-plateau",
+      "status": "unverified",
+      "requirement": "The R3F and native CSS control heaps both rose slightly through thirty-six cycles. Remaining root and long-duration plateau were not established in this bounded task."
+    },
+    {
+      "id": "gpu-memory-bounds",
+      "status": "not-measured",
+      "requirement": "CDP JavaScript heap and DOM counters do not measure GPU allocations or driver memory."
+    }
+  ],
+  "hostRepair": {
+    "dialogCleanup": "No required repair established. The apparent linear dialog retention was caused by the test harness.",
+    "p5AndParticles": "Selective disposable realm implemented by the host and verified in twelve-cycle corrected runs.",
+    "r3f": "A version-scoped shared Three DFG_LUT lifecycle adapter was implemented through public compile/dispose hooks. Production tests remove the prior per-close DOM-node growth without changing the sampled rendered pixels. Development React Refresh retention remains separate; no iframe was added for Three, R3F or Theatre."
+  },
+  "limitations": [
+    "CDP JavaScript heap and DOM counters do not measure GPU allocations, texture memory or driver resources.",
+    "Twelve cycles are a bounded observation, not proof against every long-duration or future-version leak.",
+    "Only desktop Chromium was exercised for these resource measurements; Safari, physical touch devices and low-memory devices were not measured.",
+    "Heap values fluctuate with compilation and browser tooling; no universal safe budget is inferred.",
+    "Development source was not pinned to a commit. HMR was blocked within each run, and meaningful conclusions rely on within-run trends and explicit retaining paths.",
+    "Package retention findings apply to evaluated versions and must be rechecked when dependencies change.",
+    "Post-fix verification measures stable counters; no post-fix heap snapshot was retained. The known pre-fix retaining path is preserved as compact source-backed evidence. Long-duration JavaScript heap plateau remains unverified because both R3F and the native CSS control continued small increases through thirty-six cycles."
+  ],
+  "productionRunsBeforeLookupCleanup": {
+    "environment": {
+      "url": "http://127.0.0.1:4175/remotion-style-atlas/",
+      "server": "Vite preview of production build, no React Refresh",
+      "indexHtmlSha256": "d0496ce0af7bf3a97a33ce45dccd3b399f1476d9233329ba23a468fe0d895857",
+      "browser": "Google Chrome 154.0.8037.98, headless",
+      "viewport": [
+        1200,
+        900
+      ]
+    },
+    "caseId": "SA-163",
+    "activate": true,
+    "cycles": 12,
+    "settleMs": 1000,
+    "checkpointColumns": [
+      "cycle",
+      "frameCount",
+      "Documents",
+      "JSEventListeners",
+      "Nodes",
+      "JSHeapUsedSizeBytes"
+    ],
+    "runs": [
+      {
+        "checkpoints": [
+          [
+            0,
+            1,
+            1,
+            5333,
+            31647,
+            6786192
+          ],
+          [
+            3,
+            1,
+            8,
+            5393,
+            32261,
+            12837660
+          ],
+          [
+            6,
+            1,
+            8,
+            5393,
+            32264,
+            13373152
+          ],
+          [
+            9,
+            1,
+            8,
+            5393,
+            32267,
+            14006412
+          ],
+          [
+            12,
+            1,
+            8,
+            5393,
+            32270,
+            14311992
+          ]
+        ],
+        "pageErrors": []
+      },
+      {
+        "checkpoints": [
+          [
+            0,
+            1,
+            1,
+            5333,
+            31647,
+            6796284
+          ],
+          [
+            3,
+            1,
+            8,
+            5393,
+            32261,
+            12833808
+          ],
+          [
+            6,
+            1,
+            8,
+            5393,
+            32264,
+            13377620
+          ],
+          [
+            9,
+            1,
+            8,
+            5393,
+            32267,
+            14017104
+          ],
+          [
+            12,
+            1,
+            8,
+            5393,
+            32270,
+            14328340
+          ]
+        ],
+        "pageErrors": []
+      }
+    ],
+    "outcome": "Failed resource acceptance: one DOM node retained per close, with growing heap. Production confirms a second retention path independent of React Refresh.",
+    "snapshotFinding": "Twelve detached WebGL canvases retained. One additional zero-sized weave canvas is bounded rather than per-cycle growth.",
+    "retainingPath": "Three module getDFGLUT singleton DataTexture DFG_LUT -> _listeners.dispose array of 12 renderer callbacks -> WebGLTextures closure -> texture-source WeakMap ephemeron -> WebGLTexture -> WebGL2RenderingContext -> detached canvas",
+    "repairStatus": "Minimal version-scoped cleanup implemented and production-tested. The specific per-close DOM-node growth is absent after the fix; see productionRunsAfterLookupCleanup for the remaining heap boundary."
+  },
+  "productionParallaxVerification": {
+    "date": "2026-10-04",
+    "url": "http://127.0.0.1:4175/remotion-style-atlas/",
+    "caseId": "SA-152",
+    "status": "PASS",
+    "verifiedSourceHash": "e34f740b5415a3dd8bc4e9ae2fc5e9aa8704477467b996065efda6684b830e29",
+    "states": [
+      0,
+      1,
+      1.2,
+      2,
+      2.8,
+      3,
+      4
+    ],
+    "viewports": [
+      960,
+      390
+    ],
+    "checks": [
+      "visible bounds including shadows",
+      "shared projection",
+      "front roof beam visible above the slab at all seven sampled states",
+      "front and rear frame motion synchronized",
+      "fixed ground guide",
+      "closed preview loop",
+      "native keyboard scroll",
+      "manual ownership",
+      "compact resume control",
+      "reduced motion"
+    ],
+    "method": "Production runtime; actual roof-beam pixels at seven states, geometry bounds, keyboard ownership, responsive detail and reduced motion. No physical-device claim."
+  },
+  "lookupCleanupVisualRegression": {
+    "status": "passed",
+    "browser": "Google Chrome 154.0.8037.98, headless",
+    "oldUrl": "http://127.0.0.1:4175/remotion-style-atlas/",
+    "newUrl": "http://127.0.0.1:4173/",
+    "viewport": [
+      960,
+      540
+    ],
+    "frameSeconds": [
+      2,
+      5.5
+    ],
+    "procedure": "Fresh page per case/version; await readiness/fonts, seek, wait one animation frame, compare screenshot bytes in memory. No screenshot files retained.",
+    "result": "All twelve old/new PNG SHA-256 pairs identical; pageErrors empty.",
+    "matchingPngSha256": {
+      "SA-161": [
+        "cfc1d3172f7dacc0cdf86220e83fdc6f30dc06a95502ea5b934a6c622a122cce",
+        "da22051a74bdad4029b7d7d87f361a9c51f34575345b83d8c31569375b6cb7a2"
+      ],
+      "SA-162": [
+        "ecc58f82eed959940c711f3fc82715ca1228a2d73f640bda41cfc386a7b4a778",
+        "80ae6b8cbf9e797b210bdd67ae7c2609c382fd3b9acd063b737bf09b51adab7b"
+      ],
+      "SA-163": [
+        "4a5638cd5fb299c1fe32cd5830d3b9a3577ad992116cb67786ef4c855823cf69",
+        "1e10963aeb72b23175d500511b7edbc73781d4c93ecf50371c0b7ac069423e76"
+      ],
+      "SA-164": [
+        "782f9d875523113918ec8fa5e6661670f9970ead2600f795ee13b2e51d1d1994",
+        "3d7c9ed41b556f186c2807ed53bf88fe71ac3ccf41a2a16a59635748e81397b2"
+      ],
+      "SA-165": [
+        "954e5a648a4ee17efc22b16bfabaf106b86f8cec91576ce52f23f58b4bf5d34b",
+        "c7d4a7e239d71f2878ea36b22b2eef0adf9373f8b9603d10cc8bb9effa2132db"
+      ],
+      "SA-166": [
+        "e97345ade71739e3ad2b3635c57cf07d86c9dc2d83f34aa0e0a3b2867ab0b794",
+        "77b00987d050ca3bd99cf8d8075782530682c77c52abc97495a9e722cc6705da"
+      ]
+    },
+    "sourceSha256": {
+      "three-common.ts": "c174af792617c7794ff83c29871a7ed7724a9ea6c08ac15397e9e4c373758f9c",
+      "scene-three.ts": "1e283eada2fc683483ceb4a9c414d9e3fd5f327496fb38afb9e4fc54f64a9d77",
+      "scene-r3f.tsx": "2278fcb18e62066c20f302d350b6571547f011ef9f95c746f65d3646af28b0a8",
+      "scene-theatre.ts": "17f8bcbaa43a246cef13f35523295a9bd1cb0b2719e1412f4fdc898baf51d36c"
+    }
+  },
+  "productionRunsAfterLookupCleanup": {
+    "environment": {
+      "url": "http://127.0.0.1:4175/remotion-style-atlas/",
+      "server": "Vite preview of production build, no React Refresh",
+      "indexHtmlSha256": "10188d9ae75e287f29805187746a5916fd7dc77815b4117042fdb6914b3b5e93",
+      "browser": "Google Chrome 154.0.8037.98, headless",
+      "viewport": [
+        1200,
+        900
+      ]
+    },
+    "sourceSha256": {
+      "three-common.ts": "c174af792617c7794ff83c29871a7ed7724a9ea6c08ac15397e9e4c373758f9c",
+      "scene-three.ts": "1e283eada2fc683483ceb4a9c414d9e3fd5f327496fb38afb9e4fc54f64a9d77",
+      "scene-r3f.tsx": "2278fcb18e62066c20f302d350b6571547f011ef9f95c746f65d3646af28b0a8",
+      "scene-theatre.ts": "17f8bcbaa43a246cef13f35523295a9bd1cb0b2719e1412f4fdc898baf51d36c"
+    },
+    "activate": true,
+    "cycles": 12,
+    "settleMs": 1000,
+    "checkpointColumns": [
+      "cycle",
+      "frameCount",
+      "Documents",
+      "JSEventListeners",
+      "Nodes",
+      "JSHeapUsedSizeBytes"
+    ],
+    "runs": [
+      {
+        "caseId": "SA-161",
+        "technology": "threejs",
+        "checkpoints": [
+          [
+            0,
+            1,
+            1,
+            5333,
+            31647,
+            6798720
+          ],
+          [
+            3,
+            1,
+            8,
+            5392,
+            32234,
+            11388676
+          ],
+          [
+            6,
+            1,
+            8,
+            5392,
+            32234,
+            11632504
+          ],
+          [
+            9,
+            1,
+            8,
+            5392,
+            32234,
+            11952452
+          ],
+          [
+            12,
+            1,
+            8,
+            5392,
+            32234,
+            11995452
+          ]
+        ],
+        "pageErrors": []
+      },
+      {
+        "caseId": "SA-163",
+        "technology": "r3f",
+        "checkpoints": [
+          [
+            0,
+            1,
+            1,
+            5333,
+            31647,
+            6787380
+          ],
+          [
+            3,
+            1,
+            8,
+            5393,
+            32259,
+            12677996
+          ],
+          [
+            6,
+            1,
+            8,
+            5393,
+            32259,
+            12984992
+          ],
+          [
+            9,
+            1,
+            8,
+            5393,
+            32259,
+            13390512
+          ],
+          [
+            12,
+            1,
+            8,
+            5393,
+            32259,
+            13458380
+          ]
+        ],
+        "pageErrors": []
+      },
+      {
+        "caseId": "SA-165",
+        "technology": "theatrejs",
+        "checkpoints": [
+          [
+            0,
+            1,
+            1,
+            5333,
+            31647,
+            6787544
+          ],
+          [
+            3,
+            1,
+            8,
+            5394,
+            32245,
+            11697396
+          ],
+          [
+            6,
+            1,
+            8,
+            5394,
+            32245,
+            11984836
+          ],
+          [
+            9,
+            1,
+            8,
+            5394,
+            32245,
+            12352308
+          ],
+          [
+            12,
+            1,
+            8,
+            5394,
+            32245,
+            12450780
+          ]
+        ],
+        "pageErrors": []
+      }
+    ],
+    "outcome": "The prior per-close DOM-node growth is eliminated in Three.js, R3F and Theatre integrations over twelve cycles. The R3F follow-up and native CSS control retain constant DOM/listener/document/frame counts through thirty-six cycles. JavaScript heap did not reach a plateau; the unresolved smaller trend is recorded without a blanket no-growth claim.",
+    "extendedFollowUp": {
+      "cycles": 36,
+      "activate": true,
+      "settleMs": 1000,
+      "runs": [
+        {
+          "caseId": "SA-163",
+          "technology": "r3f",
+          "checkpoints": [
+            [
+              0,
+              1,
+              1,
+              5333,
+              31647,
+              6795032
+            ],
+            [
+              3,
+              1,
+              8,
+              5393,
+              32259,
+              12677436
+            ],
+            [
+              6,
+              1,
+              8,
+              5393,
+              32259,
+              12998536
+            ],
+            [
+              9,
+              1,
+              8,
+              5393,
+              32259,
+              13407456
+            ],
+            [
+              12,
+              1,
+              8,
+              5393,
+              32259,
+              13489600
+            ],
+            [
+              15,
+              1,
+              8,
+              5393,
+              32259,
+              13578260
+            ],
+            [
+              18,
+              1,
+              8,
+              5393,
+              32259,
+              13669832
+            ],
+            [
+              21,
+              1,
+              8,
+              5393,
+              32259,
+              13719956
+            ],
+            [
+              24,
+              1,
+              8,
+              5393,
+              32259,
+              13750280
+            ],
+            [
+              27,
+              1,
+              8,
+              5393,
+              32259,
+              13775112
+            ],
+            [
+              30,
+              1,
+              8,
+              5393,
+              32259,
+              13796708
+            ],
+            [
+              33,
+              1,
+              8,
+              5393,
+              32259,
+              13826872
+            ],
+            [
+              36,
+              1,
+              8,
+              5393,
+              32259,
+              13862004
+            ]
+          ],
+          "pageErrors": [],
+          "heapDeltaCycles12To36Bytes": 372404
+        },
+        {
+          "caseId": "SA-101",
+          "technology": "native-css-control",
+          "checkpoints": [
+            [
+              0,
+              1,
+              1,
+              5333,
+              31647,
+              6787312
+            ],
+            [
+              3,
+              1,
+              8,
+              5392,
+              32229,
+              9420120
+            ],
+            [
+              6,
+              1,
+              8,
+              5392,
+              32229,
+              9553896
+            ],
+            [
+              9,
+              1,
+              8,
+              5392,
+              32229,
+              9612196
+            ],
+            [
+              12,
+              1,
+              8,
+              5392,
+              32229,
+              9632888
+            ],
+            [
+              15,
+              1,
+              8,
+              5392,
+              32229,
+              9667436
+            ],
+            [
+              18,
+              1,
+              8,
+              5392,
+              32229,
+              9673596
+            ],
+            [
+              21,
+              1,
+              8,
+              5392,
+              32229,
+              9693392
+            ],
+            [
+              24,
+              1,
+              8,
+              5392,
+              32229,
+              9711908
+            ],
+            [
+              27,
+              1,
+              8,
+              5392,
+              32229,
+              9741308
+            ],
+            [
+              30,
+              1,
+              8,
+              5392,
+              32229,
+              9749456
+            ],
+            [
+              33,
+              1,
+              8,
+              5392,
+              32229,
+              9761380
+            ],
+            [
+              36,
+              1,
+              8,
+              5392,
+              32229,
+              9779888
+            ]
+          ],
+          "pageErrors": [],
+          "heapDeltaCycles12To36Bytes": 147000
+        }
+      ],
+      "outcome": "Both procedures keep DOM nodes, listeners, documents and frames constant from cycle 3 through 36, but both JavaScript heaps continue to rise slightly. The control does not isolate the remaining growth to R3F, and no retaining root for this smaller heap trend was established.",
+      "notEstablished": [
+        "A long-duration heap plateau",
+        "Attribution of all remaining growth to browser warm-up or CDP evaluation",
+        "Universal memory safety",
+        "GPU memory bounds"
+      ]
+    }
+  }
+}

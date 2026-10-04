@@ -1,0 +1,2269 @@
+{
+  "generated": true,
+  "authority": "Derived from case registry, canonical technology projection and evidence.json; do not edit.",
+  "baseline": 100,
+  "added": 78,
+  "total": 178,
+  "counts": {
+    "ready": 78,
+    "partial": 0,
+    "blocked": 0,
+    "unverified": 0
+  },
+  "matrix": [
+    {
+      "technology": "css-transitions",
+      "name": "CSS Transitions",
+      "role": "native-api",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "native.md",
+      "primary": [
+        "SA-101",
+        "SA-153"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "layout-disclosure",
+        "pointer-parallax",
+        "layered-perspective-interface"
+      ],
+      "cases": [
+        {
+          "id": "SA-101",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        },
+        {
+          "id": "SA-153",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
+            "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "CSS 2.5D 透視不是 WebGL 或真正 3D 模型；光學內容為原創概念示意。",
+            "互動使用 CSS Transitions 的瀏覽器時間；自動示範由主時鐘定位，尚未驗證正式影片輸出。",
+            "低動態模式保持平面固定並更新控制讀值。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "css-keyframes",
+      "name": "CSS Animations / Keyframes",
+      "role": "native-api",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "native.md",
+      "primary": [
+        "SA-102"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "phase-offset"
+      ],
+      "cases": [
+        {
+          "id": "SA-102",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "waapi",
+      "name": "Web Animations API",
+      "role": "native-api",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "native.md",
+      "primary": [
+        "SA-103",
+        "SA-104",
+        "SA-152"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "seekable-timeline",
+        "pointer-scrubbing",
+        "scroll-parallax",
+        "multi-layer-depth"
+      ],
+      "cases": [
+        {
+          "id": "SA-103",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        },
+        {
+          "id": "SA-104",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        },
+        {
+          "id": "SA-152",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
+            "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "這是原創合成 SVG 建築示意，無真實建築資料、物理尺度或工程驗證；不作為可量測的設計模型。",
+            "低動態模式保持各層固定；正式觸控裝置與影片回放仍需各自驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "scroll-timeline",
+      "name": "ScrollTimeline / ViewTimeline",
+      "role": "native-api",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "native.md",
+      "primary": [
+        "SA-105"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "scroll-progress"
+      ],
+      "cases": [
+        {
+          "id": "SA-105",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "需要實際瀏覽器提供原生 API；不以 CSS 模擬冒充。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "view-transitions",
+      "name": "View Transitions API",
+      "role": "native-api",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "native.md",
+      "primary": [
+        "SA-106"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "snapshot-transition"
+      ],
+      "cases": [
+        {
+          "id": "SA-106",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "需要實際瀏覽器提供原生 API；不以 CSS 模擬冒充。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "canvas2d",
+      "name": "Canvas 2D",
+      "role": "native-api",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "native.md",
+      "primary": [
+        "SA-107",
+        "SA-129"
+      ],
+      "supporting": [
+        "SA-108"
+      ],
+      "capabilities": [
+        "blend-compositing",
+        "worker-rendering",
+        "analytic-trails"
+      ],
+      "cases": [
+        {
+          "id": "SA-107",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        },
+        {
+          "id": "SA-108",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        },
+        {
+          "id": "SA-129",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "offscreen-canvas",
+      "name": "OffscreenCanvas",
+      "role": "native-api",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "native.md",
+      "primary": [
+        "SA-108"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "worker-rendering"
+      ],
+      "cases": [
+        {
+          "id": "SA-108",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "gsap",
+      "name": "GSAP",
+      "role": "animation-engine",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "dom-motion.md",
+      "primary": [
+        "SA-109",
+        "SA-110",
+        "SA-111"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "typography-masking",
+        "multi-layer-timeline",
+        "scroll-choreography"
+      ],
+      "cases": [
+        {
+          "id": "SA-109",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        },
+        {
+          "id": "SA-110",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        },
+        {
+          "id": "SA-111",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "scrolltrigger",
+      "name": "GSAP ScrollTrigger",
+      "role": "plugin",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "dom-motion.md",
+      "primary": [],
+      "supporting": [
+        "SA-111"
+      ],
+      "capabilities": [
+        "scroll-choreography"
+      ],
+      "cases": [
+        {
+          "id": "SA-111",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "motion",
+      "name": "Motion",
+      "role": "animation-engine",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "dom-motion.md",
+      "primary": [
+        "SA-112",
+        "SA-113"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "shared-layout",
+        "drag-spring"
+      ],
+      "cases": [
+        {
+          "id": "SA-112",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        },
+        {
+          "id": "SA-113",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "animejs",
+      "name": "Anime.js",
+      "role": "animation-engine",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "dom-motion.md",
+      "primary": [
+        "SA-114",
+        "SA-115"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "svg-drawing",
+        "grid-stagger"
+      ],
+      "cases": [
+        {
+          "id": "SA-114",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        },
+        {
+          "id": "SA-115",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "popmotion",
+      "name": "Popmotion",
+      "role": "animation-primitives",
+      "disposition": "legacy",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "dom-motion.md",
+      "primary": [],
+      "supporting": [],
+      "capabilities": [],
+      "cases": [],
+      "limitations": [
+        "Legacy reference: not installed as a competing contemporary Motion stack."
+      ]
+    },
+    {
+      "technology": "lenis",
+      "name": "Lenis",
+      "role": "helper",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "scroll-type.md",
+      "primary": [],
+      "supporting": [
+        "SA-111"
+      ],
+      "capabilities": [
+        "scroll-choreography"
+      ],
+      "cases": [
+        {
+          "id": "SA-111",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "splittype",
+      "name": "SplitType",
+      "role": "helper",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "scroll-type.md",
+      "primary": [],
+      "supporting": [
+        "SA-109"
+      ],
+      "capabilities": [
+        "typography-masking"
+      ],
+      "cases": [
+        {
+          "id": "SA-109",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "svgjs",
+      "name": "SVG.js",
+      "role": "vector-library",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "svg.md",
+      "primary": [
+        "SA-116",
+        "SA-117",
+        "SA-118"
+      ],
+      "supporting": [
+        "SA-119",
+        "SA-120"
+      ],
+      "capabilities": [
+        "vector-construction",
+        "vector-clipping",
+        "path-interpolation",
+        "seeded-diagram",
+        "uncertainty-encoding"
+      ],
+      "cases": [
+        {
+          "id": "SA-116",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        },
+        {
+          "id": "SA-117",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        },
+        {
+          "id": "SA-118",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        },
+        {
+          "id": "SA-119",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        },
+        {
+          "id": "SA-120",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "flubber",
+      "name": "Flubber",
+      "role": "helper",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "svg.md",
+      "primary": [],
+      "supporting": [
+        "SA-118"
+      ],
+      "capabilities": [
+        "path-interpolation"
+      ],
+      "cases": [
+        {
+          "id": "SA-118",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "roughjs",
+      "name": "Rough.js",
+      "role": "drawing-library",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "svg.md",
+      "primary": [
+        "SA-119",
+        "SA-120"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "seeded-diagram",
+        "uncertainty-encoding"
+      ],
+      "cases": [
+        {
+          "id": "SA-119",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        },
+        {
+          "id": "SA-120",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "threejs",
+      "name": "Three.js",
+      "role": "3d-engine",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "gpu-scenes.md",
+      "primary": [
+        "SA-161",
+        "SA-162"
+      ],
+      "supporting": [
+        "SA-163",
+        "SA-164",
+        "SA-165",
+        "SA-166"
+      ],
+      "capabilities": [
+        "product-3d",
+        "exploded-view",
+        "instancing",
+        "procedural-geometry",
+        "react-scene-state",
+        "material-configuration",
+        "scene-composition",
+        "world-space-lines",
+        "authored-keyframes",
+        "camera-choreography",
+        "multi-parameter-sequencing"
+      ],
+      "cases": [
+        {
+          "id": "SA-161",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
+            "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "程序式示意模型，並非工程 CAD",
+            "GPU 與目標瀏覽器必須實測"
+          ]
+        },
+        {
+          "id": "SA-162",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
+            "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "高度為合成波函數，不是觀測資料",
+            "未主張優於其他實作的效能"
+          ]
+        },
+        {
+          "id": "SA-163",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
+            "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "原創程序式材質，非量測掃描材質",
+            "配置狀態未寫入永久儲存"
+          ]
+        },
+        {
+          "id": "SA-164",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
+            "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "軌道是示意函數，不是物理軌道計算",
+            "未使用外部星體材質"
+          ]
+        },
+        {
+          "id": "SA-165",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
+            "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "狀態以程式手工編排，未宣稱由 Studio 匯出",
+            "結構對應已安裝的 Theatre.js 0.7.2，升級須驗證"
+          ]
+        },
+        {
+          "id": "SA-166",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
+            "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "程序式環形模型",
+            "編排狀態為程式手工建立，非虛構的 Studio 檔案"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "r3f",
+      "name": "React Three Fiber",
+      "role": "framework-renderer",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "gpu-scenes.md",
+      "primary": [
+        "SA-163",
+        "SA-164"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "react-scene-state",
+        "material-configuration",
+        "scene-composition",
+        "world-space-lines"
+      ],
+      "cases": [
+        {
+          "id": "SA-163",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
+            "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "原創程序式材質，非量測掃描材質",
+            "配置狀態未寫入永久儲存"
+          ]
+        },
+        {
+          "id": "SA-164",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
+            "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "軌道是示意函數，不是物理軌道計算",
+            "未使用外部星體材質"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "drei",
+      "name": "Drei",
+      "role": "helper",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "gpu-scenes.md",
+      "primary": [],
+      "supporting": [
+        "SA-163",
+        "SA-164"
+      ],
+      "capabilities": [
+        "react-scene-state",
+        "material-configuration",
+        "scene-composition",
+        "world-space-lines"
+      ],
+      "cases": [
+        {
+          "id": "SA-163",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
+            "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "原創程序式材質，非量測掃描材質",
+            "配置狀態未寫入永久儲存"
+          ]
+        },
+        {
+          "id": "SA-164",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
+            "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "軌道是示意函數，不是物理軌道計算",
+            "未使用外部星體材質"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "theatrejs",
+      "name": "Theatre.js",
+      "role": "authoring-tool",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "gpu-scenes.md",
+      "primary": [
+        "SA-165",
+        "SA-166"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "authored-keyframes",
+        "camera-choreography",
+        "multi-parameter-sequencing"
+      ],
+      "cases": [
+        {
+          "id": "SA-165",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
+            "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "狀態以程式手工編排，未宣稱由 Studio 匯出",
+            "結構對應已安裝的 Theatre.js 0.7.2，升級須驗證"
+          ]
+        },
+        {
+          "id": "SA-166",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
+            "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+          ],
+          "limitations": [
+            "程序式環形模型",
+            "編排狀態為程式手工建立，非虛構的 Studio 檔案"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "babylonjs",
+      "name": "Babylon.js",
+      "role": "3d-engine",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "gpu-scenes.md",
+      "primary": [
+        "SA-167",
+        "SA-168"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "scene-picking",
+        "material-state",
+        "thin-instances",
+        "matrix-buffer-updates"
+      ],
+      "cases": [
+        {
+          "id": "SA-167",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "只有五個程序式樣本",
+            "外部讀屏描述仍須依正式產品內容補足"
+          ]
+        },
+        {
+          "id": "SA-168",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "合成格網，並非真實城市或地理資料",
+            "未與其他引擎進行效能比較"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "pixijs",
+      "name": "PixiJS",
+      "role": "2d-renderer",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "gpu-scenes.md",
+      "primary": [
+        "SA-169",
+        "SA-170"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "sprite-field",
+        "texture-reuse",
+        "gpu-filter",
+        "container-mask"
+      ],
+      "cases": [
+        {
+          "id": "SA-169",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "程序式短筆畫不是字型排版",
+            "720 是本案例的物件數，並非通用安全上限"
+          ]
+        },
+        {
+          "id": "SA-170",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "高模糊品質需要額外 GPU 工作",
+            "互動視窗狀態需固定後才可確定性輸出"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "regl",
+      "name": "regl",
+      "role": "gpu-wrapper",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "gpu-scenes.md",
+      "primary": [
+        "SA-171",
+        "SA-172"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "fragment-shader",
+        "wave-interference",
+        "domain-warping",
+        "procedural-texture"
+      ],
+      "cases": [
+        {
+          "id": "SA-171",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "視覺模型，不是精密聲學模擬",
+            "Shader 浮點結果可能隨 GPU 略有差異"
+          ]
+        },
+        {
+          "id": "SA-172",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "未提供跨 GPU 像素完全相同的保證",
+            "本案例沒有外部紋理"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "glsl",
+      "name": "Raw shader authoring / GLSL",
+      "role": "technique",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "gpu-scenes.md",
+      "primary": [],
+      "supporting": [
+        "SA-171",
+        "SA-172"
+      ],
+      "capabilities": [
+        "fragment-shader",
+        "wave-interference",
+        "domain-warping",
+        "procedural-texture"
+      ],
+      "cases": [
+        {
+          "id": "SA-171",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "視覺模型，不是精密聲學模擬",
+            "Shader 浮點結果可能隨 GPU 略有差異"
+          ]
+        },
+        {
+          "id": "SA-172",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "未提供跨 GPU 像素完全相同的保證",
+            "本案例沒有外部紋理"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "konva",
+      "name": "Konva",
+      "role": "canvas-scenegraph",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "canvas-physics.md",
+      "primary": [
+        "SA-121",
+        "SA-122"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "selection-transform",
+        "pointer-drawing"
+      ],
+      "cases": [
+        {
+          "id": "SA-121",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        },
+        {
+          "id": "SA-122",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "fabricjs",
+      "name": "Fabric.js",
+      "role": "canvas-editor",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "canvas-physics.md",
+      "primary": [
+        "SA-123",
+        "SA-124"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "object-serialization",
+        "freehand-brush"
+      ],
+      "cases": [
+        {
+          "id": "SA-123",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        },
+        {
+          "id": "SA-124",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "僅固定 960×540 設計座標等比縮放；直式版需重新構圖。",
+            "瀏覽器自動化通過不等於 iPhone 或實機 Safari 驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "matterjs",
+      "name": "Matter.js",
+      "role": "physics-engine",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "canvas-physics.md",
+      "primary": [
+        "SA-173",
+        "SA-174"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "rigid-body-collision",
+        "fixed-step-simulation",
+        "constraints",
+        "pendulum-simulation"
+      ],
+      "cases": [
+        {
+          "id": "SA-173",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "互動輸入未記錄為可匯出的事件軌",
+            "固定步長不等於所有瀏覽器逐位元相同"
+          ]
+        },
+        {
+          "id": "SA-174",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "未記錄互動事件，錄影適配需要固定或重播輸入",
+            "沒有工程數值驗證"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "tsparticles",
+      "name": "tsParticles",
+      "role": "particle-engine",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "canvas-physics.md",
+      "primary": [
+        "SA-175",
+        "SA-176"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "particle-links",
+        "pointer-field",
+        "particle-shapes",
+        "burst-trajectories"
+      ],
+      "cases": [
+        {
+          "id": "SA-175",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "節點是原創程序式位置，不是實際資料",
+            "使用 v4 公開 RenderManager；升級須驗證此適配層"
+          ]
+        },
+        {
+          "id": "SA-176",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "軌跡為解析式拋射，不是碰撞模擬",
+            "互動中心狀態需固定後才能做確定性影片"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "rive",
+      "name": "Rive",
+      "role": "asset-runtime",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "authored-assets.md",
+      "primary": [
+        "SA-195"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "vector-state-machine",
+        "authored-asset-input"
+      ],
+      "cases": [
+        {
+          "id": "SA-195",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "只示範已驗證的 Artboard、State Machine 1、Boolean 1；其他素材需另查名稱與輸入型別。",
+            "低階 runtime 由 host 固定步進；互動後的輸入歷史未輸出為影片重播契約。",
+            "未宣稱實體 Safari／iPhone 或跨 GPU 像素一致性。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "lottie",
+      "name": "Lottie",
+      "role": "animation-format-runtime",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "authored-assets.md",
+      "primary": [
+        "SA-125",
+        "SA-126"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "asset-playback",
+        "progress-control"
+      ],
+      "cases": [
+        {
+          "id": "SA-125",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "原創示意素材；沒有外部字型、圖片或聲音。",
+            "實體 Safari、iPhone 與不同 GPU 的像素一致性仍需另驗。"
+          ]
+        },
+        {
+          "id": "SA-126",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "原創示意素材；沒有外部字型、圖片或聲音。",
+            "實體 Safari、iPhone 與不同 GPU 的像素一致性仍需另驗。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "dotlottie",
+      "name": "dotLottie",
+      "role": "animation-format-runtime",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "authored-assets.md",
+      "primary": [
+        "SA-127",
+        "SA-128"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "archive-playback",
+        "multi-animation-archive"
+      ],
+      "cases": [
+        {
+          "id": "SA-127",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "原創示意素材；沒有外部字型、圖片或聲音。",
+            "實體 Safari、iPhone 與不同 GPU 的像素一致性仍需另驗。"
+          ]
+        },
+        {
+          "id": "SA-128",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "原創示意素材；沒有外部字型、圖片或聲音。",
+            "實體 Safari、iPhone 與不同 GPU 的像素一致性仍需另驗。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "d3",
+      "name": "D3.js",
+      "role": "visualization-library",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "data.md",
+      "primary": [
+        "SA-131",
+        "SA-132",
+        "SA-151",
+        "SA-155"
+      ],
+      "supporting": [
+        "SA-154",
+        "SA-156"
+      ],
+      "capabilities": [
+        "hierarchical-partition",
+        "hierarchy-navigation",
+        "keyed-data-join",
+        "ranking-updates",
+        "dependency-roadmap",
+        "staged-graph-reveal",
+        "real-world-cartography",
+        "great-circle-routes",
+        "geographic-camera",
+        "city-selection",
+        "orthographic-projection",
+        "spherical-clipping",
+        "globe-rotation",
+        "geographic-zoom-reveal",
+        "local-to-world-camera",
+        "locked-origin-return",
+        "full-bleed-cartography"
+      ],
+      "cases": [
+        {
+          "id": "SA-131",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "資料為原創示意，不代表實際統計；尚未完成跨瀏覽器與實體觸控裝置驗證。"
+          ]
+        },
+        {
+          "id": "SA-132",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "資料為原創示意，不代表實際統計；尚未完成跨瀏覽器與實體觸控裝置驗證。"
+          ]
+        },
+        {
+          "id": "SA-151",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "節點與依存為原創示意，不代表正式專案計畫、關鍵路徑或工期。",
+            "圖形使用固定四階段版面；大量節點需要重新設計佈局。"
+          ]
+        },
+        {
+          "id": "SA-154",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "Natural Earth 4.1.0 是歷史小比例尺資料，不代表最新國界；保留來源資料的邊界表示。",
+            "城市點位是 Natural Earth 的城市標籤位置，不是機場；連線與播放節奏為原創示意。",
+            "尚未驗證實機 Safari、實體觸控裝置或跨 GPU 確定性影片。"
+          ]
+        },
+        {
+          "id": "SA-155",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "Natural Earth 4.1.0 是歷史小比例尺資料，不代表最新國界；保留來源資料的邊界表示。",
+            "城市點位是 Natural Earth 的城市標籤位置，不是機場；連線與播放節奏為原創示意。",
+            "尚未驗證實機 Safari、實體觸控裝置或跨 GPU 確定性影片。"
+          ]
+        },
+        {
+          "id": "SA-156",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "Natural Earth 4.1.0 是歷史概化國界資料：世界使用 1:50m，臺灣替換為 1:10m；近景仍是區域輪廓，不含街道、建築或地形。",
+            "原點使用 Natural Earth 的臺北城市標籤座標，不是機場；其他城市連線為示意。",
+            "單一 Chrome 中的影格重播不等於跨 GPU、Safari 或實體觸控裝置驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "echarts",
+      "name": "Apache ECharts",
+      "role": "chart-engine",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "data.md",
+      "primary": [
+        "SA-133",
+        "SA-134"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "series-update",
+        "uncertainty-band",
+        "heatmap",
+        "linked-selection"
+      ],
+      "cases": [
+        {
+          "id": "SA-133",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "資料為原創示意，不代表實際統計；尚未完成跨瀏覽器與實體觸控裝置驗證。"
+          ]
+        },
+        {
+          "id": "SA-134",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "資料為原創示意，不代表實際統計；尚未完成跨瀏覽器與實體觸控裝置驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "vega",
+      "name": "Vega",
+      "role": "visualization-runtime",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "data.md",
+      "primary": [
+        "SA-135",
+        "SA-136"
+      ],
+      "supporting": [
+        "SA-137",
+        "SA-138"
+      ],
+      "capabilities": [
+        "reactive-signals",
+        "scatter-filter-emphasis",
+        "stack-transform",
+        "series-focus",
+        "layered-grammar",
+        "interval-estimates",
+        "two-dimensional-binning",
+        "aggregate-count"
+      ],
+      "cases": [
+        {
+          "id": "SA-135",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "資料為原創示意，不代表實際統計；尚未完成跨瀏覽器與實體觸控裝置驗證。"
+          ]
+        },
+        {
+          "id": "SA-136",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "資料為原創示意，不代表實際統計；尚未完成跨瀏覽器與實體觸控裝置驗證。"
+          ]
+        },
+        {
+          "id": "SA-137",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "資料為原創示意，不代表實際統計；尚未完成跨瀏覽器與實體觸控裝置驗證。"
+          ]
+        },
+        {
+          "id": "SA-138",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "資料為原創示意，不代表實際統計；尚未完成跨瀏覽器與實體觸控裝置驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "vega-lite",
+      "name": "Vega-Lite",
+      "role": "visualization-compiler",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "data.md",
+      "primary": [
+        "SA-137",
+        "SA-138"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "layered-grammar",
+        "interval-estimates",
+        "two-dimensional-binning",
+        "aggregate-count"
+      ],
+      "cases": [
+        {
+          "id": "SA-137",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "資料為原創示意，不代表實際統計；尚未完成跨瀏覽器與實體觸控裝置驗證。"
+          ]
+        },
+        {
+          "id": "SA-138",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "資料為原創示意，不代表實際統計；尚未完成跨瀏覽器與實體觸控裝置驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "visx",
+      "name": "visx",
+      "role": "react-visualization-primitives",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "data.md",
+      "primary": [
+        "SA-139",
+        "SA-140"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "react-arc-layout",
+        "categorical-focus",
+        "shared-scales",
+        "inspection-cursor"
+      ],
+      "cases": [
+        {
+          "id": "SA-139",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "資料為原創示意，不代表實際統計；尚未完成跨瀏覽器與實體觸控裝置驗證。"
+          ]
+        },
+        {
+          "id": "SA-140",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "資料為原創示意，不代表實際統計；尚未完成跨瀏覽器與實體觸控裝置驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "observable-plot",
+      "name": "Observable Plot",
+      "role": "visualization-library",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "data.md",
+      "primary": [
+        "SA-141",
+        "SA-142"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "bin-transform",
+        "cumulative-distribution",
+        "small-multiples",
+        "faceted-marks"
+      ],
+      "cases": [
+        {
+          "id": "SA-141",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "資料為原創示意，不代表實際統計；尚未完成跨瀏覽器與實體觸控裝置驗證。"
+          ]
+        },
+        {
+          "id": "SA-142",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "資料為原創示意，不代表實際統計；尚未完成跨瀏覽器與實體觸控裝置驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "maplibre",
+      "name": "MapLibre GL JS",
+      "role": "map-renderer",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "maps.md",
+      "primary": [
+        "SA-143",
+        "SA-144",
+        "SA-154",
+        "SA-156"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "geographic-camera",
+        "geojson-route",
+        "feature-state",
+        "choropleth-selection",
+        "real-world-cartography",
+        "great-circle-routes",
+        "city-selection",
+        "geographic-zoom-reveal",
+        "local-to-world-camera",
+        "locked-origin-return",
+        "full-bleed-cartography"
+      ],
+      "cases": [
+        {
+          "id": "SA-143",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "所有路線與分區為原創地理示意，不是真實街道或行政區。",
+            "未使用圖磚、字型服務或地形；WebGL 與 worker 支援需逐環境驗證。"
+          ]
+        },
+        {
+          "id": "SA-144",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "原創示意分區不是實際行政邊界，權重不代表統計資料。",
+            "無底圖服務；跨裝置 WebGL 支援尚未驗證。"
+          ]
+        },
+        {
+          "id": "SA-154",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "Natural Earth 4.1.0 是歷史小比例尺資料，不代表最新國界；保留來源資料的邊界表示。",
+            "城市點位是 Natural Earth 的城市標籤位置，不是機場；連線與播放節奏為原創示意。",
+            "尚未驗證實機 Safari、實體觸控裝置或跨 GPU 確定性影片。"
+          ]
+        },
+        {
+          "id": "SA-156",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "Natural Earth 4.1.0 是歷史概化國界資料：世界使用 1:50m，臺灣替換為 1:10m；近景仍是區域輪廓，不含街道、建築或地形。",
+            "原點使用 Natural Earth 的臺北城市標籤座標，不是機場；其他城市連線為示意。",
+            "單一 Chrome 中的影格重播不等於跨 GPU、Safari 或實體觸控裝置驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "deckgl",
+      "name": "deck.gl",
+      "role": "geospatial-layer-engine",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "maps.md",
+      "primary": [
+        "SA-145",
+        "SA-146"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "gpu-point-layer",
+        "attribute-update",
+        "timestamped-trails",
+        "geographic-temporal-layer"
+      ],
+      "cases": [
+        {
+          "id": "SA-145",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "4,096 筆是示意資料量，不是測得效能上限。",
+            "未使用底圖；GPU 記憶體與觸控效能尚未量測。"
+          ]
+        },
+        {
+          "id": "SA-146",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "全部路徑為原創合成資料，不代表實際交通。",
+            "Timestamp 精度、視野與影片回放仍需針對正式資料驗證。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "cesiumjs",
+      "name": "CesiumJS",
+      "role": "globe-engine",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "maps.md",
+      "primary": [
+        "SA-147",
+        "SA-148"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "ellipsoid-globe",
+        "geographic-camera",
+        "geodetic-geometry",
+        "orbit-camera"
+      ],
+      "cases": [
+        {
+          "id": "SA-147",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "使用 EllipsoidTerrainProvider，沒有載入真實地形或衛星影像。",
+            "路徑為原創示意，並非導航解或地理最短路徑。",
+            "需以既有準備腳本部署本機 Cesium Workers、Assets、Widgets、ThirdParty 目錄。"
+          ]
+        },
+        {
+          "id": "SA-148",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "立柱是原創合成資料，不是真實建築。",
+            "僅橢球基準面，沒有高程資料、影像或地形。",
+            "需以既有準備腳本部署本機 Cesium Workers、Assets、Widgets、ThirdParty 目錄。",
+            "正式影片需等待 geometry 與影像格線載入後驗證 seek/replay。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "leaflet",
+      "name": "Leaflet",
+      "role": "map-library",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "maps.md",
+      "primary": [
+        "SA-149",
+        "SA-150"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "waypoint-navigation",
+        "map-marker-selection",
+        "geojson-region-layer",
+        "conditional-emphasis"
+      ],
+      "cases": [
+        {
+          "id": "SA-149",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "所有站點與路徑為原創地理示意，不是真實散步建議。",
+            "沒有底圖或真實街道資料；觸控裝置尚未實測。"
+          ]
+        },
+        {
+          "id": "SA-150",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "分區是原創示意形狀，不是實際行政邊界。",
+            "沒有外部圖磚；尚未驗證大量 GeoJSON 的效能。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "p5js",
+      "name": "p5.js",
+      "role": "creative-coding-library",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "video-generative.md",
+      "primary": [
+        "SA-177",
+        "SA-178"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "seeded-noise",
+        "flow-lines",
+        "polar-curves",
+        "parametric-drawing"
+      ],
+      "cases": [
+        {
+          "id": "SA-177",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "合成噪聲場，並非地理或流體資料",
+            "未保證不同 p5 版本的噪聲結果一致",
+            "p5 2.3.4 使用獨立暫存頁面作用域；關閉案例即銷毀作用域"
+          ]
+        },
+        {
+          "id": "SA-178",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "花形為數學曲線，不是生物生長模型",
+            "Canvas 內容沒有逐曲線語意節點",
+            "p5 2.3.4 使用獨立暫存頁面作用域釋放全域包裝函式"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "remotion",
+      "name": "Remotion",
+      "role": "programmatic-video",
+      "disposition": "new",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "video-generative.md",
+      "primary": [
+        "SA-191",
+        "SA-192"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "frame-composition",
+        "frame-stagger"
+      ],
+      "cases": [
+        {
+          "id": "SA-191",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "原創示意素材；沒有外部字型、圖片或聲音。",
+            "實體 Safari、iPhone 與不同 GPU 的像素一致性仍需另驗。"
+          ]
+        },
+        {
+          "id": "SA-192",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "原創示意素材；沒有外部字型、圖片或聲音。",
+            "實體 Safari、iPhone 與不同 GPU 的像素一致性仍需另驗。"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "technology": "motion-canvas",
+      "name": "Motion Canvas",
+      "role": "programmatic-video",
+      "disposition": "conditional",
+      "referenceStatus": "official-sources-reviewed",
+      "reference": "video-generative.md",
+      "primary": [
+        "SA-193",
+        "SA-194"
+      ],
+      "supporting": [],
+      "capabilities": [
+        "generator-choreography",
+        "signal-sequencing"
+      ],
+      "cases": [
+        {
+          "id": "SA-193",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "使用鎖定 3.17.2 的程式化 Scene2D／PlaybackManager 整合，未包含獨立編輯器 UI。",
+            "實體 Safari、iPhone 與不同 GPU 的像素一致性仍需另驗。"
+          ]
+        },
+        {
+          "id": "SA-194",
+          "status": "ready",
+          "preview": true,
+          "runtime": [
+            "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
+            "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+          ],
+          "limitations": [
+            "使用鎖定 3.17.2 的程式化 Scene2D／PlaybackManager 整合，未包含獨立編輯器 UI。",
+            "實體 Safari、iPhone 與不同 GPU 的像素一致性仍需另驗。"
+          ]
+        }
+      ],
+      "limitations": []
+    }
+  ]
+}

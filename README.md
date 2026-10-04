@@ -1,6 +1,6 @@
 # Remotion Style Atlas
 
-以實際影片與海報辨識風格，再複製可攜式 Codex 提示詞的繁體中文動態設計圖鑑。網站採 React、TypeScript、Vite；預覽採 Remotion 4.0.530，所有相容套件固定同一版。正式網站只讀取經驗證、已發布的目錄，不需要 AI API、帳號或雲端渲染服務。
+以實際影片與海報辨識效果，再複製可攜式 Codex 提示詞的繁體中文動態設計圖鑑。既有 React、TypeScript、Vite 網站保留原本 100 個風格及其 ID、網址與套用流程；新增技術能力案例沿用同一個畫廊。原有預覽採 Remotion 4.0.530，新案例依能力使用實際技術執行環境，重型套件按需載入。不需要 AI API、帳號或雲端渲染服務。
 
 ## 啟動與操作
 
@@ -8,16 +8,45 @@
 
 ```sh
 npm ci
+npm ci --prefix technology-runtime
 npm run dev
 ```
 
-也可在 Finder 雙擊 `start.command`。開發伺服器固定使用 `http://127.0.0.1:4173`，需等終端機確認啟動成功。`npm run studio` 開啟 Remotion 作者工作區。畫廊提供「輪播／聚焦／靜態」模式、全域暫停、搜尋與獨立分類篩選。輪播從可見卡片選擇有限播放數量；低動態偏好預設為靜態。詳細頁可複製完整提示詞、關鍵字或匯出結構化規格；剪貼簿失敗時提供可選取文字。
+也可在 Finder 雙擊 `start.command`；它會補裝缺少的主專案／技術執行環境相依套件，準備本機供應商資產後啟動。開發伺服器固定使用 `http://127.0.0.1:4173`，需等終端機確認啟動成功。`npm run studio` 開啟原有 Remotion 作者工作區。畫廊提供「輪播／聚焦／靜態」模式、全域暫停、搜尋與獨立分類篩選；也可依能力、視覺方向、技術、互動、renderer 與驗證狀態尋找新案例。輪播從可見卡片選擇有限播放數量；低動態偏好預設為靜態。詳細頁可複製完整提示詞、關鍵字或匯出結構化規格；剪貼簿失敗時提供可選取文字。
 
 收藏、設定與參考草稿保存在目前瀏覽器；不會自動跨裝置同步，清除網站儲存空間可能移除它們。請使用版本化匯出保存中繼資料。參考附件保留在瀏覽器本機，中繼資料匯出不含附件原始內容；參考草稿不會自動成為正式風格，也不宣稱已分析不可存取的來源。
 
-## 目錄與渲染
+## 技術案例的來源與維護
 
-唯一作者來源為 `src/catalog/styles.json`，由 `src/catalog/schema.ts` 驗證。`src/catalog/published.json` 是驗證器產生的正式網站資料，不應手動編輯。新增風格需分配未使用的穩定 `SA-###` ID、slug 與可信任 recipe；不可重新分配既有 ID。原始樣本放在 `public/assets/`，字型放在 `public/fonts/`；不得加入未授權第三方素材或私人參考內容。
+2026-10-04：基準 100 個、新增 78 個、全站 178 個；新增案例 ready 78／partial 0／blocked 0／unverified 0。ready 代表已完成此處記錄的來源、預覽、執行與視覺檢查，不代表所有裝置、效能或影片輸出均已驗證。完整清單由 `docs/technology-coverage.json` 與 `.md` 自動產生。
+
+47 個盤點名稱正規化為 45 個技術識別，44 個有實際示範；38 個擔任主要技術、11 個擔任支援角色，兩者可以重疊。Framer Motion／Motion One 保留為 Motion 歷史名稱的可搜尋入口，不重複計數；Popmotion 僅保留歷史選型參考。涵蓋 DOM／SVG、GPU／3D、Canvas 編輯、物理／粒子、動畫素材、資料視覺化、地圖與程式化影片。
+
+補充案例包含 SA-151 資訊路線圖、SA-152 建築分層視差、SA-153 指標視差、SA-154 世界連線、SA-155 可旋轉地球及 SA-156 局部揭示全球再回焦。SA-152 使用共用投影修正樓板位置，滿版呈現木構接點、玻璃分格、樓板紋理與室內配置，沒有側欄文字。SA-156 採本機 Natural Earth 世界 1:50m／臺灣 1:10m 輪廓，滿版呈現臺北→全球連線→臺北，只保留地圖地名與必要來源標示。
+
+- 技術定義與選型的唯一來源：workspace 的 `.agents/skills/Skill-Web-SVG-Animation-Architect/references/technologies/catalog.json` 及其按需載入的家族參考；Skill routing 由既有 Skill 與 `docs/SKILL_ROUTING.md` 負責。
+- `scripts/sync-technology-references.ts` 將 catalog 產生為 `src/technology/technologies.generated.json` 的薄型投影，保留穩定技術 ID、別名、角色與來源。投影不可手動維護；獨立網站 repo 使用已提交的投影，不需要存取本機 Skill 路徑，也不把完整 Skill 文件送進瀏覽器。
+- 具體案例來源為 `technology-runtime/src/*-cases.ts`，由 `src/technology/registry.ts` 彙整；實作為同目錄的 runtime modules。`src/technology/prompt.ts` 從案例 metadata 產生套用提示詞，區分鎖定效果、可編輯內容、技術適應、生命週期與驗證要求。
+- `src/technology/evidence.json` 記錄實際執行、視覺檢查、預覽、效能與影片適用性的證據。`scripts/validate-technology.ts` 核對案例 ID、技術連結、來源 fingerprint、素材、預覽編碼與 hash；實作完成不自動等於驗證完成。
+
+本次遇到的技術陷阱已回寫各家族參考：SVG 前後繪製與共同投影、GSAP 初始／反向 seek、手動捲動接管、WebKit 媒體重複清理、Three.js 版本限定的共用 texture 保留，以及量測結果的證據界線。`visual-quality.md` 保存精緻細節、依要求滿版、移除不相關文字及多階段遮擋驗收；`current-information.md` 要求即時或可能變動的資訊先聯網搜尋、核對第一手來源並記錄資料時間。Web SVG、Remotion 與 Scrollytelling 三個既有 Skill 依需求連到同一份規則，不複製個案美術或建立平行 Skill。
+
+在 AI Skills workspace 的本專案目錄內更新技術投影與驗證：
+
+```sh
+node --import tsx scripts/sync-technology-references.ts
+node --import tsx scripts/validate-technology.ts
+```
+
+新預覽由 `scripts/capture-technology.ts` 擷取實際 runtime 的影格並產生海報與短片；它不是原有 Remotion recipe 渲染器。擷取與視覺審查必須針對變更案例執行，不能以建置成功或初始畫面代替。
+
+列表仍以海報／短片發現效果，不同時啟動所有技術。只有使用者開啟案例並啟動即時互動時才載入其 runtime；畫廊維持一個作用中的即時案例。桌機最多 6 支、粗略指標裝置最多 2 支預覽影片播放，保留已載入來源不超過各自播放預算的兩倍。可見卡片輪替播放、聚焦卡片優先，未載入來源的海報卡片不呼叫無必要的媒體 pause／load。這是本專案的保守操作預算，不是通用安全值。離開可視範圍、背景分頁或暫停時停止推進，關閉時釋放排程、事件、observer、worker 與實際 renderer 資源。
+
+每個案例的 Shadow DOM 與 case-root tokens 明確設定字型、前景、背景和色彩，不繼承舊插畫集合的美術設定。只有 p5 2.3.4 與 tsParticles 4.4.0 因實測套件全域參照保留，使用可銷毀的同源 iframe realm；由主頁驅動時間並在關閉後移除，仍執行套件正常 teardown。這項隔離不代表已證明所有瀏覽器或 GPU 記憶體都可立即回收。影片相容性須依個案證據判定，能在瀏覽器播放不等於可重複渲染。
+
+## 原有風格目錄與渲染
+
+原有 100 個風格的唯一作者來源仍為 `src/catalog/styles.json`，由 `src/catalog/schema.ts` 驗證。`src/catalog/published.json` 是原有驗證器產生的正式網站資料，不應手動編輯；新技術案例不要求重寫這 100 筆資料。新增案例需分配全站未使用的穩定 `SA-###` ID，不可重新分配既有 ID；只有原有 recipe 型風格使用以下渲染流程。原始樣本放在 `public/assets/`，字型放在 `public/fonts/`；不得加入未授權第三方素材或私人參考內容。
 
 ```sh
 # Render selected implemented styles.
@@ -37,7 +66,7 @@ npm run review -- --all
 
 渲染重用同一 bundle 與瀏覽器，固定一次一個工作、每工作兩個影格。這是保守預算，不代表任何 Mac 的效能保證。每個風格允許初次嘗試加最多兩次重試；三個輸出均完成且經 ffprobe 驗證後，才更新檔名、SHA-256 manifest 與目錄。失敗回傳非零狀態並保留既有有效輸出；可再次執行 changed 恢復。檔名含 fingerprint，可避免快取錯置。fingerprint 涵蓋創意規格、Remotion 程式、樣本、字型、套件鎖定與渲染設定；發布狀態、審查紀錄與產生檔名不會造成無限重新渲染。共用程式變更會使既有預覽需要重新產生與審查。
 
-本次於 Apple M4 Pro、24 GB RAM 環境試跑 SA-047 的 10 秒詳細預覽：兩影格並行 15.95 秒，四影格並行 16.61 秒；這是單次比較，不足以推論所有風格或其他主機。四影格未顯示收益，因此維持兩影格。Mac Studio M1 Ultra／64 GB 未實測；該機仍應先以保守設定試跑，再依實際工作負載調整。未關閉其他創作應用程式，也未宣稱實機播放 FPS 或整體記憶體峰值。
+2026-10-03 的歷史試跑於 Apple M4 Pro、24 GB RAM 執行 SA-047 的 10 秒詳細預覽：兩影格並行 15.95 秒，四影格並行 16.61 秒；這是單次比較，不足以推論所有風格、新技術案例或其他主機。四影格未顯示收益，因此原有渲染器維持兩影格。Mac Studio M1 Ultra／64 GB 未實測；該機仍應先以保守設定試跑，再依實際工作負載調整。未關閉其他創作應用程式，也未宣稱實機播放 FPS 或整體記憶體峰值。
 
 ## 審查與發布
 
@@ -62,9 +91,9 @@ ATLAS_BASE=/remotion-style-atlas/ npm run build
 ATLAS_BASE=/remotion-style-atlas/ npm run preview
 ```
 
-瀏覽器檢查需本機測試伺服器與 Playwright 瀏覽器；實際驗證狀態以執行結果為準。Chromium／WebKit 自動測試不等於實機 Safari 或 iPhone 驗收。`dist/` 只保留正式目錄及其媒體、網站程式；原始樣本、未發布媒體、manifest、作者目錄和私人參考內容不會進入交付包。路由使用 hash，可在 GitHub Pages 分享詳細頁並重新整理。`ATLAS_BASE` 設定網站 base；外部媒體伺服器可透過 `VITE_ASSET_BASE` 設定，部署前須驗證來源可存取性。
+瀏覽器檢查需本機測試伺服器與 Playwright 瀏覽器；實際驗證狀態以執行結果為準。Chromium／WebKit 自動測試不等於實機 Safari 或 iPhone 驗收。部署輸出須保留正式目錄、預覽、按需 runtime，以及所需的 `technology-assets/` 與套件授權文字；原有未發布媒體、原始樣本、manifest、作者目錄和私人參考內容仍不應進入交付包。路由使用 hash，可在 GitHub Pages 分享詳細頁並重新整理。`ATLAS_BASE` 設定網站 base；外部媒體伺服器可透過 `VITE_ASSET_BASE` 設定，部署前須驗證來源可存取性。
 
-本專案提供兩種 GitHub Pages 手動部署入口：作為獨立 GitHub repository 根目錄時使用本資料夾內的 `.github/workflows/pages.yml`；作為 AI Skills workspace 子目錄時，使用 workspace 根目錄 `.github/workflows/remotion-style-atlas-pages.yml`。workflow 只接受手動觸發；需先在 repository 設定啟用 GitHub Pages／GitHub Actions，並由有發布權限者明確執行。本站建置不會自行發布。建置輸出列出正式媒體大小；應另外檢查 `dist/` 整體大小及實際下載負擔。GitHub Pages 公開輸出前，確認來源素材、字型與授權適用範圍。
+GitHub Pages 保留兩個既有入口：獨立網站 repository 使用本資料夾的 `.github/workflows/pages.yml`，觸發條件為 `main` push 或手動執行；workspace 使用根目錄 `.github/workflows/remotion-style-atlas-pages.yml`，只接受手動執行。兩者都安裝主專案與 `technology-runtime` 各自 lockfile 鎖定的相依套件，再準備供應商資產。本機 `npm run build` 不會發布；遠端結果以[既有 Pages 工作流程](https://github.com/ian9911007/remotion-style-atlas/actions/workflows/pages.yml)與公開頁面實測為準。啟用或執行遠端發布仍需發布權限與明確授權。建置輸出列出正式媒體大小；應另外檢查 `dist/` 整體大小及實際下載負擔。GitHub Pages 公開輸出前，確認來源素材、字型與授權適用範圍。
 
 ## 唯一維護來源與雙向 Git 同步
 
@@ -86,9 +115,33 @@ npm run sync:pull
 
 2026-10-03 查核的 [Remotion 官方授權頁](https://www.remotion.dev/docs/license/pricing)：個人及最多三人的公司可依條款使用免費授權；合作情境及四人以上公司需要公司授權，方案依創作／自動化用途而定。未判定目前組織是否符合免費資格，也未購買或啟用付費服務；投入商業或團隊使用前需自行確認適用條款。官方價格與條款可能更新，以上連結為目前查核入口。
 
-樣本是本專案原創的建築、植物、產品程序化插畫，來源為 `scripts/create-assets.ts` 與 `public/assets/*.svg`，可用 `npm run assets` 重建。沒有使用第三方照片、海報、商標或付費素材；攝影版面類風格目前使用插畫示範裁切與視差。外部參考僅可記錄可觀察原則，未取得權利時不能將對方商標、影片、海報或受保護藝術作品加入公開素材。風格提示詞不保證逐像素重建；結構化規格提供更精確的補充依據。
+原有集合的樣本是本專案原創的建築、植物、產品程序化插畫，來源為 `scripts/create-assets.ts` 與 `public/assets/*.svg`，可用 `npm run assets` 重建；該集合的攝影版面類風格使用插畫示範裁切與視差。新案例的素材來源、實際格式、授權與標示要求由各案例 `assets` metadata 及必要的 provenance 檔記錄，不沿用舊集合「全部原創插畫」的假設。外部參考僅可記錄可觀察原則，未取得權利時不能將對方商標、影片、海報或受保護藝術作品加入公開素材。風格提示詞不保證逐像素重建；結構化規格提供更精確的補充依據。
 
-## 本次交付驗證
+`scripts/prepare-technology-assets.mjs` 從實際安裝的主專案與技術 runtime 直接相依套件複製 LICENSE／NOTICE／COPYING 等原文至 `public/technology-assets/licenses/`，並在 `package-notices.json` 記錄版本、來源檔名與 SHA-256。這些是建置產物，不可手動維護，也不能用 SPDX 名稱代替授權全文。`@react-three/fiber` 與 `@rive-app/canvas` 缺少隨套件附上的授權文字，現已補入同版本官方 commit 的原始 MIT 文件，建置離線核對 SHA-256；原文位於 `public/technology-assets/license-supplements/`，查核來源位於 `docs/technology-license-verification.json`。GSAP 仍依官方連結條款，SplitType 的發行套件及對應原始碼未找到授權全文，兩者明列 `upstream-link-only`，不製造替代文字；這份直接相依套件清單不等於完整遞移相依套件授權稽核。套件授權與實際圖片、字型、動畫、模型及地圖資料權利須分別查核。
+
+## 整合驗證：2026-10-04
+
+原有 `styles.json` SHA-256 維持 `1e8207db3454445592f7dbc0826446ba32df8a5a31c2067da05db442ced93d30`，原有 100 個 ID、300 個媒體輸出的雜湊與格式驗證通過。主專案 lockfile、原有 schema 與 Remotion recipe 來源未變更。
+
+- 18 項單元測試、原有操作的 Chrome／WebKit 46 項瀏覽器檢查、擴充介面的 11 項檢查通過；涵蓋搜尋、別名與能力篩選、收藏、路由、提示詞、複製備援、匯入匯出、鍵盤、低動態、390／768 px 模擬觸控視窗與播放預算。
+- 新增 78 個 runtime 均通過 Google Chrome 154.0.8037.98 與 Playwright WebKit 26.0（build 2215）的掛載、多次 seek 與錯誤檢查。正式子路徑版本另通過全部 78 個 Chrome runtime；最後 Three.js 生命週期修正的 6 個案例重新執行受影響檢查。
+- 78 組海報與 MP4 由實際 runtime 產生，全部多階段影格經視覺檢查；正式版的 78 支 HTML video 均完成解碼及循環檢查，零媒體錯誤。新短片以 15 fps 擷取、編碼為 30 fps，480×270；這不構成即時 FPS 測量。SA-152 另驗證對齊、7 個動畫狀態、循環、鍵盤滾動、手機詳情縮放與低動態行為。
+- TypeScript、原有與新增 registry／素材／來源 fingerprint、GitHub Pages `/remotion-style-atlas/` 正式建置、動態 chunk 與資產路徑檢查通過。`docs/technology-build-verification.json` 保存實際檔案大小；主入口不會預先載入所有引擎，完整 Skill 文件未送進瀏覽器。
+- 技術 catalog 驗證涵蓋 45 個正式識別／47 個盤點名稱；workspace 的 18 個驗證套件結果為 `PASS_WITH_WARNINGS`，保留原有警告。路由按需求載入家族參考，沒有把個別展示案例、美術方向、資料或套用提示詞複製進通用 Skills。
+
+`docs/technology-preview-verification.json` 保存媒體檢查摘要，`docs/technology-resource-verification.json` 保存反覆開關及資源釋放的量測範圍。實作完成、正式建置、瀏覽器執行、視覺檢查與效能量測各自記錄，不互相替代。
+
+SA-152 的木構繪製已分成前後兩次處理：後側結構在樓板後，前方柱子與屋頂樑在樓板前，兩次處理共用相同位移。7 個動畫位置以實際像素檢查屋頂樑可見性，避免只驗證座標正確卻漏掉遮擋問題。新版海報與短片已重新產生。
+
+Three.js 0.186.1 的共用 DFG lookup texture 曾保留已關閉 renderer 的 listener／canvas；現以公開 material compile hook 追蹤並在單一作用中 renderer 的清理邊界釋放。正式版 Three、R3F、Theatre 各 12 次開關後 DOM／listener 數量穩定，R3F 延長至 36 次亦固定。JavaScript heap 仍有小幅增加，原生 CSS 控制組也有增加；長時間 heap 是否收斂仍未驗證，不宣稱全面無洩漏或 GPU 記憶體已測量。
+
+尚未驗證實機 Safari／iPhone、實體觸控、GPU 記憶體峰值或完整決定性影片輸出。影片適用性依個別 frame-driven／adapter-required／recorded-live 等狀態與證據判定；WebKit 測試不是實機 Safari 驗收。地圖輪廓是具來源日期的 Natural Earth 資料，沒有宣稱即時行政邊界、街道或衛星資料；Cesium 案例使用橢球，未宣稱已載入地形。Rive 以實際有效的 Boolean state-machine 素材示範，未以假的作者檔案擴充案例數。
+
+相依套件稽核已修復可相容修正的項目；仍有 1 個 `image-size` ICNS 解析 DoS advisory（GHSA-w3rx-r6r6-pgpr）沿 texture-compressor／deck.gl 相依鏈列出 8 個受影響套件。現有展示只使用受控本機素材；沒有為消除報表而強制降版 deck.gl。版本、影響範圍與限制見 `docs/technology-dependency-verification.json`，此紀錄不是普遍安全保證。沒有未完成展示卡片；以上是本機驗收結果、明確未驗證項目與已知依賴限制，遠端部署須另行確認工作流程與公開網站。
+
+## 歷史驗證基準：2026-10-03，原有 100 筆
+
+以下紀錄只適用當時原有集合與建置；本次新增案例的檢查見上方 2026-10-04 整合驗證。
 
 2026-10-03：100 個獨立 recipe 已實作、渲染、審查並發布，包含 200 支 H.264 預覽及 100 張 JPEG 海報。已檢查全部風格的海報與多段影格，並在 Chromium 原生影片元素完整循環播放全部 gallery/detail；解碼畫格涵蓋各影片完整長度，無媒體解碼錯誤。畫格檢查證據為 `docs/review/frames-*.jpg`。SA-047 線條描繪與 SA-058 海報可讀性問題已修正並重新驗證。
 
@@ -98,4 +151,4 @@ Apple M4 Pro（12 核心、24 GB RAM），1 個渲染工作／2 影格並行：�
 
 目前實際支援且已審查的比例為 16:9；攝影處理範例使用原創插畫，景深／視差範例屬 2.5D。未驗證實機 Safari、iPhone 或 Mac Studio M1 Ultra／64 GB；未執行 GitHub Actions 遠端部署。
 
-Created: 2026-10-03
+Created: 2026-10-04

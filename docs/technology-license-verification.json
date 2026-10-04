@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "created": "2026-10-04",
+  "verifiedAt": "2026-10-04",
+  "timezone": "Asia/Taipei",
+  "scope": "Source verification for four direct runtime packages whose installed archives did not include a standalone license file. This record does not replace upstream license text, audit transitive dependencies, or grant rights to authored assets.",
+  "localEvidence": {
+    "packageMetadata": "technology-runtime/node_modules/<package>/package.json",
+    "generatedNotices": "public/technology-assets/package-notices.json",
+    "noticeGenerator": "scripts/prepare-technology-assets.mjs",
+    "observedInstalledTextStatus": "not-packaged for all four packages at inspection",
+    "mutationBoundary": "The two pinned original MIT files were added as persistent supplements; the existing prepare script now verifies and copies them offline. Generated notices identify their upstream origin. No package, lockfile, runtime source or upstream legal wording was modified."
+  },
+  "method": [
+    "Read installed package metadata and generated package notices.",
+    "Browse upstream repository and official license pages.",
+    "Resolve matching release tags with git ls-remote; use the npm publisher's gitHead only where a matching tag was unavailable.",
+    "Fetch upstream files at immutable commits, verify matching package version, and calculate SHA-256 over original response bytes.",
+    "Inspect recursive upstream trees and README when no standalone license file was found."
+  ],
+  "packages": [
+    {
+      "name": "@react-three/fiber",
+      "installedVersion": "9.8.1",
+      "declaredLicense": "MIT",
+      "status": "upstream-original-text-supplement-integrated",
+      "repository": "https://github.com/pmndrs/react-three-fiber",
+      "releaseTag": "v9.8.1",
+      "commit": "53ec672ac4a7189711766b87ece18889abbb32d4",
+      "versionEvidence": {
+        "url": "https://raw.githubusercontent.com/pmndrs/react-three-fiber/53ec672ac4a7189711766b87ece18889abbb32d4/packages/fiber/package.json",
+        "sha256": "08cdd95784a1ecaa7a5c8d895d5da659bc23780301b7d6873916c03236cb198b"
+      },
+      "licenseEvidence": {
+        "browserUrl": "https://github.com/pmndrs/react-three-fiber/blob/v9.8.1/LICENSE",
+        "pinnedRawUrl": "https://raw.githubusercontent.com/pmndrs/react-three-fiber/53ec672ac4a7189711766b87ece18889abbb32d4/LICENSE",
+        "sha256": "9c35b5de7b7493a707fffe4eb23bd2f7f449153c1911f7c6eefb4e591fd5349a",
+        "copyrightNotice": "Copyright (c) 2019-2025 Poimandres",
+        "localSupplementPath": "public/technology-assets/license-supplements/react-three-fiber/LICENSE"
+      },
+      "evaluatedScope": "The repository license applies to the React renderer source at the matching package release; Three.js, Drei and authored assets retain their own licenses.",
+      "redistributionGuidance": "Preserve the original copyright and permission notice with copies or substantial portions. Copy the original pinned bytes if supplementing generated notices; do not synthesize a replacement license.",
+      "remaining": "No missing runtime license text for this inspected direct package; transitive and asset licenses remain separate."
+    },
+    {
+      "name": "@rive-app/canvas",
+      "installedVersion": "2.44.0",
+      "declaredLicense": "MIT",
+      "status": "upstream-original-text-supplement-integrated",
+      "repository": "https://github.com/rive-app/rive-wasm",
+      "releaseTag": "2.44.0",
+      "tagObject": "5234b6e3045a7a9e56b006b21186d50c5620210f",
+      "commit": "b62850efe54fc0f1efe897141be96009d9e99027",
+      "versionEvidence": {
+        "url": "https://raw.githubusercontent.com/rive-app/rive-wasm/b62850efe54fc0f1efe897141be96009d9e99027/js/package.json",
+        "sha256": "b027a4467b42c6170b4686cc152505e758e17afa7b32adbb37f0ed856260a4ab"
+      },
+      "licenseEvidence": {
+        "browserUrl": "https://github.com/rive-app/rive-wasm/blob/2.44.0/LICENSE",
+        "pinnedRawUrl": "https://raw.githubusercontent.com/rive-app/rive-wasm/b62850efe54fc0f1efe897141be96009d9e99027/LICENSE",
+        "sha256": "8a1efa755d19446b51a18e1c15f6308728da0b36283c4d38050698ad6954b69a",
+        "copyrightNotice": "Copyright (c) 2020-2021 Rive",
+        "localSupplementPath": "public/technology-assets/license-supplements/rive-app-canvas/LICENSE"
+      },
+      "evaluatedScope": "The JavaScript/WASM runtime repository at the matching package release. This verification does not license the Rive editor, .riv artwork, fonts, images or other embedded assets.",
+      "redistributionGuidance": "Preserve the original MIT copyright and permission notice. Keep asset provenance separate from runtime licensing.",
+      "remaining": "No missing runtime license text for this inspected direct package; transitive and asset licenses remain separate."
+    },
+    {
+      "name": "gsap",
+      "installedVersion": "3.15.0",
+      "declaredLicense": "Standard 'no charge' license: https://gsap.com/standard-license.",
+      "status": "official-linked-terms-verified-no-repository-license-file",
+      "repository": "https://github.com/greensock/GSAP",
+      "releaseTag": "3.15.0",
+      "commit": "13e2b790546426a1a2e0e9b409f3f8dc6d6611f2",
+      "versionEvidence": {
+        "url": "https://raw.githubusercontent.com/greensock/GSAP/13e2b790546426a1a2e0e9b409f3f8dc6d6611f2/package.json",
+        "sha256": "4ca16b896affd09e270d4dcf5149a02f57def55e4747ce11f68c7723fd3dedaa"
+      },
+      "licenseEvidence": {
+        "releaseReadmeUrl": "https://github.com/greensock/GSAP/blob/3.15.0/README.md",
+        "pinnedReadmeUrl": "https://raw.githubusercontent.com/greensock/GSAP/13e2b790546426a1a2e0e9b409f3f8dc6d6611f2/README.md",
+        "readmeSha256": "66a79667b0538b19634b5a000a9a3debe588c98d390424e73e5d4de847270828",
+        "officialTermsUrl": "https://gsap.com/standard-license/",
+        "resolvedTermsUrl": "https://gsap.com/community/standard-license/",
+        "termsEffectiveDateShown": "2025-04-30",
+        "termsLastModifiedDateShown": "2025-05-30",
+        "repositoryTreeUrl": "https://api.github.com/repos/greensock/GSAP/git/trees/13e2b790546426a1a2e0e9b409f3f8dc6d6611f2?recursive=1",
+        "standaloneLicenseFileFound": false,
+        "releaseReadmeCopyrightNotice": "Copyright (c) 2008-2026, GreenSock. All rights reserved."
+      },
+      "evaluatedScope": "Runtime use in preauthored web demonstrations. No claim is made that the standard license permits a competing visual animation authoring product.",
+      "decisionRelevantTerms": [
+        "The official FAQ includes commercial use under the standard no-charge license; it is not an MIT or unrestricted open-source license.",
+        "The terms restrict specified visual animation building tools competing with Webflow's animation-building capabilities and restrict removal or alteration of proprietary notices.",
+        "The official FAQ says AI-generated GSAP code is not itself prohibited use."
+      ],
+      "redistributionGuidance": "Keep the installed code notices and exact official terms link. Do not fabricate a standalone LICENSE or relabel the package MIT. The pinned release README links to mutable website terms, so record the verification date.",
+      "remaining": "No original standalone legal-text file exists in the inspected release tree. This bounded task verified the official linked terms but did not copy or modify the website's legal text."
+    },
+    {
+      "name": "split-type",
+      "installedVersion": "0.3.4",
+      "declaredLicense": "ISC",
+      "status": "publisher-license-metadata-verified-original-text-unavailable",
+      "repository": "https://github.com/lukePeavey/SplitType",
+      "releaseTag": null,
+      "commit": "36af092f7061ef9b6ea33261b688a3fe04b890fb",
+      "commitResolution": "npm view split-type@0.3.4 gitHead --json; no matching 0.3.4 tag was returned by git ls-remote --tags",
+      "versionEvidence": {
+        "browserUrl": "https://github.com/lukePeavey/SplitType/blob/36af092f7061ef9b6ea33261b688a3fe04b890fb/package.json",
+        "url": "https://raw.githubusercontent.com/lukePeavey/SplitType/36af092f7061ef9b6ea33261b688a3fe04b890fb/package.json",
+        "sha256": "bceeec35a2ce9ec02ad2638e7dc75bb6d017e2fadf9fa44f9498c724a3c65ff0"
+      },
+      "licenseEvidence": {
+        "repositoryTreeUrl": "https://api.github.com/repos/lukePeavey/SplitType/git/trees/36af092f7061ef9b6ea33261b688a3fe04b890fb?recursive=1",
+        "readmeUrl": "https://raw.githubusercontent.com/lukePeavey/SplitType/36af092f7061ef9b6ea33261b688a3fe04b890fb/README.md",
+        "readmeSha256": "79bf87c3499cc0c83884a3253354932b68d61d6d0983058bb9dbff768c64d5ea",
+        "standaloneLicenseFileFound": false,
+        "readmeLicenseTextFound": false,
+        "publisherLicenseField": "ISC"
+      },
+      "evaluatedScope": "The installed package and publisher-mapped source commit both declare ISC. This establishes the declaration; it does not supply missing project-specific copyright and license text.",
+      "redistributionGuidance": "Retain the publisher metadata and source links. Do not manufacture an ISC file or infer a copyright year from author metadata.",
+      "remaining": "The upstream original license text or maintainer clarification is still unavailable from the inspected package, commit tree and README."
+    }
+  ],
+  "integrationBoundary": "scripts/prepare-technology-assets.mjs reads this record for version-matched supplemental source paths and hashes. Generated notices distinguish packaged text, upstream original supplements and link-only declarations. Builds do not fetch remote license text.",
+  "notCovered": [
+    "A complete transitive dependency license audit",
+    "Licenses for .riv files, map data, fonts, images, video or other authored assets",
+    "Future package versions or future revisions to mutable website terms",
+    "Legal approval of a different product or deployment scope"
+  ],
+  "integrationVerification": {
+    "command": "node scripts/prepare-technology-assets.mjs",
+    "result": "passed",
+    "directRuntimePackages": 46,
+    "generatedOriginalLicenseAndNoticeFiles": 48,
+    "verifiedGeneratedFileHashes": 48,
+    "verifiedSupplementHashes": 2,
+    "remainingLinkOnlyPackages": [
+      "gsap@3.15.0",
+      "split-type@0.3.4"
+    ],
+    "offlineBuildBehavior": "Preparation reads only installed package files, this record and local original supplements; no network fetch is performed.",
+    "gitTracking": "The two original supplementary LICENSE files were explicitly added to Git; no commit was created."
+  }
+}

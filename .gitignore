@@ -4,3 +4,7 @@ dist/
 test-results/
 .env*
 !.env.example
+
+# Generated vendor runtime assets; rebuilt by prepare:technology.
+public/technology-assets/cesium/
+public/technology-assets/licenses/

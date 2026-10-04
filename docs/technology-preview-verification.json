@@ -1,0 +1,555 @@
+{
+  "date": "2026-10-04",
+  "browser": "154.0.8037.98",
+  "url": "http://127.0.0.1:4175/remotion-style-atlas/",
+  "concurrency": 6,
+  "method": "Actual HTMLVideoElement decoding and observed loop boundary. This is playback integrity, not a frame-rate benchmark or a substitute for visual review.",
+  "results": [
+    {
+      "id": "SA-101",
+      "duration": 4,
+      "frames": 117,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-102",
+      "duration": 4,
+      "frames": 117,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-103",
+      "duration": 4,
+      "frames": 118,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-104",
+      "duration": 4,
+      "frames": 119,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-105",
+      "duration": 4,
+      "frames": 117,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-106",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-107",
+      "duration": 4,
+      "frames": 118,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-108",
+      "duration": 4,
+      "frames": 117,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-109",
+      "duration": 4,
+      "frames": 118,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-110",
+      "duration": 4,
+      "frames": 118,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-111",
+      "duration": 4,
+      "frames": 118,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-112",
+      "duration": 4,
+      "frames": 117,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-113",
+      "duration": 4,
+      "frames": 119,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-114",
+      "duration": 4,
+      "frames": 119,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-115",
+      "duration": 4,
+      "frames": 119,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-116",
+      "duration": 4,
+      "frames": 119,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-117",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-118",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-119",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-120",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-121",
+      "duration": 4,
+      "frames": 117,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-122",
+      "duration": 4,
+      "frames": 116,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-123",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-124",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-129",
+      "duration": 4,
+      "frames": 114,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-161",
+      "duration": 8,
+      "frames": 233,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-162",
+      "duration": 8,
+      "frames": 240,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-163",
+      "duration": 8,
+      "frames": 240,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-164",
+      "duration": 8,
+      "frames": 237,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-165",
+      "duration": 8,
+      "frames": 239,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-166",
+      "duration": 8,
+      "frames": 238,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-167",
+      "duration": 8,
+      "frames": 240,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-168",
+      "duration": 8,
+      "frames": 239,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-169",
+      "duration": 8,
+      "frames": 239,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-170",
+      "duration": 8,
+      "frames": 238,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-171",
+      "duration": 8,
+      "frames": 239,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-172",
+      "duration": 8,
+      "frames": 240,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-173",
+      "duration": 8,
+      "frames": 215,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-174",
+      "duration": 8,
+      "frames": 240,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-175",
+      "duration": 8,
+      "frames": 240,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-176",
+      "duration": 8,
+      "frames": 240,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-177",
+      "duration": 8,
+      "frames": 240,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-178",
+      "duration": 8,
+      "frames": 226,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-131",
+      "duration": 4,
+      "frames": 118,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-132",
+      "duration": 4,
+      "frames": 119,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-133",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-134",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-135",
+      "duration": 4,
+      "frames": 121,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-136",
+      "duration": 4,
+      "frames": 118,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-137",
+      "duration": 4,
+      "frames": 118,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-138",
+      "duration": 4,
+      "frames": 113,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-139",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-140",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-141",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-142",
+      "duration": 4,
+      "frames": 117,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-143",
+      "duration": 4,
+      "frames": 117,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-144",
+      "duration": 4,
+      "frames": 116,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-145",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-146",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-147",
+      "duration": 4,
+      "frames": 121,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-148",
+      "duration": 4,
+      "frames": 117,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-149",
+      "duration": 4,
+      "frames": 116,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-150",
+      "duration": 4,
+      "frames": 118,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-125",
+      "duration": 4,
+      "frames": 119,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-126",
+      "duration": 4,
+      "frames": 117,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-127",
+      "duration": 4,
+      "frames": 117,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-128",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-191",
+      "duration": 4,
+      "frames": 107,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-192",
+      "duration": 4,
+      "frames": 119,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-193",
+      "duration": 4,
+      "frames": 119,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-194",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-195",
+      "duration": 8,
+      "frames": 218,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-151",
+      "duration": 4,
+      "frames": 119,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-152",
+      "duration": 4,
+      "frames": 118,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-153",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-154",
+      "duration": 6,
+      "frames": 172,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-155",
+      "duration": 6,
+      "frames": 177,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-156",
+      "duration": 8,
+      "frames": 223,
+      "wraps": 1,
+      "error": null
+    }
+  ]
+}

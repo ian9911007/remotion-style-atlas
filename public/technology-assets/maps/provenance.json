@@ -1,0 +1,73 @@
+{
+  "created": "2026-10-04",
+  "dataset": "Natural Earth 4.1.0 / Admin 0 countries / 1:110m",
+  "distribution": "world-atlas 2.0.2",
+  "source": "https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/",
+  "dataLicense": "Public domain",
+  "dataLicenseSource": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "distributionLicense": "ISC",
+  "distributionLicenseText": "Copyright 2013-2019 Michael Bostock\n\nPermission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH\nREGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,\nINDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS\nOF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF\nTHIS SOFTWARE.\n",
+  "archiveUrl": "https://registry.npmjs.org/world-atlas/-/world-atlas-2.0.2.tgz",
+  "archiveSha256": "032e7765f2ce00edaeafec23ff22bc3b77e42987c257da944cc585b452c05b97",
+  "topologySha256": "2516c915867c7baf18ddec727aec46c315541a07cfb3d79a6559b05d5e94eee8",
+  "geojsonSha256": "51f48c57862fb4b0c46193d24a3e60d495e1bf4324296dc6fc486d1ef4ca75c5",
+  "featureCount": 177,
+  "coordinateSystem": "Longitude, latitude in decimal degrees (geographic coordinates)",
+  "conversion": "Decode TopoJSON quantized delta arcs, reverse complemented indices, join rings, round to six decimals.",
+  "citiesSource": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v4.1.0/geojson/ne_110m_populated_places.geojson",
+  "citiesSourceSha256": "c2fd71d965a25b0d0021c121e592c1848be7e35e883901685329373ef06d4c51",
+  "cities": [
+    {
+      "id": "taipei",
+      "name": "Taipei",
+      "label": "臺北",
+      "coordinates": [
+        121.568333,
+        25.035833
+      ]
+    },
+    {
+      "id": "tokyo",
+      "name": "Tokyo",
+      "label": "東京",
+      "coordinates": [
+        139.749462,
+        35.686963
+      ]
+    },
+    {
+      "id": "singapore",
+      "name": "Singapore",
+      "label": "新加坡",
+      "coordinates": [
+        103.853875,
+        1.294979
+      ]
+    },
+    {
+      "id": "sydney",
+      "name": "Sydney",
+      "label": "雪梨",
+      "coordinates": [
+        151.183234,
+        -33.918065
+      ]
+    },
+    {
+      "id": "london",
+      "name": "London",
+      "label": "倫敦",
+      "coordinates": [
+        -0.118668,
+        51.501941
+      ]
+    }
+  ],
+  "routes": "Original illustrative connections from Taipei; not flight schedules, traffic, navigation or actual services.",
+  "limitations": [
+    "Historical small-scale generalized data; not current boundary authority or navigation geometry.",
+    "Preserves source boundary representation; disputes and small islands require purpose-specific data review.",
+    "City points represent dataset label locations, not airports or official municipal centroids."
+  ],
+  "attribution": "Made with Natural Earth. world-atlas redistribution by Mike Bostock (ISC)."
+}

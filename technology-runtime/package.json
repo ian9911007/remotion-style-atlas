@@ -1,0 +1,71 @@
+{
+  "name": "atlas-technology-runtime",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "On-demand runtimes for the existing Atlas; not a separate application.",
+  "dependencies": {
+    "@babylonjs/core": "9.29.0",
+    "@deck.gl/core": "9.4.0",
+    "@deck.gl/geo-layers": "9.4.0",
+    "@deck.gl/layers": "9.4.0",
+    "@lottiefiles/dotlottie-web": "0.80.0",
+    "@motion-canvas/2d": "3.17.2",
+    "@motion-canvas/core": "3.17.2",
+    "@observablehq/plot": "0.6.17",
+    "@react-three/drei": "10.7.9",
+    "@react-three/fiber": "9.8.1",
+    "@remotion/player": "4.0.530",
+    "@rive-app/canvas": "2.44.0",
+    "@svgdotjs/svg.js": "3.2.8",
+    "@theatre/core": "0.7.2",
+    "@tsparticles/engine": "4.4.0",
+    "@tsparticles/slim": "4.4.0",
+    "@visx/group": "4.0.0",
+    "@visx/scale": "4.0.0",
+    "@visx/shape": "4.0.0",
+    "animejs": "4.5.0",
+    "cesium": "1.146.0",
+    "d3": "7.9.0",
+    "echarts": "6.1.0",
+    "fabric": "7.4.0",
+    "flubber": "0.4.2",
+    "gsap": "3.15.0",
+    "konva": "10.7.0",
+    "leaflet": "1.9.4",
+    "lenis": "1.3.26",
+    "lottie-web": "5.13.0",
+    "maplibre-gl": "6.12.0",
+    "matter-js": "0.20.0",
+    "motion": "14.0.0",
+    "p5": "2.3.4",
+    "pixi.js": "8.22.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "regl": "2.1.1",
+    "remotion": "4.0.530",
+    "roughjs": "4.6.6",
+    "split-type": "0.3.4",
+    "three": "0.186.1",
+    "vega": "6.4.0",
+    "vega-lite": "6.4.3"
+  },
+  "devDependencies": {
+    "@types/d3": "7.4.3",
+    "@types/flubber": "0.4.0",
+    "@types/leaflet": "1.9.22",
+    "@types/matter-js": "0.20.2",
+    "@types/p5": "1.7.7",
+    "@types/react": "19.2.0",
+    "@types/react-dom": "19.2.0",
+    "@types/three": "0.186.0"
+  },
+  "overrides": {
+    "speech-rule-engine": {
+      "@xmldom/xmldom": "0.9.12"
+    },
+    "@loaders.gl/compression": {
+      "fflate": "0.7.5"
+    }
+  }
+}

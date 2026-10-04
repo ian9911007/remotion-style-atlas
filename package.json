@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
-    "build": "node --import tsx scripts/validate.ts && tsc --noEmit && vite build",
+    "build": "node --import tsx scripts/validate.ts && node --import tsx scripts/validate-technology.ts && tsc --noEmit && vite build",
     "studio": "remotion studio src/remotion/index.tsx --no-open",
     "render": "node --import tsx scripts/render.ts",
     "render:changed": "node --import tsx scripts/render.ts --changed",
@@ -17,7 +17,17 @@
     "assets": "node --import tsx scripts/create-assets.ts",
     "sync:push": "bash scripts/sync-github.sh push",
     "sync:pull": "bash scripts/sync-github.sh pull",
-    "preview": "vite preview --host 127.0.0.1 --port 4175 --strictPort"
+    "preview": "vite preview --host 127.0.0.1 --port 4175 --strictPort",
+    "setup:technology": "npm ci --prefix technology-runtime",
+    "prepare:technology": "node scripts/prepare-technology-assets.mjs",
+    "predev": "npm run prepare:technology",
+    "prebuild": "npm run prepare:technology",
+    "validate:technology": "node --import tsx scripts/validate-technology.ts --write-coverage",
+    "sync:technology": "node --import tsx scripts/sync-technology-references.ts",
+    "capture:technology": "node --import tsx scripts/capture-technology.ts",
+    "test:technology": "node --import tsx tests/technology-browser.ts",
+    "test:technology-previews": "node --import tsx tests/technology-previews.ts",
+    "postbuild": "node --import tsx tests/technology-build.ts"
   },
   "dependencies": {
     "lucide-react": "0.468.0",

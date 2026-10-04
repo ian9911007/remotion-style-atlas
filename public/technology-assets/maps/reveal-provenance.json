@@ -1,0 +1,32 @@
+{
+  "created": "2026-10-04",
+  "dataset": "Natural Earth 4.1.0 / Admin 0 / 1:50m countries with 1:10m Taiwan",
+  "distribution": "world-atlas 2.0.2",
+  "source50m": "https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/",
+  "source10m": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/",
+  "archiveUrl": "https://registry.npmjs.org/world-atlas/-/world-atlas-2.0.2.tgz",
+  "archiveSha256": "032e7765f2ce00edaeafec23ff22bc3b77e42987c257da944cc585b452c05b97",
+  "source50mSha256": "04342cdc1e3016bcd7db1630de95684d67b79fe3c8c460321e87aef469502394",
+  "source10mSha256": "3bc6f1d367a9bcec479841bae0e76092f512838411d0cef124e92eec4db45f79",
+  "outputSha256": "0c8f5baa131e788f90ac55472579b8d3e6c5431630c742044e93acecc44509ef",
+  "outputBytes": 2282924,
+  "featureCount": 241,
+  "pointCount": 100029,
+  "detailFeature": {
+    "id": "158",
+    "name": "Taiwan",
+    "scale": "1:10m",
+    "pointCount": 558
+  },
+  "conversion": "Decode quantized TopoJSON delta arcs, reverse complemented indices, join rings, round to six decimals. Replace the 50m Taiwan feature with the 10m feature; never overlay duplicate coastlines.",
+  "dataLicense": "Public domain",
+  "dataLicenseSource": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "distributionLicense": "ISC",
+  "distributionLicenseText": "Copyright 2013-2019 Michael Bostock\n\nPermission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH\nREGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,\nINDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS\nOF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF\nTHIS SOFTWARE.\n",
+  "attribution": "Made with Natural Earth. world-atlas redistribution by Mike Bostock (ISC).",
+  "limitations": [
+    "Historical generalized regional geometry, not street, building, terrain or current-boundary data.",
+    "World features use 1:50m source detail; only Taiwan uses 1:10m. Source boundary representation is preserved.",
+    "City points and illustrative connections retain their separate provenance in provenance.json."
+  ]
+}

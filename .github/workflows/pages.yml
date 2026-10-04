@@ -1,4 +1,5 @@
-name: Build and manually deploy Remotion Style Atlas
+# Created: 2026-10-04
+name: Build and deploy Remotion Style Atlas
 on:
   push:
     branches: [main]
@@ -19,9 +20,12 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: package-lock.json
+          cache-dependency-path: |
+            package-lock.json
+            technology-runtime/package-lock.json
       - run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - run: npm ci
+      - run: npm ci --prefix technology-runtime
       - run: npm test
       - run: npm run build
         env:

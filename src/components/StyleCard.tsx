@@ -1,3 +1,4 @@
+import { caseById, caseEvidence } from "../technology/registry";
 import { useEffect, useRef, useState } from "react";
 import { Heart, Plus, Check, Play, ImageOff } from "lucide-react";
 import type { StyleSpec } from "../catalog/schema";
@@ -112,7 +113,9 @@ export function StyleCard({
             <span>{style.id}</span>
           </div>
           <p>
-            {familyLabels[style.family]}
+            {caseById.has(style.id)
+              ? `技術案例 · ${{ ready: "已就緒", partial: "部分完成", blocked: "受阻", unverified: "待驗證" }[caseEvidence(style.id).status]}`
+              : familyLabels[style.family]}
             <span> · </span>
             {style.moods[0]}
           </p>

@@ -1,3 +1,9 @@
+import {
+  caseById,
+  caseEvidence,
+  technologyCatalog,
+  technologyCases,
+} from "./technology/registry";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   Search,
@@ -48,6 +54,14 @@ type Filters = {
   media: string;
   use: string;
   ratio: string;
+  collection: string;
+  technology: string;
+  renderer: string;
+  interaction: string;
+  readiness: string;
+  direction: string;
+  capability: string;
+  medium: string;
 };
 const emptyFilters: Filters = {
   family: "",
@@ -56,6 +70,14 @@ const emptyFilters: Filters = {
   media: "",
   use: "",
   ratio: "",
+  collection: "",
+  technology: "",
+  renderer: "",
+  interaction: "",
+  readiness: "",
+  direction: "",
+  capability: "",
+  medium: "",
 };
 function routeStyle() {
   const match = window.location.hash.match(/^#\/style\/(SA-\d{3})$/);
@@ -133,11 +155,47 @@ export function App() {
             .join(" ")
             .toLocaleLowerCase()
             .includes(text)) &&
-        (!filters.family || s.family === filters.family) &&
-        (!filters.intensity || s.motion.intensity === filters.intensity) &&
-        (!filters.pacing || s.motion.pacing === filters.pacing) &&
-        (!filters.media || s.media.treatment === filters.media) &&
-        (!filters.use || s.useCases.includes(filters.use as never)) &&
+        (!filters.collection ||
+          (caseById.has(s.id) ? "technology" : "legacy") ===
+            filters.collection) &&
+        (!filters.technology ||
+          [
+            caseById.get(s.id)?.primary,
+            ...(caseById.get(s.id)?.supporting ?? []).map((t) => t.id),
+          ].includes(filters.technology)) &&
+        (!filters.renderer ||
+          caseById.get(s.id)?.renderer === filters.renderer) &&
+        (!filters.interaction ||
+          caseById.get(s.id)?.interaction.includes(filters.interaction)) &&
+        (!filters.readiness ||
+          (caseById.has(s.id) ? caseEvidence(s.id).status : "ready") ===
+            filters.readiness) &&
+        (!filters.direction ||
+          caseById.get(s.id)?.direction === filters.direction) &&
+        (!filters.capability ||
+          caseById.get(s.id)?.capabilities.includes(filters.capability)) &&
+        (!filters.medium ||
+          (caseById.has(s.id)
+            ? ["remotion", "motion-canvas"].includes(
+                caseById.get(s.id)!.primary,
+              )
+              ? "video"
+              : ["frame-driven", "adapter-required"].includes(
+                    caseById.get(s.id)!.video,
+                  )
+                ? "web-video"
+                : "web"
+            : "video") === filters.medium) &&
+        (!filters.family ||
+          (!caseById.has(s.id) && s.family === filters.family)) &&
+        (!filters.intensity ||
+          (!caseById.has(s.id) && s.motion.intensity === filters.intensity)) &&
+        (!filters.pacing ||
+          (!caseById.has(s.id) && s.motion.pacing === filters.pacing)) &&
+        (!filters.media ||
+          (!caseById.has(s.id) && s.media.treatment === filters.media)) &&
+        (!filters.use ||
+          (!caseById.has(s.id) && s.useCases.includes(filters.use as never))) &&
         (!filters.ratio ||
           s.variants.some((v) => v.ratio === filters.ratio && v.reviewed)) &&
         (view !== "favorites" || preferences.favorites.includes(s.id)),
@@ -355,6 +413,78 @@ export function App() {
           <div className="filter-panel" id="filter-panel">
             {(
               [
+                {
+                  key: "capability",
+                  label: "展示能力",
+                  values: Object.fromEntries(
+                    technologyCases.flatMap((c) =>
+                      c.capabilities.map((x) => [x, `${c.title} / ${x}`]),
+                    ),
+                  ),
+                },
+                {
+                  key: "direction",
+                  label: "視覺方向",
+                  values: Object.fromEntries(
+                    technologyCases.map((c) => [c.direction, c.direction]),
+                  ),
+                },
+                {
+                  key: "medium",
+                  label: "目標媒介",
+                  values: {
+                    web: "互動網頁",
+                    "web-video": "網頁／逐幀適配",
+                    video: "影片",
+                  },
+                },
+                {
+                  key: "collection",
+                  label: "選集",
+                  values: {
+                    legacy: "原有風格選集",
+                    technology: "技術能力案例",
+                  },
+                },
+                {
+                  key: "technology",
+                  label: "實作技術",
+                  values: Object.fromEntries(
+                    technologyCatalog.map((t) => [t.id, t.name]),
+                  ),
+                },
+                {
+                  key: "renderer",
+                  label: "繪製方式",
+                  values: Object.fromEntries(
+                    [...new Set(technologyCases.map((c) => c.renderer))].map(
+                      (x) => [x, x],
+                    ),
+                  ),
+                },
+                {
+                  key: "interaction",
+                  label: "觸發方式",
+                  values: {
+                    time: "時間",
+                    pointer: "指標",
+                    touch: "觸控",
+                    keyboard: "鍵盤",
+                    scroll: "捲動",
+                    state: "狀態",
+                    data: "資料",
+                  },
+                },
+                {
+                  key: "readiness",
+                  label: "完成狀態",
+                  values: {
+                    ready: "已就緒",
+                    partial: "部分完成",
+                    blocked: "受阻",
+                    unverified: "待驗證",
+                  },
+                },
                 { key: "family", label: "視覺家族", values: familyLabels },
                 {
                   key: "intensity",
@@ -374,6 +504,7 @@ export function App() {
               <label key={f.key}>
                 {f.label}
                 <select
+                  aria-label={f.label}
                   value={filters[f.key]}
                   onChange={(e) =>
                     setFilters((x) => ({ ...x, [f.key]: e.target.value }))

@@ -1,0 +1,154 @@
+{
+  "created": "2026-10-04",
+  "scope": "New isolated runtime dependency graph. Legacy application lockfile is unchanged.",
+  "compatibleRepairs": {
+    "speech-rule-engine > @xmldom/xmldom": "0.9.12",
+    "@loaders.gl/compression > fflate": "0.7.5"
+  },
+  "remaining": [
+    {
+      "package": "@deck.gl/geo-layers",
+      "severity": "high",
+      "direct": true,
+      "via": [
+        "@deck.gl/mesh-layers",
+        "@loaders.gl/3d-tiles",
+        "@luma.gl/gltf"
+      ],
+      "fixAvailable": {
+        "name": "@deck.gl/geo-layers",
+        "version": "8.9.36",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "@deck.gl/mesh-layers",
+      "severity": "high",
+      "direct": false,
+      "via": [
+        "@loaders.gl/gltf",
+        "@luma.gl/gltf"
+      ],
+      "fixAvailable": true
+    },
+    {
+      "package": "@loaders.gl/3d-tiles",
+      "severity": "high",
+      "direct": false,
+      "via": [
+        "@loaders.gl/gltf"
+      ],
+      "fixAvailable": {
+        "name": "@deck.gl/geo-layers",
+        "version": "8.9.36",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "@loaders.gl/gltf",
+      "severity": "high",
+      "direct": false,
+      "via": [
+        "@loaders.gl/textures"
+      ],
+      "fixAvailable": {
+        "name": "@deck.gl/geo-layers",
+        "version": "8.9.36",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "@loaders.gl/textures",
+      "severity": "high",
+      "direct": false,
+      "via": [
+        "texture-compressor"
+      ],
+      "fixAvailable": {
+        "name": "@deck.gl/geo-layers",
+        "version": "8.9.36",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "@luma.gl/gltf",
+      "severity": "high",
+      "direct": false,
+      "via": [
+        "@loaders.gl/gltf",
+        "@loaders.gl/textures"
+      ],
+      "fixAvailable": {
+        "name": "@deck.gl/geo-layers",
+        "version": "8.9.36",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "image-size",
+      "severity": "high",
+      "direct": false,
+      "via": [
+        {
+          "source": 1239766,
+          "name": "image-size",
+          "dependency": "image-size",
+          "title": "image-size: ICNS parser allows denial of service through an infinite loop",
+          "url": "https://github.com/advisories/GHSA-w3rx-r6r6-pgpr",
+          "severity": "high",
+          "cwe": [
+            "CWE-835"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=0.6.3 <=2.0.2"
+        }
+      ],
+      "fixAvailable": {
+        "name": "@deck.gl/geo-layers",
+        "version": "8.9.36",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "texture-compressor",
+      "severity": "high",
+      "direct": false,
+      "via": [
+        "image-size"
+      ],
+      "fixAvailable": {
+        "name": "@deck.gl/geo-layers",
+        "version": "8.9.36",
+        "isSemVerMajor": true
+      }
+    }
+  ],
+  "limitations": [
+    "npm audit proposes a breaking deck.gl family downgrade for the remaining image-size/texture-compressor chain. No forced downgrade or incompatible image-size major override was applied.",
+    "Installed texture-compressor code calls the old image-size(path) API; a major override is not an established compatible repair.",
+    "The gallery uses original local geometry and supplied static map/animation assets; no untrusted upload or texture-compression service was added. This does not waive the advisory or establish general security acceptance.",
+    "Affected-package count includes inherited audit flags along one dependency chain; it is not the number of distinct security advisories."
+  ],
+  "remainingAffectedPackageCount": 8,
+  "distinctAdvisories": [
+    {
+      "source": 1239766,
+      "name": "image-size",
+      "dependency": "image-size",
+      "title": "image-size: ICNS parser allows denial of service through an infinite loop",
+      "url": "https://github.com/advisories/GHSA-w3rx-r6r6-pgpr",
+      "severity": "high",
+      "cwe": [
+        "CWE-835"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "range": ">=0.6.3 <=2.0.2"
+    }
+  ]
+}
