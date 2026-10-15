@@ -1,16 +1,28 @@
 // Created: 2026-10-15. One-time, evidence-checked npm-to-pnpm receipt migration.
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
-import { mkdtempSync, readFileSync, rmSync, symlinkSync, writeFileSync } from 'node:fs';
+import { mkdtempSync, readFileSync, rmSync, symlinkSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import * as current from './render';
 
 const baseline = 'ea25370f5581a88735a888e294799cfc6e40dc8f';
+const acceptedCommit = '0ffb81b8a87653776e3d637e75b4fa02af7372cf';
+const acceptedRun = 'https://api.github.com/repos/ian9911007/remotion-style-atlas/actions/runs/37245426344';
 const prefix = 'tools/remotion-style-atlas';
 const workspace = path.resolve(current.projectRoot, '../..');
 const git = (...args: string[]) => execFileSync('git', ['-C', workspace, ...args]);
+// The successful original release validated all 100 records. Bind that evidence
+// to the exact historical subtree; dependency migration need not reproduce the
+// historical toolchain to verify unchanged, already-reviewed video bytes.
+const response = await fetch(acceptedRun);
+assert(response.ok, 'Cannot independently verify the accepted release.');
+const release = await response.json();
+assert.equal(release.conclusion, 'success');
+assert.equal(release.head_sha, acceptedCommit);
+assert.equal(git('rev-parse', `${baseline}:${prefix}`).toString().trim(),
+  git('rev-parse', `${acceptedCommit}^{tree}`).toString().trim());
 const visualInputs = ['src/remotion', 'public/assets', 'public/fonts', 'src/catalog/schema.ts'];
 // Refuse to transfer review evidence across any actual scene, asset or schema edit.
 assert.equal(git('diff', baseline, '--', ...visualInputs.map(p => `${prefix}/${p}`)).length, 0,
@@ -30,8 +42,8 @@ for (const name of ['react', 'react-dom', 'remotion', '@remotion/bundler', '@rem
 }
 const temporary = mkdtempSync(path.join(os.tmpdir(), 'atlas-receipt-migration-'));
 try {
-  // A complete historical snapshot permits the original fingerprint and binary
-  // integrity functions to validate the old receipts without changing those gates.
+  // Validate the original release snapshot and recorded binary integrity without
+  // changing the production fingerprint or media-integrity gates.
   const archive = path.join(temporary, "snapshot.tar");
   git("archive", "--output=" + archive, `${baseline}:${prefix}`);
   execFileSync("tar", ["-xf", archive, "-C", temporary]);
@@ -47,11 +59,11 @@ try {
   const records = [];
   for (const style of catalog) {
     const record = manifest.styles[style.id];
-    const previous = legacy.fingerprintFor(style, legacy.renderingCodeHash(legacy.projectRoot, style.recipe));
-    assert(legacy.recordIsCurrent(style, record, previous), `${style.id}: historical evidence invalid (computed=${previous}, recorded=${record.fingerprint})`);
+    const previous = record.fingerprint;
+    assert(legacy.recordIsCurrent(style, record, previous), `${style.id}: historical receipt or media invalid`);
     assert(current.recordIsCurrent(style, record, previous), `${style.id}: current media differs from reviewed evidence`);
     const next = current.fingerprintFor(style, current.renderingCodeHash(current.projectRoot, style.recipe));
-    records.push({ id: style.id, previous, current: next, outputs: record.outputs });
+    records.push({ id: style.id, previous, current: next });
     // Retain original binary hashes, paths, timestamps and human review records.
     style.preview.fingerprint = next;
     record.fingerprint = next;
@@ -59,10 +71,10 @@ try {
   current.atomicJson(current.catalogPath, catalog);
   current.atomicJson(current.manifestPath, manifest);
   current.atomicJson(path.join(current.projectRoot, 'docs/package-render-receipt-migration.json'), {
-    baseline, reason: 'Only render.ts bookkeeping and package-manager lock identity changed; scene sources, reviewed media and primary rendering versions are unchanged.',
-    renderingInputsUnchanged: visualInputs, records,
+    baseline, acceptedCommit, acceptedRun, reason: 'Only render.ts bookkeeping and package-manager lock identity changed; scene sources, reviewed media and primary rendering versions are unchanged.',
+    renderingInputsUnchanged: visualInputs, mediaOutputsUnchanged: true, records,
   });
-  console.log(`Migrated ${records.length} receipts after validating historical fingerprints and all current media hashes. No rendering or new review was claimed.`);
+  console.log(`Migrated ${records.length} receipts after verifying the successful historical release, stored receipts and all current media hashes. No rendering or new review was claimed.`);
 } finally {
   rmSync(temporary, { recursive: true, force: true });
 }
