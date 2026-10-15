@@ -1,0 +1,23 @@
+{
+  "nodeLinker": "isolated",
+  "packageImportMethod": "hardlink",
+  "enableGlobalVirtualStore": false,
+  "extendNodePath": false,
+  "sharedWorkspaceLockfile": false,
+  "recursiveInstall": false,
+  "preferOffline": true,
+  "verifyStoreIntegrity": true,
+  "strictDepBuilds": true,
+  "pmOnFail": "error",
+  "updateNotifier": false,
+  "enablePrePostScripts": true,
+  "storeDir": "${HOME}/.codex/package-runtime/pnpm-store",
+  "cacheDir": "${HOME}/.codex/package-runtime/cache",
+  "virtualStoreDir": "${HOME}/.codex/package-runtime/projects/0864d8f7-4351-40b8-a22b-dd23c6c400cb/virtual",
+  "packages": [],
+  "allowBuilds": {
+    "esbuild": true,
+    "sharp": true,
+    "fsevents": false
+  }
+}

@@ -58,14 +58,13 @@
     "@types/p5": "1.7.7",
     "@types/react": "19.2.0",
     "@types/react-dom": "19.2.0",
-    "@types/three": "0.186.0"
+    "@types/three": "0.186.0",
+    "@types/geojson": "7946.0.16"
   },
-  "overrides": {
-    "speech-rule-engine": {
-      "@xmldom/xmldom": "0.9.12"
-    },
-    "@loaders.gl/compression": {
-      "fflate": "0.7.5"
-    }
+  "packageManager": "pnpm@11.19.0",
+  "aiSkillsPackageRuntime": {
+    "policy": "AI_SKILLS_NODE_RUNTIME/1",
+    "projectId": "cf6d9c9a-d2cb-48ab-bd5d-fd86f33195d7",
+    "mode": "governed"
   }
 }

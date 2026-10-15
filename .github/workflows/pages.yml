@@ -1,4 +1,4 @@
-# Created: 2026-10-04
+# Created: 2026-10-05
 name: Build and deploy Remotion Style Atlas
 on:
   push:
@@ -19,15 +19,15 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: 22
-          cache: npm
-          cache-dependency-path: |
-            package-lock.json
-            technology-runtime/package-lock.json
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 11.19.0
+          run_install: false
       - run: sudo apt-get update && sudo apt-get install -y ffmpeg
-      - run: npm ci
-      - run: npm ci --prefix technology-runtime
-      - run: npm test
-      - run: npm run build
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --dir technology-runtime install --frozen-lockfile
+      - run: pnpm test
+      - run: pnpm run build
         env:
           ATLAS_BASE: /${{ github.event.repository.name }}/
       - uses: actions/configure-pages@v5

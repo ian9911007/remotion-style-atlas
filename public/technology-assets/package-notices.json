@@ -922,7 +922,7 @@
   },
   {
     "name": "zod",
-    "version": "4.1.12",
+    "version": "4.5.4",
     "license": "MIT",
     "repository": {
       "type": "git",
@@ -935,7 +935,7 @@
     "licenseFiles": [
       {
         "source": "LICENSE",
-        "path": "licenses/zod-4f63cf5cd8-4.1.12/LICENSE",
+        "path": "licenses/zod-4f63cf5cd8-4.5.4/LICENSE",
         "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8"
       }
     ]

@@ -18,10 +18,10 @@
     "sync:push": "bash scripts/sync-github.sh push",
     "sync:pull": "bash scripts/sync-github.sh pull",
     "preview": "vite preview --host 127.0.0.1 --port 4175 --strictPort",
-    "setup:technology": "npm ci --prefix technology-runtime",
+    "setup:technology": "python3 ../../scripts/package_runtime.py pm technology-runtime install",
     "prepare:technology": "node scripts/prepare-technology-assets.mjs",
-    "predev": "npm run prepare:technology",
-    "prebuild": "npm run prepare:technology",
+    "predev": "pnpm run prepare:technology",
+    "prebuild": "pnpm run prepare:technology",
     "validate:technology": "node --import tsx scripts/validate-technology.ts --write-coverage",
     "sync:technology": "node --import tsx scripts/sync-technology-references.ts",
     "capture:technology": "node --import tsx scripts/capture-technology.ts",
@@ -34,7 +34,7 @@
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "remotion": "4.0.530",
-    "zod": "4.1.12"
+    "zod": "4.5.4"
   },
   "devDependencies": {
     "@playwright/test": "1.56.1",
@@ -50,5 +50,11 @@
     "tsx": "4.20.6",
     "typescript": "5.9.3",
     "vite": "7.1.9"
+  },
+  "packageManager": "pnpm@11.19.0",
+  "aiSkillsPackageRuntime": {
+    "policy": "AI_SKILLS_NODE_RUNTIME/1",
+    "projectId": "0864d8f7-4351-40b8-a22b-dd23c6c400cb",
+    "mode": "governed"
   }
 }

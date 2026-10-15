@@ -2,25 +2,33 @@
 
 以實際影片與海報辨識效果，再複製可攜式 Codex 提示詞的繁體中文動態設計圖鑑。既有 React、TypeScript、Vite 網站保留原本 100 個風格及其 ID、網址與套用流程；新增技術能力案例沿用同一個畫廊。原有預覽採 Remotion 4.0.530，新案例依能力使用實際技術執行環境，重型套件按需載入。不需要 AI API、帳號或雲端渲染服務。
 
+套件安裝與後續更新遵循工作區唯一政策：`.agents/rules/node_package_runtime.md`；各 Mac 使用自己的本機 store。
+
+2026-10-05 套件治理遷移：渲染 fingerprint 已納入 `pnpm-lock.yaml`，因此原有 100 筆預覽的舊審查紀錄不能代表新套件環境已完成審查。既有影片與紀錄均保留；技術建置、Studio、選定案例渲染已通過，但完整發布建置仍須重新渲染及審查受影響的案例。
+
 ## 啟動與操作
 
-需要 Node.js 22、npm，以及本機 `ffmpeg`、`ffprobe`。macOS 可使用既有 Homebrew 版本；其他位置可指定 `FFMPEG_PATH`、`FFPROBE_PATH`。Remotion 第一次渲染可能下載其 Chrome Headless Shell；已有相容瀏覽器時可用 `REMOTION_BROWSER_EXECUTABLE` 指定完整路徑。
+需要 Node.js 22 以上、pnpm，以及本機 `ffmpeg`、`ffprobe`。macOS 可使用既有 Homebrew 版本；其他位置可指定 `FFMPEG_PATH`、`FFPROBE_PATH`。Remotion 第一次渲染可能下載其 Chrome Headless Shell；已有相容瀏覽器時可用 `REMOTION_BROWSER_EXECUTABLE` 指定完整路徑。
 
 ```sh
-npm ci
-npm ci --prefix technology-runtime
-npm run dev
+../../scripts/package-runtime pm . install
+../../scripts/package-runtime pm technology-runtime install
+pnpm run dev
 ```
 
-也可在 Finder 雙擊 `start.command`；它會補裝缺少的主專案／技術執行環境相依套件，準備本機供應商資產後啟動。開發伺服器固定使用 `http://127.0.0.1:4173`，需等終端機確認啟動成功。`npm run studio` 開啟原有 Remotion 作者工作區。畫廊提供「全域／聚焦／靜態」模式、全域暫停、搜尋與獨立分類篩選；也可依能力、視覺方向、技術、互動、renderer 與驗證狀態尋找新案例。全域模式播放目前進入畫面的縮圖，離屏、背景分頁與靜態模式仍會暫停；聚焦模式維持受限播放數量。低動態偏好預設為靜態。鍵盤左右鍵可在卡片間移動焦點，上下鍵維持捲頁。詳細頁影片持續循環播放；開啟案例後直接載入互動 runtime，上方影片仍持續播放；頁面不可見、低動態偏好或關閉時遵守各自暫停及資源釋放規則。詳細頁也可複製完整提示詞、關鍵字或匯出結構化規格；剪貼簿失敗時提供可選取文字。
+也可在 Finder 雙擊 `start.command`；它會補裝缺少的主專案／技術執行環境相依套件，準備本機供應商資產後啟動。開發伺服器固定使用 `http://127.0.0.1:4173`，需等終端機確認啟動成功。`pnpm run studio` 開啟原有 Remotion 作者工作區。畫廊提供「全域／聚焦／靜態」模式、全域暫停、搜尋與獨立分類篩選；也可依能力、視覺方向、技術、互動、renderer 與驗證狀態尋找新案例。全域模式播放目前進入畫面的縮圖，離屏、背景分頁與靜態模式仍會暫停；聚焦模式維持受限播放數量。低動態偏好預設為靜態。鍵盤左右鍵可在卡片間移動焦點，上下鍵維持捲頁。詳細頁影片持續循環播放；開啟案例後直接載入互動 runtime，上方影片仍持續播放；頁面不可見、低動態偏好或關閉時遵守各自暫停及資源釋放規則。詳細頁也可複製完整提示詞、關鍵字或匯出結構化規格；剪貼簿失敗時提供可選取文字。
 
 收藏、設定與參考草稿保存在目前瀏覽器；不會自動跨裝置同步，清除網站儲存空間可能移除它們。請使用版本化匯出保存中繼資料。參考附件保留在瀏覽器本機，中繼資料匯出不含附件原始內容；參考草稿不會自動成為正式風格，也不宣稱已分析不可存取的來源。
 
 ## 技術案例的來源與維護
 
-Created: 2026-10-05
+Created: 2026-10-06
 
-本網站沿用 Remotion Style Atlas 名稱、既有 ID 與操作流程，分類架構擴充為 Visual Motion Pattern Library。原有 100 個案例是歷史基準，全站案例數沒有固定上限。`src/technology/pattern-taxonomy.json` 維護視覺模式與參考來源詞彙；`pattern-library.ts` 維護既有案例的少量人工分類。新增分類可擴充此標註表，或使用該檔匯出的 `PatternCaseDefinition` 登錄選填 `patternLibrary`；既有 runtime 型別與預覽指紋保留。視覺模式、參考／靈感來源、實作技術、美術方向、用途、不適用情境、關鍵字與成本提示分別呈現；成本提示不代表量測結果。來源支援 React Bits、Remotion、HyperFrames、GSAP、Motion、Three.js、WebGL／shaders、CSS、SVG、自訂實作及未來來源。
+本網站沿用 Remotion Style Atlas 名稱、既有 ID 與操作流程，分類架構擴充為 Visual Motion Pattern Library。原有 100 個案例是歷史基準，全站案例數沒有固定上限。`src/technology/pattern-taxonomy.json` 維護視覺模式與參考來源詞彙；`pattern-library.ts` 維護既有案例的少量人工分類。新增分類可擴充此標註表，或使用該檔匯出的 `PatternCaseDefinition` 登錄選填 `patternLibrary`；既有 runtime 型別與預覽指紋保留。視覺模式、參考／靈感來源、實作技術、美術方向、用途、不適用情境、關鍵字與成本提示分別呈現；成本提示不代表量測結果。來源支援 Motion Array、React Bits、Remotion、HyperFrames、GSAP、Motion、Three.js、WebGL／shaders、CSS、SVG、自訂實作及未來來源。
+
+Motion Array 是選用的美術、版型與動態參考；唯一研究與轉譯規則位於 `.agents/skills/Skill-Web-SVG-Animation-Architect/references/technologies/motion-array.md`。新增來源詞彙不會把既有案例改標成 Motion Array。
+
+MotionElements／Envato 的指定來源與六筆實際預覽取樣記錄收在 [商業動態參考索引](references/commercial-motion.md)。此索引延伸既有參考資料，沒有新增展示網站，也不會改寫既有案例來源。預覽取樣、完整觀看、音訊聆聽與原生專案驗證分別記錄；[原創製作研究](../motion-production-eval/commercial/README.md) 不是使用者核准的美學標準。
 
 React Bits 是選用的網站／動態模式參考，不是固定網站風格、runtime 相依套件或新增範例的來源宣稱。目前本次標註的六個既有案例均為自訂實作，沒有改標成 React Bits。來源篩選沒有結果時代表尚無該來源標註案例；未標註的歷史資料保留未知。新增案例仍自行選擇美術與品牌表現，不套用舊插畫或 demo 網站風格。AI Skills 中的唯一研究與轉譯規則位於 `.agents/skills/Skill-Web-SVG-Animation-Architect/references/technologies/react-bits.md`，網站只包含必要分類中繼資料，不打包 Skill 全文。
 
@@ -58,16 +66,16 @@ node --import tsx scripts/validate-technology.ts
 
 ```sh
 # Render selected implemented styles.
-npm run render -- SA-001 SA-002
+pnpm run render -- SA-001 SA-002
 # Render only changed or missing outputs.
-npm run render:changed
+pnpm run render:changed
 # Force a complete catalog render.
-npm run render:all
+pnpm run render:all
 # Validate canonical data, fingerprints, hashes, dimensions, codec, fps and duration.
-npm run validate
+pnpm run validate
 # Generate temporary visual review contact sheets.
-npm run review -- SA-001 SA-002
-npm run review -- --all
+pnpm run review -- SA-001 SA-002
+pnpm run review -- --all
 ```
 
 每個風格產生 H.264 MP4：畫廊為 480×270、3–6 秒；詳細預覽為 1280×720、8–12 秒；30 fps，並依作者指定影格產生 JPEG 海報。recipe 必須使用 Remotion 影格驅動動畫。所有 gallery/detail 構圖共用 1280×720 設計座標，依輸出尺寸等比例縮放。preview duration、poster frame 可按風格調整，海報必須落在詳細影片範圍內。
@@ -81,8 +89,8 @@ npm run review -- --all
 狀態為 `reference-only → draft → implemented → rendered → reviewed → published`。未實作或尚未審查的項目不會成為完成數。渲染會清除舊審查記錄。聯絡表位於 `.cache/review/`，每列顯示海報及首／前段／中段／後段／末影格；它只能輔助視覺檢查，不能證明播放與循環接點良好。另需實際播放 gallery 與 detail、檢查末端返回起點、縮圖可讀性與媒體載入，才可明確記錄審查：
 
 ```sh
-npm run review -- SA-001 --record --visual-reviewed --motion-reviewed --reviewer "Reviewer name" --notes "Describe actual frame, playback and loop-boundary checks."
-npm run review -- SA-001 --publish
+pnpm run review -- SA-001 --record --visual-reviewed --motion-reviewed --reviewer "Reviewer name" --notes "Describe actual frame, playback and loop-boundary checks."
+pnpm run review -- SA-001 --publish
 ```
 
 `--record` 是作者對已執行檢查的明確聲明，不是自動 AI 評分。`--publish` 只修改本機目錄；缺少完整審查、ratio 確認、fingerprint 或媒體驗證會被拒絕。完成檢查後移除暫存聯絡表與原始測試產物；本次要求交付的精選視覺驗證證據保留於 `docs/review/`，不參與網站或渲染執行。保留實際交付影片、作者來源與必要的維護資源。
@@ -90,40 +98,42 @@ npm run review -- SA-001 --publish
 ## 測試與靜態部署
 
 ```sh
-npm test
-npm run test:browser
-npm run build
+pnpm test
+pnpm run test:browser
+pnpm run build
 # Repository-hosted GitHub Pages base path.
-ATLAS_BASE=/remotion-style-atlas/ npm run build
+ATLAS_BASE=/remotion-style-atlas/ pnpm run build
 # Preview that exact repository base locally.
-ATLAS_BASE=/remotion-style-atlas/ npm run preview
+ATLAS_BASE=/remotion-style-atlas/ pnpm run preview
 ```
 
 瀏覽器檢查需本機測試伺服器與 Playwright 瀏覽器；實際驗證狀態以執行結果為準。Chromium／WebKit 自動測試不等於實機 Safari 或 iPhone 驗收。部署輸出須保留正式目錄、預覽、按需 runtime，以及所需的 `technology-assets/` 與套件授權文字；原有未發布媒體、原始樣本、manifest、作者目錄和私人參考內容仍不應進入交付包。路由使用 hash，可在 GitHub Pages 分享詳細頁並重新整理。`ATLAS_BASE` 設定網站 base；外部媒體伺服器可透過 `VITE_ASSET_BASE` 設定，部署前須驗證來源可存取性。
 
-GitHub Pages 保留兩個既有入口：獨立網站 repository 使用本資料夾的 `.github/workflows/pages.yml`，觸發條件為 `main` push 或手動執行；workspace 使用根目錄 `.github/workflows/remotion-style-atlas-pages.yml`，只接受手動執行。兩者都安裝主專案與 `technology-runtime` 各自 lockfile 鎖定的相依套件，再準備供應商資產。本機 `npm run build` 不會發布；遠端結果以[既有 Pages 工作流程](https://github.com/ian9911007/remotion-style-atlas/actions/workflows/pages.yml)與公開頁面實測為準。啟用或執行遠端發布仍需發布權限與明確授權。建置輸出列出正式媒體大小；應另外檢查 `dist/` 整體大小及實際下載負擔。GitHub Pages 公開輸出前，確認來源素材、字型與授權適用範圍。
+GitHub Pages 保留兩個既有入口：獨立網站 repository 使用本資料夾的 `.github/workflows/pages.yml`，觸發條件為 `main` push 或手動執行；workspace 使用根目錄 `.github/workflows/remotion-style-atlas-pages.yml`，只接受手動執行。兩者都安裝主專案與 `technology-runtime` 各自 lockfile 鎖定的相依套件，再準備供應商資產。本機 `pnpm run build` 不會發布；遠端結果以[既有 Pages 工作流程](https://github.com/ian9911007/remotion-style-atlas/actions/workflows/pages.yml)與公開頁面實測為準。啟用或執行遠端發布仍需發布權限與明確授權。建置輸出列出正式媒體大小；應另外檢查 `dist/` 整體大小及實際下載負擔。GitHub Pages 公開輸出前，確認來源素材、字型與授權適用範圍。
 
-## 唯一維護來源與雙向 Git 同步
+## Publishing the original website
 
-AI Skills workspace 的 `tools/remotion-style-atlas/` 是唯一維護來源；獨立公開 repo `ian9911007/remotion-style-atlas` 是網站發布副本，不要在兩邊各自維護。先在 AI Skills repo 提交本次相關變更，再由此目錄執行：
+`AI-Skills/main` is the source of truth. A push changing this directory (or its
+sync implementation) runs `.github/workflows/sync-style-atlas.yml` in AI-Skills.
+It copies the exact committed subtree to `ian9911007/remotion-style-atlas/main`
+with a normal history-preserving commit. The destination's root
+`.github/workflows/pages.yml` then builds and publishes the original URL:
+https://ian9911007.github.io/remotion-style-atlas/ .
 
-```sh
-npm run sync:push
-```
-
-這個入口會以 Git subtree 同步網站 repo 的 `main`，接著推送 AI Skills 的 `main`。網站 repo 收到更新後，GitHub Actions 會自動建置與發布 Pages。若有人直接在網站 repo 做了變更，先提交至網站 repo，再從唯一工作區副本執行：
-
-```sh
-npm run sync:pull
-```
-
-它會把網站 repo 的變更合併到 AI Skills 子目錄，再推送 AI Skills。兩個同步動作都要求該資產沒有未提交修改；發生合併衝突時先在 AI Skills workspace 解決並提交，再執行 `npm run sync:push`。一般 Git `push` 不會觸發另一個 repository；後續請使用以上入口。首次同步前需先建立並設定公開網站 repo，並完成兩個 GitHub remotes 的登入授權。
+Authentication uses the AI-Skills Actions secret `STYLE_ATLAS_DEPLOY_KEY` and a
+write deploy key scoped to the destination repository. No local remote or branch
+is required. Identical trees produce no new commit; rejected pushes fail without
+force. Edit this subtree rather than the destination repository, because the next
+sync replaces the destination tree. Use the sync workflow's manual dispatch to
+retry after resolving a failure. To rotate access, replace the destination deploy
+key and the matching source Actions secret together. The separate AI-Skills Pages
+workflow is not the publishing route for the original URL.
 
 ## 授權與素材來源
 
 2026-10-03 查核的 [Remotion 官方授權頁](https://www.remotion.dev/docs/license/pricing)：個人及最多三人的公司可依條款使用免費授權；合作情境及四人以上公司需要公司授權，方案依創作／自動化用途而定。未判定目前組織是否符合免費資格，也未購買或啟用付費服務；投入商業或團隊使用前需自行確認適用條款。官方價格與條款可能更新，以上連結為目前查核入口。
 
-原有集合的樣本是本專案原創的建築、植物、產品程序化插畫，來源為 `scripts/create-assets.ts` 與 `public/assets/*.svg`，可用 `npm run assets` 重建；該集合的攝影版面類風格使用插畫示範裁切與視差。新案例的素材來源、實際格式、授權與標示要求由各案例 `assets` metadata 及必要的 provenance 檔記錄，不沿用舊集合「全部原創插畫」的假設。外部參考僅可記錄可觀察原則，未取得權利時不能將對方商標、影片、海報或受保護藝術作品加入公開素材。風格提示詞不保證逐像素重建；結構化規格提供更精確的補充依據。
+原有集合的樣本是本專案原創的建築、植物、產品程序化插畫，來源為 `scripts/create-assets.ts` 與 `public/assets/*.svg`，可用 `pnpm run assets` 重建；該集合的攝影版面類風格使用插畫示範裁切與視差。新案例的素材來源、實際格式、授權與標示要求由各案例 `assets` metadata 及必要的 provenance 檔記錄，不沿用舊集合「全部原創插畫」的假設。外部參考僅可記錄可觀察原則，未取得權利時不能將對方商標、影片、海報或受保護藝術作品加入公開素材。風格提示詞不保證逐像素重建；結構化規格提供更精確的補充依據。
 
 `scripts/prepare-technology-assets.mjs` 從實際安裝的主專案與技術 runtime 直接相依套件複製 LICENSE／NOTICE／COPYING 等原文至 `public/technology-assets/licenses/`，並在 `package-notices.json` 記錄版本、來源檔名與 SHA-256。這些是建置產物，不可手動維護，也不能用 SPDX 名稱代替授權全文。`@react-three/fiber` 與 `@rive-app/canvas` 缺少隨套件附上的授權文字，現已補入同版本官方 commit 的原始 MIT 文件，建置離線核對 SHA-256；原文位於 `public/technology-assets/license-supplements/`，查核來源位於 `docs/technology-license-verification.json`。GSAP 仍依官方連結條款，SplitType 的發行套件及對應原始碼未找到授權全文，兩者明列 `upstream-link-only`，不製造替代文字；這份直接相依套件清單不等於完整遞移相依套件授權稽核。套件授權與實際圖片、字型、動畫、模型及地圖資料權利須分別查核。
 

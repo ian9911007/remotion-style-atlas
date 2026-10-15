@@ -1,0 +1,44 @@
+{
+  "nodeLinker": "isolated",
+  "packageImportMethod": "hardlink",
+  "enableGlobalVirtualStore": false,
+  "extendNodePath": false,
+  "sharedWorkspaceLockfile": false,
+  "recursiveInstall": false,
+  "preferOffline": true,
+  "verifyStoreIntegrity": true,
+  "strictDepBuilds": true,
+  "pmOnFail": "error",
+  "updateNotifier": false,
+  "enablePrePostScripts": true,
+  "storeDir": "${HOME}/.codex/package-runtime/pnpm-store",
+  "cacheDir": "${HOME}/.codex/package-runtime/cache",
+  "virtualStoreDir": "${HOME}/.codex/package-runtime/projects/cf6d9c9a-d2cb-48ab-bd5d-fd86f33195d7/virtual",
+  "packages": [],
+  "allowBuilds": {
+    "canvas": false
+  },
+  "overrides": {
+    "speech-rule-engine>@xmldom/xmldom": "0.9.12",
+    "@loaders.gl/compression>fflate": "0.7.5"
+  },
+  "packageExtensions": {
+    "framer-motion@14.0.0": {
+      "dependencies": {
+        "@types/react": "19.2.0"
+      }
+    },
+    "@react-three/fiber@9.8.1": {
+      "dependencies": {
+        "@types/react": "19.2.0",
+        "@types/three": "0.186.0"
+      }
+    },
+    "@react-three/drei@10.7.9": {
+      "dependencies": {
+        "@types/react": "19.2.0",
+        "@types/three": "0.186.0"
+      }
+    }
+  }
+}

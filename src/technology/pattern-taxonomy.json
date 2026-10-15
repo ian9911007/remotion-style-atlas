@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "created": "2026-10-05",
+  "created": "2026-10-06",
   "title": "Visual Motion Pattern Library",
   "patterns": [
     {
@@ -77,6 +77,21 @@
     }
   ],
   "sources": [
+    {
+      "id": "motion-array",
+      "label": "Motion Array",
+      "url": "https://motionarray.com/stock-motion-graphics/"
+    },
+    {
+      "id": "envato",
+      "label": "Envato",
+      "url": "https://elements.envato.com/video-templates/compatible-with-after-effects"
+    },
+    {
+      "id": "motion-elements",
+      "label": "MotionElements",
+      "url": "https://www.motionelements.com/zh-hant/free/after-effects-templates"
+    },
     {
       "id": "react-bits",
       "label": "React Bits",

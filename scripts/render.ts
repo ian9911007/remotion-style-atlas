@@ -1,3 +1,4 @@
+// Created: 2026-10-05
 import { createHash } from "node:crypto";
 import {
   existsSync,
@@ -104,6 +105,7 @@ export function renderingCodeHash(root = projectRoot, recipe?: string): string {
     path.join(root, "src/catalog/schema.ts"),
     path.join(root, "scripts/render.ts"),
     path.join(root, "package-lock.json"),
+    path.join(root, "pnpm-lock.yaml"),
   ].filter(existsSync);
   const hash = createHash("sha256");
   for (const file of files) {
