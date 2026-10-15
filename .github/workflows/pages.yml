@@ -24,8 +24,15 @@ jobs:
           version: 11.19.0
           run_install: false
       - run: sudo apt-get update && sudo apt-get install -y ffmpeg
-      - run: pnpm --ignore-workspace install --frozen-lockfile
-      - run: pnpm --dir technology-runtime --ignore-workspace install --frozen-lockfile
+      - run: pnpm install --frozen-lockfile
+      - name: Install the independent technology graph outside the parent workspace
+        run: |
+          runtime_dir="$RUNNER_TEMP/atlas-technology-runtime"
+          mkdir -p "$runtime_dir"
+          cp technology-runtime/package.json technology-runtime/pnpm-lock.yaml technology-runtime/pnpm-workspace.yaml "$runtime_dir/"
+          pnpm --dir "$runtime_dir" install --frozen-lockfile
+          ln -s "$runtime_dir/node_modules" technology-runtime/node_modules
+          test -f technology-runtime/node_modules/cesium/package.json
       - run: pnpm test
       - run: pnpm run build
         env:
