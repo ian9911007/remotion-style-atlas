@@ -1,4 +1,4 @@
-/** Created: 2026-10-04. Fingerprints include case metadata, local imports and exact runtime dependencies. */
+/** Created: 2026-10-15. Fingerprints include case metadata, local imports and exact runtime dependencies. */
 import { readFileSync, existsSync } from "node:fs";
 import path from "node:path";
 import { createHash } from "node:crypto";
@@ -26,7 +26,10 @@ export function caseSourceHash(c: CaseDefinition) {
   }
   hash.update(JSON.stringify(c));
   visit(`technology-runtime/src/${c.module}`);
-  hash.update(readFileSync("technology-runtime/package-lock.json"));
+  const lockfile = existsSync("technology-runtime/pnpm-lock.yaml")
+    ? "technology-runtime/pnpm-lock.yaml"
+    : "technology-runtime/package-lock.json";
+  hash.update(readFileSync(lockfile));
   for (const a of c.assets)
     if (existsSync(`public/${a.path}`))
       hash.update(readFileSync(`public/${a.path}`));
