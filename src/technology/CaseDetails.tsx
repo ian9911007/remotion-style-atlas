@@ -98,7 +98,7 @@ export function CaseDetails({ definition: c }: { definition: CaseDefinition }) {
       )}
       <h3>可重用技術參考</h3>
       <p>
-        Skill-Web-SVG-Animation-Architect → effect-first 路由 → 對應 family
+        Skill-Web-Visual-Experience-Architect → effect-first 路由 → 對應 family
         reference
       </p>
       {technologyCatalog

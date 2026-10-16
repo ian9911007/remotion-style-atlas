@@ -1,4 +1,4 @@
-/** Created: 2026-10-05. Validate additive cases without migrating the legacy schema. */
+/** Created: 2026-10-16. Validate additive cases without migrating the legacy schema. */
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import sharp from "sharp";
@@ -282,7 +282,7 @@ const projection = JSON.parse(
   readFileSync("src/technology/technologies.generated.json", "utf8"),
 );
 const canonical =
-  "../../.agents/skills/Skill-Web-SVG-Animation-Architect/references/technologies/catalog.json";
+  "../../.agents/skills/Skill-Web-Visual-Experience-Architect/references/technologies/catalog.json";
 if (
   existsSync(canonical) &&
   projection.sourceHash !== sha256(readFileSync(canonical))

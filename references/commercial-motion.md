@@ -1,8 +1,8 @@
 # Commercial motion reference corpus
 
-Created: 2026-10-14
+Created: 2026-10-16
 
-This is a bounded research record inside the existing Visual Motion Pattern Library, not another catalog, a style preset or an approval ledger. Source vocabulary remains in `../src/technology/pattern-taxonomy.json`; case IDs and attribution are unchanged. Reusable inspection rules belong to the [visual quality owner](../../../.agents/skills/Skill-Web-SVG-Animation-Architect/references/technologies/visual-quality.md), craft to [Creative Direction](../../../.agents/skills/Skill-Creative-Direction/references/visual-motion-craft.md), capability identities to the existing technology catalog.
+This is a bounded research record inside the existing Visual Motion Pattern Library, not another catalog, a style preset or an approval ledger. Source vocabulary remains in `../src/technology/pattern-taxonomy.json`; case IDs and attribution are unchanged. Reusable inspection rules belong to the [visual quality owner](../../../.agents/skills/Skill-Web-Visual-Experience-Architect/references/technologies/visual-quality.md), craft to [Creative Direction](../../../.agents/skills/Skill-Creative-Direction/references/visual-motion-craft.md), capability identities to the existing technology catalog.
 
 ## Supplied discovery sources
 

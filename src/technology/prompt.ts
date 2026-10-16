@@ -38,7 +38,7 @@ WEB AND VIDEO BOUNDARY
 Implementation classification: ${c.video}. Evidence: ${caseEvidence(c.id).video ?? "Deterministic export has not been verified."}. Browser playback is not deterministic video verification. For export, seed randomness, explicitly seek each engine, wait for media/layout readiness and verify nonsequential seeks and repeated frames. Recorded interactions require an explicit replay script.
 
 TECHNICAL REFERENCES TO LOAD ON DEMAND
-Use the existing Skill-Web-SVG-Animation-Architect effect-first router. Read only relevant family references; use official Remotion sub-skills for Remotion production.
+Use the existing Skill-Web-Visual-Experience-Architect effect-first router. Read only relevant family references; use official Remotion sub-skills for Remotion production.
 ${references.map((t) => `- ${t.id}: references/technologies/${t.reference}; official sources ${t.sources.join(" ")}`).join("\n")}
 
 ACCEPTANCE CRITERIA

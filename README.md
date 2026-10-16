@@ -22,17 +22,17 @@ pnpm run dev
 
 ## 技術案例的來源與維護
 
-Created: 2026-10-06
+Created: 2026-10-16
 
 本網站沿用 Remotion Style Atlas 名稱、既有 ID 與操作流程，分類架構擴充為 Visual Motion Pattern Library。原有 100 個案例是歷史基準，全站案例數沒有固定上限。`src/technology/pattern-taxonomy.json` 維護視覺模式與參考來源詞彙；`pattern-library.ts` 維護既有案例的少量人工分類。新增分類可擴充此標註表，或使用該檔匯出的 `PatternCaseDefinition` 登錄選填 `patternLibrary`；既有 runtime 型別與預覽指紋保留。視覺模式、參考／靈感來源、實作技術、美術方向、用途、不適用情境、關鍵字與成本提示分別呈現；成本提示不代表量測結果。來源支援 Motion Array、React Bits、Remotion、HyperFrames、GSAP、Motion、Three.js、WebGL／shaders、CSS、SVG、自訂實作及未來來源。
 
-Motion Array 是選用的美術、版型與動態參考；唯一研究與轉譯規則位於 `.agents/skills/Skill-Web-SVG-Animation-Architect/references/technologies/motion-array.md`。新增來源詞彙不會把既有案例改標成 Motion Array。
+Motion Array 是選用的美術、版型與動態參考；唯一研究與轉譯規則位於 `.agents/skills/Skill-Web-Visual-Experience-Architect/references/technologies/motion-array.md`。新增來源詞彙不會把既有案例改標成 Motion Array。
 
 MotionElements／Envato 的指定來源與六筆實際預覽取樣記錄收在 [商業動態參考索引](references/commercial-motion.md)。此索引延伸既有參考資料，沒有新增展示網站，也不會改寫既有案例來源。預覽取樣、完整觀看、音訊聆聽與原生專案驗證分別記錄；[原創製作研究](../motion-production-eval/commercial/README.md) 不是使用者核准的美學標準。
 
-React Bits 是選用的網站／動態模式參考，不是固定網站風格、runtime 相依套件或新增範例的來源宣稱。目前本次標註的六個既有案例均為自訂實作，沒有改標成 React Bits。來源篩選沒有結果時代表尚無該來源標註案例；未標註的歷史資料保留未知。新增案例仍自行選擇美術與品牌表現，不套用舊插畫或 demo 網站風格。AI Skills 中的唯一研究與轉譯規則位於 `.agents/skills/Skill-Web-SVG-Animation-Architect/references/technologies/react-bits.md`，網站只包含必要分類中繼資料，不打包 Skill 全文。
+React Bits 是選用的網站／動態模式參考，不是固定網站風格、runtime 相依套件或新增範例的來源宣稱。目前本次標註的六個既有案例均為自訂實作，沒有改標成 React Bits。來源篩選沒有結果時代表尚無該來源標註案例；未標註的歷史資料保留未知。新增案例仍自行選擇美術與品牌表現，不套用舊插畫或 demo 網站風格。AI Skills 中的唯一研究與轉譯規則位於 `.agents/skills/Skill-Web-Visual-Experience-Architect/references/technologies/react-bits.md`，網站只包含必要分類中繼資料，不打包 Skill 全文。
 
-在 AI Skills workspace 新增或編輯案例前，先讀取 `.agents/skills/Skill-Web-SVG-Animation-Architect/references/technologies/gallery-case-authoring.md`。此指引維護既有 ID、註冊、路由、搜尋／篩選、預覽／詳情、播放、複製套用及驗證契約；網站外殼負責瀏覽與操作，每個案例自行決定隔離的美術、字型、色彩、背景、材質與版面。案例需延續網站功能，不代表套用舊案例的設計風格。此 Skill 留在 AI Skills workspace，不打包進網站，也不是瀏覽器執行時依賴。
+在 AI Skills workspace 新增或編輯案例前，先讀取 `.agents/skills/Skill-Web-Visual-Experience-Architect/references/technologies/gallery-case-authoring.md`。此指引維護既有 ID、註冊、路由、搜尋／篩選、預覽／詳情、播放、複製套用及驗證契約；網站外殼負責瀏覽與操作，每個案例自行決定隔離的美術、字型、色彩、背景、材質與版面。案例需延續網站功能，不代表套用舊案例的設計風格。此 Skill 留在 AI Skills workspace，不打包進網站，也不是瀏覽器執行時依賴。
 
 2026-10-04：基準 100 個、新增 78 個、全站 178 個；新增案例 ready 78／partial 0／blocked 0／unverified 0。ready 代表已完成此處記錄的來源、預覽、執行與視覺檢查，不代表所有裝置、效能或影片輸出均已驗證。完整清單由 `docs/technology-coverage.json` 與 `.md` 自動產生。
 
@@ -40,12 +40,12 @@ React Bits 是選用的網站／動態模式參考，不是固定網站風格、
 
 補充案例包含 SA-151 資訊路線圖、SA-152 建築分層視差、SA-153 指標視差、SA-154 世界連線、SA-155 可旋轉地球及 SA-156 局部揭示全球再回焦。SA-152 使用共用投影修正樓板位置，滿版呈現木構接點、玻璃分格、樓板紋理與室內配置，沒有側欄文字；捲動時僅中央樓板位移，基地與內外木構框架固定。SA-156 採本機 Natural Earth 世界 1:50m／臺灣 1:10m 輪廓，滿版呈現臺北近景→世界連線範圍→臺北近景；相機固定同一焦點，以單一平滑進度完成縮放，不在途中另行平移。
 
-- 技術定義與選型的唯一來源：workspace 的 `.agents/skills/Skill-Web-SVG-Animation-Architect/references/technologies/catalog.json` 及其按需載入的家族參考；Skill routing 由既有 Skill 與 `docs/SKILL_ROUTING.md` 負責。
+- 技術定義與選型的唯一來源：workspace 的 `.agents/skills/Skill-Web-Visual-Experience-Architect/references/technologies/catalog.json` 及其按需載入的家族參考；Skill routing 由既有 Skill 與 `docs/SKILL_ROUTING.md` 負責。
 - `scripts/sync-technology-references.ts` 將 catalog 產生為 `src/technology/technologies.generated.json` 的薄型投影，保留穩定技術 ID、別名、角色與來源。投影不可手動維護；獨立網站 repo 使用已提交的投影，不需要存取本機 Skill 路徑，也不把完整 Skill 文件送進瀏覽器。
 - 具體案例來源為 `technology-runtime/src/*-cases.ts`，由 `src/technology/registry.ts` 彙整；實作為同目錄的 runtime modules。`src/technology/prompt.ts` 從案例 metadata 產生套用提示詞，區分鎖定效果、可編輯內容、技術適應、生命週期與驗證要求。
 - `src/technology/evidence.json` 記錄實際執行、視覺檢查、預覽、效能與影片適用性的證據。`scripts/validate-technology.ts` 核對案例 ID、技術連結、來源 fingerprint、素材、預覽編碼與 hash；實作完成不自動等於驗證完成。
 
-本次遇到的技術陷阱已回寫各家族參考：SVG 前後繪製與共同投影、GSAP 初始／反向 seek、手動捲動接管、WebKit 媒體重複清理、Three.js 版本限定的共用 texture 保留，以及量測結果的證據界線。`visual-quality.md` 保存精緻細節、依要求滿版、移除不相關文字及多階段遮擋驗收；`current-information.md` 要求即時或可能變動的資訊先聯網搜尋、核對第一手來源並記錄資料時間。Web SVG、Remotion 與 Scrollytelling 三個既有 Skill 依需求連到同一份規則，不複製個案美術或建立平行 Skill。
+本次遇到的技術陷阱已回寫各家族參考：SVG 前後繪製與共同投影、GSAP 初始／反向 seek、手動捲動接管、WebKit 媒體重複清理、Three.js 版本限定的共用 texture 保留，以及量測結果的證據界線。`visual-quality.md` 保存精緻細節、依要求滿版、移除不相關文字及多階段遮擋驗收；`current-information.md` 要求即時或可能變動的資訊先聯網搜尋、核對第一手來源並記錄資料時間。Web Visual Experience、Remotion 與 Scrollytelling 三個既有 Skill 依需求連到同一份規則，不複製個案美術或建立平行 Skill。
 
 在 AI Skills workspace 的本專案目錄內更新技術投影與驗證：
 
