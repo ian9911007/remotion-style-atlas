@@ -1,3 +1,4 @@
+import { originalDemoCases } from "../../technology-runtime/src/original-demo-cases";
 import { riveCases } from "../../technology-runtime/src/rive-cases";
 import { supplementCases } from "../../technology-runtime/src/supplement-cases";
 import { worldMapCases } from "../../technology-runtime/src/world-map-cases";
@@ -35,6 +36,7 @@ export type Evidence = {
 export const evidence = evidenceData as Record<string, Evidence>;
 export const technologyCatalog = technologies.technologies;
 export const technologyCases: CaseDefinition[] = [
+  ...originalDemoCases,
   ...domCases,
   ...gpuSceneCases,
   ...dataMapCases,

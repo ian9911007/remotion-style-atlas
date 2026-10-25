@@ -38,3 +38,24 @@ writeFileSync(
 console.log(
   `Projected ${projection.technologies.length} canonical technologies; no Skill bodies enter the browser.`,
 );
+
+// Project only the permitted original-demo and link-only discovery metadata.
+// The shared motion library remains the authoring authority.
+const demoSource =
+  "../../Resources/motion-design-library/engine-adapters/original-demo-collection.json";
+if (existsSync(demoSource)) {
+  const demoRaw = readFileSync(demoSource, "utf8");
+  const demos = JSON.parse(demoRaw);
+  writeFileSync(
+    "src/technology/original-demo-catalog.generated.json",
+    JSON.stringify(
+      {
+        generatedFrom: demoSource.slice(6),
+        sourceHash: sha256(demoRaw),
+        entries: demos.entries,
+      },
+      null,
+      2,
+    ) + "\n",
+  );
+}

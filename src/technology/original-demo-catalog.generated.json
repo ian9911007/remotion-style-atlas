@@ -1,0 +1,238 @@
+{
+  "generatedFrom": "Resources/motion-design-library/engine-adapters/original-demo-collection.json",
+  "sourceHash": "cd07ff644c426111ea52f8ee43382d318dd3afbe4abe047552cd5e4f6e4d2086",
+  "entries": [
+    {
+      "id": "continuous-ui-morph",
+      "title": "Continuous UI morph",
+      "category": "interface",
+      "use_cases": [
+        "Feature transitions",
+        "Interactive controls"
+      ],
+      "case_id": "SA-226",
+      "preview": {
+        "poster": "media/sa-226-technology.jpg",
+        "gallery": "media/sa-226-technology.mp4",
+        "detail": "media/sa-226-technology-detail.mp4"
+      },
+      "editable_parameters": {
+        "title": "Make room for focus",
+        "accent": "#3458db",
+        "duration": 6,
+        "labels": [
+          "Collect",
+          "Arrange",
+          "Ready"
+        ],
+        "width": 390
+      },
+      "source_files": [
+        "tools/remotion-style-atlas/technology-runtime/src/original-motion.ts",
+        "tools/remotion-style-atlas/technology-runtime/src/types.ts"
+      ],
+      "engine": "Native SVG / frame-addressable browser",
+      "source_url": "https://skillry.dev/ai-videos/opus-5-5/twoclipping-402193",
+      "source_kind": "original_editable_demo",
+      "license_status": "Original repository-owned code and procedural art; no third-party media copied",
+      "acquisition_status": "authored_locally",
+      "visual_review": "Sampled desktop/narrow stills reviewed; no complete attended playback, audio or human aesthetic approval",
+      "tested_status": "PASS: same-host browser parameters, seeking, reduced motion, source links and decoded playback; encoded/source integrity checked separately",
+      "limitations": [
+        "Not a source-work reproduction",
+        "Silent browser/SVG demo; no Remotion or HyperFrames parity claim",
+        "Fixed 16:9 design; narrow view scales rather than recomposes"
+      ],
+      "retrieved_at": "2026-10-25",
+      "source_revision": null
+    },
+    {
+      "id": "step-assembly-explainer",
+      "title": "Step assembly explainer",
+      "category": "explainer",
+      "use_cases": [
+        "Assembly instructions",
+        "Ordered feature explanation"
+      ],
+      "case_id": "SA-227",
+      "preview": {
+        "poster": "media/sa-227-technology.jpg",
+        "gallery": "media/sa-227-technology.mp4",
+        "detail": "media/sa-227-technology-detail.mp4"
+      },
+      "editable_parameters": {
+        "title": "Build a reading light",
+        "accent": "#d45c32",
+        "duration": 6,
+        "labels": [
+          "Anchor the base",
+          "Raise the stem",
+          "Shape the light"
+        ]
+      },
+      "source_files": [
+        "tools/remotion-style-atlas/technology-runtime/src/original-motion.ts",
+        "tools/remotion-style-atlas/technology-runtime/src/types.ts"
+      ],
+      "engine": "Native SVG / frame-addressable browser",
+      "source_url": "https://skillry.dev/ai-videos/opus-5-5/ror-fly-880547",
+      "source_kind": "original_editable_demo",
+      "license_status": "Original repository-owned code and procedural art; no third-party media copied",
+      "acquisition_status": "authored_locally",
+      "visual_review": "Sampled desktop/narrow stills reviewed; no complete attended playback, audio or human aesthetic approval",
+      "tested_status": "PASS: same-host browser parameters, seeking, reduced motion, source links and decoded playback; encoded/source integrity checked separately",
+      "limitations": [
+        "Not a source-work reproduction",
+        "Silent browser/SVG demo; no Remotion or HyperFrames parity claim",
+        "Fixed 16:9 design; narrow view scales rather than recomposes"
+      ],
+      "retrieved_at": "2026-10-25",
+      "source_revision": null
+    },
+    {
+      "id": "product-surface-reveal",
+      "title": "Product surface reveal",
+      "category": "product",
+      "use_cases": [
+        "Product introduction",
+        "User-owned screenshot reveal"
+      ],
+      "case_id": "SA-228",
+      "preview": {
+        "poster": "media/sa-228-technology.jpg",
+        "gallery": "media/sa-228-technology.mp4",
+        "detail": "media/sa-228-technology-detail.mp4"
+      },
+      "editable_parameters": {
+        "title": "A clearer working day",
+        "accent": "#42765b",
+        "duration": 6,
+        "labels": [
+          "Plan",
+          "Focus",
+          "Review"
+        ],
+        "screenshot": ""
+      },
+      "source_files": [
+        "tools/remotion-style-atlas/technology-runtime/src/original-motion.ts",
+        "tools/remotion-style-atlas/technology-runtime/src/types.ts"
+      ],
+      "engine": "Native SVG / frame-addressable browser",
+      "source_url": "https://skillry.dev/ai-videos/opus-5-5/moritzkremb-466494",
+      "source_kind": "original_editable_demo",
+      "license_status": "Original repository-owned code and procedural art; no third-party media copied",
+      "acquisition_status": "authored_locally",
+      "visual_review": "Sampled desktop/narrow stills reviewed; no complete attended playback, audio or human aesthetic approval",
+      "tested_status": "PASS: same-host browser parameters, seeking, reduced motion, source links and decoded playback; encoded/source integrity checked separately",
+      "limitations": [
+        "Not a source-work reproduction",
+        "Silent browser/SVG demo; no Remotion or HyperFrames parity claim",
+        "Fixed 16:9 design; narrow view scales rather than recomposes"
+      ],
+      "retrieved_at": "2026-10-25",
+      "source_revision": null
+    },
+    {
+      "id": "radial-field-loop",
+      "title": "Radial field loop",
+      "category": "discovery",
+      "use_cases": [
+        "Reference discovery only"
+      ],
+      "preview": null,
+      "editable_parameters": {},
+      "source_files": [],
+      "engine": "unverified",
+      "source_url": "https://skillry.dev/ai-videos/opus-5-5/monokern-832979",
+      "source_kind": "reference_only",
+      "license_status": "Link only; third-party rights not granted. Skillry package redistribution restricted.",
+      "acquisition_status": "not_acquired",
+      "visual_review": "Supplied sampled-playback research only; no exhaustive frame/audio QA",
+      "tested_status": "not_executed",
+      "retrieved_at": "2026-10-25",
+      "source_revision": null
+    },
+    {
+      "id": "exploded-product-view",
+      "title": "Exploded product view",
+      "category": "discovery",
+      "use_cases": [
+        "Reference discovery only"
+      ],
+      "preview": null,
+      "editable_parameters": {},
+      "source_files": [],
+      "engine": "unverified",
+      "source_url": "https://skillry.dev/ai-videos/opus-5-5/aichrislee-408244",
+      "source_kind": "reference_only",
+      "license_status": "Link only; third-party rights not granted. Skillry package redistribution restricted.",
+      "acquisition_status": "not_acquired",
+      "visual_review": "Supplied sampled-playback research only; no exhaustive frame/audio QA",
+      "tested_status": "not_executed",
+      "retrieved_at": "2026-10-25",
+      "source_revision": null
+    },
+    {
+      "id": "ui-morph-prompt",
+      "title": "UI continuity prompt seed",
+      "category": "discovery",
+      "use_cases": [
+        "Reference discovery only"
+      ],
+      "preview": null,
+      "editable_parameters": {},
+      "source_files": [],
+      "engine": "unverified",
+      "source_url": "https://skillry.dev/ai-videos/opus-5-5/twoclipping-402193",
+      "source_kind": "prompt_seed",
+      "license_status": "Link only; third-party rights not granted. Skillry package redistribution restricted.",
+      "acquisition_status": "not_acquired",
+      "visual_review": "Supplied sampled-playback research only; no exhaustive frame/audio QA",
+      "tested_status": "not_executed",
+      "prompt_seed": "Author an original interface with one persistent control that changes dimensions and meaning across three readable states. Supply original labels, one frame clock and bounded transitions; verify repeated nonsequential frames.",
+      "retrieved_at": "2026-10-25",
+      "source_revision": null
+    },
+    {
+      "id": "plush-crew-package",
+      "title": "Plush crew launch package v1.0.1",
+      "category": "discovery",
+      "use_cases": [
+        "Reference discovery only"
+      ],
+      "preview": null,
+      "editable_parameters": {},
+      "source_files": [],
+      "engine": "unverified",
+      "source_url": "https://skillry.dev/skills/bs-plush-crew-launch-video",
+      "source_kind": "third_party_package_candidate",
+      "license_status": "Link only; third-party rights not granted. Skillry package redistribution restricted.",
+      "acquisition_status": "not_acquired",
+      "visual_review": "Supplied sampled-playback research only; no exhaustive frame/audio QA",
+      "tested_status": "not_executed",
+      "retrieved_at": "2026-10-25",
+      "source_revision": null
+    },
+    {
+      "id": "velocity-sting-package",
+      "title": "Velocity sting package v1.0.0",
+      "category": "discovery",
+      "use_cases": [
+        "Reference discovery only"
+      ],
+      "preview": null,
+      "editable_parameters": {},
+      "source_files": [],
+      "engine": "unverified",
+      "source_url": "https://skillry.dev/skills/bs-hyperframes-velocity-sting",
+      "source_kind": "third_party_package_candidate",
+      "license_status": "Link only; third-party rights not granted. Skillry package redistribution restricted.",
+      "acquisition_status": "not_acquired",
+      "visual_review": "Listing metadata only; package and full preview not inspected locally",
+      "tested_status": "not_executed",
+      "retrieved_at": "2026-10-25",
+      "source_revision": null
+    }
+  ]
+}

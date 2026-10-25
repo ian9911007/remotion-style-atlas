@@ -3402,5 +3402,95 @@
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ]
+  },
+  "SA-226": {
+    "status": "partial",
+    "sourceHash": "182ea012f2ae38df6eb1c5737bccf4632e3d9ea8fe26990be2b87fcb38190c61",
+    "runtime": [
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-226-technology.jpg",
+      "gallery": "media/sa-226-technology.mp4",
+      "detail": "media/sa-226-technology-detail.mp4",
+      "sha256": {
+        "poster": "c9c000bec17c0f3a63c45049295fa48ee928048d739a4ae6489f76280cefd2b7",
+        "gallery": "d6343ffd6e2bf05c8063dbd1b7b6cd5224633d383f489adcc0b2987196e58800",
+        "detail": "1d4237dfdff372c4bbd1f3b7208ca0fac8c5d0882f5fec7656b6854ea932aeeb"
+      }
+    },
+    "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 156.0.8078.48; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 22325
+      }
+    },
+    "date": "2026-10-25",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-227": {
+    "status": "partial",
+    "sourceHash": "977aec2c5706fe7dbb219b1646ccede4049d073d89bb27cb48b3b3084f19ea35",
+    "runtime": [
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-227-technology.jpg",
+      "gallery": "media/sa-227-technology.mp4",
+      "detail": "media/sa-227-technology-detail.mp4",
+      "sha256": {
+        "poster": "d48f3d1197bac7a72d5f28f4a6dbfa34739d71ad6a29acfe49487556a85cbad2",
+        "gallery": "f57521e653f4b0cc27774dcf8ac86a7505986d19556bcab5571b43cbba37f8a7",
+        "detail": "a8c14778b333a48aece5dbd24660554152a4123e6493f19eeff51e3136732043"
+      }
+    },
+    "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 156.0.8078.48; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 22056
+      }
+    },
+    "date": "2026-10-25",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
+  },
+  "SA-228": {
+    "status": "partial",
+    "sourceHash": "271779089d168cda3f6abedec12485947fd17b0fa723c10aafe8483990e0319c",
+    "runtime": [
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors"
+    ],
+    "preview": {
+      "poster": "media/sa-228-technology.jpg",
+      "gallery": "media/sa-228-technology.mp4",
+      "detail": "media/sa-228-technology-detail.mp4",
+      "sha256": {
+        "poster": "624f309565e5bc1036e094bef20fdb88c08e233078fa4814733da383d5c99fd0",
+        "gallery": "988d0bc1e11963074712a1e9df826c16009c5bff892f0438536fdeb3ad74a383",
+        "detail": "323996559df7bcf45b743b3d7ebcf9bf4a9dc836c407d24dad1e92f461c1394e"
+      }
+    },
+    "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
+    "performance": {
+      "status": "measured",
+      "context": "Single case at 960x540 DPR1 in Chrome 156.0.8078.48; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "metrics": {
+        "inspectionMs": 21941
+      }
+    },
+    "date": "2026-10-25",
+    "notes": [
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
+      "Physical Safari/iPhone not tested."
+    ]
   }
 }

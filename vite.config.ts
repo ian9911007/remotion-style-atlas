@@ -9,6 +9,39 @@ export default defineConfig(({ command }) => {
     plugins: [
       react(),
       {
+        name: "original-demo-source-links",
+        configureServer(server) {
+          server.middlewares.use(async (request, response, next) => {
+            const allowed = [
+              "original-motion.ts",
+              "original-demo-cases.ts",
+              "types.ts",
+            ];
+            const name = request.url
+              ?.split("?")[0]
+              ?.match(/^\/source\/([^/]+)\.txt$/)?.[1];
+            if (!name || !allowed.includes(name)) return next();
+            response.setHeader("Content-Type", "text/plain; charset=utf-8");
+            response.end(
+              await readFile(`technology-runtime/src/${name}`, "utf8"),
+            );
+          });
+        },
+        async generateBundle() {
+          for (const name of [
+            "original-motion.ts",
+            "original-demo-cases.ts",
+            "types.ts",
+          ]) {
+            this.emitFile({
+              type: "asset",
+              fileName: `source/${name}.txt`,
+              source: await readFile(`technology-runtime/src/${name}`, "utf8"),
+            });
+          }
+        },
+      },
+      {
         name: "published-media-only",
         configResolved(config) {
           outputDirectory = path.resolve(config.root, config.build.outDir);
@@ -47,7 +80,10 @@ export default defineConfig(({ command }) => {
               if (!file) continue;
               if (!/^media\/[a-z0-9.-]+$/.test(file))
                 throw new Error(`Unsafe preview path: ${file}`);
-              await copyFile(`public/${file}`, path.join(outputDirectory, file));
+              await copyFile(
+                `public/${file}`,
+                path.join(outputDirectory, file),
+              );
             }
           }
           await cp(

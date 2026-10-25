@@ -1,3 +1,4 @@
+import { AssetLibrary } from "./technology/AssetLibrary";
 import {
   caseById,
   caseEvidence,
@@ -93,7 +94,9 @@ export function App() {
   const [query, setQuery] = useState("");
   const [filters, setFilters] = useState<Filters>(emptyFilters);
   const [filterOpen, setFilterOpen] = useState(false);
-  const [view, setView] = useState<"all" | "favorites" | "recent">("all");
+  const [view, setView] = useState<"all" | "favorites" | "recent" | "library">(
+    "all",
+  );
   const [detail, setDetail] = useState<StyleSpec | null>(routeStyle);
   const [inbox, setInbox] = useState(false);
   const [references, setReferences] =
@@ -164,9 +167,13 @@ export function App() {
           (caseById.has(s.id) ? "technology" : "legacy") ===
             filters.collection) &&
         (!filters.pattern ||
-          !!patternMetadata(caseById.get(s.id) ?? { id: s.id })?.patterns.includes(filters.pattern)) &&
+          !!patternMetadata(
+            caseById.get(s.id) ?? { id: s.id },
+          )?.patterns.includes(filters.pattern)) &&
         (!filters.source ||
-          !!patternMetadata(caseById.get(s.id) ?? { id: s.id })?.sources.includes(filters.source)) &&
+          !!patternMetadata(
+            caseById.get(s.id) ?? { id: s.id },
+          )?.sources.includes(filters.source)) &&
         (!filters.technology ||
           [
             caseById.get(s.id)?.primary,
@@ -364,6 +371,12 @@ export function App() {
         <div className="header-secondary">
           <nav aria-label="風格集">
             <button
+              className={view === "library" ? "active" : ""}
+              onClick={() => setView("library")}
+            >
+              Editable library <span>3</span>
+            </button>
+            <button
               className={view === "all" ? "active" : ""}
               onClick={() => setView("all")}
             >
@@ -441,12 +454,16 @@ export function App() {
                 {
                   key: "pattern",
                   label: "視覺模式",
-                  values: Object.fromEntries(patternTaxonomy.patterns.map((p) => [p.id, p.label])),
+                  values: Object.fromEntries(
+                    patternTaxonomy.patterns.map((p) => [p.id, p.label]),
+                  ),
                 },
                 {
                   key: "source",
                   label: "參考／靈感來源",
-                  values: Object.fromEntries(patternTaxonomy.sources.map((s) => [s.id, s.label])),
+                  values: Object.fromEntries(
+                    patternTaxonomy.sources.map((s) => [s.id, s.label]),
+                  ),
                 },
                 {
                   key: "direction",
@@ -555,71 +572,77 @@ export function App() {
         )}
       </header>
       <main className="gallery-main">
-        <div className="collection-heading">
-          <div>
-            <span className="eyebrow">動態視覺語言選集</span>
-            <h1>
-              {view === "favorites"
-                ? "你的風格收藏"
-                : view === "recent"
-                  ? "新加入的視覺語言"
-                  : "看見風格，找到方向。"}
-            </h1>
-          </div>
-          <p>
-            <span className="status-dot" />
-            {results.length} 個已審查風格
-            <span className="heading-note">原創設計 · 真實動態預覽</span>
-          </p>
-        </div>
-        {results.length ? (
-          <div className="gallery-grid">
-            {results.map((style) => (
-              <StyleCard
-                key={style.id}
-                style={style}
-                scheduler={scheduler}
-                favorite={preferences.favorites.includes(style.id)}
-                selected={preferences.selections.includes(style.id)}
-                onOpen={() => openStyle(style)}
-                onFavorite={() => toggleFavorite(style.id)}
-                onSelect={() => toggleSelection(style.id)}
-              />
-            ))}
-          </div>
+        {view === "library" ? (
+          <AssetLibrary query={query} />
         ) : (
-          <div className="empty-state">
-            <Search size={28} />
-            <h2>
-              {view === "favorites" && !preferences.favorites.length
-                ? "還沒有收藏風格"
-                : "沒有符合的風格"}
-            </h2>
-            <p>
-              {view === "favorites"
-                ? "點選卡片上的愛心，把想用的風格留在這裡。"
-                : "試試其他關鍵字，或放寬篩選條件。"}
-            </p>
-            <button
-              onClick={() => {
-                setQuery("");
-                setFilters(emptyFilters);
-                setView("all");
-              }}
-            >
-              瀏覽全部風格 <ArrowUpRight size={14} />
-            </button>
-          </div>
+          <>
+            <div className="collection-heading">
+              <div>
+                <span className="eyebrow">動態視覺語言選集</span>
+                <h1>
+                  {view === "favorites"
+                    ? "你的風格收藏"
+                    : view === "recent"
+                      ? "新加入的視覺語言"
+                      : "看見風格，找到方向。"}
+                </h1>
+              </div>
+              <p>
+                <span className="status-dot" />
+                {results.length} 個已審查風格
+                <span className="heading-note">原創設計 · 真實動態預覽</span>
+              </p>
+            </div>
+            {results.length ? (
+              <div className="gallery-grid">
+                {results.map((style) => (
+                  <StyleCard
+                    key={style.id}
+                    style={style}
+                    scheduler={scheduler}
+                    favorite={preferences.favorites.includes(style.id)}
+                    selected={preferences.selections.includes(style.id)}
+                    onOpen={() => openStyle(style)}
+                    onFavorite={() => toggleFavorite(style.id)}
+                    onSelect={() => toggleSelection(style.id)}
+                  />
+                ))}
+              </div>
+            ) : (
+              <div className="empty-state">
+                <Search size={28} />
+                <h2>
+                  {view === "favorites" && !preferences.favorites.length
+                    ? "還沒有收藏風格"
+                    : "沒有符合的風格"}
+                </h2>
+                <p>
+                  {view === "favorites"
+                    ? "點選卡片上的愛心，把想用的風格留在這裡。"
+                    : "試試其他關鍵字，或放寬篩選條件。"}
+                </p>
+                <button
+                  onClick={() => {
+                    setQuery("");
+                    setFilters(emptyFilters);
+                    setView("all");
+                  }}
+                >
+                  瀏覽全部風格 <ArrowUpRight size={14} />
+                </button>
+              </div>
+            )}
+            <footer className="site-footer">
+              <p>
+                <span className="footer-brand">風格圖鑑</span>
+                風格是起點，內容由你決定。
+              </p>
+              <button onClick={() => setLocalOpen(true)}>
+                本機資料與隱私 <ArrowUpRight size={11} />
+              </button>
+            </footer>
+          </>
         )}
-        <footer className="site-footer">
-          <p>
-            <span className="footer-brand">風格圖鑑</span>
-            風格是起點，內容由你決定。
-          </p>
-          <button onClick={() => setLocalOpen(true)}>
-            本機資料與隱私 <ArrowUpRight size={11} />
-          </button>
-        </footer>
       </main>
       {selected.length > 0 && (
         <aside className="selection-tray" aria-label="選取的風格">
@@ -845,10 +868,7 @@ function SearchShortcut({
         const next = start + (e.key === "ArrowRight" ? 1 : -1);
         if (next >= 0 && next < cards.length) cards[next].focus();
       }
-      if (
-        !typing &&
-        (e.key === "ArrowUp" || e.key === "ArrowDown")
-      ) {
+      if (!typing && (e.key === "ArrowUp" || e.key === "ArrowDown")) {
         if (dialog && !dialogOwnsArrows) {
           const scroller = dialog.querySelector<HTMLElement>(".detail-shell");
           if (!scroller) return;

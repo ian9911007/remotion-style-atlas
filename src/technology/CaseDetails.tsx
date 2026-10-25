@@ -1,3 +1,4 @@
+import { DemoParameters } from "./DemoParameters";
 import type { CaseDefinition } from "../../technology-runtime/src/types";
 import { patternMetadata, patternLabel, sourceLabel } from "./pattern-library";
 import {
@@ -11,7 +12,11 @@ export function CaseDetails({ definition: c }: { definition: CaseDefinition }) {
   const pattern = patternMetadata(c);
   const rows: [string, string][] = [
     ["視覺模式", pattern?.patterns.map(patternLabel).join(" · ") ?? "尚未分類"],
-    ["參考／靈感來源", pattern?.sources.map(sourceLabel).join(" · ") ?? "尚未標註；不由實作技術推論"],
+    [
+      "參考／靈感來源",
+      pattern?.sources.map(sourceLabel).join(" · ") ??
+        "尚未標註；不由實作技術推論",
+    ],
     ["模式關鍵字", pattern?.keywords.join(" · ") || "尚未標註"],
     ["模式成本提示", pattern?.performanceNote ?? "尚未評估；量測證據另列"],
     ["展示能力", c.capabilities.join(" · ")],
@@ -96,6 +101,7 @@ export function CaseDetails({ definition: c }: { definition: CaseDefinition }) {
             ))}
         </section>
       )}
+      <DemoParameters key={c.id} id={c.id} />
       <h3>可重用技術參考</h3>
       <p>
         Skill-Web-Visual-Experience-Architect → effect-first 路由 → 對應 family

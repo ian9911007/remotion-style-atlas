@@ -1,6 +1,6 @@
 {
   "generatedFrom": ".agents/skills/Skill-Web-Visual-Experience-Architect/references/technologies/catalog.json",
-  "sourceHash": "69588ccb5db0748542230f080c182f8d4f4506d38e7d06a80355ada96f01ddb7",
+  "sourceHash": "241d411ea727bb4dd14631eeef83de4691f10936f1369a10b10331b7c97e7233",
   "verifiedDate": "2026-10-04",
   "technologies": [
     {
@@ -739,6 +739,21 @@
       "sources": [
         "https://motioncanvas.io/docs/"
       ]
+    },
+    {
+      "id": "native-svg",
+      "name": "Native SVG",
+      "aliases": [
+        "SVG DOM"
+      ],
+      "role": "native-api",
+      "packages": [],
+      "disposition": "new",
+      "family": "svg",
+      "reference": "svg.md",
+      "sources": [
+        "https://www.w3.org/TR/SVG2/"
+      ]
     }
   ],
   "inventoryResolution": [
@@ -978,6 +993,11 @@
       "technologyId": "motion",
       "disposition": "legacy",
       "reason": "Historical APIs merged at Motion 11.11.12; preserve lookup and migration guidance, not a separate new implementation choice."
+    },
+    {
+      "name": "Native SVG",
+      "technologyId": "native-svg",
+      "disposition": "new"
     }
   ]
 }
