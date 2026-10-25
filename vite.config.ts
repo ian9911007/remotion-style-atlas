@@ -16,6 +16,8 @@ export default defineConfig(({ command }) => {
               "original-motion.ts",
               "original-demo-cases.ts",
               "types.ts",
+              "mechanism-motion.ts",
+              "mechanism-fixtures.ts",
             ];
             const name = request.url
               ?.split("?")[0]
@@ -32,6 +34,8 @@ export default defineConfig(({ command }) => {
             "original-motion.ts",
             "original-demo-cases.ts",
             "types.ts",
+            "mechanism-motion.ts",
+            "mechanism-fixtures.ts",
           ]) {
             this.emitFile({
               type: "asset",

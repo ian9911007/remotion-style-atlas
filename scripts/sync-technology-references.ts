@@ -59,3 +59,24 @@ if (existsSync(demoSource)) {
     ) + "\n",
   );
 }
+
+const referenceSource =
+  "../../Resources/motion-design-library/provenance/opus-reviewed-catalog.json";
+if (existsSync(referenceSource)) {
+  const raw = readFileSync(referenceSource, "utf8");
+  const source = JSON.parse(raw);
+  writeFileSync(
+    "src/technology/reference-catalog.generated.json",
+    JSON.stringify(
+      {
+        generatedFrom: referenceSource.slice(6),
+        sourceHash: sha256(raw),
+        revision: source.revision,
+        coverage: source.coverage,
+        entries: source.entries,
+      },
+      null,
+      2,
+    ) + "\n",
+  );
+}

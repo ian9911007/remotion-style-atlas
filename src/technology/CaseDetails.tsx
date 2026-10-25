@@ -36,7 +36,7 @@ export function CaseDetails({ definition: c }: { definition: CaseDefinition }) {
       "執行需求",
       `${c.renderer} · ${c.dependencies.join(", ") || "原生瀏覽器 API"}`,
     ],
-    ["響應式", "960×540 等比縮放；手機保留控制列，直式構圖尚未設計。"],
+    ["響應式", c.module === "mechanism-motion.ts" ? "960×540 landscape and 640×900 portrait composition; native controls retained." : "960×540 等比縮放；手機保留控制列，直式構圖尚未設計。"],
     ["已知限制", c.limitations.join("；")],
     ["備援", c.fallback],
     [

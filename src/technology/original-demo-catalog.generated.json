@@ -1,6 +1,6 @@
 {
   "generatedFrom": "Resources/motion-design-library/engine-adapters/original-demo-collection.json",
-  "sourceHash": "cd07ff644c426111ea52f8ee43382d318dd3afbe4abe047552cd5e4f6e4d2086",
+  "sourceHash": "1b313251794949d409fcbb29e0ca1e3a26246342995ffaa54d1932d1e3c670ec",
   "entries": [
     {
       "id": "continuous-ui-morph",
@@ -233,6 +233,466 @@
       "tested_status": "not_executed",
       "retrieved_at": "2026-10-25",
       "source_revision": null
+    },
+    {
+      "id": "editorial-evidence-story",
+      "title": "Evidence-led editorial story",
+      "category": "editorial",
+      "case_id": "SA-229",
+      "use_cases": [
+        "corporate interview",
+        "case study",
+        "business proof"
+      ],
+      "mechanism_tags": [
+        "corporate interview",
+        "case study",
+        "business proof",
+        "metric",
+        "evidence",
+        "document"
+      ],
+      "preview": {
+        "poster": "media/sa-229-technology.jpg",
+        "gallery": "media/sa-229-technology.mp4",
+        "detail": "media/sa-229-technology-detail.mp4"
+      },
+      "editable_parameters": {
+        "title": "Evidence-led editorial story",
+        "accent": "#ba633f",
+        "duration": 18,
+        "labels": [
+          "Observe",
+          "Measure",
+          "Decide"
+        ]
+      },
+      "extra_parameters": {
+        "quote": "A little evidence makes a clearer decision.",
+        "values": [
+          34,
+          48,
+          65
+        ]
+      },
+      "source_files": [
+        "tools/remotion-style-atlas/technology-runtime/src/mechanism-motion.ts",
+        "tools/remotion-style-atlas/technology-runtime/src/mechanism-fixtures.ts",
+        "tools/remotion-style-atlas/technology-runtime/src/types.ts"
+      ],
+      "engine": "Native SVG with original executable fixtures",
+      "source_url": "https://skillry.dev/ai-videos/opus-5-5/mablesjoseph-735781",
+      "source_kind": "original_editable_demo",
+      "license_status": "Original local code, geometry, copy and synthetic inputs; no external assets/code copied",
+      "acquisition_status": "authored_locally",
+      "visual_review": "Sampled desktop/portrait states reviewed; no full attended playback, listening, physical-device or human aesthetic approval.",
+      "tested_status": "Same-host fixtures and browser controls/seek/overflow/reduced-motion exercised; actual silent previews produced. See tools/remotion-style-atlas/docs/researched-mechanisms.md for exact results and limits.",
+      "limitations": [
+        "Original mechanism, not a faithful source-film rerun",
+        "Illustrative data/copy; no testimonial, optical or engineering accuracy claim",
+        "Silent visual score; audio absent and not verified"
+      ],
+      "art_direction": "Warm editorial evidence",
+      "provenance": {
+        "reference_slugs": [
+          "mablesjoseph-735781",
+          "johncodunayo-560372",
+          "q970270495-497923",
+          "x7mdnet-157811"
+        ],
+        "review_scope": "Supplied sparse normal-speed traversal, not framewise/audio QA",
+        "revision": "92aee2f586ac0715cb3cbcb6384834f98a33383d"
+      },
+      "task_tags": [
+        "corporate interview",
+        "case study",
+        "business proof",
+        "metric",
+        "evidence",
+        "document"
+      ],
+      "good_for": [
+        "corporate interview",
+        "case study",
+        "business proof"
+      ],
+      "avoid_for": [
+        "Invented testimony or forecasts",
+        "Unverified metric claims"
+      ],
+      "input_requirements": [
+        "Approved copy and actual source authority for production use",
+        "Bounded original fixture inputs exposed in the editor",
+        "12–20 seconds and supported text/geometry envelope"
+      ],
+      "known_failure_modes": [
+        "Text bounds or reading budget exceeded",
+        "Invalid values, unsupported geometry or unverified assets",
+        "Confusing technical success with creative approval"
+      ]
+    },
+    {
+      "id": "palette-material-study",
+      "title": "Palette and material study",
+      "category": "material",
+      "case_id": "SA-230",
+      "use_cases": [
+        "product motion",
+        "brand palette",
+        "material"
+      ],
+      "mechanism_tags": [
+        "product motion",
+        "brand palette",
+        "material",
+        "swatches",
+        "topology"
+      ],
+      "preview": {
+        "poster": "media/sa-230-technology.jpg",
+        "gallery": "media/sa-230-technology.mp4",
+        "detail": "media/sa-230-technology-detail.mp4"
+      },
+      "editable_parameters": {
+        "title": "Palette and material study",
+        "accent": "#40766c",
+        "duration": 15,
+        "labels": [
+          "Choose",
+          "Transform",
+          "Keep the relationship"
+        ]
+      },
+      "extra_parameters": {
+        "colors": [
+          "#d36d45",
+          "#497c72",
+          "#ebc774"
+        ],
+        "topology": "fan",
+        "material": "paper"
+      },
+      "source_files": [
+        "tools/remotion-style-atlas/technology-runtime/src/mechanism-motion.ts",
+        "tools/remotion-style-atlas/technology-runtime/src/mechanism-fixtures.ts",
+        "tools/remotion-style-atlas/technology-runtime/src/types.ts"
+      ],
+      "engine": "Native SVG with original executable fixtures",
+      "source_url": "https://skillry.dev/ai-videos/opus-5-5/koldo2k-741714",
+      "source_kind": "original_editable_demo",
+      "license_status": "Original local code, geometry, copy and synthetic inputs; no external assets/code copied",
+      "acquisition_status": "authored_locally",
+      "visual_review": "Sampled desktop/portrait states reviewed; no full attended playback, listening, physical-device or human aesthetic approval.",
+      "tested_status": "Same-host fixtures and browser controls/seek/overflow/reduced-motion exercised; actual silent previews produced. See tools/remotion-style-atlas/docs/researched-mechanisms.md for exact results and limits.",
+      "limitations": [
+        "Original mechanism, not a faithful source-film rerun",
+        "Illustrative data/copy; no testimonial, optical or engineering accuracy claim",
+        "Silent visual score; audio absent and not verified"
+      ],
+      "art_direction": "Tactile color geometry",
+      "provenance": {
+        "reference_slugs": [
+          "koldo2k-741714",
+          "nischalsharma-587738"
+        ],
+        "review_scope": "Supplied sparse normal-speed traversal, not framewise/audio QA",
+        "revision": "92aee2f586ac0715cb3cbcb6384834f98a33383d"
+      },
+      "task_tags": [
+        "product motion",
+        "brand palette",
+        "material",
+        "swatches",
+        "topology"
+      ],
+      "good_for": [
+        "product motion",
+        "brand palette",
+        "material"
+      ],
+      "avoid_for": [
+        "Color-science or physical material certification"
+      ],
+      "input_requirements": [
+        "Approved copy and actual source authority for production use",
+        "Bounded original fixture inputs exposed in the editor",
+        "12–20 seconds and supported text/geometry envelope"
+      ],
+      "known_failure_modes": [
+        "Text bounds or reading budget exceeded",
+        "Invalid values, unsupported geometry or unverified assets",
+        "Confusing technical success with creative approval"
+      ]
+    },
+    {
+      "id": "tiny-code-journey",
+      "title": "Tiny code trace journey",
+      "category": "technical",
+      "case_id": "SA-231",
+      "use_cases": [
+        "code explainer",
+        "architecture",
+        "trace"
+      ],
+      "mechanism_tags": [
+        "code explainer",
+        "architecture",
+        "trace",
+        "fixture",
+        "pipeline"
+      ],
+      "preview": {
+        "poster": "media/sa-231-technology.jpg",
+        "gallery": "media/sa-231-technology.mp4",
+        "detail": "media/sa-231-technology-detail.mp4"
+      },
+      "editable_parameters": {
+        "title": "Tiny code trace journey",
+        "accent": "#40766c",
+        "duration": 18,
+        "labels": [
+          "Input",
+          "Transform",
+          "Result"
+        ]
+      },
+      "extra_parameters": {
+        "values": [
+          2,
+          4,
+          6
+        ]
+      },
+      "source_files": [
+        "tools/remotion-style-atlas/technology-runtime/src/mechanism-motion.ts",
+        "tools/remotion-style-atlas/technology-runtime/src/mechanism-fixtures.ts",
+        "tools/remotion-style-atlas/technology-runtime/src/types.ts"
+      ],
+      "engine": "Native SVG with original executable fixtures",
+      "source_url": "https://skillry.dev/ai-videos/opus-5-5/deedydas-407965",
+      "source_kind": "original_editable_demo",
+      "license_status": "Original local code, geometry, copy and synthetic inputs; no external assets/code copied",
+      "acquisition_status": "authored_locally",
+      "visual_review": "Sampled desktop/portrait states reviewed; no full attended playback, listening, physical-device or human aesthetic approval.",
+      "tested_status": "Same-host fixtures and browser controls/seek/overflow/reduced-motion exercised; actual silent previews produced. See tools/remotion-style-atlas/docs/researched-mechanisms.md for exact results and limits.",
+      "limitations": [
+        "Original mechanism, not a faithful source-film rerun",
+        "Illustrative data/copy; no testimonial, optical or engineering accuracy claim",
+        "Silent visual score; audio absent and not verified"
+      ],
+      "art_direction": "Ink and lime code atlas",
+      "provenance": {
+        "reference_slugs": [
+          "deedydas-407965",
+          "adomicael-707503"
+        ],
+        "review_scope": "Supplied sparse normal-speed traversal, not framewise/audio QA",
+        "revision": "92aee2f586ac0715cb3cbcb6384834f98a33383d"
+      },
+      "task_tags": [
+        "code explainer",
+        "architecture",
+        "trace",
+        "fixture",
+        "pipeline"
+      ],
+      "good_for": [
+        "code explainer",
+        "architecture",
+        "trace"
+      ],
+      "avoid_for": [
+        "Claims about an unseen real codebase"
+      ],
+      "input_requirements": [
+        "Approved copy and actual source authority for production use",
+        "Bounded original fixture inputs exposed in the editor",
+        "12–20 seconds and supported text/geometry envelope"
+      ],
+      "known_failure_modes": [
+        "Text bounds or reading budget exceeded",
+        "Invalid values, unsupported geometry or unverified assets",
+        "Confusing technical success with creative approval"
+      ]
+    },
+    {
+      "id": "causal-score-object",
+      "title": "Causal score object",
+      "category": "causality",
+      "case_id": "SA-232",
+      "use_cases": [
+        "causal",
+        "contact",
+        "score"
+      ],
+      "mechanism_tags": [
+        "causal",
+        "contact",
+        "score",
+        "ledger",
+        "instrument"
+      ],
+      "preview": {
+        "poster": "media/sa-232-technology.jpg",
+        "gallery": "media/sa-232-technology.mp4",
+        "detail": "media/sa-232-technology-detail.mp4"
+      },
+      "editable_parameters": {
+        "title": "Causal score object",
+        "accent": "#40766c",
+        "duration": 15,
+        "labels": [
+          "Prepare",
+          "Contact",
+          "Resolve"
+        ]
+      },
+      "extra_parameters": {
+        "notes": [
+          60,
+          64,
+          67,
+          62,
+          69
+        ]
+      },
+      "source_files": [
+        "tools/remotion-style-atlas/technology-runtime/src/mechanism-motion.ts",
+        "tools/remotion-style-atlas/technology-runtime/src/mechanism-fixtures.ts",
+        "tools/remotion-style-atlas/technology-runtime/src/types.ts"
+      ],
+      "engine": "Native SVG with original executable fixtures",
+      "source_url": "https://skillry.dev/ai-videos/opus-5-5/0xcodez-474136",
+      "source_kind": "original_editable_demo",
+      "license_status": "Original local code, geometry, copy and synthetic inputs; no external assets/code copied",
+      "acquisition_status": "authored_locally",
+      "visual_review": "Sampled desktop/portrait states reviewed; no full attended playback, listening, physical-device or human aesthetic approval.",
+      "tested_status": "Same-host fixtures and browser controls/seek/overflow/reduced-motion exercised; actual silent previews produced. See tools/remotion-style-atlas/docs/researched-mechanisms.md for exact results and limits.",
+      "limitations": [
+        "Original mechanism, not a faithful source-film rerun",
+        "Illustrative data/copy; no testimonial, optical or engineering accuracy claim",
+        "Silent visual score; audio absent and not verified"
+      ],
+      "art_direction": "Ceramic contact instrument",
+      "provenance": {
+        "reference_slugs": [
+          "0xcodez-474136"
+        ],
+        "review_scope": "Supplied sparse normal-speed traversal, not framewise/audio QA",
+        "revision": "92aee2f586ac0715cb3cbcb6384834f98a33383d"
+      },
+      "task_tags": [
+        "causal",
+        "contact",
+        "score",
+        "ledger",
+        "instrument"
+      ],
+      "good_for": [
+        "causal",
+        "contact",
+        "score"
+      ],
+      "avoid_for": [
+        "Audio proof or engineering/rigid-body claims"
+      ],
+      "input_requirements": [
+        "Approved copy and actual source authority for production use",
+        "Bounded original fixture inputs exposed in the editor",
+        "12–20 seconds and supported text/geometry envelope"
+      ],
+      "known_failure_modes": [
+        "Text bounds or reading budget exceeded",
+        "Invalid values, unsupported geometry or unverified assets",
+        "Confusing technical success with creative approval"
+      ]
+    },
+    {
+      "id": "paper-blueprint-light",
+      "title": "Paper to blueprint to light",
+      "category": "transition",
+      "case_id": "SA-233",
+      "use_cases": [
+        "paper",
+        "blueprint",
+        "light"
+      ],
+      "mechanism_tags": [
+        "paper",
+        "blueprint",
+        "light",
+        "aperture",
+        "geometry"
+      ],
+      "preview": {
+        "poster": "media/sa-233-technology.jpg",
+        "gallery": "media/sa-233-technology.mp4",
+        "detail": "media/sa-233-technology-detail.mp4"
+      },
+      "editable_parameters": {
+        "title": "Paper to blueprint to light",
+        "accent": "#ba633f",
+        "duration": 15,
+        "labels": [
+          "Fold",
+          "Trace",
+          "Illuminate"
+        ]
+      },
+      "extra_parameters": {
+        "geometry": "pavilion"
+      },
+      "source_files": [
+        "tools/remotion-style-atlas/technology-runtime/src/mechanism-motion.ts",
+        "tools/remotion-style-atlas/technology-runtime/src/mechanism-fixtures.ts",
+        "tools/remotion-style-atlas/technology-runtime/src/types.ts"
+      ],
+      "engine": "Native SVG with original executable fixtures",
+      "source_url": "https://skillry.dev/ai-videos/opus-5-5/agioyaz-397647",
+      "source_kind": "original_editable_demo",
+      "license_status": "Original local code, geometry, copy and synthetic inputs; no external assets/code copied",
+      "acquisition_status": "authored_locally",
+      "visual_review": "Sampled desktop/portrait states reviewed; no full attended playback, listening, physical-device or human aesthetic approval.",
+      "tested_status": "Same-host fixtures and browser controls/seek/overflow/reduced-motion exercised; actual silent previews produced. See tools/remotion-style-atlas/docs/researched-mechanisms.md for exact results and limits.",
+      "limitations": [
+        "Original mechanism, not a faithful source-film rerun",
+        "Illustrative data/copy; no testimonial, optical or engineering accuracy claim",
+        "Silent visual score; audio absent and not verified"
+      ],
+      "art_direction": "Paper drafting and warm light",
+      "provenance": {
+        "reference_slugs": [
+          "agioyaz-397647",
+          "agioyaz-986461"
+        ],
+        "review_scope": "Supplied sparse normal-speed traversal, not framewise/audio QA",
+        "revision": "92aee2f586ac0715cb3cbcb6384834f98a33383d"
+      },
+      "task_tags": [
+        "paper",
+        "blueprint",
+        "light",
+        "aperture",
+        "geometry"
+      ],
+      "good_for": [
+        "paper",
+        "blueprint",
+        "light"
+      ],
+      "avoid_for": [
+        "Engineering drawings or optical simulation"
+      ],
+      "input_requirements": [
+        "Approved copy and actual source authority for production use",
+        "Bounded original fixture inputs exposed in the editor",
+        "12–20 seconds and supported text/geometry envelope"
+      ],
+      "known_failure_modes": [
+        "Text bounds or reading budget exceeded",
+        "Invalid values, unsupported geometry or unverified assets",
+        "Confusing technical success with creative approval"
+      ]
     }
   ]
 }

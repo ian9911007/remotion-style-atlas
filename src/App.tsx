@@ -374,7 +374,14 @@ export function App() {
               className={view === "library" ? "active" : ""}
               onClick={() => setView("library")}
             >
-              Editable library <span>3</span>
+              Editable library{" "}
+              <span>
+                {
+                  technologyCases.filter((c) =>
+                    c.capabilities.includes("original_editable_demo"),
+                  ).length
+                }
+              </span>
             </button>
             <button
               className={view === "all" ? "active" : ""}

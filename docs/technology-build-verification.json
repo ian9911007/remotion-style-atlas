@@ -1,11 +1,11 @@
 {
   "created": "2026-10-25",
   "scope": "Actual Vite output; bytes are file sizes, not memory usage or runtime performance.",
-  "caseCount": 111,
-  "totalFileCount": 1185,
-  "totalBytes": 167924977,
-  "initialJavaScriptBytes": 1186569,
-  "initialJavaScriptGzipBytes": 266733,
+  "caseCount": 116,
+  "totalFileCount": 1205,
+  "totalBytes": 170604806,
+  "initialJavaScriptBytes": 1209069,
+  "initialJavaScriptGzipBytes": 271243,
   "initialImportKeys": [
     "index.html"
   ],
@@ -21,6 +21,26 @@
     {
       "id": "SA-228",
       "entry": "assets/original-motion-SCri2QSr.js"
+    },
+    {
+      "id": "SA-229",
+      "entry": "assets/mechanism-motion-y4SN6dSQ.js"
+    },
+    {
+      "id": "SA-230",
+      "entry": "assets/mechanism-motion-y4SN6dSQ.js"
+    },
+    {
+      "id": "SA-231",
+      "entry": "assets/mechanism-motion-y4SN6dSQ.js"
+    },
+    {
+      "id": "SA-232",
+      "entry": "assets/mechanism-motion-y4SN6dSQ.js"
+    },
+    {
+      "id": "SA-233",
+      "entry": "assets/mechanism-motion-y4SN6dSQ.js"
     },
     {
       "id": "SA-101",
@@ -68,11 +88,11 @@
     },
     {
       "id": "SA-112",
-      "entry": "assets/dom-motion-eJQMYwhb.js"
+      "entry": "assets/dom-motion-DUZGkQTE.js"
     },
     {
       "id": "SA-113",
-      "entry": "assets/dom-motion-eJQMYwhb.js"
+      "entry": "assets/dom-motion-DUZGkQTE.js"
     },
     {
       "id": "SA-114",
@@ -84,23 +104,23 @@
     },
     {
       "id": "SA-116",
-      "entry": "assets/vector-JD1Ya-R_.js"
+      "entry": "assets/vector-C2CfXDuI.js"
     },
     {
       "id": "SA-117",
-      "entry": "assets/vector-JD1Ya-R_.js"
+      "entry": "assets/vector-C2CfXDuI.js"
     },
     {
       "id": "SA-118",
-      "entry": "assets/vector-JD1Ya-R_.js"
+      "entry": "assets/vector-C2CfXDuI.js"
     },
     {
       "id": "SA-119",
-      "entry": "assets/vector-JD1Ya-R_.js"
+      "entry": "assets/vector-C2CfXDuI.js"
     },
     {
       "id": "SA-120",
-      "entry": "assets/vector-JD1Ya-R_.js"
+      "entry": "assets/vector-C2CfXDuI.js"
     },
     {
       "id": "SA-121",
@@ -132,67 +152,67 @@
     },
     {
       "id": "SA-163",
-      "entry": "assets/scene-r3f-BlNZewgH.js"
+      "entry": "assets/scene-r3f-DnRodePA.js"
     },
     {
       "id": "SA-164",
-      "entry": "assets/scene-r3f-BlNZewgH.js"
+      "entry": "assets/scene-r3f-DnRodePA.js"
     },
     {
       "id": "SA-165",
-      "entry": "assets/scene-theatre-DbTeB8Bz.js"
+      "entry": "assets/scene-theatre-BEPugNtu.js"
     },
     {
       "id": "SA-166",
-      "entry": "assets/scene-theatre-DbTeB8Bz.js"
+      "entry": "assets/scene-theatre-BEPugNtu.js"
     },
     {
       "id": "SA-167",
-      "entry": "assets/scene-babylon-6YMinn-h.js"
+      "entry": "assets/scene-babylon-BASWlYqc.js"
     },
     {
       "id": "SA-168",
-      "entry": "assets/scene-babylon-6YMinn-h.js"
+      "entry": "assets/scene-babylon-BASWlYqc.js"
     },
     {
       "id": "SA-169",
-      "entry": "assets/gpu-pixi-DO5QueJl.js"
+      "entry": "assets/gpu-pixi-KfMQ5TN4.js"
     },
     {
       "id": "SA-170",
-      "entry": "assets/gpu-pixi-DO5QueJl.js"
+      "entry": "assets/gpu-pixi-KfMQ5TN4.js"
     },
     {
       "id": "SA-171",
-      "entry": "assets/gpu-regl-DPDLt69v.js"
+      "entry": "assets/gpu-regl-DPFIkJFa.js"
     },
     {
       "id": "SA-172",
-      "entry": "assets/gpu-regl-DPDLt69v.js"
+      "entry": "assets/gpu-regl-DPFIkJFa.js"
     },
     {
       "id": "SA-173",
-      "entry": "assets/physics-matter-B5kQHiQw.js"
+      "entry": "assets/physics-matter-BS0iGXeN.js"
     },
     {
       "id": "SA-174",
-      "entry": "assets/physics-matter-B5kQHiQw.js"
+      "entry": "assets/physics-matter-BS0iGXeN.js"
     },
     {
       "id": "SA-175",
-      "entry": "assets/physics-particles-CJ5wFT6y.js"
+      "entry": "assets/physics-particles-DB6hqEag.js"
     },
     {
       "id": "SA-176",
-      "entry": "assets/physics-particles-CJ5wFT6y.js"
+      "entry": "assets/physics-particles-DB6hqEag.js"
     },
     {
       "id": "SA-177",
-      "entry": "assets/generative-p5-D7rFItQj.js"
+      "entry": "assets/generative-p5-Y0kDR-BR.js"
     },
     {
       "id": "SA-178",
-      "entry": "assets/generative-p5-D7rFItQj.js"
+      "entry": "assets/generative-p5-Y0kDR-BR.js"
     },
     {
       "id": "SA-131",
@@ -228,11 +248,11 @@
     },
     {
       "id": "SA-139",
-      "entry": "assets/data-visx-CMGrYfmt.js"
+      "entry": "assets/data-visx-u6QQQ3g3.js"
     },
     {
       "id": "SA-140",
-      "entry": "assets/data-visx-CMGrYfmt.js"
+      "entry": "assets/data-visx-u6QQQ3g3.js"
     },
     {
       "id": "SA-141",
@@ -252,35 +272,35 @@
     },
     {
       "id": "SA-145",
-      "entry": "assets/maps-deck-6iwZcX5R.js"
+      "entry": "assets/maps-deck-BJLv7WZv.js"
     },
     {
       "id": "SA-146",
-      "entry": "assets/maps-deck-6iwZcX5R.js"
+      "entry": "assets/maps-deck-BJLv7WZv.js"
     },
     {
       "id": "SA-147",
-      "entry": "assets/maps-cesium-ChuDUk5l.js"
+      "entry": "assets/maps-cesium-Bauq4zWE.js"
     },
     {
       "id": "SA-148",
-      "entry": "assets/maps-cesium-ChuDUk5l.js"
+      "entry": "assets/maps-cesium-Bauq4zWE.js"
     },
     {
       "id": "SA-149",
-      "entry": "assets/maps-leaflet-C4kHNu1r.js"
+      "entry": "assets/maps-leaflet-e0dJAB7C.js"
     },
     {
       "id": "SA-150",
-      "entry": "assets/maps-leaflet-C4kHNu1r.js"
+      "entry": "assets/maps-leaflet-e0dJAB7C.js"
     },
     {
       "id": "SA-125",
-      "entry": "assets/asset-lottie-D-mrGyGo.js"
+      "entry": "assets/asset-lottie-DwT41RX3.js"
     },
     {
       "id": "SA-126",
-      "entry": "assets/asset-lottie-D-mrGyGo.js"
+      "entry": "assets/asset-lottie-DwT41RX3.js"
     },
     {
       "id": "SA-127",
@@ -292,11 +312,11 @@
     },
     {
       "id": "SA-191",
-      "entry": "assets/video-remotion-Mmhbkcie.js"
+      "entry": "assets/video-remotion-CrDaZNnt.js"
     },
     {
       "id": "SA-192",
-      "entry": "assets/video-remotion-Mmhbkcie.js"
+      "entry": "assets/video-remotion-CrDaZNnt.js"
     },
     {
       "id": "SA-193",
@@ -324,11 +344,11 @@
     },
     {
       "id": "SA-154",
-      "entry": "assets/maps-world-CDN0A2l6.js"
+      "entry": "assets/maps-world-CuL6aSbK.js"
     },
     {
       "id": "SA-155",
-      "entry": "assets/maps-world-CDN0A2l6.js"
+      "entry": "assets/maps-world-CuL6aSbK.js"
     },
     {
       "id": "SA-156",
@@ -336,126 +356,126 @@
     },
     {
       "id": "SA-196",
-      "entry": "assets/physics-element-gpu-Cl3FV-Ts.js"
+      "entry": "assets/physics-element-gpu-Bou0xhlL.js"
     },
     {
       "id": "SA-197",
-      "entry": "assets/physics-element-gpu-Cl3FV-Ts.js"
+      "entry": "assets/physics-element-gpu-Bou0xhlL.js"
     },
     {
       "id": "SA-198",
-      "entry": "assets/physics-element-gpu-Cl3FV-Ts.js"
+      "entry": "assets/physics-element-gpu-Bou0xhlL.js"
     },
     {
       "id": "SA-199",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-200",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-201",
-      "entry": "assets/physics-element-gpu-Cl3FV-Ts.js"
+      "entry": "assets/physics-element-gpu-Bou0xhlL.js"
     },
     {
       "id": "SA-202",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-203",
-      "entry": "assets/physics-element-pixi-B4F6W85a.js"
+      "entry": "assets/physics-element-pixi-CfDEiTYW.js"
     },
     {
       "id": "SA-204",
-      "entry": "assets/physics-element-pixi-B4F6W85a.js"
+      "entry": "assets/physics-element-pixi-CfDEiTYW.js"
     },
     {
       "id": "SA-205",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-206",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-207",
-      "entry": "assets/physics-element-gpu-Cl3FV-Ts.js"
+      "entry": "assets/physics-element-gpu-Bou0xhlL.js"
     },
     {
       "id": "SA-208",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-209",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-210",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-211",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-212",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-213",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-214",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-215",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-216",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-217",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-218",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-219",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-220",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-221",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-222",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-223",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-224",
-      "entry": "assets/physics-elements-B5f0GGhu.js"
+      "entry": "assets/physics-elements-CCW3Hh2R.js"
     },
     {
       "id": "SA-225",
-      "entry": "assets/physics-element-gpu-Cl3FV-Ts.js"
+      "entry": "assets/physics-element-gpu-Bou0xhlL.js"
     }
   ],
-  "mediaBytes": 132215104,
+  "mediaBytes": 133988524,
   "unverified": [
     "No universal dependency-size ranking, GPU memory peak, FPS claim or mobile performance conclusion."
   ]

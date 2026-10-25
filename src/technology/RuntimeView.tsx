@@ -91,7 +91,25 @@ export function RuntimeView({
     scrubber = useRef<HTMLInputElement>(null),
     clock = useRef(0);
   const active = true;
-  const duration = c.durationSeconds ?? 4;
+  const [duration, setDuration] = useState(c.durationSeconds ?? 4);
+  const durationRef = useRef(duration);
+  durationRef.current = duration;
+  useEffect(() => {
+    setDuration(c.durationSeconds ?? 4);
+    const changed = (event: Event) => {
+      const d = (event as CustomEvent).detail;
+      if (
+        c.module === "mechanism-motion.ts" &&
+        d.variant === c.variant &&
+        Number.isFinite(d.duration) &&
+        d.duration >= 12 &&
+        d.duration <= 20
+      )
+        setDuration(d.duration);
+    };
+    window.addEventListener("atlas:demo-duration", changed);
+    return () => window.removeEventListener("atlas:demo-duration", changed);
+  }, [c.id]);
   const [error, setError] = useState(""),
     [ready, setReady] = useState(false),
     [playing, setPlaying] = useState(
@@ -129,7 +147,18 @@ export function RuntimeView({
     root.dataset.caseId = c.id;
     shadow.replaceChildren(reset, root);
     const resize = () => {
-      root.style.transform = `scale(${node.clientWidth / 960})`;
+      const portrait =
+        c.module === "mechanism-motion.ts" &&
+        !capture &&
+        node.clientWidth < 600;
+      const width = portrait ? 640 : 960,
+        height = portrait ? 900 : 540;
+      root.style.width = width + "px";
+      root.style.height = height + "px";
+      node.style.aspectRatio = width + "/" + height;
+      root.dataset.layout = portrait ? "portrait" : "landscape";
+      root.style.transform = `scale(${node.clientWidth / width})`;
+      root.dispatchEvent(new Event("atlas:scene-layout"));
     };
     const observer = new ResizeObserver(resize);
     observer.observe(node);
@@ -149,7 +178,7 @@ export function RuntimeView({
     };
     document.addEventListener("visibilitychange", visibility);
     const seek = async (t: number) => {
-      const bounded = Math.max(0, Math.min(duration, t));
+      const bounded = Math.max(0, Math.min(durationRef.current, t));
       clock.current = bounded;
       if (scrubber.current && document.activeElement !== scrubber.current)
         scrubber.current.value = String(bounded);
@@ -200,7 +229,7 @@ export function RuntimeView({
               if (last)
                 await seek(
                   (clock.current + Math.min((now - last) / 1000, 0.1)) %
-                    duration,
+                    durationRef.current,
                 );
               last = now;
             } else {

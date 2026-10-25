@@ -15,6 +15,11 @@ export function DemoParameters({ id }: { id: string }) {
   }, []);
   if (!entry) return null;
   const p = entry.editable_parameters;
+  const extra = (
+    entry as unknown as {
+      extra_parameters?: Record<string, string | string[] | number[]>;
+    }
+  ).extra_parameters;
   return (
     <section className="demo-parameters">
       <h3>Edit this original demo</h3>
@@ -35,6 +40,20 @@ export function DemoParameters({ id }: { id: string }) {
               .split("|")
               .map((s) => s.trim()),
           };
+          if (extra) {
+            for (const [key, value] of Object.entries(extra)) {
+              const raw = String(form.get("extra:" + key) ?? "");
+              patch[key] = Array.isArray(value)
+                ? raw
+                    .split(",")
+                    .map((v) =>
+                      typeof value[0] === "number"
+                        ? Number(v.trim())
+                        : v.trim(),
+                    )
+                : raw;
+            }
+          }
           const image = form.get("screenshot");
           if (image instanceof File && image.size) {
             if (image.size > 5_000_000) {
@@ -56,7 +75,12 @@ export function DemoParameters({ id }: { id: string }) {
       >
         <label>
           Title{" "}
-          <input name="title" defaultValue={p.title} maxLength={30} required />
+          <input
+            name="title"
+            defaultValue={p.title}
+            maxLength={extra ? 48 : 30}
+            required
+          />
         </label>
         <label>
           Three labels, separated by |{" "}
@@ -70,8 +94,8 @@ export function DemoParameters({ id }: { id: string }) {
           <input
             type="number"
             name="duration"
-            min="3"
-            max="12"
+            min={extra ? 12 : 3}
+            max={extra ? 20 : 12}
             step=".5"
             defaultValue={p.duration}
           />
@@ -96,6 +120,30 @@ export function DemoParameters({ id }: { id: string }) {
             />
           </label>
         )}
+        {extra &&
+          Object.entries(extra).map(([key, value]) => (
+            <label key={key}>
+              {key}
+              {["topology", "material", "geometry"].includes(key) ? (
+                <select name={"extra:" + key} defaultValue={String(value)}>
+                  {(key === "topology"
+                    ? ["fan", "grid"]
+                    : key === "material"
+                      ? ["paper", "glaze"]
+                      : ["pavilion", "bridge"]
+                  ).map((v) => (
+                    <option key={v}>{v}</option>
+                  ))}
+                </select>
+              ) : (
+                <input
+                  name={"extra:" + key}
+                  defaultValue={Array.isArray(value) ? value.join(", ") : value}
+                  required
+                />
+              )}
+            </label>
+          ))}
         <button type="submit">Apply parameters</button>
         <output aria-live="polite">{status}</output>
       </form>

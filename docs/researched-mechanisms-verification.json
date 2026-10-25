@@ -1,0 +1,147 @@
+{
+  "created": "2026-10-25",
+  "environment": "Company Mac Studio; Chrome 156.0.8078.48; existing governed Node 26.12.1",
+  "production_url": "127.0.0.1:4175 local-only; stopped after verification",
+  "results": {
+    "aggregate_suites": {
+      "passed": 43,
+      "failed": 0
+    },
+    "routing_contract_tests": {
+      "passed": 6,
+      "failed": 0
+    },
+    "technology_and_media_integrity_tests": {
+      "passed": 8,
+      "failed": 0
+    },
+    "new_production_scene_viewports": {
+      "passed": 10,
+      "failed": 0
+    },
+    "protected_original_scene_viewports": {
+      "passed": 6,
+      "failed": 0
+    },
+    "decoded_preview_playbacks": {
+      "passed": 16,
+      "failed": 0,
+      "scope": "Eight actual detail MP4s at desktop and narrow viewport"
+    },
+    "capture": {
+      "passed": 5,
+      "failed": 0,
+      "fps": 30,
+      "audio": "absent"
+    },
+    "build": {
+      "status": "PASS",
+      "lazy_runtime_boundaries": "PASS",
+      "deployed_assets": "PASS",
+      "source_downloads": "byte-identical"
+    }
+  },
+  "fixtures": {
+    "metric": "[34,48,65]%, 0–100 domain; change +31 percentage points; synthetic",
+    "code": "[2,4,6] -> [4,8,12] -> [8,12] -> 20; changed input [1,3,5] returns 10",
+    "causal": "All five ledger contacts and corresponding illuminated keys verified in actual SVG in both viewports",
+    "negative_controls": [
+      "Overlong CJK copy rejected, last valid scene retained, recovery succeeds",
+      "Unrelated maintenance excludes new mechanisms",
+      "Prompt-only retrieval does not authorize generation",
+      "Connector does not cross actual code result"
+    ]
+  },
+  "visual_review": {
+    "status": "Sampled final encoded frames and all five portrait stills inspected",
+    "observed_repairs": [
+      "Phase rail/number placement",
+      "Code connector crossing result"
+    ],
+    "scope": "Internal sampled review, not full attended playback or human creative approval"
+  },
+  "warnings": [
+    "Existing gsap/split-type license text packaging warning",
+    "Existing Rollup annotations, lottie eval, physics static/dynamic overlap and large chunks",
+    "New native SVG cases retain partial Atlas acceptance status; no universal production approval"
+  ],
+  "limits": [
+    "No external code/media package acquired or executed",
+    "No physical mobile/cross-GPU or native Remotion/HyperFrames verification",
+    "No sound generation/playback/listening",
+    "Supplied research traversal is not framewise/audio/runtime certification"
+  ],
+  "library_contact_sheet": {
+    "library_file_id": "libfile_1f127abe73ec81918e9005786650d6e6",
+    "file_id": "file_00000000829081fda9a3207329f70f55",
+    "version": 0,
+    "path": "/researched-motion-mechanisms-contact-sheet.jpg"
+  },
+  "captures": {
+    "SA-229": {
+      "sourceHash": "bee672c7797d18bec36cb0c9e4fc70e363c37805f8952a7371f957d3b619c4ce",
+      "preview": {
+        "poster": "media/sa-229-technology.jpg",
+        "gallery": "media/sa-229-technology.mp4",
+        "detail": "media/sa-229-technology-detail.mp4",
+        "sha256": {
+          "poster": "66464f4b39d9f8036b3805b2f0f6b64db0fc5bc66ad5582d73f9710d5637d8df",
+          "gallery": "833cd7534678322b2e55431b6e76989320c2a42fa9ef353296bb4de47503addd",
+          "detail": "ef420b5f55c087444e1ea0a7b85258ba531668d0e0ba343fe3cc551429cfd61d"
+        }
+      }
+    },
+    "SA-230": {
+      "sourceHash": "0025b737e9e1811c8f7e650eb046106eb9301e61c07226bb3eda913146b9f98b",
+      "preview": {
+        "poster": "media/sa-230-technology.jpg",
+        "gallery": "media/sa-230-technology.mp4",
+        "detail": "media/sa-230-technology-detail.mp4",
+        "sha256": {
+          "poster": "3baaf9cc09557a0c2a8223673f1d7c27bdac9dad2707ea4082abeb556f59cc32",
+          "gallery": "a60d1d1431679e8e176459810b8391220ff34cf5b2a569de4e15a32bb397d41f",
+          "detail": "a8a39b99b3544b050e08d13d0b9ddd4cea546d3bab607df1ef8e8c8078d6d950"
+        }
+      }
+    },
+    "SA-231": {
+      "sourceHash": "78f697c93fc5f180dbaff336f672faef88b23adf0a881585755a107b139a0bc7",
+      "preview": {
+        "poster": "media/sa-231-technology.jpg",
+        "gallery": "media/sa-231-technology.mp4",
+        "detail": "media/sa-231-technology-detail.mp4",
+        "sha256": {
+          "poster": "7c4b74c5c27e6ebbf7be4d6916e74acba2d66bfd8995a4622f6fc97d877a1bfd",
+          "gallery": "243b07703109628fc75f3d4581a71090d2d0b81dd51471f286ae5bfb2db5b2a2",
+          "detail": "c4825ebf1de97d4908ff2e55fa252af615fb5c59a642bf14aa261bbf7f540aa0"
+        }
+      }
+    },
+    "SA-232": {
+      "sourceHash": "471fff5d28082d4fc193b282ac5817a6731b0debb34ddf9a2bfba0ff2e859007",
+      "preview": {
+        "poster": "media/sa-232-technology.jpg",
+        "gallery": "media/sa-232-technology.mp4",
+        "detail": "media/sa-232-technology-detail.mp4",
+        "sha256": {
+          "poster": "663a5bdb7ff95ff9192ab6661dd4f5c6f9cd89c66d30da520ce86233f4835db2",
+          "gallery": "7eb8c7da6793a01f78c6ed00f229608028ce2b8b5501e122e539868a6237636f",
+          "detail": "f40992e1e4346688adb2b913d520415314523b87c4d3096c67e75919a3b101f7"
+        }
+      }
+    },
+    "SA-233": {
+      "sourceHash": "c904c8906225c2391790ed02c2d6f0b5dcbabf345052d39872d78e522bbea99e",
+      "preview": {
+        "poster": "media/sa-233-technology.jpg",
+        "gallery": "media/sa-233-technology.mp4",
+        "detail": "media/sa-233-technology-detail.mp4",
+        "sha256": {
+          "poster": "59609a3a291fdeb5f2fdb8cd6e28ed3d2f2d3e6bd24affece1b69de76dac901b",
+          "gallery": "3a6683780be3197f648e81dede6630131f491bd0831beca344b462b8df222c90",
+          "detail": "0557ee8b7c5f84d308883cae82d1d592bc68a90e74437470785b15a7f771de64"
+        }
+      }
+    }
+  }
+}

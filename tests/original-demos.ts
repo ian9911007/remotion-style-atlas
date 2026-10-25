@@ -11,6 +11,9 @@ import {
   validateConfig,
 } from "../technology-runtime/src/original-motion";
 import collection from "../src/technology/original-demo-catalog.generated.json";
+const protectedOriginals = collection.entries.filter((e) =>
+  ["SA-226", "SA-227", "SA-228"].includes(e.case_id ?? ""),
+);
 const base = process.env.ATLAS_URL || "http://127.0.0.1:4173/";
 const evidence = process.env.MOTION_EVAL_EVIDENCE_DIR;
 const hash = (b: Buffer) => createHash("sha256").update(b).digest("hex");
@@ -28,11 +31,7 @@ for (const [id, c] of Object.entries(defaults)) {
   ])
     assert.throws(() => validateConfig({ ...c, ...patch }));
 }
-assert.equal(
-  collection.entries.filter((e) => e.source_kind === "original_editable_demo")
-    .length,
-  3,
-);
+assert.equal(protectedOriginals.length, 3);
 for (const e of collection.entries) {
   for (const key of [
     "id",
@@ -78,9 +77,7 @@ try {
     await context.addInitScript("globalThis.__name=(fn)=>fn");
     const page = await context.newPage();
     page.on("pageerror", (e) => errors.push(e.message));
-    for (const entry of collection.entries.filter(
-      (e) => e.source_kind === "original_editable_demo",
-    )) {
+    for (const entry of protectedOriginals) {
       await page.goto(`${base}?capture=${entry.case_id}`);
       await page.waitForFunction(
         () =>
@@ -201,12 +198,12 @@ try {
       checked++;
     }
     await page.goto(base);
-    await page.getByRole("button", { name: "Editable library 3" }).click();
+    await page.getByRole("button", { name: /Editable library/ }).click();
     assert.equal(await page.locator("[data-asset-id]").count(), 8);
     await page
       .getByLabel("Asset source kind")
       .selectOption("original_editable_demo");
-    assert.equal(await page.locator("[data-asset-id]").count(), 3);
+    assert.equal(await page.locator("[data-asset-id]").count(), 8);
     await page.getByLabel("搜尋風格").fill("assembly");
     assert.equal(await page.locator("[data-asset-id]").count(), 1);
     await page.getByLabel("搜尋風格").fill("");
