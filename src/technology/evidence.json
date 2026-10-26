@@ -1,20 +1,20 @@
 {
   "SA-101": {
     "status": "ready",
-    "sourceHash": "94aa04b0bd8d51441f680110f9b49c5886a171fe33d2a06ff5d8b11e6b4083d1",
+    "sourceHash": "16af8ba5c3f6fc37bde8ef2f8658e6142f96fd590c7e4d3f0606e4880dcc8044",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "recorded-live; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 56199
+        "inspectionMs": 988
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: false.",
       "Physical Safari/iPhone not tested."
@@ -24,29 +24,29 @@
       "gallery": "media/sa-101-technology.mp4",
       "detail": "media/sa-101-technology-detail.mp4",
       "sha256": {
-        "poster": "8afdbbd6971e46caa2a69f32b440dc48748c4bc1d66769cf64b9005ffcf4d28f",
-        "gallery": "5d26c91900b0d5bb3495324f50d404a9cfeda7502308df4d5e0aa8dbb72d5e17",
-        "detail": "e1706ee15e2da89eab5859fc1536c012a1a2ade6e223677247cc1b97ce1c66fc"
+        "poster": "fa3fcd5fa51a29af7969604ce48da10100ba26004f6c67761d54cfb85bfc928c",
+        "gallery": "9afb92bdabafeef046be799f075095b72fee6777a477fbf0059100529d16555e",
+        "detail": "7b070ac323f4e608638cd88bb9713bacf5452701a04a6b9d1c67268ca1002b7c"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-102": {
     "status": "ready",
-    "sourceHash": "66c99519e98bd4d99b909853d76419fd660256a0edfc984f4d9d9b429cdcf5e5",
+    "sourceHash": "b583bcc764f6f1a1f7664f1b0b346bc119cabce864086457dc618683c59aa988",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13393
+        "inspectionMs": 884
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -57,28 +57,28 @@
       "detail": "media/sa-102-technology-detail.mp4",
       "sha256": {
         "poster": "f4e990b5d5bc2828e5b50e323b5ece2942fdc6033bdd0ece98d7166d8ffd89a9",
-        "gallery": "bbceebfd69ceeddce8726b75cb6bf801fc8b03c6f11d4cff868ce7cfa25b85d4",
-        "detail": "80a70e53ce4ac9b288af9a4ea8ce8d6c1b713ac8005173d247013af356ae6e91"
+        "gallery": "2f1f3c8130d02509f0ed72b86364bc46bd5aaaf653be5f8c8048e8e9a465af42",
+        "detail": "0164b8c1c93a27957b99188e68a0e0d3cf0f8f2ffcb17fb3148d86dbba86c081"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-103": {
     "status": "ready",
-    "sourceHash": "d4179bb0e2dbbea129ae64afe867a13c9c955a878520110317ec3c060f15053b",
+    "sourceHash": "d3c356c5e1770d66e06c71cadd94f38b395aa01e2679ee47b4541b495f8d1e18",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13482
+        "inspectionMs": 813
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -90,27 +90,27 @@
       "sha256": {
         "poster": "708b26f5772df84f4502355bd19982cbe6e4ded07b2aa288795918c0b3348cce",
         "gallery": "fe702d329119af7aab61c287dec5439f9a88e61085a197f8455795167cda76d6",
-        "detail": "7f3e6970c7d0e46c9111dc0d907ccef44f7a80843dcb849e9c1aa08b722cc77d"
+        "detail": "5a97080b66083de1fe86a7ee1399856a5609fa3f3b8f8dc63c613edea31217e3"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-104": {
     "status": "ready",
-    "sourceHash": "617f7f6a0bdcee291b78c6ce02747ff66ed8ad4ab281d515a2da2bd514fd3f30",
+    "sourceHash": "6ec3058f9881d86f481b0227af29352cf64e293b6629840cc32ca6551fd67ecf",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13298
+        "inspectionMs": 857
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -122,27 +122,27 @@
       "sha256": {
         "poster": "7cd2966d735195d62bfe129a4a37feeac4383379a720cbea7101730d17182a61",
         "gallery": "7aec7646e146ef445f3e4916f315f93fea09557877a3c00b617550f33c36794b",
-        "detail": "75af2024f0b979829679435a6c7cfeecd8cd086e1f5a51e3b9192eaa450b2535"
+        "detail": "8042b2aa2c26446f818099d18f4dd06788ae7899a41fd7c76e627d711842c99b"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-105": {
     "status": "ready",
-    "sourceHash": "ba0a650df05562cacb99d6c18dd7670b9d5aade2b70201a21f8e8ebcf3a99247",
+    "sourceHash": "6045a751616912dff9e007c97c4a176b7a453d69365cbea2b264a053d3e28502",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "adapter-required; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14193
+        "inspectionMs": 816
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -154,27 +154,27 @@
       "sha256": {
         "poster": "c6fb804ac28bda3d9fd1e8f48c7637e7fc42d68a7a154690201f92108f35416c",
         "gallery": "8788dbf1930e8f0ff50848a735e2759b66208b3f8a01adc7b6bbce40c674ff37",
-        "detail": "90ba1993c2a97172f6a5d967e48934a597d705b6a75debe5bb44b3d1436169ab"
+        "detail": "a352de7a47ef9ee6ab6759f1aaa1292230b3becff91627a33b73760e0ba282ed"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-106": {
     "status": "ready",
-    "sourceHash": "94b26f39fdb57ba9a751e54932b572814cb059ee23a52e415efd7ea6314e11a1",
+    "sourceHash": "4e6f3cd6e36aee11951c17b44e74df6ee5ad96f211b8adc2f4aba54e5bb3bded",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "recorded-live; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 17457
+        "inspectionMs": 910
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: false.",
       "Physical Safari/iPhone not tested."
@@ -185,28 +185,28 @@
       "detail": "media/sa-106-technology-detail.mp4",
       "sha256": {
         "poster": "a36e8650ff8396b56d73cd20299c7de48eca067d2ca4ee9bdf844bad961e966a",
-        "gallery": "bb463270e23003c8ff23938a48d1a33262d2276790a59895b0d5bbf9e441c867",
-        "detail": "99a6b7fda0869010782226fd6274abfb1c12b3fae0d684f203f4b89b039cbc78"
+        "gallery": "f3e19c20cbab28921fc566eb5014b9c54ac898f9c2f7df11dd62acd3fb646c6a",
+        "detail": "638a73a97a2784a959aa4daa42e2e8fc48bd49fce66f11bd4f40ab6ab610acb0"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-107": {
     "status": "ready",
-    "sourceHash": "b6ad0240207c873a090bd6d3e39b0adac30f582ac1476eac8a3599864d8f175f",
+    "sourceHash": "ba2bd948427eda605cc231bc7ee81b46d5502e21deb62c4adea9962dced71737",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 100753
+        "inspectionMs": 847
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -218,27 +218,27 @@
       "sha256": {
         "poster": "eff3e96ca9ff5384960171b0c1032079f474c2e07239e897757454ebe570d734",
         "gallery": "d603f5a10afb2913a937b7d5965f9aba9910a8a51060d8158b36448829b86be8",
-        "detail": "20fe9574f7ed3be3cd6ab31e0c60f0991b643aff68e292c856142e4f33a2e183"
+        "detail": "a92281c3f7016a485a33a721c51497817ef678d4f640a92db44b9b7195e10cea"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-108": {
     "status": "ready",
-    "sourceHash": "05074250d7ce98f8bcb576f32f10f30fa84c5bf03a939bc790c5266ebaee7fff",
+    "sourceHash": "2d502c8d03798d6637ec57a9a8cf31c47e1a3331f4ef7e9c8168294d3b305bc7",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 15609
+        "inspectionMs": 928
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -248,29 +248,29 @@
       "gallery": "media/sa-108-technology.mp4",
       "detail": "media/sa-108-technology-detail.mp4",
       "sha256": {
-        "poster": "11d8de11159d4dedbb86afee1dd5e6e8d292c83c370548c8250426511bb48561",
-        "gallery": "db8879d59ce89553a4a710f8807400f133bc13314cde0957fc1cb245fba24c5e",
-        "detail": "30ade7c0e143500886d685a52386c9bed516bfb1ddcb1131fdc169522d7e8111"
+        "poster": "74f2fdf841e5034edbaec9f30b29c1dba498bb21c9ccbce0da94b2dae59e8dcc",
+        "gallery": "38e8d0941e1b05aa54cad0221dea072e937b054fe75ad899ac783607dcc5d40f",
+        "detail": "47bfaf204fdee30748a06d2c803293569efe93b3ec56f898382935ac48bcc7de"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-109": {
     "status": "ready",
-    "sourceHash": "f3e075fa0684c700217a83d61c087bb11a3243b7222be00f8cda9083f7ed5a5e",
+    "sourceHash": "e941a451ab4868cb34a3d397aeb0aa5b6f52d8105d4d318f09346918471434f6",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13140
+        "inspectionMs": 847
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -281,28 +281,28 @@
       "detail": "media/sa-109-technology-detail.mp4",
       "sha256": {
         "poster": "35aef5adfcde6fbaae864ce80e9548fb5f7cabd192eed2f3c6e95d181b2f7d29",
-        "gallery": "ae22f366343869bf53519e98c106da4c819c699e67ecafef5303ed91d374e37c",
-        "detail": "71b339af210682f28397b6dc7a491222c801ddd2d890ef880efc47e1051c934a"
+        "gallery": "b498d0567237c761d141693f94c394b73ab6e435556e294d3116d29899aba176",
+        "detail": "bb0e3ddc904b50e27c8b489b6bb1ee1d8181ec1b52225fc847e1b036312fbfda"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-110": {
     "status": "ready",
-    "sourceHash": "3f89030d1ebf867b46e5fdebaf2f27b917ea85dd5674a0d67de05b073303f48a",
+    "sourceHash": "1cac9cec0779eb31137d64bbea0a350d3e71179ca17017fa222cbd02dc2d7bed",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 100427
+        "inspectionMs": 882
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -314,27 +314,27 @@
       "sha256": {
         "poster": "9f9d451055bf155d88b102baf8ef5b78eda13b45afebd49d66fe22ca5c1251df",
         "gallery": "3a5ecd1ca23d7baa720b125c49b1761bcebbf1f7bac5aa397b8448f711d50779",
-        "detail": "7b43834be3600157b9aa40e22e0b0a37a579978a77657e2b088d98f27ea37612"
+        "detail": "f2d2f82c8a920be36af0c7f23e74b5291192141381ab522db86c8c7bcfc5b681"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-111": {
     "status": "ready",
-    "sourceHash": "98433ab91f167c2c380c799588daf10bdb47de7405cd6451fb7c1febcbf9b250",
+    "sourceHash": "36b593b11c1dc8ab4c132d2926027e02ad56546e1a1d3acadd58ef87b5199fc6",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "adapter-required; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13385
+        "inspectionMs": 845
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -346,27 +346,27 @@
       "sha256": {
         "poster": "cc944755cf2482ed57f21f5e3e6974b813a88e6717e5421ab968cbb19489bb59",
         "gallery": "b3445fda72fc9f6b60ed9ae0afa811685a86fec4cf910ef60c69484e82837d45",
-        "detail": "d24475abc39a31ebcf562955e78f68132be9792a28a8a8a8a71abdc123f04a62"
+        "detail": "3603097bb73dc46bf4eb712fc1dcacaf31a002847389e759aba360c1cacdc18c"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-112": {
     "status": "ready",
-    "sourceHash": "bea881ece8d9bff767cf2bc353e8892ce8efebb3d5a0bbb15ec1abc0d47fffcc",
+    "sourceHash": "fede054c96016850080fed60b9e3485b6ac552988f6923aea4dfbd41d11bb7c9",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "recorded-live; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 17441
+        "inspectionMs": 852
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: false.",
       "Physical Safari/iPhone not tested."
@@ -377,28 +377,28 @@
       "detail": "media/sa-112-technology-detail.mp4",
       "sha256": {
         "poster": "84016a5dd7a29edfe47db4db166d4265a4cf610caf6cddf15d0b06011b5b6159",
-        "gallery": "fd3daa721b98f85f5c454a10dfe4cd7213a984634217d6c13422c5819720fb15",
-        "detail": "eb32758c2f21c4e23241ef8bb037c57159a5d7d4d2cda22d1508dbcc0ebf28eb"
+        "gallery": "8c79b981e7310e9586eb35b12e0130d5d5b954812f063f0c546fb2783f7f1018",
+        "detail": "7120af5930c4500deda64c96a525382d6a020d099cb51aad6096b9150fbafe58"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-113": {
     "status": "ready",
-    "sourceHash": "bb25629b5e2dbd259c6d01dc033f44139ce3c51f0e20276bf53c440f96eae364",
+    "sourceHash": "1ab2f885e7fd5a62786c73d37f5c9b9a150ffc9b8ea5d63b9df65e5e5eb1836a",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "recorded-live; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 18210
+        "inspectionMs": 907
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: false; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -409,28 +409,28 @@
       "detail": "media/sa-113-technology-detail.mp4",
       "sha256": {
         "poster": "8c06268f85f58f0756adb55f42c7c2dfce238778b7693f9d83c260c15bf0c9b5",
-        "gallery": "025ebbf8441984c06ea1c4662a7e89a403700e084cc0732ecae658c5405b5908",
-        "detail": "e5a75c02bbf60ada6ec748b2f6603cbf7b0f6dc3f22cf5dc4da6b6aec02516b3"
+        "gallery": "d1b49cb366e77fae39f58840175633b0fd6d42b0fa6ccf65f4bdade4b2f817ef",
+        "detail": "1bb2a21b0f575541e1df764f69813537c911b1f270bbecf739088ab4b5c716f1"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-114": {
     "status": "ready",
-    "sourceHash": "fe5858fc9b247c63b92289b577c56c91e6bdfe6680fa4fc9431543b7d58901d3",
+    "sourceHash": "49b2df88d44ba34a2ec242497c451b0b58a14b6432a2d6b2e8a66b067ddfea9f",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13368
+        "inspectionMs": 837
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -442,27 +442,27 @@
       "sha256": {
         "poster": "b937faa6d31ad4a2f663464a0b589c080593aacb8a889537384d1ea9098c9db9",
         "gallery": "2859af36331c68b6cb58620694c9954c889e61bad149b1e6a960451f24b1fe22",
-        "detail": "d307f132d832888f48582a9069a4cdcda2b986c29cbb481199f48e6b56f6b97c"
+        "detail": "706008768c1c7f070f2e578248f99f18d375f7a4e46eb6dc5594c49b2f668999"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-115": {
     "status": "ready",
-    "sourceHash": "958cde279b08073d6375b24994d7f89adf7535b48787daa70b6a604498f35d47",
+    "sourceHash": "7166988b74a48c2b52b71680fe058515960c43c750b7f8af61db3d9ee4080d02",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13524
+        "inspectionMs": 835
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -473,28 +473,28 @@
       "detail": "media/sa-115-technology-detail.mp4",
       "sha256": {
         "poster": "e4d167fa66832c98223c52546bf9a5079c029258af649e7ad5e176713e47947c",
-        "gallery": "10a39623ca9bb9a3838b6ebce44bcf70e3d7c6c7416318221eba63acfacfaa49",
-        "detail": "951e400626233945d0e2040c5e20ca8513457ac5aae0c49770401c448d016dd9"
+        "gallery": "b015ef11cd9c65f195d681e5c64608015b60d6040277a10f0f4a024bb3790309",
+        "detail": "13159189ce26b7db146362080c30971b3955aacada15d3dd16c0abb487a9bcec"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-116": {
     "status": "ready",
-    "sourceHash": "70059e0652aeb2f05a8c005a142eb0295c3c417918fe067cbf49aa44cf7cc4da",
+    "sourceHash": "a358db8d741f4283128a30aab6e4bc6241578c0561e9010a1104a16cd1f00e49",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13160
+        "inspectionMs": 841
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -506,27 +506,27 @@
       "sha256": {
         "poster": "21677fb98b520912501adb7c3ba9dd1dc57e3eb54840cb9ea0b343e70376f545",
         "gallery": "6d07038792c29099e1f1e8ff580f1d6e9dd31c8b3e546ec5e32c2751d1f3836e",
-        "detail": "6eea393e7749670a6bc089864528fd3911708f42e7bfdb7d6a1211a4e69ca254"
+        "detail": "4cde344f5d66c5f57f6afe59bc7cc98b9d208aa7e71ee1a0a014e45b8aea43d5"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-117": {
     "status": "ready",
-    "sourceHash": "450affe37d536fb3642eb320c4ec9bbe9317997f3aa0aaf7a34a02bd66e6cf6f",
+    "sourceHash": "4ca435f3f423c2519b5efc0dc7f22146f3b1ce97ee6bae562f90580cc37dcede",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13412
+        "inspectionMs": 878
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -537,28 +537,28 @@
       "detail": "media/sa-117-technology-detail.mp4",
       "sha256": {
         "poster": "066d8c15e2f81bc844fc9918db28496846fa83f54b7a6c23e91183fb7763f1e9",
-        "gallery": "c9cb09fefd3a3da0870fed4afd15f8b526ca00ea19d556877c1d5eb68f814423",
-        "detail": "ad8c011fe1c60ffe96635c57dff7ce7bd58969a92cca47041be06afc157e4298"
+        "gallery": "279f6156126bb45fa38394527421f8197a1c93d518baef423bb13db28459b4f5",
+        "detail": "6744627923a24c05e2ca96dc5a163b875eb2f1234dcc91096c99a85216c3f2a0"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-118": {
     "status": "ready",
-    "sourceHash": "e2e2aa1a53ef0b3d9029b781329378aa805c45ff73d70f4136ae6652c1a046ea",
+    "sourceHash": "b64bc630af2bd77368123fc3e60bc4421b9c9289a58ebdda1fc4ab552d51c37f",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13165
+        "inspectionMs": 1018
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -570,27 +570,27 @@
       "sha256": {
         "poster": "908424955f19a26235c3a38a491c9a6e3102f90057a7d718194097ac2fbd15a4",
         "gallery": "7a179dba64973b39650e3947dcb583a13c93ec6c478eb096353dd672f437643c",
-        "detail": "85d05f2defac378945ac1f6d1a33290c1b702f90e17de611130cc199178029cc"
+        "detail": "638de7e372e83957c8fabf68f8e8c912af4791bdc7f8681b986f98a6b759d2fc"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-119": {
     "status": "ready",
-    "sourceHash": "4fb48d8c9930a5c6e0eba4c67380d8f9039d17ec5af21bb4fd031dd2ceaca8f2",
+    "sourceHash": "1943e20ecf6c2c0694718ec120b028e9931e3721e239f0f12734e8e760373606",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13366
+        "inspectionMs": 917
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: false; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -602,27 +602,27 @@
       "sha256": {
         "poster": "147f94b7294a142f53616c7abe1225ee8c9fa3e709ce5339ed74a2fa8e166702",
         "gallery": "eb8ff3c7134a1c20b963a2820fb161c7afd6d2cd580e4a817ba04b92c2aa1b7b",
-        "detail": "ec6a70378d8c59f2fd938b70f0290c16797142b47b2bd8bc8615971a1f8f753b"
+        "detail": "467b35415cee2acda320c70b7cf0742de08a4fd4e1c600f09f1ee7f39345538a"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-120": {
     "status": "ready",
-    "sourceHash": "c444929c67d597f8d1404a76f03a1d067bcb2b9f15c22ed55c70b5d137f501c0",
+    "sourceHash": "879d3082b5bc71294255b59114b6a51317650aeb4bee9d5c64be2b99d5824bd4",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 103467
+        "inspectionMs": 991
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -634,29 +634,29 @@
       "sha256": {
         "poster": "1e1e6e179ec590cf90c136ce25cc756e6b585703a8880a52fc2e95ee22cd218d",
         "gallery": "77b1c4dbb63bb58b9118a723c7fd3aeba87039a6bd48df7ad727589ebb3332d5",
-        "detail": "a17ffca7e9d3dbecb3f159c956d0cdf460e04eea49e70dd55b2f7a87c822d3cf"
+        "detail": "8429c0b908559650e737db7ea990a8499e8e776318fd7297608c050bdec45c45"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-121": {
     "status": "ready",
-    "sourceHash": "9f681b085fa4ac7174abbad2ad7f6d4b0317cb1ad6306f79849a6ee725dcfa7b",
+    "sourceHash": "8dc704dccc38c87b77938ac5ca87b5bb0c9f623e14efad893bd845558eb4c652",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "recorded-live; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 17830
+        "inspectionMs": 883
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
-      "Noninitial frame changed: false; repeated sampled frame identical: true.",
+      "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
     "preview": {
@@ -666,27 +666,27 @@
       "sha256": {
         "poster": "99c61ee93d2b842120a8d5c6ff2cee7384e1d7fc09026895ea20215194e79066",
         "gallery": "62d14a9c138de4f0bb417fe39dfa5247c18d48c29f50e245147506f14e90654c",
-        "detail": "34f883a2266b9696474285e058fbfc0b4b3081ec10c70195edeed485293137c7"
+        "detail": "1ddaaeec9dc2724e17ccef3ab40d08e14590a36da177ba171b53fd855ee24ea8"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-122": {
     "status": "ready",
-    "sourceHash": "00b69cf0586a72576ff2bdfb7d5cba528ee81fdfb4beec9f11b0a52d2ad7f296",
+    "sourceHash": "135379775e5c0139cf031b6e56a28bcbec7cf1bf455bf3f640642995e037949c",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "recorded-live; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 17898
+        "inspectionMs": 878
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: false; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -698,27 +698,27 @@
       "sha256": {
         "poster": "3bfe679afad5ec40ca14fa3aeb7fffb4b82243122d4f5d280cc7e3df19729c54",
         "gallery": "a06265c60c61e9adab4e6e832601f03371215c79425a90186c7bfd1f41e11b7d",
-        "detail": "4c145bd437a9d3c1f9f97a55174a59b80b73047ec5bee2c37329dbf062c8f972"
+        "detail": "f1f9a0733806dbd03506ca18156b3938aea286386fe81b8e2d2758147c425750"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-123": {
     "status": "ready",
-    "sourceHash": "2db215cf013cf63c6aa89727db70b5032ccf980b61e0b9cc6159a88b9caeac0c",
+    "sourceHash": "a67da332f6a3daba037e2f1180f4a1b5939eca0ad695e8ce76b25b181c8317c3",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "recorded-live; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 17806
+        "inspectionMs": 928
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: false; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -730,27 +730,27 @@
       "sha256": {
         "poster": "830be0649547859f8b3b557f282bcb62c77493501c68ee3227a046b0d5ddfe09",
         "gallery": "f9cdfce030fa7f26e98cf39c785e538a44c432ce411216fab5fed6569ac409d3",
-        "detail": "840594e7d7e09a5fc6f54963d29c49637645de6b6c1fc5f73cb4f2a9558383be"
+        "detail": "7729d31b426b085578d798a2e4f4a9071e439982ba25a92a446628e28d0b3496"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-124": {
     "status": "ready",
-    "sourceHash": "ebe889d28aeb832bfac7b57d38b74868c560f38930048c00380fcd031e2c33af",
+    "sourceHash": "8eebe84e476477881111bcff79ac36e2a4a6228fa9005eb3f4d56bf477ed883b",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "recorded-live; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 17984
+        "inspectionMs": 912
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: false; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -762,27 +762,27 @@
       "sha256": {
         "poster": "17bea2642308334868c4a047fd3aae9f68db1c33cad6df6798db1c413fc37e17",
         "gallery": "11a6a058b9e9957c636d2406e515638a4951be0f023093ac1605dca03318a06b",
-        "detail": "7c36a2dcc1188a42743c9b12c03250e2317166b2612856efc1c2c5d4de6d4809"
+        "detail": "11a50582626548bb3165bbb361cfdd8081e54f7ece76bed6fc24eae1613c5e9b"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-129": {
     "status": "ready",
-    "sourceHash": "2c468c0a1c75f83b4fdf9824acad3c5993ae9c05a9de99925391a59c80a17db8",
+    "sourceHash": "d8ff7974c90d9911139962d25f82fb062cdaa1b44816372177ebc39c268229bd",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 15442
+        "inspectionMs": 882
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -792,29 +792,29 @@
       "gallery": "media/sa-129-technology.mp4",
       "detail": "media/sa-129-technology-detail.mp4",
       "sha256": {
-        "poster": "346cc32e28abf8325e8c9c5788031f63b0791e6a991a4bde5298324f8a4b2169",
-        "gallery": "6a7b372828faee9f66e0131de88553032d1a8dd7f1bea20ddffa169853ef2e92",
-        "detail": "51e5efcf13908be0530894e30ce9a3cd5676caf18f9f59124912bf23802d229b"
+        "poster": "cab84f3d0a5bccfbcf3d976919ca216996ec86bcca5b8c08f3e04f7112114958",
+        "gallery": "8b9b66addce804db34e8f038f00e747286096d6b9e7d2fb1fe33ca1fc6d6a28f",
+        "detail": "e1a57a3d71d39d7c5ecc548e1de3aeaa6ca3560a94a04d270b87c60f921fbf6f"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-125": {
     "status": "ready",
-    "sourceHash": "1831fb609ccf5bb25fb003a6646f5446b8759bb4fc435af630010ed49aba9185",
+    "sourceHash": "f3c90a4b86b63c22e174a7c97728bb891905a004d65f17a87fd5296fa783c6cc",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14259
+        "inspectionMs": 845
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -826,27 +826,27 @@
       "sha256": {
         "poster": "c7702cd8b426527f327d8c34952c2aba6f83ecb139234179778d093719e096e7",
         "gallery": "14c4e685e49e48958d7a63ea1787321780f1a730917cf725a9ba37a8a37b5450",
-        "detail": "45da37e22e1b71aae743052d1349ed100388afc088fe5a31d9831e5c3e5ad8c5"
+        "detail": "13ca1dd7fee833eeaa316f877829e8ed83241c9b295152f81423bc7fe382bf49"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-126": {
     "status": "ready",
-    "sourceHash": "6f6e0da3b76a19b67ef4e8728fe09a1f30b40c32b1066360e2921eb47bb26938",
+    "sourceHash": "a5faae27e45d440e2699da206077d10f66d225433d40b3f733550f2b4f7babd1",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14000
+        "inspectionMs": 848
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -858,27 +858,27 @@
       "sha256": {
         "poster": "2e8ce0bd7af31862b94c4b23ddb9d2afaf64a76014400bbbe20546161965f5c2",
         "gallery": "1aa8c564e222ec9f840f2f66625156fa097f19bc6481ed7d9ad115d3b95af76e",
-        "detail": "f692ff3c98e579ff3a22ef3827ea005588bd9e332e402b6251ca69ee53fa8322"
+        "detail": "9f50b5eca9f421eb890a67806c54e555c7e162d0f161ba545a29330912ef6105"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-127": {
     "status": "ready",
-    "sourceHash": "2d1610a29c2d992a9d9fe65deb9e10d37508ce4fc1297b4d88b8e2e13acecf13",
+    "sourceHash": "011450a69cd11411c76d30e490614a4a6d230c0a39ceabd7426c43d533cdf832",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13996
+        "inspectionMs": 915
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -890,27 +890,27 @@
       "sha256": {
         "poster": "0b2ac32970b62f4cd5d4add59c57aab7df932b0d6a529e0ced8d62ccdfbff4b5",
         "gallery": "2f1736fbc3922f3f02d94ee2ddae963734f29d54ee7a784a45a995a2e404f7b4",
-        "detail": "e3e76442037c7b6ce3c64f3273f0b7edeba61cd20b1513fedf9f059eb99557b9"
+        "detail": "cabfd718cd9fefa9476cddd1e5ebc8adea602605b7acd28ea83ce53a44b20dfa"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-128": {
     "status": "ready",
-    "sourceHash": "f42643b92a77b5a74348944c7f9589eb71f0d67bff188a47c107c7916a7df735",
+    "sourceHash": "00b1b412dee1e85865ac6abdcb1d37a8dd3c8b970c0ff77c3a4509b1b6f733fa",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14512
+        "inspectionMs": 873
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -922,27 +922,27 @@
       "sha256": {
         "poster": "9e99b4142f0f90cf1905f127b269adb86db8eea770cefac9b58be4e9de0360d9",
         "gallery": "0ea13e02d61877a2b3a5405f6740299e20c55f3dec4c86c7ab243127ccfb2914",
-        "detail": "a73f5cba4d5d5fba5a12f464d93f2a2f0bb5fb81cce743874e6977ff6b42eb89"
+        "detail": "80ac81f1550fa6efc672d2b9887f316fc996813cd59e8af81498bcb30b473f7d"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-191": {
     "status": "ready",
-    "sourceHash": "919f5d36b69029442e4744f6d645f9642c665a739a14a982a4a77bb475a20faf",
+    "sourceHash": "fb04f7d9a0f39190441455494f10e26f59f218b9a5d79cdcc668eb66739e5419",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13820
+        "inspectionMs": 988
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -954,27 +954,27 @@
       "sha256": {
         "poster": "9a1f5cdcd1b67769ce81a2052a45136c0587b75e90120f28d79c6e65855cec80",
         "gallery": "a90301ed9e28b7d0873021259b86bffe2a121707068b5f5fa7140b31db52ab31",
-        "detail": "c29e2cc4822302f9b6cc1db3a0b3d50645058a8269a8faa75c54e72d0df02bd9"
+        "detail": "fcf06b68b210cb2173bdbafbaaa8e5b785ddde27a75316abc838e91cd6f07c0f"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-192": {
     "status": "ready",
-    "sourceHash": "9bd20c5b17612e3c7b04c45c532e1a12700b1606c0f170e0431946f0768e378e",
+    "sourceHash": "a64ea4591acd952ca5ac1862e9239fde5e1093619f38e9443d632f55a8088039",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13395
+        "inspectionMs": 889
       }
     },
-    "date": "2026-10-05",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -986,10 +986,10 @@
       "sha256": {
         "poster": "fca59fbb3e6295170f351a29884d489b853774b7b6dd4a277a4828160344df3f",
         "gallery": "509024a5347624092f506571c64cedf31ee45a17f7e2c4c4386ecad3f39ecdbe",
-        "detail": "4803276f643b9712ca20b8591f17f83e71ea964e22c18770aa82e8be2806c9b0"
+        "detail": "c3a7b38184eff35743ce6c2f5f617a518ab58b01277c94fcac33b1e2753c498d"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-193": {
     "status": "ready",
@@ -997,20 +997,20 @@
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "sourceHash": "7d2b72465434262b504bbb13b369015196f6feb8f77db93b59172a1ed515793a",
+    "sourceHash": "c9a8407175757ef7c7c33510776d5461f97860d8412da86172015273b5d1cee0",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14085
+        "inspectionMs": 984
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "preview": {
       "poster": "media/sa-193-technology.jpg",
       "gallery": "media/sa-193-technology.mp4",
@@ -1018,27 +1018,27 @@
       "sha256": {
         "poster": "55bb716c1f2cf207e12fe79237f3b0e9adba1c45b243114e3f1debc69ca625d6",
         "gallery": "184f9e904b017197e4aa8b03c66a1818250f3ed49a658dd07c7d4a1c51600385",
-        "detail": "66aac9514d1125b6d5dc7bf4a9d7677e9ec7df881345de5eb8ae78d7c7e49224"
+        "detail": "2b88fc55ecc9f0d5db13911ac50b94f247ac03b578d8a3fb06f8ff04537110dd"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-194": {
     "status": "ready",
-    "sourceHash": "3c2ae36f8e21436a370d2aa70cbd5db46b41ef39a3c02bab78e7f0c2d0a2e672",
+    "sourceHash": "a492bf89fa217c8d314a5e99c75c8a05b02c5bf1dbb22cf846f259e43177d678",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14188
+        "inspectionMs": 1039
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -1050,27 +1050,27 @@
       "sha256": {
         "poster": "9d60f8530893730aaddceb02dadb9b94c3591114abcc1deee6152b7342ac9a1e",
         "gallery": "ac5b8ae6922c2c363ea44daae94998edc64605583eb7461a2f732d8ac3261459",
-        "detail": "ac43f2a27cbda453c9dac59497a3e595dde5196ccb93378c8dd2fa22dc197fcf"
+        "detail": "79f0627cdb6f286a912ee12877d415eba63ecbc3dd38740e958182ff72f9fca5"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-195": {
     "status": "ready",
-    "sourceHash": "b63fb63ab9863774fd6691e55fbaf2a1c71e3c098bce70c6912a6cd0395fd858",
+    "sourceHash": "ee7b5c69c7913711812129b5d6cb0c32fa3355f405ad9608b4b60c349f028775",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "video": "adapter-required; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 26513
+        "inspectionMs": 1111
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
@@ -1082,51 +1082,49 @@
       "sha256": {
         "poster": "4dfcf528999579371536a56e45a56cf862861da6e4d232975155ebb1d2c79dba",
         "gallery": "91bb7edd5b97c26373450bf4c1b323cb2b0a2398e02e53cfa1e147d963f1bea4",
-        "detail": "39d36070a2cb278f47d94b26e0e600a3c13e8b1493a363baf6609558e8e8685d"
+        "detail": "697f3ede39226925273da3f71925009e2bb3ac3ee2810323728dc78881c7892b"
       }
     },
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-161": {
     "status": "ready",
-    "sourceHash": "0ea1e3b68e1adbf89a720d71688bd88c8b95521fefc04af2d2b45daed6b41a13",
+    "sourceHash": "a67c447ef62baad861a599e344a60071c1812baf5ffed56b6256430fdd0a0c14",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
-      "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-161-technology.jpg",
       "gallery": "media/sa-161-technology.mp4",
       "detail": "media/sa-161-technology-detail.mp4",
       "sha256": {
-        "poster": "974cc1154487df305048ded9408b3342bf5442ca64a580571eef8df4e1c9c967",
-        "gallery": "d6df73c17386baf5aff8734dc1371d4ef0024f5b79923c23713c9b2c0faa4246",
-        "detail": "963cecf35114163fe1c98014c072825ca88335259e472a386db674960fa95eeb"
+        "poster": "51aa42f8a8881fa7e03ed43eff70cad25be6421dd8a8b5bde407e83b08ed8267",
+        "gallery": "fb7a0d3c7f663ec2ccc4d6c44c158a5f35989d6338a8ed2673eee90c611472ba",
+        "detail": "471f2845359bfbf9ded51dc35953a6493e3f333e52334032a1ddcf763aa78564"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 29763
+        "inspectionMs": 1395
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-162": {
     "status": "ready",
-    "sourceHash": "c41c701593d905585c3c510ad1a0e835e6eb138989ec172f80bdce27c9e7f0eb",
+    "sourceHash": "ed36da7dd3bda533344798e00c243c3bedb3f4fa1411dfc730bdabdf0af51c1f",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
-      "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-162-technology.jpg",
@@ -1134,98 +1132,95 @@
       "detail": "media/sa-162-technology-detail.mp4",
       "sha256": {
         "poster": "5aee718d19468074ceb2074ae86c7b2ba6e9d50872b8cb49acddd227aedd1bd8",
-        "gallery": "c22d9482c82207b7aeca8c805678eca5d8435eda4fc9c7010afedc6bb78300ed",
-        "detail": "d5659c1feb91386b4d22d84da3d98d719c26ac83b7ee71dcb893c0dfc714636f"
+        "gallery": "83818a7980abf59e166a67f454703da0eb0f649bee4e364512f14f3551ab61b5",
+        "detail": "7fb6f1eebad187e202855cd09639342c8947bdfa3f84649c2084c3033ba2df9d"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 29759
+        "inspectionMs": 1156
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-163": {
     "status": "ready",
-    "sourceHash": "fce5846f2a32456cfae48954083d4a8586e8dd6a9dc7d71b2ed32f8e902b91fc",
+    "sourceHash": "d18686e35a993c516ee3affc77497d4ff004c340c7b8234b9775a14f0e7c15db",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
-      "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-163-technology.jpg",
       "gallery": "media/sa-163-technology.mp4",
       "detail": "media/sa-163-technology-detail.mp4",
       "sha256": {
-        "poster": "47491e583097715aedb52e30908e69e2f019336aa0bbf56fb504885fea785a3e",
-        "gallery": "33398fb9b17b26346b7a81fb9c364f5c8e502ae8fab349875743e22f83edfc4c",
-        "detail": "df43369fa50ba7c1526a6b81e94a8a27ff68768b6cedd6b87e5fa4eeaba6dfcc"
+        "poster": "4650dd41d98e5a2533a0ce74dac3a9c7097a82f3230e4c93fb325b92e4d5cabb",
+        "gallery": "55972a4ad1868f1293dd9b66ef562f71ceef9fe9161cf2da47a39d5ea4a67da5",
+        "detail": "66ab75b9b12ea1c8f29b67c15b49facce6f564522a0931f2fa643558abbd7337"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 29843
+        "inspectionMs": 1420
       }
     },
-    "date": "2026-10-05",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-164": {
     "status": "ready",
-    "sourceHash": "2920183a1799471c12194f706e81cc55ada0096cfa247a364c9c0011bcda5d51",
+    "sourceHash": "57bde8bdd570ccbf4ee95a223e33e308873485d10a5017b05ce60699e6284f00",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
-      "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-164-technology.jpg",
       "gallery": "media/sa-164-technology.mp4",
       "detail": "media/sa-164-technology-detail.mp4",
       "sha256": {
-        "poster": "df7e9616222e1b00921e1e5efb6c38090913e45c8c277025557e650f510fdd49",
-        "gallery": "973c1929a4a93f5843c9b17c57b320f8cb4c10ad243e9f04373492fe1f822212",
-        "detail": "55cbd988823e34d7f42f63ca1f2a3be05ecc5a472a8ada93b3df6afc156de398"
+        "poster": "5f413bedca97a8b9319b248cce69416101c7ab3977f175e0b2bed871e106ef5c",
+        "gallery": "7a81ce5bf82fe774fa0fbc8d0f0f7ca787459b12a5d065f293b4d860b98b87c2",
+        "detail": "b4d03fdcd5c1ba090f236f2c48fde13a0861db33d7b892a9a88b36db954ddec8"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 1533
+        "inspectionMs": 1354
       }
     },
-    "date": "2026-10-05",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-165": {
     "status": "ready",
-    "sourceHash": "e06fb993c23fac5b434309c6bb4910f1c6431ad8502451cb6a519ba67bede487",
+    "sourceHash": "47fbdc17d39adf11d3931652692ca8ba2ee0eb591c507ed0c5a6692eff5ee2f9",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
-      "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-165-technology.jpg",
@@ -1233,32 +1228,31 @@
       "detail": "media/sa-165-technology-detail.mp4",
       "sha256": {
         "poster": "552eb76d788ad764d437216ac7cec64db992f4ece550fe04418970138022a4ef",
-        "gallery": "7d41c0e4c9daa82ba34945ed61e144dfea94bb65caf9d8cdc2e63a47d6369528",
-        "detail": "da09edc99c239ea85b21d5a970a3adace984a1d9f86588b54735a3a00d8a20ed"
+        "gallery": "629b92776ad56cf71944ceaeff5b344ba23336ed9ca5d2cc9f0f9c30275029b6",
+        "detail": "0fb2e2bdff894cb024e39057588a979b24b39057bc8947889c71b960eab0e693"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 31115
+        "inspectionMs": 1119
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-166": {
     "status": "ready",
-    "sourceHash": "ca33ffb6ab34eaafff1873fe7a63274f358c04bd9ee33a900e5c79523082f070",
+    "sourceHash": "7509438529343efc355128453b9e01ab97bd856f09eeef6aeb13b49f1381596c",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
-      "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-166-technology.jpg",
@@ -1266,31 +1260,31 @@
       "detail": "media/sa-166-technology-detail.mp4",
       "sha256": {
         "poster": "f128f63e06237fff2b6efe9f7735333beec90d1a92bfb7df50fc964b769f8e7f",
-        "gallery": "3b1576869eeb23f3038753be59797f3a65a70482e0af105560f8343316ab440d",
-        "detail": "35cd6ec9965d3f8d3a0722aaf6e558be94d7bfdf4eaedd56f59ed12b5e36617a"
+        "gallery": "0a736f117c3b6ce9e14cfa0726b2793c2dc97c5a5a4b0c2978179ef73d1c443f",
+        "detail": "8952916babaec4924e4405aaebdabb205537b10bc18f33892c68e11b21e8b2fd"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 29727
+        "inspectionMs": 976
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-167": {
     "status": "ready",
-    "sourceHash": "488bb9440463fa34c016b632248467e900bd859b24161ebd6fbe222946a4dfa4",
+    "sourceHash": "b0a2266136e9e871a1d0d8f297ceb8f1d60e87b09fb5ba18925bbd742a3bfad6",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-167-technology.jpg",
@@ -1298,31 +1292,31 @@
       "detail": "media/sa-167-technology-detail.mp4",
       "sha256": {
         "poster": "3c6e78b70628242a13885f04595a8712c82d57d8ea0af667285ab530b4f7eac5",
-        "gallery": "f707770d83ac43af8c570a771d073acd6db1b97a4927eeb7ed7067ee343cddee",
-        "detail": "f1531633bbd63e34b083d60b7db04c00078ecb67b53263533e9de2ca24d0726a"
+        "gallery": "129f3f145a5334079435fd87830714f7b78dd401ac29a92e3bb3eb16af4f37c7",
+        "detail": "c975bb21cf981ce5418beceaa8802a8c93ab5f883f5e035d2013793d5a0d14b9"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 29383
+        "inspectionMs": 1941
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-168": {
     "status": "ready",
-    "sourceHash": "8214048d6c3ea536d9acc7cd9fc712d089bffb5643abe83ea7d00c109c237aee",
+    "sourceHash": "84d31108351b74d9ee1b421c000602f697c49875bba10d5fcbeca11ea6af3ca3",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-168-technology.jpg",
@@ -1331,30 +1325,30 @@
       "sha256": {
         "poster": "89f1f53cc026b760f00c79f882f79100d1f58b8ba481fa1e565f317ed75deedb",
         "gallery": "8786275927e3eec194dd77800e3dd0d597b7b7ee8860a06de5d93d1421940324",
-        "detail": "d8f9c96fce4966e79b80b95eeeb573ab5e288a7107e7016ed65480a6b696266c"
+        "detail": "067bef2c64de9b5e6a00e54e1dda394b810d54e64ddec4f7216a6619fba12c12"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 30070
+        "inspectionMs": 1884
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-169": {
     "status": "ready",
-    "sourceHash": "54c530fbb812b7d4a6c4a6450316da0f3fbfcd16a124c041adac2466493bc747",
+    "sourceHash": "ac817de0f581755518c2b3657dce89ab73a5abaa499975351f8d42d352c771a2",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-169-technology.jpg",
@@ -1363,30 +1357,30 @@
       "sha256": {
         "poster": "7b7f135cb69784d8af2c94a7278009228ab37e099e95daec7a9313ce800a8931",
         "gallery": "430f9cdb1ce12ffef60045a259fa3f2f03ba2ce1431e14c3e2fc36efecf20cad",
-        "detail": "c52c384164c05a45ef46eaa9ae517d5e04dbb0271c7c081c4a417095394ecda1"
+        "detail": "313ded2618203a140b12d8fc31013b86e1a60a179e29cd47930bb6307c4282aa"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 31831
+        "inspectionMs": 1359
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-170": {
     "status": "ready",
-    "sourceHash": "f9931a052e2b2c569676b0528eef38e4f49027e1f8794f83a593b3233e87dc2e",
+    "sourceHash": "19d2e5df3a61b77aafb410f8e8ef92ac25d3d56f2cb29bcd0a66ff91383f7949",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-170-technology.jpg",
@@ -1395,158 +1389,158 @@
       "sha256": {
         "poster": "283ae457fe178ad8141d962b8317175a012c8c305ae52376be71855f5ba2117f",
         "gallery": "3bf03b4dcffb1e932c0aa37e99089acb60773496b087fb4413d1a623fda6d63d",
-        "detail": "1713764463c41cc306642fc5b6c87223201371918f97f494dfae3f7dd21d7b1c"
+        "detail": "5ce8dcf4761ed302eb60787adb026302302407e904c1ed5bfb72c9052ee3c1b8"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 38248
+        "inspectionMs": 1210
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-171": {
     "status": "ready",
-    "sourceHash": "37e3b156c931dfc16d79c8d7f1bbbc7f7ea4e0225e26df9a6fde04a86d9eeff5",
+    "sourceHash": "a3e5c9b8caa55d0e4154a897467dd735f9cee025ab5fd78c4ff6c0bdf717a0ea",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-171-technology.jpg",
       "gallery": "media/sa-171-technology.mp4",
       "detail": "media/sa-171-technology-detail.mp4",
       "sha256": {
-        "poster": "354ecf158a792599c70c23ca52c39862afd31cc0b68240160f9891b7d9a7fd12",
-        "gallery": "add1929c8a02900e9ae98b7bd5278ffab020e76bd4dfa99534c561ee703e2f77",
-        "detail": "df74b1f5491ffb7b29dbc1df18920ca18b8b699697711cc6f751bbf01bb38deb"
+        "poster": "9ef9a35a2ddbc96b6463157b363fdf31957b81b9c704b3637adf43e4b143433d",
+        "gallery": "13ea87997dfcf34c77b4e88dfb7cef5712a10aae0be9c45f3f801e6419653528",
+        "detail": "bd7ec54631090fba942825d9b305315cc97543ca4721c31b983298b6335f05b7"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 34197
+        "inspectionMs": 984
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-172": {
     "status": "ready",
-    "sourceHash": "b7191c3bb86b43d4d7180f826b79952c04c5a1aa068b2878a1371f4bff029fdb",
+    "sourceHash": "3f45af23e3df3b1f2ade458ba010a44b51742180453a6729f4e0a52a48f08c2f",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-172-technology.jpg",
       "gallery": "media/sa-172-technology.mp4",
       "detail": "media/sa-172-technology-detail.mp4",
       "sha256": {
-        "poster": "7495dcd1f2aa5428c8bdf801ae080b27e8606f5d739557a54247cfb9040faccc",
-        "gallery": "0712379cc165006182994d556e2d3f25ca6c7d230ffab7e93d4904188d285b35",
-        "detail": "f4445d16eba329b0cbf641064241868515456360b82a62a99067fb345677dcb7"
+        "poster": "25d549866e9f89adb13e229974e5347b1b35dc2b46ff06f8bf5d258e9e8a1ef5",
+        "gallery": "11b62f814478321d7faee3eb22ea4ddd98caae66e708eaed1aa723225bc3729b",
+        "detail": "2f9a541938b23b6f36fd5420d2c0b222bd30cf7f36bb325d09c6ba9c8774362b"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 42684
+        "inspectionMs": 1199
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-173": {
     "status": "ready",
-    "sourceHash": "1f374ff7ee8e729f484ee6a69615f2a2736e9f98b8f4632319b493b07312bb2c",
+    "sourceHash": "953389bf31cccf722027d8bd8fddfdcecdd3b6d2f7974220c5e88058d4bb0dbd",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-173-technology.jpg",
       "gallery": "media/sa-173-technology.mp4",
       "detail": "media/sa-173-technology-detail.mp4",
       "sha256": {
-        "poster": "50ded582f88ce3afc12e135060c1ab4e723f849288bef250f3a2dbc8b8d0e3a5",
-        "gallery": "897f539ee57d755660e2ffcad1acb1222b163e6df0b92075d3b3d395b2a6d551",
-        "detail": "4ea5eda8b9206b132464ed09dfbcf30acf3c6d0757d3dca1760c76283cf1ada5"
+        "poster": "0c9fdd6b9fc6afc2292b6ce1067f7907a58a8a76038e670000f0825b0ae0cfa6",
+        "gallery": "b7e6b09921edb87fc31117cce749a14cf7e1de3c59db730e697e6ed46f1795fe",
+        "detail": "4512542218dbda45a6b05390f5fe08a13ee3febd6b8503a27be2b20d22c11480"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 864
+        "inspectionMs": 922
       }
     },
-    "date": "2026-10-05",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-174": {
     "status": "ready",
-    "sourceHash": "4443965576ff2e2b27591866898cb18015da0d9f529714c66735d5e6b4367055",
+    "sourceHash": "9a63f67162d15d475a893a6cd09988101928c85ea59e4b6bea5b40633a3d1275",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-174-technology.jpg",
       "gallery": "media/sa-174-technology.mp4",
       "detail": "media/sa-174-technology-detail.mp4",
       "sha256": {
-        "poster": "c4dc016667ba11680f490c66d76bcc0e41079bcf58fa2718e2d07dc16435b545",
-        "gallery": "974130c78b72f638638cecce42033ea15cbd542b1bba0de32a26d3e1d2edd79f",
-        "detail": "f59c2a73efba8378a54eb3bec17788c781bebb245a2beeda5736d3fcb36661aa"
+        "poster": "ef47d1c25e010b59dff4a4db52c4a1657d9de1090f0294f80576947a870e775f",
+        "gallery": "eb3f7eeef3418e68f99e2e734b47d7ec5a448bf1318596db1cd5d2b4e1eae141",
+        "detail": "0644539ff63aeb5a90d0ff90477f3693738c1fbff2117dddfc432fcc146bf511"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 29312
+        "inspectionMs": 922
       }
     },
-    "date": "2026-10-05",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-175": {
     "status": "ready",
-    "sourceHash": "fd80134d33a790352889e82912e22398e3766bcaa10fc6cadca73ad70dcd84e3",
+    "sourceHash": "f8811ca4d0d1cdcafa2849ccf4990a85d226d89391148b018a171cf02ff4823b",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-175-technology.jpg",
@@ -1554,63 +1548,63 @@
       "detail": "media/sa-175-technology-detail.mp4",
       "sha256": {
         "poster": "1db78d78befbf56d92262adc6f63e37980b431e8a0e0d3689a328c9a8e3b01a4",
-        "gallery": "b74e74911722b50d16927e128a328eb0b93726063a672c50cb9b20464a75d1f1",
-        "detail": "455cde11967934938c546e5a4fe8c14a6101854e5fc6225cb40905e8404d1b40"
+        "gallery": "cf69a221a5397a1392a9d3b4f00522e02564b9dce090d14fdfbd70b41dbda87c",
+        "detail": "4b70257ca3d19129d85c89230f048baabde90e9a08a65745c8c37e66b27beba3"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 213439
+        "inspectionMs": 1093
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: false; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-176": {
     "status": "ready",
-    "sourceHash": "34ea400beb1488049c3f90d6336c92055f5046662386b9f124ac4e0459388038",
+    "sourceHash": "2d1633d58e4d9b97b4498b63518175e10d51c6d2e00856185027e783e0053c84",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-176-technology.jpg",
       "gallery": "media/sa-176-technology.mp4",
       "detail": "media/sa-176-technology-detail.mp4",
       "sha256": {
-        "poster": "7c8a34f4e6ae79ceae5f2416b7907427697f21b570778a8f96dcb0b57aae1c46",
-        "gallery": "e1248f1142d9f174cfd5560844c9df737e40b741b462a8dcca24c56af644beea",
-        "detail": "2d24d791ef3f79ebe973cc794a4aac99c5a99ddc6d29fb7743cc57a9665e79b4"
+        "poster": "af52c983ea82f8d510d23892b3a9eba40cfb58d5d3c3e0ab6fc12b49f233461b",
+        "gallery": "25ae7ff8243e0b43a7c16f2006600e23d3c61572df461dca910d4dfff258e997",
+        "detail": "e4f2806d12179f17bc8acef5c87d8be2fbfc3d8ae0b026f16b160e36fb7a8dc6"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 25961
+        "inspectionMs": 1078
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-177": {
     "status": "ready",
-    "sourceHash": "b747a3914b3bebd27ca7cdb48f2eab225105477b71e2e0c83f1f37c834068044",
+    "sourceHash": "71e17d98584bc380237431c6bbbad8c7acd13d1ca876433c226838738dc93d71",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-177-technology.jpg",
@@ -1619,30 +1613,30 @@
       "sha256": {
         "poster": "e99c4d6ea0e4f0f8d35510cd196190a5a286ec9ee845dd0410264fbe257b9193",
         "gallery": "b5fc509d31572a0be4a2f70ba63acc45fa1ef3f58868ccee85550f292cbc9727",
-        "detail": "6198c7bc1d8b91208f757a7a189bd99cbf6285016b17b06eb2bc7208bb1d4cbc"
+        "detail": "5fb188f75f3d8f35fab5fdd20c739bdb97d9b3159ea12c1bb16c56d8d2d4efd9"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 30308
+        "inspectionMs": 1174
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-178": {
     "status": "ready",
-    "sourceHash": "1f6fff28086a9c596db342cb75f75a5dc2a770c3b8a4b5abd909d5da038a4a23",
+    "sourceHash": "b96733ac625b58613e6e328a2eb502c9f6d0d9351b52de0d981415ea1d23a2e5",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-178-technology.jpg",
@@ -1651,30 +1645,30 @@
       "sha256": {
         "poster": "f505c2cd8afc864bf8954fa1dc7804388388dc00cb2a870c27fa0cbb5ecd9129",
         "gallery": "986a6a84ec57364a3494cae7489fb8086e789d8e6ea721875014888ce123f72c",
-        "detail": "cfcedfe26d7086c1fff281dccecba697e0354e7151b3227b56b274f7aadaee5b"
+        "detail": "6e6f33947d321937d6aa1d741bc780cabf4098d5c6c69ff4431e3dbadd00bec4"
       }
     },
     "video": "Representative nonsequential seeks repeat pixel-identically in the tested browser; no full production export or cross-device claim.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 107858
+        "inspectionMs": 1131
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-131": {
     "status": "ready",
-    "sourceHash": "02525dcbd59aa5e1eb8cf600753b0a32a4f01ce439ef42671d4f0db8ede29907",
+    "sourceHash": "2326f21af535d1c179a75e33eb3aa25deb75b4ef67f9b5d46b971de5e8a34b08",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-131-technology.jpg",
@@ -1683,30 +1677,30 @@
       "sha256": {
         "poster": "ef6b1a34b2dbac8541fa4df86702e0d8cb7a23b1eb5ce9d83ff52e294c090a6f",
         "gallery": "88a98c49fac414d6fd8a455a49a054144d47238283cc8b850e0b2fb0dd1149d2",
-        "detail": "bad625a9110d71f3990c142e688d2336a21e2f3ef00af74b9a704871cdc7d9b7"
+        "detail": "28ea42e4eb0a9e2b980e6cb8dbe74b44c4a55ad5deff1abc9335b41da669909c"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 816
+        "inspectionMs": 908
       }
     },
-    "date": "2026-10-05",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-132": {
     "status": "ready",
-    "sourceHash": "8e769f741733ad2063cd9bea29dc76a7840307529b20248a2cd06ffa20561c75",
+    "sourceHash": "310d49841ce63750831e2c34d7332159124fc0a8bb04f9f991786442ab49019a",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-132-technology.jpg",
@@ -1715,30 +1709,30 @@
       "sha256": {
         "poster": "f52d3eba832296058b9e12a4fc32a9f82c28b78407c2c24ac9df7f224d7ca915",
         "gallery": "5c365936ff32b1fb6953ed3b4f29b70b9ef0a56579c5c3bbeb5ab4bb6d38ed3d",
-        "detail": "51758671b21707f13bc4a86073092a6cf1c3255b4acf38153aaaf021bdb3647a"
+        "detail": "899f0cacb648eaf283ecbd8490d0bbe8eec468daaf2e02f4e4d4ba7f01eab19f"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13567
+        "inspectionMs": 858
       }
     },
-    "date": "2026-10-05",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-133": {
     "status": "ready",
-    "sourceHash": "5a033e386d37037271befca525575ddaf8609593991a5ae41ee074ec273adc00",
+    "sourceHash": "c65eaf0737339b26b9e4ad5083e883095cbefa6fcd43d8a776506da40fd3958e",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-133-technology.jpg",
@@ -1746,31 +1740,31 @@
       "detail": "media/sa-133-technology-detail.mp4",
       "sha256": {
         "poster": "25835fbf5819c51c01dfc146c30364c6c17c8f9847b53ca38db4d4b147d8db91",
-        "gallery": "51bd01b741f0f2f2432c0a4f1fca2111d8ab3f7f31eff29d27881bdf1016053f",
-        "detail": "c9e064876dc21ab8c2b0b6dd5ec5dafac77496f03172015206cb8de2fa27f263"
+        "gallery": "f3529291edb1694d2a9a07349d68290d767e27105eaa0d0c1009e0a0a98cf1c4",
+        "detail": "a2bbd840dafec3ee16047d8b49f78ea012c9937b7e68291579ec2c1575e25604"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13314
+        "inspectionMs": 1027
       }
     },
-    "date": "2026-10-05",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-134": {
     "status": "ready",
-    "sourceHash": "11aaa694813dadab6c70c40b97e5800da939ea5979e2c07a223ac4cbeef3c6d5",
+    "sourceHash": "ff872c4e448945cc9aa2f10691df3914203a0369f91db121d574a4deb4d2295e",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-134-technology.jpg",
@@ -1779,30 +1773,30 @@
       "sha256": {
         "poster": "2456887a5b12ea9062d0424adc4cf6c4ab3876762a9b6a9abd316f3f2b75fd6b",
         "gallery": "28a5e79da49eaf1cdf935129138d61b88fe190f5926eb13acb5ebde53040dad2",
-        "detail": "aab300f91c202253c9d59497c6d0e079800a6405722522770db86dd3004431e1"
+        "detail": "c465167df333caf5fdf0c3ddf974ea149a1f3310166a91eb66e1eebf6e041ae7"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 95477
+        "inspectionMs": 1272
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-135": {
     "status": "ready",
-    "sourceHash": "ebe92387054bab3a4a57bfd02222c59ffd5cdf611f990b99827895f92350ba85",
+    "sourceHash": "bf8fca39c4d24046e70d98783d0cf60cf967eb12fa8a2096e55333ad62f62b21",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-135-technology.jpg",
@@ -1811,30 +1805,30 @@
       "sha256": {
         "poster": "7dbc0d7dc784996a8872bc050ac1ce56f93234a1527a8b7f71a3945ccd5938c0",
         "gallery": "94be212fafaa2490699c84e8eab06675f2eae324306f18dec0e03f42dd29b9b9",
-        "detail": "5611022f506acb0983c9b8207a4948f837e240be40b369a62887b6c151645786"
+        "detail": "47a6d5480065d9b8a0288006ab044f3843f72dda90595c2592a37317abe24502"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13441
+        "inspectionMs": 968
       }
     },
-    "date": "2026-10-05",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-136": {
     "status": "ready",
-    "sourceHash": "249c1b712d48283266a809cb6e2eb1ae2eed812dd6df277789431445e938820d",
+    "sourceHash": "57432f67679bb68ef59587d9b965a3b38e5c430e5ab84fd08408a9ec21a27db6",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-136-technology.jpg",
@@ -1843,30 +1837,30 @@
       "sha256": {
         "poster": "df67abcadf080fd44917840dfce8b4f4657c125d480023ec3c210e200677dd97",
         "gallery": "cd70e47cde84a6deefa7f07081e906560b4f7b9d5c5be4901954d3288052543f",
-        "detail": "f7cbf107dbf6de010e431425e370a33c3408944098f33dd502676b88a02119da"
+        "detail": "5d7e64c1cef39bf34839183d53644fc15be550c84401203d79b5f398b4b6cbb3"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 29639
+        "inspectionMs": 968
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-137": {
     "status": "ready",
-    "sourceHash": "5b12ba45fd908218e89c32692d66e8a23b9fde4d587c9bd07f57b7c00b0a7a6c",
+    "sourceHash": "4d34137c9464b6e6544421bae77ce6adb4ffecbc65ff5567c0d92935105f29c0",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-137-technology.jpg",
@@ -1875,30 +1869,30 @@
       "sha256": {
         "poster": "99a3a090a907a6f2ad06b90455374a26f71d0981335606edeb30d28d1ba220c4",
         "gallery": "f5ef79bd2da177854c15dd6a95311058e9192acf16514a751965880c63725840",
-        "detail": "6edfda85070757be6e9a6ffe3e9c2ef22ff7d1e2092cce1e836dc0c4def3638d"
+        "detail": "8d95cf4159cd3c7b0c3ab6f03ab77aafe59b44a3f0667a1f1c30bc9b5d13dcdf"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13757
+        "inspectionMs": 992
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-138": {
     "status": "ready",
-    "sourceHash": "9372bd53c2fa3e809fa1646c0fcb51217cd987303e7afec8adb2f654d151cf0e",
+    "sourceHash": "94bfefc3dd14d0c14ff2fbe29edb98e6926570f4cc5889093a8375b5a68c898e",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-138-technology.jpg",
@@ -1907,30 +1901,30 @@
       "sha256": {
         "poster": "2b604140d2a0628427c66032d94349669eb5ca683fa8815843fec238ae9e8833",
         "gallery": "f27bf48528d2d22959fd7f0d070a8b3e43bcdfb1ad24a3a77094fed0d247b0c0",
-        "detail": "c6acb2dca5618ed31b11c1dfa83a467969239786dee4ccde5e4119e32569dbc0"
+        "detail": "4684d03b2eca45780a7ca1929457fd9230792cfddb64f92beba2daa68a358a6f"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13918
+        "inspectionMs": 1053
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-139": {
     "status": "ready",
-    "sourceHash": "838b425ad994f7b9bbdb1fc0547ee3e17ec56f7b7669e3fdf4c02a8174b52758",
+    "sourceHash": "54c6007c545f0b730cc3e685aac3ca5e74fb690ee8b25be7a133540e2bbc8fbe",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-139-technology.jpg",
@@ -1939,30 +1933,30 @@
       "sha256": {
         "poster": "5f0bfc90e01329cb68f3cbd1beffb3839ad961ad7ceb73ebea83a4f588147433",
         "gallery": "e6e4d4c93e4575819eaf8e8d1dd6f4b124bf39ab3c5491addd584120dcf44bf9",
-        "detail": "045b436c6cc2ff07a894698fc131348cdcabf1dc04eacf9e05996075ffc236aa"
+        "detail": "7baec7550ee8ff04c2013061ee27c056a5cc5f79c8ecd0c06e803b8ea1a19b61"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14551
+        "inspectionMs": 869
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: false; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-140": {
     "status": "ready",
-    "sourceHash": "edbcc5414cde41b65a7f9ec2a62f0ca3395b1115369fff85c0c8db71b0d12af3",
+    "sourceHash": "196500f2d03cae4010a149a1d6460f6c7e510467890b65e70d148f22ba2e2523",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-140-technology.jpg",
@@ -1971,30 +1965,30 @@
       "sha256": {
         "poster": "bac1594902ad6a3604047ebad4e9dbcbf8d039cc142236d24fa0978a29566742",
         "gallery": "873f5b8979bbbc9f858855840026170c95980a9b57fd98add2acf1d2d59871ec",
-        "detail": "675e4b21a175412f5d2e67632cb99095461da8b9dd0413ace17a0dd597dc9adb"
+        "detail": "b59205a5a605a3b30f907be2e4f46c18bb6b60bb1a81e1c3dae4806905510397"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 14686
+        "inspectionMs": 916
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-141": {
     "status": "ready",
-    "sourceHash": "ebc068bc6b345eef116957066ef8c5b6ab3f3cfa67d8423cd1cf9250b02709a5",
+    "sourceHash": "b8476a6e5c1bf15d3f97712012f6182b5ec3eb91a21c0dd5adb8c0e22fbdbaf3",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-141-technology.jpg",
@@ -2003,30 +1997,30 @@
       "sha256": {
         "poster": "2dbe6b3253fbe910a9058bb026082cf86537867ce5c1e15964c7c78006c2f9d0",
         "gallery": "c41436af77a640563133f4158b5d8238147ebdbe484d1d63f52652fa003468ef",
-        "detail": "c507faf5a400fa86cc453cfc96b7d83dac9e21d52fb5d2c612237d96d21e6c85"
+        "detail": "6abfa08528a24e018d46d5386718ce75c4580e0954a5e871e698735a8c53103e"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13776
+        "inspectionMs": 969
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-142": {
     "status": "ready",
-    "sourceHash": "e8fbe8959324f5cbe52bccb9c373dfdc443e1847452d23d8db46e5ea5dcc5cd1",
+    "sourceHash": "f845e2b3201473f400b2710eafdba8d6411d7e172d212780c2e013ad7d714a18",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-142-technology.jpg",
@@ -2035,30 +2029,30 @@
       "sha256": {
         "poster": "c357fa7560ad4c3cf565dd7e08c4f9c16501928c95ffe892013aeb6d5c4d305a",
         "gallery": "89c152c36dae19e5dcc388280b5ef653f04e63429acf05b8a750cb99d1143243",
-        "detail": "bd35db953b3e2e4fa8ca27793c8d1d21378a79c59e3ad1086540fe435b226b5e"
+        "detail": "2ad2b9470b76ff9c32e977ec602ef650322b68fbe2b076bac8226e2f2746353c"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13700
+        "inspectionMs": 909
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-143": {
     "status": "ready",
-    "sourceHash": "d3ccc789a951394a1434309af9a098358352624033ca05e07182a6b29c93d3d9",
+    "sourceHash": "d8ba9a92b1667d94f0c254bb064d891a4d941b81dd846f4b45fe38683e2bbc32",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-143-technology.jpg",
@@ -2067,30 +2061,30 @@
       "sha256": {
         "poster": "5a9a4f5d3ab05f5f23ef297b5fd5561103b4780116421636ca74dd424900f012",
         "gallery": "7929e7cdb3b4ca991cdd033bf5cf666b447c5a3776010871548602414b6dc137",
-        "detail": "8da843137b87e90441241a583ff448b619715d2860bb8c1de54b104f927c94fb"
+        "detail": "a3bab233dedae07e9692ba7a0682e97e5674dd5d764d9c478479df1f35c69799"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 15249
+        "inspectionMs": 1545
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-144": {
     "status": "ready",
-    "sourceHash": "e276b0a7a3152261e0af8e40f3ef22ce7d8a0078e88f3a02bf6b71dae8e379ae",
+    "sourceHash": "1bacd86331bd00ceb481c9e78e1983ac156f887ada44581a11ee8e2eea1db9d6",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-144-technology.jpg",
@@ -2099,158 +2093,158 @@
       "sha256": {
         "poster": "673f4073e2c43dcb0f6c4d7c868f1b59a69493b17d3582f4bbdd88e27124fc90",
         "gallery": "e104087afc1f3cb049d17e97f5fb32386c2ab2f3707efa17eeebb7f5e0bad784",
-        "detail": "1164670b8408190fc27fccd0c9f69e8f4e2ae658622e221277d9bd7c53d0b1f3"
+        "detail": "15ba6e3afd8ae9183c1c86bcca03ed489f28739a06bc3983fd080b15f84324be"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 15256
+        "inspectionMs": 1263
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: false; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-145": {
     "status": "ready",
-    "sourceHash": "24e7e0cfc6d357decee4f5cdd0826ace0092989ffbd18391d68526b2e6b7095c",
+    "sourceHash": "c24e3b174a3fdb2ada218e585828a777b6d0719ba765140b71b9440a82227aa7",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-145-technology.jpg",
       "gallery": "media/sa-145-technology.mp4",
       "detail": "media/sa-145-technology-detail.mp4",
       "sha256": {
-        "poster": "2a2fc286799549b6df5196a456bfd8f302f773d4c3f9b5fcbbb6ef4f7adc0696",
-        "gallery": "25e2fc4f28531c4452f74edb2a1ab9a48fdbd5f37186d42587ad08fa9fb35b6f",
-        "detail": "5da7cd854d9e0397dd57a25811aa016534271c301fa75d2fe89507a6ed6fc57c"
+        "poster": "103a80ec112f33b0d3f64b9b7a3e4bb865d50f596df6dddefdd0e4805f88ee8e",
+        "gallery": "09751e954674c2adc91300d393ecb486286331a04dbb4f74e99fae4e0f8e7231",
+        "detail": "65a6604e447accc69d565ce696d3665ebdec86248abf566d5963b863669f7c3d"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 17402
+        "inspectionMs": 1648
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: false; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-146": {
     "status": "ready",
-    "sourceHash": "ed4f72ff2000c2580d020d436e7a5e5e6f5cc8b9ffdf6e52cf1c7d365e96d86d",
+    "sourceHash": "049beaf19542921df6025926fdeb3bf42eb2d5ca665ae58e29017c5f219ec03c",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-146-technology.jpg",
       "gallery": "media/sa-146-technology.mp4",
       "detail": "media/sa-146-technology-detail.mp4",
       "sha256": {
-        "poster": "2e970e8f918b1c6a0ac359506bb373447dbbb6f8dc13c6d5d5e316dfcb4cd25f",
-        "gallery": "2a3387d81dc7efdefcad9ee4497a4517410ba2876e9b0f4f28d4697101c5bb58",
-        "detail": "d300ee71b85e09fbc7ea553d4a05fbdea7132d702afdf73520458e5d76eabc28"
+        "poster": "7c6d1289e7deb1a6b3d02cb0c3b43e61b9c16773bf54edafa00c04483943c2e6",
+        "gallery": "20d3cd2c022da7d9ac1942a5329bfe1dfd3458b2546c1a7056bb4d6f69a411c8",
+        "detail": "e2979928a2c31c37a66e934b23f8810e3f943202e68b4d64c5646d6997c22c0d"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 15048
+        "inspectionMs": 1414
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-147": {
     "status": "ready",
-    "sourceHash": "5b34740e3c8f685376cb87d5b2d06b6b096afb6a038b15d935e4ef18431a8b71",
+    "sourceHash": "96307ae094d44f5d7dff272a22ae08bb88ef02c00c02ef484c82ae08eb03a137",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-147-technology.jpg",
       "gallery": "media/sa-147-technology.mp4",
       "detail": "media/sa-147-technology-detail.mp4",
       "sha256": {
-        "poster": "3f3ec2dada7819b7eaebea6e32212dd9f59e3e0c16b13f05653c7884e055d55a",
-        "gallery": "ae9a52b1216de65174fbb5b4aa6daed39403a1f3fe88cd5f68cd72b8ecaec04a",
-        "detail": "3ce985146723ab7ba2cb7fec899c94ee07fad009ac5cf8bf181f26a25c22be4a"
+        "poster": "f65479b4546b7e52ccea67598f4f9561ed7bf642ec7b800eeb7715063be56cf4",
+        "gallery": "da683e94c643f63d5511d4b4b7f95f68ec3102b169128a523ab2619dfeabb916",
+        "detail": "7660dbb2400e76d51ee0cb4efb4950c69ded9bca1aa58c7ccb8eb4c07b6e0fbd"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 16473
+        "inspectionMs": 2485
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-148": {
     "status": "ready",
-    "sourceHash": "10281908d20c647d87442083b2c949d085c573832ae30443bd734c03d3915f56",
+    "sourceHash": "f7dda89100d6bf768758504cf1ea061b94c1e40cf857670a5782d16e44d62075",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-148-technology.jpg",
       "gallery": "media/sa-148-technology.mp4",
       "detail": "media/sa-148-technology-detail.mp4",
       "sha256": {
-        "poster": "7d8f811ce9a4c06213913c306060ed462a426d9fc50d83ae696c72a18b0382e8",
-        "gallery": "9552c6c09cf71d6e99ee220943184bb8f3746f6656963d79e352b012a10ee05f",
-        "detail": "f20312ec758f6e6c6c08988398c2e2d09c179d3a30e60bb48cb1b58402f8356e"
+        "poster": "08173bd46ed935ff716173203d7de15fd05e30ba716f3e658a6c87236b0fe8ff",
+        "gallery": "6bb71786f7082d8e1546566a79192d8f697a0e8d7fda49264caba38841a1a1d7",
+        "detail": "0b48eef5decb5e754ed32654543a9350bb6610611f7a51d407854e45e03f9793"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 16138
+        "inspectionMs": 2514
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-149": {
     "status": "ready",
-    "sourceHash": "0a0a226b68708b36707b32542091679a3a4ce7c25c008a5eae07e11ddf3cebbb",
+    "sourceHash": "2ac09ba77c5bd3af5d22704cd721654fe182043bf94a4145c30353610681a177",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-149-technology.jpg",
@@ -2259,30 +2253,30 @@
       "sha256": {
         "poster": "2d34288d8d1bcd1281e6226cc7fdbb82381ccce99d8a4a62707c0bb37917b8cd",
         "gallery": "5e3e63bf500770eadb70cfd61a9952f460901031bed737898abefda73c0f7e96",
-        "detail": "77a18d37195712914fc6a9148265fea2e67ef098e0f86741f91bb9446104718f"
+        "detail": "abb5cdc607d323324965ea0aa1f35437383f214a5451adb26264ebd536aa86f9"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13910
+        "inspectionMs": 889
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-150": {
     "status": "ready",
-    "sourceHash": "ca6f6647869d6b5d64ed8368f4feaf377bf1185a0076226d3e157b53dbbaa4a9",
+    "sourceHash": "ece9fd7f196e1b5521291634a2ab07d54a96d5509a823dfe0c8f30c973bff0b2",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-150-technology.jpg",
@@ -2291,63 +2285,62 @@
       "sha256": {
         "poster": "6ec9cedcef480ce1efac78c233ffa425b76c16f9e4a7ccad93451d71d4ef803b",
         "gallery": "3dae680493fc3e10ae0839669c70f8af63ab6bdef19e1b72e2dda9b1fe24d3bb",
-        "detail": "ca9eaa2911fdb602e1b65559586d19e26d252a67cf022c3ed571b85e3f7686bd"
+        "detail": "855695997d0d6b3d554e34b212ef3d861b22f617ebe4339df73eb14a2a401bd5"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 13515
+        "inspectionMs": 874
       }
     },
-    "date": "2026-10-05",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: false; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-151": {
     "status": "ready",
-    "sourceHash": "101a39ec96fccab4502d27d815d71a33b2fee01feb3f0eb97b6923896b800868",
+    "sourceHash": "3aea59f7e87703e72948a7edba116c8f2dd5992bb485935930d2b5465c5c578b",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-151-technology.jpg",
       "gallery": "media/sa-151-technology.mp4",
       "detail": "media/sa-151-technology-detail.mp4",
       "sha256": {
-        "poster": "e3f57743fcd4635878f2fa8594c07d4055423536ee7c0bab4ffa4fd378bd1e6b",
-        "gallery": "623c7804b446864a32dccae49ccb3a3e1f69e065cc9c348d58d4d3cd01b47905",
-        "detail": "0d5ebd664b974675f253c978ac2005d32261d4be78bf983dc3608c4acb2cfdfa"
+        "poster": "a164e8e4fc4be6b853dd6d8ed308c08aeaee6a598f2c7cc538582ab5104d3d52",
+        "gallery": "c3469c71de99ff6359fbce34466487dac18ef0787d4cce83a5e54f2800c9662b",
+        "detail": "4210e2aa441adb8472941d2af55fe4bbc587a464867a5222e252041289dd3be5"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 15055
+        "inspectionMs": 922
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-152": {
     "status": "ready",
-    "sourceHash": "bf2b279e8d40235dac8935c0b59cc93b84985a831c286b97544655a7bbc3dd67",
+    "sourceHash": "272fe5a5735d55cfb74007c1e9ec0d323adf6e7ef16abd47dcfd9503eb6f3f8e",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
-      "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-152-technology.jpg",
@@ -2355,64 +2348,63 @@
       "detail": "media/sa-152-technology-detail.mp4",
       "sha256": {
         "poster": "6dd49114d9074a6b01454cc7adc8be7470c7cbd8c2bb35b26f1f7dbdb21defd4",
-        "gallery": "8706c07a93ccc9e748d15425767b4d45614dba77ffbf711343667c8db9897e99",
-        "detail": "931f50796b235ccb36579e9272b13470c7a753d213a09158bc5039d9645dd06f"
+        "gallery": "048e8170577d735c635d454a579be361ea63bfde44c3f23a60795869a2237776",
+        "detail": "7d2ee3ff014a01313b1b11c757ffae082fe7845307dc614ab564c2f9c9ffc763"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 19631
+        "inspectionMs": 983
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "更新後已檢視滿版建築起始、中段、最大分離與循環返回畫面；像素驗收確認僅中央樓板位移 32 個設計像素，基地、兩組外框架與地面導線保持固定，前樑在七個時間點均未遭樓板遮住。390px 響應式構圖通過。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-153": {
     "status": "ready",
-    "sourceHash": "4ffbb38ed207747776d969c9eaf10271c4e51f036c4727557380c7a6af6729ee",
+    "sourceHash": "caefeae3f81a45a3a7a132fe3fcc37d1a7c6fbc9937608dba4dd875b3ae9d7e1",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari.",
-      "Playwright WebKit 26.0: mount, four seeks, no uncaught errors"
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-153-technology.jpg",
       "gallery": "media/sa-153-technology.mp4",
       "detail": "media/sa-153-technology-detail.mp4",
       "sha256": {
-        "poster": "f81c6359251625b8d127ed764ef9c4c295c5156fc6a947f283daf96beebf9606",
-        "gallery": "59c7b2d23c054dd85eba3debc93ecc7b5070991d5e13969b333485a80f8ac096",
-        "detail": "9d0845472b1bc503a515440e7c54990bd35fbe6b9fe20586bc3b06e6cdab5f25"
+        "poster": "b50c66052a1a63fec158d8e4c9818017ecf1bd801f34584e769822a8a3b4956e",
+        "gallery": "1526c926eb2b1e51168c7448c67c876c16043be218025a5d5b2df967f581d785",
+        "detail": "a2c7c6558d0cdcdae6750b4098388267c96116290510349b48b0807bce904c74"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 1159
+        "inspectionMs": 1111
       }
     },
-    "date": "2026-10-05",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "共用視差模組更新後，以實際執行畫面檢視起始、不同時間狀態與回跳；有效狀態改變、非循序 seek 重現一致，保留原有產品卡片視覺與比例。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-154": {
     "status": "ready",
-    "sourceHash": "f9cfb0f693ee9288f1002b37823f2592c5f6a5487403b1632d1f53902a5e7595",
+    "sourceHash": "b384a45a4834473efdcc3561f88178903f59ae5f015639dc34707088be725428",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-154-technology.jpg",
@@ -2421,87 +2413,87 @@
       "sha256": {
         "poster": "8c404ed7159f2ade842d5e939318f525b02f62e7556cac247c0b26d0efcc6346",
         "gallery": "aae357d66eeda565e0e7714b291f71bcf2753f994a46e3e365518b370e13785b",
-        "detail": "67835f1ebdac951d6fccec35f26b0140267085f0042e9ea4782d06b08ced7de2"
+        "detail": "23b50b272e53472ad60dfdb48b5297d5cc42b7f7a7383422a4a8835367006948"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 32796
+        "inspectionMs": 1670
       }
     },
-    "date": "2026-10-04",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-155": {
     "status": "ready",
-    "sourceHash": "30c7aa14a9740c1a9ae180f1206f9753fe069b349a5780c51953b9e206ae22ef",
+    "sourceHash": "d05aebf156c516ba7967dd01c3cbc97e515ca57878b7feec20bc7d46d8f6b2e2",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-155-technology.jpg",
       "gallery": "media/sa-155-technology.mp4",
       "detail": "media/sa-155-technology-detail.mp4",
       "sha256": {
-        "poster": "d1d24cfd7c7bafd6de9738b8c081274ce446841f8ab6fe0c866e1fe77137c0cf",
-        "gallery": "a16bf1ec9bfc36e8fac86351d7b3853ad24def44fbbe4e8d15b142521f6c8141",
-        "detail": "1253c1d1aff21501ded7c4d21bfbf9871cb87e0e21ee78fbd09f9784e23fa440"
+        "poster": "87b065bf8005a4d1da039c516bd1866c50800acec4bc6944152c53afa2758f2b",
+        "gallery": "2c62b9d94027812d2fea92015aacbfe2ef46dd92e7f203e59f141957f7340711",
+        "detail": "abeb4a662c6ed2b3156ef3385d06314a019d1d32eaa06f3d800184bf0c077add"
       }
     },
     "video": "unverified; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 22740
+        "inspectionMs": 1072
       }
     },
-    "date": "2026-10-05",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "已檢視起始與不同時間狀態、構圖、文字及色彩隔離；互動案例另檢視實際編碼預覽。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-156": {
     "status": "ready",
-    "sourceHash": "de458f73dc7442b7b109db92912455d69cdde5efef9903863f5a39e5a9a724f0",
+    "sourceHash": "18f290cea3c9fb7966c7a8cb94be745646820af4959d4ab70878756bf04f0725",
     "runtime": [
-      "Google Chrome 154.0.8037.98: mount, four seeks, no uncaught errors",
-      "Playwright WebKit build 2215: mount, four seeks, no uncaught errors; not physical Safari."
+      "Google Chrome 156.0.8078.48: mount, four seeks, no uncaught errors",
+      "Playwright WebKit 27.2: mount, four seeks, no uncaught errors"
     ],
     "preview": {
       "poster": "media/sa-156-technology.jpg",
       "gallery": "media/sa-156-technology.mp4",
       "detail": "media/sa-156-technology-detail.mp4",
       "sha256": {
-        "poster": "39762f786bdfdd6e83b189cdae55e94589c430a073170a9af86a1fa9f263477b",
-        "gallery": "bad6a7027f7978442849f6a2a12e68d967c382a7d0191c2eac34eb5eb4f41881",
-        "detail": "704985cc1182d296a012ad23dce455fe3d526836169b3a118162415054b5431f"
+        "poster": "f2ea977dc0e816033fe8627bfa671310cdcaa3bf30b39e62eff18af5fa51471c",
+        "gallery": "c623e6e4aa2cdaff8e42535a64138c0f87076a01318cb0e5198ed339a6322e30",
+        "detail": "75b035a7d5880ca40e556ad807c5dd9ff576c79be017f6aed5aa430146df15cc"
       }
     },
     "video": "adapter-required; deterministic export unverified.",
     "performance": {
       "status": "measured",
-      "context": "Single case at 960x540 DPR1 in Chrome 154.0.8037.98; elapsed includes navigation and screenshot work, not an FPS benchmark.",
+      "context": "Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in WebKit 27.2; elapsed includes navigation and screenshot work, not an FPS benchmark.",
       "metrics": {
-        "inspectionMs": 37918
+        "inspectionMs": 1600
       }
     },
-    "date": "2026-10-05",
+    "date": "2026-10-27",
     "notes": [
       "Noninitial frame changed: true; repeated sampled frame identical: true.",
       "Physical Safari/iPhone not tested."
     ],
-    "visual": "更新後已檢視滿版地圖近景、完整世界範圍與返回終點：臺北在開場／全球端皆維持於相同畫面焦點，世界輪廓與連線完整可辨，末端回到原近景；無側欄或標題面板。影片輸出 adapter 與跨裝置仍依各自狀態標示，未據此宣稱驗證。"
+    "visual": "2026-10-26 已檢視本輪 Chrome 擷取的起始／不同時間狀態聯絡表，核對構圖、文字、色彩及既有互動狀態；非獨立美術評審，實體 Safari／iPhone 未測。"
   },
   "SA-196": {
     "status": "partial",

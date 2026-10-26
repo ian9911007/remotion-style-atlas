@@ -124,6 +124,83 @@
       "evaluatedScope": "The installed package and publisher-mapped source commit both declare ISC. This establishes the declaration; it does not supply missing project-specific copyright and license text.",
       "redistributionGuidance": "Retain the publisher metadata and source links. Do not manufacture an ISC file or infer a copyright year from author metadata.",
       "remaining": "The upstream original license text or maintainer clarification is still unavailable from the inspected package, commit tree and README."
+    },
+    {
+      "name": "@react-three/fiber",
+      "installedVersion": "9.8.2",
+      "declaredLicense": "MIT",
+      "status": "upstream-original-text-supplement-integrated",
+      "repository": "https://github.com/pmndrs/react-three-fiber",
+      "releaseTag": "v9.8.2",
+      "commit": "d74622ea8ed717f7212d7e19d65ff3e325508389",
+      "versionEvidence": {
+        "registryUrl": "https://registry.npmjs.org/%40react-three%2Ffiber/9.8.2",
+        "tarballIntegrityVerified": true,
+        "packageJsonEntry": "package/package.json",
+        "packageJsonSha256": "ad7c861bea13fa0dc8021afa4f4778c45e74554ac5c8e7e66c860b938b381f2b",
+        "observedPackageVersion": "9.8.2",
+        "observedPackageLicense": "MIT",
+        "packagedLicenseFiles": []
+      },
+      "licenseEvidence": {
+        "browserUrl": "https://github.com/pmndrs/react-three-fiber/blob/v9.8.2/LICENSE",
+        "pinnedRawUrl": "https://raw.githubusercontent.com/pmndrs/react-three-fiber/d74622ea8ed717f7212d7e19d65ff3e325508389/LICENSE",
+        "sha256": "9c35b5de7b7493a707fffe4eb23bd2f7f449153c1911f7c6eefb4e591fd5349a",
+        "copyrightNotice": "Copyright (c) 2019-2025 Poimandres",
+        "localSupplementPath": "public/technology-assets/license-supplements/react-three-fiber/LICENSE",
+        "identicalToExistingLocalSupplement": true
+      },
+      "evaluatedScope": "The repository license applies to the React renderer source at the matching package release; Three.js, Drei and authored assets retain their own licenses.",
+      "redistributionGuidance": "Preserve the original copyright and permission notice with copies or substantial portions. Copy the original pinned bytes if supplementing generated notices; do not synthesize a replacement license.",
+      "remaining": "No missing runtime license text for this inspected direct package; transitive and asset licenses remain separate.",
+      "verifiedAt": "2026-10-26",
+      "releaseUrl": "https://github.com/pmndrs/react-three-fiber/releases/tag/v9.8.2",
+      "sourceVersionEvidence": {
+        "url": "https://raw.githubusercontent.com/pmndrs/react-three-fiber/d74622ea8ed717f7212d7e19d65ff3e325508389/packages/fiber/package.json",
+        "sha256": "08cdd95784a1ecaa7a5c8d895d5da659bc23780301b7d6873916c03236cb198b",
+        "observedVersion": "9.8.1",
+        "limitation": "Release-tag source version field lags the integrity-verified npm archive; published version and source version are recorded separately."
+      },
+      "publisherGitHead": "e6ec3506ebf7879c26bd5ac27986b5d4421f3254",
+      "publisherGitHeadReadback": "Raw package metadata and LICENSE returned HTTP 404; not independently resolved. License checked at official v9.8.2 release tag instead."
+    },
+    {
+      "name": "@rive-app/canvas",
+      "installedVersion": "2.47.1",
+      "declaredLicense": "MIT",
+      "status": "upstream-original-text-supplement-integrated",
+      "repository": "https://github.com/rive-app/rive-wasm",
+      "releaseTag": "2.47.1",
+      "tagObject": "e5d440630a0debeb5e469a56a7328c010c0e8e47",
+      "commit": "e8f45f9745892ebb844f6d72aeeceacfc2af9a72",
+      "versionEvidence": {
+        "registryUrl": "https://registry.npmjs.org/%40rive-app%2Fcanvas/2.47.1",
+        "tarballIntegrityVerified": true,
+        "packageJsonEntry": "package/package.json",
+        "packageJsonSha256": "3d9ec2fcea58ae8509fe57bc829be41f8a31c31734eafb0fe56aaa04d501c9cd",
+        "observedPackageVersion": "2.47.1",
+        "observedPackageLicense": "MIT",
+        "packagedLicenseFiles": []
+      },
+      "licenseEvidence": {
+        "browserUrl": "https://github.com/rive-app/rive-wasm/blob/2.47.1/LICENSE",
+        "pinnedRawUrl": "https://raw.githubusercontent.com/rive-app/rive-wasm/e8f45f9745892ebb844f6d72aeeceacfc2af9a72/LICENSE",
+        "sha256": "8a1efa755d19446b51a18e1c15f6308728da0b36283c4d38050698ad6954b69a",
+        "copyrightNotice": "Copyright (c) 2020-2021 Rive",
+        "localSupplementPath": "public/technology-assets/license-supplements/rive-app-canvas/LICENSE",
+        "identicalToExistingLocalSupplement": true
+      },
+      "evaluatedScope": "The JavaScript/WASM runtime repository at the matching package release. This verification does not license the Rive editor, .riv artwork, fonts, images or other embedded assets.",
+      "redistributionGuidance": "Preserve the original MIT copyright and permission notice. Keep asset provenance separate from runtime licensing.",
+      "remaining": "No missing runtime license text for this inspected direct package; transitive and asset licenses remain separate.",
+      "verifiedAt": "2026-10-26",
+      "releaseUrl": "https://github.com/rive-app/rive-wasm/releases/tag/2.47.1",
+      "sourceVersionEvidence": {
+        "url": "https://raw.githubusercontent.com/rive-app/rive-wasm/e8f45f9745892ebb844f6d72aeeceacfc2af9a72/js/package.json",
+        "sha256": "bf5b3654849b52618f6d56b7f484c471a6eea2b8f4bf407ca9cc2ceeadd0e423",
+        "observedVersion": "2.47.0",
+        "limitation": "Release-tag source version field lags the integrity-verified npm archive; published version and source version are recorded separately."
+      }
     }
   ],
   "integrationBoundary": "scripts/prepare-technology-assets.mjs reads this record for version-matched supplemental source paths and hashes. Generated notices distinguish packaged text, upstream original supplements and link-only declarations. Builds do not fetch remote license text.",
@@ -146,5 +223,41 @@
     ],
     "offlineBuildBehavior": "Preparation reads only installed package files, this record and local original supplements; no network fetch is performed.",
     "gitTracking": "The two original supplementary LICENSE files were explicitly added to Git; no commit was created."
+  },
+  "versionUpdateChecksAt": "2026-10-26",
+  "versionUpdateScope": "Added current Fiber/Rive archive and immutable upstream license checks; retained historical version records and original legal text unchanged.",
+  "currentMissingTextRecheck": {
+    "date": "2026-10-26",
+    "method": "Official integrity-verified exact-version tarballs and complete immutable upstream trees; no substitute license authored or terms accepted.",
+    "packages": [
+      {
+        "name": "gsap",
+        "version": "3.15.0",
+        "commit": "13e2b790546426a1a2e0e9b409f3f8dc6d6611f2",
+        "releaseTag": "3.15.0",
+        "versionEvidenceUrl": "https://raw.githubusercontent.com/greensock/GSAP/13e2b790546426a1a2e0e9b409f3f8dc6d6611f2/package.json",
+        "versionEvidenceSha256": "4ca16b896affd09e270d4dcf5149a02f57def55e4747ce11f68c7723fd3dedaa",
+        "tarballIntegrityVerified": true,
+        "upstreamTreeEntries": 187,
+        "standaloneLicenseTextFound": false,
+        "currentTermsUrl": "https://gsap.com/standard-license/",
+        "currentTermsResolvedUrl": "https://gsap.com/offline/",
+        "currentTermsBodyVerified": false,
+        "remaining": "Exact original full text unavailable from the inspected release/source; current official link resolves to a temporary offline page. Existing not-packaged warning remains."
+      },
+      {
+        "name": "split-type",
+        "version": "0.3.4",
+        "commit": "36af092f7061ef9b6ea33261b688a3fe04b890fb",
+        "commitResolution": "Official npm publisher gitHead; no matching release tag",
+        "versionEvidenceUrl": "https://raw.githubusercontent.com/lukePeavey/SplitType/36af092f7061ef9b6ea33261b688a3fe04b890fb/package.json",
+        "versionEvidenceSha256": "bceeec35a2ce9ec02ad2638e7dc75bb6d017e2fadf9fa44f9498c724a3c65ff0",
+        "tarballIntegrityVerified": true,
+        "upstreamTreeEntries": 98,
+        "standaloneLicenseTextFound": false,
+        "publisherLicenseField": "ISC",
+        "remaining": "Publisher metadata is not an original license text; existing not-packaged warning remains."
+      }
+    ]
   }
 }

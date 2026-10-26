@@ -130,9 +130,9 @@
     ],
     "recipe": "swiss-grid",
     "preview": {
-      "gallery": "media/sa-001-f1b9ab07824afd8e-gallery.mp4",
-      "detail": "media/sa-001-f1b9ab07824afd8e-detail.mp4",
-      "poster": "media/sa-001-f1b9ab07824afd8e-poster.jpg",
+      "gallery": "media/sa-001-1ecf276eb7e1dcb1-gallery.mp4",
+      "detail": "media/sa-001-1ecf276eb7e1dcb1-detail.mp4",
+      "poster": "media/sa-001-1ecf276eb7e1dcb1-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -141,7 +141,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 54,
-      "fingerprint": "2487aace47989046a14570887e6348182dec05579d679b4e3ae60022000cbf43"
+      "fingerprint": "1ecf276eb7e1dcb1608b4dee4d460bb28224d8d460602302fd8acd67e4a1ebb5"
     },
     "provenance": {
       "kind": "original",
@@ -154,11 +154,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-002",
@@ -294,9 +294,9 @@
     ],
     "recipe": "luxury-spread",
     "preview": {
-      "gallery": "media/sa-002-5a7b99f02db593e0-gallery.mp4",
-      "detail": "media/sa-002-5a7b99f02db593e0-detail.mp4",
-      "poster": "media/sa-002-5a7b99f02db593e0-poster.jpg",
+      "gallery": "media/sa-002-fbeb397969cf6b40-gallery.mp4",
+      "detail": "media/sa-002-fbeb397969cf6b40-detail.mp4",
+      "poster": "media/sa-002-fbeb397969cf6b40-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -305,7 +305,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 81,
-      "fingerprint": "555960cdc4cb74c083d5374f02831c67dd4c0d941a659e7482291ff794c94def"
+      "fingerprint": "fbeb397969cf6b40b537cfeb00bca1a609bf9e6fa53b42ca0649a34a45dbd8fe"
     },
     "provenance": {
       "kind": "original",
@@ -318,11 +318,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-003",
@@ -455,9 +455,9 @@
     ],
     "recipe": "cinematic-horizon",
     "preview": {
-      "gallery": "media/sa-003-c7ad74cba0c94811-gallery.mp4",
-      "detail": "media/sa-003-c7ad74cba0c94811-detail.mp4",
-      "poster": "media/sa-003-c7ad74cba0c94811-poster.jpg",
+      "gallery": "media/sa-003-9c018fac1c38db7e-gallery.mp4",
+      "detail": "media/sa-003-9c018fac1c38db7e-detail.mp4",
+      "poster": "media/sa-003-9c018fac1c38db7e-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -466,7 +466,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 81,
-      "fingerprint": "a8aff3509c11a16352d25d414d122f9a31134626daaeb7a98d7d24b62bead79e"
+      "fingerprint": "9c018fac1c38db7e40db4d4c3ff867000e21c17ece84d12e07f1fa035570fe5f"
     },
     "provenance": {
       "kind": "original",
@@ -479,11 +479,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-004",
@@ -616,9 +616,9 @@
     ],
     "recipe": "kinetic-sport",
     "preview": {
-      "gallery": "media/sa-004-2a00b3f666fd8c62-gallery.mp4",
-      "detail": "media/sa-004-2a00b3f666fd8c62-detail.mp4",
-      "poster": "media/sa-004-2a00b3f666fd8c62-poster.jpg",
+      "gallery": "media/sa-004-80c39dbe039845a5-gallery.mp4",
+      "detail": "media/sa-004-80c39dbe039845a5-detail.mp4",
+      "poster": "media/sa-004-80c39dbe039845a5-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -627,7 +627,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 54,
-      "fingerprint": "b88ad90a2a0903ef8a5c497d9216943a3ee248e86a948d3f5b2ae1cfa7221dc6"
+      "fingerprint": "80c39dbe039845a5e92b1cb3bcc2e28e9176fa95468ff2c9b372d54737a8fb68"
     },
     "provenance": {
       "kind": "original",
@@ -640,11 +640,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-005",
@@ -776,9 +776,9 @@
     ],
     "recipe": "industrial-blueprint",
     "preview": {
-      "gallery": "media/sa-005-98d0c7a430dc94bc-gallery.mp4",
-      "detail": "media/sa-005-98d0c7a430dc94bc-detail.mp4",
-      "poster": "media/sa-005-98d0c7a430dc94bc-poster.jpg",
+      "gallery": "media/sa-005-4a6b4077b7933fe1-gallery.mp4",
+      "detail": "media/sa-005-4a6b4077b7933fe1-detail.mp4",
+      "poster": "media/sa-005-4a6b4077b7933fe1-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -787,7 +787,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 67,
-      "fingerprint": "4ddd6de2edb71eef51b07fd77ceff59e13cd8a53b9c3a1bcde1704cdfc9e8e55"
+      "fingerprint": "4a6b4077b7933fe1b9a77f54b0b387a36776386d4dea2ebf6b700cabcc91c46a"
     },
     "provenance": {
       "kind": "original",
@@ -800,11 +800,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-006",
@@ -937,9 +937,9 @@
     ],
     "recipe": "spatial-orbit",
     "preview": {
-      "gallery": "media/sa-006-595cfcb0aed084c9-gallery.mp4",
-      "detail": "media/sa-006-595cfcb0aed084c9-detail.mp4",
-      "poster": "media/sa-006-595cfcb0aed084c9-poster.jpg",
+      "gallery": "media/sa-006-c6b7878b0cbea31b-gallery.mp4",
+      "detail": "media/sa-006-c6b7878b0cbea31b-detail.mp4",
+      "poster": "media/sa-006-c6b7878b0cbea31b-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -948,7 +948,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 67,
-      "fingerprint": "72b1fb9c569ab51bf697b9b7054723a915dfda9f35af1c2741d304624ab02759"
+      "fingerprint": "c6b7878b0cbea31b1dcbf0f932535294aa0c622c9b233f1025d6bd168984c863"
     },
     "provenance": {
       "kind": "original",
@@ -961,11 +961,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-007",
@@ -1101,9 +1101,9 @@
     ],
     "recipe": "paper-collage",
     "preview": {
-      "gallery": "media/sa-007-3ee08355306e021b-gallery.mp4",
-      "detail": "media/sa-007-3ee08355306e021b-detail.mp4",
-      "poster": "media/sa-007-3ee08355306e021b-poster.jpg",
+      "gallery": "media/sa-007-d817c39794de1c1a-gallery.mp4",
+      "detail": "media/sa-007-d817c39794de1c1a-detail.mp4",
+      "poster": "media/sa-007-d817c39794de1c1a-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -1112,7 +1112,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 67,
-      "fingerprint": "5ba98ea2e8f6025795cd98ad45e6f439b9ad6662e235b22025f5c086fdf1f57f"
+      "fingerprint": "d817c39794de1c1ad1f3c05376103b3f52030e5e4dd5eeb532edb041df27bc2d"
     },
     "provenance": {
       "kind": "original",
@@ -1125,11 +1125,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-008",
@@ -1261,9 +1261,9 @@
     ],
     "recipe": "broadcast-retro",
     "preview": {
-      "gallery": "media/sa-008-cd90ab8f10517fe7-gallery.mp4",
-      "detail": "media/sa-008-cd90ab8f10517fe7-detail.mp4",
-      "poster": "media/sa-008-cd90ab8f10517fe7-poster.jpg",
+      "gallery": "media/sa-008-c07321eba958562c-gallery.mp4",
+      "detail": "media/sa-008-c07321eba958562c-detail.mp4",
+      "poster": "media/sa-008-c07321eba958562c-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -1272,7 +1272,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 54,
-      "fingerprint": "8937b7f51c061a63a7619289138203ec57ba5eae7884c046157a8fdbe8e04bba"
+      "fingerprint": "c07321eba958562ca56c31fc7b7bfec2728b6a1860e5fe0e82fc3fd63e67e460"
     },
     "provenance": {
       "kind": "original",
@@ -1285,11 +1285,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-009",
@@ -1425,9 +1425,9 @@
     ],
     "recipe": "minimal-object",
     "preview": {
-      "gallery": "media/sa-009-b5eff2cf98a9cc0e-gallery.mp4",
-      "detail": "media/sa-009-b5eff2cf98a9cc0e-detail.mp4",
-      "poster": "media/sa-009-b5eff2cf98a9cc0e-poster.jpg",
+      "gallery": "media/sa-009-b916144b1bf5fd68-gallery.mp4",
+      "detail": "media/sa-009-b916144b1bf5fd68-detail.mp4",
+      "poster": "media/sa-009-b916144b1bf5fd68-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -1436,7 +1436,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 81,
-      "fingerprint": "4dd5817c55626b31a8d3c2ff0e758fe3e738b77d398115f77c027260fbf5a4fb"
+      "fingerprint": "b916144b1bf5fd682018c0180cfeda6262b9c80e62d162f754eb6afa16dfe660"
     },
     "provenance": {
       "kind": "original",
@@ -1449,11 +1449,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-010",
@@ -1586,9 +1586,9 @@
     ],
     "recipe": "data-topography",
     "preview": {
-      "gallery": "media/sa-010-d2898a5e2c2e7a66-gallery.mp4",
-      "detail": "media/sa-010-d2898a5e2c2e7a66-detail.mp4",
-      "poster": "media/sa-010-d2898a5e2c2e7a66-poster.jpg",
+      "gallery": "media/sa-010-87d2a4bcdb83ebda-gallery.mp4",
+      "detail": "media/sa-010-87d2a4bcdb83ebda-detail.mp4",
+      "poster": "media/sa-010-87d2a4bcdb83ebda-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -1597,7 +1597,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 67,
-      "fingerprint": "c9e58cbd6fb57d760648a7430d6f0e719a1fea68d4a3368f72276e288e22bf71"
+      "fingerprint": "87d2a4bcdb83ebda0b0a58af2076ae7a69e1cbbc1ae0eef5956ef97450c22738"
     },
     "provenance": {
       "kind": "original",
@@ -1610,11 +1610,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-011",
@@ -1747,9 +1747,9 @@
     ],
     "recipe": "elastic-geometry",
     "preview": {
-      "gallery": "media/sa-011-8ddfa9d7f0525b42-gallery.mp4",
-      "detail": "media/sa-011-8ddfa9d7f0525b42-detail.mp4",
-      "poster": "media/sa-011-8ddfa9d7f0525b42-poster.jpg",
+      "gallery": "media/sa-011-e7553fbaf5a5bb4a-gallery.mp4",
+      "detail": "media/sa-011-e7553fbaf5a5bb4a-detail.mp4",
+      "poster": "media/sa-011-e7553fbaf5a5bb4a-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -1758,7 +1758,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 54,
-      "fingerprint": "2a2f0dc4d5e11cd6999d45e01323c34a8da40ccd5be94b73dd9fee06f725e337"
+      "fingerprint": "e7553fbaf5a5bb4a8960154fb70d09f8777392884fb373e7e3bebbef6db3b4ef"
     },
     "provenance": {
       "kind": "original",
@@ -1771,11 +1771,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-012",
@@ -1912,9 +1912,9 @@
     ],
     "recipe": "documentary-contact",
     "preview": {
-      "gallery": "media/sa-012-79810650bbc54c98-gallery.mp4",
-      "detail": "media/sa-012-79810650bbc54c98-detail.mp4",
-      "poster": "media/sa-012-79810650bbc54c98-poster.jpg",
+      "gallery": "media/sa-012-7f932ce8f4810d30-gallery.mp4",
+      "detail": "media/sa-012-7f932ce8f4810d30-detail.mp4",
+      "poster": "media/sa-012-7f932ce8f4810d30-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -1923,7 +1923,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 67,
-      "fingerprint": "22325e2ef7f676a21be0537b830562b6f36fb04c531d588a349058ef04e64c57"
+      "fingerprint": "7f932ce8f4810d30e5efba5c4b6b8d01a05a90e89508f6457eea4ba2e98bc478"
     },
     "provenance": {
       "kind": "original",
@@ -1936,11 +1936,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-013",
@@ -2069,9 +2069,9 @@
     ],
     "recipe": "editorial-split",
     "preview": {
-      "gallery": "media/sa-013-651fd12db272e9ea-gallery.mp4",
-      "detail": "media/sa-013-651fd12db272e9ea-detail.mp4",
-      "poster": "media/sa-013-651fd12db272e9ea-poster.jpg",
+      "gallery": "media/sa-013-08190f8a7681db71-gallery.mp4",
+      "detail": "media/sa-013-08190f8a7681db71-detail.mp4",
+      "poster": "media/sa-013-08190f8a7681db71-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -2080,7 +2080,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "ccec158fa273996959f4c24dfb863564946a40aae7c5e06511b65b82112ab25b"
+      "fingerprint": "08190f8a7681db7169ba6cb2091b8cd3a5ada66312053dd873cb22ad908cb1b1"
     },
     "provenance": {
       "kind": "original",
@@ -2093,11 +2093,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-014",
@@ -2228,9 +2228,9 @@
     ],
     "recipe": "editorial-newspaper",
     "preview": {
-      "gallery": "media/sa-014-a93c1e6e2a1a18ea-gallery.mp4",
-      "detail": "media/sa-014-a93c1e6e2a1a18ea-detail.mp4",
-      "poster": "media/sa-014-a93c1e6e2a1a18ea-poster.jpg",
+      "gallery": "media/sa-014-3ad68210ff01ccf7-gallery.mp4",
+      "detail": "media/sa-014-3ad68210ff01ccf7-detail.mp4",
+      "poster": "media/sa-014-3ad68210ff01ccf7-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -2239,7 +2239,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "c1f94572166af42dad86e31f48f7b4985869386dbb81e972a6427cb5c63c7f94"
+      "fingerprint": "3ad68210ff01ccf726c11b5d1f8455cbe9621d5c81292b8ef3d66071a6ce33ca"
     },
     "provenance": {
       "kind": "original",
@@ -2252,11 +2252,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-015",
@@ -2385,9 +2385,9 @@
     ],
     "recipe": "editorial-index",
     "preview": {
-      "gallery": "media/sa-015-a955ab71e1a87b9d-gallery.mp4",
-      "detail": "media/sa-015-a955ab71e1a87b9d-detail.mp4",
-      "poster": "media/sa-015-a955ab71e1a87b9d-poster.jpg",
+      "gallery": "media/sa-015-db055185546a7ef0-gallery.mp4",
+      "detail": "media/sa-015-db055185546a7ef0-detail.mp4",
+      "poster": "media/sa-015-db055185546a7ef0-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -2396,7 +2396,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "bb0b40a221db564c8a9928b3d513da1f1cb3c6462142ca20f9755a79a1619004"
+      "fingerprint": "db055185546a7ef06eca2e43ce06095d22e0be84e28b96dcac700e08d368440a"
     },
     "provenance": {
       "kind": "original",
@@ -2409,11 +2409,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-016",
@@ -2544,9 +2544,9 @@
     ],
     "recipe": "editorial-vertical",
     "preview": {
-      "gallery": "media/sa-016-b43a1784a5dcc36b-gallery.mp4",
-      "detail": "media/sa-016-b43a1784a5dcc36b-detail.mp4",
-      "poster": "media/sa-016-b43a1784a5dcc36b-poster.jpg",
+      "gallery": "media/sa-016-df01c0bb3128214f-gallery.mp4",
+      "detail": "media/sa-016-df01c0bb3128214f-detail.mp4",
+      "poster": "media/sa-016-df01c0bb3128214f-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -2555,7 +2555,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "4e0773c88ec820db2e92ae244917543f4e0a5a1c3db0a37d9f5a45fcdd5437b7"
+      "fingerprint": "df01c0bb3128214f3e6c0131e26bc0487fab14c1295fed7ce574e29321d94847"
     },
     "provenance": {
       "kind": "original",
@@ -2568,11 +2568,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-017",
@@ -2703,9 +2703,9 @@
     ],
     "recipe": "luxury-botanical",
     "preview": {
-      "gallery": "media/sa-017-dd2be44e5682c6ec-gallery.mp4",
-      "detail": "media/sa-017-dd2be44e5682c6ec-detail.mp4",
-      "poster": "media/sa-017-dd2be44e5682c6ec-poster.jpg",
+      "gallery": "media/sa-017-db66f72bbc78dadb-gallery.mp4",
+      "detail": "media/sa-017-db66f72bbc78dadb-detail.mp4",
+      "poster": "media/sa-017-db66f72bbc78dadb-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -2714,7 +2714,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "32b9cf9e61616226744ec54831255ac5cbda765a9d84640da05c688e2c7810fd"
+      "fingerprint": "db66f72bbc78dadb8bf32c8bc6cce296fbaccbfd616992d5e1d36875b169e9d0"
     },
     "provenance": {
       "kind": "original",
@@ -2727,11 +2727,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-018",
@@ -2860,9 +2860,9 @@
     ],
     "recipe": "luxury-jewel",
     "preview": {
-      "gallery": "media/sa-018-777238ed033bcb89-gallery.mp4",
-      "detail": "media/sa-018-777238ed033bcb89-detail.mp4",
-      "poster": "media/sa-018-777238ed033bcb89-poster.jpg",
+      "gallery": "media/sa-018-e02621b5a0a560d4-gallery.mp4",
+      "detail": "media/sa-018-e02621b5a0a560d4-detail.mp4",
+      "poster": "media/sa-018-e02621b5a0a560d4-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -2871,7 +2871,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "bab1d6ff441c493d81d5de2b786def73141f9aa1a0a90ccb5eb152e03a24e4d6"
+      "fingerprint": "e02621b5a0a560d45a645eee8b0d6ebe68d77219e4cdc23fefbafb2e7a30376a"
     },
     "provenance": {
       "kind": "original",
@@ -2884,11 +2884,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-019",
@@ -3020,9 +3020,9 @@
     ],
     "recipe": "luxury-diptych",
     "preview": {
-      "gallery": "media/sa-019-79cd4d4d0e20a32d-gallery.mp4",
-      "detail": "media/sa-019-79cd4d4d0e20a32d-detail.mp4",
-      "poster": "media/sa-019-79cd4d4d0e20a32d-poster.jpg",
+      "gallery": "media/sa-019-9ee45cd1aa08a09d-gallery.mp4",
+      "detail": "media/sa-019-9ee45cd1aa08a09d-detail.mp4",
+      "poster": "media/sa-019-9ee45cd1aa08a09d-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -3031,7 +3031,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "51c210b17fc852169f33492855a3689af998a006db33037bfbea54994e98420d"
+      "fingerprint": "9ee45cd1aa08a09df7ff1f524dbd34aa09838a76e3f99d4ce9fa3de076487e8b"
     },
     "provenance": {
       "kind": "original",
@@ -3044,11 +3044,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-020",
@@ -3177,9 +3177,9 @@
     ],
     "recipe": "luxury-salon",
     "preview": {
-      "gallery": "media/sa-020-70d9696f2c453cee-gallery.mp4",
-      "detail": "media/sa-020-70d9696f2c453cee-detail.mp4",
-      "poster": "media/sa-020-70d9696f2c453cee-poster.jpg",
+      "gallery": "media/sa-020-c231ea0e017e0fbc-gallery.mp4",
+      "detail": "media/sa-020-c231ea0e017e0fbc-detail.mp4",
+      "poster": "media/sa-020-c231ea0e017e0fbc-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -3188,7 +3188,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "1f968c1b4d1d6c750611dc3e2e922cde0fb5fa83a0ca347788cb0973c9af9816"
+      "fingerprint": "c231ea0e017e0fbc68b8bc846e5d7bd0335f595a0c29e39bc84ca130c6b2099e"
     },
     "provenance": {
       "kind": "original",
@@ -3201,11 +3201,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-021",
@@ -3334,9 +3334,9 @@
     ],
     "recipe": "cinematic-starfield",
     "preview": {
-      "gallery": "media/sa-021-d4b8e606c1f6dd65-gallery.mp4",
-      "detail": "media/sa-021-d4b8e606c1f6dd65-detail.mp4",
-      "poster": "media/sa-021-d4b8e606c1f6dd65-poster.jpg",
+      "gallery": "media/sa-021-faef6f5c10f80fea-gallery.mp4",
+      "detail": "media/sa-021-faef6f5c10f80fea-detail.mp4",
+      "poster": "media/sa-021-faef6f5c10f80fea-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -3345,7 +3345,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "551c845b4aac11a2ecc1f7bd05be1360ee20559c159b255236cd6c31910c0481"
+      "fingerprint": "faef6f5c10f80feaa5f430184175180ec8d0f9093b9f50d6dc82f190a0f50a5d"
     },
     "provenance": {
       "kind": "original",
@@ -3358,11 +3358,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-022",
@@ -3493,9 +3493,9 @@
     ],
     "recipe": "cinematic-projector",
     "preview": {
-      "gallery": "media/sa-022-a1acc03e2d45fc07-gallery.mp4",
-      "detail": "media/sa-022-a1acc03e2d45fc07-detail.mp4",
-      "poster": "media/sa-022-a1acc03e2d45fc07-poster.jpg",
+      "gallery": "media/sa-022-5ef542939428c3b4-gallery.mp4",
+      "detail": "media/sa-022-5ef542939428c3b4-detail.mp4",
+      "poster": "media/sa-022-5ef542939428c3b4-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -3504,7 +3504,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "15f79a278118eb1c775a3f6b3942daa30a8dd545d6a624969f1aadda8425622c"
+      "fingerprint": "5ef542939428c3b4059755a6a2411546a31cf74545c9aa9323d0650e353cd162"
     },
     "provenance": {
       "kind": "original",
@@ -3517,11 +3517,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已檢視海報、起首、前段、中段、後段及末幀：SA-022 雙片盤持續反向旋轉；SA-084 光帶受花器輪廓裁切且葉片擺動；SA-093 翻頁跨過書脊並露出背面。接續以 Chromium 驗證播放器自動播放及影片推進。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-023",
@@ -3650,9 +3650,9 @@
     ],
     "recipe": "cinematic-spotlight",
     "preview": {
-      "gallery": "media/sa-023-57754447a5c304cf-gallery.mp4",
-      "detail": "media/sa-023-57754447a5c304cf-detail.mp4",
-      "poster": "media/sa-023-57754447a5c304cf-poster.jpg",
+      "gallery": "media/sa-023-55e79f38de6fe452-gallery.mp4",
+      "detail": "media/sa-023-55e79f38de6fe452-detail.mp4",
+      "poster": "media/sa-023-55e79f38de6fe452-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -3661,7 +3661,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "e5bd51f0f68531bb9f9a9657a051811befbf1d50984270de77f26fa91aa66833"
+      "fingerprint": "55e79f38de6fe4524c294a46a56ba6895000536bdda0b1a2d14cc8eabe592f83"
     },
     "provenance": {
       "kind": "original",
@@ -3674,11 +3674,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-024",
@@ -3807,9 +3807,9 @@
     ],
     "recipe": "cinematic-strata",
     "preview": {
-      "gallery": "media/sa-024-01fa51cd8329bab7-gallery.mp4",
-      "detail": "media/sa-024-01fa51cd8329bab7-detail.mp4",
-      "poster": "media/sa-024-01fa51cd8329bab7-poster.jpg",
+      "gallery": "media/sa-024-d958f7e2afdc7330-gallery.mp4",
+      "detail": "media/sa-024-d958f7e2afdc7330-detail.mp4",
+      "poster": "media/sa-024-d958f7e2afdc7330-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -3818,7 +3818,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "e767ce16bbadbd31d610dc28205304fd96bf8907a635aab3733666f6d9ba77f4"
+      "fingerprint": "d958f7e2afdc73302466d38538272d1ff256d958f221dfb4b5b40097838749ec"
     },
     "provenance": {
       "kind": "original",
@@ -3831,11 +3831,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-025",
@@ -3964,9 +3964,9 @@
     ],
     "recipe": "performance-track",
     "preview": {
-      "gallery": "media/sa-025-19b2620350338bad-gallery.mp4",
-      "detail": "media/sa-025-19b2620350338bad-detail.mp4",
-      "poster": "media/sa-025-19b2620350338bad-poster.jpg",
+      "gallery": "media/sa-025-20bd38a5fae1654d-gallery.mp4",
+      "detail": "media/sa-025-20bd38a5fae1654d-detail.mp4",
+      "poster": "media/sa-025-20bd38a5fae1654d-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -3975,7 +3975,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "84f26f02c66dcd6cba71b32172f362b76b37ce4a57e80246bfc82fdb3559fdc4"
+      "fingerprint": "20bd38a5fae1654d06a30aed7eed9d2649edbc989d5af3923a1cd6f114b110a2"
     },
     "provenance": {
       "kind": "original",
@@ -3988,11 +3988,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-026",
@@ -4121,9 +4121,9 @@
     ],
     "recipe": "performance-impact",
     "preview": {
-      "gallery": "media/sa-026-8ef22b9b2609facc-gallery.mp4",
-      "detail": "media/sa-026-8ef22b9b2609facc-detail.mp4",
-      "poster": "media/sa-026-8ef22b9b2609facc-poster.jpg",
+      "gallery": "media/sa-026-f4a6b5d54db91af3-gallery.mp4",
+      "detail": "media/sa-026-f4a6b5d54db91af3-detail.mp4",
+      "poster": "media/sa-026-f4a6b5d54db91af3-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -4132,7 +4132,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "642f2fab0ccfca5b177a087fe0b36247867aa37cab42949a8e94b1c41ffe22af"
+      "fingerprint": "f4a6b5d54db91af358e32c85486a0f3d15dd1d18009d7a8a58ecd3f40ef07183"
     },
     "provenance": {
       "kind": "original",
@@ -4145,11 +4145,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-027",
@@ -4278,9 +4278,9 @@
     ],
     "recipe": "performance-ascent",
     "preview": {
-      "gallery": "media/sa-027-3b42e893a1a2d742-gallery.mp4",
-      "detail": "media/sa-027-3b42e893a1a2d742-detail.mp4",
-      "poster": "media/sa-027-3b42e893a1a2d742-poster.jpg",
+      "gallery": "media/sa-027-b832c02b0fd0dd44-gallery.mp4",
+      "detail": "media/sa-027-b832c02b0fd0dd44-detail.mp4",
+      "poster": "media/sa-027-b832c02b0fd0dd44-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -4289,7 +4289,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "f3b1869fa322d7feebc92a0fd7538b3c0a326cb0be9ee9c3ac450cc5f50e308c"
+      "fingerprint": "b832c02b0fd0dd440019576c76edd889aff81981a372b33ed82a3dbd8f62c501"
     },
     "provenance": {
       "kind": "original",
@@ -4302,11 +4302,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-028",
@@ -4435,9 +4435,9 @@
     ],
     "recipe": "performance-court",
     "preview": {
-      "gallery": "media/sa-028-aa14b33e7fba6c9a-gallery.mp4",
-      "detail": "media/sa-028-aa14b33e7fba6c9a-detail.mp4",
-      "poster": "media/sa-028-aa14b33e7fba6c9a-poster.jpg",
+      "gallery": "media/sa-028-7c70c4daad3b2efc-gallery.mp4",
+      "detail": "media/sa-028-7c70c4daad3b2efc-detail.mp4",
+      "poster": "media/sa-028-7c70c4daad3b2efc-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -4446,7 +4446,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "581a0ffedd5bcea59e59fbc20e4e44623d5dedead6033fba0c5aa212b47c8072"
+      "fingerprint": "7c70c4daad3b2efc6192a17784e56f6e5ab340c122d223aad443ce1b36d224e7"
     },
     "provenance": {
       "kind": "original",
@@ -4459,11 +4459,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-029",
@@ -4592,9 +4592,9 @@
     ],
     "recipe": "industrial-exploded",
     "preview": {
-      "gallery": "media/sa-029-cfa760ac21a92240-gallery.mp4",
-      "detail": "media/sa-029-cfa760ac21a92240-detail.mp4",
-      "poster": "media/sa-029-cfa760ac21a92240-poster.jpg",
+      "gallery": "media/sa-029-6e50bd2cd3c4a365-gallery.mp4",
+      "detail": "media/sa-029-6e50bd2cd3c4a365-detail.mp4",
+      "poster": "media/sa-029-6e50bd2cd3c4a365-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -4603,7 +4603,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "cda9f04099784e3672d121f31734fdf73032787208a78f533e07a51bd9daa212"
+      "fingerprint": "6e50bd2cd3c4a3659ccf00a67f527a748fc3bc9666151bfd18b0e67ea2407857"
     },
     "provenance": {
       "kind": "original",
@@ -4616,11 +4616,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-030",
@@ -4749,9 +4749,9 @@
     ],
     "recipe": "industrial-console",
     "preview": {
-      "gallery": "media/sa-030-30486eed3a00ec58-gallery.mp4",
-      "detail": "media/sa-030-30486eed3a00ec58-detail.mp4",
-      "poster": "media/sa-030-30486eed3a00ec58-poster.jpg",
+      "gallery": "media/sa-030-c8572aab46860696-gallery.mp4",
+      "detail": "media/sa-030-c8572aab46860696-detail.mp4",
+      "poster": "media/sa-030-c8572aab46860696-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -4760,7 +4760,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "1cb22dd5afa79674de5f5d5e91b271aa22303f0289cb52f0cb7af64d43e544d6"
+      "fingerprint": "c8572aab4686069692b8b36e839abdee7500bd6bf5627579585dd95a8d63206e"
     },
     "provenance": {
       "kind": "original",
@@ -4773,11 +4773,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-031",
@@ -4906,9 +4906,9 @@
     ],
     "recipe": "industrial-axonometric",
     "preview": {
-      "gallery": "media/sa-031-03b9fa61f315c9ff-gallery.mp4",
-      "detail": "media/sa-031-03b9fa61f315c9ff-detail.mp4",
-      "poster": "media/sa-031-03b9fa61f315c9ff-poster.jpg",
+      "gallery": "media/sa-031-d77b65cab789a083-gallery.mp4",
+      "detail": "media/sa-031-d77b65cab789a083-detail.mp4",
+      "poster": "media/sa-031-d77b65cab789a083-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -4917,7 +4917,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "3823f202d4c407ac4b945d267c506ca945d3a3fd90291d0223a968f56a10d24c"
+      "fingerprint": "d77b65cab789a0833dad9f2fdf7b3e198210073fd0d960c13e2183d7338e1f0b"
     },
     "provenance": {
       "kind": "original",
@@ -4930,11 +4930,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-032",
@@ -5063,9 +5063,9 @@
     ],
     "recipe": "industrial-scan",
     "preview": {
-      "gallery": "media/sa-032-3e425db1c3e44145-gallery.mp4",
-      "detail": "media/sa-032-3e425db1c3e44145-detail.mp4",
-      "poster": "media/sa-032-3e425db1c3e44145-poster.jpg",
+      "gallery": "media/sa-032-18cca238cdde597e-gallery.mp4",
+      "detail": "media/sa-032-18cca238cdde597e-detail.mp4",
+      "poster": "media/sa-032-18cca238cdde597e-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -5074,7 +5074,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "a56afb53dd5a6ec291d9ecf640aec6a5d7c1b906730575bb9a73f63a8e9d269d"
+      "fingerprint": "18cca238cdde597e67e21c0c71e792b97b13645549b80ac3ad1cc62a58b056e9"
     },
     "provenance": {
       "kind": "original",
@@ -5087,11 +5087,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-033",
@@ -5220,9 +5220,9 @@
     ],
     "recipe": "spatial-planes",
     "preview": {
-      "gallery": "media/sa-033-23b6b19ee25d6e1a-gallery.mp4",
-      "detail": "media/sa-033-23b6b19ee25d6e1a-detail.mp4",
-      "poster": "media/sa-033-23b6b19ee25d6e1a-poster.jpg",
+      "gallery": "media/sa-033-255fb93754f2b25d-gallery.mp4",
+      "detail": "media/sa-033-255fb93754f2b25d-detail.mp4",
+      "poster": "media/sa-033-255fb93754f2b25d-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -5231,7 +5231,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "d37af8c1de67b3c6611c6df7ce2d2b4fd2fcc41c4a392f1a53808348d96d20f7"
+      "fingerprint": "255fb93754f2b25d2b55143d0042a4b100944a0930b834f9f179289ba73da07e"
     },
     "provenance": {
       "kind": "original",
@@ -5244,11 +5244,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-034",
@@ -5377,9 +5377,9 @@
     ],
     "recipe": "spatial-voxels",
     "preview": {
-      "gallery": "media/sa-034-ca0810bc00b719bf-gallery.mp4",
-      "detail": "media/sa-034-ca0810bc00b719bf-detail.mp4",
-      "poster": "media/sa-034-ca0810bc00b719bf-poster.jpg",
+      "gallery": "media/sa-034-55e601ccea6a1a75-gallery.mp4",
+      "detail": "media/sa-034-55e601ccea6a1a75-detail.mp4",
+      "poster": "media/sa-034-55e601ccea6a1a75-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -5388,7 +5388,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "00b1b4ca366a5e0f086e230bde669a75e64c3a72cf6f0ffb754d2d067fa8e9a9"
+      "fingerprint": "55e601ccea6a1a755fb0166c200305bb7b4d76bc702baf8ddf6603ef292d2c3a"
     },
     "provenance": {
       "kind": "original",
@@ -5401,11 +5401,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-035",
@@ -5534,9 +5534,9 @@
     ],
     "recipe": "spatial-city",
     "preview": {
-      "gallery": "media/sa-035-37383c6b809ea8d4-gallery.mp4",
-      "detail": "media/sa-035-37383c6b809ea8d4-detail.mp4",
-      "poster": "media/sa-035-37383c6b809ea8d4-poster.jpg",
+      "gallery": "media/sa-035-852025accb06b8e1-gallery.mp4",
+      "detail": "media/sa-035-852025accb06b8e1-detail.mp4",
+      "poster": "media/sa-035-852025accb06b8e1-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -5545,7 +5545,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "7eb7357b1c4d9860f8285e2f71ba024945857c4bbd2510a188b2ce6fd1152a47"
+      "fingerprint": "852025accb06b8e1d3eb4789300bdf5af4ca7907d28525b7603fb777ccfc2554"
     },
     "provenance": {
       "kind": "original",
@@ -5558,11 +5558,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-036",
@@ -5691,9 +5691,9 @@
     ],
     "recipe": "spatial-tunnel",
     "preview": {
-      "gallery": "media/sa-036-9f4efd419c4d1fa9-gallery.mp4",
-      "detail": "media/sa-036-9f4efd419c4d1fa9-detail.mp4",
-      "poster": "media/sa-036-9f4efd419c4d1fa9-poster.jpg",
+      "gallery": "media/sa-036-19e3e18ba3a3b441-gallery.mp4",
+      "detail": "media/sa-036-19e3e18ba3a3b441-detail.mp4",
+      "poster": "media/sa-036-19e3e18ba3a3b441-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -5702,7 +5702,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "0552acf9feb656a83c70ea8f7d5fc49e6a4e89554c5d18e145456bdaf09b2589"
+      "fingerprint": "19e3e18ba3a3b4415e825d0692478d00527ce1eb85f6cdeeebfacc3f8eb3ccf1"
     },
     "provenance": {
       "kind": "original",
@@ -5715,11 +5715,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-037",
@@ -5850,9 +5850,9 @@
     ],
     "recipe": "collage-strips",
     "preview": {
-      "gallery": "media/sa-037-ba81d8ef296c9134-gallery.mp4",
-      "detail": "media/sa-037-ba81d8ef296c9134-detail.mp4",
-      "poster": "media/sa-037-ba81d8ef296c9134-poster.jpg",
+      "gallery": "media/sa-037-6bc5d1826bfe35d8-gallery.mp4",
+      "detail": "media/sa-037-6bc5d1826bfe35d8-detail.mp4",
+      "poster": "media/sa-037-6bc5d1826bfe35d8-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -5861,7 +5861,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "49d2ea3d971505d534e315dc5413e833ac27c598db434d2025e7c46b21e8ce27"
+      "fingerprint": "6bc5d1826bfe35d804eb5a4364e2da3aeac7c61b3702781c2bd81b7469897693"
     },
     "provenance": {
       "kind": "original",
@@ -5874,11 +5874,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-038",
@@ -6011,9 +6011,9 @@
     ],
     "recipe": "collage-pinboard",
     "preview": {
-      "gallery": "media/sa-038-e36a3c79971b1beb-gallery.mp4",
-      "detail": "media/sa-038-e36a3c79971b1beb-detail.mp4",
-      "poster": "media/sa-038-e36a3c79971b1beb-poster.jpg",
+      "gallery": "media/sa-038-904c2ea3dd56e3aa-gallery.mp4",
+      "detail": "media/sa-038-904c2ea3dd56e3aa-detail.mp4",
+      "poster": "media/sa-038-904c2ea3dd56e3aa-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -6022,7 +6022,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "7a346e3799f089ce9108569c86a157b467c5aba213f7f75579696d3990f424f9"
+      "fingerprint": "904c2ea3dd56e3aa7d4bef6f585b6439aaee1d23141614afa5f31feb664dd3a5"
     },
     "provenance": {
       "kind": "original",
@@ -6035,11 +6035,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-039",
@@ -6168,9 +6168,9 @@
     ],
     "recipe": "collage-ransom",
     "preview": {
-      "gallery": "media/sa-039-a2b4426531d5100d-gallery.mp4",
-      "detail": "media/sa-039-a2b4426531d5100d-detail.mp4",
-      "poster": "media/sa-039-a2b4426531d5100d-poster.jpg",
+      "gallery": "media/sa-039-0a31267d7c98acb7-gallery.mp4",
+      "detail": "media/sa-039-0a31267d7c98acb7-detail.mp4",
+      "poster": "media/sa-039-0a31267d7c98acb7-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -6179,7 +6179,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "c6ca75d2de504b988f9441b551379e2f96c901b1d81427888789c4526b65881f"
+      "fingerprint": "0a31267d7c98acb737244a1dfba4450c5b74ec41a14eceb75af5d1ab584a20a3"
     },
     "provenance": {
       "kind": "original",
@@ -6192,11 +6192,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-040",
@@ -6327,9 +6327,9 @@
     ],
     "recipe": "collage-herbarium",
     "preview": {
-      "gallery": "media/sa-040-885b601ec57708ca-gallery.mp4",
-      "detail": "media/sa-040-885b601ec57708ca-detail.mp4",
-      "poster": "media/sa-040-885b601ec57708ca-poster.jpg",
+      "gallery": "media/sa-040-3b3a62cf46cb5d47-gallery.mp4",
+      "detail": "media/sa-040-3b3a62cf46cb5d47-detail.mp4",
+      "poster": "media/sa-040-3b3a62cf46cb5d47-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -6338,7 +6338,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "1e4e5ca80044de4e004a7e57af60babda5bc88a308441843af7c4965f492fde6"
+      "fingerprint": "3b3a62cf46cb5d478ee03a57e3e34f735d86ad400dcd5b4f6c478a9e5f668b4c"
     },
     "provenance": {
       "kind": "original",
@@ -6351,11 +6351,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-041",
@@ -6484,9 +6484,9 @@
     ],
     "recipe": "retro-sunburst",
     "preview": {
-      "gallery": "media/sa-041-87bdf34e5232d431-gallery.mp4",
-      "detail": "media/sa-041-87bdf34e5232d431-detail.mp4",
-      "poster": "media/sa-041-87bdf34e5232d431-poster.jpg",
+      "gallery": "media/sa-041-5daeaf28df5ba915-gallery.mp4",
+      "detail": "media/sa-041-5daeaf28df5ba915-detail.mp4",
+      "poster": "media/sa-041-5daeaf28df5ba915-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -6495,7 +6495,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "410222dd762fbc07a00a7a33a83df38e4da6f3f872dbe6fa299c39d3a25d5090"
+      "fingerprint": "5daeaf28df5ba91527f7a5b472593c267cc9fc1d18e4084d018c18f380f161f2"
     },
     "provenance": {
       "kind": "original",
@@ -6508,11 +6508,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-042",
@@ -6641,9 +6641,9 @@
     ],
     "recipe": "retro-pixel",
     "preview": {
-      "gallery": "media/sa-042-9f37707a091637bf-gallery.mp4",
-      "detail": "media/sa-042-9f37707a091637bf-detail.mp4",
-      "poster": "media/sa-042-9f37707a091637bf-poster.jpg",
+      "gallery": "media/sa-042-0fcfeb393598cc68-gallery.mp4",
+      "detail": "media/sa-042-0fcfeb393598cc68-detail.mp4",
+      "poster": "media/sa-042-0fcfeb393598cc68-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -6652,7 +6652,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "2d4c3c7f432b51c9e4c942fbeaf57a6a15eea67c1f05f85badc6f0f707b80234"
+      "fingerprint": "0fcfeb393598cc689be928d343a410785bf3043b06c2363a2e9ab9012f1846e4"
     },
     "provenance": {
       "kind": "original",
@@ -6665,11 +6665,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-043",
@@ -6798,9 +6798,9 @@
     ],
     "recipe": "retro-teletext",
     "preview": {
-      "gallery": "media/sa-043-bf7be9989b43dfae-gallery.mp4",
-      "detail": "media/sa-043-bf7be9989b43dfae-detail.mp4",
-      "poster": "media/sa-043-bf7be9989b43dfae-poster.jpg",
+      "gallery": "media/sa-043-83e83fe359edf02b-gallery.mp4",
+      "detail": "media/sa-043-83e83fe359edf02b-detail.mp4",
+      "poster": "media/sa-043-83e83fe359edf02b-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -6809,7 +6809,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "6804c0de1e941535e6bbcfa4ad3eddfde661d286f1f9c87c58fe1464ba5cb1fa"
+      "fingerprint": "83e83fe359edf02b2a3dc5c3aec6ba4e2a7d3e0968c5aac6247dcbf2de2010ed"
     },
     "provenance": {
       "kind": "original",
@@ -6822,11 +6822,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-044",
@@ -6955,9 +6955,9 @@
     ],
     "recipe": "retro-halftone",
     "preview": {
-      "gallery": "media/sa-044-25cf128c07d977dc-gallery.mp4",
-      "detail": "media/sa-044-25cf128c07d977dc-detail.mp4",
-      "poster": "media/sa-044-25cf128c07d977dc-poster.jpg",
+      "gallery": "media/sa-044-01313335c82983a0-gallery.mp4",
+      "detail": "media/sa-044-01313335c82983a0-detail.mp4",
+      "poster": "media/sa-044-01313335c82983a0-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -6966,7 +6966,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "119ba1c2476727dca3e7a6a8fe2b511d2c10be0ef62578011dd6f31cfa5ad530"
+      "fingerprint": "01313335c82983a065db997f789821746f423aabfa1c9cfd2a2fb6613385327e"
     },
     "provenance": {
       "kind": "original",
@@ -6979,11 +6979,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-045",
@@ -7114,9 +7114,9 @@
     ],
     "recipe": "minimal-specimen",
     "preview": {
-      "gallery": "media/sa-045-cb13e2947a77b8e3-gallery.mp4",
-      "detail": "media/sa-045-cb13e2947a77b8e3-detail.mp4",
-      "poster": "media/sa-045-cb13e2947a77b8e3-poster.jpg",
+      "gallery": "media/sa-045-7506ff7f02a52ec6-gallery.mp4",
+      "detail": "media/sa-045-7506ff7f02a52ec6-detail.mp4",
+      "poster": "media/sa-045-7506ff7f02a52ec6-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -7125,7 +7125,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "03e34282c22d3c15372fd015262200842a5d645730b7c491a8932ce0a58b085d"
+      "fingerprint": "7506ff7f02a52ec690aff21f6f684e634dbd8df9ccdb2d43eed1370154304705"
     },
     "provenance": {
       "kind": "original",
@@ -7138,11 +7138,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-046",
@@ -7271,9 +7271,9 @@
     ],
     "recipe": "minimal-zen",
     "preview": {
-      "gallery": "media/sa-046-342c4ea6ddf50c2d-gallery.mp4",
-      "detail": "media/sa-046-342c4ea6ddf50c2d-detail.mp4",
-      "poster": "media/sa-046-342c4ea6ddf50c2d-poster.jpg",
+      "gallery": "media/sa-046-7b1e163719230cba-gallery.mp4",
+      "detail": "media/sa-046-7b1e163719230cba-detail.mp4",
+      "poster": "media/sa-046-7b1e163719230cba-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -7282,7 +7282,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "e9b013a247bceaecf839c95b606a881131b84af1ea52bcde1567e58fbf95703e"
+      "fingerprint": "7b1e163719230cba9c6e5df54571e853ff7a5109b5e846bdc1dc31842d6c7fb5"
     },
     "provenance": {
       "kind": "original",
@@ -7295,11 +7295,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-047",
@@ -7428,9 +7428,9 @@
     ],
     "recipe": "minimal-monoline",
     "preview": {
-      "gallery": "media/sa-047-c0ba4d4208fe28fe-gallery.mp4",
-      "detail": "media/sa-047-c0ba4d4208fe28fe-detail.mp4",
-      "poster": "media/sa-047-c0ba4d4208fe28fe-poster.jpg",
+      "gallery": "media/sa-047-350287d003dfe70c-gallery.mp4",
+      "detail": "media/sa-047-350287d003dfe70c-detail.mp4",
+      "poster": "media/sa-047-350287d003dfe70c-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -7439,7 +7439,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "deb1f9b93d82a0d6da694fa6ce49060548915a33b4742771fb2071f3e6f5a874"
+      "fingerprint": "350287d003dfe70ca702ce3bbf960d8dec1429b38d2359dfc811914c1ce55c26"
     },
     "provenance": {
       "kind": "original",
@@ -7452,11 +7452,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-048",
@@ -7585,9 +7585,9 @@
     ],
     "recipe": "data-radial",
     "preview": {
-      "gallery": "media/sa-048-b07a9a98f4341498-gallery.mp4",
-      "detail": "media/sa-048-b07a9a98f4341498-detail.mp4",
-      "poster": "media/sa-048-b07a9a98f4341498-poster.jpg",
+      "gallery": "media/sa-048-8bd7ee2fd35b4763-gallery.mp4",
+      "detail": "media/sa-048-8bd7ee2fd35b4763-detail.mp4",
+      "poster": "media/sa-048-8bd7ee2fd35b4763-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -7596,7 +7596,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "d4291508dc8f227c2fd187998c365ed88523be9402af298614e048dbf0a00691"
+      "fingerprint": "8bd7ee2fd35b476353694258bd8adbfa21ed5c9041d3a1cedf42620bc001080a"
     },
     "provenance": {
       "kind": "original",
@@ -7609,11 +7609,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-049",
@@ -7742,9 +7742,9 @@
     ],
     "recipe": "data-flow",
     "preview": {
-      "gallery": "media/sa-049-99ef642451113877-gallery.mp4",
-      "detail": "media/sa-049-99ef642451113877-detail.mp4",
-      "poster": "media/sa-049-99ef642451113877-poster.jpg",
+      "gallery": "media/sa-049-a3e79c9f4836611d-gallery.mp4",
+      "detail": "media/sa-049-a3e79c9f4836611d-detail.mp4",
+      "poster": "media/sa-049-a3e79c9f4836611d-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -7753,7 +7753,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "e1492388cbacd653a531d1e74e38917f908dd887c74ed851440f4e6838fd7f6a"
+      "fingerprint": "a3e79c9f4836611d4350b6ae440eb3f18b1ddc0fbd167076ac95d97d452ccbb2"
     },
     "provenance": {
       "kind": "original",
@@ -7766,11 +7766,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-050",
@@ -7899,9 +7899,9 @@
     ],
     "recipe": "data-timeline",
     "preview": {
-      "gallery": "media/sa-050-663de05fa1956e38-gallery.mp4",
-      "detail": "media/sa-050-663de05fa1956e38-detail.mp4",
-      "poster": "media/sa-050-663de05fa1956e38-poster.jpg",
+      "gallery": "media/sa-050-70f673e52b59e450-gallery.mp4",
+      "detail": "media/sa-050-70f673e52b59e450-detail.mp4",
+      "poster": "media/sa-050-70f673e52b59e450-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -7910,7 +7910,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "8c87195e5ff5c87c0bc478cb2e58ad3398868188f25fd0b6b673703f59c0a927"
+      "fingerprint": "70f673e52b59e4509f4503b4d2da077adea1898998d3f4408285e23ff575864f"
     },
     "provenance": {
       "kind": "original",
@@ -7923,11 +7923,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-051",
@@ -8056,9 +8056,9 @@
     ],
     "recipe": "geometric-character",
     "preview": {
-      "gallery": "media/sa-051-668aaa403be0ad5d-gallery.mp4",
-      "detail": "media/sa-051-668aaa403be0ad5d-detail.mp4",
-      "poster": "media/sa-051-668aaa403be0ad5d-poster.jpg",
+      "gallery": "media/sa-051-ee8baddda9983006-gallery.mp4",
+      "detail": "media/sa-051-ee8baddda9983006-detail.mp4",
+      "poster": "media/sa-051-ee8baddda9983006-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -8067,7 +8067,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "5c6fc23f8e399cda2d3c701a0a227e5b3b1c29a81cc6ba5086709932060f38fd"
+      "fingerprint": "ee8baddda998300662e1c2116b59af2d92a29e8a5d0e3a044102e3d85ab3963b"
     },
     "provenance": {
       "kind": "original",
@@ -8080,11 +8080,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-052",
@@ -8213,9 +8213,9 @@
     ],
     "recipe": "geometric-mosaic",
     "preview": {
-      "gallery": "media/sa-052-0e609a46d3cf2639-gallery.mp4",
-      "detail": "media/sa-052-0e609a46d3cf2639-detail.mp4",
-      "poster": "media/sa-052-0e609a46d3cf2639-poster.jpg",
+      "gallery": "media/sa-052-ace66239bcaffe98-gallery.mp4",
+      "detail": "media/sa-052-ace66239bcaffe98-detail.mp4",
+      "poster": "media/sa-052-ace66239bcaffe98-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -8224,7 +8224,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "c4422b538f4de5ca286f0e28acf5491c48faa71e3232030c5982c15712eb7b20"
+      "fingerprint": "ace66239bcaffe98621b077434fe2e7beac8acfa8f49ee92fe2a5e701a5a7d82"
     },
     "provenance": {
       "kind": "original",
@@ -8237,11 +8237,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Reviewed generated poster and start, intermediate, peak, return and end frames. Watched each detail clip and gallery thumbnail in the local Chrome app through its native-speed loop boundary; confirmed decoded playback, intentional loop return, and case-specific composition. SA-058 flips complete rows together in sequence, not individual glyphs. Local Playwright runner could not launch Chromium, so browser acceptance used the interactive local Chrome session.",
-      "date": "2026-10-05"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-05"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-053",
@@ -8370,9 +8370,9 @@
     ],
     "recipe": "geometric-mobile",
     "preview": {
-      "gallery": "media/sa-053-21074c1e7240007d-gallery.mp4",
-      "detail": "media/sa-053-21074c1e7240007d-detail.mp4",
-      "poster": "media/sa-053-21074c1e7240007d-poster.jpg",
+      "gallery": "media/sa-053-04c461317f370fc2-gallery.mp4",
+      "detail": "media/sa-053-04c461317f370fc2-detail.mp4",
+      "poster": "media/sa-053-04c461317f370fc2-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -8381,7 +8381,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "27087bdac4587cf889c4e77d91ed6713365e615599b3f0f561a517e4229e96d2"
+      "fingerprint": "04c461317f370fc228eae8d375f8114305d21a951bf3bdd8c4977c9d80d002e3"
     },
     "provenance": {
       "kind": "original",
@@ -8394,11 +8394,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-054",
@@ -8530,9 +8530,9 @@
     ],
     "recipe": "documentary-map",
     "preview": {
-      "gallery": "media/sa-054-c19f9b51e5e4cf9a-gallery.mp4",
-      "detail": "media/sa-054-c19f9b51e5e4cf9a-detail.mp4",
-      "poster": "media/sa-054-c19f9b51e5e4cf9a-poster.jpg",
+      "gallery": "media/sa-054-0a62b2c4f4d2e6d9-gallery.mp4",
+      "detail": "media/sa-054-0a62b2c4f4d2e6d9-detail.mp4",
+      "poster": "media/sa-054-0a62b2c4f4d2e6d9-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -8541,7 +8541,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "0d398a2ecc5013821cb35322bedaa8fddf35fa748c8da9197fa9c3c2b2de2cea"
+      "fingerprint": "0a62b2c4f4d2e6d959d5e9cb58543545ab034c91ddacbc25b15dd1104302970b"
     },
     "provenance": {
       "kind": "original",
@@ -8554,11 +8554,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-055",
@@ -8689,9 +8689,9 @@
     ],
     "recipe": "documentary-subtitle",
     "preview": {
-      "gallery": "media/sa-055-dd1ecb885ed960f7-gallery.mp4",
-      "detail": "media/sa-055-dd1ecb885ed960f7-detail.mp4",
-      "poster": "media/sa-055-dd1ecb885ed960f7-poster.jpg",
+      "gallery": "media/sa-055-ffbe23ef99fc2973-gallery.mp4",
+      "detail": "media/sa-055-ffbe23ef99fc2973-detail.mp4",
+      "poster": "media/sa-055-ffbe23ef99fc2973-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -8700,7 +8700,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "d74ab091f46661e42e10da7fba56bc88e9622cf0d60dc4fee56dd8d924496dec"
+      "fingerprint": "ffbe23ef99fc297305344d7a642b0f33106e328c604721deedf3fafd956aee21"
     },
     "provenance": {
       "kind": "original",
@@ -8713,11 +8713,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-056",
@@ -8849,9 +8849,9 @@
     ],
     "recipe": "documentary-dossier",
     "preview": {
-      "gallery": "media/sa-056-b33768aba8e569a5-gallery.mp4",
-      "detail": "media/sa-056-b33768aba8e569a5-detail.mp4",
-      "poster": "media/sa-056-b33768aba8e569a5-poster.jpg",
+      "gallery": "media/sa-056-42a95963a8b58580-gallery.mp4",
+      "detail": "media/sa-056-42a95963a8b58580-detail.mp4",
+      "poster": "media/sa-056-42a95963a8b58580-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -8860,7 +8860,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "fa6f8b07bc8e5e7bbf48e5e1e89d221b868c5d5f57b1d49bef9debdde883bbca"
+      "fingerprint": "42a95963a8b585808d320ad1d42e22a8d23d49d52320df1f3bf0dc6da61cce02"
     },
     "provenance": {
       "kind": "original",
@@ -8873,11 +8873,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-057",
@@ -9007,9 +9007,9 @@
     ],
     "recipe": "tile-press",
     "preview": {
-      "gallery": "media/sa-057-582cc6297da7eb72-gallery.mp4",
-      "detail": "media/sa-057-582cc6297da7eb72-detail.mp4",
-      "poster": "media/sa-057-582cc6297da7eb72-poster.jpg",
+      "gallery": "media/sa-057-1737f44ce147334d-gallery.mp4",
+      "detail": "media/sa-057-1737f44ce147334d-detail.mp4",
+      "poster": "media/sa-057-1737f44ce147334d-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -9018,7 +9018,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "3b11ff99d32e5f3026eae266e26f10dbdf71bacc378180fe0e1cdd925776f57a"
+      "fingerprint": "1737f44ce147334dc627418712f39286f15cbef8ef2be0e69723998e4d5963b8"
     },
     "provenance": {
       "kind": "original",
@@ -9031,11 +9031,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-058",
@@ -9165,9 +9165,9 @@
     ],
     "recipe": "transit-flaps",
     "preview": {
-      "gallery": "media/sa-058-df8c5518670e271d-gallery.mp4",
-      "detail": "media/sa-058-df8c5518670e271d-detail.mp4",
-      "poster": "media/sa-058-df8c5518670e271d-poster.jpg",
+      "gallery": "media/sa-058-5a043ebc01c6a746-gallery.mp4",
+      "detail": "media/sa-058-5a043ebc01c6a746-detail.mp4",
+      "poster": "media/sa-058-5a043ebc01c6a746-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -9176,7 +9176,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 210,
-      "fingerprint": "243c19db4c1cf4a5b376b5ff4723c7eed43563d292c36e05145ac5b914e31ffc"
+      "fingerprint": "5a043ebc01c6a746b3e22b17e9606bd6ca2aa2a120160eeca7a37ef04cacdf35"
     },
     "provenance": {
       "kind": "original",
@@ -9189,11 +9189,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Reviewed generated poster and start, intermediate, peak, return and end frames. Watched each detail clip and gallery thumbnail in the local Chrome app through its native-speed loop boundary; confirmed decoded playback, intentional loop return, and case-specific composition. SA-058 flips complete rows together in sequence, not individual glyphs. Local Playwright runner could not launch Chromium, so browser acceptance used the interactive local Chrome session.",
-      "date": "2026-10-05"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-05"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-059",
@@ -9323,9 +9323,9 @@
     ],
     "recipe": "type-scroll",
     "preview": {
-      "gallery": "media/sa-059-170e9bd9a4afc656-gallery.mp4",
-      "detail": "media/sa-059-170e9bd9a4afc656-detail.mp4",
-      "poster": "media/sa-059-170e9bd9a4afc656-poster.jpg",
+      "gallery": "media/sa-059-578408ee5e27ec8a-gallery.mp4",
+      "detail": "media/sa-059-578408ee5e27ec8a-detail.mp4",
+      "poster": "media/sa-059-578408ee5e27ec8a-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -9334,7 +9334,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "3bf2468ee8b656764eb3afa38f86cfc50d28ce7e8f19ba1ca5d6f5a88a0dc476"
+      "fingerprint": "578408ee5e27ec8a34c440ba28ef660123c0f065ce8833b2681002f5d9f69c0b"
     },
     "provenance": {
       "kind": "original",
@@ -9347,11 +9347,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-060",
@@ -9487,9 +9487,9 @@
     ],
     "recipe": "iris-contact",
     "preview": {
-      "gallery": "media/sa-060-a231d755652cf1fe-gallery.mp4",
-      "detail": "media/sa-060-a231d755652cf1fe-detail.mp4",
-      "poster": "media/sa-060-a231d755652cf1fe-poster.jpg",
+      "gallery": "media/sa-060-3287ff82b027f6e1-gallery.mp4",
+      "detail": "media/sa-060-3287ff82b027f6e1-detail.mp4",
+      "poster": "media/sa-060-3287ff82b027f6e1-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -9498,7 +9498,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "2aa754870556dfb9eae99445ee776c8cc2a5595f6bf6c0fceb5ac673ce649f3f"
+      "fingerprint": "3287ff82b027f6e1ec798bf7f537006f82707eb79454bbbe1a557e478e9fc9ee"
     },
     "provenance": {
       "kind": "original",
@@ -9511,11 +9511,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-061",
@@ -9649,9 +9649,9 @@
     ],
     "recipe": "ink-bloom",
     "preview": {
-      "gallery": "media/sa-061-456cb4a1b53f7d2f-gallery.mp4",
-      "detail": "media/sa-061-456cb4a1b53f7d2f-detail.mp4",
-      "poster": "media/sa-061-456cb4a1b53f7d2f-poster.jpg",
+      "gallery": "media/sa-061-121ad6bcc6a91a13-gallery.mp4",
+      "detail": "media/sa-061-121ad6bcc6a91a13-detail.mp4",
+      "poster": "media/sa-061-121ad6bcc6a91a13-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -9660,7 +9660,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "8562c0c8570d30a9ad6a4881eeb612ec78297b756b6fddaea5ff9f8c414ca4e1"
+      "fingerprint": "121ad6bcc6a91a13c6aec8e91f491807725119e4769de72350e0c1244ddfeabc"
     },
     "provenance": {
       "kind": "original",
@@ -9673,11 +9673,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-062",
@@ -9807,9 +9807,9 @@
     ],
     "recipe": "soft-icons",
     "preview": {
-      "gallery": "media/sa-062-0b87800a079b707e-gallery.mp4",
-      "detail": "media/sa-062-0b87800a079b707e-detail.mp4",
-      "poster": "media/sa-062-0b87800a079b707e-poster.jpg",
+      "gallery": "media/sa-062-46e4f3fc7eb8d423-gallery.mp4",
+      "detail": "media/sa-062-46e4f3fc7eb8d423-detail.mp4",
+      "poster": "media/sa-062-46e4f3fc7eb8d423-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -9818,7 +9818,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "9c30b7227d674dc34c766b50536bca97d3418b174c991efa93db71e7552f082e"
+      "fingerprint": "46e4f3fc7eb8d4239e849be862259b89e5275c94a93887781261103363a6bbdd"
     },
     "provenance": {
       "kind": "original",
@@ -9831,11 +9831,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-063",
@@ -9965,9 +9965,9 @@
     ],
     "recipe": "modular-signal",
     "preview": {
-      "gallery": "media/sa-063-e9709edce65a2081-gallery.mp4",
-      "detail": "media/sa-063-e9709edce65a2081-detail.mp4",
-      "poster": "media/sa-063-e9709edce65a2081-poster.jpg",
+      "gallery": "media/sa-063-d4b3c8aff079483b-gallery.mp4",
+      "detail": "media/sa-063-d4b3c8aff079483b-detail.mp4",
+      "poster": "media/sa-063-d4b3c8aff079483b-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -9976,7 +9976,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "10a468bdc84b9b270d4bfbadd7141331ce829e687559af307f734b31dab62a87"
+      "fingerprint": "d4b3c8aff079483b5f04ff1da5979fe476ce28203e6ef04241c62fcea5c18d50"
     },
     "provenance": {
       "kind": "original",
@@ -9989,11 +9989,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-064",
@@ -10123,9 +10123,9 @@
     ],
     "recipe": "paper-fold",
     "preview": {
-      "gallery": "media/sa-064-e026b12ddcfd88ae-gallery.mp4",
-      "detail": "media/sa-064-e026b12ddcfd88ae-detail.mp4",
-      "poster": "media/sa-064-e026b12ddcfd88ae-poster.jpg",
+      "gallery": "media/sa-064-94956ea01cf88b1d-gallery.mp4",
+      "detail": "media/sa-064-94956ea01cf88b1d-detail.mp4",
+      "poster": "media/sa-064-94956ea01cf88b1d-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -10134,7 +10134,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "f2adff47576df75ae2d3e01b0ad5da2dba874759800a8b2466ba3e2f32ca0e52"
+      "fingerprint": "94956ea01cf88b1ddedb997ca3e9943f73566f80928f1a8307f93fd29a5e8d90"
     },
     "provenance": {
       "kind": "original",
@@ -10147,11 +10147,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-065",
@@ -10281,9 +10281,9 @@
     ],
     "recipe": "urban-wayfinding",
     "preview": {
-      "gallery": "media/sa-065-7b07b45361af95e3-gallery.mp4",
-      "detail": "media/sa-065-7b07b45361af95e3-detail.mp4",
-      "poster": "media/sa-065-7b07b45361af95e3-poster.jpg",
+      "gallery": "media/sa-065-6603afc5c9b82815-gallery.mp4",
+      "detail": "media/sa-065-6603afc5c9b82815-detail.mp4",
+      "poster": "media/sa-065-6603afc5c9b82815-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -10292,7 +10292,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "946f6e56fa6c95f53fb2f729e2cf69a5ff34eb64d552486d579e10cc5e3a8c4e"
+      "fingerprint": "6603afc5c9b82815366c89319b565c9ccb30a5a96d0ae48b8680bc318feeafd9"
     },
     "provenance": {
       "kind": "original",
@@ -10305,11 +10305,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-066",
@@ -10439,9 +10439,9 @@
     ],
     "recipe": "kinetic-punctuation",
     "preview": {
-      "gallery": "media/sa-066-7a2fe1f83156649c-gallery.mp4",
-      "detail": "media/sa-066-7a2fe1f83156649c-detail.mp4",
-      "poster": "media/sa-066-7a2fe1f83156649c-poster.jpg",
+      "gallery": "media/sa-066-b45796b7f82b88ea-gallery.mp4",
+      "detail": "media/sa-066-b45796b7f82b88ea-detail.mp4",
+      "poster": "media/sa-066-b45796b7f82b88ea-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -10450,7 +10450,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "371cc8215aae4923fad55ecaadaf0587392e0fa921cff962703c5911dfa39525"
+      "fingerprint": "b45796b7f82b88eaaff8e83c7852e2283dbbac47e86849f546b02e7dafb7226a"
     },
     "provenance": {
       "kind": "original",
@@ -10463,11 +10463,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-067",
@@ -10597,9 +10597,9 @@
     ],
     "recipe": "calendar-leaves",
     "preview": {
-      "gallery": "media/sa-067-d43b0ea311750406-gallery.mp4",
-      "detail": "media/sa-067-d43b0ea311750406-detail.mp4",
-      "poster": "media/sa-067-d43b0ea311750406-poster.jpg",
+      "gallery": "media/sa-067-5948b72825a47031-gallery.mp4",
+      "detail": "media/sa-067-5948b72825a47031-detail.mp4",
+      "poster": "media/sa-067-5948b72825a47031-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -10608,7 +10608,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "367619dbc1961a7b959de13b5ae4749e9c030534e4446db29dda67837623a401"
+      "fingerprint": "5948b72825a470316027fe93e1230bb1878c96ecb78d3ff389727ed5ef5808ec"
     },
     "provenance": {
       "kind": "original",
@@ -10621,11 +10621,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-068",
@@ -10755,9 +10755,9 @@
     ],
     "recipe": "sonar-depth",
     "preview": {
-      "gallery": "media/sa-068-40f33794ab33d62d-gallery.mp4",
-      "detail": "media/sa-068-40f33794ab33d62d-detail.mp4",
-      "poster": "media/sa-068-40f33794ab33d62d-poster.jpg",
+      "gallery": "media/sa-068-42619b901eccbb18-gallery.mp4",
+      "detail": "media/sa-068-42619b901eccbb18-detail.mp4",
+      "poster": "media/sa-068-42619b901eccbb18-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -10766,7 +10766,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "17ad84e925521efe0ea71390e4d29e803fd8f8cb3f32cd3b1e2f282dc52baa65"
+      "fingerprint": "42619b901eccbb18e640df0e636ca3449c5148935385e6d322108d35b7f8e913"
     },
     "provenance": {
       "kind": "original",
@@ -10779,11 +10779,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-069",
@@ -10914,9 +10914,9 @@
     ],
     "recipe": "thermal-contours",
     "preview": {
-      "gallery": "media/sa-069-9ba258c9560f18ee-gallery.mp4",
-      "detail": "media/sa-069-9ba258c9560f18ee-detail.mp4",
-      "poster": "media/sa-069-9ba258c9560f18ee-poster.jpg",
+      "gallery": "media/sa-069-cee60a842109afa3-gallery.mp4",
+      "detail": "media/sa-069-cee60a842109afa3-detail.mp4",
+      "poster": "media/sa-069-cee60a842109afa3-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -10925,7 +10925,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "994b16d41fe19f2fb430e3163ba32d8601cc449c9dafe50590e8e4c189c0a288"
+      "fingerprint": "cee60a842109afa33691d9febeaaae9bb67407244924befd5db0b3623a11cdea"
     },
     "provenance": {
       "kind": "original",
@@ -10938,11 +10938,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-070",
@@ -11072,9 +11072,9 @@
     ],
     "recipe": "route-topography",
     "preview": {
-      "gallery": "media/sa-070-92bcb00f45d9f865-gallery.mp4",
-      "detail": "media/sa-070-92bcb00f45d9f865-detail.mp4",
-      "poster": "media/sa-070-92bcb00f45d9f865-poster.jpg",
+      "gallery": "media/sa-070-bb72823a46793f9c-gallery.mp4",
+      "detail": "media/sa-070-bb72823a46793f9c-detail.mp4",
+      "poster": "media/sa-070-bb72823a46793f9c-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -11083,7 +11083,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "9d007907cc421bf11863568431de343b3c0bbba5c19b2ad4549b67d9707d91a8"
+      "fingerprint": "bb72823a46793f9cc03c96964ef28e19d6bb27dc5cec6d69ae513bb575453fc3"
     },
     "provenance": {
       "kind": "original",
@@ -11096,11 +11096,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-071",
@@ -11230,9 +11230,9 @@
     ],
     "recipe": "botanical-anatomy",
     "preview": {
-      "gallery": "media/sa-071-fcbcb7cc0f06bb25-gallery.mp4",
-      "detail": "media/sa-071-fcbcb7cc0f06bb25-detail.mp4",
-      "poster": "media/sa-071-fcbcb7cc0f06bb25-poster.jpg",
+      "gallery": "media/sa-071-9ef8d677c029cc5e-gallery.mp4",
+      "detail": "media/sa-071-9ef8d677c029cc5e-detail.mp4",
+      "poster": "media/sa-071-9ef8d677c029cc5e-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -11241,7 +11241,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "2b24d3fa7008045c4c5ce6936acff8b413f728d6622018e6c2dbf980c138d4f4"
+      "fingerprint": "9ef8d677c029cc5e7bb502b8bada7b309ee7546d8ef5e8b25853551c1f71c6b4"
     },
     "provenance": {
       "kind": "original",
@@ -11254,11 +11254,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-072",
@@ -11388,9 +11388,9 @@
     ],
     "recipe": "acoustic-score",
     "preview": {
-      "gallery": "media/sa-072-49db9276b17b998c-gallery.mp4",
-      "detail": "media/sa-072-49db9276b17b998c-detail.mp4",
-      "poster": "media/sa-072-49db9276b17b998c-poster.jpg",
+      "gallery": "media/sa-072-e874d73b76b11f39-gallery.mp4",
+      "detail": "media/sa-072-e874d73b76b11f39-detail.mp4",
+      "poster": "media/sa-072-e874d73b76b11f39-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -11399,7 +11399,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "7f8f74af0d6db288e3102b9a8218d0406dc95ffe12318fcbf080520a5dd7d958"
+      "fingerprint": "e874d73b76b11f3993daa3577f6267e544d35d3f72d5e114e91d3d35bcbea45f"
     },
     "provenance": {
       "kind": "original",
@@ -11412,11 +11412,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Reviewed generated poster and start, intermediate, peak, return and end frames. Watched each detail clip and gallery thumbnail in the local Chrome app through its native-speed loop boundary; confirmed decoded playback, intentional loop return, and case-specific composition. SA-058 flips complete rows together in sequence, not individual glyphs. Local Playwright runner could not launch Chromium, so browser acceptance used the interactive local Chrome session.",
-      "date": "2026-10-05"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-05"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-073",
@@ -11550,9 +11550,9 @@
     ],
     "recipe": "museum-labels",
     "preview": {
-      "gallery": "media/sa-073-1fcd25320e6aaa88-gallery.mp4",
-      "detail": "media/sa-073-1fcd25320e6aaa88-detail.mp4",
-      "poster": "media/sa-073-1fcd25320e6aaa88-poster.jpg",
+      "gallery": "media/sa-073-cd13abf2f59b64de-gallery.mp4",
+      "detail": "media/sa-073-cd13abf2f59b64de-detail.mp4",
+      "poster": "media/sa-073-cd13abf2f59b64de-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -11561,7 +11561,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "39667ca05cdcabc3a824483d2ccf7120895d99aece552c986b23da617267953e"
+      "fingerprint": "cd13abf2f59b64dea83c8e4949b8c97e9d7f9cec3ad41e9c05e120f021462458"
     },
     "provenance": {
       "kind": "original",
@@ -11574,11 +11574,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-074",
@@ -11708,9 +11708,9 @@
     ],
     "recipe": "medical-contours",
     "preview": {
-      "gallery": "media/sa-074-63ddd060916c882d-gallery.mp4",
-      "detail": "media/sa-074-63ddd060916c882d-detail.mp4",
-      "poster": "media/sa-074-63ddd060916c882d-poster.jpg",
+      "gallery": "media/sa-074-26666af312cd9c63-gallery.mp4",
+      "detail": "media/sa-074-26666af312cd9c63-detail.mp4",
+      "poster": "media/sa-074-26666af312cd9c63-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -11719,7 +11719,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "36d942cab6f823d495f76528d512359f29364e0129da0fb7062e0a0db311423b"
+      "fingerprint": "26666af312cd9c638f3e3a70eec199b64839b15ccbdcae8ba8cfd9061bf4bd0f"
     },
     "provenance": {
       "kind": "original",
@@ -11732,11 +11732,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-075",
@@ -11866,9 +11866,9 @@
     ],
     "recipe": "optical-moire",
     "preview": {
-      "gallery": "media/sa-075-710952bda45427fb-gallery.mp4",
-      "detail": "media/sa-075-710952bda45427fb-detail.mp4",
-      "poster": "media/sa-075-710952bda45427fb-poster.jpg",
+      "gallery": "media/sa-075-706fd79498856e51-gallery.mp4",
+      "detail": "media/sa-075-706fd79498856e51-detail.mp4",
+      "poster": "media/sa-075-706fd79498856e51-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -11877,7 +11877,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "2237363ad981c8f019dded3fcc8da4ddc8c848724c07fdc2f0e6429ddad988a3"
+      "fingerprint": "706fd79498856e51911dd252451678748eff5d1e771764de67b5a78705f1e95e"
     },
     "provenance": {
       "kind": "original",
@@ -11890,11 +11890,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-076",
@@ -12024,9 +12024,9 @@
     ],
     "recipe": "embossed-seal",
     "preview": {
-      "gallery": "media/sa-076-c615d49ba2c9b54b-gallery.mp4",
-      "detail": "media/sa-076-c615d49ba2c9b54b-detail.mp4",
-      "poster": "media/sa-076-c615d49ba2c9b54b-poster.jpg",
+      "gallery": "media/sa-076-52376928d8a2ca27-gallery.mp4",
+      "detail": "media/sa-076-52376928d8a2ca27-detail.mp4",
+      "poster": "media/sa-076-52376928d8a2ca27-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -12035,7 +12035,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "cc9fdf5bbdda81e9310aac72ec48df89276825f6770a2bff5492c58b62ff97c2"
+      "fingerprint": "52376928d8a2ca278d2beb6afadf416fd9d4f8e7c3ed6aef055285ff60d560bd"
     },
     "provenance": {
       "kind": "original",
@@ -12048,11 +12048,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-077",
@@ -12182,9 +12182,9 @@
     ],
     "recipe": "brutal-modules",
     "preview": {
-      "gallery": "media/sa-077-b031e05856de3150-gallery.mp4",
-      "detail": "media/sa-077-b031e05856de3150-detail.mp4",
-      "poster": "media/sa-077-b031e05856de3150-poster.jpg",
+      "gallery": "media/sa-077-6de6fd7ad2d3390b-gallery.mp4",
+      "detail": "media/sa-077-6de6fd7ad2d3390b-detail.mp4",
+      "poster": "media/sa-077-6de6fd7ad2d3390b-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -12193,7 +12193,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "494c705794ffc52bb46c1965485d8eccff10b0a9319b462e24845bc2531d970a"
+      "fingerprint": "6de6fd7ad2d3390b3379a542507482d925de55dde8c0a0206fb28b262c44bcdf"
     },
     "provenance": {
       "kind": "original",
@@ -12206,11 +12206,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-078",
@@ -12340,9 +12340,9 @@
     ],
     "recipe": "constructivist-wedges",
     "preview": {
-      "gallery": "media/sa-078-3522c7d8887d694c-gallery.mp4",
-      "detail": "media/sa-078-3522c7d8887d694c-detail.mp4",
-      "poster": "media/sa-078-3522c7d8887d694c-poster.jpg",
+      "gallery": "media/sa-078-9ed7712c96d9e016-gallery.mp4",
+      "detail": "media/sa-078-9ed7712c96d9e016-detail.mp4",
+      "poster": "media/sa-078-9ed7712c96d9e016-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -12351,7 +12351,7 @@
       "galleryDuration": 4,
       "detailDuration": 8,
       "posterFrame": 120,
-      "fingerprint": "b0285df39544a292e32288fe20e0997156b8a3eca1e9141b5477b28070aa3baa"
+      "fingerprint": "9ed7712c96d9e016539a91a3a856cbfa9376d5e1fef6cc7cabb6d01b3685796f"
     },
     "provenance": {
       "kind": "original",
@@ -12364,11 +12364,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-079",
@@ -12498,9 +12498,9 @@
     ],
     "recipe": "isometric-room",
     "preview": {
-      "gallery": "media/sa-079-80d6266d74f728a9-gallery.mp4",
-      "detail": "media/sa-079-80d6266d74f728a9-detail.mp4",
-      "poster": "media/sa-079-80d6266d74f728a9-poster.jpg",
+      "gallery": "media/sa-079-06adbf36a28a4e69-gallery.mp4",
+      "detail": "media/sa-079-06adbf36a28a4e69-detail.mp4",
+      "poster": "media/sa-079-06adbf36a28a4e69-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -12509,7 +12509,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "8696ad1734acdfa185898681784ae8472dca035783e44ef28fe2293803a5a437"
+      "fingerprint": "06adbf36a28a4e69e77358621511ffda7b408ea6ecf7313f78a442c0f5c1dc7a"
     },
     "provenance": {
       "kind": "original",
@@ -12522,11 +12522,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-080",
@@ -12656,9 +12656,9 @@
     ],
     "recipe": "scope-routing",
     "preview": {
-      "gallery": "media/sa-080-7842df4461be71f5-gallery.mp4",
-      "detail": "media/sa-080-7842df4461be71f5-detail.mp4",
-      "poster": "media/sa-080-7842df4461be71f5-poster.jpg",
+      "gallery": "media/sa-080-484d3595826cf6af-gallery.mp4",
+      "detail": "media/sa-080-484d3595826cf6af-detail.mp4",
+      "poster": "media/sa-080-484d3595826cf6af-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -12667,7 +12667,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "7ba44d429c49e444af6f5346173dfa32c8ba6eb68feead0b9b3bd0e1be613563"
+      "fingerprint": "484d3595826cf6af73857c60cc46bd4737193926c9d576eb55dc05b30dc41213"
     },
     "provenance": {
       "kind": "original",
@@ -12680,11 +12680,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-081",
@@ -12818,9 +12818,9 @@
     ],
     "recipe": "zine-stamps",
     "preview": {
-      "gallery": "media/sa-081-cf7b4879c43a3327-gallery.mp4",
-      "detail": "media/sa-081-cf7b4879c43a3327-detail.mp4",
-      "poster": "media/sa-081-cf7b4879c43a3327-poster.jpg",
+      "gallery": "media/sa-081-8b0683cebb685c36-gallery.mp4",
+      "detail": "media/sa-081-8b0683cebb685c36-detail.mp4",
+      "poster": "media/sa-081-8b0683cebb685c36-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -12829,7 +12829,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "07d45722a66194bfb68bc1c7303d7241c2a52ce9b4f384cd10f3c222e2507e34"
+      "fingerprint": "8b0683cebb685c365b29cf27db6b298a261379e9321d26daa419c6ab1f956034"
     },
     "provenance": {
       "kind": "original",
@@ -12842,11 +12842,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-082",
@@ -12976,9 +12976,9 @@
     ],
     "recipe": "loom-weave",
     "preview": {
-      "gallery": "media/sa-082-6400a37edfc73647-gallery.mp4",
-      "detail": "media/sa-082-6400a37edfc73647-detail.mp4",
-      "poster": "media/sa-082-6400a37edfc73647-poster.jpg",
+      "gallery": "media/sa-082-22549a2c09c3267b-gallery.mp4",
+      "detail": "media/sa-082-22549a2c09c3267b-detail.mp4",
+      "poster": "media/sa-082-22549a2c09c3267b-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -12987,7 +12987,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "927939870da88ef97165b886429e5358500e55c3862aeffc0db6e3c452964e88"
+      "fingerprint": "22549a2c09c3267b1b477b2a9336acd48396dae45a32e4929a090a1aefa91a40"
     },
     "provenance": {
       "kind": "original",
@@ -13000,11 +13000,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-083",
@@ -13134,9 +13134,9 @@
     ],
     "recipe": "ceramic-slabs",
     "preview": {
-      "gallery": "media/sa-083-886af27e24447ca8-gallery.mp4",
-      "detail": "media/sa-083-886af27e24447ca8-detail.mp4",
-      "poster": "media/sa-083-886af27e24447ca8-poster.jpg",
+      "gallery": "media/sa-083-1a40f25a7a6016a8-gallery.mp4",
+      "detail": "media/sa-083-1a40f25a7a6016a8-detail.mp4",
+      "poster": "media/sa-083-1a40f25a7a6016a8-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -13145,7 +13145,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "e25e48f7708bd46928d03b6c50c65aa09780237463a4ffbbbdce5177ddf1984d"
+      "fingerprint": "1a40f25a7a6016a8408d97c87cae803b636129f7cf59fb4475e582cbefc8caad"
     },
     "provenance": {
       "kind": "original",
@@ -13158,11 +13158,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-084",
@@ -13292,9 +13292,9 @@
     ],
     "recipe": "botanical-glass",
     "preview": {
-      "gallery": "media/sa-084-4718b4d13f107b34-gallery.mp4",
-      "detail": "media/sa-084-4718b4d13f107b34-detail.mp4",
-      "poster": "media/sa-084-4718b4d13f107b34-poster.jpg",
+      "gallery": "media/sa-084-12f8aa7a2589fd09-gallery.mp4",
+      "detail": "media/sa-084-12f8aa7a2589fd09-detail.mp4",
+      "poster": "media/sa-084-12f8aa7a2589fd09-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -13303,7 +13303,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "8cea376b42cf823ab8acc82413016e4fb3a261c9a1aa476fccb536b61867415c"
+      "fingerprint": "12f8aa7a2589fd09309cd8952c9bdec6c17b2fe6fda908e3e8bcec6d76ec5fbd"
     },
     "provenance": {
       "kind": "original",
@@ -13316,11 +13316,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已檢視海報、起首、前段、中段、後段及末幀：SA-022 雙片盤持續反向旋轉；SA-084 光帶受花器輪廓裁切且葉片擺動；SA-093 翻頁跨過書脊並露出背面。接續以 Chromium 驗證播放器自動播放及影片推進。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-085",
@@ -13450,9 +13450,9 @@
     ],
     "recipe": "celestial-chart",
     "preview": {
-      "gallery": "media/sa-085-4553d4a3bf429860-gallery.mp4",
-      "detail": "media/sa-085-4553d4a3bf429860-detail.mp4",
-      "poster": "media/sa-085-4553d4a3bf429860-poster.jpg",
+      "gallery": "media/sa-085-d8c9978259557472-gallery.mp4",
+      "detail": "media/sa-085-d8c9978259557472-detail.mp4",
+      "poster": "media/sa-085-d8c9978259557472-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -13461,7 +13461,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "fc75dc6d81abd09aab6ed35e4178124a08dc89a715d5fdff2425ab84550c27bc"
+      "fingerprint": "d8c9978259557472005344d37dfc353d5fc17e502c8b14f209ee485914a6d8d6"
     },
     "provenance": {
       "kind": "original",
@@ -13474,11 +13474,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-086",
@@ -13608,9 +13608,9 @@
     ],
     "recipe": "fiscal-waterfall",
     "preview": {
-      "gallery": "media/sa-086-b4a63184dc1706cc-gallery.mp4",
-      "detail": "media/sa-086-b4a63184dc1706cc-detail.mp4",
-      "poster": "media/sa-086-b4a63184dc1706cc-poster.jpg",
+      "gallery": "media/sa-086-0d7f9d0f66dc2d6c-gallery.mp4",
+      "detail": "media/sa-086-0d7f9d0f66dc2d6c-detail.mp4",
+      "poster": "media/sa-086-0d7f9d0f66dc2d6c-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -13619,7 +13619,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "5f3d459ac329c8ae279025f1f7aed53d7edf254f660cecf95038b3f42fe7ca6f"
+      "fingerprint": "0d7f9d0f66dc2d6cd3b8caaad43a95b7cb37afd306d11538b4afbacb14071bb3"
     },
     "provenance": {
       "kind": "original",
@@ -13632,11 +13632,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Reviewed generated poster and start, intermediate, peak, return and end frames. Watched each detail clip and gallery thumbnail in the local Chrome app through its native-speed loop boundary; confirmed decoded playback, intentional loop return, and case-specific composition. SA-058 flips complete rows together in sequence, not individual glyphs. Local Playwright runner could not launch Chromium, so browser acceptance used the interactive local Chrome session.",
-      "date": "2026-10-05"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-05"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-087",
@@ -13766,9 +13766,9 @@
     ],
     "recipe": "mechanical-clock",
     "preview": {
-      "gallery": "media/sa-087-81a14ebe392de719-gallery.mp4",
-      "detail": "media/sa-087-81a14ebe392de719-detail.mp4",
-      "poster": "media/sa-087-81a14ebe392de719-poster.jpg",
+      "gallery": "media/sa-087-ff9de9e95b81ad09-gallery.mp4",
+      "detail": "media/sa-087-ff9de9e95b81ad09-detail.mp4",
+      "poster": "media/sa-087-ff9de9e95b81ad09-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -13777,7 +13777,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "05054b0d4a2fc026b750b79b9fde07393fece8f26860c59925ff4c98a059699b"
+      "fingerprint": "ff9de9e95b81ad09cc82d797af1a70cc69c8d1a47ee36c825c1571b4a9d7f750"
     },
     "provenance": {
       "kind": "original",
@@ -13790,11 +13790,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-088",
@@ -13924,9 +13924,9 @@
     ],
     "recipe": "analog-meter",
     "preview": {
-      "gallery": "media/sa-088-123522e6af05f1c3-gallery.mp4",
-      "detail": "media/sa-088-123522e6af05f1c3-detail.mp4",
-      "poster": "media/sa-088-123522e6af05f1c3-poster.jpg",
+      "gallery": "media/sa-088-289288e252086d89-gallery.mp4",
+      "detail": "media/sa-088-289288e252086d89-detail.mp4",
+      "poster": "media/sa-088-289288e252086d89-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -13935,7 +13935,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "c8adef2eba6601ca963826b31fb443fa00a8281fb188897095a5f72981763e85"
+      "fingerprint": "289288e252086d89271fb96215488bba7264f3c45c785a9d3d105e4129935e7e"
     },
     "provenance": {
       "kind": "original",
@@ -13948,11 +13948,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-089",
@@ -14082,9 +14082,9 @@
     ],
     "recipe": "magnetic-poetry",
     "preview": {
-      "gallery": "media/sa-089-0613a54f3f4b1182-gallery.mp4",
-      "detail": "media/sa-089-0613a54f3f4b1182-detail.mp4",
-      "poster": "media/sa-089-0613a54f3f4b1182-poster.jpg",
+      "gallery": "media/sa-089-735619f1da4b0022-gallery.mp4",
+      "detail": "media/sa-089-735619f1da4b0022-detail.mp4",
+      "poster": "media/sa-089-735619f1da4b0022-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -14093,7 +14093,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "0a725bae2595122e47fedb29916bbeb5b5fbda460a96fbfb09c1eecdddc14e84"
+      "fingerprint": "735619f1da4b002213a6f0f9cee1ed14cadef90f6826034ac22fb405223060c8"
     },
     "provenance": {
       "kind": "original",
@@ -14106,11 +14106,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Reviewed generated poster and start, intermediate, peak, return and end frames. Watched each detail clip and gallery thumbnail in the local Chrome app through its native-speed loop boundary; confirmed decoded playback, intentional loop return, and case-specific composition. SA-058 flips complete rows together in sequence, not individual glyphs. Local Playwright runner could not launch Chromium, so browser acceptance used the interactive local Chrome session.",
-      "date": "2026-10-05"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-05"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-090",
@@ -14240,9 +14240,9 @@
     ],
     "recipe": "contour-type",
     "preview": {
-      "gallery": "media/sa-090-5b79be409c00a66e-gallery.mp4",
-      "detail": "media/sa-090-5b79be409c00a66e-detail.mp4",
-      "poster": "media/sa-090-5b79be409c00a66e-poster.jpg",
+      "gallery": "media/sa-090-346f3df495036dda-gallery.mp4",
+      "detail": "media/sa-090-346f3df495036dda-detail.mp4",
+      "poster": "media/sa-090-346f3df495036dda-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -14251,7 +14251,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "106d054b710c3d0b08e07bee323349c75278c4a7c4c38047191d720c7eaec93a"
+      "fingerprint": "346f3df495036dda5555421c7b12e23120898400da709828de82a450f5887300"
     },
     "provenance": {
       "kind": "original",
@@ -14264,11 +14264,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-091",
@@ -14398,9 +14398,9 @@
     ],
     "recipe": "cardboard-stage",
     "preview": {
-      "gallery": "media/sa-091-92d20a4d5654897c-gallery.mp4",
-      "detail": "media/sa-091-92d20a4d5654897c-detail.mp4",
-      "poster": "media/sa-091-92d20a4d5654897c-poster.jpg",
+      "gallery": "media/sa-091-367c2736a9180c04-gallery.mp4",
+      "detail": "media/sa-091-367c2736a9180c04-detail.mp4",
+      "poster": "media/sa-091-367c2736a9180c04-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -14409,7 +14409,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "07a413e665318f5eb83420eb2b693114b314ac1a313267f366f4b884bb345c5d"
+      "fingerprint": "367c2736a9180c04178085f2ae87e7e0bd6ee3c71598ca9fcc5326df1ba18416"
     },
     "provenance": {
       "kind": "original",
@@ -14422,11 +14422,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Reviewed generated poster and start, intermediate, peak, return and end frames. Watched each detail clip and gallery thumbnail in the local Chrome app through its native-speed loop boundary; confirmed decoded playback, intentional loop return, and case-specific composition. SA-058 flips complete rows together in sequence, not individual glyphs. Local Playwright runner could not launch Chromium, so browser acceptance used the interactive local Chrome session.",
-      "date": "2026-10-05"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-05"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-092",
@@ -14556,9 +14556,9 @@
     ],
     "recipe": "tile-map",
     "preview": {
-      "gallery": "media/sa-092-c4627e7f7da5b127-gallery.mp4",
-      "detail": "media/sa-092-c4627e7f7da5b127-detail.mp4",
-      "poster": "media/sa-092-c4627e7f7da5b127-poster.jpg",
+      "gallery": "media/sa-092-688863f2ceb46c6c-gallery.mp4",
+      "detail": "media/sa-092-688863f2ceb46c6c-detail.mp4",
+      "poster": "media/sa-092-688863f2ceb46c6c-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -14567,7 +14567,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "ffb36baf19119a295cd61726b506187a8c5135c9bb3d5c58537c120147018ad0"
+      "fingerprint": "688863f2ceb46c6cf35f494c1b92f132dd6de4dedbb24877bd75c12d2e1872cb"
     },
     "provenance": {
       "kind": "original",
@@ -14580,11 +14580,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Reviewed generated poster and start, intermediate, peak, return and end frames. Watched each detail clip and gallery thumbnail in the local Chrome app through its native-speed loop boundary; confirmed decoded playback, intentional loop return, and case-specific composition. SA-058 flips complete rows together in sequence, not individual glyphs. Local Playwright runner could not launch Chromium, so browser acceptance used the interactive local Chrome session.",
-      "date": "2026-10-05"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-05"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-093",
@@ -14714,9 +14714,9 @@
     ],
     "recipe": "book-binding",
     "preview": {
-      "gallery": "media/sa-093-26e55cbb57101c4e-gallery.mp4",
-      "detail": "media/sa-093-26e55cbb57101c4e-detail.mp4",
-      "poster": "media/sa-093-26e55cbb57101c4e-poster.jpg",
+      "gallery": "media/sa-093-69f73e4a7dc2b6b0-gallery.mp4",
+      "detail": "media/sa-093-69f73e4a7dc2b6b0-detail.mp4",
+      "poster": "media/sa-093-69f73e4a7dc2b6b0-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -14725,7 +14725,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "e71202542e6160bc0e99b580773599686827ec0620586192373bd0556ba7603f"
+      "fingerprint": "69f73e4a7dc2b6b026485136a0bee12c393d84609af5b2da70b09564234fb5c8"
     },
     "provenance": {
       "kind": "original",
@@ -14738,11 +14738,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已檢視海報、起首、前段、中段、後段及末幀：SA-022 雙片盤持續反向旋轉；SA-084 光帶受花器輪廓裁切且葉片擺動；SA-093 翻頁跨過書脊並露出背面。接續以 Chromium 驗證播放器自動播放及影片推進。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-094",
@@ -14872,9 +14872,9 @@
     ],
     "recipe": "negative-letterpress",
     "preview": {
-      "gallery": "media/sa-094-7426f4b52fb5e703-gallery.mp4",
-      "detail": "media/sa-094-7426f4b52fb5e703-detail.mp4",
-      "poster": "media/sa-094-7426f4b52fb5e703-poster.jpg",
+      "gallery": "media/sa-094-27ddc54a1c47cb7b-gallery.mp4",
+      "detail": "media/sa-094-27ddc54a1c47cb7b-detail.mp4",
+      "poster": "media/sa-094-27ddc54a1c47cb7b-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -14883,7 +14883,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "0701031077feb5f2857c5dd35134bbfbbb9410c442a74bd1b9c71f074d416b73"
+      "fingerprint": "27ddc54a1c47cb7b0ad90efd989476a2fb6926ddf87b49dc55cc1d07afc9f817"
     },
     "provenance": {
       "kind": "original",
@@ -14896,11 +14896,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-095",
@@ -15030,9 +15030,9 @@
     ],
     "recipe": "stencil-transfer",
     "preview": {
-      "gallery": "media/sa-095-8e824e0a96b99279-gallery.mp4",
-      "detail": "media/sa-095-8e824e0a96b99279-detail.mp4",
-      "poster": "media/sa-095-8e824e0a96b99279-poster.jpg",
+      "gallery": "media/sa-095-43b3be933877285f-gallery.mp4",
+      "detail": "media/sa-095-43b3be933877285f-detail.mp4",
+      "poster": "media/sa-095-43b3be933877285f-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -15041,7 +15041,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "49f7cd3f94650385847c092fc75e2fd7aec8aeb35920f788d98628f22053b3fe"
+      "fingerprint": "43b3be933877285fe98bce2cb4b72c16c0cba7716054663bd2fd482b5281fe07"
     },
     "provenance": {
       "kind": "original",
@@ -15054,11 +15054,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "已逐項檢查海報與首段、中段、後段、末段影格；100 個 gallery/detail 均在原生影片元素完整循環播放並確認解碼，檢查縮圖、繁體中文字、構圖差異與循環返回。SA-047 線條動畫修正後重驗；SA-058 海報改為可讀影格後重驗。",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-096",
@@ -15193,9 +15193,9 @@
     ],
     "recipe": "lightbox-proof",
     "preview": {
-      "gallery": "media/sa-096-b232e0c681022eae-gallery.mp4",
-      "detail": "media/sa-096-b232e0c681022eae-detail.mp4",
-      "poster": "media/sa-096-b232e0c681022eae-poster.jpg",
+      "gallery": "media/sa-096-5bf2a1b90ae69122-gallery.mp4",
+      "detail": "media/sa-096-5bf2a1b90ae69122-detail.mp4",
+      "poster": "media/sa-096-5bf2a1b90ae69122-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -15204,7 +15204,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "e5aa24c62282b99267ceb4f10dce773f4608cd3c58a60bccabe5c3c3d9f313c5"
+      "fingerprint": "5bf2a1b90ae6912201d26aeed503e990607c87e668bed569148f5f783136e1e8"
     },
     "provenance": {
       "kind": "original",
@@ -15217,11 +15217,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected contact frames; played gallery and detail output through complete Chromium loops with wrap verification.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-097",
@@ -15351,9 +15351,9 @@
     ],
     "recipe": "pencil-drafting",
     "preview": {
-      "gallery": "media/sa-097-725db09525fa5c2a-gallery.mp4",
-      "detail": "media/sa-097-725db09525fa5c2a-detail.mp4",
-      "poster": "media/sa-097-725db09525fa5c2a-poster.jpg",
+      "gallery": "media/sa-097-aafcabbc6097fed1-gallery.mp4",
+      "detail": "media/sa-097-aafcabbc6097fed1-detail.mp4",
+      "poster": "media/sa-097-aafcabbc6097fed1-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -15362,7 +15362,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "0137cebbf2ee6b3a57f1a8759e93eb0519e21fd14359926c786378eb9570fce3"
+      "fingerprint": "aafcabbc6097fed11aa9a0944b159df66c654e2916713ed30ec3da4ccced4b4a"
     },
     "provenance": {
       "kind": "original",
@@ -15375,11 +15375,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Reviewed generated poster and start, intermediate, peak, return and end frames. Watched each detail clip and gallery thumbnail in the local Chrome app through its native-speed loop boundary; confirmed decoded playback, intentional loop return, and case-specific composition. SA-058 flips complete rows together in sequence, not individual glyphs. Local Playwright runner could not launch Chromium, so browser acceptance used the interactive local Chrome session.",
-      "date": "2026-10-05"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-05"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-098",
@@ -15509,9 +15509,9 @@
     ],
     "recipe": "receipt-roll",
     "preview": {
-      "gallery": "media/sa-098-83096ae1e4133312-gallery.mp4",
-      "detail": "media/sa-098-83096ae1e4133312-detail.mp4",
-      "poster": "media/sa-098-83096ae1e4133312-poster.jpg",
+      "gallery": "media/sa-098-af2e3edf7f2b6de5-gallery.mp4",
+      "detail": "media/sa-098-af2e3edf7f2b6de5-detail.mp4",
+      "poster": "media/sa-098-af2e3edf7f2b6de5-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -15520,7 +15520,7 @@
       "galleryDuration": 5,
       "detailDuration": 10,
       "posterFrame": 150,
-      "fingerprint": "7e03bf0514982d6b2bfc7d86045438968cb7d5337a20a2ee5d0188ecc85e70ad"
+      "fingerprint": "af2e3edf7f2b6de5317b823d97dd00c3f381f02018110a255a676fae79d26ccc"
     },
     "provenance": {
       "kind": "original",
@@ -15533,11 +15533,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-099",
@@ -15667,9 +15667,9 @@
     ],
     "recipe": "orbital-ribbons",
     "preview": {
-      "gallery": "media/sa-099-2f01585e563436be-gallery.mp4",
-      "detail": "media/sa-099-2f01585e563436be-detail.mp4",
-      "poster": "media/sa-099-2f01585e563436be-poster.jpg",
+      "gallery": "media/sa-099-04494e033aedf810-gallery.mp4",
+      "detail": "media/sa-099-04494e033aedf810-detail.mp4",
+      "poster": "media/sa-099-04494e033aedf810-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -15678,7 +15678,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "e732612080401b71197e0149f0a80e1ac2e639c62d414f954c700c6d218d2d62"
+      "fingerprint": "04494e033aedf810c0151538aca6d893cb7fcb98c76f27fd8773234bb8568d9e"
     },
     "provenance": {
       "kind": "original",
@@ -15691,11 +15691,11 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Inspected poster and sampled keyframes; watched both gallery and detail videos through full native-speed loops in a local browser, confirming decoding and return to the opening frame.",
-      "date": "2026-10-03"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-03"
+    "updated": "2026-10-27"
   },
   {
     "id": "SA-100",
@@ -15825,9 +15825,9 @@
     ],
     "recipe": "paper-tessellation",
     "preview": {
-      "gallery": "media/sa-100-07c6743a94a6273d-gallery.mp4",
-      "detail": "media/sa-100-07c6743a94a6273d-detail.mp4",
-      "poster": "media/sa-100-07c6743a94a6273d-poster.jpg",
+      "gallery": "media/sa-100-8e80456501cc0c39-gallery.mp4",
+      "detail": "media/sa-100-8e80456501cc0c39-detail.mp4",
+      "poster": "media/sa-100-8e80456501cc0c39-poster.jpg",
       "width": 1280,
       "height": 720,
       "galleryWidth": 480,
@@ -15836,7 +15836,7 @@
       "galleryDuration": 6,
       "detailDuration": 12,
       "posterFrame": 180,
-      "fingerprint": "321a30717409146b3e50c62daae0575704875723c7b9f252ff1c75586070a2b7"
+      "fingerprint": "8e80456501cc0c3972cf0c9a03628c0f21b44a4b0380a4fa22c28fb904135f02"
     },
     "provenance": {
       "kind": "original",
@@ -15849,10 +15849,10 @@
       "visual": true,
       "motion": true,
       "reviewer": "Codex",
-      "notes": "Reviewed generated poster and start, intermediate, peak, return and end frames. Watched each detail clip and gallery thumbnail in the local Chrome app through its native-speed loop boundary; confirmed decoded playback, intentional loop return, and case-specific composition. SA-058 flips complete rows together in sequence, not individual glyphs. Local Playwright runner could not launch Chromium, so browser acceptance used the interactive local Chrome session.",
-      "date": "2026-10-05"
+      "notes": "Compatible dependency refresh: inspected all nine contact sheets (poster plus first, early, middle, late and last frames for all100 unchanged recipes); all200 actual gallery/detail HTML video decodes and loop boundaries passed. Technical visual/motion review, not a new creative direction, independent editorial assessment or cross-device performance claim.",
+      "date": "2026-10-27"
     },
     "created": "2026-10-03",
-    "updated": "2026-10-05"
+    "updated": "2026-10-27"
   }
 ]

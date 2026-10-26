@@ -4,7 +4,7 @@
 
 套件安裝與後續更新遵循工作區唯一政策：`.agents/rules/node_package_runtime.md`；各 Mac 使用自己的本機 store。
 
-2026-10-05 套件治理遷移：渲染 fingerprint 已納入 `pnpm-lock.yaml`，因此原有 100 筆預覽的舊審查紀錄不能代表新套件環境已完成審查。既有影片與紀錄均保留；技術建置、Studio、選定案例渲染已通過，但完整發布建置仍須重新渲染及審查受影響的案例。
+2026-10-26 相容套件更新：已在現行 lockfile 環境重建並檢視原有 100 組預覽，完成 200 段 gallery／detail 解碼與循環檢查；78 個既有 ready 技術案例已重新擷取並通過 Chrome／WebKit 檢查。38 個原有 partial 案例及外部授權原文限制仍如實保留。後續來源／lock 變更會再次失效，驗收以現行 gate 與實際執行結果為準；下方 2026-10-04／05 段落為歷史紀錄。
 
 ## 啟動與操作
 
@@ -170,3 +170,18 @@ Apple M4 Pro（12 核心、24 GB RAM），1 個渲染工作／2 影格並行：�
 目前實際支援且已審查的比例為 16:9；攝影處理範例使用原創插畫，景深／視差範例屬 2.5D。未驗證實機 Safari、iPhone 或 Mac Studio M1 Ultra／64 GB；未執行 GitHub Actions 遠端部署。
 
 Created: 2026-10-04
+
+
+## 2026-10-26 相容更新驗收入口
+
+套件更新沿用工作區唯一 [Node 治理](../../.agents/rules/node_package_runtime.md)，不得新增 store、放寬 release-age 或手改 render fingerprint。100組原有 recipe 已在新版相容套件環境重建；未來是否仍有效以現行 manifest／source hash gate 為準，不能沿用本段文字當永久批准。
+
+正式 build 後，用現有 preview 服務驗證產物。`test:browser` 同時測正式已發布負例與純記憶體 synthetic DEV 未發布正例；`ATLAS_URL` 指向正式 preview，`ATLAS_REVIEW_URL` 指向另外已啟動的 DEV server（預設沿用 ATLAS_URL，僅適用原本就是DEV的測試環境）。fixture不寫回作者／發布檔，並先通過現有catalog schema。兩個服務使用不同空閒port，結束只關閉本次自有程序。
+
+```sh
+ATLAS_URL=http://127.0.0.1:4175/ ATLAS_REVIEW_URL=http://127.0.0.1:4173/ ../../scripts/package-runtime verify . --check 'run test' --check 'run build' --check 'run test:browser' --check 'run test:technology'
+../../scripts/package-runtime pm . run test:technology-previews --legacy
+../../scripts/package-runtime pm . run test:technology-previews
+```
+
+`test:technology-previews` 預設只測已有ready媒體的技術案例；明確指定不存在／未ready的ID會失敗。兩種集合都驗證gallery和detail完整解碼及loop邊界；此檢查不能替代聯絡表／視覺審查或當成FPS benchmark。捕捉工具的聯絡表僅收本輪通過案例，歷史cache不能冒充新runtime證據。根目錄`.cache`與node_modules下的快取皆指向本機既有runtime build-cache；既有實體cache需先審查ownership並保留內容，不能自動刪除。

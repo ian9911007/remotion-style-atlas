@@ -7,6 +7,7 @@ type Entry = {
   lastUsed: number;
   failed: boolean;
   pending: boolean;
+  playGeneration: number;
   onFailure: () => void;
 };
 /** One observer and one scheduler for the wall; video elements never own timers. */
@@ -71,6 +72,7 @@ export class PlaybackScheduler {
       lastUsed: 0,
       failed: false,
       pending: false,
+      playGeneration: 0,
       onFailure,
     };
     this.entries.set(id, entry);
@@ -154,6 +156,7 @@ export class PlaybackScheduler {
         }
         if (e.element.paused && !e.pending) {
           e.pending = true;
+          const generation = e.playGeneration;
           e.element
             .play()
             .then(() => {
@@ -169,13 +172,20 @@ export class PlaybackScheduler {
                 e.element.dataset.playing = "true";
               else e.element.pause();
             })
-            .catch(() => {
+            .catch((error: unknown) => {
               e.pending = false;
-              if (this.entries.get(id) === e && this.granted.has(id))
-                this.fail(e);
+              if (this.entries.get(id) !== e) return;
+              // pause/load can reject a prior native attempt after this card is visible again.
+              // Only an attempt explicitly withdrawn by our scheduler is eligible to resume.
+              if ((error as {name?: string} | null)?.name === "AbortError" && e.playGeneration !== generation) {
+                this.schedule();
+                return;
+              }
+              if (this.granted.has(id)) this.fail(e);
             });
         }
       } else {
+        if (e.pending) e.playGeneration++;
         if (!e.element.paused) e.element.pause();
         e.element.removeAttribute("data-playing");
       }

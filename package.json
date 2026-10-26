@@ -31,25 +31,25 @@
   },
   "dependencies": {
     "lucide-react": "0.468.0",
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
-    "remotion": "4.0.530",
-    "zod": "4.5.4"
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.539",
+    "zod": "4.6.7"
   },
   "devDependencies": {
-    "@playwright/test": "1.56.1",
-    "@remotion/bundler": "4.0.530",
-    "@remotion/cli": "4.0.530",
-    "@remotion/renderer": "4.0.530",
-    "@types/node": "22.19.0",
-    "@types/react": "19.2.0",
-    "@types/react-dom": "19.2.0",
-    "@vitejs/plugin-react": "5.0.4",
-    "prettier": "3.8.1",
-    "sharp": "0.34.4",
-    "tsx": "4.20.6",
+    "@playwright/test": "1.64.1",
+    "@remotion/bundler": "4.0.539",
+    "@remotion/cli": "4.0.539",
+    "@remotion/renderer": "4.0.539",
+    "@types/node": "22.20.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "5.2.0",
+    "prettier": "3.9.10",
+    "sharp": "0.34.5",
+    "tsx": "4.23.15",
     "typescript": "5.9.3",
-    "vite": "7.1.9"
+    "vite": "7.3.7"
   },
   "packageManager": "pnpm@11.19.0",
   "aiSkillsPackageRuntime": {

@@ -1,6 +1,7 @@
 /** Real-browser acceptance checks. WebKit automation is not real-device Safari validation. */
 import assert from "node:assert/strict";
 import { catalog } from "../src/catalog/catalog";
+import { catalogSchema } from "../src/catalog/schema";
 import { mkdir, readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import {
@@ -52,10 +53,10 @@ const snapshot = (page: Page) =>
 async function allPaused(page: Page) {
   await expect.poll(async () => (await snapshot(page)).playing.length).toBe(0);
 }
-async function settledPlayback(page: Page) {
+async function settledPlayback(page: Page, phase = "global playback") {
   await page.getByRole("button", { name: "全域", exact: true }).click();
   await expect
-    .poll(async () => (await snapshot(page)).playing.length, { timeout: 15000 })
+    .poll(async () => (await snapshot(page)).playing.length, { timeout: 15000, message: phase })
     .toBeGreaterThan(0);
 }
 async function openFirst(page: Page) {
@@ -680,25 +681,33 @@ test("detail preview loops while its interactive case loads automatically", asyn
     .toBeGreaterThan(before);
 });
 
-test("local review previews show an explicit unpublished label and fresh media", async (page) => {
-  await page.goto(`${baseURL}#/style/SA-058`);
-  await expect(page.locator(".detail-id")).toContainText("SA-058");
-  await expect(page.locator(".review-preview-label")).toHaveText(
-    "本機審查預覽 · 尚未發布",
-  );
+test("published media stays unlabeled while synthetic local review previews are explicit", async (page) => {
+  const published = catalog.find(style => style.id === "SA-058")!;
+  assert.equal(published.status, "published", "Current reviewed release includes SA-058");
+  await page.goto(`${baseURL}#/style/${published.id}`);
+  await expect(page.locator(".review-preview-label")).toHaveCount(0);
+  const publishedVideo = page.locator(".detail-player video");
+  assert.ok((await publishedVideo.getAttribute("src"))?.endsWith(published.preview.detail));
+
+  // Synthetic, in-memory DEV fixture: never rewrite authoring/published files or demote a release.
+  const fixture = {...published, id: "SA-999", status: "reviewed"};
+  const authoring = JSON.parse(await readFile(new URL("../src/catalog/styles.json", import.meta.url), "utf8"));
+  const fixtureCatalog = catalogSchema.parse([...authoring.filter((style: {id: string}) => style.id !== published.id), fixture]);
+  let fixtureRequests = 0;
+  await page.route("**/src/catalog/styles.json*", route => {
+    fixtureRequests++;
+    return route.fulfill({contentType: "application/javascript", body: `export default ${JSON.stringify(fixtureCatalog)};`});
+  });
+  const reviewURL = process.env.ATLAS_REVIEW_URL ?? baseURL;
+  await page.goto(`${reviewURL}#/style/${fixture.id}`, {waitUntil: "networkidle"});
+  assert.ok(fixtureRequests > 0, "Synthetic review check requires a DEV server that loads the authoring JSON module (ATLAS_REVIEW_URL)");
+  await expect(page.locator(".detail-id")).toContainText(fixture.id);
+  await expect(page.getByRole("dialog").locator(".review-preview-label")).toHaveText("本機審查預覽 · 尚未發布");
+  await expect(card(page, fixture.id).locator(".review-preview-label")).toHaveText("本機審查預覽 · 尚未發布");
   const video = page.locator(".detail-player video");
-  await expect(video).toHaveAttribute(
-    "src",
-    /sa-058-df8c5518670e271d-detail\.mp4$/,
-  );
-  await expect
-    .poll(() => video.evaluate((node: HTMLVideoElement) => node.readyState), {
-      timeout: 10000,
-    })
-    .toBeGreaterThan(1);
-  await expect
-    .poll(() => video.evaluate((node: HTMLVideoElement) => !node.paused))
-    .toBe(true);
+  assert.ok((await video.getAttribute("src"))?.endsWith(fixture.preview.detail));
+  await expect.poll(() => video.evaluate((node: HTMLVideoElement) => node.readyState), {timeout:10000}).toBeGreaterThan(1);
+  await expect.poll(() => video.evaluate((node: HTMLVideoElement) => !node.paused)).toBe(true);
 });
 
 test("redesigned legacy detail previews decode and cross their loop boundary", async (page) => {
@@ -756,14 +765,14 @@ test("focus mode updates the neighboring group on hover and keyboard focus", asy
 });
 
 test("global mode pauses offscreen and hidden-document videos", async (page) => {
-  await settledPlayback(page);
+  await settledPlayback(page, "global before offscreen scroll");
   await page.evaluate(() => {
     document.querySelector("footer")!.setAttribute("style", "height:2500px");
   });
   await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
   await allPaused(page);
   await page.evaluate(() => window.scrollTo(0, 0));
-  await settledPlayback(page);
+  await settledPlayback(page, "global after return to viewport");
   await page.evaluate(() => {
     Object.defineProperty(document, "hidden", {
       configurable: true,
@@ -779,7 +788,7 @@ test("global mode pauses offscreen and hidden-document videos", async (page) => 
     });
     document.dispatchEvent(new Event("visibilitychange"));
   });
-  await settledPlayback(page);
+  await settledPlayback(page, "global after visibility restoration");
   await expect
     .poll(async () => {
       const state = await snapshot(page);
@@ -1013,6 +1022,13 @@ for (const [name, launch] of [
         error: message,
       });
       console.error(`FAIL ${name}: ${check.name}\n${message}`);
+      console.error("Playback diagnostics:", await page.evaluate(() => ({
+        hidden: document.hidden, scrollY: window.scrollY,
+        playback: (window as unknown as {__atlasPlayback?: {snapshot: () => unknown}}).__atlasPlayback?.snapshot(),
+        media: [...document.querySelectorAll(".style-card video")].filter(v => v.hasAttribute("src")).map(v => {
+          const video=v as HTMLVideoElement; return {src:video.getAttribute("src"),paused:video.paused,readyState:video.readyState,error:video.error?.message ?? null};
+        }),
+      })).catch(() => "unavailable"));
       await page
         .screenshot({
           path: `${screenshotDirectory}/${name}-failure-${checks.indexOf(check) + 1}.png`,

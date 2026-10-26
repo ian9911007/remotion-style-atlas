@@ -255,3 +255,52 @@ test("global wall mode plays every visible card and releases offscreen media", a
     globalThis.clearInterval = previousClearInterval;
   }
 });
+
+/** Created: 2026-10-26. Delayed native play rejection after offscreen/onscreen handoff. */
+for (const {name, errorName, withdraw} of [
+  {name:"withdrawn pending play resumes after a cancelled native attempt",errorName:"AbortError",withdraw:true},
+  {name:"withdrawn pending play still exposes a real autoplay denial",errorName:"NotAllowedError",withdraw:true},
+  {name:"an unwithdrawn AbortError remains a real playback failure",errorName:"AbortError",withdraw:false},
+]) {
+  test(name, async () => {
+    const originals = {window:globalThis.window,document:globalThis.document,observer:globalThis.IntersectionObserver};
+    let observe: IntersectionObserverCallback;
+    let rejectPending!: (reason: Error) => void;
+    let source: string | null = null, paused = true, plays = 0, failures = 0;
+    const video = {
+      dataset:{}, get paused(){return paused;},
+      getAttribute(name:string){return name === "src" ? source : null;},
+      hasAttribute(name:string){return name === "src" && source !== null;},
+      removeAttribute(name:string){if(name === "src")source=null;},
+      set src(value:string){source=value;}, load(){}, pause(){paused=true;},
+      play(){paused=false;plays++;return plays === 1 ? new Promise<void>((_,reject)=>{rejectPending=reject;}) : Promise.resolve();},
+    } as unknown as HTMLVideoElement;
+    class Observer {constructor(callback:IntersectionObserverCallback){observe=callback;} observe(){} unobserve(){} disconnect(){}}
+    Object.defineProperty(globalThis,"window",{configurable:true,value:{matchMedia:()=>({matches:false})}});
+    Object.defineProperty(globalThis,"document",{configurable:true,value:{hidden:false,addEventListener(){},removeEventListener(){}}});
+    Object.defineProperty(globalThis,"IntersectionObserver",{configurable:true,value:Observer});
+    const scheduler = new PlaybackScheduler();
+    const visible = (value:boolean) => observe!([{target:video,isIntersecting:value,intersectionRatio:value ? 1 : 0} as unknown as IntersectionObserverEntry],{} as IntersectionObserver);
+    try {
+      scheduler.register("synthetic-delayed-play",video,"/media/synthetic.mp4",()=>{failures++;});
+      scheduler.start(); visible(true); assert.equal(plays,1);
+      if (withdraw) { visible(false); assert.equal(video.paused,true); visible(true); }
+      assert.equal(plays,1,"One pending attempt at a time");
+      rejectPending(new DOMException("controlled native rejection",errorName));
+      for(let i=0;i<6;i++) await Promise.resolve();
+      if(errorName === "AbortError" && withdraw) {
+        assert.equal(failures,0,"A scheduler-cancelled attempt is not a media failure");
+        assert.equal(plays,2,"Visible media resumes with a fresh native attempt");
+        assert.deepEqual(scheduler.snapshot().playing,["synthetic-delayed-play"]);
+      } else {
+        assert.equal(failures,1,"Real autoplay denial keeps the failure/retry state");
+        assert.equal(plays,1); assert.deepEqual(scheduler.snapshot().playing,[]);
+      }
+    } finally {
+      scheduler.destroy();
+      Object.defineProperty(globalThis,"window",{configurable:true,value:originals.window});
+      Object.defineProperty(globalThis,"document",{configurable:true,value:originals.document});
+      Object.defineProperty(globalThis,"IntersectionObserver",{configurable:true,value:originals.observer});
+    }
+  });
+}

@@ -10,6 +10,7 @@ import sharp from "sharp";
 import { technologyCases, type Evidence } from "../src/technology/registry";
 const args = process.argv.slice(2),
   ids = args.filter((x) => /^SA-\d+$/.test(x));
+for (const id of ids) if (!technologyCases.some(c => c.id === id)) throw new Error(`Unknown capture case ${id}`);
 const preview = args.includes("--previews"),
   wk = args.includes("--webkit"),
   readOnly = args.includes("--read-only"),
@@ -253,7 +254,7 @@ try {
             : `${c.video}; deterministic export unverified.`,
         performance: {
           status: "measured",
-          context: `Single case at 960x540 DPR1 in ${wk ? "WebKit" : "Chrome"} ${version}; elapsed includes navigation and screenshot work, not an FPS benchmark.`,
+          context: `Single case in960x620 viewport;960x540 CSS stage,1280x720 capture at DPR4/3 in ${wk ? "WebKit" : "Chrome"} ${version}; elapsed includes navigation and screenshot work, not an FPS benchmark.`,
           metrics: { inspectionMs: Math.round(performance.now() - start) },
         },
         date: new Date().toLocaleDateString("en-CA", {
@@ -292,8 +293,9 @@ await writeFile(
   path.join(out, `runtime-${wk ? "webkit" : "chrome"}.json`),
   JSON.stringify(report, null, 2) + "\n",
 );
+const passedIds = new Set(report.filter(r => r.pass).map(r => r.id));
 const sheets = readdirSync(out)
-  .filter((x) => /^SA-\d+\.jpg$/.test(x))
+  .filter((x) => /^SA-\d+\.jpg$/.test(x) && passedIds.has(x.slice(0, -4)))
   .sort();
 for (let i = 0; i < sheets.length; i += 12) {
   const page = sheets.slice(i, i + 12);

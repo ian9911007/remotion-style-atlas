@@ -1,0 +1,1410 @@
+{
+  "date": "2026-10-27",
+  "browser": "156.0.8078.48",
+  "url": "http://127.0.0.1:49173/",
+  "concurrency": 6,
+  "scope": "all legacy gallery and detail previews",
+  "method": "Actual HTMLVideoElement decoding and observed loop boundary. This is playback integrity, not a frame-rate benchmark or a substitute for visual review.",
+  "results": [
+    {
+      "id": "SA-001:gallery",
+      "duration": 4,
+      "frames": 96,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-001:detail",
+      "duration": 8,
+      "frames": 212,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-002:gallery",
+      "duration": 6,
+      "frames": 167,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-002:detail",
+      "duration": 12,
+      "frames": 314,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-003:gallery",
+      "duration": 6,
+      "frames": 168,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-003:detail",
+      "duration": 12,
+      "frames": 323,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-004:gallery",
+      "duration": 4,
+      "frames": 121,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-004:detail",
+      "duration": 8,
+      "frames": 235,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-005:gallery",
+      "duration": 5,
+      "frames": 127,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-005:detail",
+      "duration": 10,
+      "frames": 269,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-006:gallery",
+      "duration": 5,
+      "frames": 151,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-006:detail",
+      "duration": 10,
+      "frames": 264,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-007:gallery",
+      "duration": 5,
+      "frames": 122,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-007:detail",
+      "duration": 10,
+      "frames": 270,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-008:gallery",
+      "duration": 4,
+      "frames": 119,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-008:detail",
+      "duration": 8,
+      "frames": 227,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-009:gallery",
+      "duration": 6,
+      "frames": 171,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-009:detail",
+      "duration": 12,
+      "frames": 331,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-010:gallery",
+      "duration": 5,
+      "frames": 143,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-010:detail",
+      "duration": 10,
+      "frames": 253,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-011:gallery",
+      "duration": 4,
+      "frames": 96,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-011:detail",
+      "duration": 8,
+      "frames": 230,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-012:gallery",
+      "duration": 5,
+      "frames": 148,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-012:detail",
+      "duration": 10,
+      "frames": 255,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-013:gallery",
+      "duration": 4,
+      "frames": 104,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-013:detail",
+      "duration": 8,
+      "frames": 205,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-014:gallery",
+      "duration": 4,
+      "frames": 118,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-014:detail",
+      "duration": 8,
+      "frames": 205,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-015:gallery",
+      "duration": 4,
+      "frames": 117,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-015:detail",
+      "duration": 8,
+      "frames": 234,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-016:gallery",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-016:detail",
+      "duration": 8,
+      "frames": 226,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-017:gallery",
+      "duration": 5,
+      "frames": 147,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-017:detail",
+      "duration": 10,
+      "frames": 283,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-018:gallery",
+      "duration": 5,
+      "frames": 128,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-018:detail",
+      "duration": 10,
+      "frames": 277,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-019:gallery",
+      "duration": 5,
+      "frames": 134,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-019:detail",
+      "duration": 10,
+      "frames": 291,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-020:gallery",
+      "duration": 5,
+      "frames": 151,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-020:detail",
+      "duration": 10,
+      "frames": 257,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-021:gallery",
+      "duration": 5,
+      "frames": 150,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-021:detail",
+      "duration": 10,
+      "frames": 259,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-022:gallery",
+      "duration": 5,
+      "frames": 150,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-022:detail",
+      "duration": 10,
+      "frames": 288,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-023:gallery",
+      "duration": 5,
+      "frames": 150,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-023:detail",
+      "duration": 10,
+      "frames": 262,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-024:gallery",
+      "duration": 5,
+      "frames": 149,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-024:detail",
+      "duration": 10,
+      "frames": 264,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-025:gallery",
+      "duration": 4,
+      "frames": 99,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-025:detail",
+      "duration": 8,
+      "frames": 236,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-026:gallery",
+      "duration": 4,
+      "frames": 118,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-026:detail",
+      "duration": 8,
+      "frames": 208,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-027:gallery",
+      "duration": 4,
+      "frames": 117,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-027:detail",
+      "duration": 8,
+      "frames": 206,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-028:gallery",
+      "duration": 4,
+      "frames": 99,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-028:detail",
+      "duration": 8,
+      "frames": 230,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-029:gallery",
+      "duration": 4,
+      "frames": 119,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-029:detail",
+      "duration": 8,
+      "frames": 216,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-030:gallery",
+      "duration": 4,
+      "frames": 119,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-030:detail",
+      "duration": 8,
+      "frames": 238,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-031:gallery",
+      "duration": 4,
+      "frames": 118,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-031:detail",
+      "duration": 8,
+      "frames": 222,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-032:gallery",
+      "duration": 4,
+      "frames": 117,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-032:detail",
+      "duration": 8,
+      "frames": 216,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-033:gallery",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-033:detail",
+      "duration": 8,
+      "frames": 221,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-034:gallery",
+      "duration": 4,
+      "frames": 108,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-034:detail",
+      "duration": 8,
+      "frames": 236,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-035:gallery",
+      "duration": 4,
+      "frames": 119,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-035:detail",
+      "duration": 8,
+      "frames": 206,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-036:gallery",
+      "duration": 4,
+      "frames": 118,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-036:detail",
+      "duration": 8,
+      "frames": 203,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-037:gallery",
+      "duration": 4,
+      "frames": 100,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-037:detail",
+      "duration": 8,
+      "frames": 205,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-038:gallery",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-038:detail",
+      "duration": 8,
+      "frames": 205,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-039:gallery",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-039:detail",
+      "duration": 8,
+      "frames": 224,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-040:gallery",
+      "duration": 4,
+      "frames": 101,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-040:detail",
+      "duration": 8,
+      "frames": 220,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-041:gallery",
+      "duration": 4,
+      "frames": 119,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-041:detail",
+      "duration": 8,
+      "frames": 216,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-042:gallery",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-042:detail",
+      "duration": 8,
+      "frames": 213,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-043:gallery",
+      "duration": 4,
+      "frames": 119,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-043:detail",
+      "duration": 8,
+      "frames": 232,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-044:gallery",
+      "duration": 4,
+      "frames": 119,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-044:detail",
+      "duration": 8,
+      "frames": 215,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-045:gallery",
+      "duration": 5,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-045:detail",
+      "duration": 10,
+      "frames": 263,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-046:gallery",
+      "duration": 5,
+      "frames": 129,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-046:detail",
+      "duration": 10,
+      "frames": 255,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-047:gallery",
+      "duration": 5,
+      "frames": 145,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-047:detail",
+      "duration": 10,
+      "frames": 276,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-048:gallery",
+      "duration": 4,
+      "frames": 117,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-048:detail",
+      "duration": 8,
+      "frames": 205,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-049:gallery",
+      "duration": 4,
+      "frames": 96,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-049:detail",
+      "duration": 8,
+      "frames": 227,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-050:gallery",
+      "duration": 4,
+      "frames": 118,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-050:detail",
+      "duration": 8,
+      "frames": 206,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-051:gallery",
+      "duration": 4,
+      "frames": 118,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-051:detail",
+      "duration": 8,
+      "frames": 204,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-052:gallery",
+      "duration": 4,
+      "frames": 121,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-052:detail",
+      "duration": 8,
+      "frames": 204,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-053:gallery",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-053:detail",
+      "duration": 8,
+      "frames": 207,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-054:gallery",
+      "duration": 4,
+      "frames": 119,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-054:detail",
+      "duration": 8,
+      "frames": 207,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-055:gallery",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-055:detail",
+      "duration": 8,
+      "frames": 206,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-056:gallery",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-056:detail",
+      "duration": 8,
+      "frames": 207,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-057:gallery",
+      "duration": 4,
+      "frames": 120,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-057:detail",
+      "duration": 8,
+      "frames": 232,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-058:gallery",
+      "duration": 5,
+      "frames": 150,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-058:detail",
+      "duration": 10,
+      "frames": 295,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-059:gallery",
+      "duration": 5,
+      "frames": 151,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-059:detail",
+      "duration": 10,
+      "frames": 266,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-060:gallery",
+      "duration": 6,
+      "frames": 160,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-060:detail",
+      "duration": 12,
+      "frames": 311,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-061:gallery",
+      "duration": 6,
+      "frames": 177,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-061:detail",
+      "duration": 12,
+      "frames": 316,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-062:gallery",
+      "duration": 5,
+      "frames": 150,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-062:detail",
+      "duration": 10,
+      "frames": 294,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-063:gallery",
+      "duration": 5,
+      "frames": 134,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-063:detail",
+      "duration": 10,
+      "frames": 269,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-064:gallery",
+      "duration": 6,
+      "frames": 176,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-064:detail",
+      "duration": 12,
+      "frames": 332,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-065:gallery",
+      "duration": 5,
+      "frames": 145,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-065:detail",
+      "duration": 10,
+      "frames": 277,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-066:gallery",
+      "duration": 4,
+      "frames": 118,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-066:detail",
+      "duration": 8,
+      "frames": 223,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-067:gallery",
+      "duration": 6,
+      "frames": 178,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-067:detail",
+      "duration": 12,
+      "frames": 321,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-068:gallery",
+      "duration": 6,
+      "frames": 178,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-068:detail",
+      "duration": 12,
+      "frames": 330,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-069:gallery",
+      "duration": 6,
+      "frames": 152,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-069:detail",
+      "duration": 12,
+      "frames": 334,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-070:gallery",
+      "duration": 5,
+      "frames": 144,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-070:detail",
+      "duration": 10,
+      "frames": 273,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-071:gallery",
+      "duration": 6,
+      "frames": 174,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-071:detail",
+      "duration": 12,
+      "frames": 333,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-072:gallery",
+      "duration": 6,
+      "frames": 176,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-072:detail",
+      "duration": 12,
+      "frames": 318,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-073:gallery",
+      "duration": 6,
+      "frames": 181,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-073:detail",
+      "duration": 12,
+      "frames": 344,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-074:gallery",
+      "duration": 6,
+      "frames": 180,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-074:detail",
+      "duration": 12,
+      "frames": 315,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-075:gallery",
+      "duration": 6,
+      "frames": 181,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-075:detail",
+      "duration": 12,
+      "frames": 314,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-076:gallery",
+      "duration": 6,
+      "frames": 145,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-076:detail",
+      "duration": 12,
+      "frames": 306,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-077:gallery",
+      "duration": 4,
+      "frames": 118,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-077:detail",
+      "duration": 8,
+      "frames": 236,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-078:gallery",
+      "duration": 4,
+      "frames": 117,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-078:detail",
+      "duration": 8,
+      "frames": 214,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-079:gallery",
+      "duration": 6,
+      "frames": 165,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-079:detail",
+      "duration": 12,
+      "frames": 341,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-080:gallery",
+      "duration": 5,
+      "frames": 149,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-080:detail",
+      "duration": 10,
+      "frames": 270,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-081:gallery",
+      "duration": 5,
+      "frames": 149,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-081:detail",
+      "duration": 10,
+      "frames": 269,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-082:gallery",
+      "duration": 6,
+      "frames": 177,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-082:detail",
+      "duration": 12,
+      "frames": 310,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-083:gallery",
+      "duration": 6,
+      "frames": 144,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-083:detail",
+      "duration": 12,
+      "frames": 355,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-084:gallery",
+      "duration": 6,
+      "frames": 177,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-084:detail",
+      "duration": 12,
+      "frames": 309,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-085:gallery",
+      "duration": 6,
+      "frames": 144,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-085:detail",
+      "duration": 12,
+      "frames": 335,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-086:gallery",
+      "duration": 5,
+      "frames": 151,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-086:detail",
+      "duration": 10,
+      "frames": 281,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-087:gallery",
+      "duration": 6,
+      "frames": 179,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-087:detail",
+      "duration": 12,
+      "frames": 340,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-088:gallery",
+      "duration": 6,
+      "frames": 144,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-088:detail",
+      "duration": 12,
+      "frames": 328,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-089:gallery",
+      "duration": 5,
+      "frames": 149,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-089:detail",
+      "duration": 10,
+      "frames": 262,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-090:gallery",
+      "duration": 5,
+      "frames": 150,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-090:detail",
+      "duration": 10,
+      "frames": 270,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-091:gallery",
+      "duration": 6,
+      "frames": 172,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-091:detail",
+      "duration": 12,
+      "frames": 336,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-092:gallery",
+      "duration": 5,
+      "frames": 121,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-092:detail",
+      "duration": 10,
+      "frames": 262,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-093:gallery",
+      "duration": 6,
+      "frames": 177,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-093:detail",
+      "duration": 12,
+      "frames": 313,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-094:gallery",
+      "duration": 5,
+      "frames": 133,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-094:detail",
+      "duration": 10,
+      "frames": 261,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-095:gallery",
+      "duration": 5,
+      "frames": 149,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-095:detail",
+      "duration": 10,
+      "frames": 292,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-096:gallery",
+      "duration": 6,
+      "frames": 170,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-096:detail",
+      "duration": 12,
+      "frames": 307,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-097:gallery",
+      "duration": 6,
+      "frames": 174,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-097:detail",
+      "duration": 12,
+      "frames": 331,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-098:gallery",
+      "duration": 5,
+      "frames": 146,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-098:detail",
+      "duration": 10,
+      "frames": 271,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-099:gallery",
+      "duration": 6,
+      "frames": 144,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-099:detail",
+      "duration": 12,
+      "frames": 330,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-100:gallery",
+      "duration": 6,
+      "frames": 164,
+      "wraps": 1,
+      "error": null
+    },
+    {
+      "id": "SA-100:detail",
+      "duration": 12,
+      "frames": 330,
+      "wraps": 1,
+      "error": null
+    }
+  ]
+}

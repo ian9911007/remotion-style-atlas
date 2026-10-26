@@ -1,15 +1,36 @@
-/** Created: 2026-10-05. Decode every new preview through an actual looping HTML video. */
+/** Created: 2026-10-26. Decode every new preview through an actual looping HTML video. */
 import assert from "node:assert/strict";
-import { writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { chromium } from "@playwright/test";
 import { technologyCases, caseEvidence } from "../src/technology/registry";
 const base = process.env.ATLAS_URL ?? "http://127.0.0.1:4173/";
 const requestedIds = new Set(
   process.argv.slice(2).filter((value) => /^SA-\d+$/.test(value)),
 );
-const selectedCases = technologyCases.filter(
+const legacy = process.argv.includes("--legacy");
+type PreviewCase = {
+  id: string;
+  durationSeconds: number;
+  detailDurationSeconds: number;
+  preview: {gallery: string; detail?: string};
+};
+const candidates: PreviewCase[] = legacy
+  ? JSON.parse(readFileSync("src/catalog/styles.json", "utf8")).map((c: {
+      id: string; preview: {gallery: string; detail: string; galleryDuration: number; detailDuration: number};
+    }) => ({
+      id: c.id, durationSeconds: c.preview.galleryDuration,
+      detailDurationSeconds: c.preview.detailDuration, preview: c.preview,
+    }))
+  : technologyCases.filter(c => caseEvidence(c.id).status === "ready" && caseEvidence(c.id).preview).map((c) => ({
+      id: c.id, durationSeconds: c.durationSeconds ?? 4,
+      detailDurationSeconds: c.durationSeconds ?? 4, preview: caseEvidence(c.id).preview!,
+    }));
+for (const id of requestedIds) assert.ok(candidates.some(c => c.id === id), `No ready preview available for ${id}`);
+const selectedCases = candidates.filter(
   (c) => !requestedIds.size || requestedIds.has(c.id),
 );
+assert.ok(selectedCases.length, "Select actual preview cases");
+const casesPerBatch = 3; // Six simultaneous clips: gallery AND detail for each case.
 const browser = await chromium.launch({
   headless: true,
   executablePath:
@@ -18,22 +39,23 @@ const browser = await chromium.launch({
 });
 const results: unknown[] = [];
 try {
-  for (let i = 0; i < selectedCases.length; i += 6) {
-    const batch = selectedCases.slice(i, i + 6);
+  for (let i = 0; i < selectedCases.length; i += casesPerBatch) {
+    const batch = selectedCases.slice(i, i + casesPerBatch);
     const context = await browser.newContext({
       viewport: { width: 1440, height: 600 },
     });
     await context.addInitScript("globalThis.__name = (fn) => fn;");
     const page = await context.newPage();
+    // Media acceptance must not navigate away when Vite reloads unrelated evidence JSON.
+    await page.routeWebSocket("**/*", socket => socket.close());
     await page.goto(base);
     await page.evaluate(() => {
       document.getElementById("root")!.remove();
     });
-    const clips = batch.map((c) => ({
-      id: c.id,
-      src: new URL(caseEvidence(c.id).preview!.gallery, base).href,
-      duration: c.durationSeconds ?? 4,
-    }));
+    const clips = batch.flatMap((c) => [
+      {id: c.id + ":gallery", src: new URL(c.preview.gallery, base).href, duration: c.durationSeconds},
+      {id: c.id + ":detail", src: new URL(c.preview.detail ?? c.preview.gallery, base).href, duration: c.detailDurationSeconds},
+    ]);
     const measured = await page.evaluate(async (clips) => {
       return Promise.all(
         clips.map(
@@ -110,14 +132,13 @@ try {
     await context.close();
   }
   const detailSizes: { id: string; width: number; height: number }[] = [];
-  for (let i = 0; i < selectedCases.length; i += 6) {
+  for (let i = 0; i < selectedCases.length; i += casesPerBatch) {
     const context = await browser.newContext();
     const page = await context.newPage();
-    const urls = selectedCases.slice(i, i + 6).map((c) => ({
+    const urls = selectedCases.slice(i, i + casesPerBatch).map((c) => ({
       id: c.id,
       src: new URL(
-        caseEvidence(c.id).preview!.detail ??
-          caseEvidence(c.id).preview!.gallery,
+        c.preview.detail ?? c.preview.gallery,
         base,
       ).href,
     }));
@@ -160,7 +181,7 @@ try {
   }
   writeFileSync(
     process.env.PREVIEW_VERIFICATION_OUTPUT ??
-      "docs/technology-preview-verification.json",
+      (legacy ? "docs/legacy-preview-verification.json" : "docs/technology-preview-verification.json"),
     JSON.stringify(
       {
         date: new Date().toLocaleDateString("en-CA", {
@@ -169,7 +190,7 @@ try {
         browser: browser.version(),
         url: base,
         concurrency: 6,
-        scope: requestedIds.size ? [...requestedIds] : "all technology cases",
+        scope: requestedIds.size ? [...requestedIds] : legacy ? "all legacy gallery and detail previews" : "all ready technology gallery and detail previews",
         method:
           "Actual HTMLVideoElement decoding and observed loop boundary. This is playback integrity, not a frame-rate benchmark or a substitute for visual review.",
         results,

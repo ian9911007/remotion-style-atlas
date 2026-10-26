@@ -1,7 +1,7 @@
 [
   {
     "name": "@babylonjs/core",
-    "version": "9.29.0",
+    "version": "9.32.0",
     "license": "Apache-2.0",
     "repository": {
       "type": "git",
@@ -14,12 +14,12 @@
     "licenseFiles": [
       {
         "source": "license.md",
-        "path": "licenses/-babylonjs-core-ab82aa6039-9.29.0/license.md",
+        "path": "licenses/-babylonjs-core-ab82aa6039-9.32.0/license.md",
         "sha256": "9362ea9ea17cb221a20cbbd63f404710834cc273d2a9a7b60314fd68ab702cd6"
       },
       {
         "source": "NOTICE.md",
-        "path": "licenses/-babylonjs-core-ab82aa6039-9.29.0/NOTICE.md",
+        "path": "licenses/-babylonjs-core-ab82aa6039-9.32.0/NOTICE.md",
         "sha256": "7f85d099ce3c6e1900a45ee8d5b8fa405e760c746af687b3ee2081416e48f183"
       }
     ]
@@ -187,7 +187,7 @@
   },
   {
     "name": "@react-three/fiber",
-    "version": "9.8.1",
+    "version": "9.8.2",
     "license": "MIT",
     "repository": {
       "type": "git",
@@ -198,21 +198,21 @@
     ],
     "licenseTextStatus": "upstream-original-supplement-copied",
     "upstreamVerificationStatus": "upstream-original-text-supplement-integrated",
-    "upstreamLicenseReference": "https://raw.githubusercontent.com/pmndrs/react-three-fiber/53ec672ac4a7189711766b87ece18889abbb32d4/LICENSE",
+    "upstreamLicenseReference": "https://raw.githubusercontent.com/pmndrs/react-three-fiber/d74622ea8ed717f7212d7e19d65ff3e325508389/LICENSE",
     "licenseFiles": [
       {
         "source": "public/technology-assets/license-supplements/react-three-fiber/LICENSE",
-        "path": "licenses/-react-three-fiber-ed33697593-9.8.1/LICENSE",
+        "path": "licenses/-react-three-fiber-ed33697593-9.8.2/LICENSE",
         "sha256": "9c35b5de7b7493a707fffe4eb23bd2f7f449153c1911f7c6eefb4e591fd5349a",
         "provenance": "upstream-original-supplement",
-        "upstreamUrl": "https://raw.githubusercontent.com/pmndrs/react-three-fiber/53ec672ac4a7189711766b87ece18889abbb32d4/LICENSE",
-        "upstreamCommit": "53ec672ac4a7189711766b87ece18889abbb32d4"
+        "upstreamUrl": "https://raw.githubusercontent.com/pmndrs/react-three-fiber/d74622ea8ed717f7212d7e19d65ff3e325508389/LICENSE",
+        "upstreamCommit": "d74622ea8ed717f7212d7e19d65ff3e325508389"
       }
     ]
   },
   {
     "name": "@remotion/player",
-    "version": "4.0.530",
+    "version": "4.0.539",
     "license": "SEE LICENSE IN LICENSE.md",
     "repository": {
       "url": "https://github.com/remotion-dev/remotion/tree/main/packages/player"
@@ -224,14 +224,14 @@
     "licenseFiles": [
       {
         "source": "LICENSE.md",
-        "path": "licenses/-remotion-player-a72cf38fc7-4.0.530/LICENSE.md",
+        "path": "licenses/-remotion-player-a72cf38fc7-4.0.539/LICENSE.md",
         "sha256": "bd65083b940f61904f6ef298aade918a7cad72a3e35bc406e36fab365844b673"
       }
     ]
   },
   {
     "name": "@rive-app/canvas",
-    "version": "2.44.0",
+    "version": "2.47.1",
     "license": "MIT",
     "repository": {
       "type": "git",
@@ -242,15 +242,15 @@
     ],
     "licenseTextStatus": "upstream-original-supplement-copied",
     "upstreamVerificationStatus": "upstream-original-text-supplement-integrated",
-    "upstreamLicenseReference": "https://raw.githubusercontent.com/rive-app/rive-wasm/b62850efe54fc0f1efe897141be96009d9e99027/LICENSE",
+    "upstreamLicenseReference": "https://raw.githubusercontent.com/rive-app/rive-wasm/e8f45f9745892ebb844f6d72aeeceacfc2af9a72/LICENSE",
     "licenseFiles": [
       {
         "source": "public/technology-assets/license-supplements/rive-app-canvas/LICENSE",
-        "path": "licenses/-rive-app-canvas-88c13c6dd4-2.44.0/LICENSE",
+        "path": "licenses/-rive-app-canvas-88c13c6dd4-2.47.1/LICENSE",
         "sha256": "8a1efa755d19446b51a18e1c15f6308728da0b36283c4d38050698ad6954b69a",
         "provenance": "upstream-original-supplement",
-        "upstreamUrl": "https://raw.githubusercontent.com/rive-app/rive-wasm/b62850efe54fc0f1efe897141be96009d9e99027/LICENSE",
-        "upstreamCommit": "b62850efe54fc0f1efe897141be96009d9e99027"
+        "upstreamUrl": "https://raw.githubusercontent.com/rive-app/rive-wasm/e8f45f9745892ebb844f6d72aeeceacfc2af9a72/LICENSE",
+        "upstreamCommit": "e8f45f9745892ebb844f6d72aeeceacfc2af9a72"
       }
     ]
   },
@@ -297,7 +297,7 @@
   },
   {
     "name": "@tsparticles/engine",
-    "version": "4.4.0",
+    "version": "4.5.0",
     "license": "MIT",
     "repository": {
       "type": "git",
@@ -311,14 +311,14 @@
     "licenseFiles": [
       {
         "source": "LICENSE",
-        "path": "licenses/-tsparticles-engine-dfe1cde72d-4.4.0/LICENSE",
+        "path": "licenses/-tsparticles-engine-dfe1cde72d-4.5.0/LICENSE",
         "sha256": "c5c18dbc27f490f2ef90e0b574b8c40f534e495d2cb8a6f1c4bb1183a9c381a4"
       }
     ]
   },
   {
     "name": "@tsparticles/slim",
-    "version": "4.4.0",
+    "version": "4.5.0",
     "license": "MIT",
     "repository": {
       "type": "git",
@@ -332,7 +332,7 @@
     "licenseFiles": [
       {
         "source": "LICENSE",
-        "path": "licenses/-tsparticles-slim-08f8e6fecc-4.4.0/LICENSE",
+        "path": "licenses/-tsparticles-slim-08f8e6fecc-4.5.0/LICENSE",
         "sha256": "c5c18dbc27f490f2ef90e0b574b8c40f534e495d2cb8a6f1c4bb1183a9c381a4"
       }
     ]
@@ -542,7 +542,7 @@
   },
   {
     "name": "konva",
-    "version": "10.7.0",
+    "version": "10.9.0",
     "license": "MIT",
     "repository": {
       "type": "git",
@@ -555,7 +555,7 @@
     "licenseFiles": [
       {
         "source": "LICENSE",
-        "path": "licenses/konva-0806683e36-10.7.0/LICENSE",
+        "path": "licenses/konva-0806683e36-10.9.0/LICENSE",
         "sha256": "7190132c82df30243dc2ba512c9509ea3b629329b4266e9f2c3b5dbd04029613"
       }
     ]
@@ -582,7 +582,7 @@
   },
   {
     "name": "lenis",
-    "version": "1.3.26",
+    "version": "1.3.27",
     "license": "MIT",
     "repository": {
       "type": "git",
@@ -595,8 +595,8 @@
     "licenseFiles": [
       {
         "source": "LICENSE",
-        "path": "licenses/lenis-b9a4c6153a-1.3.26/LICENSE",
-        "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+        "path": "licenses/lenis-b9a4c6153a-1.3.27/LICENSE",
+        "sha256": "7d1896b31f2eed9f286b05faca067c4e35b2f109ae7c4ed5105220e2d2820228"
       }
     ]
   },
@@ -643,7 +643,7 @@
   },
   {
     "name": "maplibre-gl",
-    "version": "6.12.0",
+    "version": "6.16.0",
     "license": "BSD-3-Clause",
     "repository": {
       "type": "git",
@@ -656,7 +656,7 @@
     "licenseFiles": [
       {
         "source": "LICENSE.txt",
-        "path": "licenses/maplibre-gl-326f0c257e-6.12.0/LICENSE.txt",
+        "path": "licenses/maplibre-gl-326f0c257e-6.16.0/LICENSE.txt",
         "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2"
       }
     ]
@@ -683,7 +683,7 @@
   },
   {
     "name": "motion",
-    "version": "14.0.0",
+    "version": "14.6.0",
     "license": "MIT",
     "repository": "https://github.com/motiondivision/motion",
     "installedFrom": [
@@ -693,7 +693,7 @@
     "licenseFiles": [
       {
         "source": "LICENSE.md",
-        "path": "licenses/motion-305238273b-14.0.0/LICENSE.md",
+        "path": "licenses/motion-305238273b-14.6.0/LICENSE.md",
         "sha256": "1bf0dc3f7727723e5a032ed12164a47cf92c05204cb1a3485f123c24e2833ed1"
       }
     ]
@@ -737,11 +737,11 @@
   },
   {
     "name": "react",
-    "version": "19.2.0",
+    "version": "19.3.1",
     "license": "MIT",
     "repository": {
       "type": "git",
-      "url": "https://github.com/facebook/react.git",
+      "url": "https://github.com/react/react.git",
       "directory": "packages/react"
     },
     "installedFrom": [
@@ -752,18 +752,18 @@
     "licenseFiles": [
       {
         "source": "LICENSE",
-        "path": "licenses/react-275976081c-19.2.0/LICENSE",
+        "path": "licenses/react-275976081c-19.3.1/LICENSE",
         "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
       }
     ]
   },
   {
     "name": "react-dom",
-    "version": "19.2.0",
+    "version": "19.3.1",
     "license": "MIT",
     "repository": {
       "type": "git",
-      "url": "https://github.com/facebook/react.git",
+      "url": "https://github.com/react/react.git",
       "directory": "packages/react-dom"
     },
     "installedFrom": [
@@ -774,7 +774,7 @@
     "licenseFiles": [
       {
         "source": "LICENSE",
-        "path": "licenses/react-dom-de7f2df91c-19.2.0/LICENSE",
+        "path": "licenses/react-dom-de7f2df91c-19.3.1/LICENSE",
         "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
       }
     ]
@@ -801,7 +801,7 @@
   },
   {
     "name": "remotion",
-    "version": "4.0.530",
+    "version": "4.0.539",
     "license": "SEE LICENSE IN LICENSE.md",
     "repository": {
       "url": "https://github.com/remotion-dev/remotion/tree/main/packages/core"
@@ -814,12 +814,12 @@
     "licenseFiles": [
       {
         "source": "LICENSE.md",
-        "path": "licenses/remotion-d1bd7a5bd6-4.0.530/LICENSE.md",
+        "path": "licenses/remotion-d1bd7a5bd6-4.0.539/LICENSE.md",
         "sha256": "bd65083b940f61904f6ef298aade918a7cad72a3e35bc406e36fab365844b673"
       },
       {
         "source": "THIRD_PARTY_LICENSES.md",
-        "path": "licenses/remotion-d1bd7a5bd6-4.0.530/THIRD_PARTY_LICENSES.md",
+        "path": "licenses/remotion-d1bd7a5bd6-4.0.539/THIRD_PARTY_LICENSES.md",
         "sha256": "b643dd255291602f7c60cca4dbd203a1aaa2c2961227d23ab7a6a5e1de2c8a2b"
       }
     ]
@@ -902,7 +902,7 @@
   },
   {
     "name": "vega-lite",
-    "version": "6.4.3",
+    "version": "6.5.0",
     "license": "BSD-3-Clause",
     "repository": {
       "type": "git",
@@ -915,14 +915,14 @@
     "licenseFiles": [
       {
         "source": "LICENSE",
-        "path": "licenses/vega-lite-c4908e4ac8-6.4.3/LICENSE",
+        "path": "licenses/vega-lite-c4908e4ac8-6.5.0/LICENSE",
         "sha256": "f618900fd0d64046963b29f40590cdd1e341a2f41449f99110d82fd81fea808c"
       }
     ]
   },
   {
     "name": "zod",
-    "version": "4.5.4",
+    "version": "4.6.7",
     "license": "MIT",
     "repository": {
       "type": "git",
@@ -935,7 +935,7 @@
     "licenseFiles": [
       {
         "source": "LICENSE",
-        "path": "licenses/zod-4f63cf5cd8-4.5.4/LICENSE",
+        "path": "licenses/zod-4f63cf5cd8-4.6.7/LICENSE",
         "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8"
       }
     ]
